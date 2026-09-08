@@ -1,0 +1,744 @@
+{
+  "schema_version": 1,
+  "id": "item.vampiric-burst",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Vampiric Burst",
+    "numeric_id": 1055679805,
+    "internal_key": "upgrade_surging_power",
+    "aliases": [
+      "upgrade_surging_power"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "vitality",
+    "tier": 4,
+    "activation": "instant_cast",
+    "is_active_item": true,
+    "is_imbue": false,
+    "shop_filters": [
+      "FireRate",
+      "WeaponDamage",
+      "Movement",
+      "Healing"
+    ],
+    "target_types": [
+      "HeroFriendly"
+    ]
+  },
+  "purchase": {
+    "cost_souls": 6400,
+    "component_internal_keys": [
+      "upgrade_vampire"
+    ]
+  },
+  "description_plain": null,
+  "displayed_effects": [
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "BulletLifestealPercent",
+      "label": "Bullet Lifesteal",
+      "value": "13%",
+      "property": {
+        "value": "13",
+        "provided_property_type": "MODIFIER_VALUE_BULLET_LIFESTEAL",
+        "css_class": "healing",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "BulletLifestealPercent_scale_function",
+          "specific_stat_scale_type": "EHealingOutput"
+        },
+        "prefix": "{s:sign}",
+        "label": "Bullet Lifesteal",
+        "postfix": "%",
+        "postvalue_label": "Bullet Lifesteal",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "BulletResist",
+      "label": "Bullet Resist",
+      "value": "10%",
+      "property": {
+        "value": "10",
+        "provided_property_type": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST",
+        "css_class": "bullet_armor_up",
+        "usage_flags": [
+          "IntrinsicallyProvidedInAbility"
+        ],
+        "prefix": "{s:sign}",
+        "label": "Bullet Resist",
+        "postfix": "%",
+        "postvalue_label": "Bullet Resist",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "BonusHealth",
+      "label": "Bonus Health",
+      "value": "100",
+      "property": {
+        "value": "100",
+        "provided_property_type": "MODIFIER_VALUE_HEALTH_MAX",
+        "prefix": "{s:sign}",
+        "label": "Bonus Health",
+        "postvalue_label": "Bonus Health",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "BaseAttackDamagePercent",
+      "label": "Weapon Damage",
+      "value": "6%",
+      "property": {
+        "value": "6",
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_DAMAGE_INCREASE",
+        "css_class": "bullet_damage",
+        "display_units": "EDisplayUnit_Normal",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "ActiveReloadPercent",
+      "label": "Ammo",
+      "value": "75%",
+      "property": {
+        "value": "75",
+        "prefix": "+",
+        "label": "Ammo",
+        "postfix": "%",
+        "postvalue_label": "Ammo",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "AbilityCooldown",
+      "label": "Cooldown",
+      "value": "30.0s",
+      "property": {
+        "value": 30.0,
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "AbilityDuration",
+      "label": "Duration",
+      "value": "5s",
+      "property": {
+        "value": "5",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "ActiveBonusLifesteal",
+      "label": "Bullet Lifesteal",
+      "value": "70%",
+      "property": {
+        "value": "70",
+        "provided_property_type": "MODIFIER_VALUE_BULLET_LIFESTEAL",
+        "css_class": "healing",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "ActiveBulletLifestealPercent_scale_function",
+          "specific_stat_scale_type": "EHealingOutput"
+        },
+        "label": "Bullet Lifesteal",
+        "postfix": "%",
+        "postvalue_label": "Bullet Lifesteal",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "ActiveBonusFireRate",
+      "label": "Fire Rate",
+      "value": "34%",
+      "property": {
+        "value": "34",
+        "css_class": "fire_rate",
+        "label": "Fire Rate",
+        "postfix": "%",
+        "postvalue_label": "Fire Rate",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "ActiveBonusFireRate",
+          "bonus": "25"
+        },
+        {
+          "name": "AbilityCooldown",
+          "bonus": "-10"
+        },
+        {
+          "name": "BulletResist",
+          "bonus": "10"
+        },
+        {
+          "name": "BulletLifestealPercent",
+          "bonus": "16"
+        },
+        {
+          "name": "BonusHealth",
+          "bonus": "110"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 1055679805,
+    "class_name": "upgrade_surging_power",
+    "name": "Vampiric Burst",
+    "start_trained": true,
+    "heroes": [],
+    "update_time": 1707446850,
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "vitality",
+    "item_tier": 4,
+    "properties": {
+      "AbilityCooldown": {
+        "value": 30.0,
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityDuration": {
+        "value": "5",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "ActiveBonusFireRate": {
+        "value": "34",
+        "css_class": "fire_rate",
+        "label": "Fire Rate",
+        "postfix": "%",
+        "postvalue_label": "Fire Rate",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "ActiveBonusLifesteal": {
+        "value": "70",
+        "provided_property_type": "MODIFIER_VALUE_BULLET_LIFESTEAL",
+        "css_class": "healing",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "ActiveBulletLifestealPercent_scale_function",
+          "specific_stat_scale_type": "EHealingOutput"
+        },
+        "label": "Bullet Lifesteal",
+        "postfix": "%",
+        "postvalue_label": "Bullet Lifesteal",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "BonusHealth": {
+        "value": "100",
+        "provided_property_type": "MODIFIER_VALUE_HEALTH_MAX",
+        "prefix": "{s:sign}",
+        "label": "Bonus Health",
+        "postvalue_label": "Bonus Health",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "ActiveReloadPercent": {
+        "value": "75",
+        "prefix": "+",
+        "label": "Ammo",
+        "postfix": "%",
+        "postvalue_label": "Ammo",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "BulletResist": {
+        "value": "10",
+        "provided_property_type": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST",
+        "css_class": "bullet_armor_up",
+        "usage_flags": [
+          "IntrinsicallyProvidedInAbility"
+        ],
+        "prefix": "{s:sign}",
+        "label": "Bullet Resist",
+        "postfix": "%",
+        "postvalue_label": "Bullet Resist",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "BulletLifestealPercent": {
+        "value": "13",
+        "provided_property_type": "MODIFIER_VALUE_BULLET_LIFESTEAL",
+        "css_class": "healing",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "BulletLifestealPercent_scale_function",
+          "specific_stat_scale_type": "EHealingOutput"
+        },
+        "prefix": "{s:sign}",
+        "label": "Bullet Lifesteal",
+        "postfix": "%",
+        "postvalue_label": "Bullet Lifesteal",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "BaseAttackDamagePercent": {
+        "value": "6",
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_DAMAGE_INCREASE",
+        "css_class": "bullet_damage",
+        "display_units": "EDisplayUnit_Normal",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    "description": {
+      "active": "Grants <span class=\"highlight\">Lifesteal</span>, <span class=\"highlight\">Fire Rate</span>, and <span class=\"highlight\">Ammo</span>. This added Ammo is not limited by your max magazine size."
+    },
+    "activation": "instant_cast",
+    "component_items": [
+      "upgrade_vampire"
+    ],
+    "tooltip_sections": [
+      {
+        "section_type": "innate",
+        "section_attributes": [
+          {
+            "properties": [
+              "BulletLifestealPercent",
+              "BulletResist",
+              "BonusHealth",
+              "BaseAttackDamagePercent"
+            ]
+          }
+        ]
+      },
+      {
+        "section_type": "active",
+        "section_attributes": [
+          {
+            "loc_string": "Grants <span class=\"highlight\">Lifesteal</span>, <span class=\"highlight\">Fire Rate</span>, and <span class=\"highlight\">Ammo</span>. This added Ammo is not limited by your max magazine size.",
+            "properties": [
+              "ActiveReloadPercent",
+              "AbilityCooldown",
+              "AbilityDuration"
+            ],
+            "important_properties": [
+              "ActiveBonusLifesteal",
+              "ActiveBonusFireRate"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "ActiveBonusFireRate",
+            "bonus": "25"
+          },
+          {
+            "name": "AbilityCooldown",
+            "bonus": "-10"
+          },
+          {
+            "name": "BulletResist",
+            "bonus": "10"
+          },
+          {
+            "name": "BulletLifestealPercent",
+            "bonus": "16"
+          },
+          {
+            "name": "BonusHealth",
+            "bonus": "110"
+          }
+        ]
+      }
+    ],
+    "is_active_item": true,
+    "shopable": true,
+    "cost": 6400
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Vampiric Burst",
+    "Description": null,
+    "Cost": 6400,
+    "Tier": 4,
+    "Activation": "InstantCast",
+    "Slot": "Armor",
+    "Components": [
+      "upgrade_vampire"
+    ],
+    "TargetTypes": [
+      "HeroFriendly"
+    ],
+    "ShopFilters": [
+      "FireRate",
+      "WeaponDamage",
+      "Movement",
+      "Healing"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityCooldown": 30.0,
+    "AbilityDuration": 5,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "ActiveBonusFireRate": 34,
+    "ActiveBonusLifesteal": 70,
+    "BonusHealth": 100,
+    "ActiveReloadPercent": 75,
+    "BulletResist": 10,
+    "BulletLifestealPercent": 13,
+    "BaseAttackDamagePercent": 6,
+    "PropertyUpgrades": {
+      "ActiveBonusFireRate": 25,
+      "AbilityCooldown": -10,
+      "BulletResist": 10,
+      "BulletLifestealPercent": 16,
+      "BonusHealth": 110
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_surging_power",
+    "Name": "Vampiric Burst",
+    "Description": null,
+    "Cost": 6400,
+    "Tier": 4,
+    "Slot": "Armor",
+    "Activation": "InstantCast",
+    "Components": [
+      "upgrade_vampire"
+    ],
+    "TargetTypes": [
+      "HeroFriendly"
+    ],
+    "ShopFilters": [
+      "FireRate",
+      "WeaponDamage",
+      "Movement",
+      "Healing"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Innate",
+      "DescKey": null,
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [],
+      "Alt": [
+        {
+          "Key": "BulletLifestealPercent",
+          "Value": 13,
+          "Type": "healing"
+        },
+        {
+          "Key": "BulletResist",
+          "Value": 10,
+          "Type": "bullet_armor_up",
+          "UsageFlags": "IntrinsicallyProvidedInAbility"
+        },
+        {
+          "Key": "BonusHealth",
+          "Value": 100
+        },
+        {
+          "Key": "BaseAttackDamagePercent",
+          "Value": 6,
+          "Type": "bullet_damage"
+        }
+      ]
+    },
+    "Info2": {
+      "Type": "Active",
+      "DescKey": "#upgrade_surging_power_active",
+      "Cooldown": 30.0,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "ActiveBonusLifesteal",
+          "Value": 70,
+          "Type": "healing"
+        },
+        {
+          "Key": "ActiveBonusFireRate",
+          "Value": 34,
+          "Type": "fire_rate"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "ActiveReloadPercent",
+          "Value": 75
+        },
+        {
+          "Key": "AbilityDuration",
+          "Value": 5,
+          "Type": "duration"
+        }
+      ]
+    },
+    "Upgrades": {
+      "ActiveBonusFireRate": 25,
+      "AbilityCooldown": -10,
+      "BulletResist": 10,
+      "BulletLifestealPercent": 16,
+      "BonusHealth": 110
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

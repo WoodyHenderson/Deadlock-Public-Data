@@ -1,0 +1,1195 @@
+{
+  "schema_version": 2,
+  "id": "hero.yamato",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.yamato.124895",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Yamato",
+  "aliases": [],
+  "internal_hero_key": "hero_yamato",
+  "hero_type": "Assassin",
+  "role_localization_key": "hero_yamato_role",
+  "playstyle_localization_key": "hero_yamato_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 730,
+    "health_regeneration_per_second": 1,
+    "light_melee_damage": 55,
+    "heavy_melee_damage": 128,
+    "move_speed_meters_per_second": 8.2,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 14.7,
+      "distance_meters": 10,
+      "duration_seconds": 0.68
+    },
+    "air_dash": {
+      "speed_meters_per_second": 17,
+      "distance_meters": 8,
+      "duration_seconds": 0.47
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.154,
+    "BulletDamageAltFire": 0.7,
+    "MaxHealth": 45,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6771,
+    "DPS": 1.8334,
+    "SustainedDPS": 1.2347
+  },
+  "spirit_scaling": {
+    "ClipSize": 0.15,
+    "SustainedDPS": 0.17233
+  },
+  "weapon": {
+    "BulletSpeed": 254,
+    "BulletDamage": 5.31,
+    "RoundsPerSecond": 2.381,
+    "ClipSize": 12,
+    "ReloadTime": 2.444,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 45.72,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0,
+    "BulletRadius": 0.0762,
+    "BulletsPerShot": 5,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 63.216,
+    "SustainedDPS": 42.571,
+    "NameKey": "citadel_weapon_hero_yamato_set",
+    "DescKey": "citadel_weapon_hero_yamato_set_desc",
+    "AltFire": {
+      "BulletSpeed": 76.2,
+      "BulletDamage": 50,
+      "RoundsPerSecond": 0.95238,
+      "ClipSize": 9,
+      "ReloadTime": 2.1,
+      "ReloadMovespeed": 1,
+      "ReloadDelay": 0,
+      "ReloadSingle": false,
+      "FalloffStartRange": 19.99,
+      "FalloffEndRange": 57.51,
+      "FalloffStartScale": 1,
+      "FalloffEndScale": 0.1,
+      "FalloffBias": 0.5,
+      "BulletGravityScale": 1,
+      "BulletRadius": 0.3302,
+      "BulletsPerShot": 1,
+      "BulletsPerBurst": 1,
+      "BurstInterShotInterval": 0,
+      "ShootMoveSpeed": 0.75,
+      "HitOnceAcrossAllBullets": false,
+      "CanCrit": false,
+      "AmmoConsumedPerShot": 3,
+      "ExplosionRadius": 3.048,
+      "DPS": 47.619,
+      "SustainedDPS": 38.961,
+      "NameKey": "citadel_weapon_yamato_alt",
+      "DescKey": "citadel_weapon_yamato_alt_desc"
+    },
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_Spreadshot",
+      "Attribute_EWeaponAttribute_CloseRange"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Power Slash",
+      "internal_key": "citadel_ability_power_slash",
+      "data": {
+        "AbilityCastDelay": 1.4,
+        "AbilityCooldown": {
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityPostCastDuration": 0.2,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorShowCastRangeAsSatSphereWhileCasting"
+        ],
+        "BulletResist": 60,
+        "ChannelMoveSpeed": 1.3,
+        "FallSpeedMax": 5,
+        "FullChargeDamage": {
+          "Value": 145,
+          "Scale": {
+            "Value": 1.85,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_power_slash",
+        "MediumChargeDamagePct": 50,
+        "Name": "Power Slash",
+        "PowerUpStages": 3,
+        "ShortChargeDamagePct": 30,
+        "SlashCollisionRadius": 4,
+        "SlashLength": {
+          "Value": 22,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "SlashRadius": 41,
+        "SlowModifier": {
+          "Class": "SlowBase",
+          "Subclass": "Slow"
+        },
+        "UnstoppableWhileCastingModifier": {
+          "Class": "Unstoppable",
+          "Subclass": "YamatoPowerslashUnstoppable",
+          "EnabledStateMask": [
+            "StatusImmune",
+            "SlowImmune",
+            "KnockdownImmune",
+            "Unstoppable"
+          ],
+          "StatusEffectPriority": 25,
+          "DisabledStateMask": [
+            "Disarmed",
+            "Muted",
+            "Silenced",
+            "SilenceMovementAbilites",
+            "Slowed",
+            "Glitched",
+            "MeleeDisabledDebuff",
+            "DashDisabledDebuff"
+          ]
+        },
+        "Upgrades": [
+          {
+            "SlowDuration": 3,
+            "SlowPercent": 40
+          },
+          {
+            "AbilityCooldown": -4
+          },
+          {
+            "FullChargeDamage": {
+              "Value": 150,
+              "Scale": {
+                "Value": 0.5,
+                "Type": "spirit"
+              }
+            },
+            "SlashLength": 8
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_power_slash",
+        "Name": "Power Slash",
+        "DescKey": "citadel_ability_power_slash_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "FullChargeDamage",
+                "Name": "Full Charge Damage",
+                "Value": 145,
+                "Scale": {
+                  "Value": 1.85,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "SlashLength",
+                "Name": "Slash Length",
+                "Value": 22,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "range"
+                },
+                "Type": "distance"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "SlowPercent",
+              "Name": "Move Speed",
+              "Value": 0,
+              "Type": "slow"
+            },
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 0,
+              "Type": "duration"
+            },
+            {
+              "Key": "BulletResist",
+              "Name": "Bullet Resist",
+              "Value": 60,
+              "Type": "bullet_armor_up"
+            }
+          ],
+          "DescKey": "citadel_ability_power_slash_desc"
+        },
+        "Upgrades": [
+          {
+            "SlowDuration": 3,
+            "SlowPercent": 40,
+            "DescKey": "citadel_ability_power_slash_t1_desc"
+          },
+          {
+            "AbilityCooldown": -4,
+            "DescKey": "citadel_ability_power_slash_t2_desc"
+          },
+          {
+            "FullChargeDamage": {
+              "Value": 150,
+              "Scale": {
+                "Value": 0.5,
+                "Type": "spirit"
+              }
+            },
+            "SlashLength": 8,
+            "DescKey": "citadel_ability_power_slash_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 1.3,
+            "Type": "move_speed"
+          }
+        },
+        "Damage": {
+          "MediumChargeDamagePct": {
+            "Name": "Medium Charge Dmg",
+            "Value": 50,
+            "Type": "tech_damage"
+          },
+          "ShortChargeDamagePct": {
+            "Name": "Short Charge Dmg",
+            "Value": 30,
+            "Type": "tech_damage"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.2
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "FallSpeedMax": {
+            "Name": null,
+            "Value": 5
+          },
+          "PowerUpStages": {
+            "Name": null,
+            "Value": 3
+          },
+          "SlashCollisionRadius": {
+            "Name": null,
+            "Value": 4
+          },
+          "SlashRadius": {
+            "Name": "Slash Radius",
+            "Value": 41,
+            "Type": ""
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 1.4,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_power_slash_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Channel to increase damage over 1.4 seconds, then release a <span class=\"highlight\">fully-charged sword strike</span>.<br>Press{g:citadel_binding:'Ability1'}or{g:citadel_binding:'Attack'}to trigger the strike early, dealing partial damage.",
+          "plain_text": "Channel to increase damage over 1.4 seconds, then release a fully-charged sword strike.\nPress [Ability 1] or [Attack] to trigger the strike early, dealing partial damage."
+        },
+        {
+          "localization_key": "citadel_ability_power_slash_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+40%</span> Movement Slow for <span class=\"highlight\">3s</span>",
+          "plain_text": "+40% Movement Slow for 3s"
+        },
+        {
+          "localization_key": "citadel_ability_power_slash_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-4s</span> Ability Cooldown",
+          "plain_text": "-4s Ability Cooldown"
+        },
+        {
+          "localization_key": "citadel_ability_power_slash_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+8m</span> Cast Range <br>+150 Damage and Increases Spirit Power scaling",
+          "plain_text": "+8m Cast Range\n+150 Damage and Increases Spirit Power scaling"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Flying Slash",
+      "internal_key": "citadel_ability_flying_strike",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 26,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 36,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityPostCastDuration": 0.2,
+        "AbilityUnitTargetLimit": 10,
+        "BehaviourBits": [
+          "BehaviorAlwaysPreviewRadius",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorUseInstantCastUnitTargetUi",
+          "BehaviorMovement",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDeactivateCrouchToggleOnCast",
+          "BehaviorAllowAltCast"
+        ],
+        "BuffModifier": {
+          "Class": "Base",
+          "Subclass": "SpiritBuff"
+        },
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 0,
+          "Scale": {
+            "Value": 1,
+            "Type": "melee"
+          }
+        },
+        "GrappleTargetModifier": {
+          "Class": "CitadelFlyingStrike",
+          "Subclass": "Target"
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_flying_strike",
+        "Name": "Flying Slash",
+        "SlowDuration": {
+          "Value": 2.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "SlowModifier": {
+          "Class": "SlowBase",
+          "Subclass": "Slow"
+        },
+        "SlowPercent": 50,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -18
+          },
+          {
+            "SpiritBonus": 35,
+            "BuffDuration": 6
+          },
+          {
+            "AbilityCastRange": 15,
+            "CanGrappleAllyHeroes": 1,
+            "AbilityCharges": 2,
+            "AbilityCooldownBetweenCharge": 5
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_flying_strike",
+        "Name": "Flying Slash",
+        "DescKey": "citadel_ability_flying_strike_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 0,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "melee"
+                },
+                "Type": "melee_damage"
+              },
+              {
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 50,
+                "Type": "slow"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 2.5,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "citadel_ability_flying_strike_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "Upon reaching target:",
+                "Key": "SpiritBonus",
+                "Name": "Bonus Spirit",
+                "Value": 0,
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "Upon reaching target:",
+                "Key": "BuffDuration",
+                "Name": "Buff Duration",
+                "Value": 0,
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [],
+          "RequiresUpgradeIndex": 1
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -18
+          },
+          {
+            "SpiritBonus": 35,
+            "BuffDuration": 6,
+            "DescKey": "citadel_ability_flying_strike_t2_desc"
+          },
+          {
+            "AbilityCastRange": 15,
+            "CanGrappleAllyHeroes": 1,
+            "AbilityCharges": 2,
+            "AbilityCooldownBetweenCharge": 5,
+            "DescKey": "citadel_ability_flying_strike_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.2
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 10
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 26,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 36,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_flying_strike_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Throw a grappling hook to <span class=\"highlight\">reel yourself towards an enemy, dealing Light {g:citadel_inline_attribute:'MeleeDamage'} and slowing the target</span> when you arrive.",
+          "plain_text": "Throw a grappling hook to reel yourself towards an enemy, dealing Light melee damage and slowing the target when you arrive."
+        },
+        {
+          "localization_key": "citadel_ability_flying_strike_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Gain <span class=\"highlight\">+35</span> Spirit Power for <span class=\"highlight\">6s</span>",
+          "plain_text": "Gain +35 Spirit Power for 6s"
+        },
+        {
+          "localization_key": "citadel_ability_flying_strike_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Alt-Cast to Grapple allies<br><span class=\"highlight\">+15m</span> Cast Range<br>Gains <span class=\"highlight\">1 extra charge</span>",
+          "plain_text": "Alt-Cast to Grapple allies\n+15m Cast Range\nGains 1 extra charge"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Crimson Slash",
+      "internal_key": "citadel_ability_healing_slash",
+      "data": {
+        "AbilityCastDelay": 0.3,
+        "AbilityCooldown": {
+          "Value": 16,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityPostCastDuration": 0.4,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BuffDuration": {
+          "Value": 0,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "BuffModifier": {
+          "Class": "Base",
+          "Subclass": "HealingSlashBuffModifier"
+        },
+        "Damage": {
+          "Value": 55,
+          "Scale": {
+            "Value": 0.37,
+            "Type": "spirit"
+          }
+        },
+        "DebuffDuration": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "Base",
+          "Subclass": "Debuff"
+        },
+        "FireRateSlow": 30,
+        "HealFixedHealth": {
+          "Value": 55,
+          "Scale": {
+            "Value": 1.035871,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_healing_slash",
+        "Name": "Crimson Slash",
+        "Radius": {
+          "Value": 13,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "Upgrades": [
+          {
+            "BuffDuration": 4,
+            "BuffMeleeDamage": 30
+          },
+          {
+            "HealMaxHealth": 6
+          },
+          {
+            "AbilityCooldown": -10,
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.6,
+                "Type": "spirit"
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_healing_slash",
+        "Name": "Crimson Slash",
+        "DescKey": "citadel_ability_healing_slash_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 55,
+                "Scale": {
+                  "Value": 0.37,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "HealFixedHealth",
+                "Name": "Heal on hero hit",
+                "Value": 55,
+                "Scale": {
+                  "Value": 1.035871,
+                  "Type": "spirit"
+                },
+                "Type": "healing"
+              },
+              {
+                "Key": "FireRateSlow",
+                "Name": "Fire Rate",
+                "Value": 30,
+                "Type": "bullet_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "DebuffDuration",
+              "Name": "Debuff Duration",
+              "Value": 4,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "citadel_ability_healing_slash_desc"
+        },
+        "Upgrades": [
+          {
+            "BuffDuration": 4,
+            "BuffMeleeDamage": 30,
+            "DescKey": "citadel_ability_healing_slash_t1_desc"
+          },
+          {
+            "HealMaxHealth": 6,
+            "DescKey": "citadel_ability_healing_slash_t2_desc"
+          },
+          {
+            "AbilityCooldown": -10,
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.6,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "citadel_ability_healing_slash_t3_desc"
+          }
+        ],
+        "Duration": {
+          "BuffDuration": {
+            "Name": "Buff Duration",
+            "Value": 0,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "duration"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.4
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.3,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 16,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 13,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_healing_slash_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Slash enemies in front of you, <span class=\"highlight\">damaging them and slowing their fire rate</span>. If any enemy heroes are hit, you <span class=\"highlight\">heal</span>.",
+          "plain_text": "Slash enemies in front of you, damaging them and slowing their fire rate. If any enemy heroes are hit, you heal."
+        },
+        {
+          "localization_key": "citadel_ability_healing_slash_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On Hit : <span class=\"highlight\">+30%</span> Melee Damage for 4s",
+          "plain_text": "On Hit : +30% Melee Damage for 4s"
+        },
+        {
+          "localization_key": "citadel_ability_healing_slash_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On Hero Hit : <span class=\"highlight\">+6%</span> Max Health Heal",
+          "plain_text": "On Hero Hit : +6% Max Health Heal"
+        },
+        {
+          "localization_key": "citadel_ability_healing_slash_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-10s</span> Cooldown and increases scaling",
+          "plain_text": "-10s Cooldown and increases scaling"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Shadow Transformation",
+      "internal_key": "citadel_ability_infinity_slash",
+      "data": {
+        "AbilityChannelTime": 1.5,
+        "AbilityCooldown": {
+          "Value": 150,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilitySpeedPct": 60,
+        "AbilityUnitTargetLimit": 1,
+        "AutoChannelModifier": {
+          "Class": "Base",
+          "Subclass": "Channel",
+          "EnabledStateMask": [
+            "Invulnerable",
+            "TechUntargetable",
+            "UnitStatusHealthHidden",
+            "IgnoreBullets",
+            "IgnoreMelee",
+            "StatusImmune",
+            "SlowImmune",
+            "KnockdownImmune",
+            "Unstoppable"
+          ]
+        },
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCleaveDisabled",
+          "BehaviorCanCancelDuringCastDelay",
+          "BehaviorCannotCancelDuringChannel",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "BuffModifier": {
+          "Class": "Base",
+          "Subclass": "Buff",
+          "EnabledStateMask": [
+            "YamatoShadowForm",
+            "StatusImmune",
+            "SlowImmune",
+            "KnockdownImmune",
+            "Unstoppable"
+          ],
+          "DisabledStateMask": [
+            "Disarmed",
+            "Muted",
+            "Silenced",
+            "SilenceMovementAbilites",
+            "Slowed",
+            "Glitched",
+            "MeleeDisabledDebuff",
+            "DashDisabledDebuff"
+          ],
+          "StatusEffectPriority": 0
+        },
+        "BuffTimerModifier": {
+          "Class": "YamatoInfinitySlashBuffTimer",
+          "Subclass": "Timer"
+        },
+        "BulletResist": 30,
+        "IsDisabled": false,
+        "Key": "citadel_ability_infinity_slash",
+        "MaxHealthRegen": {
+          "Value": 15,
+          "Scale": {
+            "Value": 1,
+            "Type": "healing"
+          }
+        },
+        "Name": "Shadow Transformation",
+        "ShadowFormDurationOnKill": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "TechResist": 30,
+        "Upgrades": [
+          {
+            "WeaponDamageBonus": 7
+          },
+          {
+            "BonusMoveSpeed": 4,
+            "AbilityCooldown": -20
+          },
+          {
+            "AbilityDuration": 3,
+            "BulletResist": 30,
+            "TechResist": 30
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_infinity_slash",
+        "Name": "Shadow Transformation",
+        "DescKey": "citadel_ability_infinity_slash_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "AbilityDuration",
+                "Name": "Duration",
+                "Value": 5,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              },
+              {
+                "Key": "AbilitySpeedPct",
+                "Name": "Ability Speed",
+                "Value": 60,
+                "Type": "cast"
+              },
+              {
+                "Key": "MaxHealthRegen",
+                "Name": "Max Health Heal",
+                "Value": 15,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "healing"
+                },
+                "Type": "healing"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "BulletResist",
+              "Name": "Bullet Resist",
+              "Value": 30,
+              "Type": "bullet_armor_up"
+            },
+            {
+              "Key": "TechResist",
+              "Name": "Spirit Resist",
+              "Value": 30,
+              "Type": "tech_armor_up"
+            },
+            {
+              "Key": "ShadowFormDurationOnKill",
+              "Name": "Duration On Kill",
+              "Value": 2,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "MaxHealthHealOnCast",
+              "Value": 0,
+              "Type": "healing"
+            }
+          ],
+          "DescKey": "citadel_ability_infinity_slash_desc"
+        },
+        "Upgrades": [
+          {
+            "WeaponDamageBonus": 7
+          },
+          {
+            "BonusMoveSpeed": 4,
+            "AbilityCooldown": -20,
+            "DescKey": "citadel_ability_infinity_slash_t2_desc"
+          },
+          {
+            "AbilityDuration": 3,
+            "BulletResist": 30,
+            "TechResist": 30,
+            "DescKey": "citadel_ability_infinity_slash_t3_desc"
+          }
+        ],
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 1.5,
+          "Type": "duration"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 150,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_infinity_slash_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Become infused with Yamato's shadow soul. After an initial <span class=\"highlight\">invincible</span> transformation your <span class=\"highlight\">abilities are refreshed and are 60% faster</span>. You gain <span class=\"highlight\">immunity to negative status effects</span> and have greatly increased <span class=\"highlight\">bullet and spirit resist</span>.<br>When you get a hero kill, you <span class=\"highlight\">heal</span> and the <span class=\"highlight\">duration</span> is extended.",
+          "plain_text": "Become infused with Yamato's shadow soul. After an initial invincible transformation your abilities are refreshed and are 60% faster. You gain immunity to negative status effects and have greatly increased bullet and spirit resist.\nWhen you get a hero kill, you heal and the duration is extended."
+        },
+        {
+          "localization_key": "citadel_ability_infinity_slash_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+4m Move Speed and -20 Cooldown",
+          "plain_text": "+4m Move Speed and -20 Cooldown"
+        },
+        {
+          "localization_key": "citadel_ability_infinity_slash_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+3s Duration<br>+30% Bullet Resist<br>+30% Spirit Resist",
+          "plain_text": "+3s Duration\n+30% Bullet Resist\n+30% Spirit Resist"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.47,
+    "AirDashSpeed": 17,
+    "BaseHealthRegen": 1,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.68,
+    "GroundDashSpeed": 14.7,
+    "HeavyMeleeDamage": 128,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.154,
+      "BulletDamageAltFire": 0.7,
+      "MaxHealth": 45,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6771,
+      "DPS": 1.8334,
+      "SustainedDPS": 1.2347
+    },
+    "LightMeleeDamage": 55,
+    "Lore": "hero_yamato_lore",
+    "MaxHealth": 730,
+    "MaxMoveSpeed": 8.2,
+    "MoveAcceleration": 4,
+    "Name": "Yamato",
+    "Playstyle": "hero_yamato_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_yamato_role",
+    "SpiritScaling": {
+      "ClipSize": 0.15,
+      "SustainedDPS": 0.17233
+    },
+    "SprintSpeed": 1.6,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Assassin",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

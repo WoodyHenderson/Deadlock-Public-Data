@@ -1,0 +1,1104 @@
+{
+  "schema_version": 2,
+  "id": "hero.grey-talon",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.grey-talon.125566",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Grey Talon",
+  "aliases": [],
+  "internal_hero_key": "hero_orion",
+  "hero_type": "Marksman",
+  "role_localization_key": "hero_orion_role",
+  "playstyle_localization_key": "hero_orion_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 780,
+    "health_regeneration_per_second": 1.5,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.3,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 16.1,
+      "distance_meters": 10,
+      "duration_seconds": 0.62
+    },
+    "air_dash": {
+      "speed_meters_per_second": 18.6,
+      "distance_meters": 8,
+      "duration_seconds": 0.43
+    },
+    "stamina": {
+      "charges": 4,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.85,
+    "MaxHealth": 38,
+    "PowerIncreases": 1,
+    "TechPower": 1.6,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 1.4167,
+    "SustainedDPS": 1.1514
+  },
+  "spirit_scaling": {
+    "MaxMoveSpeed": 0.0084,
+    "BulletDamage": 0.08,
+    "DPS": 0.13334,
+    "SustainedDPS": 0.10837
+  },
+  "weapon": {
+    "BulletSpeed": 495.3,
+    "BulletDamage": 23.51,
+    "RoundsPerSecond": 1.6667,
+    "ClipSize": 17,
+    "ReloadTime": 2.35,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 18,
+    "FalloffEndRange": 54,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.8,
+    "BulletRadius": 0.127,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": true,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 39.184,
+    "SustainedDPS": 31.847,
+    "NameKey": "citadel_weapon_hero_orion_set",
+    "DescKey": "citadel_weapon_hero_orion_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_MediumRange",
+      "Attribute_EWeaponAttribute_HeavyHitter",
+      "Attribute_EWeaponAttribute_Projectile"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Charged Shot",
+      "internal_key": "ability_charged_shot",
+      "data": {
+        "AbilityCastDelay": 0.5,
+        "AbilityChannelTime": 9999,
+        "AbilityCharges": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 17,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AirSpeedMax": 4.1,
+        "AutoChannelModifier": {
+          "Class": "IntrinsicBase",
+          "Subclass": "IntrinsicBase"
+        },
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorChannelled",
+          "BehaviorProjectile",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "CameraHeightOffset": 20,
+        "CameraHorizontalOffset": 15,
+        "ChannelMoveSpeed": 1.5,
+        "Damage": {
+          "Value": 80,
+          "Scale": {
+            "Value": 1,
+            "Type": "spirit"
+          }
+        },
+        "FallSpeedMax": 1.524,
+        "IsDisabled": false,
+        "Key": "ability_charged_shot",
+        "Name": "Charged Shot",
+        "TechCleaveExpireTime": 0.2,
+        "Upgrades": [
+          {
+            "AbilityCharges": 1
+          },
+          {
+            "Damage": 54
+          },
+          {
+            "AbilityCooldownBetweenCharge": -3,
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 1,
+                "Type": "spirit"
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_charged_shot",
+        "Name": "Charged Shot",
+        "DescKey": "ability_charged_shot_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 80,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_charged_shot_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCharges": 1
+          },
+          {
+            "Damage": 54,
+            "DescKey": "ability_charged_shot_t2_desc"
+          },
+          {
+            "AbilityCooldownBetweenCharge": -3,
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 1,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "ability_charged_shot_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 1.5,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AirSpeedMax": {
+            "Name": null,
+            "Value": 4.1
+          },
+          "CameraHeightOffset": {
+            "Name": null,
+            "Value": 20
+          },
+          "CameraHorizontalOffset": {
+            "Name": null,
+            "Value": 15
+          },
+          "FallSpeedMax": {
+            "Name": null,
+            "Value": 1.524
+          },
+          "TechCleaveExpireTime": {
+            "Name": null,
+            "Value": 0.2
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.5,
+          "Type": "cast"
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 9999,
+          "Type": "cast"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 17,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_charged_shot_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Charge up a powerful shot</span> that pierces through enemies. Hold {g:citadel_binding:'Ability1'} or {g:citadel_binding:'Attack'} to hold the shot.",
+          "plain_text": "Charge up a powerful shot that pierces through enemies. Hold [Ability 1] or [Attack] to hold the shot."
+        },
+        {
+          "localization_key": "ability_charged_shot_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+54 Damage</span>",
+          "plain_text": "+54 Damage"
+        },
+        {
+          "localization_key": "ability_charged_shot_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Improved damage scaling</span> and <span class=\"highlight\">-3s</span> Charge Delay",
+          "plain_text": "Improved damage scaling and -3s Charge Delay"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Rain of Arrows",
+      "internal_key": "ability_power_jump",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCooldown": {
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AirMoveIncreasePercent": 25,
+        "AirSpeedMax": 6.64,
+        "AltJumpSpeed": 12,
+        "BehaviourBits": [
+          "BehaviorInputDirectional2d",
+          "BehaviorNoTarget",
+          "BehaviorAllowAltCast",
+          "BehaviorMovement",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "BulletSplitShot": 5,
+        "FallSpeedMax": 0.635,
+        "FxRadius": 4,
+        "InAirModifier": {
+          "Class": "AirRaid",
+          "Subclass": "AirRaid",
+          "EnabledStateMask": [
+            "DisableAirSpreadPenalty",
+            "UnlimitedAirDashes"
+          ],
+          "SlowModifier": {
+            "Class": "SlowBase",
+            "Subclass": "SlowBase"
+          }
+        },
+        "IsDisabled": false,
+        "JumpPitch": -60,
+        "JumpSpeed": 27.5,
+        "Key": "ability_power_jump",
+        "Name": "Rain of Arrows",
+        "PowerJumpModifier": {
+          "Class": "PowerJump",
+          "Subclass": "PowerJump",
+          "AirDrag": 2,
+          "VerticalCameraOffset": 20,
+          "VerticalCameraOffsetLerpTime": 0.4,
+          "EnabledStateMask": [
+            "AbilityMovement",
+            "ZiplineDisabled",
+            "JumpDisabled"
+          ]
+        },
+        "Upgrades": [
+          {
+            "WeaponDamageBonus": 3,
+            "SlowPercent": 30,
+            "SlowDuration": 1.5
+          },
+          {
+            "AbilityCooldown": -12
+          },
+          {
+            "BulletLifestealPercent": 30,
+            "TechLifestealPercent": 30,
+            "EvasionPercent": 30
+          }
+        ],
+        "WeaponDamageBonus": 3
+      },
+      "card": {
+        "Key": "ability_power_jump",
+        "Name": "Rain of Arrows",
+        "DescKey": "ability_power_jump_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "BulletSplitShot",
+                "Name": "Weapon Multishot",
+                "Value": 5,
+                "Type": "fire_rate"
+              },
+              {
+                "Key": "WeaponDamageBonus",
+                "Name": "Weapon Damage",
+                "Value": 3,
+                "Type": "bullet_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "SlowPercent",
+              "Name": "Move Speed",
+              "Value": 0,
+              "Type": "slow"
+            },
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 0,
+              "Type": "duration"
+            },
+            {
+              "Key": "BulletLifestealPercent",
+              "Name": "Bullet Lifesteal",
+              "Value": 0,
+              "Type": "healing"
+            },
+            {
+              "Key": "TechLifestealPercent",
+              "Name": "Spirit Lifesteal",
+              "Value": 0,
+              "Type": "healing"
+            },
+            {
+              "Key": "EvasionPercent",
+              "Name": "Bullet Evasion",
+              "Value": 0
+            }
+          ],
+          "DescKey": "ability_power_jump_desc"
+        },
+        "Upgrades": [
+          {
+            "WeaponDamageBonus": 3,
+            "SlowPercent": 30,
+            "SlowDuration": 1.5,
+            "DescKey": "ability_power_jump_t1_desc"
+          },
+          {
+            "AbilityCooldown": -12
+          },
+          {
+            "BulletLifestealPercent": 30,
+            "TechLifestealPercent": 30,
+            "EvasionPercent": 30,
+            "DescKey": "ability_power_jump_t3_desc"
+          }
+        ],
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AirMoveIncreasePercent": {
+            "Name": "Air Jump/Dash Distance",
+            "Value": 25
+          },
+          "AirSpeedMax": {
+            "Name": null,
+            "Value": 6.64
+          },
+          "AltJumpSpeed": {
+            "Name": null,
+            "Value": 12
+          },
+          "FallSpeedMax": {
+            "Name": null,
+            "Value": 0.635
+          },
+          "FxRadius": {
+            "Name": null,
+            "Value": 4
+          },
+          "JumpPitch": {
+            "Name": null,
+            "Value": -60
+          },
+          "JumpSpeed": {
+            "Name": null,
+            "Value": 27.5
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_power_jump_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Launches you high in the air, allowing you to glide slowly. While airborne, you gain <span class=\"highlight\">Weapon Damage</span> and <span class=\"highlight\">multishot on your weapon</span>. <br>{g:citadel_binding:'AltCast'}for reduced jump height.  <br>Press{g:citadel_binding:'Mantle'}to cancel the glide.",
+          "plain_text": "Launches you high in the air, allowing you to glide slowly. While airborne, you gain Weapon Damage and multishot on your weapon.\n[Alt Cast] for reduced jump height.\nPress [Mantle] to cancel the glide."
+        },
+        {
+          "localization_key": "ability_power_jump_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "While airborne, <span class=\"highlight\">+3</span> Weapon Damage and weapon damage applies <span class=\"highlight\">30%</span> movement slow for 1.5s",
+          "plain_text": "While airborne, +3 Weapon Damage and weapon damage applies 30% movement slow for 1.5s"
+        },
+        {
+          "localization_key": "ability_power_jump_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "While airborne, <span class=\"highlight\">+30%</span> Bullet Lifesteal, <span class=\"highlight\">+30%</span> Spirit Lifesteal and <span class=\"highlight\">+30%</span> Bullet Evasion",
+          "plain_text": "While airborne, +30% Bullet Lifesteal, +30% Spirit Lifesteal and +30% Bullet Evasion"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Spirit Snare",
+      "internal_key": "ability_immobilize_trap",
+      "data": {
+        "AbilityCooldown": {
+          "Value": 34,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "ArmTime": 2,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorPreventTrainingBotUsage",
+          "BehaviorCanSetQuickCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "ChargedShotHitRadiusScale": 30,
+        "Damage": 25,
+        "DebuffModifier": {
+          "Class": "Base",
+          "Subclass": "ImmobilizeTrapDebuff"
+        },
+        "GlitchModifier": {
+          "Class": "GlitchDebuff",
+          "Subclass": "GlitchDebuff",
+          "EnabledStateMask": [
+            "Disarmed",
+            "Silenced",
+            "Muted",
+            "Glitched"
+          ]
+        },
+        "IsDisabled": false,
+        "Key": "ability_immobilize_trap",
+        "Lifetime": {
+          "Value": 22,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "Name": "Spirit Snare",
+        "Radius": {
+          "Value": 6.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "SkipFrames": 6,
+        "SlowPercent": 30,
+        "TetherDuration": {
+          "Value": 2.25,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "TetherRadius": 6,
+        "TrapHeight": 2,
+        "TripGravity": 0.4,
+        "TripTime": 0.5,
+        "TripUpSpeed": 6.35,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -20
+          },
+          {
+            "BulletArmorReduction": -15,
+            "DebuffDuration": 10
+          },
+          {
+            "TetherDuration": 1,
+            "Radius": 1.5
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_immobilize_trap",
+        "Name": "Spirit Snare",
+        "DescKey": "ability_immobilize_trap_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "TetherDuration",
+                "Name": "Tether Duration",
+                "Value": 2.25,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              },
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 25,
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "Lifetime",
+                "Name": "Lifetime",
+                "Value": 22,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "ArmTime",
+              "Name": "Arm Time",
+              "Value": 2,
+              "Type": "duration"
+            },
+            {
+              "Key": "SlowPercent",
+              "Name": "Move Speed",
+              "Value": 30,
+              "Type": "slow"
+            },
+            {
+              "Key": "ChargedShotHitRadiusScale",
+              "Name": "Charged Shot Radius",
+              "Value": 30,
+              "Type": "radius"
+            },
+            {
+              "Key": "BulletVulnerbility",
+              "Name": "Bullet Damage Amp",
+              "Value": 0,
+              "Type": "bullet_armor_down"
+            },
+            {
+              "Key": "DebuffDuration",
+              "Name": "Debuff Duration",
+              "Value": 0,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_immobilize_trap_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -20
+          },
+          {
+            "BulletArmorReduction": -15,
+            "DebuffDuration": 10,
+            "DescKey": "ability_immobilize_trap_t2_desc"
+          },
+          {
+            "TetherDuration": 1,
+            "Radius": 1.5,
+            "DescKey": "ability_immobilize_trap_t3_desc"
+          }
+        ],
+        "Duration": {
+          "TripTime": {
+            "Name": null,
+            "Value": 0.5,
+            "Type": "duration"
+          }
+        },
+        "Range": {
+          "TetherRadius": {
+            "Name": "Tether Radius",
+            "Value": 6,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "SkipFrames": {
+            "Name": null,
+            "Value": 6
+          },
+          "TrapHeight": {
+            "Name": null,
+            "Value": 2
+          },
+          "TripGravity": {
+            "Name": null,
+            "Value": 0.4
+          },
+          "TripUpSpeed": {
+            "Name": null,
+            "Value": 6.35
+          }
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 34,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 6.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_immobilize_trap_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Throw out a trap</span> that begins to arm itself. Once armed, the trap will trigger when an enemy enters its radius, applying <span class=\"highlight\">Curse and Movement Slow</span> that <span class=\"highlight\">interrupts, Silences, Disarms</span>, and <span class=\"highlight\">prevents item usage</span>.<br>Hit the trap with a Charged Shot to detonate early with increased radius.",
+          "plain_text": "Throw out a trap that begins to arm itself. Once armed, the trap will trigger when an enemy enters its radius, applying Curse and Movement Slow that interrupts, Silences, Disarms, and prevents item usage.\nHit the trap with a Charged Shot to detonate early with increased radius."
+        },
+        {
+          "localization_key": "ability_immobilize_trap_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Applies <span class=\"highlight\">-15%</span> Bullet Resist for 10s",
+          "plain_text": "Applies -15% Bullet Resist for 10s"
+        },
+        {
+          "localization_key": "ability_immobilize_trap_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+1s</span> Curse Duration and <span class=\"highlight\">+1.5m</span> Radius",
+          "plain_text": "+1s Curse Duration and +1.5m Radius"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Guided Owl",
+      "internal_key": "ability_guided_arrow",
+      "data": {
+        "AbilityCastDelay": 1.5,
+        "AbilityChannelTime": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 125,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorProjectile",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "BonusTechPowerPerKill": 8,
+        "Damage": {
+          "Value": 230,
+          "Scale": {
+            "Value": 0.93744,
+            "Type": "spirit"
+          }
+        },
+        "ExplosionRadius": {
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "GuidingModifier": {
+          "Class": "GuidingArrow",
+          "Subclass": "GuidingArrow",
+          "EnabledStateMask": [
+            "JumpDisabled",
+            "ZiplineDisabled",
+            "DashDisabled"
+          ],
+          "GlowEnemeyModifier": {
+            "Class": "LowHealthGlow",
+            "Subclass": "LowHealthGlow"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_guided_arrow",
+        "KillCheckModifier": {
+          "Class": "GuidingArrowKillcheck",
+          "Subclass": "KillcheckModifier"
+        },
+        "Name": "Guided Owl",
+        "StunDuration": {
+          "Value": 0.75,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "Upgrades": [
+          {
+            "Damage": 85
+          },
+          {
+            "AbilityCooldown": -40
+          },
+          {
+            "LowHealthEnemyThresholdPct": 22
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_guided_arrow",
+        "Name": "Guided Owl",
+        "DescKey": "ability_guided_arrow_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 230,
+                "Scale": {
+                  "Value": 0.93744,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "ExplosionRadius",
+                "Name": "Explosion Radius",
+                "Value": 12,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "range"
+                },
+                "Type": "distance"
+              },
+              {
+                "Key": "StunDuration",
+                "Name": "Stun Duration",
+                "Value": 0.75,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "BonusTechPowerPerKill",
+              "Name": "Spirit Power Per Kill",
+              "Value": 8,
+              "Type": "tech_damage"
+            }
+          ],
+          "DescKey": "ability_guided_arrow_desc"
+        },
+        "Upgrades": [
+          {
+            "Damage": 85
+          },
+          {
+            "AbilityCooldown": -40
+          },
+          {
+            "LowHealthEnemyThresholdPct": 22,
+            "DescKey": "ability_guided_arrow_t3_desc"
+          }
+        ],
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 1.5,
+          "Type": "cast"
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 125,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_guided_arrow_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "After 1.5s cast time, <span class=\"highlight\">launch a spirit owl that you control</span> and which explodes on impact, <span class=\"highlight\">damaging and stunning</span> enemies. Hold{g:citadel_binding:'MoveForward'}to accelerate the owl.<br>Press{g:citadel_binding:'Mantle'}to release control. Gain <span class=\"highlight\">permanent Spirit Power</span> for each enemy hero killed with Guided Owl.",
+          "plain_text": "After 1.5s cast time, launch a spirit owl that you control and which explodes on impact, damaging and stunning enemies. Hold [Move Forward] to accelerate the owl.\nPress [Mantle] to release control. Gain permanent Spirit Power for each enemy hero killed with Guided Owl."
+        },
+        {
+          "localization_key": "ability_guided_arrow_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "After hit, kills enemies that are below <span class=\"highlight\">22% Health</span>",
+          "plain_text": "After hit, kills enemies that are below 22% Health"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.43,
+    "AirDashSpeed": 18.6,
+    "BaseHealthRegen": 1.5,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.62,
+    "GroundDashSpeed": 16.1,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.85,
+      "MaxHealth": 38,
+      "PowerIncreases": 1,
+      "TechPower": 1.6,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 1.4167,
+      "SustainedDPS": 1.1514
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_orion_lore",
+    "MaxHealth": 780,
+    "MaxMoveSpeed": 6.3,
+    "MoveAcceleration": 4,
+    "Name": "Grey Talon",
+    "Playstyle": "hero_orion_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_orion_role",
+    "SpiritScaling": {
+      "MaxMoveSpeed": 0.0084,
+      "BulletDamage": 0.08,
+      "DPS": 0.13334,
+      "SustainedDPS": 0.10837
+    },
+    "SprintSpeed": 1.6,
+    "Stamina": 4,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Marksman",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

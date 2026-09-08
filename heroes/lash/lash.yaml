@@ -1,0 +1,1231 @@
+{
+  "schema_version": 2,
+  "id": "hero.lash",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.lash.125562",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Lash",
+  "aliases": [],
+  "internal_hero_key": "hero_lash",
+  "hero_type": "Assassin",
+  "role_localization_key": "hero_lash_role",
+  "playstyle_localization_key": "hero_lash_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 780,
+    "health_regeneration_per_second": 2,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 7.2,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 2.1,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 14.7,
+      "distance_meters": 10,
+      "duration_seconds": 0.68
+    },
+    "air_dash": {
+      "speed_meters_per_second": 17,
+      "distance_meters": 8,
+      "duration_seconds": 0.47
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.31,
+    "MaxHealth": 50,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 1.8076,
+    "SustainedDPS": 1.2276
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 635,
+    "BulletDamage": 8.46,
+    "RoundsPerSecond": 5.8309,
+    "ClipSize": 29,
+    "ReloadTime": 2.35,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 18,
+    "FalloffEndRange": 54,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.8,
+    "BulletRadius": 0.0762,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 3,
+    "BurstInterShotInterval": 0.084,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 49.329,
+    "SustainedDPS": 33.5,
+    "NameKey": "citadel_weapon_hero_lash_set",
+    "DescKey": "citadel_weapon_hero_lash_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_BurstFire",
+      "Attribute_EWeaponAttribute_MediumRange"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Ground Strike",
+      "internal_key": "citadel_ability_lash_down_strike",
+      "data": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCooldown": {
+          "Value": 18,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityPostCastDuration": 0.4,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCanCastOnZipline"
+        ],
+        "ChannelMoveSpeed": -1,
+        "DownStrikeModifier": {
+          "Class": "Base",
+          "Subclass": "LashDownStrikeEmbedded"
+        },
+        "DragModifier": {
+          "Class": "ChargeDragEnemy",
+          "Subclass": "ChargeDragEnemy",
+          "ForwardOffset": 200,
+          "VerticalOffset": -200,
+          "ForceDistScale": 10
+        },
+        "ImpactModifier": {
+          "Class": "SlowBase",
+          "Subclass": "SlowBase"
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_lash_down_strike",
+        "MinAimAngle": 60,
+        "Name": "Ground Strike",
+        "Radius": {
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "StompDamage": {
+          "Value": 60,
+          "Scale": {
+            "Value": 0.7905,
+            "Type": "spirit"
+          }
+        },
+        "StompDamagePerMeterPrimary": {
+          "Value": 5.5,
+          "Scale": {
+            "Value": 0.04,
+            "Type": "spirit"
+          }
+        },
+        "StompDamagePerMeterSecondary": {
+          "Value": 4.2,
+          "Scale": {
+            "Value": 0.008137,
+            "Type": "spirit"
+          }
+        },
+        "StompDamagePrimaryRange": 25,
+        "StompVerticalThreshold": 118,
+        "StrikeVelocity": 50,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -10
+          },
+          {
+            "EnemySlowPct": 50,
+            "SlowDuration": 3,
+            "StompBounceHeight": 400,
+            "TossDuration": 1
+          },
+          {
+            "StompDamagePerMeterPrimary": {
+              "Value": 2.13,
+              "Scale": {
+                "Value": 0.03255,
+                "Type": "spirit"
+              },
+              "Multiply": true
+            },
+            "StompDamagePerMeterSecondary": {
+              "Value": 2.13,
+              "Scale": {
+                "Value": 0.008137,
+                "Type": "spirit"
+              },
+              "Multiply": true
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_lash_down_strike",
+        "Name": "Ground Strike",
+        "DescKey": "citadel_ability_lash_down_strike_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "StompDamage",
+                "Name": "Stomp Damage",
+                "Value": 60,
+                "Scale": {
+                  "Value": 0.7905,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "StompDamagePerMeterPrimary",
+                "Name": "Damage Per Meter",
+                "Value": 5.5,
+                "Scale": {
+                  "Value": 0.04,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "TossDuration",
+                "Name": "Duration",
+                "StatusEffect": "Displacement",
+                "Value": 0
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "EnemySlowPct",
+              "Name": "Enemy Move Speed",
+              "Value": 0,
+              "Type": "slow"
+            },
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 0,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "citadel_ability_lash_down_strike_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -10
+          },
+          {
+            "EnemySlowPct": 50,
+            "SlowDuration": 3,
+            "StompBounceHeight": 400,
+            "TossDuration": 1,
+            "DescKey": "citadel_ability_lash_down_strike_t2_desc"
+          },
+          {
+            "StompDamagePerMeterPrimary": {
+              "Value": 2.13,
+              "Scale": {
+                "Value": 0.03255,
+                "Type": "spirit"
+              },
+              "Multiply": true
+            },
+            "StompDamagePerMeterSecondary": {
+              "Value": 2.13,
+              "Scale": {
+                "Value": 0.008137,
+                "Type": "spirit"
+              },
+              "Multiply": true
+            },
+            "DescKey": "citadel_ability_lash_down_strike_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Damage": {
+          "StompDamagePerMeterSecondary": {
+            "Name": null,
+            "Value": 4.2,
+            "Scale": {
+              "Value": 0.008137,
+              "Type": "spirit"
+            },
+            "Type": "tech_damage"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.4
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "MinAimAngle": {
+            "Name": null,
+            "Value": 60
+          },
+          "StompDamagePrimaryRange": {
+            "Name": null,
+            "Value": 25
+          },
+          "StompVerticalThreshold": {
+            "Name": null,
+            "Value": 118
+          },
+          "StrikeVelocity": {
+            "Name": null,
+            "Value": 50
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.15,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 18,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_lash_down_strike_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Stomp the ground beneath you, <span class=\"highlight\">damaging enemies</span> in front of you. If you perform Ground Strike while airborne, you quickly dive towards the ground. Damage grows slower after 25m.",
+          "plain_text": "Stomp the ground beneath you, damaging enemies in front of you. If you perform Ground Strike while airborne, you quickly dive towards the ground. Damage grows slower after 25m."
+        },
+        {
+          "localization_key": "citadel_ability_lash_down_strike_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Struck enemies are <span class=\"highlight\">knocked up</span> and slowed by <span class=\"highlight\">50%</span> for <span class=\"highlight\">3s</span>",
+          "plain_text": "Struck enemies are knocked up and slowed by 50% for 3s"
+        },
+        {
+          "localization_key": "citadel_ability_lash_down_strike_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Damage Per Meter</span> +110% and improved scaling",
+          "plain_text": "Damage Per Meter +110% and improved scaling"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Grapple",
+      "internal_key": "citadel_ability_lash",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCharges": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 35,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AirControlModifier": {
+          "Class": "GrappleAirControl",
+          "Subclass": "AirControl"
+        },
+        "BehaviourBits": [
+          "BehaviorMovement",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "BuffModifier": {
+          "Class": "Base",
+          "Subclass": "GrappleBuff"
+        },
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "JumpSlowResistance": 0.667,
+        "JumpVelocity": 20,
+        "Key": "citadel_ability_lash",
+        "LashFriendlies": 1,
+        "Name": "Grapple",
+        "Upgrades": [
+          {
+            "AbilityCooldown": -17
+          },
+          {
+            "AbilityCastRange": 20,
+            "WeaponDamageBonus": 7,
+            "WeaponDamageBonusDuration": 10
+          },
+          {
+            "AbilityCharges": 1,
+            "RestoreStaminaOnUse": 1,
+            "AirControlPercent": 60
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_lash",
+        "Name": "Grapple",
+        "DescKey": "citadel_ability_lash_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "JumpVelocity",
+                "Name": "Jump Velocity",
+                "Value": 20,
+                "Type": "move_speed"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "WeaponDamageBonus",
+              "Name": "Weapon Damage",
+              "Value": 0,
+              "Type": "bullet_damage"
+            },
+            {
+              "Key": "WeaponDamageBonusDuration",
+              "Name": "Bonus Duration",
+              "Value": 0,
+              "Type": "duration"
+            },
+            {
+              "Key": "WeaponFireRateBonus",
+              "Name": "Fire Rate",
+              "Value": 0,
+              "Type": "fire_rate"
+            }
+          ],
+          "DescKey": "citadel_ability_lash_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -17
+          },
+          {
+            "AbilityCastRange": 20,
+            "WeaponDamageBonus": 7,
+            "WeaponDamageBonusDuration": 10,
+            "DescKey": "citadel_ability_lash_t2_desc"
+          },
+          {
+            "AbilityCharges": 1,
+            "RestoreStaminaOnUse": 1,
+            "AirControlPercent": 60,
+            "DescKey": "citadel_ability_lash_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "JumpSlowResistance": {
+            "Name": null,
+            "Value": 0.667
+          },
+          "LashFriendlies": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 35,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_lash_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Pull yourself through the air</span> toward a target. Using Grapple also resets your limit of <span class=\"highlight\">air jumps and dashes</span>.",
+          "plain_text": "Pull yourself through the air toward a target. Using Grapple also resets your limit of air jumps and dashes."
+        },
+        {
+          "localization_key": "citadel_ability_lash_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+20m</span> Cast Range and gain <span class=\"highlight\">+7</span> Weapon Damage for 10s",
+          "plain_text": "+20m Cast Range and gain +7 Weapon Damage for 10s"
+        },
+        {
+          "localization_key": "citadel_ability_lash_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+1</span> Charges<br>OnCast : <span class=\"highlight\">+1</span> Stamina and <span class=\"highlight\">+60%</span> Air Control",
+          "plain_text": "+1 Charges\nOnCast : +1 Stamina and +60% Air Control"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Flog",
+      "internal_key": "ability_lash_flog",
+      "data": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCastRange": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 26,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 30,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorNoTarget",
+          "BehaviorShowCastRangeAsSatSphereWhileCasting"
+        ],
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 65,
+          "Scale": {
+            "Value": 0.85,
+            "Type": "spirit"
+          }
+        },
+        "FlogDebuffModifier": {
+          "Class": "LashFlogDebuff",
+          "Subclass": "LashFlogDebuff"
+        },
+        "HealPctVsHeroes": {
+          "Value": 50,
+          "Scale": {
+            "Value": 1,
+            "Type": "healing"
+          }
+        },
+        "HealPctVsNonHeroes": {
+          "Value": 16,
+          "Scale": {
+            "Value": 1,
+            "Type": "healing"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_lash_flog",
+        "Name": "Flog",
+        "TargetingConeAngle": 38,
+        "Upgrades": [
+          {
+            "EnemySlowDuration": 3,
+            "EnemySlowPct": 35
+          },
+          {
+            "AbilityCooldown": -16,
+            "FireRateSlow": 30
+          },
+          {
+            "Damage": 80,
+            "TargetingConeAngle": 40,
+            "HealPctVsHeroes": 20,
+            "HealPctVsNonHeroes": 6
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_lash_flog",
+        "Name": "Flog",
+        "DescKey": "ability_lash_flog_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 65,
+                "Scale": {
+                  "Value": 0.85,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "HealPctVsHeroes",
+                "Name": "Heal vs heroes",
+                "Value": 50,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "healing"
+                },
+                "Type": "healing"
+              },
+              {
+                "Key": "TargetingConeAngle",
+                "Name": "Attack Angle",
+                "Value": 38,
+                "Type": "distance"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "HealPctVsNonHeroes",
+              "Name": "Heal vs non-heroes",
+              "Value": 16,
+              "Scale": {
+                "Value": 1,
+                "Type": "healing"
+              },
+              "Type": "healing"
+            },
+            {
+              "Key": "EnemySlowPct",
+              "Name": "Enemy Move Speed",
+              "Value": 0,
+              "Type": "slow"
+            },
+            {
+              "Key": "EnemySlowDuration",
+              "Name": "Debuff Duration",
+              "Value": 0,
+              "Type": "duration"
+            },
+            {
+              "Key": "FireRateSlow",
+              "Name": "Fire Rate",
+              "Value": 0,
+              "Type": "fire_rate"
+            }
+          ],
+          "DescKey": "ability_lash_flog_desc"
+        },
+        "Upgrades": [
+          {
+            "EnemySlowDuration": 3,
+            "EnemySlowPct": 35,
+            "DescKey": "ability_lash_flog_t1_desc"
+          },
+          {
+            "AbilityCooldown": -16,
+            "FireRateSlow": 30,
+            "DescKey": "ability_lash_flog_t2_desc"
+          },
+          {
+            "Damage": 80,
+            "TargetingConeAngle": 40,
+            "HealPctVsHeroes": 20,
+            "HealPctVsNonHeroes": 6,
+            "DescKey": "ability_lash_flog_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 30
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.15,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 26,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_lash_flog_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Strike enemies in front of you with your whip, {g:citadel_inline_attribute:'Healing'} for a portion of the damage dealt.",
+          "plain_text": "Strike enemies in front of you with your whip, healing for a portion of the damage dealt."
+        },
+        {
+          "localization_key": "ability_lash_flog_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Apply <span class=\"highlight\">-35%</span> Move speed for 3s",
+          "plain_text": "Apply -35% Move speed for 3s"
+        },
+        {
+          "localization_key": "ability_lash_flog_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Apply <span class=\"highlight\">-30%</span> Fire Rate <br><span class=\"highlight\">-16s</span> Cooldown",
+          "plain_text": "Apply -30% Fire Rate\n-16s Cooldown"
+        },
+        {
+          "localization_key": "ability_lash_flog_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+80</span> Damage <br><span class=\"highlight\">+40</span> Attack angle<br><span class=\"highlight\">+20%</span> Heal",
+          "plain_text": "+80 Damage\n+40 Attack angle\n+20% Heal"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Death Slam",
+      "internal_key": "citadel_ability_lash_ultimate",
+      "data": {
+        "AbilityCastDelay": 0.3,
+        "AbilityCastRange": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "AbilityChannelTime": {
+          "Value": 2.3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 170,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 6,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDeactivateCrouchToggleOnCast",
+          "BehaviorCastRangeIs2d"
+        ],
+        "BoostTime": 1,
+        "ChannelMoveSpeed": -1,
+        "GrappleEnemyModifier": {
+          "Class": "LashGrappleEnemyDebuff",
+          "Subclass": "LashGrappleEnemyDebuff",
+          "EnabledStateMask": [
+            "AbilityMovementDebuff"
+          ],
+          "DebuffModifier": {
+            "Class": "SlowBase",
+            "Subclass": "Slow"
+          }
+        },
+        "GrappleTargetModifier": {
+          "Class": "LashGrappleTarget",
+          "Subclass": "Target"
+        },
+        "HangTime": 0.6,
+        "ImpactDamage": {
+          "Value": 105,
+          "Scale": {
+            "Value": 0.974938,
+            "Type": "spirit"
+          }
+        },
+        "ImpactRadius": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_lash_ultimate",
+        "LiftHeight": 6,
+        "LockonConeAngle": 40,
+        "LosingLockGraceTime": 0.4,
+        "MaxLockonStacks": 1,
+        "Name": "Death Slam",
+        "NotInConeLosesLock": 1,
+        "SlamSpeed": 1600,
+        "SlowDuration": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "SlowPercent": 50,
+        "TargetModifier": {
+          "Class": "LashGrappleTarget",
+          "Subclass": "Lockon"
+        },
+        "ThrowDistance": {
+          "Value": 14,
+          "Scale": [
+            {
+              "Value": 0.14,
+              "Type": "spirit"
+            },
+            {
+              "Value": 1,
+              "Type": "range"
+            }
+          ]
+        },
+        "ThrowStraightDuration": 1.5,
+        "TimeToGainLockonStack": 0.7,
+        "TimeToLoseLockonStack": 2,
+        "UpBoostSpeed": 400,
+        "Upgrades": [
+          {
+            "ThrowDistance": 12
+          },
+          {
+            "AbilityCooldown": -35
+          },
+          {
+            "StunDuration": 1.2,
+            "AbilityCastRange": 6
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_lash_ultimate",
+        "Name": "Death Slam",
+        "DescKey": "citadel_ability_lash_ultimate_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "ImpactDamage",
+                "Name": "Impact Damage",
+                "Value": 105,
+                "Scale": {
+                  "Value": 0.974938,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "ThrowDistance",
+                "Name": "Max Throw Distance",
+                "Value": 14,
+                "Scale": [
+                  {
+                    "Value": 0.14,
+                    "Type": "spirit"
+                  },
+                  {
+                    "Value": 1,
+                    "Type": "range"
+                  }
+                ]
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "SlowPercent",
+              "Name": "Move Speed",
+              "Value": 50,
+              "Type": "slow"
+            },
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 4,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "AbilityCastDelay",
+              "Name": "Cast Delay",
+              "Value": 0.3,
+              "Type": "cast"
+            }
+          ],
+          "DescKey": "citadel_ability_lash_ultimate_desc"
+        },
+        "Upgrades": [
+          {
+            "ThrowDistance": 12
+          },
+          {
+            "AbilityCooldown": -35
+          },
+          {
+            "StunDuration": 1.2,
+            "AbilityCastRange": 6,
+            "DescKey": "citadel_ability_lash_ultimate_t3_desc"
+          }
+        ],
+        "Cooldown": {
+          "TimeToGainLockonStack": {
+            "Name": null,
+            "Value": 0.7,
+            "Type": "cooldown"
+          }
+        },
+        "Range": {
+          "LockonConeAngle": {
+            "Name": null,
+            "Value": 40,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 6
+          },
+          "BoostTime": {
+            "Name": null,
+            "Value": 1
+          },
+          "HangTime": {
+            "Name": null,
+            "Value": 0.6
+          },
+          "ImpactRadius": {
+            "Name": "Impact Radius",
+            "Value": 6,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            }
+          },
+          "LiftHeight": {
+            "Name": null,
+            "Value": 6
+          },
+          "LosingLockGraceTime": {
+            "Name": null,
+            "Value": 0.4
+          },
+          "MaxLockonStacks": {
+            "Name": null,
+            "Value": 1
+          },
+          "NotInConeLosesLock": {
+            "Name": null,
+            "Value": 1
+          },
+          "SlamSpeed": {
+            "Name": null,
+            "Value": 1600
+          },
+          "ThrowStraightDuration": {
+            "Name": null,
+            "Value": 1.5
+          },
+          "TimeToLoseLockonStack": {
+            "Name": null,
+            "Value": 2
+          },
+          "UpBoostSpeed": {
+            "Name": null,
+            "Value": 400
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.3,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 2.3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 170,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_lash_ultimate_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Focus on enemies to connect whips to them. After channeling, connected enemies are <span class=\"highlight\">lifted and stunned</span> then slammed into the ground. Your victims and any enemies in the landing zone will be <span class=\"highlight\">damaged and slowed</span>. <br>Press{g:citadel_binding:'Attack'}to throw connected enemies early. Enemies that are not in line of sight or go out of range during the latch time will not be grabbed.",
+          "plain_text": "Focus on enemies to connect whips to them. After channeling, connected enemies are lifted and stunned then slammed into the ground. Your victims and any enemies in the landing zone will be damaged and slowed.\nPress [Attack] to throw connected enemies early. Enemies that are not in line of sight or go out of range during the latch time will not be grabbed."
+        },
+        {
+          "localization_key": "citadel_ability_lash_ultimate_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Stun</span> enemies in Radius for 1.2s<br><span class=\"highlight\">+6m</span> Cast Range",
+          "plain_text": "Stun enemies in Radius for 1.2s\n+6m Cast Range"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.47,
+    "AirDashSpeed": 17,
+    "BaseHealthRegen": 2,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.68,
+    "GroundDashSpeed": 14.7,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.31,
+      "MaxHealth": 50,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 1.8076,
+      "SustainedDPS": 1.2276
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_lash_lore",
+    "MaxHealth": 780,
+    "MaxMoveSpeed": 7.2,
+    "MoveAcceleration": 4,
+    "Name": "Lash",
+    "Playstyle": "hero_lash_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_lash_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 2.1,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "TechResist": 10,
+    "Type": "Assassin",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

@@ -1,0 +1,598 @@
+{
+  "schema_version": 1,
+  "id": "item.slowing-hex",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Slowing Hex",
+    "numeric_id": 1813726886,
+    "internal_key": "upgrade_containment",
+    "aliases": [
+      "upgrade_containment"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "spirit",
+    "tier": 2,
+    "activation": "press",
+    "is_active_item": true,
+    "is_imbue": false,
+    "shop_filters": [
+      "Movement",
+      "Disruption",
+      "MagicDamage"
+    ],
+    "target_types": [
+      "HeroEnemy"
+    ]
+  },
+  "purchase": {
+    "cost_souls": 1600,
+    "component_internal_keys": []
+  },
+  "description_plain": "Slows movement of enemy target. Also Silences their movement-based items and abilities. Increases the target's gravity. Does not affect target's stamina usage.",
+  "displayed_effects": [
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "BonusSprintSpeed",
+      "label": "Sprint Speed",
+      "value": "0.5m",
+      "property": {
+        "value": "0.5m",
+        "provided_property_type": "MODIFIER_VALUE_SPRINT_SPEED_BONUS",
+        "css_class": "move_speed",
+        "prefix": "{s:sign}",
+        "label": "Sprint Speed",
+        "postfix": "m",
+        "postvalue_label": "Sprint Speed",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "AbilityCastRange",
+      "label": "Cast Range",
+      "value": "25m",
+      "property": {
+        "value": "25m",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "AbilityDuration",
+      "label": "Duration",
+      "value": "3.5s",
+      "property": {
+        "value": "3.5",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "AbilityCooldown",
+      "label": "Cooldown",
+      "value": "27s",
+      "property": {
+        "value": "27",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "SlowPercent",
+      "label": "Move Speed",
+      "value": "20%",
+      "property": {
+        "value": "20",
+        "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
+        "css_class": "slow",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "-",
+        "label": "Move Speed",
+        "postfix": "%",
+        "postvalue_label": "Move Speed",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "GroundDashReductionPercent",
+      "label": "Dash Distance",
+      "value": "-30%",
+      "property": {
+        "value": "-30",
+        "provided_property_type": "MODIFIER_VALUE_MOVEMENT_GROUND_DASH_REDUCTION_PERCENT",
+        "css_class": "slow",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "label": "Dash Distance",
+        "postfix": "%",
+        "postvalue_label": "Dash Distance",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "SlowPercent",
+          "bonus": "10"
+        },
+        {
+          "name": "AbilityCooldown",
+          "bonus": "-18"
+        },
+        {
+          "name": "GroundDashReductionPercent",
+          "bonus": "-6"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 1813726886,
+    "class_name": "upgrade_containment",
+    "name": "Slowing Hex",
+    "start_trained": true,
+    "heroes": [],
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "spirit",
+    "item_tier": 2,
+    "properties": {
+      "AbilityCooldown": {
+        "value": "27",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityDuration": {
+        "value": "3.5",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityCastRange": {
+        "value": "25m",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0.1",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "SlowPercent": {
+        "value": "20",
+        "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
+        "css_class": "slow",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "-",
+        "label": "Move Speed",
+        "postfix": "%",
+        "postvalue_label": "Move Speed",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "GroundDashReductionPercent": {
+        "value": "-30",
+        "provided_property_type": "MODIFIER_VALUE_MOVEMENT_GROUND_DASH_REDUCTION_PERCENT",
+        "css_class": "slow",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "label": "Dash Distance",
+        "postfix": "%",
+        "postvalue_label": "Dash Distance",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "BonusSprintSpeed": {
+        "value": "0.5m",
+        "provided_property_type": "MODIFIER_VALUE_SPRINT_SPEED_BONUS",
+        "css_class": "move_speed",
+        "prefix": "{s:sign}",
+        "label": "Sprint Speed",
+        "postfix": "m",
+        "postvalue_label": "Sprint Speed",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    "description": {
+      "desc": "<span class=\"highlight\">Slows movement</span> of enemy target. Also <span class=\"highlight\">Silences</span> their <span class=\"highlight\">movement-based items and abilities</span>.<br><span class=\"diminish\">Increases the target's gravity.<br>Does not affect target's stamina usage.</span>"
+    },
+    "activation": "press",
+    "tooltip_sections": [
+      {
+        "section_type": "innate",
+        "section_attributes": [
+          {
+            "properties": [
+              "BonusSprintSpeed"
+            ]
+          }
+        ]
+      },
+      {
+        "section_type": "active",
+        "section_attributes": [
+          {
+            "loc_string": "<span class=\"highlight\">Slows movement</span> of enemy target. Also <span class=\"highlight\">Silences</span> their <span class=\"highlight\">movement-based items and abilities</span>.<br><span class=\"diminish\">Increases the target's gravity.<br>Does not affect target's stamina usage.</span>",
+            "properties": [
+              "AbilityCastRange",
+              "AbilityDuration",
+              "AbilityCooldown"
+            ],
+            "important_properties": [
+              "SlowPercent",
+              "GroundDashReductionPercent"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "SlowPercent",
+            "bonus": "10"
+          },
+          {
+            "name": "AbilityCooldown",
+            "bonus": "-18"
+          },
+          {
+            "name": "GroundDashReductionPercent",
+            "bonus": "-6"
+          }
+        ]
+      }
+    ],
+    "is_active_item": true,
+    "shopable": true,
+    "cost": 1600
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Slowing Hex",
+    "Description": "<span class=\"highlight\">Slows movement</span> of enemy target. Also <span class=\"highlight\">Silences</span> their <span class=\"highlight\">movement-based items and abilities</span>.<br><span class=\"diminish\">Increases the target's gravity.<br>Does not affect target's stamina usage.</span>",
+    "Cost": 1600,
+    "Tier": 2,
+    "Activation": "Press",
+    "Slot": "Tech",
+    "Components": null,
+    "TargetTypes": [
+      "HeroEnemy"
+    ],
+    "ShopFilters": [
+      "Movement",
+      "Disruption",
+      "MagicDamage"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityCooldown": 27,
+    "AbilityDuration": 3.5,
+    "AbilityCastRange": "25m",
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCastDelay": 0.1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "SlowPercent": 20,
+    "GroundDashReductionPercent": -30,
+    "BonusSprintSpeed": "0.5m",
+    "PropertyUpgrades": {
+      "SlowPercent": 10,
+      "AbilityCooldown": -18,
+      "GroundDashReductionPercent": -6
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_containment",
+    "Name": "Slowing Hex",
+    "Description": "<span class=\"highlight\">Slows movement</span> of enemy target. Also <span class=\"highlight\">Silences</span> their <span class=\"highlight\">movement-based items and abilities</span>.<br><span class=\"diminish\">Increases the target's gravity.<br>Does not affect target's stamina usage.</span>",
+    "Cost": 1600,
+    "Tier": 2,
+    "Slot": "Tech",
+    "Activation": "Press",
+    "Components": null,
+    "TargetTypes": [
+      "HeroEnemy"
+    ],
+    "ShopFilters": [
+      "Movement",
+      "Disruption",
+      "MagicDamage"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Innate",
+      "DescKey": null,
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [],
+      "Alt": [
+        {
+          "Key": "BonusSprintSpeed",
+          "Value": "0.5m",
+          "Type": "move_speed"
+        }
+      ]
+    },
+    "Info2": {
+      "Type": "Active",
+      "DescKey": "#upgrade_containment_desc",
+      "Cooldown": 27,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "SlowPercent",
+          "Value": 20,
+          "Type": "slow",
+          "UsageFlags": "ConditionallyApplied"
+        },
+        {
+          "Key": "GroundDashReductionPercent",
+          "Value": -30,
+          "Type": "slow",
+          "UsageFlags": "ConditionallyApplied"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "AbilityCastRange",
+          "Value": "25m",
+          "Type": "range"
+        },
+        {
+          "Key": "AbilityDuration",
+          "Value": 3.5,
+          "Type": "duration"
+        }
+      ]
+    },
+    "Upgrades": {
+      "SlowPercent": 10,
+      "AbilityCooldown": -18,
+      "GroundDashReductionPercent": -6
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCastDelay": {
+        "Key": "AbilityCastDelay",
+        "Value": 0.1,
+        "Type": "cast"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

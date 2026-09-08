@@ -1,0 +1,173 @@
+schema_version: 1
+id: data.general.economy
+snapshot_id: deadlock-wiki-2026-09-03
+current_as_of: "2026-09-03"
+evidence_status: source_verified
+sources:
+  - wiki.souls.124122
+  - wiki.trooper.114174
+  - wiki.neutral.125766
+
+starting_souls: 600
+first_blood_bonus: 125
+
+bounties:
+  - entity: hero
+    base: 200
+    growth_per_minute: 50
+    cap: 2200
+    cap_at_minute: 40
+  - entity: trooper
+    base: 100
+    growth_per_minute: 2
+    ground_orb_fraction: 0.5
+    floating_orb_fraction: 0.5
+  - entity: neutral.small
+    base: 41
+    growth_per_minute: 0.44
+    unsecured: true
+  - entity: neutral.medium
+    base: 68
+    growth_per_minute: 0.73
+    unsecured: true
+  - entity: neutral.large
+    base: 181
+    growth_per_minute: 1.95
+    unsecured: true
+  - entity: mid-boss
+    base: 3000
+    growth_per_minute: 50
+    distribution: equal_team_split
+  - entity: sinners-sacrifice
+    base: 310
+    growth_per_minute: 3.35
+    unsecured: true
+  - entity: crate
+    base: 23
+    growth_per_minute: 2
+    drop_chance: 0.6
+    unsecured: true
+  - entity: unstable-rift
+    base: 1482
+    growth_per_minute: 222
+    growth_starts_at_minute: 13
+    distribution: equal_team_split
+  - entity: soul-urn
+    base: 250
+    growth_per_minute: 70
+    distribution: courier_and_orb_claimers
+  - entity: guardian
+    base: 1250
+    growth_per_minute: 0
+  - entity: walker
+    base: 3500
+    growth_per_minute: 0
+  - entity: base-guardian
+    base: 1000
+    growth_per_minute: 0
+  - entity: shrine
+    base: 2000
+    growth_per_minute: 0
+  - entity: patron
+    base: 0
+    growth_per_minute: 0
+
+structure_bounty_distribution:
+  nearby_allies_fraction: 0.3
+  teamwide_fraction: 0.7
+  nearby_allies_also_receive_teamwide_share: true
+
+trooper_sharing:
+  assist_condition: within_local_sharing_area
+  shares:
+    - players: 1
+      fraction_each: 1.0
+      fraction_total: 1.0
+    - players: 2
+      fraction_each: 0.54
+      fraction_total: 1.08
+    - players: 3
+      fraction_each: 0.36
+      fraction_total: 1.08
+    - players: 4
+      fraction_each: 0.25
+      fraction_total: 1.0
+    - players: 5
+      fraction_each: 0.20
+      fraction_total: 1.0
+    - players: 6
+      fraction_each: 0.16
+      fraction_total: 0.96
+
+hero_kill_sharing:
+  assist_damage_window_seconds: 10
+  killer_gets_additional_bonus_with_multiple_players: true
+  shares:
+    - players: 1
+      fraction_each: 1.25
+      fraction_total: 1.25
+    - players: 2
+      fraction_each: 0.57
+      fraction_total: 1.14
+    - players: 3
+      fraction_each: 0.28
+      fraction_total: 0.84
+    - players: 4
+      fraction_each: 0.17
+      fraction_total: 0.68
+    - players: 5
+      fraction_each: 0.11
+      fraction_total: 0.55
+    - players: 6
+      fraction_each: 0.08
+      fraction_total: 0.48
+
+soul_orbs:
+  local_sharing_distance_from_orb_meters: 45
+  local_sharing_distance_from_killer_meters: 30
+  floating_orb_auto_award_seconds: 1
+  floating_orb_ally_grace_period_seconds: 0.08
+  floating_orb_timing_is_approximate: true
+  ground_orb_initial_lifetime_seconds: 18
+  ground_orb_lifetime_after_10_minutes_seconds: 40
+  ground_orb_lifetime_transition: scales_to_later_value
+  claim_damage_required: any_positive_hit
+  bullet_or_pellet_refunded_on_claim: true
+
+soul_well:
+  starts_at_seconds: 180
+  soul_value_per_orb: 10
+  on_expire: equal_nearby_living_allies_split
+  on_confirm: full_value_to_confirming_player
+
+unsecured_souls:
+  sources:
+    - neutral
+    - sinners-sacrifice
+    - crate
+  counts_toward_level_progress: true
+  shop_spend_priority: after_secured
+  securing:
+    current_balance_fraction_per_second: 0.005
+    base_per_second_at_match_start: 1.6
+    base_growth_per_minute: 0.08
+  death_drop:
+    minimum_formula: 50 + 5 * match_minutes
+    container_lifetime_seconds: 180
+    claim_method: heavy_melee
+    below_minimum: permanently_lost
+
+team_comeback:
+  ignored_team_net_worth_difference: 3000
+  maximum_bonus_fraction: 0.26
+  maximum_at_net_worth_difference_fraction: 0.20
+  affected_sources:
+    - trooper
+    - neutral
+    - sinners-sacrifice
+    - objective
+
+individual_catch_up:
+  starts_at_seconds: 480
+  lowest_net_worth_player_fraction_of_team_souls_per_second: 0.025
+  second_lowest_net_worth_player_fraction_of_team_souls_per_second: 0.015

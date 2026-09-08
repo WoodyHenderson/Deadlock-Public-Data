@@ -1,0 +1,1061 @@
+{
+  "schema_version": 2,
+  "id": "hero.dynamo",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.dynamo.124881",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Dynamo",
+  "aliases": [],
+  "internal_hero_key": "hero_dynamo",
+  "hero_type": "Mystic",
+  "role_localization_key": "hero_dynamo_role",
+  "playstyle_localization_key": "hero_dynamo_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 880,
+    "health_regeneration_per_second": 1.75,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.7,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 13.9,
+      "distance_meters": 10,
+      "duration_seconds": 0.72
+    },
+    "air_dash": {
+      "speed_meters_per_second": 15.7,
+      "distance_meters": 8,
+      "duration_seconds": 0.51
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.5,
+    "MaxHealth": 61,
+    "PowerIncreases": 1,
+    "BulletResist": 0.625,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 1.9047,
+    "SustainedDPS": 1.3158
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 320,
+    "BulletDamage": 12.6,
+    "RoundsPerSecond": 3.8095,
+    "ClipSize": 20,
+    "ReloadTime": 2.35,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 57.51,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.8,
+    "BulletRadius": 0.1524,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 48,
+    "SustainedDPS": 33.158,
+    "NameKey": "citadel_weapon_hero_dynamo_set",
+    "DescKey": "citadel_weapon_hero_dynamo_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_MediumRange",
+      "Attribute_EWeaponAttribute_HeavyHitter",
+      "Attribute_EWeaponAttribute_Projectile"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Kinetic Pulse",
+      "internal_key": "citadel_ability_stomp",
+      "data": {
+        "AbilityCastDelay": 0.42,
+        "AbilityCharges": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 26,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorProjectilePassThroughWorld",
+          "BehaviorShowCastRangeAsSatSphereWhileCasting",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "BulletResistModifier": {
+          "Class": "StompDebuff",
+          "Subclass": "StompDebuff"
+        },
+        "ChannelMoveSpeed": 1.3,
+        "ClimbHeight": 1,
+        "Damage": {
+          "Value": 115,
+          "Scale": {
+            "Value": 1.55,
+            "Type": "spirit"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "SlowBase",
+          "Subclass": "DebuffModifier"
+        },
+        "DistanceAboveGround": 1,
+        "DropDownRate": 20,
+        "ImpactInterval": 0.1,
+        "IsDisabled": false,
+        "Key": "citadel_ability_stomp",
+        "Name": "Kinetic Pulse",
+        "StompRange": {
+          "Value": 16,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "StompWidth": 5.5,
+        "TechCleaveExpireTime": 0.2,
+        "TossDuration": 1,
+        "TossSpeed": 450,
+        "Upgrades": [
+          {
+            "AbilityCharges": 1
+          },
+          {
+            "BulletResistReduction": -15,
+            "SlowPercent": 30,
+            "SlowDuration": 4
+          },
+          {
+            "Damage": 135,
+            "StompRange": 20
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_stomp",
+        "Name": "Kinetic Pulse",
+        "DescKey": "citadel_ability_stomp_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 115,
+                "Scale": {
+                  "Value": 1.55,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "TossDuration",
+                "Name": "Duration",
+                "StatusEffect": "Displacement",
+                "Value": 1
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "StompRange",
+              "Name": "Pulse Range",
+              "Value": 16,
+              "Scale": {
+                "Value": 1,
+                "Type": "range"
+              },
+              "Type": "distance"
+            },
+            {
+              "Key": "StompWidth",
+              "Name": "Pulse Width",
+              "Value": 5.5,
+              "Type": "distance"
+            }
+          ],
+          "DescKey": "citadel_ability_stomp_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Hit:",
+                "Key": "BulletResistReduction",
+                "Name": "Bullet Resist",
+                "Value": 0,
+                "Type": "bullet_armor_down"
+              },
+              {
+                "Title": "On Hit:",
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 0,
+                "Type": "slow"
+              },
+              {
+                "Title": "On Hit:",
+                "Key": "SlowDuration",
+                "Name": "Slow Duration",
+                "Value": 0,
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Upgrades": [
+          {
+            "AbilityCharges": 1,
+            "DescKey": "citadel_ability_stomp_t1_desc"
+          },
+          {
+            "BulletResistReduction": -15,
+            "SlowPercent": 30,
+            "SlowDuration": 4,
+            "DescKey": "citadel_ability_stomp_t2_desc"
+          },
+          {
+            "Damage": 135,
+            "StompRange": 20,
+            "DescKey": "citadel_ability_stomp_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 1.3,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "ClimbHeight": {
+            "Name": null,
+            "Value": 1
+          },
+          "DistanceAboveGround": {
+            "Name": null,
+            "Value": 1
+          },
+          "DropDownRate": {
+            "Name": null,
+            "Value": 20
+          },
+          "ImpactInterval": {
+            "Name": null,
+            "Value": 0.1
+          },
+          "TechCleaveExpireTime": {
+            "Name": null,
+            "Value": 0.2
+          },
+          "TossSpeed": {
+            "Name": null,
+            "Value": 450
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.42,
+          "Type": "cast"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 26,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_stomp_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Release an energy pulse that travels along the ground, dealing {g:citadel_inline_attribute:'SpiritDamage'} and applying {g:citadel_inline_attribute:'KnockUp'}.",
+          "plain_text": "Release an energy pulse that travels along the ground, dealing spirit damage and applying knockup."
+        },
+        {
+          "localization_key": "citadel_ability_stomp_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+1</span> Charge",
+          "plain_text": "+1 Charge"
+        },
+        {
+          "localization_key": "citadel_ability_stomp_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On Hit: <span class=\"highlight\">-15%</span> Bullet Resist and <span class=\"highlight\">-30%</spawn> Move Speed<span class=\"highlight\"> for 4s</span>",
+          "plain_text": "On Hit: -15% Bullet Resist and -30% Move Speed for 4s"
+        },
+        {
+          "localization_key": "citadel_ability_stomp_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+135</span> Damage and <span class=\"highlight\">+20m</span> Cast Range",
+          "plain_text": "+135 Damage and +20m Cast Range"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Quantum Entanglement",
+      "internal_key": "citadel_ability_void_sphere",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 1.4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AllyDistance": 13,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorPreventBotUsage",
+          "BehaviorAllowAltCast",
+          "BehaviorMovement",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "BubbleModifier": {
+          "Class": "VoidSphere",
+          "Subclass": "VoidSphere",
+          "StatusEffectPriority": 100,
+          "BuffModifier": {
+            "Class": "VoidsphereBuff",
+            "Subclass": "VoidsphereBuff"
+          }
+        },
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "citadel_ability_void_sphere",
+        "Name": "Quantum Entanglement",
+        "StaminaRestore": 1,
+        "TrailInterval": 0.01,
+        "Upgrades": [
+          {
+            "AbilityCastRange": 6
+          },
+          {
+            "AbilityCooldown": -6
+          },
+          {
+            "ReduceDebuffs": 50,
+            "ChargeReplenish": 1
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_void_sphere",
+        "Name": "Quantum Entanglement",
+        "DescKey": "citadel_ability_void_sphere_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "AbilityCastRange",
+                "Name": "Cast Range",
+                "Value": 10,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "range"
+                },
+                "Type": "range"
+              },
+              {
+                "Key": "AbilityDuration",
+                "Name": "Duration",
+                "Value": 1.4,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "StaminaRestore",
+              "Name": "Stamina Restored",
+              "Value": 1
+            },
+            {
+              "Key": "AllyDistance",
+              "Name": "Ally Distance",
+              "Value": 13,
+              "Type": "distance"
+            }
+          ],
+          "DescKey": "citadel_ability_void_sphere_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCastRange": 6
+          },
+          {
+            "AbilityCooldown": -6
+          },
+          {
+            "ReduceDebuffs": 50,
+            "ChargeReplenish": 1,
+            "DescKey": "citadel_ability_void_sphere_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "TrailInterval": {
+            "Name": null,
+            "Value": 0.01
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 1.4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_void_sphere_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Briefly become <span class=\"highlight\">untargetable</span> while teleporting to the target location. Restores stamina upon use. <br><br><span class=\"highlight\">{g:citadel_binding:'AltCast'}</span>: Bring nearby allies with you.",
+          "plain_text": "Briefly become untargetable while teleporting to the target location. Restores stamina upon use.\n[Alt Cast] : Bring nearby allies with you."
+        },
+        {
+          "localization_key": "citadel_ability_void_sphere_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Reduces non-ult debuffs by <span class=\"highlight\">50%</span><br>Replenishes <span class=\"highlight\">1</span> Charge",
+          "plain_text": "Reduces non-ult debuffs by 50%\nReplenishes 1 Charge"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Rejuvenating Aurora",
+      "internal_key": "citadel_ability_nikuman",
+      "data": {
+        "AbilityChannelTime": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 48,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "AuraLingerDuration": 1,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorNoTarget",
+          "BehaviorCanHealPlayers",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorRequireAbilityButtonToCancel",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "HealingPerSecond": {
+          "Value": 30,
+          "Scale": {
+            "Value": 0.4,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_nikuman",
+        "Name": "Rejuvenating Aurora",
+        "NikumanModifier": {
+          "Class": "Nikuman",
+          "Subclass": "Nikuman",
+          "ProvidedByAura": {
+            "Class": "Base",
+            "Subclass": "HealTarget"
+          }
+        },
+        "ShareWithFriendsRadius": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "Upgrades": [
+          {
+            "MovementSpeedBonus": 4,
+            "MovementSpeedBonusDuration": 8
+          },
+          {
+            "AbilityCooldown": -20,
+            "AbilityChannelTime": 1
+          },
+          {
+            "NoChannel": 1,
+            "HealMaxHealthPercent": 2.5
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_nikuman",
+        "Name": "Rejuvenating Aurora",
+        "DescKey": "citadel_ability_nikuman_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "HealingPerSecond",
+                "Name": "Health Restored",
+                "Value": 30,
+                "Scale": {
+                  "Value": 0.4,
+                  "Type": "spirit"
+                },
+                "Type": "healing"
+              },
+              {
+                "Key": "AbilityChannelTime",
+                "Name": "Channel Duration",
+                "Value": 5,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "cast"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "ShareWithFriendsRadius",
+              "Name": "Friendly Heal Radius",
+              "Value": 8,
+              "Scale": {
+                "Value": 1,
+                "Type": "radius"
+              },
+              "Type": "distance"
+            }
+          ],
+          "DescKey": "citadel_ability_nikuman_desc"
+        },
+        "Upgrades": [
+          {
+            "MovementSpeedBonus": 4,
+            "MovementSpeedBonusDuration": 8,
+            "DescKey": "citadel_ability_nikuman_t1_desc"
+          },
+          {
+            "AbilityCooldown": -20,
+            "AbilityChannelTime": 1,
+            "DescKey": "citadel_ability_nikuman_t2_desc"
+          },
+          {
+            "NoChannel": 1,
+            "HealMaxHealthPercent": 2.5,
+            "DescKey": "citadel_ability_nikuman_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AuraLingerDuration": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 48,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_nikuman_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "While channeling, <span class=\"highlight\">restore health over time</span> to you and any allies nearby.<br><span class=\"diminish\">You can dash and melee without breaking the channel.</span>",
+          "plain_text": "While channeling, restore health over time to you and any allies nearby.\nYou can dash and melee without breaking the channel."
+        },
+        {
+          "localization_key": "citadel_ability_nikuman_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Aura provides +4m Move Speed during channel",
+          "plain_text": "Aura provides +4m Move Speed during channel"
+        },
+        {
+          "localization_key": "citadel_ability_nikuman_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "-20 Cooldown and +1s Duration",
+          "plain_text": "-20 Cooldown and +1s Duration"
+        },
+        {
+          "localization_key": "citadel_ability_nikuman_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Full move and ability use</span> and additionally heals <span class=\"highlight\">+2.5% of Max Health</span> per second",
+          "plain_text": "Full move and ability use and additionally heals +2.5% of Max Health per second"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Singularity",
+      "internal_key": "citadel_ability_self_vacuum",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityChannelTime": {
+          "Value": 2.75,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 250,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorExclusiveUse",
+          "BehaviorCastableWhileBusy",
+          "BehaviorInterruptMeleeOnCast",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "CameraDistance": 400,
+        "DPS": {
+          "Value": 75,
+          "Scale": {
+            "Value": 0.28,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_self_vacuum",
+        "Name": "Singularity",
+        "Speed": 5.08,
+        "TickRate": 0.25,
+        "TossAngle": 45,
+        "TossSpeed": 8.89,
+        "Upgrades": [
+          {
+            "VacuumRadius": 2
+          },
+          {
+            "AbilityChannelTime": 0.75
+          },
+          {
+            "DPSPercentHealth": 6
+          }
+        ],
+        "VacuumAuraModifier": {
+          "Class": "Vacuumaura",
+          "Subclass": "Vacuumaura",
+          "ProvidedByAura": {
+            "Class": "VacuumauraTarget",
+            "Subclass": "VacuumauraTarget",
+            "EnabledStateMask": [
+              "ModNoCleanse"
+            ],
+            "OuterSpeedScale": 10,
+            "StatusEffectPriority": 60
+          },
+          "StatusEffectPriority": 0
+        },
+        "VacuumRadius": {
+          "Value": 7,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        }
+      },
+      "card": {
+        "Key": "citadel_ability_self_vacuum",
+        "Name": "Singularity",
+        "DescKey": "citadel_ability_self_vacuum_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "DPS",
+                "Name": "Damage Per Second",
+                "Value": 75,
+                "Scale": {
+                  "Value": 0.28,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "DPSPercentHealth",
+                "Name": "Max Health as Damage",
+                "Value": 0,
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "VacuumRadius",
+              "Name": "Singularity Radius",
+              "Value": 7,
+              "Scale": {
+                "Value": 1,
+                "Type": "radius"
+              },
+              "Type": "distance"
+            },
+            {
+              "Key": "AbilityChannelTime",
+              "Name": "Channel Duration",
+              "Value": 2.75,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "cast"
+            }
+          ],
+          "DescKey": "citadel_ability_self_vacuum_desc"
+        },
+        "Upgrades": [
+          {
+            "VacuumRadius": 2
+          },
+          {
+            "AbilityChannelTime": 0.75
+          },
+          {
+            "DPSPercentHealth": 6
+          }
+        ],
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "CameraDistance": {
+            "Name": null,
+            "Value": 400
+          },
+          "Speed": {
+            "Name": null,
+            "Value": 5.08
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.25
+          },
+          "TossAngle": {
+            "Name": null,
+            "Value": 45
+          },
+          "TossSpeed": {
+            "Name": null,
+            "Value": 8.89
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 2.75,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 250,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_self_vacuum_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Create a singularity in your hands, dealing <{g:citadel_inline_attribute:'SpiritDPS'}, applying {g:citadel_inline_attribute:'Stun'}, and <span class=\"highlight\">pulling</span> in nearby enemies.",
+          "plain_text": "Create a singularity in your hands, dealing spirit damage over time, applying stun, and pulling in nearby enemies."
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.51,
+    "AirDashSpeed": 15.7,
+    "BaseHealthRegen": 1.75,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.72,
+    "GroundDashSpeed": 13.9,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.5,
+      "MaxHealth": 61,
+      "PowerIncreases": 1,
+      "BulletResist": 0.625,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 1.9047,
+      "SustainedDPS": 1.3158
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_dynamo_lore",
+    "MaxHealth": 880,
+    "MaxMoveSpeed": 6.7,
+    "MoveAcceleration": 4,
+    "Name": "Dynamo",
+    "Playstyle": "hero_dynamo_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_dynamo_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.6,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Mystic",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

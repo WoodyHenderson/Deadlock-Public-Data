@@ -1,0 +1,697 @@
+{
+  "schema_version": 1,
+  "id": "item.magic-carpet",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Magic Carpet",
+    "numeric_id": 2800629741,
+    "internal_key": "upgrade_magic_carpet",
+    "aliases": [
+      "upgrade_magic_carpet"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "spirit",
+    "tier": 4,
+    "activation": "instant_cast",
+    "is_active_item": true,
+    "is_imbue": false,
+    "shop_filters": [
+      "Movement"
+    ],
+    "target_types": null
+  },
+  "purchase": {
+    "cost_souls": 6400,
+    "component_internal_keys": []
+  },
+  "description_plain": "Summon a Magic Carpet that will fly you away. While flying you are immune to slows and doing any action will dismiss the carpet. Cannot use abilities while the carpet is being summoned.",
+  "displayed_effects": [
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "BonusAbilityDurationPercent",
+      "label": "Ability Duration",
+      "value": "15%",
+      "property": {
+        "value": "15",
+        "provided_property_type": "MODIFIER_VALUE_BONUS_ABILITY_DURATION_PERCENTAGE",
+        "css_class": "duration",
+        "prefix": "{s:sign}",
+        "label": "Ability Duration",
+        "postfix": "%",
+        "postvalue_label": "Ability Duration",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "BonusHealth",
+      "label": "Bonus Health",
+      "value": "125",
+      "property": {
+        "value": "125",
+        "provided_property_type": "MODIFIER_VALUE_HEALTH_MAX",
+        "css_class": "health",
+        "prefix": "{s:sign}",
+        "label": "Bonus Health",
+        "postvalue_label": "Bonus Health",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "TechPower",
+      "label": "Spirit Power",
+      "value": "14",
+      "property": {
+        "value": "14",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "GravityScale",
+      "label": "Gravity Scale",
+      "value": "-15%",
+      "property": {
+        "value": "-15",
+        "label": "Gravity Scale",
+        "postfix": "%",
+        "postvalue_label": "Gravity Scale",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "AirControlPercent",
+      "label": "Air Control",
+      "value": "25%",
+      "property": {
+        "value": "25",
+        "provided_property_type": "MODIFIER_VALUE_AIR_CONTROL_PERCENT",
+        "css_class": "move_speed",
+        "prefix": "{s:sign}",
+        "label": "Air Control",
+        "postfix": "%",
+        "postvalue_label": "Air Control",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "FlyMoveSpeed",
+      "label": "Bonus Fly Speed",
+      "value": "7m",
+      "property": {
+        "value": "7m",
+        "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_MAX",
+        "css_class": "move_speed",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "loc_token_override": "MagicCarpetMoveSpeed",
+        "display_units": "EDisplayUnit_Meters",
+        "prefix": "+",
+        "label": "Bonus Fly Speed",
+        "postfix": "m",
+        "postvalue_label": "Bonus Fly Speed",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "SummonDuration",
+      "label": "Summon Duration",
+      "value": "1.3s",
+      "property": {
+        "value": "1.3",
+        "label": "Summon Duration",
+        "postfix": "s",
+        "postvalue_label": "Summon Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "AbilityDuration",
+      "label": "Duration",
+      "value": "12s",
+      "property": {
+        "value": "12",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "TechPower",
+          "bonus": "46"
+        },
+        {
+          "name": "AbilityDuration",
+          "bonus": "8"
+        },
+        {
+          "name": "BonusAbilityDurationPercent",
+          "bonus": "15"
+        },
+        {
+          "name": "FlyMoveSpeed",
+          "bonus": "6m"
+        },
+        {
+          "name": "SummonDuration",
+          "bonus": "-0.3"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 2800629741,
+    "class_name": "upgrade_magic_carpet",
+    "name": "Magic Carpet",
+    "start_trained": true,
+    "heroes": [],
+    "update_time": 1723600790,
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "spirit",
+    "item_tier": 4,
+    "properties": {
+      "AbilityCooldown": {
+        "value": 32.0,
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown"
+      },
+      "AbilityDuration": {
+        "value": "12",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0.2",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "14",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "SummonDuration": {
+        "value": "1.3",
+        "label": "Summon Duration",
+        "postfix": "s",
+        "postvalue_label": "Summon Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "FlyMoveSpeed": {
+        "value": "7m",
+        "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_MAX",
+        "css_class": "move_speed",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "loc_token_override": "MagicCarpetMoveSpeed",
+        "display_units": "EDisplayUnit_Meters",
+        "prefix": "+",
+        "label": "Bonus Fly Speed",
+        "postfix": "m",
+        "postvalue_label": "Bonus Fly Speed",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "BonusAbilityDurationPercent": {
+        "value": "15",
+        "provided_property_type": "MODIFIER_VALUE_BONUS_ABILITY_DURATION_PERCENTAGE",
+        "css_class": "duration",
+        "prefix": "{s:sign}",
+        "label": "Ability Duration",
+        "postfix": "%",
+        "postvalue_label": "Ability Duration",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "TechRangeMultiplier": {
+        "provided_property_type": "MODIFIER_VALUE_TECH_RANGE_PERCENT",
+        "css_class": "distance",
+        "prefix": "{s:sign}",
+        "label": "Ability Range",
+        "postfix": "%",
+        "postvalue_label": "Ability Range"
+      },
+      "TechRadiusMultiplier": {
+        "provided_property_type": "MODIFIER_VALUE_TECH_RADIUS_PERCENT",
+        "css_class": "distance",
+        "prefix": "{s:sign}",
+        "label": "Radius",
+        "postfix": "%",
+        "postvalue_label": "Radius"
+      },
+      "AirControlPercent": {
+        "value": "25",
+        "provided_property_type": "MODIFIER_VALUE_AIR_CONTROL_PERCENT",
+        "css_class": "move_speed",
+        "prefix": "{s:sign}",
+        "label": "Air Control",
+        "postfix": "%",
+        "postvalue_label": "Air Control",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AirControlAccelPercent": {
+        "value": "0",
+        "provided_property_type": "MODIFIER_VALUE_AIR_CONTROL_ACCEL_PERCENT",
+        "css_class": "move_speed",
+        "prefix": "{s:sign}",
+        "label": "Air Acceleration",
+        "postfix": "%",
+        "postvalue_label": "Air Acceleration"
+      },
+      "GravityScale": {
+        "value": "-15",
+        "label": "Gravity Scale",
+        "postfix": "%",
+        "postvalue_label": "Gravity Scale",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "BonusHealth": {
+        "value": "125",
+        "provided_property_type": "MODIFIER_VALUE_HEALTH_MAX",
+        "css_class": "health",
+        "prefix": "{s:sign}",
+        "label": "Bonus Health",
+        "postvalue_label": "Bonus Health",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    "description": {
+      "desc": "Summon a Magic Carpet that will <span class=\"highlight\">fly</span> you away. While flying you are immune to slows and doing any action will dismiss the carpet. <span class=\"diminish\"><br>Cannot use abilities while the carpet is being summoned.</span>"
+    },
+    "activation": "instant_cast",
+    "tooltip_sections": [
+      {
+        "section_type": "innate",
+        "section_attributes": [
+          {
+            "properties": [
+              "BonusAbilityDurationPercent",
+              "BonusHealth",
+              "TechPower",
+              "GravityScale",
+              "AirControlPercent"
+            ]
+          }
+        ]
+      },
+      {
+        "section_type": "active",
+        "section_attributes": [
+          {
+            "loc_string": "Summon a Magic Carpet that will <span class=\"highlight\">fly</span> you away. While flying you are immune to slows and doing any action will dismiss the carpet. <span class=\"diminish\"><br>Cannot use abilities while the carpet is being summoned.</span>",
+            "properties": [
+              "FlyMoveSpeed",
+              "SummonDuration"
+            ],
+            "important_properties": [
+              "AbilityDuration"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "TechPower",
+            "bonus": "46"
+          },
+          {
+            "name": "AbilityDuration",
+            "bonus": "8"
+          },
+          {
+            "name": "BonusAbilityDurationPercent",
+            "bonus": "15"
+          },
+          {
+            "name": "FlyMoveSpeed",
+            "bonus": "6m"
+          },
+          {
+            "name": "SummonDuration",
+            "bonus": "-0.3"
+          }
+        ]
+      }
+    ],
+    "is_active_item": true,
+    "shopable": true,
+    "cost": 6400
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Magic Carpet",
+    "Description": "Summon a Magic Carpet that will <span class=\"highlight\">fly</span> you away. While flying you are immune to slows and doing any action will dismiss the carpet. <span class=\"diminish\"><br>Cannot use abilities while the carpet is being summoned.</span>",
+    "Cost": 6400,
+    "Tier": 4,
+    "Activation": "InstantCast",
+    "Slot": "Tech",
+    "Components": null,
+    "TargetTypes": null,
+    "ShopFilters": [
+      "Movement"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityCooldown": 32.0,
+    "AbilityDuration": 12,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCastDelay": 0.2,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "TechPower": 14,
+    "SummonDuration": 1.3,
+    "FlyMoveSpeed": "7m",
+    "BonusAbilityDurationPercent": 15,
+    "AirControlPercent": 25,
+    "GravityScale": -15,
+    "BonusHealth": 125,
+    "PropertyUpgrades": {
+      "TechPower": 46,
+      "AbilityDuration": 8,
+      "BonusAbilityDurationPercent": 15,
+      "FlyMoveSpeed": "6m",
+      "SummonDuration": -0.3
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_magic_carpet",
+    "Name": "Magic Carpet",
+    "Description": "Summon a Magic Carpet that will <span class=\"highlight\">fly</span> you away. While flying you are immune to slows and doing any action will dismiss the carpet. <span class=\"diminish\"><br>Cannot use abilities while the carpet is being summoned.</span>",
+    "Cost": 6400,
+    "Tier": 4,
+    "Slot": "Tech",
+    "Activation": "InstantCast",
+    "Components": null,
+    "TargetTypes": null,
+    "ShopFilters": [
+      "Movement"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Innate",
+      "DescKey": null,
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [],
+      "Alt": [
+        {
+          "Key": "BonusAbilityDurationPercent",
+          "Value": 15,
+          "Type": "duration"
+        },
+        {
+          "Key": "BonusHealth",
+          "Value": 125,
+          "Type": "health"
+        },
+        {
+          "Key": "TechPower",
+          "Value": 14
+        },
+        {
+          "Key": "GravityScale",
+          "Value": -15
+        },
+        {
+          "Key": "AirControlPercent",
+          "Value": 25,
+          "Type": "move_speed"
+        }
+      ]
+    },
+    "Info2": {
+      "Type": "Active",
+      "DescKey": "#upgrade_magic_carpet_desc",
+      "Cooldown": 32.0,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "AbilityDuration",
+          "Value": 12,
+          "Type": "duration"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "FlyMoveSpeed",
+          "Value": "7m",
+          "Type": "move_speed",
+          "UsageFlags": "ConditionallyApplied",
+          "LocTokenOverride": "MagicCarpetMoveSpeed"
+        },
+        {
+          "Key": "SummonDuration",
+          "Value": 1.3
+        }
+      ]
+    },
+    "Upgrades": {
+      "TechPower": 46,
+      "AbilityDuration": 8,
+      "BonusAbilityDurationPercent": 15,
+      "FlyMoveSpeed": "6m",
+      "SummonDuration": -0.3
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCastDelay": {
+        "Key": "AbilityCastDelay",
+        "Value": 0.2,
+        "Type": "cast"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

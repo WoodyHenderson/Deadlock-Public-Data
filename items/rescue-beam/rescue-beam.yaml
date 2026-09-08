@@ -1,0 +1,688 @@
+{
+  "schema_version": 1,
+  "id": "item.rescue-beam",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Rescue Beam",
+    "numeric_id": 1804594021,
+    "internal_key": "upgrade_rescue_beam",
+    "aliases": [
+      "upgrade_rescue_beam"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "vitality",
+    "tier": 3,
+    "activation": "press",
+    "is_active_item": true,
+    "is_imbue": false,
+    "shop_filters": [
+      "MagicDamage",
+      "Durability",
+      "Healing",
+      "Movement"
+    ],
+    "target_types": [
+      "HeroFriendly"
+    ]
+  },
+  "purchase": {
+    "cost_souls": 3200,
+    "component_internal_keys": [
+      "upgrade_health_stimpak"
+    ]
+  },
+  "description_plain": "Heals a target allied hero and yourself for a percentage of Max Health. Once while healing, you can Pull the target towards you. Can be self-cast.",
+  "displayed_effects": [
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "BonusSprintSpeed",
+      "label": "Sprint Speed",
+      "value": "0.75m",
+      "property": {
+        "value": "0.75m",
+        "provided_property_type": "MODIFIER_VALUE_SPRINT_SPEED_BONUS",
+        "css_class": "move_speed",
+        "prefix": "{s:sign}",
+        "label": "Sprint Speed",
+        "postfix": "m",
+        "postvalue_label": "Sprint Speed",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "TechRangeMultiplier",
+      "label": "Ability Range",
+      "value": "6%",
+      "property": {
+        "value": "6",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RANGE_PERCENT",
+        "css_class": "distance",
+        "prefix": "{s:sign}",
+        "label": "Ability Range",
+        "postfix": "%",
+        "postvalue_label": "Ability Range",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "AbilityChannelTime",
+      "label": "Channel Duration",
+      "value": "2.5s",
+      "property": {
+        "value": "2.5",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "AbilityCastRange",
+      "label": "Cast Range",
+      "value": "35m",
+      "property": {
+        "value": "35m",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "AbilityCooldown",
+      "label": "Cooldown",
+      "value": "60.0s",
+      "property": {
+        "value": 60.0,
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "HealPercentAmount",
+      "label": "Heal Amount",
+      "value": "20%",
+      "property": {
+        "value": "20",
+        "css_class": "healing",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "HealPercentAmount_scale_function",
+          "specific_stat_scale_type": "EHealingOutput"
+        },
+        "label": "Heal Amount",
+        "postfix": "%",
+        "postvalue_label": "Heal Amount",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "BonusMoveSpeed",
+      "label": "Move Speed",
+      "value": "0m",
+      "property": {
+        "value": "0m",
+        "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_MAX",
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_Meters",
+        "prefix": "{s:sign}",
+        "label": "Move Speed",
+        "postfix": " m",
+        "postvalue_label": "Move Speed",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "TechRadiusMultiplier",
+          "bonus": "20"
+        },
+        {
+          "name": "TechRangeMultiplier",
+          "bonus": "20"
+        },
+        {
+          "name": "HealPercentAmount",
+          "bonus": "15"
+        },
+        {
+          "name": "AbilityCooldown",
+          "bonus": "-45"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 1804594021,
+    "class_name": "upgrade_rescue_beam",
+    "name": "Rescue Beam",
+    "start_trained": true,
+    "heroes": [],
+    "update_time": 1711137653,
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "vitality",
+    "item_tier": 3,
+    "properties": {
+      "AbilityCooldown": {
+        "value": 60.0,
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityDuration": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration"
+      },
+      "AbilityCastRange": {
+        "value": "35m",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "2.5",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "css_class": "tech_damage",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "HealPercentAmount": {
+        "value": "20",
+        "css_class": "healing",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "HealPercentAmount_scale_function",
+          "specific_stat_scale_type": "EHealingOutput"
+        },
+        "label": "Heal Amount",
+        "postfix": "%",
+        "postvalue_label": "Heal Amount",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "HealInterval": {
+        "value": "0.2",
+        "label": "Heal Interval",
+        "postfix": "s",
+        "postvalue_label": "Heal Interval"
+      },
+      "BonusMoveSpeed": {
+        "value": "0m",
+        "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_MAX",
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_Meters",
+        "prefix": "{s:sign}",
+        "label": "Move Speed",
+        "postfix": " m",
+        "postvalue_label": "Move Speed",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "BonusSprintSpeed": {
+        "value": "0.75m",
+        "provided_property_type": "MODIFIER_VALUE_SPRINT_SPEED_BONUS",
+        "css_class": "move_speed",
+        "prefix": "{s:sign}",
+        "label": "Sprint Speed",
+        "postfix": "m",
+        "postvalue_label": "Sprint Speed",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "SelfModifier": {
+        "value": "100",
+        "postfix": "%"
+      },
+      "TechRangeMultiplier": {
+        "value": "6",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RANGE_PERCENT",
+        "css_class": "distance",
+        "prefix": "{s:sign}",
+        "label": "Ability Range",
+        "postfix": "%",
+        "postvalue_label": "Ability Range",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "TechRadiusMultiplier": {
+        "value": "6",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RADIUS_PERCENT",
+        "css_class": "distance",
+        "prefix": "{s:sign}",
+        "label": "Radius",
+        "postfix": "%",
+        "postvalue_label": "Radius"
+      }
+    },
+    "description": {
+      "desc": "<span class=\"highlight\">Heals</span> a target allied hero and yourself for a percentage of <span class=\"highlight\">Max Health</span>. Once while healing, you can <span class=\"highlight\">Pull</span> the target towards you. Can be self-cast."
+    },
+    "activation": "press",
+    "component_items": [
+      "upgrade_health_stimpak"
+    ],
+    "tooltip_sections": [
+      {
+        "section_type": "innate",
+        "section_attributes": [
+          {
+            "properties": [
+              "BonusSprintSpeed",
+              "TechRangeMultiplier"
+            ]
+          }
+        ]
+      },
+      {
+        "section_type": "active",
+        "section_attributes": [
+          {
+            "loc_string": "<span class=\"highlight\">Heals</span> a target allied hero and yourself for a percentage of <span class=\"highlight\">Max Health</span>. Once while healing, you can <span class=\"highlight\">Pull</span> the target towards you. Can be self-cast.",
+            "properties": [
+              "AbilityChannelTime",
+              "AbilityCastRange",
+              "AbilityCooldown"
+            ],
+            "important_properties": [
+              "HealPercentAmount",
+              "BonusMoveSpeed"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "TechRadiusMultiplier",
+            "bonus": "20"
+          },
+          {
+            "name": "TechRangeMultiplier",
+            "bonus": "20"
+          },
+          {
+            "name": "HealPercentAmount",
+            "bonus": "15"
+          },
+          {
+            "name": "AbilityCooldown",
+            "bonus": "-45"
+          }
+        ]
+      }
+    ],
+    "is_active_item": true,
+    "shopable": true,
+    "cost": 3200
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Rescue Beam",
+    "Description": "<span class=\"highlight\">Heals</span> a target allied hero and yourself for a percentage of <span class=\"highlight\">Max Health</span>. Once while healing, you can <span class=\"highlight\">Pull</span> the target towards you. Can be self-cast.",
+    "Cost": 3200,
+    "Tier": 3,
+    "Activation": "Press",
+    "Slot": "Armor",
+    "Components": [
+      "upgrade_health_stimpak"
+    ],
+    "TargetTypes": [
+      "HeroFriendly"
+    ],
+    "ShopFilters": [
+      "MagicDamage",
+      "Durability",
+      "Healing",
+      "Movement"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityCooldown": 60.0,
+    "AbilityCastRange": "35m",
+    "AbilityUnitTargetLimit": 1,
+    "AbilityChannelTime": 2.5,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "HealPercentAmount": 20,
+    "HealInterval": 0.2,
+    "BonusMoveSpeed": "0m",
+    "BonusSprintSpeed": "0.75m",
+    "SelfModifier": 100,
+    "TechRangeMultiplier": 6,
+    "TechRadiusMultiplier": 6,
+    "PropertyUpgrades": {
+      "TechRadiusMultiplier": 20,
+      "TechRangeMultiplier": 20,
+      "HealPercentAmount": 15,
+      "AbilityCooldown": -45
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_rescue_beam",
+    "Name": "Rescue Beam",
+    "Description": "<span class=\"highlight\">Heals</span> a target allied hero and yourself for a percentage of <span class=\"highlight\">Max Health</span>. Once while healing, you can <span class=\"highlight\">Pull</span> the target towards you. Can be self-cast.",
+    "Cost": 3200,
+    "Tier": 3,
+    "Slot": "Armor",
+    "Activation": "Press",
+    "Components": [
+      "upgrade_health_stimpak"
+    ],
+    "TargetTypes": [
+      "HeroFriendly"
+    ],
+    "ShopFilters": [
+      "MagicDamage",
+      "Durability",
+      "Healing",
+      "Movement"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Innate",
+      "DescKey": null,
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [],
+      "Alt": [
+        {
+          "Key": "BonusSprintSpeed",
+          "Value": "0.75m",
+          "Type": "move_speed"
+        },
+        {
+          "Key": "TechRangeMultiplier",
+          "Value": 6,
+          "Type": "distance"
+        }
+      ]
+    },
+    "Info2": {
+      "Type": "Active",
+      "DescKey": "#upgrade_rescue_beam_desc",
+      "Cooldown": 60.0,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "HealPercentAmount",
+          "Value": 20,
+          "Type": "healing"
+        },
+        {
+          "Key": "BonusMoveSpeed",
+          "Value": "0m",
+          "Type": "move_speed"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "AbilityChannelTime",
+          "Value": 2.5,
+          "Type": "cast"
+        },
+        {
+          "Key": "AbilityCastRange",
+          "Value": "35m",
+          "Type": "range"
+        }
+      ]
+    },
+    "Upgrades": {
+      "TechRadiusMultiplier": 20,
+      "TechRangeMultiplier": 20,
+      "HealPercentAmount": 15,
+      "AbilityCooldown": -45
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      },
+      "HealInterval": {
+        "Key": "HealInterval",
+        "Value": 0.2
+      },
+      "SelfModifier": {
+        "Key": "SelfModifier",
+        "Value": 100
+      },
+      "TechRadiusMultiplier": {
+        "Key": "TechRadiusMultiplier",
+        "Value": 6,
+        "Type": "distance"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

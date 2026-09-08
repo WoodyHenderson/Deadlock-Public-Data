@@ -1,0 +1,1322 @@
+{
+  "schema_version": 2,
+  "id": "hero.paradox",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.paradox.125556",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Paradox",
+  "aliases": [],
+  "internal_hero_key": "hero_chrono",
+  "hero_type": "Marksman",
+  "role_localization_key": "hero_chrono_role",
+  "playstyle_localization_key": "hero_chrono_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 730,
+    "health_regeneration_per_second": 1,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.7,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 16.1,
+      "distance_meters": 10,
+      "duration_seconds": 0.62
+    },
+    "air_dash": {
+      "speed_meters_per_second": 18.6,
+      "distance_meters": 8,
+      "duration_seconds": 0.43
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.26,
+    "MaxHealth": 46,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 1.9652,
+    "SustainedDPS": 1.3203
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 525,
+    "BulletDamage": 6.8,
+    "RoundsPerSecond": 7.5586,
+    "ClipSize": 40,
+    "ReloadTime": 2.585,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 57.51,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.1,
+    "BulletRadius": 0.1016,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 5,
+    "BurstInterShotInterval": 0.0735,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 51.398,
+    "SustainedDPS": 34.531,
+    "NameKey": "citadel_weapon_hero_chrono_set",
+    "DescKey": "citadel_weapon_hero_chrono_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_BurstFire",
+      "Attribute_EWeaponAttribute_MediumRange"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Pulse Grenade",
+      "internal_key": "citadel_ability_chrono_pulse_grenade",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCooldown": {
+          "Value": 32,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 3.2,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorProjectileFiredAsBullet",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "DamageAmplificationPerStack": 4,
+        "DebuffDuration": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_chrono_pulse_grenade",
+        "MovementSlowDuration": {
+          "Value": 0.2,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "Name": "Pulse Grenade",
+        "PulseAreaModifier": {
+          "Class": "ChronoPulseGrenadePulseArea",
+          "Subclass": "ChronoPulseGrenadePulseArea",
+          "DebuffModifier": {
+            "Class": "ChronoPulseGrenadeDebuff",
+            "Subclass": "ChronoPulseGrenadeDebuff"
+          },
+          "SlowModifier": {
+            "Class": "PulsegrenadeTimeslow",
+            "Subclass": "Slow"
+          }
+        },
+        "PulseDamage": {
+          "Value": 35,
+          "Scale": {
+            "Value": 0.3,
+            "Type": "spirit"
+          }
+        },
+        "PulseInterval": 0.8,
+        "Radius": {
+          "Value": 5.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "RadiusIncreasePerPulse": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "SlowPercent": 20,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -12
+          },
+          {
+            "PulseDamage": {
+              "Value": 20,
+              "Scale": {
+                "Value": 0.5,
+                "Type": "spirit"
+              }
+            }
+          },
+          {
+            "DamageAmplificationPerStack": 4,
+            "AbilityDuration": 1.6
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_chrono_pulse_grenade",
+        "Name": "Pulse Grenade",
+        "DescKey": "citadel_ability_chrono_pulse_grenade_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "PulseDamage",
+                "Name": "Pulse Damage",
+                "Value": 35,
+                "Scale": {
+                  "Value": 0.3,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "DamageAmplificationPerStack",
+                "Name": "Bonus Damage per Stack",
+                "Value": 4,
+                "Type": "damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "RadiusIncreasePerPulse",
+              "Name": "Radius Per Pulse",
+              "Value": 1,
+              "Scale": {
+                "Value": 1,
+                "Type": "radius"
+              },
+              "Type": "distance"
+            },
+            {
+              "Key": "PulseInterval",
+              "Name": "Pulse Interval",
+              "Value": 0.8,
+              "Type": "duration"
+            },
+            {
+              "Key": "DebuffDuration",
+              "Name": "Debuff Duration",
+              "Value": 8,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "SlowPercent",
+              "Name": "Move Speed",
+              "Value": 20,
+              "Type": "slow"
+            },
+            {
+              "Key": "MovementSlowDuration",
+              "Name": "Slow Duration",
+              "Value": 0.2,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "citadel_ability_chrono_pulse_grenade_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -12
+          },
+          {
+            "PulseDamage": {
+              "Value": 20,
+              "Scale": {
+                "Value": 0.5,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "citadel_ability_chrono_pulse_grenade_t2_desc"
+          },
+          {
+            "DamageAmplificationPerStack": 4,
+            "AbilityDuration": 1.6,
+            "DescKey": "citadel_ability_chrono_pulse_grenade_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 32,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 3.2,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 5.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_chrono_pulse_grenade_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Throw a grenade that begins pulsing when it lands. Each pulse expands the radius and applies {g:citadel_inline_attribute:'SpiritDamage'}, <span class=\"highlight\">time slow, and stacking </span>{g:citadel_inline_attribute:'DamageAmp'} for Paradox against the victim.",
+          "plain_text": "Throw a grenade that begins pulsing when it lands. Each pulse expands the radius and applies spirit damage, time slow, and stacking increased damage for Paradox against the victim."
+        },
+        {
+          "localization_key": "citadel_ability_chrono_pulse_grenade_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+20</span> Pulse Damage and increased Spirit scaling",
+          "plain_text": "+20 Pulse Damage and increased Spirit scaling"
+        },
+        {
+          "localization_key": "citadel_ability_chrono_pulse_grenade_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+4%</span> Damage Amp and <span class=\"highlight\">+1.6s</span> Duration",
+          "plain_text": "+4% Damage Amp and +1.6s Duration"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Time Wall",
+      "internal_key": "citadel_ability_chrono_time_wall",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCastRange": {
+          "Value": 5.08,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityDuration": {
+          "Value": 5.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AuraEffectDuration": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AuraModifier": {
+          "Class": "CitadelChronoTimeWallAura",
+          "Subclass": "CitadelChronoTimeWallAura",
+          "ProvidedByAura": {
+            "Class": "CitadelChronoTimeWallEffect",
+            "Subclass": "CitadelChronoTimeWallEffect"
+          },
+          "DebuffModifier": {
+            "Class": "CitadelSilenced",
+            "Subclass": "CitadelSilenced"
+          },
+          "AuraRadius": 0.001
+        },
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCanCancelDuringCastDelay",
+          "BehaviorCanSetQuickCast"
+        ],
+        "ChannelMoveSpeed": 1.3,
+        "FriendlyBulletDamageBonus": 30,
+        "IsDisabled": false,
+        "Key": "citadel_ability_chrono_time_wall",
+        "MovementSlowPct": 80,
+        "Name": "Time Wall",
+        "TimeScaleDuration": 0.5,
+        "TimeWallDepth": 0.5,
+        "TimeWallDepthVisualScale": 0.16,
+        "TimeWallFormationTime": 0.5,
+        "TimeWallHeight": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "TimeWallTimeScale": 0.0001,
+        "TimeWallTimeScaleFriendly": 2,
+        "TimeWallWidth": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "Upgrades": [
+          {
+            "TimeWallWidth": 3,
+            "TimeWallHeight": 1,
+            "AbilityDuration": 3.5
+          },
+          {
+            "FriendlyBulletDamageBonus": 35,
+            "DebuffDuration": 2.3
+          },
+          {
+            "AbilityCharges": 3,
+            "AbilityCooldownBetweenCharge": 2
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_chrono_time_wall",
+        "Name": "Time Wall",
+        "DescKey": "citadel_ability_chrono_time_wall_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "DebuffDuration",
+                "Name": "Debuff Duration",
+                "Value": 0
+              },
+              {
+                "Key": "MovementSlowPct",
+                "Name": "Movement Slow",
+                "Value": 80,
+                "Type": "slow"
+              },
+              {
+                "Key": "TimeScaleDuration",
+                "Name": "Time Stop Duration",
+                "Value": 0.5,
+                "Type": "duration"
+              },
+              {
+                "Key": "FriendlyBulletDamageBonus",
+                "Name": "Ally Weapon Damage",
+                "Value": 30,
+                "Type": "bullet_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "TimeWallWidth",
+              "Name": "Wall Width",
+              "Value": 8,
+              "Scale": {
+                "Value": 1,
+                "Type": "range"
+              },
+              "Type": "range"
+            },
+            {
+              "Key": "TimeWallHeight",
+              "Name": "Wall Height",
+              "Value": 4,
+              "Scale": {
+                "Value": 1,
+                "Type": "range"
+              }
+            },
+            {
+              "Key": "TimeWallTimeScaleFriendly",
+              "Name": "Ally Bullet Speed",
+              "Value": 2
+            }
+          ],
+          "DescKey": "citadel_ability_chrono_time_wall_desc"
+        },
+        "Upgrades": [
+          {
+            "TimeWallWidth": 3,
+            "TimeWallHeight": 1,
+            "AbilityDuration": 3.5,
+            "DescKey": "citadel_ability_chrono_time_wall_t1_desc"
+          },
+          {
+            "FriendlyBulletDamageBonus": 35,
+            "DebuffDuration": 2.3,
+            "DescKey": "citadel_ability_chrono_time_wall_t2_desc"
+          },
+          {
+            "AbilityCharges": 3,
+            "AbilityCooldownBetweenCharge": 2,
+            "DescKey": "citadel_ability_chrono_time_wall_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 1.3,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AuraEffectDuration": {
+            "Name": null,
+            "Value": 2,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            }
+          },
+          "TimeWallDepth": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "TimeWallDepthVisualScale": {
+            "Name": null,
+            "Value": 0.16
+          },
+          "TimeWallFormationTime": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "TimeWallTimeScale": {
+            "Name": null,
+            "Value": 0.0001
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 5.08,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 5.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_chrono_time_wall_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Create a time warping wall that <span class=\"highlight\">stops time</span> for all <span class=\"highlight\">enemy projectiles and bullets</span> that touch it and increases the <span class=\"highlight\">speed and damage</span> of friendly bullets.  <br><br>Enemies that touch the wall will be briefly <span class=\"highlight\">slowed</span> and <span class=\"highlight\">silenced</span> .",
+          "plain_text": "Create a time warping wall that stops time for all enemy projectiles and bullets that touch it and increases the speed and damage of friendly bullets.\nEnemies that touch the wall will be briefly slowed and silenced ."
+        },
+        {
+          "localization_key": "citadel_ability_chrono_time_wall_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+3.5s</span> Duration <br><span class=\"highlight\">+3m</span> Width<br><span class=\"highlight\">+1m</span> Height",
+          "plain_text": "+3.5s Duration\n+3m Width\n+1m Height"
+        },
+        {
+          "localization_key": "citadel_ability_chrono_time_wall_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">2.3s</span> Silence Duration <br><span class=\"highlight\">+35%</span> Weapon Damage",
+          "plain_text": "2.3s Silence Duration\n+35% Weapon Damage"
+        },
+        {
+          "localization_key": "citadel_ability_chrono_time_wall_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+2</span> Ability Charges",
+          "plain_text": "+2 Ability Charges"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Kinetic Carbine",
+      "internal_key": "citadel_ability_chrono_kinetic_carbine",
+      "data": {
+        "AbilityCooldown": {
+          "Value": 28,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "AirMoveIncreasePercent": 20,
+        "BehaviourBits": [
+          "BehaviorDontBreakInvisibility",
+          "BehaviorDontInterruptSprint",
+          "BehaviorCastableWhileBusy",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact"
+        ],
+        "BonusBulletSpeed": 100,
+        "BulletRadiusOverride": 16,
+        "BulletTimeScale": 0.01,
+        "ChannelMoveSpeed": -1,
+        "ChargingModifier": {
+          "Class": "ChronoKineticCarbine",
+          "Subclass": "ChronoKineticCarbine"
+        },
+        "DebuffModifier": {
+          "Class": "ChronoKineticCarbineSlow",
+          "Subclass": "ChronoKineticCarbineSlow",
+          "StatusEffectPriority": 50
+        },
+        "HeadshotBonus": 14,
+        "IsDisabled": false,
+        "Key": "citadel_ability_chrono_kinetic_carbine",
+        "MaxBonusBulletDamage": {
+          "Value": 5,
+          "Scale": {
+            "Value": 125,
+            "Type": "weapon_power"
+          }
+        },
+        "MaxChargeDuration": 2.5,
+        "MaxSlowDuration": {
+          "Value": 0.4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "MinBonusBulletDamage": {
+          "Value": 5,
+          "Scale": {
+            "Value": 25,
+            "Type": "weapon_power"
+          }
+        },
+        "MinSlowDuration": {
+          "Value": 0.25,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "MoveSpeedWhileShootingPenaltyReduction": 100,
+        "Name": "Kinetic Carbine",
+        "ProjectileTimeScale": 0.01,
+        "ShotCount": 1,
+        "SpeedBoostDuration": {
+          "Value": 3.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "SpeedChange": {
+          "Value": 25,
+          "Scale": {
+            "Value": 0.13,
+            "Type": "spirit"
+          }
+        },
+        "TimeScaleDebuff": 90,
+        "TimeWarpRadius": 5,
+        "Upgrades": [
+          {
+            "MaxSlowDuration": 0.4
+          },
+          {
+            "AbilityCooldown": -12,
+            "SpeedChange": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.06,
+                "Type": "spirit"
+              }
+            }
+          },
+          {
+            "SpeedBoostDuration": 2,
+            "MinBonusBulletDamage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 55,
+                "Type": "weapon_power"
+              }
+            },
+            "MaxBonusBulletDamage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 55,
+                "Type": "weapon_power"
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_chrono_kinetic_carbine",
+        "Name": "Kinetic Carbine",
+        "DescKey": "citadel_ability_chrono_kinetic_carbine_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "MaxBonusBulletDamage",
+                "Name": "Max Damage",
+                "Value": 5,
+                "Scale": {
+                  "Value": 125,
+                  "Type": "weapon_power"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "MaxSlowDuration",
+                "Name": "Max Time-Stop",
+                "Value": 0.4,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              },
+              {
+                "Key": "SpeedChange",
+                "Name": "Bonus Speed",
+                "Value": 25,
+                "Scale": {
+                  "Value": 0.13,
+                  "Type": "spirit"
+                },
+                "Type": "move_speed"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "MinBonusBulletDamage",
+              "Name": "Min Damage",
+              "Value": 5,
+              "Scale": {
+                "Value": 25,
+                "Type": "weapon_power"
+              },
+              "Type": "tech_damage"
+            },
+            {
+              "Key": "SpeedBoostDuration",
+              "Name": "Charge Hold Duration",
+              "Value": 3.5,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "HeadshotBonus",
+              "Name": "Headshot Damage",
+              "Value": 14,
+              "Type": "tech_damage"
+            }
+          ],
+          "DescKey": "citadel_ability_chrono_kinetic_carbine_desc"
+        },
+        "Upgrades": [
+          {
+            "MaxSlowDuration": 0.4
+          },
+          {
+            "AbilityCooldown": -12,
+            "SpeedChange": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.06,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "citadel_ability_chrono_kinetic_carbine_t2_desc"
+          },
+          {
+            "SpeedBoostDuration": 2,
+            "MinBonusBulletDamage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 55,
+                "Type": "weapon_power"
+              }
+            },
+            "MaxBonusBulletDamage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 55,
+                "Type": "weapon_power"
+              }
+            },
+            "DescKey": "citadel_ability_chrono_kinetic_carbine_t3_desc"
+          }
+        ],
+        "Duration": {
+          "MaxChargeDuration": {
+            "Name": "Full Charge Time",
+            "Value": 2.5,
+            "Type": "duration"
+          },
+          "MinSlowDuration": {
+            "Name": "Min Time-Stop",
+            "Value": 0.25,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "duration"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AirMoveIncreasePercent": {
+            "Name": "Air Jump/Dash Distance",
+            "Value": 20
+          },
+          "BonusBulletSpeed": {
+            "Name": null,
+            "Value": 100
+          },
+          "BulletRadiusOverride": {
+            "Name": null,
+            "Value": 16
+          },
+          "BulletTimeScale": {
+            "Name": null,
+            "Value": 0.01
+          },
+          "MoveSpeedWhileShootingPenaltyReduction": {
+            "Name": null,
+            "Value": 100
+          },
+          "ProjectileTimeScale": {
+            "Name": null,
+            "Value": 0.01
+          },
+          "ShotCount": {
+            "Name": null,
+            "Value": 1
+          },
+          "TimeScaleDebuff": {
+            "Name": null,
+            "Value": 90
+          },
+          "TimeWarpRadius": {
+            "Name": null,
+            "Value": 5
+          }
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 28,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_chrono_kinetic_carbine_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Charge up a powerful shot of time energy, dealing {g:citadel_inline_attribute:'SpiritDamage'} and applying a <span class=\"highlight\">Time-Stop</span> to enemies hit. The damage dealt increases with {g:citadel_inline_attribute:'WeaponDamage'}. Move speed is increased while charging.  <br><br>While in the air and charging, {g:citadel_binding:'ADS'} to timeslow your movement.",
+          "plain_text": "Charge up a powerful shot of time energy, dealing spirit damage and applying a Time-Stop to enemies hit. The damage dealt increases with weapon damage. Move speed is increased while charging.\nWhile in the air and charging, [ADS] to timeslow your movement."
+        },
+        {
+          "localization_key": "citadel_ability_chrono_kinetic_carbine_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "-12s Cooldown<br>Increases Speed Scaling",
+          "plain_text": "-12s Cooldown\nIncreases Speed Scaling"
+        },
+        {
+          "localization_key": "citadel_ability_chrono_kinetic_carbine_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+2s Charge Hold Duration and +55% Damage Scaling",
+          "plain_text": "+2s Charge Hold Duration and +55% Damage Scaling"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Paradoxical Swap",
+      "internal_key": "citadel_ability_chrono_swap",
+      "data": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCastRange": {
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 110,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorCleaveDisabled",
+          "BehaviorShowCastRangeAsSatSphereWhileCasting",
+          "BehaviorAllowAltCast"
+        ],
+        "BubbleMoveModifier": {
+          "Class": "ChronoSwapBubbleMove",
+          "Subclass": "ChronoSwapBubbleMove",
+          "EnabledStateMask": [
+            "ChronoSwapping",
+            "CommandRestricted",
+            "AirDuckingForced",
+            "SilenceMovementAbilites"
+          ],
+          "MultiSwapDistFromOrigin": 80
+        },
+        "ChannelMoveSpeed": 1.3,
+        "CombatBarrier": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0,
+            "Type": "spirit"
+          }
+        },
+        "DistanceToMaxTime": 30,
+        "InitialFreezeTime": 0.25,
+        "InitialHeight": 350,
+        "IsDisabled": false,
+        "Key": "citadel_ability_chrono_swap",
+        "MinSwapTime": 0.6,
+        "Name": "Paradoxical Swap",
+        "ShieldModifier": {
+          "Class": "Base",
+          "Subclass": "BarrierModifier"
+        },
+        "SwapDamage": {
+          "Value": 150,
+          "Scale": {
+            "Value": 1.1,
+            "Type": "spirit"
+          }
+        },
+        "SwapTime": 1,
+        "TickRate": 0.25,
+        "Upgrades": [
+          {
+            "CombatBarrier": {
+              "Value": 200,
+              "Scale": {
+                "Value": 1.5,
+                "Type": "spirit"
+              }
+            },
+            "BarrierDuration": 8
+          },
+          {
+            "AbilityCastRange": 13,
+            "AbilityCooldown": -30
+          },
+          {
+            "MultiSwap": 7,
+            "MaxHealthDamage": 10
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_chrono_swap",
+        "Name": "Paradoxical Swap",
+        "DescKey": "citadel_ability_chrono_swap_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "SwapDamage",
+                "Name": "Swap Damage",
+                "Value": 150,
+                "Scale": {
+                  "Value": 1.1,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "MaxHealthDamage",
+                "Name": "Max Health Damage",
+                "Value": 0,
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "CombatBarrier",
+              "Name": "Barrier",
+              "Value": 0,
+              "Scale": {
+                "Value": 0,
+                "Type": "spirit"
+              },
+              "Type": "bullet_armor_up"
+            },
+            {
+              "Key": "BarrierDuration",
+              "Name": "Barrier Duration",
+              "Value": 0,
+              "Type": "duration"
+            },
+            {
+              "Key": "MultiSwap",
+              "Name": "Multi Target Radius",
+              "Value": 0,
+              "Type": "distance"
+            }
+          ],
+          "DescKey": "citadel_ability_chrono_swap_desc"
+        },
+        "Upgrades": [
+          {
+            "CombatBarrier": {
+              "Value": 200,
+              "Scale": {
+                "Value": 1.5,
+                "Type": "spirit"
+              }
+            },
+            "BarrierDuration": 8,
+            "DescKey": "citadel_ability_chrono_swap_t1_desc"
+          },
+          {
+            "AbilityCastRange": 13,
+            "AbilityCooldown": -30,
+            "DescKey": "citadel_ability_chrono_swap_t2_desc"
+          },
+          {
+            "MultiSwap": 7,
+            "MaxHealthDamage": 10,
+            "DescKey": "citadel_ability_chrono_swap_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 1.3,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "DistanceToMaxTime": {
+            "Name": null,
+            "Value": 30
+          },
+          "InitialFreezeTime": {
+            "Name": null,
+            "Value": 0.25
+          },
+          "InitialHeight": {
+            "Name": null,
+            "Value": 350
+          },
+          "MinSwapTime": {
+            "Name": null,
+            "Value": 0.6
+          },
+          "SwapTime": {
+            "Name": null,
+            "Value": 1
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.25
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.15,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 110,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_chrono_swap_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Fire a projectile that <span class=\"highlight\">swaps your position with the target enemy hero.",
+          "plain_text": "Fire a projectile that swaps your position with the target enemy hero."
+        },
+        {
+          "localization_key": "citadel_ability_chrono_swap_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">200 Barrier</span> for 8s. Barrier scales with Spirit",
+          "plain_text": "200 Barrier for 8s. Barrier scales with Spirit"
+        },
+        {
+          "localization_key": "citadel_ability_chrono_swap_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-30s</span> Cooldown and <span class=\"highlight\">+13m</span> Cast Range",
+          "plain_text": "-30s Cooldown and +13m Cast Range"
+        },
+        {
+          "localization_key": "citadel_ability_chrono_swap_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Swaps all enemies within <span class=\"highlight\">7m</span> of hit target and <span class=\"highlight\">+10%</span> Max Health Damage",
+          "plain_text": "Swaps all enemies within 7m of hit target and +10% Max Health Damage"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.43,
+    "AirDashSpeed": 18.6,
+    "BaseHealthRegen": 1,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.62,
+    "GroundDashSpeed": 16.1,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.26,
+      "MaxHealth": 46,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 1.9652,
+      "SustainedDPS": 1.3203
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_chrono_lore",
+    "MaxHealth": 730,
+    "MaxMoveSpeed": 6.7,
+    "MoveAcceleration": 4,
+    "Name": "Paradox",
+    "Playstyle": "hero_chrono_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_chrono_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.6,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Marksman",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

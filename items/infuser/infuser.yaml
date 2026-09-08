@@ -1,0 +1,717 @@
+{
+  "schema_version": 1,
+  "id": "item.infuser",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Infuser",
+    "numeric_id": 1797283378,
+    "internal_key": "upgrade_infuser",
+    "aliases": [
+      "upgrade_infuser"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "vitality",
+    "tier": 4,
+    "activation": "instant_cast",
+    "is_active_item": true,
+    "is_imbue": false,
+    "shop_filters": [
+      "MagicDamage"
+    ],
+    "target_types": null
+  },
+  "purchase": {
+    "cost_souls": 6400,
+    "component_internal_keys": [
+      "upgrade_health_stealing_magic"
+    ]
+  },
+  "description_plain": "Gain Spirit Lifesteal and Spirit Power.",
+  "displayed_effects": [
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "AbilityLifestealPercentHeroPassive",
+      "label": "Spirit Lifesteal",
+      "value": "13%",
+      "property": {
+        "value": "13",
+        "provided_property_type": "MODIFIER_VALUE_TECH_LIFESTEAL",
+        "css_class": "healing",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityLifestealPercentHeroPassive_scale_function",
+          "specific_stat_scale_type": "EHealingOutput"
+        },
+        "prefix": "{s:sign}",
+        "label": "Spirit Lifesteal",
+        "postfix": "%",
+        "postvalue_label": "Spirit Lifesteal",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "TechResist",
+      "label": "Spirit Resist",
+      "value": "10%",
+      "property": {
+        "value": "10",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RESIST",
+        "css_class": "tech_armor_up",
+        "usage_flags": [
+          "IntrinsicallyProvidedInAbility"
+        ],
+        "prefix": "{s:sign}",
+        "label": "Spirit Resist",
+        "postfix": "%",
+        "postvalue_label": "Spirit Resist",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "BonusHealth",
+      "label": "Bonus Health",
+      "value": "100",
+      "property": {
+        "value": "100",
+        "provided_property_type": "MODIFIER_VALUE_HEALTH_MAX",
+        "prefix": "{s:sign}",
+        "label": "Bonus Health",
+        "postvalue_label": "Bonus Health",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "TechPower",
+      "label": "Spirit Power",
+      "value": "6",
+      "property": {
+        "value": "6",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "css_class": "tech_damage",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "AbilityCooldown",
+      "label": "Cooldown",
+      "value": "30.0s",
+      "property": {
+        "value": 30.0,
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "AbilityDuration",
+      "label": "Duration",
+      "value": "7s",
+      "property": {
+        "value": "7",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "AbilityLifestealPercentHero",
+      "label": "Spirit Lifesteal",
+      "value": "70%",
+      "property": {
+        "value": "70",
+        "provided_property_type": "MODIFIER_VALUE_TECH_LIFESTEAL",
+        "css_class": "healing",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityLifestealPercentHero_scale_function",
+          "specific_stat_scale_type": "EHealingOutput"
+        },
+        "prefix": "{s:sign}",
+        "label": "Spirit Lifesteal",
+        "postfix": "%",
+        "postvalue_label": "Spirit Lifesteal",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "BonusSpirit",
+      "label": "Spirit Power",
+      "value": "30",
+      "property": {
+        "value": "30",
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "css_class": "tech_damage",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postvalue_label": "Spirit Power",
+        "conditional": "after proc",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "AbilityCooldown",
+          "bonus": "-10"
+        },
+        {
+          "name": "TechResist",
+          "bonus": "10"
+        },
+        {
+          "name": "BonusSpirit",
+          "bonus": "30"
+        },
+        {
+          "name": "BonusHealth",
+          "bonus": "50"
+        },
+        {
+          "name": "AbilityLifestealPercentHeroPassive",
+          "bonus": "16"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 1797283378,
+    "class_name": "upgrade_infuser",
+    "name": "Infuser",
+    "start_trained": true,
+    "heroes": [],
+    "update_time": 1718823919,
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "vitality",
+    "item_tier": 4,
+    "properties": {
+      "AbilityCooldown": {
+        "value": 30.0,
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityDuration": {
+        "value": "7",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0.0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "6",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "css_class": "tech_damage",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "BonusHealth": {
+        "value": "100",
+        "provided_property_type": "MODIFIER_VALUE_HEALTH_MAX",
+        "prefix": "{s:sign}",
+        "label": "Bonus Health",
+        "postvalue_label": "Bonus Health",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "BonusSpirit": {
+        "value": "30",
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "css_class": "tech_damage",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postvalue_label": "Spirit Power",
+        "conditional": "after proc",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "AbilityLifestealPercentHero": {
+        "value": "70",
+        "provided_property_type": "MODIFIER_VALUE_TECH_LIFESTEAL",
+        "css_class": "healing",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityLifestealPercentHero_scale_function",
+          "specific_stat_scale_type": "EHealingOutput"
+        },
+        "prefix": "{s:sign}",
+        "label": "Spirit Lifesteal",
+        "postfix": "%",
+        "postvalue_label": "Spirit Lifesteal",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "TechResist": {
+        "value": "10",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RESIST",
+        "css_class": "tech_armor_up",
+        "usage_flags": [
+          "IntrinsicallyProvidedInAbility"
+        ],
+        "prefix": "{s:sign}",
+        "label": "Spirit Resist",
+        "postfix": "%",
+        "postvalue_label": "Spirit Resist",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityLifestealPercentHeroPassive": {
+        "value": "13",
+        "provided_property_type": "MODIFIER_VALUE_TECH_LIFESTEAL",
+        "css_class": "healing",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityLifestealPercentHeroPassive_scale_function",
+          "specific_stat_scale_type": "EHealingOutput"
+        },
+        "prefix": "{s:sign}",
+        "label": "Spirit Lifesteal",
+        "postfix": "%",
+        "postvalue_label": "Spirit Lifesteal",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "NonHeroAbilityLifestealTooltipOnly": {
+        "value": "3",
+        "postfix": "%"
+      }
+    },
+    "description": {
+      "desc": "Gain <span class=\"highlight\">Spirit Lifesteal</span> and <span class=\"highlight\">Spirit Power</span>."
+    },
+    "activation": "instant_cast",
+    "component_items": [
+      "upgrade_health_stealing_magic"
+    ],
+    "tooltip_sections": [
+      {
+        "section_type": "innate",
+        "section_attributes": [
+          {
+            "properties": [
+              "AbilityLifestealPercentHeroPassive",
+              "TechResist",
+              "BonusHealth",
+              "TechPower"
+            ]
+          }
+        ]
+      },
+      {
+        "section_type": "active",
+        "section_attributes": [
+          {
+            "loc_string": "Gain <span class=\"highlight\">Spirit Lifesteal</span> and <span class=\"highlight\">Spirit Power</span>.",
+            "properties": [
+              "AbilityCooldown",
+              "AbilityDuration"
+            ],
+            "important_properties": [
+              "AbilityLifestealPercentHero",
+              "BonusSpirit"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "AbilityCooldown",
+            "bonus": "-10"
+          },
+          {
+            "name": "TechResist",
+            "bonus": "10"
+          },
+          {
+            "name": "BonusSpirit",
+            "bonus": "30"
+          },
+          {
+            "name": "BonusHealth",
+            "bonus": "50"
+          },
+          {
+            "name": "AbilityLifestealPercentHeroPassive",
+            "bonus": "16"
+          }
+        ]
+      }
+    ],
+    "is_active_item": true,
+    "shopable": true,
+    "cost": 6400
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Infuser",
+    "Description": "Gain <span class=\"highlight\">Spirit Lifesteal</span> and <span class=\"highlight\">Spirit Power</span>.",
+    "Cost": 6400,
+    "Tier": 4,
+    "Activation": "InstantCast",
+    "Slot": "Armor",
+    "Components": [
+      "upgrade_health_stealing_magic"
+    ],
+    "TargetTypes": null,
+    "ShopFilters": [
+      "MagicDamage"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityCooldown": 30.0,
+    "AbilityDuration": 7,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "TechPower": 6,
+    "BonusHealth": 100,
+    "BonusSpirit": 30,
+    "AbilityLifestealPercentHero": 70,
+    "TechResist": 10,
+    "AbilityLifestealPercentHeroPassive": 13,
+    "NonHeroAbilityLifestealTooltipOnly": 3,
+    "PropertyUpgrades": {
+      "AbilityCooldown": -10,
+      "TechResist": 10,
+      "BonusSpirit": 30,
+      "BonusHealth": 50,
+      "AbilityLifestealPercentHeroPassive": 16
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_infuser",
+    "Name": "Infuser",
+    "Description": "Gain <span class=\"highlight\">Spirit Lifesteal</span> and <span class=\"highlight\">Spirit Power</span>.",
+    "Cost": 6400,
+    "Tier": 4,
+    "Slot": "Armor",
+    "Activation": "InstantCast",
+    "Components": [
+      "upgrade_health_stealing_magic"
+    ],
+    "TargetTypes": null,
+    "ShopFilters": [
+      "MagicDamage"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Innate",
+      "DescKey": null,
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [],
+      "Alt": [
+        {
+          "Key": "AbilityLifestealPercentHeroPassive",
+          "Value": 13,
+          "Type": "healing"
+        },
+        {
+          "Key": "TechResist",
+          "Value": 10,
+          "Type": "tech_armor_up",
+          "UsageFlags": "IntrinsicallyProvidedInAbility"
+        },
+        {
+          "Key": "BonusHealth",
+          "Value": 100
+        },
+        {
+          "Key": "TechPower",
+          "Value": 6,
+          "Type": "tech_damage"
+        }
+      ]
+    },
+    "Info2": {
+      "Type": "Active",
+      "DescKey": "#upgrade_infuser_desc",
+      "Cooldown": 30.0,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "AbilityLifestealPercentHero",
+          "Value": 70,
+          "Type": "healing",
+          "UsageFlags": "ConditionallyApplied"
+        },
+        {
+          "Key": "BonusSpirit",
+          "Value": 30,
+          "Type": "tech_damage",
+          "UsageFlags": "ConditionallyApplied"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "AbilityDuration",
+          "Value": 7,
+          "Type": "duration"
+        }
+      ]
+    },
+    "Upgrades": {
+      "AbilityCooldown": -10,
+      "TechResist": 10,
+      "BonusSpirit": 30,
+      "BonusHealth": 50,
+      "AbilityLifestealPercentHeroPassive": 16
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      },
+      "NonHeroAbilityLifestealTooltipOnly": {
+        "Key": "NonHeroAbilityLifestealTooltipOnly",
+        "Value": 3
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

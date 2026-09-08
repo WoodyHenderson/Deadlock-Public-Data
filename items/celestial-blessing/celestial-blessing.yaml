@@ -1,0 +1,559 @@
+{
+  "schema_version": 1,
+  "id": "item.celestial-blessing",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Celestial Blessing",
+    "numeric_id": 3729138568,
+    "internal_key": "upgrade_celestial_guidance",
+    "aliases": [
+      "upgrade_celestial_guidance"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": true
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "vitality",
+    "tier": 5,
+    "activation": "instant_cast",
+    "is_active_item": true,
+    "is_imbue": false,
+    "shop_filters": null,
+    "target_types": [
+      "HeroFriendly",
+      "TrooperFriendly",
+      "MinionFriendly"
+    ]
+  },
+  "purchase": {
+    "cost_souls": 9999,
+    "component_internal_keys": []
+  },
+  "description_plain": "Applies an extremely powerful cleanse that replenishes your allies globally.",
+  "displayed_effects": [
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "MinHeal",
+      "label": "Min. Heal",
+      "value": "400",
+      "property": {
+        "value": "400",
+        "css_class": "healing",
+        "label": "Min. Heal",
+        "postvalue_label": "Min. Heal",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "BuffDuration",
+      "label": "Buff Duration",
+      "value": "6s",
+      "property": {
+        "value": "6",
+        "css_class": "duration",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "duration_scale_function"
+        },
+        "label": "Buff Duration",
+        "postfix": "s",
+        "postvalue_label": "Buff Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "HealPercentAmount",
+      "label": "Heal Amount",
+      "value": "60%",
+      "property": {
+        "value": "60",
+        "css_class": "healing",
+        "label": "Heal Amount",
+        "postfix": "%",
+        "postvalue_label": "Heal Amount",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "StaminaCooldownReduction",
+      "label": "Stamina Recovery",
+      "value": "100%",
+      "property": {
+        "value": "100",
+        "provided_property_type": "MODIFIER_VALUE_STAMINA_REGEN_PER_SECOND_PERCENTAGE",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "{s:sign}",
+        "label": "Stamina Recovery",
+        "postfix": "%",
+        "postvalue_label": "Stamina Recovery",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "BuffMoveSpeedBonus",
+      "label": "Move Speed",
+      "value": "5m",
+      "property": {
+        "value": "5m",
+        "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_MAX",
+        "css_class": "move_speed",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "{s:sign}",
+        "label": "Move Speed",
+        "postfix": "m",
+        "postvalue_label": "Move Speed",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "AbilityCooldown",
+          "bonus": "-20"
+        },
+        {
+          "name": "BuffDuration",
+          "bonus": "2"
+        },
+        {
+          "name": "MinHeal",
+          "bonus": "200"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 3729138568,
+    "class_name": "upgrade_celestial_guidance",
+    "name": "Celestial Blessing",
+    "start_trained": true,
+    "heroes": [],
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "vitality",
+    "item_tier": 5,
+    "properties": {
+      "AbilityCooldown": {
+        "value": "30",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown"
+      },
+      "AbilityDuration": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration"
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "MinHeal": {
+        "value": "400",
+        "css_class": "healing",
+        "label": "Min. Heal",
+        "postvalue_label": "Min. Heal",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "HealPercentAmount": {
+        "value": "60",
+        "css_class": "healing",
+        "label": "Heal Amount",
+        "postfix": "%",
+        "postvalue_label": "Heal Amount",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "Radius": {
+        "value": "999m",
+        "css_class": "distance",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AuraRadius_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Radius",
+        "postfix": "m",
+        "postvalue_label": "Radius"
+      },
+      "BuffDuration": {
+        "value": "6",
+        "css_class": "duration",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "duration_scale_function"
+        },
+        "label": "Buff Duration",
+        "postfix": "s",
+        "postvalue_label": "Buff Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "StaminaCooldownReduction": {
+        "value": "100",
+        "provided_property_type": "MODIFIER_VALUE_STAMINA_REGEN_PER_SECOND_PERCENTAGE",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "{s:sign}",
+        "label": "Stamina Recovery",
+        "postfix": "%",
+        "postvalue_label": "Stamina Recovery",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "BuffMoveSpeedBonus": {
+        "value": "5m",
+        "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_MAX",
+        "css_class": "move_speed",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "{s:sign}",
+        "label": "Move Speed",
+        "postfix": "m",
+        "postvalue_label": "Move Speed",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    "description": {
+      "desc": "Applies an extremely powerful cleanse that replenishes your allies globally."
+    },
+    "activation": "instant_cast",
+    "tooltip_sections": [
+      {
+        "section_type": "active",
+        "section_attributes": [
+          {
+            "loc_string": "Applies an extremely powerful cleanse that replenishes your allies globally.",
+            "properties": [
+              "MinHeal",
+              "BuffDuration"
+            ],
+            "important_properties": [
+              "HealPercentAmount",
+              "StaminaCooldownReduction",
+              "BuffMoveSpeedBonus"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "AbilityCooldown",
+            "bonus": "-20"
+          },
+          {
+            "name": "BuffDuration",
+            "bonus": "2"
+          },
+          {
+            "name": "MinHeal",
+            "bonus": "200"
+          }
+        ]
+      }
+    ],
+    "is_active_item": true,
+    "shopable": true,
+    "cost": 9999
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Celestial Blessing",
+    "Description": "Applies an extremely powerful cleanse that replenishes your allies globally.",
+    "Cost": 9999,
+    "Tier": 5,
+    "Activation": "InstantCast",
+    "Slot": "Armor",
+    "Components": null,
+    "TargetTypes": [
+      "HeroFriendly",
+      "TrooperFriendly",
+      "MinionFriendly"
+    ],
+    "ShopFilters": null,
+    "IsDisabled": false,
+    "StreetBrawl": true,
+    "IsImbue": false,
+    "AbilityCooldown": 30,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "MinHeal": 400,
+    "HealPercentAmount": 60,
+    "Radius": "999m",
+    "BuffDuration": 6,
+    "StaminaCooldownReduction": 100,
+    "BuffMoveSpeedBonus": "5m",
+    "PropertyUpgrades": {
+      "AbilityCooldown": -20,
+      "BuffDuration": 2,
+      "MinHeal": 200
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_celestial_guidance",
+    "Name": "Celestial Blessing",
+    "Description": "Applies an extremely powerful cleanse that replenishes your allies globally.",
+    "Cost": 9999,
+    "Tier": 5,
+    "Slot": "Armor",
+    "Activation": "InstantCast",
+    "Components": null,
+    "TargetTypes": [
+      "HeroFriendly",
+      "TrooperFriendly",
+      "MinionFriendly"
+    ],
+    "ShopFilters": null,
+    "IsDisabled": false,
+    "StreetBrawl": true,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Active",
+      "DescKey": "#upgrade_celestial_guidance_desc",
+      "Cooldown": 30,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "HealPercentAmount",
+          "Value": 60,
+          "Type": "healing"
+        },
+        {
+          "Key": "StaminaCooldownReduction",
+          "Value": 100,
+          "UsageFlags": "ConditionallyApplied"
+        },
+        {
+          "Key": "BuffMoveSpeedBonus",
+          "Value": "5m",
+          "Type": "move_speed",
+          "UsageFlags": "ConditionallyApplied"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "MinHeal",
+          "Value": 400,
+          "Type": "healing"
+        },
+        {
+          "Key": "BuffDuration",
+          "Value": 6,
+          "Type": "duration"
+        }
+      ]
+    },
+    "Upgrades": {
+      "AbilityCooldown": -20,
+      "BuffDuration": 2,
+      "MinHeal": 200
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      },
+      "Radius": {
+        "Key": "Radius",
+        "Value": "999m",
+        "Type": "distance"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

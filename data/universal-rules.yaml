@@ -1,0 +1,151 @@
+schema_version: 1
+id: data.general.universal-rules
+snapshot_id: deadlock-wiki-2026-09-03
+current_as_of: "2026-09-03"
+evidence_status: source_verified
+sources:
+  - wiki.movement.78724
+  - wiki.melee-attack.114941
+  - wiki.health.111364
+  - wiki.death.95455
+  - wiki.crowd-control.110151
+  - wiki.backdoor-protection.78476
+  - wiki.damage-resistance.125735
+  - wiki.healing.96635
+
+movement:
+  no_fall_damage: true
+  sprint_out_of_combat_delay_seconds: 5
+  slide_threshold_meters_per_second: null
+  slide_threshold_evidence_status: source_conflict
+  slide_threshold_review_id: review.slide-speed-threshold
+  slide_grants_infinite_ammo: true
+  actions:
+    ground_dash: { stamina_cost: 1 }
+    air_dash: { stamina_cost: 1, baseline_limit_per_jump: 1 }
+    air_jump: { stamina_cost: 1, baseline_limit_per_jump: 1 }
+    dash_jump: { total_stamina_cost: 2 }
+    down_dash: { stamina_cost: 0.5, baseline_limit_per_jump: 1 }
+    first_wall_jump: { stamina_cost: 0 }
+    subsequent_wall_jump: { stamina_cost: 0.5 }
+  climbing_melee_slow:
+    starts_percent: 80
+    tapers_to_percent: 20
+    duration_seconds: 2
+
+melee:
+  weapon_damage_bonus_conversion_fraction: 0.5
+  heavy_melee:
+    cooldown_seconds: 1
+    missed_cooldown_seconds: 1.3
+    required_to_claim:
+      - powerup
+      - rejuvenator-credit
+      - unsecured-soul-container
+  sinners_sacrifice_retaliation_damage_per_hit: 80
+  trooper_melee_last_hit_releases_orbs: false
+  trooper_melee_last_hit_awards_full_bounty: true
+
+parry:
+  animation_seconds: 1
+  active_window_seconds: 0.75
+  failed_cooldown_seconds: 4.5
+  successful_recovery_seconds: 0.3
+  attacker_stun_seconds: 2.75
+  attacker_incoming_damage_multiplier: 1.25
+  effects_ignore_debuff_resistance: true
+  successful_hero_parry_refunds_cooldown: true
+  trooper_parry_refunds_cooldown: false
+
+health:
+  maximum_health_formula: (starting_base_health + boon_health) * (1 + base_health_bonus_fraction) + flat_bonus_health
+  displayed_maximum_rounding: ceiling
+  respawn_room:
+    maximum_health_fraction_per_second: 0.06
+    flat_health_per_second: 60
+
+healing:
+  total_reduction_formula: 1 - product(1 - each_reduction)
+  final_healing_formula: initial_healing * (1 - total_reduction) * (1 + healing_amp)
+  duplicate_same_source_stacks: false
+
+damage_resistance:
+  total_resistance_formula: 1 - product(1 - each_resistance)
+  total_reduction_formula: 1 - product(1 - each_resistance_reduction)
+  final_resistance_formula: total_resistance - total_reduction
+  negative_final_resistance_increases_damage: true
+  classifications:
+    weapon: [bullet_resistance]
+    melee:
+      parent_classification: weapon
+      resistances: [bullet_resistance, melee_resistance]
+      counts_for_weapon_damage_triggers: true
+    spirit: [spirit_resistance]
+    pure: []
+  melee_resistance_relationship:
+    directional_rule: >-
+      Bullet Resistance also applies against Melee Damage, but Melee Resistance
+      does not apply against ordinary Bullet/Weapon Damage.
+    combination_formula: "melee_resistance_total = 1 - ((1 - bullet_resistance) * (1 - melee_resistance))"
+    example: "30% Bullet Resistance and 20% Melee Resistance combine to 44% resistance against Melee Damage."
+
+crowd_control:
+  movement_slow_minimum_speed_meters_per_second: 2
+  sleep_speed_meters_per_second: 2
+  diminishing_returns:
+    recent_effect_window_seconds: 9
+    minimum_reduction_fraction: 0.15
+    maximum_reduction_fraction: 0.35
+    qualifying_effects:
+      - stun
+      - sleep
+      - immobilize
+      - chain
+      - silence
+  slow_resistance_formula: base_speed * (1 - slow * (1 - slow_resistance))
+
+respawn:
+  interpolation: linear_between_control_points
+  cap_seconds: 90
+  control_points:
+    - { match_time_seconds: 300, respawn_seconds: 8 }
+    - { match_time_seconds: 1200, respawn_seconds: 35 }
+    - { match_time_seconds: 1800, respawn_seconds: 70 }
+    - { match_time_seconds: 2400, respawn_seconds: 85 }
+  unassisted_non_player_death_additional_seconds: 10
+  last_stand:
+    - condition: remaining_seconds >= 30
+      operation: subtract
+      value_seconds: 20
+    - condition: 10 < remaining_seconds < 30
+      operation: set
+      value_seconds: 10
+    - condition: remaining_seconds <= 10
+      operation: unchanged
+  rejuvenator:
+    maximum_team_credits: 3
+    claim_method: heavy_melee
+    credits_per_claim_hit: 1
+    revive_delay_seconds: 3
+    revive_location: death_location
+
+backdoor_protection:
+  excludes_standard_lane_guardians: true
+  reapplication_buffer_seconds: 14
+  remove_condition: enemy_troopers_near_structure
+  base_remove_condition: any_enemy_trooper_wave_pushed_to_base
+  structures:
+    walker: { damage_resistance_fraction: 0.65, health_regen_per_second: 65 }
+    base_guardian: { damage_resistance_fraction: 0.65, health_regen_per_second: 65 }
+    shrine: { damage_resistance_fraction: 0.65, health_regen_per_second: 65 }
+    patron: { damage_resistance_fraction: 0.65, health_regen_per_second: 75 }
+  patron_out_of_combat_health_regen_per_second: 120
+  proximity_bullet_resistance:
+    base_guardian:
+      initial_fraction: 0.4
+      reduction_per_nearby_enemy_hero: 0.2
+      minimum_fraction: 0
+    shrine:
+      initial_fraction: 0.6
+      reduction_per_nearby_enemy_hero: 0.2
+      minimum_fraction: 0

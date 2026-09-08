@@ -1,0 +1,711 @@
+{
+  "schema_version": 1,
+  "id": "item.express-shot",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Express Shot",
+    "numeric_id": 690458959,
+    "internal_key": "upgrade_express_shot",
+    "aliases": [
+      "upgrade_express_shot"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "weapon",
+    "tier": 3,
+    "activation": "passive",
+    "is_active_item": false,
+    "is_imbue": false,
+    "shop_filters": [
+      "WeaponDamage"
+    ],
+    "target_types": null
+  },
+  "purchase": {
+    "cost_souls": 3200,
+    "component_internal_keys": [
+      "upgrade_high_velocity_mag"
+    ]
+  },
+  "description_plain": "Your next attack will fire twice in quick succession with increased damage and velocity. This attack consumes extra ammo.",
+  "displayed_effects": [
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "BaseAttackDamagePercent",
+      "label": "Weapon Damage",
+      "value": "8%",
+      "property": {
+        "value": "8",
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_DAMAGE_INCREASE",
+        "css_class": "bullet_damage",
+        "display_units": "EDisplayUnit_Normal",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "elevated",
+      "key": "BonusBulletSpeedPercent",
+      "label": "Bullet Velocity",
+      "value": "60%",
+      "property": {
+        "value": "60",
+        "provided_property_type": "MODIFIER_VALUE_BONUS_BULLET_SPEED_PERCENT",
+        "css_class": "bullet_damage",
+        "prefix": "{s:sign}",
+        "label": "Bullet Velocity",
+        "postfix": "%",
+        "postvalue_label": "Bullet Velocity",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": true,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "ProcBulletVelocity",
+      "label": "Bullet Velocity",
+      "value": "100%",
+      "property": {
+        "value": "100",
+        "provided_property_type": "MODIFIER_VALUE_BONUS_BULLET_SPEED_PERCENT",
+        "css_class": "bullet_damage",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "loc_token_override": "BonusBulletSpeedPercent",
+        "prefix": "{s:sign}",
+        "label": "Bullet Velocity",
+        "postfix": "%",
+        "postvalue_label": "Bullet Velocity",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "ProcAmmoConsumed",
+      "label": "Extra Ammo Consumed",
+      "value": "2",
+      "property": {
+        "value": "2",
+        "negative_attribute": true,
+        "label": "Extra Ammo Consumed",
+        "postfix": "",
+        "postvalue_label": "Extra Ammo Consumed",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "AbilityCooldown",
+      "label": "Cooldown",
+      "value": "8s",
+      "property": {
+        "value": "8",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "important",
+      "key": "ProcBaseAttackDamagePercent",
+      "label": "Weapon Damage",
+      "value": "125%",
+      "property": {
+        "value": "125",
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_DAMAGE_INCREASE",
+        "css_class": "bullet_damage",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "loc_token_override": "BaseAttackDamagePercent",
+        "display_units": "EDisplayUnit_Normal",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "Damage_scale_function",
+          "specific_stat_scale_type": "ELevelUpBoons",
+          "stat_scale": 2.0
+        },
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "important",
+      "key": "ProcBaseAttackDamagePercentAltFire",
+      "label": "Secondary Fire Weapon Damage",
+      "value": "40%",
+      "property": {
+        "value": "40",
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_DAMAGE_INCREASE",
+        "css_class": "bullet_damage",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "loc_token_override": "BaseAttackDamagePercentAltFire",
+        "display_units": "EDisplayUnit_Normal",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "SecondaryDamage_scale_function",
+          "specific_stat_scale_type": "ELevelUpBoons",
+          "stat_scale": 1.3
+        },
+        "prefix": "{s:sign}",
+        "label": "Secondary Fire Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Secondary Fire Weapon Damage",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "ProcBaseAttackDamagePercent",
+          "bonus": "75"
+        },
+        {
+          "name": "ProcBaseAttackDamagePercentAltFire",
+          "bonus": "25"
+        },
+        {
+          "name": "BonusBulletSpeedPercent",
+          "bonus": "45"
+        },
+        {
+          "name": "BaseAttackDamagePercent",
+          "bonus": "15"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 690458959,
+    "class_name": "upgrade_express_shot",
+    "name": "Express Shot",
+    "start_trained": true,
+    "heroes": [],
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "weapon",
+    "item_tier": 3,
+    "properties": {
+      "AbilityCooldown": {
+        "value": "8",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityDuration": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration"
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "BonusBulletSpeedPercent": {
+        "value": "60",
+        "provided_property_type": "MODIFIER_VALUE_BONUS_BULLET_SPEED_PERCENT",
+        "css_class": "bullet_damage",
+        "prefix": "{s:sign}",
+        "label": "Bullet Velocity",
+        "postfix": "%",
+        "postvalue_label": "Bullet Velocity",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": true,
+        "tooltip_is_important": false
+      },
+      "BaseAttackDamagePercent": {
+        "value": "8",
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_DAMAGE_INCREASE",
+        "css_class": "bullet_damage",
+        "display_units": "EDisplayUnit_Normal",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "ProcAmmoConsumed": {
+        "value": "2",
+        "negative_attribute": true,
+        "label": "Extra Ammo Consumed",
+        "postfix": "",
+        "postvalue_label": "Extra Ammo Consumed",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "ProcBulletVelocity": {
+        "value": "100",
+        "provided_property_type": "MODIFIER_VALUE_BONUS_BULLET_SPEED_PERCENT",
+        "css_class": "bullet_damage",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "loc_token_override": "BonusBulletSpeedPercent",
+        "prefix": "{s:sign}",
+        "label": "Bullet Velocity",
+        "postfix": "%",
+        "postvalue_label": "Bullet Velocity",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "ProcBaseAttackDamagePercent": {
+        "value": "125",
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_DAMAGE_INCREASE",
+        "css_class": "bullet_damage",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "loc_token_override": "BaseAttackDamagePercent",
+        "display_units": "EDisplayUnit_Normal",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "Damage_scale_function",
+          "specific_stat_scale_type": "ELevelUpBoons",
+          "stat_scale": 2.0
+        },
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "ProcBaseAttackDamagePercentAltFire": {
+        "value": "40",
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_DAMAGE_INCREASE",
+        "css_class": "bullet_damage",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "loc_token_override": "BaseAttackDamagePercentAltFire",
+        "display_units": "EDisplayUnit_Normal",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "SecondaryDamage_scale_function",
+          "specific_stat_scale_type": "ELevelUpBoons",
+          "stat_scale": 1.3
+        },
+        "prefix": "{s:sign}",
+        "label": "Secondary Fire Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Secondary Fire Weapon Damage",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    "description": {
+      "desc": "Your next attack will <span class=\"highlight\">fire twice</span> in quick succession with <span class=\"highlight\">increased damage</span> and velocity. This attack consumes extra ammo."
+    },
+    "activation": "passive",
+    "component_items": [
+      "upgrade_high_velocity_mag"
+    ],
+    "tooltip_sections": [
+      {
+        "section_type": "innate",
+        "section_attributes": [
+          {
+            "properties": [
+              "BaseAttackDamagePercent"
+            ],
+            "elevated_properties": [
+              "BonusBulletSpeedPercent"
+            ]
+          }
+        ]
+      },
+      {
+        "section_type": "passive",
+        "section_attributes": [
+          {
+            "loc_string": "Your next attack will <span class=\"highlight\">fire twice</span> in quick succession with <span class=\"highlight\">increased damage</span> and velocity. This attack consumes extra ammo.",
+            "properties": [
+              "ProcBulletVelocity",
+              "ProcAmmoConsumed",
+              "AbilityCooldown"
+            ],
+            "important_properties": [
+              "ProcBaseAttackDamagePercent",
+              "ProcBaseAttackDamagePercentAltFire"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "ProcBaseAttackDamagePercent",
+            "bonus": "75"
+          },
+          {
+            "name": "ProcBaseAttackDamagePercentAltFire",
+            "bonus": "25"
+          },
+          {
+            "name": "BonusBulletSpeedPercent",
+            "bonus": "45"
+          },
+          {
+            "name": "BaseAttackDamagePercent",
+            "bonus": "15"
+          }
+        ]
+      }
+    ],
+    "is_active_item": false,
+    "shopable": true,
+    "cost": 3200
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Express Shot",
+    "Description": "Your next attack will <span class=\"highlight\">fire twice</span> in quick succession with <span class=\"highlight\">increased damage</span> and velocity. This attack consumes extra ammo.",
+    "Cost": 3200,
+    "Tier": 3,
+    "Activation": "Passive",
+    "Slot": "Weapon",
+    "Components": [
+      "upgrade_high_velocity_mag"
+    ],
+    "TargetTypes": null,
+    "ShopFilters": [
+      "WeaponDamage"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityCooldown": 8,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "BonusBulletSpeedPercent": 60,
+    "BaseAttackDamagePercent": 8,
+    "ProcAmmoConsumed": 2,
+    "ProcBulletVelocity": 100,
+    "ProcBaseAttackDamagePercent": {
+      "Value": 125,
+      "Scale": {
+        "Value": 2,
+        "Type": "power_increase"
+      }
+    },
+    "ProcBaseAttackDamagePercentAltFire": {
+      "Value": 40,
+      "Scale": {
+        "Value": 1.3,
+        "Type": "power_increase"
+      }
+    },
+    "PropertyUpgrades": {
+      "ProcBaseAttackDamagePercent": 75,
+      "ProcBaseAttackDamagePercentAltFire": 25,
+      "BonusBulletSpeedPercent": 45,
+      "BaseAttackDamagePercent": 15
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_express_shot",
+    "Name": "Express Shot",
+    "Description": "Your next attack will <span class=\"highlight\">fire twice</span> in quick succession with <span class=\"highlight\">increased damage</span> and velocity. This attack consumes extra ammo.",
+    "Cost": 3200,
+    "Tier": 3,
+    "Slot": "Weapon",
+    "Activation": "Passive",
+    "Components": [
+      "upgrade_high_velocity_mag"
+    ],
+    "TargetTypes": null,
+    "ShopFilters": [
+      "WeaponDamage"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Innate",
+      "DescKey": null,
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "BonusBulletSpeedPercent",
+          "Value": 60,
+          "Type": "bullet_damage"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "BaseAttackDamagePercent",
+          "Value": 8,
+          "Type": "bullet_damage"
+        }
+      ]
+    },
+    "Info2": {
+      "Type": "Passive",
+      "DescKey": "#upgrade_express_shot_desc",
+      "Cooldown": 8,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "ProcBaseAttackDamagePercent",
+          "Value": 125.0,
+          "Scale": {
+            "Value": 2.0,
+            "Type": "power_increase"
+          },
+          "Type": "bullet_damage",
+          "UsageFlags": "ConditionallyApplied",
+          "LocTokenOverride": "BaseAttackDamagePercent"
+        },
+        {
+          "Key": "ProcBaseAttackDamagePercentAltFire",
+          "Value": 40.0,
+          "Scale": {
+            "Value": 1.3,
+            "Type": "power_increase"
+          },
+          "Type": "bullet_damage",
+          "UsageFlags": "ConditionallyApplied",
+          "LocTokenOverride": "BaseAttackDamagePercentAltFire"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "ProcBulletVelocity",
+          "Value": 100,
+          "Type": "bullet_damage",
+          "UsageFlags": "ConditionallyApplied",
+          "LocTokenOverride": "BonusBulletSpeedPercent"
+        },
+        {
+          "Key": "ProcAmmoConsumed",
+          "Value": 2
+        }
+      ]
+    },
+    "Upgrades": {
+      "ProcBaseAttackDamagePercent": 75,
+      "ProcBaseAttackDamagePercentAltFire": 25,
+      "BonusBulletSpeedPercent": 45,
+      "BaseAttackDamagePercent": 15
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

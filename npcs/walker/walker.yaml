@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "npc.walker",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-04",
+  "evidence_status": "source_verified",
+  "sources": [
+    "deadlock-api.npc-units.client-6684.source-10933105",
+    "github.deadlock-data.npcs.311b2e8d895e",
+    "wiki.walker.124899"
+  ],
+  "identity": {
+    "name": "Walker",
+    "aliases": [
+      "Sun Walker",
+      "tier 2 boss"
+    ],
+    "internal_class": "npc_boss_tier2",
+    "numeric_id": 3493103073
+  },
+  "classification": {
+    "kind": "structure",
+    "mode": "standard"
+  },
+  "units": {
+    "distance": "meters",
+    "time": "seconds",
+    "speed": "meters_per_second",
+    "percentage": "percentage_points"
+  },
+  "field_sources": {
+    "numeric_id": "deadlock-api.npc-units.client-6684.source-10933105:npc_boss_tier2.id",
+    "gameplay_values": "github.deadlock-data.npcs.311b2e8d895e:npc_boss_tier2",
+    "behavior_context": "wiki.walker.124899"
+  },
+  "combat": {
+    "base_max_health": 6000,
+    "bullet_resistance_percent": 35,
+    "spirit_resistance_percent": 0.0
+  },
+  "objective_order_ref": "general.map.objectives-and-structures",
+  "economy_ref": "data.general.economy:bounties",
+  "structure_role": "second_lane_defense",
+  "count_per_team": 3,
+  "health_by_remaining_walkers": {
+    "3": 6000,
+    "2": 9000,
+    "1": 12000
+  },
+  "resistance_over_time": [
+    {
+      "match_time": 0,
+      "percent": 65
+    },
+    {
+      "match_time": 540,
+      "percent": 0
+    },
+    {
+      "match_time": 1080,
+      "percent": -65
+    }
+  ],
+  "nearby_enemy_bullet_resistance": {
+    "radius": 50.8,
+    "percent_by_enemy_count": [
+      0,
+      0,
+      0,
+      20,
+      30,
+      40,
+      50
+    ]
+  },
+  "friendly_aura": {
+    "radius": 28.0,
+    "bullet_resistance_percent": 15,
+    "spirit_resistance_percent": 15
+  },
+  "attacks": {
+    "stomp": {
+      "damage": 350.0,
+      "maximum_health_damage_percent": 15.0,
+      "radius": 14.5,
+      "stun_duration": 2.0
+    },
+    "melee": {
+      "damage": 300,
+      "maximum_health_damage_percent": 10.0
+    },
+    "abilities": [
+      "ESlot_Signature_1",
+      "ESlot_Signature_2",
+      "ESlot_Signature_3",
+      "ESlot_Signature_4"
+    ],
+    "damage_type": "spirit"
+  },
+  "backdoor_protection": {
+    "damage_resistance_percent": 65.0,
+    "health_regen_per_second": 65.0
+  },
+  "on_destroyed": {
+    "extra_item_slot_ref": "data.general.progression:extra_item_slots"
+  }
+}

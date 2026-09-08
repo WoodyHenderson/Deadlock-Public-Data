@@ -1,0 +1,71 @@
+schema_version: 1
+id: data.general.progression
+snapshot_id: deadlock-wiki-2026-09-03
+current_as_of: "2026-09-03"
+evidence_status: source_verified
+sources:
+  - wiki.boon.98787
+  - wiki.extra-slots.60786
+
+maximum_reward_level: 35
+post_maximum_display_level_interval_souls: 2000
+ability_upgrade_costs:
+  tier_1: 1
+  tier_2: 2
+  tier_3: 5
+ultimate_unlock_level: 7
+ultimate_unlock_souls: 3800
+
+levels:
+  - { level: 0, souls: 600, boon: false, ability_unlock: true, ability_points: 0 }
+  - { level: 1, souls: 800, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 2, souls: 1100, boon: true, ability_unlock: true, ability_points: 0 }
+  - { level: 3, souls: 1500, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 4, souls: 2000, boon: true, ability_unlock: true, ability_points: 0 }
+  - { level: 5, souls: 2600, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 6, souls: 3200, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 7, souls: 3800, boon: true, ability_unlock: true, ability_points: 0 }
+  - { level: 8, souls: 4500, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 9, souls: 5200, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 10, souls: 5900, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 11, souls: 6600, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 12, souls: 7400, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 13, souls: 8200, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 14, souls: 9000, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 15, souls: 9800, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 16, souls: 10700, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 17, souls: 11600, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 18, souls: 12500, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 19, souls: 13400, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 20, souls: 14400, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 21, souls: 15500, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 22, souls: 16700, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 23, souls: 18000, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 24, souls: 19500, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 25, souls: 21200, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 26, souls: 23100, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 27, souls: 25200, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 28, souls: 27500, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 29, souls: 30000, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 30, souls: 32700, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 31, souls: 35600, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 32, souls: 38700, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 33, souls: 42000, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 34, souls: 45500, boon: true, ability_unlock: false, ability_points: 1 }
+  - { level: 35, souls: 49200, boon: true, ability_unlock: false, ability_points: 1 }
+
+reward_totals_at_maximum:
+  boons: 35
+  ability_unlocks: 4
+  ability_points: 32
+
+extra_slots:
+  base_slots: 9
+  maximum_extra_slots: 3
+  unlocks:
+    - enemy_walkers_destroyed: 1
+      total_extra_slots: 1
+    - enemy_walkers_destroyed: 2
+      total_extra_slots: 2
+    - enemy_walkers_destroyed: 3
+      total_extra_slots: 3

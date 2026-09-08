@@ -1,0 +1,1157 @@
+{
+  "schema_version": 2,
+  "id": "hero.seven",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.seven.124882",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Seven",
+  "aliases": [],
+  "internal_hero_key": "hero_gigawatt",
+  "hero_type": "Mystic",
+  "role_localization_key": "hero_gigawatt_role",
+  "playstyle_localization_key": "hero_gigawatt_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": true,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 730,
+    "health_regeneration_per_second": 1,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.7,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.8,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 14.7,
+      "distance_meters": 10,
+      "duration_seconds": 0.68
+    },
+    "air_dash": {
+      "speed_meters_per_second": 17,
+      "distance_meters": 8,
+      "duration_seconds": 0.47
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 55
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.24,
+    "MaxHealth": 41,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 1.3994,
+    "SustainedDPS": 0.95036
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 635,
+    "BulletDamage": 10.8,
+    "RoundsPerSecond": 5.8309,
+    "ClipSize": 29,
+    "ReloadTime": 2.35,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 57.51,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.8,
+    "BulletRadius": 0.0762,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 3,
+    "BurstInterShotInterval": 0.084,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 62.974,
+    "SustainedDPS": 42.766,
+    "NameKey": "citadel_weapon_hero_gigawatt_set",
+    "DescKey": "citadel_weapon_hero_gigawatt_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_BurstFire",
+      "Attribute_EWeaponAttribute_MediumRange"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Lightning Ball",
+      "internal_key": "citadel_ability_lightning_ball",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCharges": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 26,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorNoTarget",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": 1.3,
+        "DPS": {
+          "Value": 75,
+          "Scale": {
+            "Value": 0.5,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_lightning_ball",
+        "MaxLifetime": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "MinShockDuration": 0.5,
+        "Name": "Lightning Ball",
+        "ShockRadius": {
+          "Value": 4.25,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "SlowModifier": {
+          "Class": "SlowBase",
+          "Subclass": "GigagwattLightningballSlow"
+        },
+        "TickRate": 0.1,
+        "Upgrades": [
+          {
+            "AbilityCharges": 1
+          },
+          {
+            "SlowPercent": 35,
+            "MaxLifetime": 1
+          },
+          {
+            "DPS": 58.5,
+            "ShockRadius": 1.75
+          }
+        ],
+        "ZapModifier": {
+          "Class": "CitadelLightningball",
+          "Subclass": "CitadelLightningball"
+        }
+      },
+      "card": {
+        "Key": "citadel_ability_lightning_ball",
+        "Name": "Lightning Ball",
+        "DescKey": "citadel_ability_lightning_ball_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "DPS",
+                "Name": "Damage Per Second",
+                "Value": 75,
+                "Scale": {
+                  "Value": 0.5,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "ShockRadius",
+                "Name": "Radius",
+                "Value": 4.25,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "radius"
+                },
+                "Type": "distance"
+              },
+              {
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 0,
+                "Type": "slow"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "MaxLifetime",
+              "Name": "Lifetime",
+              "Value": 5,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "citadel_ability_lightning_ball_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCharges": 1
+          },
+          {
+            "SlowPercent": 35,
+            "MaxLifetime": 1,
+            "DescKey": "citadel_ability_lightning_ball_t2_desc"
+          },
+          {
+            "DPS": 58.5,
+            "ShockRadius": 1.75,
+            "DescKey": "citadel_ability_lightning_ball_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 1.3,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "MinShockDuration": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.1
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 26,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_lightning_ball_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Shoot a ball of lightning that travels in a straight line. Does <span class=\"highlight\">damage to all targets in its radius</span>. Slows down when damaging enemies and stops if it hits the world.",
+          "plain_text": "Shoot a ball of lightning that travels in a straight line. Does damage to all targets in its radius. Slows down when damaging enemies and stops if it hits the world."
+        },
+        {
+          "localization_key": "citadel_ability_lightning_ball_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-35%</span> move speed on hit targets and <span class=\"highlight\">+1s</span> Lifetime",
+          "plain_text": "-35% move speed on hit targets and +1s Lifetime"
+        },
+        {
+          "localization_key": "citadel_ability_lightning_ball_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+58.5 DPS and +1.75m radius",
+          "plain_text": "+58.5 DPS and +1.75m radius"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Static Charge",
+      "internal_key": "citadel_ability_static_charge",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCastRange": {
+          "Value": 15,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 42,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorAlwaysPreviewRadius",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorUseInstantCastUnitTargetUi",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": 1.3,
+        "Damage": {
+          "Value": 35,
+          "Scale": {
+            "Value": 0.792137,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_static_charge",
+        "Name": "Static Charge",
+        "ShockDelay": 3.5,
+        "ShockRadius": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "StaticChargeModifier": {
+          "Class": "CitadelStaticcharge",
+          "Subclass": "CitadelStaticcharge"
+        },
+        "StunDuration": {
+          "Value": 0.9,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -20
+          },
+          {
+            "ShockRadius": 7,
+            "AbilityCastRange": 5
+          },
+          {
+            "StunDuration": 0.9,
+            "Damage": 160
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_static_charge",
+        "Name": "Static Charge",
+        "DescKey": "citadel_ability_static_charge_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "StunDuration",
+                "Name": "Stun Duration",
+                "StatusEffect": "Stun",
+                "Value": 0.9,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              },
+              {
+                "Key": "ShockDelay",
+                "Name": "Delay Before Stun",
+                "Value": 3.5,
+                "Type": "cast"
+              },
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 35,
+                "Scale": {
+                  "Value": 0.792137,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "ShockRadius",
+              "Name": "Radius",
+              "Value": 5,
+              "Scale": {
+                "Value": 1,
+                "Type": "radius"
+              },
+              "Type": "distance"
+            }
+          ],
+          "DescKey": "citadel_ability_static_charge_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -20
+          },
+          {
+            "ShockRadius": 7,
+            "AbilityCastRange": 5,
+            "DescKey": "citadel_ability_static_charge_t2_desc"
+          },
+          {
+            "StunDuration": 0.9,
+            "Damage": 160,
+            "DescKey": "citadel_ability_static_charge_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 1.3,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 15,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 42,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_static_charge_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Apply a charge to a target enemy hero. After a short duration, the static charge <span class=\"highlight\">stuns and damages</span> enemies within the radius.",
+          "plain_text": "Apply a charge to a target enemy hero. After a short duration, the static charge stuns and damages enemies within the radius."
+        },
+        {
+          "localization_key": "citadel_ability_static_charge_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+7m</span> Radius <br><span class=\"highlight\">+5m</span> Cast range",
+          "plain_text": "+7m Radius\n+5m Cast range"
+        },
+        {
+          "localization_key": "citadel_ability_static_charge_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+0.9s</span> Stun Duration <br><span class=\"highlight\">+160</span> Damage",
+          "plain_text": "+0.9s Stun Duration\n+160 Damage"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Power Surge",
+      "internal_key": "ability_power_surge",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCooldown": {
+          "Value": 50,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BonusPerChain": {
+          "Value": 10,
+          "Scale": {
+            "Value": 0.32,
+            "Type": "spirit"
+          }
+        },
+        "BuffModifier": {
+          "Class": "PowerSurge",
+          "Subclass": "PowerSurge",
+          "DebuffModifier": {
+            "Class": "Base",
+            "Subclass": "PowerSurgeDebuff"
+          }
+        },
+        "ChainCount": 4,
+        "ChainModifier": {
+          "Class": "PowerSurgeChainLightning",
+          "Subclass": "PowerSurgeChainLightning"
+        },
+        "ChainRadius": {
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "ChainTickRate": 0.2,
+        "ChannelMoveSpeed": -1,
+        "DamagePerChain": {
+          "Value": 10,
+          "Scale": {
+            "Value": 0.14,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_power_surge",
+        "Name": "Power Surge",
+        "Upgrades": [
+          {
+            "AbilityCooldown": -18
+          },
+          {
+            "BonusMoveSpeed": 3,
+            "BonusPerChain": {
+              "Value": 8,
+              "Scale": {
+                "Value": 0.23,
+                "Type": "spirit"
+              }
+            },
+            "DamagePerChain": {
+              "Value": 8,
+              "Scale": {
+                "Value": 0.23,
+                "Type": "spirit"
+              }
+            }
+          },
+          {
+            "TechResistDebuff": -15,
+            "DebuffDuration": 10,
+            "AbilityDuration": 10
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_power_surge",
+        "Name": "Power Surge",
+        "DescKey": "ability_power_surge_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "DamagePerChain",
+                "Name": "Shock Damage",
+                "Value": 10,
+                "Scale": {
+                  "Value": 0.14,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "ChainCount",
+                "Name": "Max Jumps",
+                "Value": 4
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "ChainRadius",
+              "Name": "Jump Radius",
+              "Value": 10,
+              "Scale": {
+                "Value": 1,
+                "Type": "radius"
+              },
+              "Type": "distance"
+            }
+          ],
+          "DescKey": "ability_power_surge_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -18
+          },
+          {
+            "BonusMoveSpeed": 3,
+            "BonusPerChain": {
+              "Value": 8,
+              "Scale": {
+                "Value": 0.23,
+                "Type": "spirit"
+              }
+            },
+            "DamagePerChain": {
+              "Value": 8,
+              "Scale": {
+                "Value": 0.23,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "ability_power_surge_t2_desc"
+          },
+          {
+            "TechResistDebuff": -15,
+            "AbilityDuration": 10,
+            "DescKey": "ability_power_surge_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "BonusPerChain": {
+            "Name": "Damage on Jump",
+            "Value": 10,
+            "Scale": {
+              "Value": 0.32,
+              "Type": "spirit"
+            }
+          },
+          "ChainTickRate": {
+            "Name": null,
+            "Value": 0.2
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 50,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_power_surge_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Power up your weapon with a shock effect, making <span class=\"highlight\">your bullets proc shock damage on your target</span>. This shock damage <span class=\"highlight\">bounces to enemies</span> near your target. Occurs once per burst shot.",
+          "plain_text": "Power up your weapon with a shock effect, making your bullets proc shock damage on your target. This shock damage bounces to enemies near your target. Occurs once per burst shot."
+        },
+        {
+          "localization_key": "ability_power_surge_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+3m</span> Move Speed <br><span class=\"highlight\">+8</span> Damage and increased scaling",
+          "plain_text": "+3m Move Speed\n+8 Damage and increased scaling"
+        },
+        {
+          "localization_key": "ability_power_surge_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+10s Duration<br>Applies <span class=\"highlight\">-15%</span> Spirit Resist",
+          "plain_text": "+10s Duration\nApplies -15% Spirit Resist"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Storm Cloud",
+      "internal_key": "citadel_ability_storm_cloud",
+      "data": {
+        "AbilityChannelTime": {
+          "Value": 7,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 205,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorExclusiveUse",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "CameraDistance": 600,
+        "CloudHeight": 120,
+        "DPS": {
+          "Value": 95,
+          "Scale": {
+            "Value": 0.6,
+            "Type": "spirit"
+          }
+        },
+        "DamageInterval": 0.3,
+        "EndingSoonTime": 2,
+        "ExpandTime": 3.5,
+        "FlightControlEnabled": 1.5,
+        "InitialRadius": {
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_storm_cloud",
+        "LightningStrikeAOEModifier": {
+          "Class": "LightningStrikeArea",
+          "Subclass": "LightningStrike"
+        },
+        "LightningStrikeDamage": {
+          "Value": 75,
+          "Scale": {
+            "Value": 0.5,
+            "Type": "spirit"
+          }
+        },
+        "LightningStrikeDelay": 0.25,
+        "LightningStrikeKnockBackForce": 500,
+        "LightningStrikeRadius": {
+          "Value": 7,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "LightningStrikes": 1,
+        "Name": "Storm Cloud",
+        "Radius": {
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "StormCloudModifier": {
+          "Class": "CitadelStormcloud",
+          "Subclass": "CitadelStormcloud"
+        },
+        "Upgrades": [
+          {
+            "BulletResistOnActive": 55
+          },
+          {
+            "Radius": 10,
+            "InitialRadius": 5,
+            "AbilityChannelTime": 7
+          },
+          {
+            "DPS": 65,
+            "FlightControlEnabled": 4
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_storm_cloud",
+        "Name": "Storm Cloud",
+        "DescKey": "citadel_ability_storm_cloud_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "DPS",
+                "Name": "Damage Per Second",
+                "Value": 95,
+                "Scale": {
+                  "Value": 0.6,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "FlightControlEnabled",
+                "Name": "Flight Speed",
+                "Value": 1.5
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "InitialRadius",
+              "Name": "Initial Radius",
+              "Value": 10,
+              "Scale": {
+                "Value": 1,
+                "Type": "radius"
+              },
+              "Type": "distance"
+            },
+            {
+              "Key": "BulletResistOnActive",
+              "Name": "Bullet Resist",
+              "Value": 0,
+              "Type": "bullet_armor_up"
+            }
+          ],
+          "DescKey": "citadel_ability_storm_cloud_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": []
+          },
+          "Alt": [
+            {
+              "Key": "LightningStrikeDamage",
+              "Name": "Strike Damage",
+              "Value": 75,
+              "Scale": {
+                "Value": 0.5,
+                "Type": "spirit"
+              },
+              "Type": "tech_damage"
+            },
+            {
+              "Key": "LightningStrikeRadius",
+              "Name": "Strike Radius",
+              "Value": 7,
+              "Scale": {
+                "Value": 1,
+                "Type": "range"
+              },
+              "Type": "distance"
+            }
+          ],
+          "DescKey": "citadel_ability_storm_cloud_lightning_strike_desc"
+        },
+        "Upgrades": [
+          {
+            "BulletResistOnActive": 55,
+            "DescKey": "citadel_ability_storm_cloud_t1_desc"
+          },
+          {
+            "Radius": 10,
+            "InitialRadius": 5,
+            "AbilityChannelTime": 7,
+            "DescKey": "citadel_ability_storm_cloud_t2_desc"
+          },
+          {
+            "DPS": 65,
+            "FlightControlEnabled": 4,
+            "DescKey": "citadel_ability_storm_cloud_t3_desc"
+          }
+        ],
+        "Cooldown": {
+          "ExpandTime": {
+            "Name": "Expand time",
+            "Value": 3.5,
+            "Type": "cooldown"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "CameraDistance": {
+            "Name": null,
+            "Value": 600
+          },
+          "CloudHeight": {
+            "Name": null,
+            "Value": 120
+          },
+          "DamageInterval": {
+            "Name": null,
+            "Value": 0.3
+          },
+          "EndingSoonTime": {
+            "Name": null,
+            "Value": 2
+          },
+          "LightningStrikeDelay": {
+            "Name": null,
+            "Value": 0.25
+          },
+          "LightningStrikeKnockBackForce": {
+            "Name": null,
+            "Value": 500
+          },
+          "LightningStrikes": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 7,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 205,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_storm_cloud_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Channel an expanding storm cloud around you that <span class=\"highlight\">damages all enemies</span> within its radius. Enemies do not take damage when they are out of line-of-sight.",
+          "plain_text": "Channel an expanding storm cloud around you that damages all enemies within its radius. Enemies do not take damage when they are out of line-of-sight."
+        },
+        {
+          "localization_key": "citadel_ability_storm_cloud_lightning_strike_desc",
+          "card_paths": [
+            "card.Info2.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "While channeling, press{g:citadel_binding:'Attack'}to mark the targeted area to be struck with a powerful lightning bolt that <span class=\"highlight\">knocks enemies away</span> after a 0.25s delay. One use per cast.",
+          "plain_text": "While channeling, press [Attack] to mark the targeted area to be struck with a powerful lightning bolt that knocks enemies away after a 0.25s delay. One use per cast."
+        },
+        {
+          "localization_key": "citadel_ability_storm_cloud_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+55% Bullet Resist</span> while channeling Storm Cloud",
+          "plain_text": "+55% Bullet Resist while channeling Storm Cloud"
+        },
+        {
+          "localization_key": "citadel_ability_storm_cloud_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+7s</span> Channel Time <br><span class=\"highlight\">+10m</span> Final Radius<br><span class=\"highlight\">+5m</span> Initial Radius",
+          "plain_text": "+7s Channel Time\n+10m Final Radius\n+5m Initial Radius"
+        },
+        {
+          "localization_key": "citadel_ability_storm_cloud_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+65</span> DPS<br><span class=\"highlight\">+4m</span> Flight Speed",
+          "plain_text": "+65 DPS\n+4m Flight Speed"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.47,
+    "AirDashSpeed": 17,
+    "BaseHealthRegen": 1,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 55,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.68,
+    "GroundDashSpeed": 14.7,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": true,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.24,
+      "MaxHealth": 41,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 1.3994,
+      "SustainedDPS": 0.95036
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_gigawatt_lore",
+    "MaxHealth": 730,
+    "MaxMoveSpeed": 6.7,
+    "MoveAcceleration": 4,
+    "Name": "Seven",
+    "Playstyle": "hero_gigawatt_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_gigawatt_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.8,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Mystic",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

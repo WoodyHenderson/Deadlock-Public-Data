@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "id": "item.compress-cooldown",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Compress Cooldown",
+    "numeric_id": 380806748,
+    "internal_key": "upgrade_magic_tempo",
+    "aliases": [
+      "upgrade_magic_tempo"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "spirit",
+    "tier": 2,
+    "activation": "passive",
+    "is_active_item": false,
+    "is_imbue": true,
+    "shop_filters": [
+      "Healing"
+    ],
+    "target_types": null
+  },
+  "purchase": {
+    "cost_souls": 1600,
+    "component_internal_keys": []
+  },
+  "description_plain": "Imbue an ability to reduce its Cooldown.",
+  "displayed_effects": [
+    {
+      "section": "passive",
+      "importance": "elevated",
+      "key": "CooldownReduction",
+      "label": "Ability Cooldown Reduction",
+      "value": "18%",
+      "property": {
+        "value": "18",
+        "provided_property_type": "MODIFIER_VALUE_COOLDOWN_REDUCTION_PERCENTAGE",
+        "css_class": "cooldown",
+        "loc_token_override": "SingleAbilityCooldownReduction",
+        "prefix": "{s:sign}",
+        "label": "Ability Cooldown Reduction",
+        "postfix": "%",
+        "postvalue_label": "Ability Cooldown Reduction",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": true,
+        "tooltip_is_important": false
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "CooldownReduction",
+          "bonus": "10"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 380806748,
+    "class_name": "upgrade_magic_tempo",
+    "name": "Compress Cooldown",
+    "start_trained": true,
+    "heroes": [],
+    "update_time": 1710350942,
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "spirit",
+    "item_tier": 2,
+    "properties": {
+      "AbilityCooldown": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown"
+      },
+      "AbilityDuration": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration"
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "CooldownReduction": {
+        "value": "18",
+        "provided_property_type": "MODIFIER_VALUE_COOLDOWN_REDUCTION_PERCENTAGE",
+        "css_class": "cooldown",
+        "loc_token_override": "SingleAbilityCooldownReduction",
+        "prefix": "{s:sign}",
+        "label": "Ability Cooldown Reduction",
+        "postfix": "%",
+        "postvalue_label": "Ability Cooldown Reduction",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": true,
+        "tooltip_is_important": false
+      }
+    },
+    "disabled": false,
+    "description": {
+      "desc": "Imbue an ability to reduce its <span class=\"highlight\">Cooldown</span>."
+    },
+    "activation": "passive",
+    "imbue": "imbue_modifier_value",
+    "tooltip_sections": [
+      {
+        "section_type": "passive",
+        "section_attributes": [
+          {
+            "loc_string": "Imbue an ability to reduce its <span class=\"highlight\">Cooldown</span>.",
+            "elevated_properties": [
+              "CooldownReduction"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "CooldownReduction",
+            "bonus": "10"
+          }
+        ]
+      }
+    ],
+    "is_active_item": false,
+    "shopable": true,
+    "cost": 1600
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Compress Cooldown",
+    "Description": "Imbue an ability to reduce its <span class=\"highlight\">Cooldown</span>.",
+    "Cost": 1600,
+    "Tier": 2,
+    "Activation": "Passive",
+    "Slot": "Tech",
+    "Components": null,
+    "TargetTypes": null,
+    "ShopFilters": [
+      "Healing"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": true,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "CooldownReduction": 18,
+    "PropertyUpgrades": {
+      "CooldownReduction": 10
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_magic_tempo",
+    "Name": "Compress Cooldown",
+    "Description": "Imbue an ability to reduce its <span class=\"highlight\">Cooldown</span>.",
+    "Cost": 1600,
+    "Tier": 2,
+    "Slot": "Tech",
+    "Activation": "Passive",
+    "Components": null,
+    "TargetTypes": null,
+    "ShopFilters": [
+      "Healing"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": true,
+    "Info1": {
+      "Type": "Passive",
+      "DescKey": "#upgrade_magic_tempo_desc",
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "CooldownReduction",
+          "Value": 18,
+          "Type": "cooldown",
+          "LocTokenOverride": "SingleAbilityCooldownReduction"
+        }
+      ],
+      "Alt": []
+    },
+    "Upgrades": {
+      "CooldownReduction": 10
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

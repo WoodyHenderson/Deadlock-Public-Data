@@ -1,0 +1,1074 @@
+{
+  "schema_version": 2,
+  "id": "hero.lady-geist",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.lady-geist.124875",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Lady Geist",
+  "aliases": [],
+  "internal_hero_key": "hero_ghost",
+  "hero_type": "Mystic",
+  "role_localization_key": "hero_ghost_role",
+  "playstyle_localization_key": "hero_ghost_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 880,
+    "health_regeneration_per_second": 1,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.3,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 2.4,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 13.9,
+      "distance_meters": 10,
+      "duration_seconds": 0.72
+    },
+    "air_dash": {
+      "speed_meters_per_second": 15.7,
+      "distance_meters": 8,
+      "duration_seconds": 0.51
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 1,
+    "MaxHealth": 51,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 2.1164,
+    "SustainedDPS": 1.3163
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 828,
+    "BulletDamage": 20.7,
+    "RoundsPerSecond": 2.1164,
+    "ClipSize": 9,
+    "ReloadTime": 2.585,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 17,
+    "FalloffEndRange": 48,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.8,
+    "BulletRadius": 0.1016,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 43.809,
+    "SustainedDPS": 27.247,
+    "NameKey": "citadel_weapon_hero_ghost_set",
+    "DescKey": "citadel_weapon_hero_ghost_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_MediumRange",
+      "Attribute_EWeaponAttribute_HeavyHitter"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Essence Bomb",
+      "internal_key": "ability_blood_bomb",
+      "data": {
+        "AbilityCooldown": {
+          "Value": 14,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "ArmingDuration": 0.65,
+        "BeepSoundBuildupCount": 4,
+        "BeepSoundIntervalBias": 0.55,
+        "BeepSoundMaxFrequency": 0.1,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCanSetQuickCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 90,
+          "Scale": {
+            "Value": 1.22,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_blood_bomb",
+        "Name": "Essence Bomb",
+        "Radius": {
+          "Value": 7,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "SelfDamagePct": 30,
+        "SpilledBloodModifier": {
+          "Class": "SpilledBloodThinker",
+          "Subclass": "SpilledBloodThinker",
+          "TickRate": 0.5,
+          "Height": 80
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -5
+          },
+          {
+            "Damage": 50,
+            "Radius": 2
+          },
+          {
+            "BloodSpillDPSPercent": 26,
+            "BloodSpillDuration": 6
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_blood_bomb",
+        "Name": "Essence Bomb",
+        "DescKey": "ability_blood_bomb_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 90,
+                "Scale": {
+                  "Value": 1.22,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "SelfDamagePct",
+                "Name": "Health Cost",
+                "Value": 30
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "ArmingDuration",
+              "Name": "Arming Duration",
+              "Value": 0.65,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_blood_bomb_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "BloodSpillDuration",
+                "Name": "Toxic Mess Duration",
+                "Value": 0,
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [],
+          "RequiresUpgradeIndex": 2,
+          "DescKey": "ability_blood_bomb_t3_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -5
+          },
+          {
+            "Damage": 50,
+            "Radius": 2,
+            "DescKey": "ability_blood_bomb_t2_desc"
+          },
+          {
+            "BloodSpillDPSPercent": 26,
+            "BloodSpillDuration": 6,
+            "DescKey": "ability_blood_bomb_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "BeepSoundBuildupCount": {
+            "Name": null,
+            "Value": 4
+          },
+          "BeepSoundIntervalBias": {
+            "Name": null,
+            "Value": 0.55
+          },
+          "BeepSoundMaxFrequency": {
+            "Name": null,
+            "Value": 0.1
+          }
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 14,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 7,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_blood_bomb_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Sacrifice some of your health</span> to launch a bomb that <span class=\"highlight\">deals damage</span> after a brief arm time.<br>Self damage type is Spirit and can be mitigated.",
+          "plain_text": "Sacrifice some of your health to launch a bomb that deals damage after a brief arm time.\nSelf damage type is Spirit and can be mitigated."
+        },
+        {
+          "localization_key": "ability_blood_bomb_t3_desc",
+          "card_paths": [
+            "card.Info2.DescKey",
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Bombs leave a toxic mess on the ground, dealing <span class=\"highlight\">26%</span> of the original <span class=\"highlight\">damage per second</span>, for <span class=\"highlight\">6s</span>.",
+          "plain_text": "Bombs leave a toxic mess on the ground, dealing 26% of the original damage per second, for 6s."
+        },
+        {
+          "localization_key": "ability_blood_bomb_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+<span class=\"highlight\">2m</span> Radius and +<span class=\"highlight\">50</span> Damage.",
+          "plain_text": "+2m Radius and +50 Damage."
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Life Drain",
+      "internal_key": "ability_life_drain",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCastRange": {
+          "Value": 18,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 34,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityDuration": {
+          "Value": 2.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 10,
+        "BehaviourBits": [
+          "BehaviorAlwaysPreviewRadius",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCannotCancelDuringChannel",
+          "BehaviorAllowAltCast",
+          "BehaviorUseInstantCastUnitTargetUi",
+          "BehaviorTriggerCancelMashProtectionOnCast",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_life_drain",
+        "LifeDrainCasterModifier": {
+          "Class": "Base",
+          "Subclass": "LifeDrainCaster",
+          "EnabledStateMask": [
+            "FamiliarAbilityKeepalive"
+          ]
+        },
+        "LifeDrainHealthMult": {
+          "Value": 100,
+          "Scale": {
+            "Value": 1,
+            "Type": "healing"
+          }
+        },
+        "LifeDrainPerSecond": {
+          "Value": 24,
+          "Scale": {
+            "Value": 0.3225,
+            "Type": "spirit"
+          }
+        },
+        "LifeDrainTargetModifier": {
+          "Class": "LifeDrain",
+          "Subclass": "LifeDrain",
+          "SilenceModifier": {
+            "Class": "CitadelSilenced",
+            "Subclass": "LifeDrainSilence"
+          }
+        },
+        "MaxRange": {
+          "Value": 28,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "MoveSpeedReduction": 40,
+        "Name": "Life Drain",
+        "TickRate": 0.1,
+        "Upgrades": [
+          {
+            "LifeDrainPerSecond": 13
+          },
+          {
+            "AbilityDuration": 2.5
+          },
+          {
+            "AbilityCharges": 3,
+            "AbilityCooldownBetweenCharge": 0.1,
+            "LifeDrainPerSecond": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.3,
+                "Type": "spirit"
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_life_drain",
+        "Name": "Life Drain",
+        "DescKey": "ability_life_drain_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "LifeDrainPerSecond",
+                "Name": "Damage Per Second",
+                "Value": 24,
+                "Scale": {
+                  "Value": 0.3225,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "LifeDrainHealthMult",
+              "Name": "Damage to Heal",
+              "Value": 100,
+              "Scale": {
+                "Value": 1,
+                "Type": "healing"
+              },
+              "Type": "healing"
+            },
+            {
+              "Key": "MaxRange",
+              "Name": "Max Tether Range",
+              "Value": 28,
+              "Scale": {
+                "Value": 1,
+                "Type": "range"
+              },
+              "Type": "distance"
+            }
+          ],
+          "DescKey": "ability_life_drain_desc"
+        },
+        "Upgrades": [
+          {
+            "LifeDrainPerSecond": 13
+          },
+          {
+            "AbilityDuration": 2.5
+          },
+          {
+            "AbilityCharges": 3,
+            "AbilityCooldownBetweenCharge": 0.1,
+            "LifeDrainPerSecond": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.3,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "ability_life_drain_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Debuff": {
+          "MoveSpeedReduction": {
+            "Name": null,
+            "Value": 40,
+            "Type": "slow"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 10
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.1
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 18,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "distance"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 34,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 2.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_life_drain_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Create a tether that <span class=\"highlight\">drains enemy health over time</span> and <span class=\"highlight\">heals you</span>. Target must be in line of sight and within max range to drain. You can shoot and use other abilities during the drain, but your move speed is reduced. <br><span class=\"highlight\">{g:citadel_binding:'AltCast'} to give health to friendly Heroes</span>.",
+          "plain_text": "Create a tether that drains enemy health over time and heals you. Target must be in line of sight and within max range to drain. You can shoot and use other abilities during the drain, but your move speed is reduced.\n[Alt Cast] to give health to friendly Heroes."
+        },
+        {
+          "localization_key": "ability_life_drain_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Enables and Grants <span class=\"highlight\">+2</span> Charges. Increases spirit scaling.",
+          "plain_text": "Enables and Grants +2 Charges. Increases spirit scaling."
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Malice",
+      "internal_key": "ability_blood_shards",
+      "data": {
+        "AbilityCastDelay": 0.12,
+        "AbilityCooldown": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityPostCastDuration": 0.3,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "DebuffDuration": {
+          "Value": 9,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "BloodShardDebuff",
+          "Subclass": "BloodShardDebuff"
+        },
+        "HealthToDamage": {
+          "Value": 23,
+          "Scale": {
+            "Value": 0.558,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_blood_shards",
+        "MaxStacks": 5,
+        "MoveSpeedPenaltyPerStack": 15,
+        "Name": "Malice",
+        "NumBloodShards": 3,
+        "SelfDamagePct": 9,
+        "SlowDuration": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "SpreadAngleDegrees": 6,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -3
+          },
+          {
+            "HealthToDamage": 25.2,
+            "NumBloodShards": 4,
+            "SpreadAngleDegrees": 22
+          },
+          {
+            "VulnerabilityPerStack": 8
+          }
+        ],
+        "VulnerabilityPerStack": 7
+      },
+      "card": {
+        "Key": "ability_blood_shards",
+        "Name": "Malice",
+        "DescKey": "ability_blood_shards_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "HealthToDamage",
+                "Name": "Damage",
+                "Value": 23,
+                "Scale": {
+                  "Value": 0.558,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "SelfDamagePct",
+                "Name": "Health Cost",
+                "Value": 9,
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "NumBloodShards",
+              "Name": "Blood Shards",
+              "Value": 3
+            },
+            {
+              "Key": "MaxStacks",
+              "Name": "Max Stacks",
+              "Value": 5
+            }
+          ],
+          "DescKey": "ability_blood_shards_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "Effect Per Stack:",
+                "Key": "VulnerabilityPerStack",
+                "Name": "Damage Amplification",
+                "Value": 7,
+                "Type": "damage"
+              },
+              {
+                "Title": "Effect Per Stack:",
+                "Key": "MoveSpeedPenaltyPerStack",
+                "Name": "Movement Slow",
+                "Value": 15,
+                "Type": "slow"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "DebuffDuration",
+              "Name": "Debuff Duration",
+              "Value": 9,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 4,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ]
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -3
+          },
+          {
+            "HealthToDamage": 25.2,
+            "NumBloodShards": 4,
+            "SpreadAngleDegrees": 22,
+            "DescKey": "ability_blood_shards_t2_desc"
+          },
+          {
+            "VulnerabilityPerStack": 8,
+            "DescKey": "ability_blood_shards_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.3
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "SpreadAngleDegrees": {
+            "Name": null,
+            "Value": 6
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.12,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_blood_shards_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Sacrifice some of your health</span> to launch blood shards that apply a stack of Malice. Each stack <span class=\"highlight\">slows</span> the victim and <span class=\"highlight\">increases the damage</span> they take from you. The slow effect decreases over time.",
+          "plain_text": "Sacrifice some of your health to launch blood shards that apply a stack of Malice. Each stack slows the victim and increases the damage they take from you. The slow effect decreases over time."
+        },
+        {
+          "localization_key": "ability_blood_shards_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+25.2</span> Damage and +4 Blood Shards",
+          "plain_text": "+25.2 Damage and +4 Blood Shards"
+        },
+        {
+          "localization_key": "ability_blood_shards_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+8%</span> Damage Amp",
+          "plain_text": "+8% Damage Amp"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Soul Exchange",
+      "internal_key": "ability_health_swap",
+      "data": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCastRange": {
+          "Value": 5.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 220,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": 0.25,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCleaveDisabled",
+          "BehaviorUseInstantCastUnitTargetUi",
+          "BehaviorCanSetQuickCast"
+        ],
+        "BuffModifier": {
+          "Class": "Base",
+          "Subclass": "Base"
+        },
+        "ChannelMoveSpeed": 2,
+        "EnemyMinHealthPct": 30,
+        "EnemySlowPct": 70,
+        "InitialUpSpeed": 150,
+        "IsDisabled": false,
+        "Key": "ability_health_swap",
+        "MinDiffToCast": 0.1,
+        "MinHealthTakenPct": 30,
+        "Name": "Soul Exchange",
+        "PostCastHoldTime": 0.2,
+        "PreCastModifier": {
+          "Class": "HealthswapPrecast",
+          "Subclass": "HealthswapPrecast"
+        },
+        "SilenceModifier": {
+          "Class": "CitadelSilenced",
+          "Subclass": "CitadelSilenced"
+        },
+        "SwapModifier": {
+          "Class": "HealthSwapDebuff",
+          "Subclass": "HealthSwapDebuff"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -50
+          },
+          {
+            "SilenceDuration": 3,
+            "SilenceRadius": 25
+          },
+          {
+            "SelfBuffDuration": 8,
+            "TechResist": 50,
+            "BonusFireRate": 40,
+            "BonusSpirit": 60
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_health_swap",
+        "Name": "Soul Exchange",
+        "DescKey": "ability_health_swap_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "EnemyMinHealthPct",
+                "Name": "Enemy Min Health",
+                "Value": 30,
+                "Type": "health"
+              },
+              {
+                "Key": "MinHealthTakenPct",
+                "Name": "Min Health Received",
+                "Value": 30,
+                "Type": "health"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "SelfBuffDuration",
+              "Value": 0,
+              "Type": "duration"
+            },
+            {
+              "Key": "SilenceDuration",
+              "Name": "Silence Duration",
+              "Value": 0,
+              "Type": "duration"
+            },
+            {
+              "Key": "SilenceRadius",
+              "Name": "Silence Radius",
+              "Value": 0,
+              "Type": "distance"
+            }
+          ],
+          "DescKey": "ability_health_swap_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -50
+          },
+          {
+            "SilenceDuration": 3,
+            "SilenceRadius": 25,
+            "DescKey": "ability_health_swap_t2_desc"
+          },
+          {
+            "SelfBuffDuration": 8,
+            "TechResist": 50,
+            "BonusFireRate": 40,
+            "BonusSpirit": 60,
+            "DescKey": "ability_health_swap_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 2,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "EnemySlowPct": {
+            "Name": "Enemy Move Speed",
+            "Value": 70
+          },
+          "InitialUpSpeed": {
+            "Name": null,
+            "Value": 150
+          },
+          "MinDiffToCast": {
+            "Name": null,
+            "Value": 0.1
+          },
+          "PostCastHoldTime": {
+            "Name": null,
+            "Value": 0.2
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.1,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 5.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 220,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 0.25,
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_health_swap_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Swaps health levels</span> with an enemy target. There is a minimum health percentage that enemies can be brought down to and a minimum amount of health received based on victims current health.",
+          "plain_text": "Swaps health levels with an enemy target. There is a minimum health percentage that enemies can be brought down to and a minimum amount of health received based on victims current health."
+        },
+        {
+          "localization_key": "ability_health_swap_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Silence</span> enemies within 25m for 3s",
+          "plain_text": "Silence enemies within 25m for 3s"
+        },
+        {
+          "localization_key": "ability_health_swap_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On cast, <span class=\"highlight\">+60</span> Spirit Power, +40%</span> Fire Rate and +50%</span> Spirit Resistance for 8s.",
+          "plain_text": "On cast, +60 Spirit Power, +40% Fire Rate and +50% Spirit Resistance for 8s."
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.51,
+    "AirDashSpeed": 15.7,
+    "BaseHealthRegen": 1,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.72,
+    "GroundDashSpeed": 13.9,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 1,
+      "MaxHealth": 51,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 2.1164,
+      "SustainedDPS": 1.3163
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_ghost_lore",
+    "MaxHealth": 880,
+    "MaxMoveSpeed": 6.3,
+    "MoveAcceleration": 4,
+    "Name": "Lady Geist",
+    "Playstyle": "hero_ghost_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_ghost_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 2.4,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Mystic",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

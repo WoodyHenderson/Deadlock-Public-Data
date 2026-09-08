@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "manifest.objectives.standard",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-04",
+  "included_count": 2,
+  "included": [
+    {
+      "id": "objective.rejuvenator",
+      "name": "Rejuvenator",
+      "kind": "claimable_team_buff",
+      "path": "rejuvenator/rejuvenator.yaml"
+    },
+    {
+      "id": "objective.soul-urn",
+      "name": "Soul Urn",
+      "kind": "claimable_map_objective",
+      "path": "soul-urn/soul-urn.yaml"
+    }
+  ],
+  "covered_by_existing_system_records": [
+    {
+      "id": "objective.unstable-rift",
+      "timing_ref": "data.general.map-timings:events[id=unstable-rift]",
+      "economy_ref": "data.general.economy:bounties[entity=unstable-rift]"
+    },
+    {
+      "id": "objective.powerups",
+      "timing_ref": "data.general.map-timings:events[id=powerups]"
+    }
+  ]
+}

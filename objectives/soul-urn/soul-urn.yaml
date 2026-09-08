@@ -1,0 +1,102 @@
+schema_version: 1
+id: objective.soul-urn
+snapshot_id: deadlock-wiki-2026-09-03
+current_as_of: "2026-09-03"
+evidence_status: source_verified
+sources:
+  - wiki.soul-urn.114949
+
+identity:
+  name: Soul Urn
+  aliases:
+    - Spirit Urn
+    - Soul Jar
+    - Spirit Jar
+    - Idol
+  kind: claimable_map_objective
+
+spawn:
+  first_spawn_seconds: 600
+  respawn_interval_seconds: 300
+  spawn_lanes:
+    - yellow
+    - green
+  first_spawn_lane: yellow
+  alternates_spawn_lanes: true
+  descent_duration_seconds: 12.5
+  pickup_method:
+    - light_melee
+    - heavy_melee
+  expiry_after_spawn_without_pickup_seconds: 180
+
+carrying_bonuses:
+  move_speed_meters_per_second: 2
+  maximum_move_speed_meters_per_second: 15
+  stamina: 1
+  dash_distance_percent: 10
+  stamina_regeneration_percent: 25
+  slow_resistance_percent: 100
+  restrictions:
+    cannot_use:
+      - ziplines
+      - teleporters
+  trailing_team:
+    enabled: true
+    maximum_bullet_resistance_percent: 35
+    maximum_spirit_resistance_percent: 35
+    maximum_debuff_resistance_percent: 35
+    maximum_sprint_speed_bonus_meters_per_second: 5
+    scaling:
+      based_on_team_soul_deficit: true
+      maximum_deficit_percent: 15
+
+reward:
+  delivery_grants:
+    - souls
+    - four_random_permanent_buffs
+  soul_orbs_can_be_denied: true
+  courier_receives_unsecured_orb_value_if_not_denied: true
+  base_soul_bounty_ref: data.general.economy:bounties[entity=soul-urn]
+  bounty_locked_when: urn_spawns
+
+permanent_buffs:
+  source: Golden Statue Permanent Buffs table
+  number_granted_on_delivery: 4
+  selection: random_pseudorandom_distribution
+  buff_type_weight:
+    standard: 1
+    max_health: 2
+  distribution_considers_all_sources: true
+  levels:
+    - level: 1
+      match_time_minutes: 0
+      effects:
+        fire_rate_percent: 1.5
+        max_ammo_percent: 3
+        cooldown_reduction_percent: 0.5
+        weapon_damage_percent: 3
+        max_health: 15
+        spirit_power: 2
+    - level: 2
+      match_time_minutes: 10
+      effects:
+        fire_rate_percent: 2
+        max_ammo_percent: 5
+        cooldown_reduction_percent: 0.75
+        weapon_damage_percent: 4
+        max_health: 20
+        spirit_power: 3
+    - level: 3
+      match_time_minutes: 30
+      effects:
+        fire_rate_percent: 2.5
+        max_ammo_percent: 7
+        cooldown_reduction_percent: 1
+        weapon_damage_percent: 6
+        max_health: 30
+        spirit_power: 4
+
+notes:
+  - Permanent buff level is based on the match-time tier when the buff is granted.
+  - The exact permanent-buff selection is random/pseudorandom; delivery does not guarantee four different types.
+  - Trailing-team carrying bonuses are conditional and should not be presented as universal carrying bonuses.

@@ -1,0 +1,1531 @@
+{
+  "schema_version": 2,
+  "id": "hero.billy",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.billy.125748",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Billy",
+  "aliases": [],
+  "internal_hero_key": "hero_punkgoat",
+  "hero_type": "Brawler",
+  "role_localization_key": "hero_punkgoat_role",
+  "playstyle_localization_key": "hero_punkgoat_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 820,
+    "health_regeneration_per_second": 2,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 7,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 14.7,
+      "distance_meters": 10,
+      "duration_seconds": 0.68
+    },
+    "air_dash": {
+      "speed_meters_per_second": 17,
+      "distance_meters": 8,
+      "duration_seconds": 0.47
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": -20,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.127,
+    "MaxHealth": 53,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 1.4942,
+    "SustainedDPS": 0.69909
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 513.1,
+    "BulletDamage": 6.3,
+    "RoundsPerSecond": 11.765,
+    "ClipSize": 30,
+    "ReloadTime": 2.9,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 13.97,
+    "FalloffEndRange": 31.75,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0,
+    "BulletRadius": 0.1016,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 74.12,
+    "SustainedDPS": 34.679,
+    "NameKey": "citadel_weapon_hero_punkgoat_set",
+    "DescKey": "citadel_weapon_hero_punkgoat_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_CloseRange"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Bashdown",
+      "internal_key": "ability_punkgoat_ult",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityChannelTime": 0.3,
+        "AbilityCharges": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 35,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityPostCastDuration": 0.3,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorSilentCastFailureFeedback",
+          "BehaviorChannelled",
+          "BehaviorExclusiveUse",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCannotCancelDuringChannel",
+          "BehaviorCooldownOnChannelEnd",
+          "BehaviorTriggerCancelMashProtectionOnCast",
+          "BehaviorHoldsAtMaxChannel"
+        ],
+        "CameraTurnRateMax": 2000,
+        "ChannelMoveSpeed": 4.826,
+        "CountsAsLightMelee": 1,
+        "Damage": {
+          "Value": 35,
+          "Scale": {
+            "Value": 1.1,
+            "Type": "spirit"
+          }
+        },
+        "DiminishingSlowModifier": {
+          "Class": "DiminishingSlow",
+          "Subclass": "Slow"
+        },
+        "ExplodeDelay": 0.5,
+        "FireRateModifier": {
+          "Class": "Base",
+          "Subclass": "SlamFirerateSlow"
+        },
+        "GroundAuraModifier": {
+          "Class": "PunkgoatSigilAura",
+          "Subclass": "SigilAura",
+          "Height": 100,
+          "ProvidedByAura": {
+            "Class": "Base",
+            "Subclass": "SigilModifier"
+          }
+        },
+        "HeavyMeleeDamage": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0,
+            "Type": "heavy_melee"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_punkgoat_ult",
+        "MeleeDamage": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0.9,
+            "Type": "melee"
+          }
+        },
+        "Name": "Bashdown",
+        "PlaceDistanceInFrontOfCaster": 6.2,
+        "PullDownDuration": 0.75,
+        "PullDownRange": 3,
+        "PullToGroundModifier": {
+          "Class": "ChargeDragEnemy",
+          "Subclass": "ChargeDragEnemy",
+          "ForwardOffset": 200,
+          "VerticalOffset": 0,
+          "ForceDistScale": 11
+        },
+        "TossDuration": 0.4,
+        "TossForce": 350,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -10
+          },
+          {
+            "AbilityCastRange": 2,
+            "AbilityCharges": 1
+          },
+          {
+            "CountsAsLightMelee": -1,
+            "CountsAsHeavyMelee": 1,
+            "HeavyMeleeDamage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.5,
+                "Type": "heavy_melee"
+              }
+            },
+            "MeleeDamage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0,
+                "Type": "melee",
+                "Multiply": true
+              }
+            },
+            "AbilityCooldownBetweenCharge": -3
+          }
+        ],
+        "WaveEndRadius": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "WaveStartRadius": 0.5,
+        "WaveThickness": 1
+      },
+      "card": {
+        "Key": "ability_punkgoat_ult",
+        "Name": "Bashdown",
+        "DescKey": "ability_punkgoat_ult_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "MeleeDamage",
+                "Name": "Melee Damage",
+                "Value": 0,
+                "Scale": {
+                  "Value": 0.9,
+                  "Type": "melee"
+                },
+                "Type": "melee_damage"
+              },
+              {
+                "Key": "HeavyMeleeDamage",
+                "Name": "Damage",
+                "Value": 0,
+                "Scale": {
+                  "Value": 0,
+                  "Type": "heavy_melee"
+                },
+                "Type": "melee_damage"
+              },
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 35,
+                "Scale": {
+                  "Value": 1.1,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Hit:",
+                "Key": "TossDuration",
+                "Name": "Duration",
+                "StatusEffect": "Displacement",
+                "Value": 0.4,
+                "Type": "duration"
+              },
+              {
+                "Title": "On Hit:",
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 0,
+                "Type": "move_speed"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "FireRateSlowDuration",
+              "Name": "Duration",
+              "Value": 0,
+              "Type": "duration"
+            },
+            {
+              "Key": "FireRateSlow",
+              "Name": "Fire Rate",
+              "Value": 0,
+              "Type": "bullet_damage"
+            }
+          ],
+          "DescKey": "ability_punkgoat_ult_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -10,
+            "DescKey": "ability_punkgoat_ult_t1_desc"
+          },
+          {
+            "AbilityCastRange": 2,
+            "AbilityCharges": 1,
+            "DescKey": "ability_punkgoat_ult_t2_desc"
+          },
+          {
+            "CountsAsLightMelee": -1,
+            "CountsAsHeavyMelee": 1,
+            "HeavyMeleeDamage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.5,
+                "Type": "heavy_melee"
+              }
+            },
+            "MeleeDamage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0,
+                "Type": "melee",
+                "Multiply": true
+              }
+            },
+            "AbilityCooldownBetweenCharge": -3,
+            "DescKey": "ability_punkgoat_ult_t3_desc"
+          }
+        ],
+        "Duration": {
+          "ExplodeDelay": {
+            "Name": "Explosion Delay",
+            "Value": 0.5,
+            "Type": "duration"
+          },
+          "PullDownDuration": {
+            "Name": null,
+            "Value": 0.75,
+            "Type": "duration"
+          }
+        },
+        "Range": {
+          "PlaceDistanceInFrontOfCaster": {
+            "Name": null,
+            "Value": 6.2,
+            "Type": "distance"
+          },
+          "PullDownRange": {
+            "Name": null,
+            "Value": 3,
+            "Type": "distance"
+          },
+          "WaveEndRadius": {
+            "Name": null,
+            "Value": 8,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            },
+            "Type": "distance"
+          },
+          "WaveStartRadius": {
+            "Name": null,
+            "Value": 0.5,
+            "Type": "distance"
+          },
+          "WaveThickness": {
+            "Name": null,
+            "Value": 1,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 4.826,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.3
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "CameraTurnRateMax": {
+            "Name": null,
+            "Value": 2000
+          },
+          "CountsAsLightMelee": {
+            "Name": null,
+            "Value": 1
+          },
+          "TossForce": {
+            "Name": null,
+            "Value": 350
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "distance"
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 0.3,
+          "Type": "cast"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 35,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_punkgoat_ult_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Slam your bat into the ground, {g:citadel_inline_attribute:'Pulling'} enemies down and dealing {g:citadel_inline_attribute:'MeleeDamage'}.<br><br>The slam creates a shockwave that deals {g:citadel_inline_attribute:'SpiritDamage'} and applies {g:citadel_inline_attribute:'KnockUp'}.",
+          "plain_text": "Slam your bat into the ground, pulling enemies down and dealing melee damage.\nThe slam creates a shockwave that deals spirit damage and applies knockup."
+        },
+        {
+          "localization_key": "ability_punkgoat_ult_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "-10s Cooldown",
+          "plain_text": "-10s Cooldown"
+        },
+        {
+          "localization_key": "ability_punkgoat_ult_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+1 Charge and +2m Radius",
+          "plain_text": "+1 Charge and +2m Radius"
+        },
+        {
+          "localization_key": "ability_punkgoat_ult_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "-3s Charge Time<br>Now deals <span class=\"highlight\">50% Heavy Melee Damage</span>",
+          "plain_text": "-3s Charge Time\nNow deals 50% Heavy Melee Damage"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Rising Ram",
+      "internal_key": "ability_punkgoat_goatflip",
+      "data": {
+        "AbilityCastDelay": 0.35,
+        "AbilityCooldown": {
+          "Value": 32,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 0.3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AirControlAccelPercent": 50,
+        "AirControlDashReductionPct": -70,
+        "AirControlDebuffDuration": 1.5,
+        "AirControlPercent": 50,
+        "AllowRamMultiple": 1,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontTriggerPostCastOnCastComplete",
+          "BehaviorMovement",
+          "BehaviorTriggerCancelMashProtectionOnCast",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "CameraTurnRateMax": 188,
+        "ChargeMultiHitRadius": 1.5,
+        "ChargeRadius": 2.54,
+        "ChargeSpeed": 1200,
+        "ChargeStrikeDistance": 165,
+        "Damage": {
+          "Value": 40,
+          "Scale": {
+            "Value": 1.9,
+            "Type": "spirit"
+          }
+        },
+        "DealMaxHealthDamagePct": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0,
+            "Type": "spirit"
+          }
+        },
+        "GoingBackAwaySpeed": -100,
+        "GoingUpDistance": 3.1,
+        "GoingUpEnemyDistancePercent": 95,
+        "GoingUpSpeed": 430,
+        "HoverGravityScale": 0.75,
+        "IsDisabled": false,
+        "Key": "ability_punkgoat_goatflip",
+        "KnockAwaySpeed": 170,
+        "Name": "Rising Ram",
+        "NearbyHeroKillDistance": 10,
+        "ReduceCooldownOnHitPct": 50,
+        "TimeBeforeGoUpForLagComp": 0.1,
+        "TimeGoingUpEnemy": 0.2,
+        "Upgrades": [
+          {
+            "WeaponDamageBurst": 25,
+            "WeaponDamageBurstDuration": 5
+          },
+          {
+            "AbilityDuration": 0.4
+          },
+          {
+            "MaxHealthBuffPct": 10,
+            "MaxHealthBuffDuration": 16,
+            "AbilityCooldown": -13
+          }
+        ],
+        "WorldImpactRadius": 25
+      },
+      "card": {
+        "Key": "ability_punkgoat_goatflip",
+        "Name": "Rising Ram",
+        "DescKey": "ability_punkgoat_goatflip_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Impact:",
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 40,
+                "Scale": {
+                  "Value": 1.9,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Impact:",
+                "Key": "MaxHealthBuffPct",
+                "Name": "Max Health",
+                "Value": 0,
+                "Type": "health"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "WeaponDamageBurst",
+              "Value": 0,
+              "Type": "damage"
+            },
+            {
+              "Key": "WeaponDamageBurstDuration",
+              "Value": 0,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_punkgoat_goatflip_desc"
+        },
+        "Upgrades": [
+          {
+            "WeaponDamageBurst": 25,
+            "WeaponDamageBurstDuration": 5,
+            "DescKey": "ability_punkgoat_goatflip_t1_desc"
+          },
+          {
+            "AbilityDuration": 0.4,
+            "DescKey": "ability_punkgoat_goatflip_t2_desc"
+          },
+          {
+            "MaxHealthBuffPct": 10,
+            "MaxHealthBuffDuration": 16,
+            "AbilityCooldown": -13
+          }
+        ],
+        "Range": {
+          "ChargeMultiHitRadius": {
+            "Name": null,
+            "Value": 1.5,
+            "Type": "distance"
+          },
+          "ChargeRadius": {
+            "Name": null,
+            "Value": 2.54,
+            "Type": "distance"
+          }
+        },
+        "Damage": {
+          "DealMaxHealthDamagePct": {
+            "Name": null,
+            "Value": 0,
+            "Scale": {
+              "Value": 0,
+              "Type": "spirit"
+            },
+            "Type": "tech_damage"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AirControlAccelPercent": {
+            "Name": "Air Acceleration",
+            "Value": 50
+          },
+          "AirControlDashReductionPct": {
+            "Name": null,
+            "Value": -70
+          },
+          "AirControlDebuffDuration": {
+            "Name": null,
+            "Value": 1.5
+          },
+          "AirControlPercent": {
+            "Name": "Air Control",
+            "Value": 50
+          },
+          "AllowRamMultiple": {
+            "Name": null,
+            "Value": 1
+          },
+          "CameraTurnRateMax": {
+            "Name": null,
+            "Value": 188
+          },
+          "ChargeSpeed": {
+            "Name": "Charge Speed",
+            "Value": 1200
+          },
+          "ChargeStrikeDistance": {
+            "Name": null,
+            "Value": 165
+          },
+          "GoingBackAwaySpeed": {
+            "Name": null,
+            "Value": -100
+          },
+          "GoingUpDistance": {
+            "Name": null,
+            "Value": 3.1
+          },
+          "GoingUpEnemyDistancePercent": {
+            "Name": null,
+            "Value": 95
+          },
+          "GoingUpSpeed": {
+            "Name": null,
+            "Value": 430
+          },
+          "HoverGravityScale": {
+            "Name": null,
+            "Value": 0.75
+          },
+          "KnockAwaySpeed": {
+            "Name": null,
+            "Value": 170
+          },
+          "NearbyHeroKillDistance": {
+            "Name": null,
+            "Value": 10
+          },
+          "ReduceCooldownOnHitPct": {
+            "Name": null,
+            "Value": 50
+          },
+          "TimeBeforeGoUpForLagComp": {
+            "Name": null,
+            "Value": 0.1
+          },
+          "TimeGoingUpEnemy": {
+            "Name": null,
+            "Value": 0.2
+          },
+          "WorldImpactRadius": {
+            "Name": null,
+            "Value": 25
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.35,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 32,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 0.3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_punkgoat_goatflip_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Charge head-first into an enemy and <span class=\"highlight\">send them into the air along with Billy.<br><br><span class=\"diminish\">Cooldown reduced by 50% on impact.</span></span>",
+          "plain_text": "Charge head-first into an enemy and send them into the air along with Billy.\nCooldown reduced by 50% on impact."
+        },
+        {
+          "localization_key": "ability_punkgoat_goatflip_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On Impact: +25% {g:citadel_inline_attribute:'WeaponDamage'} for 5s",
+          "plain_text": "On Impact: +25% weapon damage for 5s"
+        },
+        {
+          "localization_key": "ability_punkgoat_goatflip_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "0.4s Charge Duration<br>",
+          "plain_text": "0.4s Charge Duration"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Blasted",
+      "internal_key": "ability_punkgoat_blasted",
+      "data": {
+        "AbilityCastDelay": 0.28,
+        "AbilityCooldown": {
+          "Value": 27,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AutoIntrinsicModifiers": [
+          {
+            "Class": "PunkgoatBlastedhealthwatcher",
+            "Subclass": "Blastedhealthwatcher"
+          }
+        ],
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorCooldownOnChannelEnd",
+          "BehaviorAllowGunFireAfterCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BlastedModifier": {
+          "Class": "PunkgoatBlastedactive",
+          "Subclass": "Blastedactive"
+        },
+        "BlastedPassiveModifier": {
+          "Class": "PunkgoatBlastedpassive",
+          "Subclass": "Blasted"
+        },
+        "BlastedRateOnBulletPct": 50,
+        "BulletDamageAmp": 10,
+        "BulletDamageAmpDuration": 7,
+        "BulletsReloadedPerHeavyMeleePct": 100,
+        "BulletsReloadedPerLightMeleePct": 35,
+        "ChannelMoveSpeed": -1,
+        "DurationPerHeavyMelee": {
+          "Value": 4.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "DurationPerLightMelee": {
+          "Value": 2.8,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "HealthBoostDuration": {
+          "Value": 11,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "HealthDisplayModifier": {
+          "Class": "Base",
+          "Subclass": "Blastedhealthdisplay"
+        },
+        "HealthModifier": {
+          "Class": "PunkgoatBlastedhealth",
+          "Subclass": "Blastedhealth"
+        },
+        "IsDisabled": false,
+        "Key": "ability_punkgoat_blasted",
+        "LightMeleeScalePct": 40,
+        "MaxDuration": 35,
+        "MaxHealthMelee": {
+          "Value": 70,
+          "Scale": {
+            "Value": 0.6,
+            "Type": "spirit"
+          }
+        },
+        "Name": "Blasted",
+        "NonPlayerResourceScalePct": 25,
+        "ShredModifier": {
+          "Class": "PunkgoatBlastedshred",
+          "Subclass": "Blastedshred"
+        },
+        "Upgrades": [
+          {
+            "BonusMoveSpeed": 2.25
+          },
+          {
+            "GainSlamOnUse": 1,
+            "BulletDamageAmp": 7
+          },
+          {
+            "MaxHealthMelee": {
+              "Value": 50,
+              "Scale": {
+                "Value": 0.6,
+                "Type": "spirit"
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_punkgoat_blasted",
+        "Name": "Blasted",
+        "DescKey": "ability_punkgoat_blasted_desc",
+        "Info1": {
+          "Main": {},
+          "Alt": [],
+          "DescKey": "ability_punkgoat_blasted_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "While Blasted:",
+                "Key": "MaxHealthMelee",
+                "Name": "Melee Bonus Health",
+                "Value": 70,
+                "Scale": {
+                  "Value": 0.6,
+                  "Type": "spirit"
+                },
+                "Type": "healing"
+              },
+              {
+                "Title": "While Blasted:",
+                "Key": "BulletDamageAmp",
+                "Name": "Wrecked Bullet Amp",
+                "Value": 10,
+                "Type": "bullet_damage"
+              },
+              {
+                "Title": "While Blasted:",
+                "Key": "BonusMoveSpeed",
+                "Name": "Move Speed",
+                "Value": 0,
+                "Type": "move_speed"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "HealthBoostDuration",
+              "Value": 11,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_punkgoat_blastedactive_desc"
+        },
+        "Upgrades": [
+          {
+            "BonusMoveSpeed": 2.25,
+            "DescKey": "ability_punkgoat_blasted_t1_desc"
+          },
+          {
+            "GainSlamOnUse": 1,
+            "BulletDamageAmp": 7,
+            "DescKey": "ability_punkgoat_blasted_t2_desc"
+          },
+          {
+            "MaxHealthMelee": {
+              "Value": 50,
+              "Scale": {
+                "Value": 0.6,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "ability_punkgoat_blasted_t3_desc"
+          }
+        ],
+        "Duration": {
+          "BulletDamageAmpDuration": {
+            "Name": null,
+            "Value": 7,
+            "Type": "duration"
+          },
+          "DurationPerHeavyMelee": {
+            "Name": null,
+            "Value": 4.5,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "duration"
+          },
+          "DurationPerLightMelee": {
+            "Name": null,
+            "Value": 2.8,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "duration"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "BlastedRateOnBulletPct": {
+            "Name": null,
+            "Value": 50
+          },
+          "BulletsReloadedPerHeavyMeleePct": {
+            "Name": null,
+            "Value": 100
+          },
+          "BulletsReloadedPerLightMeleePct": {
+            "Name": null,
+            "Value": 35
+          },
+          "LightMeleeScalePct": {
+            "Name": null,
+            "Value": 40
+          },
+          "MaxDuration": {
+            "Name": null,
+            "Value": 35
+          },
+          "NonPlayerResourceScalePct": {
+            "Name": null,
+            "Value": 25
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.28,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 27,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_punkgoat_blasted_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"diminish\">Passive:</span> Melee hits <span class=\"highlight\">restore ammo</span> and inflict <span class=\"highlight_special\">wrecked</span> on the victim for 7s.",
+          "plain_text": "Passive: Melee hits restore ammo and inflict wrecked on the victim for 7s."
+        },
+        {
+          "localization_key": "ability_punkgoat_blastedactive_desc",
+          "card_paths": [
+            "card.Info2.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"diminish\">Active:</span> Bullets are amplified against <span class=\"highlight_special\">wrecked</span> enemies. Using melee boosts {g:citadel_inline_attribute:'MaxHealth'} and extends duration.",
+          "plain_text": "Active: Bullets are amplified against wrecked enemies. Using melee boosts max health and extends duration."
+        },
+        {
+          "localization_key": "ability_punkgoat_blasted_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "While Blasted: <span class=\"highlight\">+2.25m/s</span> {g:citadel_inline_attribute:'BonusMoveSpeed'}",
+          "plain_text": "While Blasted: +2.25m/s bonus move speed"
+        },
+        {
+          "localization_key": "ability_punkgoat_blasted_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+1 Bashdown Charge</span> on use and +7% Wrecked Bullet Amp",
+          "plain_text": "+1 Bashdown Charge on use and +7% Wrecked Bullet Amp"
+        },
+        {
+          "localization_key": "ability_punkgoat_blasted_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+50 Melee Bonus Health and increases spirit scaling",
+          "plain_text": "+50 Melee Bonus Health and increases spirit scaling"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Chain Gang",
+      "internal_key": "ability_punkgoat_tether",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 175,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": 2.8,
+        "AbilityPostCastDuration": 0.2,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorSilentCastFailureFeedback",
+          "BehaviorAlwaysPreviewRadius",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorProjectilePassThroughWorld",
+          "BehaviorShowCastRangeAsSatSphereWhileCasting",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "DPS": {
+          "Value": 45,
+          "Scale": {
+            "Value": 0.9,
+            "Type": "spirit"
+          }
+        },
+        "Damage": {
+          "Value": 120,
+          "Scale": {
+            "Value": 0.7,
+            "Type": "spirit"
+          }
+        },
+        "DamageIncreasePct": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0,
+            "Type": "spirit"
+          }
+        },
+        "FireRateSlowModifier": {
+          "Class": "Base",
+          "Subclass": "TetherFirerateSlow"
+        },
+        "IsDisabled": false,
+        "Key": "ability_punkgoat_tether",
+        "MoveSpeedSlowMaxPct": 35,
+        "MoveSpeedSlowMinPct": 25,
+        "Name": "Chain Gang",
+        "PullDistance": 4,
+        "PullDuration": 0.8,
+        "PullForceMax": 2000,
+        "PullModifier": {
+          "Class": "PunkgoatTetherPull",
+          "Subclass": "Pull"
+        },
+        "PullTrackCasterDuration": 0.5,
+        "RopeLength": 2,
+        "RopeSnapDistance": 45,
+        "RopeSnapNoLOSDuration": 0.5,
+        "RopeSoftEdgeLength": 4.5,
+        "TetheredModifier": {
+          "Class": "PunkgoatTether",
+          "Subclass": "Tether"
+        },
+        "TickRate": 0.25,
+        "UnstoppableModifier": {
+          "Class": "Unstoppable",
+          "Subclass": "Unstoppable",
+          "EnabledStateMask": [
+            "StatusImmune",
+            "SlowImmune",
+            "KnockdownImmune",
+            "Unstoppable"
+          ],
+          "StatusEffectPriority": 25,
+          "DisabledStateMask": [
+            "Disarmed",
+            "Muted",
+            "Silenced",
+            "SilenceMovementAbilites",
+            "Slowed",
+            "Glitched",
+            "MeleeDisabledDebuff",
+            "DashDisabledDebuff"
+          ]
+        },
+        "Upgrades": [
+          {
+            "BulletResist": 40,
+            "TechResist": 40
+          },
+          {
+            "AbilityCooldown": -40
+          },
+          {
+            "UnstoppablePerHero": 1.3,
+            "AbilityCastRange": 5
+          }
+        ],
+        "WaitingToPullModifier": {
+          "Class": "PunkgoatTetherWaiting",
+          "Subclass": "WaitingForPull"
+        }
+      },
+      "card": {
+        "Key": "ability_punkgoat_tether",
+        "Name": "Chain Gang",
+        "DescKey": "ability_punkgoat_tether_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "UnstoppablePerHero",
+                "Name": "Per Hero",
+                "StatusEffect": "Unstoppable",
+                "Value": 0,
+                "Type": "duration"
+              },
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 120,
+                "Scale": {
+                  "Value": 0.7,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "AbilityDuration",
+                "Name": "Duration",
+                "Value": 2.8,
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "MoveSpeedSlowMaxPct",
+              "Value": 35,
+              "Type": "move_speed"
+            },
+            {
+              "Key": "BulletResist",
+              "Name": "Bullet Resist",
+              "Value": 0,
+              "Type": "bullet_armor_up"
+            },
+            {
+              "Key": "TechResist",
+              "Name": "Spirit Resist",
+              "Value": 0,
+              "Type": "tech_armor_up"
+            },
+            {
+              "Key": "FireRateSlow",
+              "Name": "Fire Rate",
+              "Value": 0,
+              "Type": "bullet_damage"
+            },
+            {
+              "Key": "FireRateSlowDuration",
+              "Name": "Duration",
+              "Value": 0,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_punkgoat_tether_desc"
+        },
+        "Upgrades": [
+          {
+            "BulletResist": 40,
+            "TechResist": 40,
+            "DescKey": "ability_punkgoat_tether_t1_desc"
+          },
+          {
+            "AbilityCooldown": -40
+          },
+          {
+            "UnstoppablePerHero": 1.3,
+            "AbilityCastRange": 5,
+            "DescKey": "ability_punkgoat_tether_t3_desc"
+          }
+        ],
+        "Range": {
+          "RopeLength": {
+            "Name": null,
+            "Value": 2,
+            "Type": "distance"
+          },
+          "RopeSnapDistance": {
+            "Name": null,
+            "Value": 45,
+            "Type": "distance"
+          },
+          "RopeSoftEdgeLength": {
+            "Name": null,
+            "Value": 4.5,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          },
+          "MoveSpeedSlowMinPct": {
+            "Name": null,
+            "Value": 25,
+            "Type": "move_speed"
+          }
+        },
+        "Damage": {
+          "DPS": {
+            "Name": "Damage Per Second",
+            "Value": 45,
+            "Scale": {
+              "Value": 0.9,
+              "Type": "spirit"
+            },
+            "Type": "tech_damage"
+          },
+          "DamageIncreasePct": {
+            "Name": null,
+            "Value": 0,
+            "Scale": {
+              "Value": 0,
+              "Type": "spirit"
+            },
+            "Type": "damage"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.2
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "PullDistance": {
+            "Name": null,
+            "Value": 4
+          },
+          "PullDuration": {
+            "Name": null,
+            "Value": 0.8
+          },
+          "PullForceMax": {
+            "Name": null,
+            "Value": 2000
+          },
+          "PullTrackCasterDuration": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "RopeSnapNoLOSDuration": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.25
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 175,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 2.8,
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_punkgoat_tether_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Chain nearby enemies to you. Chained enemies <span class=\"highlight\">cannot use movement abilities</span> and receive a heavy {g:citadel_inline_attribute:'Slow'} when they pull on the chain.<br><br>After a delay, <span class=\"highlight\">yank everyone towards Billy</span> and deal {g:citadel_inline_attribute:'SpiritDamage'}.<br><br><span class=\"diminish\">The chain breaks if you lose line of sight for a short while.</span>",
+          "plain_text": "Chain nearby enemies to you. Chained enemies cannot use movement abilities and receive a heavy slow when they pull on the chain.\nAfter a delay, yank everyone towards Billy and deal spirit damage.\nThe chain breaks if you lose line of sight for a short while."
+        },
+        {
+          "localization_key": "ability_punkgoat_tether_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+40% {g:citadel_inline_attribute:'SpiritResist'} & {g:citadel_inline_attribute:'BulletResist'}",
+          "plain_text": "+40% spirit resist & bullet resist"
+        },
+        {
+          "localization_key": "ability_punkgoat_tether_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+5m</span> Range <br><span class=\"highlight\">+1.3s</span> of <span class=\"highlight\">Unstoppable</span> Per Hero pulled in",
+          "plain_text": "+5m Range\n+1.3s of Unstoppable Per Hero pulled in"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.47,
+    "AirDashSpeed": 17,
+    "BaseHealthRegen": 2,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": -20,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.68,
+    "GroundDashSpeed": 14.7,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.127,
+      "MaxHealth": 53,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 1.4942,
+      "SustainedDPS": 0.69909
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_punkgoat_lore",
+    "MaxHealth": 820,
+    "MaxMoveSpeed": 7,
+    "MoveAcceleration": 4,
+    "Name": "Billy",
+    "Playstyle": "hero_punkgoat_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_punkgoat_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.6,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Brawler",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

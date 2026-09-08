@@ -1,0 +1,583 @@
+{
+  "schema_version": 1,
+  "id": "item.glass-cannon",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Glass Cannon",
+    "numeric_id": 365620721,
+    "internal_key": "upgrade_glass_cannon",
+    "aliases": [
+      "upgrade_glass_cannon"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "weapon",
+    "tier": 4,
+    "activation": "passive",
+    "is_active_item": false,
+    "is_imbue": false,
+    "shop_filters": [
+      "WeaponDamage",
+      "ClipSize",
+      "FireRate"
+    ],
+    "target_types": [
+      "HeroEnemy"
+    ]
+  },
+  "purchase": {
+    "cost_souls": 6400,
+    "component_internal_keys": []
+  },
+  "description_plain": "Each hero kill grants permanent Fire Rate (up to a max of 8 times). Death results in the loss of 1 stack.",
+  "displayed_effects": [
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "BaseAttackDamagePercent",
+      "label": "Weapon Damage",
+      "value": "80%",
+      "property": {
+        "value": "80",
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_DAMAGE_INCREASE",
+        "css_class": "bullet_damage",
+        "display_units": "EDisplayUnit_Normal",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "MaxHealthLossPercent",
+      "label": "Max Health",
+      "value": "-13%",
+      "property": {
+        "value": "-13",
+        "provided_property_type": "MODIFIER_VALUE_HEALTH_MAX_PERCENT",
+        "css_class": "health",
+        "negative_attribute": true,
+        "label": "Max Health",
+        "postfix": "%",
+        "postvalue_label": "Max Health",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "important",
+      "key": "FireRatePerKill",
+      "label": "Fire Rate per Kill",
+      "value": "7%",
+      "property": {
+        "value": "7",
+        "provided_property_type": "MODIFIER_VALUE_FIRE_RATE",
+        "css_class": "fire_rate",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "+",
+        "label": "Fire Rate per Kill",
+        "postfix": "%",
+        "postvalue_label": "Fire Rate per Kill",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "FireRatePerKill",
+          "bonus": "8"
+        },
+        {
+          "name": "BaseAttackDamagePercent",
+          "bonus": "60"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 365620721,
+    "class_name": "upgrade_glass_cannon",
+    "name": "Glass Cannon",
+    "start_trained": true,
+    "heroes": [],
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "weapon",
+    "item_tier": 4,
+    "properties": {
+      "AbilityCooldown": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown"
+      },
+      "AbilityDuration": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration"
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "BaseAttackDamagePercent": {
+        "value": "80",
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_DAMAGE_INCREASE",
+        "css_class": "bullet_damage",
+        "display_units": "EDisplayUnit_Normal",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "MaxHealthLossPercent": {
+        "value": "-13",
+        "provided_property_type": "MODIFIER_VALUE_HEALTH_MAX_PERCENT",
+        "css_class": "health",
+        "negative_attribute": true,
+        "label": "Max Health",
+        "postfix": "%",
+        "postvalue_label": "Max Health",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "BonusClipPerKill": {
+        "value": "2",
+        "prefix": "{s:sign}",
+        "label": "Bonus Ammo Per Kill",
+        "postvalue_label": "Bonus Ammo Per Kill"
+      },
+      "BonusFireRate": {
+        "provided_property_type": "MODIFIER_VALUE_FIRE_RATE",
+        "prefix": "{s:sign}",
+        "label": "Fire Rate",
+        "postfix": "%",
+        "postvalue_label": "Fire Rate"
+      },
+      "BonusMoveSpeed": {
+        "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_MAX",
+        "css_class": "move_speed",
+        "prefix": "{s:sign}",
+        "label": "Move Speed",
+        "postfix": " m",
+        "postvalue_label": "Move Speed"
+      },
+      "FireRatePerKill": {
+        "value": "7",
+        "provided_property_type": "MODIFIER_VALUE_FIRE_RATE",
+        "css_class": "fire_rate",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "+",
+        "label": "Fire Rate per Kill",
+        "postfix": "%",
+        "postvalue_label": "Fire Rate per Kill",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "MaxStacks": {
+        "value": "8",
+        "label": "Max Stacks",
+        "postvalue_label": "Max Stacks"
+      },
+      "SlowPercent": {
+        "value": "30",
+        "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
+        "css_class": "slow",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "loc_token_override": "GlassCannon_SlowPercent",
+        "prefix": "+",
+        "label": "Bullet Slow Proc",
+        "postfix": "%",
+        "postvalue_label": "Bullet Slow Proc"
+      },
+      "SlowDuration": {
+        "value": "3",
+        "css_class": "duration",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "duration_scale_function"
+        },
+        "label": "Slow Duration",
+        "postfix": "s",
+        "postvalue_label": "Slow Duration"
+      },
+      "BuildUpDuration": {
+        "value": "2",
+        "css_class": "duration",
+        "label": "Buildup Decay Time",
+        "postfix": "s",
+        "postvalue_label": "Buildup Decay Time"
+      },
+      "BuildUpPerShot": {
+        "value": "1.2",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "buildup_scale_function",
+          "specific_stat_scale_type": "EBuildUpRate"
+        },
+        "label": "Buildup Per Shot",
+        "postfix": "%",
+        "postvalue_label": "Buildup Per Shot"
+      }
+    },
+    "description": {
+      "desc": "Each hero kill grants <span class=\"highlight\">permanent Fire Rate</span> (up to a max of 8 times). Death results in the loss of 1 stack."
+    },
+    "activation": "passive",
+    "tooltip_sections": [
+      {
+        "section_type": "innate",
+        "section_attributes": [
+          {
+            "properties": [
+              "BaseAttackDamagePercent",
+              "MaxHealthLossPercent"
+            ],
+            "elevated_properties": []
+          }
+        ]
+      },
+      {
+        "section_type": "passive",
+        "section_attributes": [
+          {
+            "loc_string": "Each hero kill grants <span class=\"highlight\">permanent Fire Rate</span> (up to a max of 8 times). Death results in the loss of 1 stack.",
+            "important_properties": [
+              "FireRatePerKill"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "FireRatePerKill",
+            "bonus": "8"
+          },
+          {
+            "name": "BaseAttackDamagePercent",
+            "bonus": "60"
+          }
+        ]
+      }
+    ],
+    "is_active_item": false,
+    "shopable": true,
+    "cost": 6400
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Glass Cannon",
+    "Description": "Each hero kill grants <span class=\"highlight\">permanent Fire Rate</span> (up to a max of 8 times). Death results in the loss of 1 stack.",
+    "Cost": 6400,
+    "Tier": 4,
+    "Activation": "Passive",
+    "Slot": "Weapon",
+    "Components": null,
+    "TargetTypes": [
+      "HeroEnemy"
+    ],
+    "ShopFilters": [
+      "WeaponDamage",
+      "ClipSize",
+      "FireRate"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "BaseAttackDamagePercent": 80,
+    "MaxHealthLossPercent": -13,
+    "BonusClipPerKill": 2,
+    "FireRatePerKill": 7,
+    "MaxStacks": 8,
+    "SlowPercent": 30,
+    "SlowDuration": 3,
+    "BuildUpDuration": 2,
+    "BuildUpPerShot": 1.2,
+    "PropertyUpgrades": {
+      "FireRatePerKill": 8,
+      "BaseAttackDamagePercent": 60
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_glass_cannon",
+    "Name": "Glass Cannon",
+    "Description": "Each hero kill grants <span class=\"highlight\">permanent Fire Rate</span> (up to a max of 8 times). Death results in the loss of 1 stack.",
+    "Cost": 6400,
+    "Tier": 4,
+    "Slot": "Weapon",
+    "Activation": "Passive",
+    "Components": null,
+    "TargetTypes": [
+      "HeroEnemy"
+    ],
+    "ShopFilters": [
+      "WeaponDamage",
+      "ClipSize",
+      "FireRate"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Innate",
+      "DescKey": null,
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [],
+      "Alt": [
+        {
+          "Key": "BaseAttackDamagePercent",
+          "Value": 80,
+          "Type": "bullet_damage"
+        },
+        {
+          "Key": "MaxHealthLossPercent",
+          "Value": -13,
+          "Type": "health"
+        }
+      ]
+    },
+    "Info2": {
+      "Type": "Passive",
+      "DescKey": "#upgrade_glass_cannon_desc",
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "FireRatePerKill",
+          "Value": 7,
+          "Type": "fire_rate",
+          "UsageFlags": "ConditionallyApplied"
+        }
+      ],
+      "Alt": []
+    },
+    "Upgrades": {
+      "FireRatePerKill": 8,
+      "BaseAttackDamagePercent": 60
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      },
+      "BonusClipPerKill": {
+        "Key": "BonusClipPerKill",
+        "Value": 2
+      },
+      "MaxStacks": {
+        "Key": "MaxStacks",
+        "Value": 8
+      },
+      "SlowPercent": {
+        "Key": "SlowPercent",
+        "Value": 30,
+        "Type": "slow",
+        "UsageFlags": "ConditionallyApplied",
+        "LocTokenOverride": "GlassCannon_SlowPercent"
+      },
+      "SlowDuration": {
+        "Key": "SlowDuration",
+        "Value": 3,
+        "Type": "duration"
+      },
+      "BuildUpDuration": {
+        "Key": "BuildUpDuration",
+        "Value": 2,
+        "Type": "duration"
+      },
+      "BuildUpPerShot": {
+        "Key": "BuildUpPerShot",
+        "Value": 1.2
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

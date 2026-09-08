@@ -1,0 +1,503 @@
+{
+  "schema_version": 1,
+  "id": "item.frostbite-charm",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Frostbite Charm",
+    "numeric_id": 2068250483,
+    "internal_key": "upgrade_shivas_bracelet",
+    "aliases": [
+      "upgrade_shivas_bracelet"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": true
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "spirit",
+    "tier": 5,
+    "activation": "passive",
+    "is_active_item": false,
+    "is_imbue": true,
+    "shop_filters": null,
+    "target_types": [
+      "AllEnemy"
+    ]
+  },
+  "purchase": {
+    "cost_souls": 9999,
+    "component_internal_keys": []
+  },
+  "description_plain": "Imbued ability has its Cooldown reduced and gains Spirit Power. When the ability deals damage, freeze the target and apply bonus damage. Cooldown is per target.",
+  "displayed_effects": [
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "ImbuedCooldownReduction",
+      "label": "Imbued Ability Cooldown Reduction",
+      "value": "50%",
+      "property": {
+        "value": "50",
+        "provided_property_type": "MODIFIER_VALUE_COOLDOWN_REDUCTION_PERCENTAGE",
+        "css_class": "cooldown",
+        "prefix": "{s:sign}",
+        "label": "Imbued Ability Cooldown Reduction",
+        "postfix": "%",
+        "postvalue_label": "Imbued Ability Cooldown Reduction",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "ImbuedTechPower",
+      "label": "Imbued Ability Spirit Power",
+      "value": "70",
+      "property": {
+        "value": "70",
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "css_class": "tech_damage",
+        "prefix": "{s:sign}",
+        "label": "Imbued Ability Spirit Power",
+        "postvalue_label": "Imbued Ability Spirit Power",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "Damage",
+      "label": "Damage",
+      "value": "200",
+      "property": {
+        "value": "200",
+        "css_class": "tech_damage",
+        "label": "Damage",
+        "postvalue_label": "Damage",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "FreezeDuration",
+      "label": "Freeze Duration",
+      "value": "1s",
+      "property": {
+        "value": "1",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "duration_scale_function"
+        },
+        "label": "Freeze Duration",
+        "postfix": "s",
+        "postvalue_label": "Freeze Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "AbilityCooldown",
+          "bonus": "-2"
+        },
+        {
+          "name": "ImbuedCooldownReduction",
+          "bonus": "15"
+        },
+        {
+          "name": "ImbuedTechPower",
+          "bonus": "40"
+        },
+        {
+          "name": "Damage",
+          "bonus": "100"
+        },
+        {
+          "name": "FreezeDuration",
+          "bonus": "0.3"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 2068250483,
+    "class_name": "upgrade_shivas_bracelet",
+    "name": "Frostbite Charm",
+    "start_trained": true,
+    "heroes": [],
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "spirit",
+    "item_tier": 5,
+    "properties": {
+      "AbilityCooldown": {
+        "value": 10.0,
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "CooldownPerTarget_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown"
+      },
+      "AbilityDuration": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration"
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "ImbuedCooldownReduction": {
+        "value": "50",
+        "provided_property_type": "MODIFIER_VALUE_COOLDOWN_REDUCTION_PERCENTAGE",
+        "css_class": "cooldown",
+        "prefix": "{s:sign}",
+        "label": "Imbued Ability Cooldown Reduction",
+        "postfix": "%",
+        "postvalue_label": "Imbued Ability Cooldown Reduction",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "ImbuedTechPower": {
+        "value": "70",
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "css_class": "tech_damage",
+        "prefix": "{s:sign}",
+        "label": "Imbued Ability Spirit Power",
+        "postvalue_label": "Imbued Ability Spirit Power",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "Damage": {
+        "value": "200",
+        "css_class": "tech_damage",
+        "label": "Damage",
+        "postvalue_label": "Damage",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "FreezeDuration": {
+        "value": "1",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "duration_scale_function"
+        },
+        "label": "Freeze Duration",
+        "postfix": "s",
+        "postvalue_label": "Freeze Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    "description": {
+      "desc": "Imbued ability has its <span class=\"highlight\">Cooldown reduced</span> and gains <span class=\"highlight\">Spirit Power</span>. When the ability deals damage, <span class=\"highlight\">freeze</span> the target and apply <span class=\"highlight\">bonus damage</span>. <span class=\"diminish\"><br><br>Cooldown is per target.</span>"
+    },
+    "activation": "passive",
+    "imbue": "imbue_modifier_value",
+    "tooltip_sections": [
+      {
+        "section_type": "active",
+        "section_attributes": [
+          {
+            "loc_string": "Imbued ability has its <span class=\"highlight\">Cooldown reduced</span> and gains <span class=\"highlight\">Spirit Power</span>. When the ability deals damage, <span class=\"highlight\">freeze</span> the target and apply <span class=\"highlight\">bonus damage</span>. <span class=\"diminish\"><br><br>Cooldown is per target.</span>",
+            "important_properties": [
+              "ImbuedCooldownReduction",
+              "ImbuedTechPower",
+              "Damage",
+              "FreezeDuration"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "AbilityCooldown",
+            "bonus": "-2"
+          },
+          {
+            "name": "ImbuedCooldownReduction",
+            "bonus": "15"
+          },
+          {
+            "name": "ImbuedTechPower",
+            "bonus": "40"
+          },
+          {
+            "name": "Damage",
+            "bonus": "100"
+          },
+          {
+            "name": "FreezeDuration",
+            "bonus": "0.3"
+          }
+        ]
+      }
+    ],
+    "is_active_item": false,
+    "shopable": true,
+    "cost": 9999
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Frostbite Charm",
+    "Description": "Imbued ability has its <span class=\"highlight\">Cooldown reduced</span> and gains <span class=\"highlight\">Spirit Power</span>. When the ability deals damage, <span class=\"highlight\">freeze</span> the target and apply <span class=\"highlight\">bonus damage</span>. <span class=\"diminish\"><br><br>Cooldown is per target.</span>",
+    "Cost": 9999,
+    "Tier": 5,
+    "Activation": "Passive",
+    "Slot": "Tech",
+    "Components": null,
+    "TargetTypes": [
+      "AllEnemy"
+    ],
+    "ShopFilters": null,
+    "IsDisabled": false,
+    "StreetBrawl": true,
+    "IsImbue": true,
+    "AbilityCooldown": 10.0,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "ImbuedCooldownReduction": 50,
+    "ImbuedTechPower": 70,
+    "Damage": 200,
+    "FreezeDuration": 1,
+    "PropertyUpgrades": {
+      "AbilityCooldown": -2,
+      "ImbuedCooldownReduction": 15,
+      "ImbuedTechPower": 40,
+      "Damage": 100,
+      "FreezeDuration": 0.3
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_shivas_bracelet",
+    "Name": "Frostbite Charm",
+    "Description": "Imbued ability has its <span class=\"highlight\">Cooldown reduced</span> and gains <span class=\"highlight\">Spirit Power</span>. When the ability deals damage, <span class=\"highlight\">freeze</span> the target and apply <span class=\"highlight\">bonus damage</span>. <span class=\"diminish\"><br><br>Cooldown is per target.</span>",
+    "Cost": 9999,
+    "Tier": 5,
+    "Slot": "Tech",
+    "Activation": "Passive",
+    "Components": null,
+    "TargetTypes": [
+      "AllEnemy"
+    ],
+    "ShopFilters": null,
+    "IsDisabled": false,
+    "StreetBrawl": true,
+    "IsImbue": true,
+    "Info1": {
+      "Type": "Active",
+      "DescKey": "#upgrade_shivas_bracelet_desc",
+      "Cooldown": 10.0,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "ImbuedCooldownReduction",
+          "Value": 50,
+          "Type": "cooldown"
+        },
+        {
+          "Key": "ImbuedTechPower",
+          "Value": 70,
+          "Type": "tech_damage"
+        },
+        {
+          "Key": "Damage",
+          "Value": 200,
+          "Type": "tech_damage"
+        },
+        {
+          "Key": "FreezeDuration",
+          "Value": 1
+        }
+      ],
+      "Alt": []
+    },
+    "Upgrades": {
+      "AbilityCooldown": -2,
+      "ImbuedCooldownReduction": 15,
+      "ImbuedTechPower": 40,
+      "Damage": 100,
+      "FreezeDuration": 0.3
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

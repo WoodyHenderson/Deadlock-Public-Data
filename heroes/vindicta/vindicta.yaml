@@ -1,0 +1,1039 @@
+{
+  "schema_version": 2,
+  "id": "hero.vindicta",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.vindicta.124937",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Vindicta",
+  "aliases": [],
+  "internal_hero_key": "hero_hornet",
+  "hero_type": "Marksman",
+  "role_localization_key": "hero_hornet_role",
+  "playstyle_localization_key": "hero_hornet_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 755,
+    "health_regeneration_per_second": 2,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 7.9,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 14.7,
+      "distance_meters": 10,
+      "duration_seconds": 0.68
+    },
+    "air_dash": {
+      "speed_meters_per_second": 17,
+      "distance_meters": 8,
+      "duration_seconds": 0.47
+    },
+    "stamina": {
+      "charges": 2,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.495,
+    "MaxHealth": 28,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 2.1429,
+    "SustainedDPS": 1.2878
+  },
+  "spirit_scaling": {
+    "BulletDamage": 0.022,
+    "DPS": 0.095238,
+    "SustainedDPS": 0.057237
+  },
+  "weapon": {
+    "BulletSpeed": 660,
+    "BulletDamage": 12.33,
+    "RoundsPerSecond": 4.329,
+    "ClipSize": 19,
+    "ReloadTime": 2.914,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 64,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.8,
+    "BulletRadius": 0.0762,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 53.377,
+    "SustainedDPS": 32.079,
+    "NameKey": "citadel_weapon_hero_hornet_set",
+    "DescKey": "citadel_weapon_hero_hornet_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_RapidFire",
+      "Attribute_EWeaponAttribute_LongRange"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Stake",
+      "internal_key": "citadel_ability_hornet_chain",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCooldown": {
+          "Value": 40,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorProjectileFiredAsBullet",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "CaptureRadius": {
+          "Value": 9,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "ChainDuration": {
+          "Value": 1.75,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "ChainLength": 9,
+        "ChainModifier": {
+          "Class": "CitadelHornetChainConnection",
+          "Subclass": "CitadelHornetChainConnection"
+        },
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 40,
+          "Scale": {
+            "Value": 0.5,
+            "Type": "spirit"
+          }
+        },
+        "DisarmModifier": {
+          "Class": "CitadelDisarmed",
+          "Subclass": "CitadelDisarmed"
+        },
+        "EnemyDragSpeed": 25.4,
+        "IsDisabled": false,
+        "Key": "citadel_ability_hornet_chain",
+        "Name": "Stake",
+        "SlowPercent": 40,
+        "Upgrades": [
+          {
+            "Damage": 45
+          },
+          {
+            "AbilityCooldown": -22
+          },
+          {
+            "ChainDuration": 0.75,
+            "CaptureRadius": 2
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_hornet_chain",
+        "Name": "Stake",
+        "DescKey": "citadel_ability_hornet_chain_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "ChainDuration",
+                "Name": "Tether Duration",
+                "Value": 1.75,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              },
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 40,
+                "Scale": {
+                  "Value": 0.5,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "CaptureRadius",
+                "Name": "Capture Radius",
+                "Value": 9,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "range"
+                },
+                "Type": "distance"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "ChainLength",
+              "Name": "Tether Length",
+              "Value": 9,
+              "Type": "distance"
+            },
+            {
+              "Key": "SlowPercent",
+              "Name": "Move Speed",
+              "Value": 40,
+              "Type": "slow"
+            }
+          ],
+          "DescKey": "citadel_ability_hornet_chain_desc"
+        },
+        "Upgrades": [
+          {
+            "Damage": 45
+          },
+          {
+            "AbilityCooldown": -22
+          },
+          {
+            "ChainDuration": 0.75,
+            "CaptureRadius": 2,
+            "DescKey": "citadel_ability_hornet_chain_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "EnemyDragSpeed": {
+            "Name": null,
+            "Value": 25.4
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 40,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_hornet_chain_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Throw a stake that <span class=\"highlight\">tethers enemies</span> to the location where the stake lands. Enemy movement is restricted to the length of the tether.",
+          "plain_text": "Throw a stake that tethers enemies to the location where the stake lands. Enemy movement is restricted to the length of the tether."
+        },
+        {
+          "localization_key": "citadel_ability_hornet_chain_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+0.75s</span> Tether Duration and <span class=\"highlight\">+2m</span> Capture Radius",
+          "plain_text": "+0.75s Tether Duration and +2m Capture Radius"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Flight",
+      "internal_key": "citadel_ability_hornet_leap",
+      "data": {
+        "AbilityChannelTime": 0.2,
+        "AbilityCooldown": {
+          "Value": 42,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 13,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AirSideMoveSpeedPercentage": -35,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorNoTarget",
+          "BehaviorMovement",
+          "BehaviorRequireAbilityButtonToCancel",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "FlyingItemCastRange": 50,
+        "IsDisabled": false,
+        "JumpVelocity": 1000,
+        "Key": "citadel_ability_hornet_leap",
+        "KillCheckModifier": {
+          "Class": "Base",
+          "Subclass": "KillcheckModifier",
+          "Duration": 1
+        },
+        "LeapModifier": {
+          "Class": "HornetLeap",
+          "Subclass": "HornetLeap",
+          "EnabledStateMask": [
+            "AbilityMovement",
+            "JumpDisabled",
+            "DisableAirSpreadPenalty",
+            "UnlimitedAirDashes",
+            "ZiplineDisabled"
+          ]
+        },
+        "MagicDamagePerBullet": {
+          "Value": 10,
+          "Scale": {
+            "Value": 0.18,
+            "Type": "spirit"
+          }
+        },
+        "MaxFlyHeight": 1720,
+        "MinVelocityZ": -20,
+        "Name": "Flight",
+        "Upgrades": [
+          {
+            "BonusClipSizePercent": 50
+          },
+          {
+            "AbilityDuration": 10
+          },
+          {
+            "MagicDamagePerBullet": {
+              "Value": 10,
+              "Scale": {
+                "Value": 0.1,
+                "Type": "spirit"
+              }
+            },
+            "RefreshOnKill": 1
+          }
+        ],
+        "WeaponRecoilReduction": 40
+      },
+      "card": {
+        "Key": "citadel_ability_hornet_leap",
+        "Name": "Flight",
+        "DescKey": "citadel_ability_hornet_leap_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "MagicDamagePerBullet",
+                "Name": "Spirit Damage Per Bullet",
+                "Value": 10,
+                "Scale": {
+                  "Value": 0.18,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "FlyingItemCastRange",
+                "Name": "Item Range",
+                "Value": 50,
+                "Type": "distance"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "citadel_ability_hornet_leap_desc"
+        },
+        "Upgrades": [
+          {
+            "BonusClipSizePercent": 50,
+            "DescKey": "citadel_ability_hornet_leap_t1_desc"
+          },
+          {
+            "AbilityDuration": 10
+          },
+          {
+            "MagicDamagePerBullet": {
+              "Value": 10,
+              "Scale": {
+                "Value": 0.1,
+                "Type": "spirit"
+              }
+            },
+            "RefreshOnKill": 1,
+            "DescKey": "citadel_ability_hornet_leap_t3_desc"
+          }
+        ],
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AirSideMoveSpeedPercentage": {
+            "Name": null,
+            "Value": -35
+          },
+          "JumpVelocity": {
+            "Name": "Jump Velocity",
+            "Value": 1000
+          },
+          "MaxFlyHeight": {
+            "Name": null,
+            "Value": 1720
+          },
+          "MinVelocityZ": {
+            "Name": null,
+            "Value": -20
+          },
+          "WeaponRecoilReduction": {
+            "Name": "Recoil Reduction",
+            "Value": 40
+          }
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 42,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 13,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_hornet_leap_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Leap into the air and <span class=\"highlight\">fly</span>. While in flight your weapon deals <span class=\"highlight\">bonus spirit damage</span> and your items have increased <span class=\"highlight\">range.</span>",
+          "plain_text": "Leap into the air and fly. While in flight your weapon deals bonus spirit damage and your items have increased range."
+        },
+        {
+          "localization_key": "citadel_ability_hornet_leap_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+50%</span> base Ammo while flying",
+          "plain_text": "+50% base Ammo while flying"
+        },
+        {
+          "localization_key": "citadel_ability_hornet_leap_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Hero Kills <span class=\"highlight\">Refresh</span> Duration. <br><span class=\"highlight\">+10</span> Spirit Damage with increased Spirit scaling",
+          "plain_text": "Hero Kills Refresh Duration.\n+10 Spirit Damage with increased Spirit scaling"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Crow Familiar",
+      "internal_key": "citadel_ability_hornet_sting",
+      "data": {
+        "AbilityCooldown": {
+          "Value": 32,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityPostCastDuration": 0.2,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorCleaveDisabled",
+          "BehaviorProjectile",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BulletResistReduction": -6,
+        "ChannelMoveSpeed": -1,
+        "DebuffDuration": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "CitadelHornetStingDebuff",
+          "Subclass": "CitadelHornetStingDebuff"
+        },
+        "DotHealthPercent": 2.2,
+        "ImpactDamage": {
+          "Value": 40,
+          "Scale": {
+            "Value": 0.744,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_hornet_sting",
+        "Name": "Crow Familiar",
+        "TechArmorDamageReduction": -6,
+        "TickRate": 1,
+        "Upgrades": [
+          {
+            "HealAmpReceivePenaltyPercent": -35,
+            "HealAmpRegenPenaltyPercent": -35
+          },
+          {
+            "AbilityCooldown": -16,
+            "DotHealthPercent": 0.5
+          },
+          {
+            "BulletResistReduction": -8,
+            "TechArmorDamageReduction": -8,
+            "DebuffDuration": 2
+          }
+        ],
+        "VisualSplashRadius": 4
+      },
+      "card": {
+        "Key": "citadel_ability_hornet_sting",
+        "Name": "Crow Familiar",
+        "DescKey": "citadel_ability_hornet_sting_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "ImpactDamage",
+                "Name": "Impact Damage",
+                "Value": 40,
+                "Scale": {
+                  "Value": 0.744,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "DotHealthPercent",
+                "Name": "Bleed Damage",
+                "Value": 2.2,
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "DebuffDuration",
+                "Name": "Debuff Duration",
+                "Value": 5,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "HealAmpReceivePenaltyPercent",
+              "Name": "Healing Reduction",
+              "Value": 0
+            },
+            {
+              "Key": "BulletResistReduction",
+              "Name": "Bullet Resist",
+              "Value": -6,
+              "Type": "bullet_armor_down"
+            },
+            {
+              "Key": "TechArmorDamageReduction",
+              "Value": -6,
+              "Type": "tech_armor_down"
+            }
+          ],
+          "DescKey": "citadel_ability_hornet_sting_desc"
+        },
+        "Upgrades": [
+          {
+            "HealAmpReceivePenaltyPercent": -35,
+            "HealAmpRegenPenaltyPercent": -35,
+            "DescKey": "citadel_ability_hornet_sting_t1_desc"
+          },
+          {
+            "AbilityCooldown": -16,
+            "DotHealthPercent": 0.5,
+            "DescKey": "citadel_ability_hornet_sting_t2_desc"
+          },
+          {
+            "BulletResistReduction": -8,
+            "TechArmorDamageReduction": -8,
+            "DebuffDuration": 2,
+            "DescKey": "citadel_ability_hornet_sting_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.2
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 1
+          },
+          "VisualSplashRadius": {
+            "Name": null,
+            "Value": 4
+          }
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 32,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_hornet_sting_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Your crow familiar deals <span class=\"highlight\">impact damage</span>, reduces their bullet resist and applies a <span class=\"highlight\">bleed</span> that deals damage based on the <span class=\"highlight\">target's current health</span>.",
+          "plain_text": "Your crow familiar deals impact damage, reduces their bullet resist and applies a bleed that deals damage based on the target's current health."
+        },
+        {
+          "localization_key": "citadel_ability_hornet_sting_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Applies <span class=\"highlight\">-35%</span> Healing Reduction",
+          "plain_text": "Applies -35% Healing Reduction"
+        },
+        {
+          "localization_key": "citadel_ability_hornet_sting_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+0.5%</span> Bleed Damage <br><span class=\"highlight\">-16s</span> Cooldown",
+          "plain_text": "+0.5% Bleed Damage\n-16s Cooldown"
+        },
+        {
+          "localization_key": "citadel_ability_hornet_sting_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+2s</span> Duration <br><span class=\"highlight\">-8% Bullet Resist</span> <br><span class=\"highlight\">-8% Spirit Resist</span>",
+          "plain_text": "+2s Duration\n-8% Bullet Resist\n-8% Spirit Resist"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Assassinate",
+      "internal_key": "citadel_ability_hornet_snipe",
+      "data": {
+        "AbilityCharges": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 55,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 2.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact"
+        ],
+        "BonusGoldOnKill": 250,
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 90,
+          "Scale": {
+            "Value": 0.93,
+            "Type": "spirit"
+          }
+        },
+        "GlowEnemyModifier": {
+          "Class": "LowHealthGlow",
+          "Subclass": "LowHealthGlow",
+          "EnabledStateMask": [
+            "AssassinateLowhealthTarget"
+          ]
+        },
+        "HeadshotBonus": 20,
+        "IsDisabled": false,
+        "Key": "citadel_ability_hornet_snipe",
+        "KillCheckModifier": {
+          "Class": "Base",
+          "Subclass": "KillcheckModifier"
+        },
+        "LowHealthEnemyDamageBonus": {
+          "Value": 90,
+          "Scale": {
+            "Value": 2.3,
+            "Type": "spirit"
+          }
+        },
+        "LowHealthEnemyThresholdPct": 50,
+        "MaxSoundDistance": 2000,
+        "MinChargeDamagePercent": 50,
+        "MoveSpeed": 4,
+        "Name": "Assassinate",
+        "Range": 1000,
+        "ShotRadius": 4,
+        "SnipeModifier": {
+          "Class": "CitadelHornetSnipe",
+          "Subclass": "CitadelHornetSnipe"
+        },
+        "TimeToFullCharge": 1,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -15
+          },
+          {
+            "LowHealthEnemyDamageBonus": 80
+          },
+          {
+            "WeaponDamageBonusPerKill": 4
+          }
+        ],
+        "ViewPunch": 2.5,
+        "WeaponDamageBonusPerKill": 6
+      },
+      "card": {
+        "Key": "citadel_ability_hornet_snipe",
+        "Name": "Assassinate",
+        "DescKey": "citadel_ability_hornet_snipe_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 90,
+                "Scale": {
+                  "Value": 0.93,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "LowHealthEnemyDamageBonus",
+                "Name": "Max Bonus Damage",
+                "Value": 90,
+                "Scale": {
+                  "Value": 2.3,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "WeaponDamageBonusPerKill",
+                "Name": "Weapon Damage Per Kill",
+                "Value": 6,
+                "Type": "bullet_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "TimeToFullCharge",
+              "Name": "Full Charge Time",
+              "Value": 1,
+              "Type": "duration"
+            },
+            {
+              "Key": "MinChargeDamagePercent",
+              "Name": "No Charge Damage",
+              "Value": 50
+            },
+            {
+              "Key": "HeadshotBonus",
+              "Name": "Headshot Damage",
+              "Value": 20,
+              "Type": "bullet_damage"
+            }
+          ],
+          "DescKey": "citadel_ability_hornet_snipe_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -15
+          },
+          {
+            "LowHealthEnemyDamageBonus": 80
+          },
+          {
+            "WeaponDamageBonusPerKill": 4
+          }
+        ],
+        "Range": {
+          "Range": {
+            "Name": "Range",
+            "Value": 1000,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "BonusGoldOnKill": {
+            "Name": "Bonus Souls Per Assassination",
+            "Value": 250
+          },
+          "LowHealthEnemyThresholdPct": {
+            "Name": "Low Health Threshold",
+            "Value": 50
+          },
+          "MaxSoundDistance": {
+            "Name": null,
+            "Value": 2000
+          },
+          "MoveSpeed": {
+            "Name": null,
+            "Value": 4
+          },
+          "ShotRadius": {
+            "Name": null,
+            "Value": 4
+          },
+          "ViewPunch": {
+            "Name": null,
+            "Value": 2.5
+          }
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 55,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 2.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_hornet_snipe_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Use your scoped rifle to fire a powerful shot over long distances. Deal only partial damage until fully charged after 1s of being scoped. Does <span class=\"highlight\">bonus damage</span> to enemies with <span class=\"highlight\">less than 50% health</span> remaining. Landing a killing blow on a player with Assassinate <span class=\"highlight\">grants you bonus weapon damage</span>.",
+          "plain_text": "Use your scoped rifle to fire a powerful shot over long distances. Deal only partial damage until fully charged after 1s of being scoped. Does bonus damage to enemies with less than 50% health remaining. Landing a killing blow on a player with Assassinate grants you bonus weapon damage."
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.47,
+    "AirDashSpeed": 17,
+    "BaseHealthRegen": 2,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.68,
+    "GroundDashSpeed": 14.7,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.495,
+      "MaxHealth": 28,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 2.1429,
+      "SustainedDPS": 1.2878
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_hornet_lore",
+    "MaxHealth": 755,
+    "MaxMoveSpeed": 7.9,
+    "MoveAcceleration": 4,
+    "Name": "Vindicta",
+    "Playstyle": "hero_hornet_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_hornet_role",
+    "SpiritScaling": {
+      "BulletDamage": 0.022,
+      "DPS": 0.095238,
+      "SustainedDPS": 0.057237
+    },
+    "SprintSpeed": 1.6,
+    "Stamina": 2,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Marksman",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

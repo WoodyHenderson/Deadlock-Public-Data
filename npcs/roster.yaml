@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "id": "manifest.npcs.standard",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-04",
+  "included_count": 14,
+  "included": [
+    {
+      "id": "npc.ranged-trooper",
+      "name": "Ranged Trooper",
+      "kind": "lane_unit",
+      "path": "ranged-trooper/ranged-trooper.yaml"
+    },
+    {
+      "id": "npc.melee-trooper",
+      "name": "Melee Trooper",
+      "kind": "lane_unit",
+      "path": "melee-trooper/melee-trooper.yaml"
+    },
+    {
+      "id": "npc.medic-trooper",
+      "name": "Medic Trooper",
+      "kind": "lane_unit",
+      "path": "medic-trooper/medic-trooper.yaml"
+    },
+    {
+      "id": "npc.small-neutral",
+      "name": "Small Neutral",
+      "kind": "neutral_unit",
+      "path": "small-neutral/small-neutral.yaml"
+    },
+    {
+      "id": "npc.medium-neutral",
+      "name": "Medium Neutral",
+      "kind": "neutral_unit",
+      "path": "medium-neutral/medium-neutral.yaml"
+    },
+    {
+      "id": "npc.large-neutral",
+      "name": "Large Neutral",
+      "kind": "neutral_unit",
+      "path": "large-neutral/large-neutral.yaml"
+    },
+    {
+      "id": "npc.cockroach",
+      "name": "Cockroach",
+      "kind": "ambient_neutral",
+      "path": "cockroach/cockroach.yaml"
+    },
+    {
+      "id": "npc.mid-boss",
+      "name": "Mid-Boss",
+      "kind": "neutral_boss",
+      "path": "mid-boss/mid-boss.yaml"
+    },
+    {
+      "id": "npc.lane-guardian",
+      "name": "Lane Guardian",
+      "kind": "structure",
+      "path": "lane-guardian/lane-guardian.yaml"
+    },
+    {
+      "id": "npc.base-guardian",
+      "name": "Base Guardian",
+      "kind": "structure",
+      "path": "base-guardian/base-guardian.yaml"
+    },
+    {
+      "id": "npc.walker",
+      "name": "Walker",
+      "kind": "structure",
+      "path": "walker/walker.yaml"
+    },
+    {
+      "id": "npc.shrine",
+      "name": "Shrine",
+      "kind": "structure",
+      "path": "shrine/shrine.yaml"
+    },
+    {
+      "id": "npc.patron",
+      "name": "Patron",
+      "kind": "structure",
+      "path": "patron/patron.yaml"
+    },
+    {
+      "id": "npc.sinners-sacrifice",
+      "name": "Sinner's Sacrifice",
+      "kind": "map_object",
+      "path": "sinners-sacrifice/sinners-sacrifice.yaml"
+    }
+  ],
+  "excluded_api_classes": {
+    "base_or_technical": [
+      "weapon_base",
+      "trooper_base",
+      "neutral_base"
+    ],
+    "alternate_team_variants": [
+      "alt_npc_boss_tier1",
+      "alt_npc_boss_tier2",
+      "alt_npc_boss_tier2_weak",
+      "alt_npc_boss_tier3",
+      "npc_barrack_boss_amber",
+      "npc_barrack_boss_sapphire"
+    ],
+    "ability_summons_or_mode_specific": [
+      "nano_rollermine",
+      "npc_necro_skele",
+      "npc_familiar_helper",
+      "trooper_necro",
+      "shield_escort"
+    ],
+    "weakpoint_helpers": [
+      "npc_neutral_weakpoint",
+      "npc_neutral_weakpoint_med",
+      "npc_neutral_weakpoint_strong",
+      "npc_neutral_flying_weakpoint_base",
+      "npc_neutral_flying_weakpoint",
+      "npc_neutral_flying_weakpoint_weak",
+      "npc_neutral_flying_weakpoint_med",
+      "npc_neutral_flying_weakpoint_strong"
+    ],
+    "ambient_or_engine_helpers": [
+      "trooper_zipline_container",
+      "citadel_cat_animating",
+      "npc_neutral_sinners_sacrifice_hideout",
+      "npc_boss_tier2_weak",
+      "npc_shielded_sentry",
+      "npc_yakuza_gangster",
+      "citadel_bounce_pad",
+      "citadel_viscous_ball",
+      "npc_base_defense_sentry",
+      "npc_field_sentry",
+      "npc_player_bot_brain",
+      "bullet_time_warp",
+      "bullet_redirect_volume",
+      "projectile_touch_volume",
+      "citadel_spider_animating",
+      "citadel_hideout_shootable_target_spawner",
+      "npc_neutral_flying_pigeon",
+      "npc_neutral_hideout_cat",
+      "npc_neutral_hideout_rabbit",
+      "citadel_hideout_clock",
+      "citadel_hideout_ball",
+      "citadel_fissure_wall"
+    ]
+  }
+}

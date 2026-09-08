@@ -1,0 +1,1239 @@
+{
+  "schema_version": 2,
+  "id": "hero.celeste",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.celeste.125568",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Celeste",
+  "aliases": [],
+  "internal_hero_key": "hero_unicorn",
+  "hero_type": "Marksman",
+  "role_localization_key": "hero_unicorn_role",
+  "playstyle_localization_key": "hero_unicorn_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 690,
+    "health_regeneration_per_second": 1,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.2,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 16.1,
+      "distance_meters": 10,
+      "duration_seconds": 0.62
+    },
+    "air_dash": {
+      "speed_meters_per_second": 18.6,
+      "distance_meters": 8,
+      "duration_seconds": 0.43
+    },
+    "stamina": {
+      "charges": 4,
+      "cooldown_seconds": 5,
+      "regeneration_per_second": 0.2
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": -25,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.82,
+    "MaxHealth": 33,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 1.4138,
+    "SustainedDPS": 0.98794
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 50,
+    "BulletDamage": 18,
+    "RoundsPerSecond": 1.7241,
+    "ClipSize": 8,
+    "ReloadTime": 2,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 22,
+    "FalloffEndRange": 60,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.2,
+    "BulletRadius": 0.4572,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "ExplosionRadius": 0,
+    "DPS": 31.034,
+    "SustainedDPS": 21.686,
+    "NameKey": "citadel_weapon_hero_unicorn_set",
+    "DescKey": "citadel_weapon_hero_unicorn_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_MediumRange",
+      "Attribute_EWeaponAttribute_Projectile",
+      "Attribute_EWeaponAttribute_Bouncy"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Light Eater",
+      "internal_key": "ability_unicorn_radiantblast",
+      "data": {
+        "AbilityCastDelay": 0.3,
+        "AbilityCastRange": {
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 8,
+          "Scale": [
+            {
+              "Value": 0.05,
+              "Type": "spirit"
+            },
+            {
+              "Value": 1,
+              "Type": "duration"
+            }
+          ]
+        },
+        "AbilityLifestealPercentHero": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "healing"
+          }
+        },
+        "AbilityUnitTargetLimit": 100,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorShowCastRangeAsSatSphereWhileCasting",
+          "BehaviorUseLagCompensationForUnitTargeting",
+          "BehaviorDontInterruptSlideOnCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 15,
+          "Scale": {
+            "Value": 0.34,
+            "Type": "spirit"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "UnicornRadiantFlareDamage",
+          "Subclass": "UnicornRadiantblastDebuff"
+        },
+        "ExtraSweepRadius": 2,
+        "FlareDamage": {
+          "Value": 40,
+          "Scale": {
+            "Value": 0.47,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_unicorn_radiantblast",
+        "Name": "Light Eater",
+        "TargetingConeAngle": 70,
+        "TickRate": 0.5,
+        "Upgrades": [
+          {
+            "AbilityLifestealPercentHero": 15
+          },
+          {
+            "AbilityCastRange": 3,
+            "AbilityCooldown": -10
+          },
+          {
+            "Damage": {
+              "Value": 25,
+              "Scale": {
+                "Value": 0.2,
+                "Type": "spirit"
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_unicorn_radiantblast",
+        "Name": "Light Eater",
+        "DescKey": "ability_unicorn_radiantblast_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "AbilityLifestealPercentHero",
+                "Name": "Spirit Lifesteal",
+                "Value": 20,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "healing"
+                },
+                "Type": "healing"
+              },
+              {
+                "Key": "FlareDamage",
+                "Name": "Flare Damage",
+                "Value": 40,
+                "Scale": {
+                  "Value": 0.47,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "AbilityDuration",
+              "Name": "Duration",
+              "Value": 8,
+              "Scale": [
+                {
+                  "Value": 0.05,
+                  "Type": "spirit"
+                },
+                {
+                  "Value": 1,
+                  "Type": "duration"
+                }
+              ],
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_unicorn_radiantblast_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Bullet Hit",
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 15,
+                "Scale": {
+                  "Value": 0.34,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Upgrades": [
+          {
+            "AbilityLifestealPercentHero": 15
+          },
+          {
+            "AbilityCastRange": 3,
+            "AbilityCooldown": -10,
+            "DescKey": "ability_unicorn_radiantblast_t2_desc"
+          },
+          {
+            "Damage": {
+              "Value": 25,
+              "Scale": {
+                "Value": 0.2,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "ability_unicorn_radiantblast_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 100
+          },
+          "ExtraSweepRadius": {
+            "Name": null,
+            "Value": 2
+          },
+          "TargetingConeAngle": {
+            "Name": "Attack Angle",
+            "Value": 70
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.5
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.3,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 8,
+          "Scale": [
+            {
+              "Value": 0.05,
+              "Type": "spirit"
+            },
+            {
+              "Value": 1,
+              "Type": "duration"
+            }
+          ],
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_unicorn_radiantblast_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Blast enemies in a cone in front of you with a flare of light.  Blasted enemies take {g:citadel_inline_attribute:'SpiritDamage'} when attacked by Celeste and provides her <span class=\"highlight\">spirit lifesteal</span>.",
+          "plain_text": "Blast enemies in a cone in front of you with a flare of light. Blasted enemies take spirit damage when attacked by Celeste and provides her spirit lifesteal."
+        },
+        {
+          "localization_key": "ability_unicorn_radiantblast_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "-10s Cooldown and +3m Cast Range",
+          "plain_text": "-10s Cooldown and +3m Cast Range"
+        },
+        {
+          "localization_key": "ability_unicorn_radiantblast_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+25 Damage and Increased Spirit Scaling",
+          "plain_text": "+25 Damage and Increased Spirit Scaling"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Dazzling Trick",
+      "internal_key": "ability_unicorn_prismaticguard",
+      "data": {
+        "AbilityCooldown": {
+          "Value": 34,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BarrierDamagePercentage": 50,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorProjectilePassThroughWorld"
+        ],
+        "BuffDuration": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "BuffModifier": {
+          "Class": "UnicornPrismaticGuard",
+          "Subclass": "UnicornPrismaticGuardBuff",
+          "VerticalBoost": 0.5
+        },
+        "ChannelMoveSpeed": -1,
+        "CombatBarrier": {
+          "Value": 100,
+          "Scale": {
+            "Value": 0.8,
+            "Type": "spirit"
+          }
+        },
+        "DebuffDuration": {
+          "Value": 1.75,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "Base",
+          "Subclass": "UnicornPrismaticGuardDebuff",
+          "EnabledStateMask": [
+            "Silenced"
+          ]
+        },
+        "ExplodeRadius": {
+          "Value": 14,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_unicorn_prismaticguard",
+        "MaxLifetime": 4,
+        "Name": "Dazzling Trick",
+        "Upgrades": [
+          {
+            "BonusMoveSpeed": 3.5
+          },
+          {
+            "CombatBarrier": {
+              "Value": 70,
+              "Scale": {
+                "Value": 0.76,
+                "Type": "spirit"
+              }
+            }
+          },
+          {
+            "DebuffDuration": 1.25,
+            "AbilityCooldown": -20
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_unicorn_prismaticguard",
+        "Name": "Dazzling Trick",
+        "DescKey": "ability_unicorn_prismaticguard_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "CombatBarrier",
+                "Name": "Barrier",
+                "Value": 100,
+                "Scale": {
+                  "Value": 0.8,
+                  "Type": "spirit"
+                },
+                "Type": "bullet_armor_up"
+              },
+              {
+                "Key": "BonusMoveSpeed",
+                "Name": "Move Speed",
+                "Value": 0,
+                "Type": "move_speed"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "BuffDuration",
+              "Name": "Buff Duration",
+              "Value": 4,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_unicorn_prismaticguard_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Explode",
+                "Key": "DebuffDuration",
+                "Name": "Debuff Duration",
+                "Value": 1.75,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              },
+              {
+                "Title": "On Explode",
+                "Key": "BarrierDamagePercentage",
+                "Name": "Barrier Damage",
+                "Value": 50,
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "ExplodeRadius",
+              "Name": "Explosion Radius",
+              "Value": 14,
+              "Scale": {
+                "Value": 1,
+                "Type": "range"
+              },
+              "Type": "distance"
+            }
+          ]
+        },
+        "Upgrades": [
+          {
+            "BonusMoveSpeed": 3.5
+          },
+          {
+            "CombatBarrier": {
+              "Value": 70,
+              "Scale": {
+                "Value": 0.76,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "ability_unicorn_prismaticguard_t2_desc"
+          },
+          {
+            "DebuffDuration": 1.25,
+            "AbilityCooldown": -20,
+            "DescKey": "ability_unicorn_prismaticguard_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "MaxLifetime": {
+            "Name": "Lifetime",
+            "Value": 4
+          }
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 34,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_unicorn_prismaticguard_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Surround yourself in a protective prism. If the barrier is destroyed, it silences nearby enemies and deals a portion of the barrier as damage.",
+          "plain_text": "Surround yourself in a protective prism. If the barrier is destroyed, it silences nearby enemies and deals a portion of the barrier as damage."
+        },
+        {
+          "localization_key": "ability_unicorn_prismaticguard_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+70 Barrier and Increased Barrier Spirit Scaling",
+          "plain_text": "+70 Barrier and Increased Barrier Spirit Scaling"
+        },
+        {
+          "localization_key": "ability_unicorn_prismaticguard_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+1.25 Silence Duration and -20s Cooldown. Allows Shining Wonder Bounce.",
+          "plain_text": "+1.25 Silence Duration and -20s Cooldown. Allows Shining Wonder Bounce."
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Radiant Daggers",
+      "internal_key": "ability_unicorn_luminousstrike",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCastRange": {
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCharges": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 33,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorAlwaysPreviewRadius",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorProjectilePassThroughWorld",
+          "BehaviorCanSetQuickCast"
+        ],
+        "BuffDelay": 0.75,
+        "BuffDuration": {
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "BuffMaxStacks": 6,
+        "BuffModifier": {
+          "Class": "UnicornLuminousstrikeBuff",
+          "Subclass": "LuminousStrikeBuff"
+        },
+        "ChannelMoveSpeed": -1,
+        "ClimbHeight": 50,
+        "ExplosionInterval": 0.7,
+        "ExplosionRadius": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "ImpactDamage": {
+          "Value": 55,
+          "Scale": {
+            "Value": 0.63,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_unicorn_luminousstrike",
+        "MagicIncreasePerStack": 7,
+        "Name": "Radiant Daggers",
+        "PostExplosionDuration": 0.8,
+        "PreExplosionDuration": 1.4,
+        "TickRate": 0.5,
+        "Upgrades": [
+          {
+            "AbilityCharges": 2
+          },
+          {
+            "ImpactDamage": 80,
+            "AbilityCooldown": -22
+          },
+          {
+            "MagicIncreasePerStack": 4,
+            "FireRatePerStack": 9
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_unicorn_luminousstrike",
+        "Name": "Radiant Daggers",
+        "DescKey": "ability_unicorn_luminousstrike_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "ImpactDamage",
+                "Name": "Impact Damage",
+                "Value": 55,
+                "Scale": {
+                  "Value": 0.63,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "MagicIncreasePerStack",
+                "Name": "Spirit Amp per Stack",
+                "Value": 7,
+                "Type": "tech_armor_down"
+              },
+              {
+                "Key": "FireRatePerStack",
+                "Name": "Fire Rate per Stack",
+                "Value": 0,
+                "Type": "fire_rate"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "ExplosionRadius",
+              "Name": "Explosion Radius",
+              "Value": 8,
+              "Scale": {
+                "Value": 1,
+                "Type": "range"
+              },
+              "Type": "distance"
+            },
+            {
+              "Key": "PreExplosionDuration",
+              "Value": 1.4,
+              "Type": "duration"
+            },
+            {
+              "Key": "BuffMaxStacks",
+              "Value": 6,
+              "Type": "cast"
+            },
+            {
+              "Key": "BuffDuration",
+              "Name": "Buff Duration",
+              "Value": 30,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_unicorn_luminousstrike_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCharges": 2
+          },
+          {
+            "ImpactDamage": 80,
+            "AbilityCooldown": -22,
+            "DescKey": "ability_unicorn_luminousstrike_t2_desc"
+          },
+          {
+            "MagicIncreasePerStack": 4,
+            "FireRatePerStack": 9
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "BuffDelay": {
+            "Name": null,
+            "Value": 0.75
+          },
+          "ClimbHeight": {
+            "Name": null,
+            "Value": 50
+          },
+          "ExplosionInterval": {
+            "Name": "Beam Interval",
+            "Value": 0.7
+          },
+          "PostExplosionDuration": {
+            "Name": null,
+            "Value": 0.8
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.5
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 33,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_unicorn_luminousstrike_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Call down a beam of light from the sky. After a short duration, the beam will fully form, causing an explosion that deals {g:citadel_inline_attribute:'SpiritDamage'} to all targets in the area.<br><br> Celeste will receive a stacking buff that increases her spirit damage anytime this hits an enemy hero.",
+          "plain_text": "Call down a beam of light from the sky. After a short duration, the beam will fully form, causing an explosion that deals spirit damage to all targets in the area.\nCeleste will receive a stacking buff that increases her spirit damage anytime this hits an enemy hero."
+        },
+        {
+          "localization_key": "ability_unicorn_luminousstrike_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "-22s Cooldown and +80 Impact Damage",
+          "plain_text": "-22s Cooldown and +80 Impact Damage"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Shining Wonder",
+      "internal_key": "ability_unicorn_dazzlingorb",
+      "data": {
+        "AbilityCastDelay": 0.75,
+        "AbilityChannelTime": {
+          "Value": 9999,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 160,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorProjectile",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCannotCancelDuringChannel",
+          "BehaviorCooldownOnChannelEnd"
+        ],
+        "BounceGrace": 3.25,
+        "BounceRadius": {
+          "Value": 16.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 140,
+          "Scale": {
+            "Value": 0.6,
+            "Type": "spirit"
+          }
+        },
+        "GroundDashReductionPercent": -25,
+        "IsDisabled": false,
+        "Key": "ability_unicorn_dazzlingorb",
+        "MaxBounces": 8,
+        "Name": "Shining Wonder",
+        "NextTargetDuration": 4,
+        "OrbWatcherModifier": {
+          "Class": "DazzlingOrbWatcher",
+          "Subclass": "DazOrb",
+          "MinProjectileTravelTime": 0.2,
+          "SlowModifier": {
+            "Class": "SlowBase",
+            "Subclass": "DazzlingOrbSlowModifier",
+            "EnabledStateMask": [
+              "Slowed"
+            ],
+            "StatusEffectPriority": 150
+          },
+          "NextTargetModifier": {
+            "Class": "UnicornDazzlingOrbNextTarget",
+            "Subclass": "DazzlingOrbNextTargetModifier"
+          },
+          "OrbFriendlyBounceWatcherModifier": {
+            "Class": "Base",
+            "Subclass": "DazzlingOrbFriendlyWatcher",
+            "EnabledStateMask": [
+              "PrismaticGuarded"
+            ]
+          }
+        },
+        "PriorityBounceRadius": 13.5,
+        "SlowDuration": {
+          "Value": 1.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "SlowPercent": 40,
+        "Upgrades": [
+          {
+            "GroundDashReductionPercent": -15,
+            "SlowPercent": 20
+          },
+          {
+            "Damage": {
+              "Value": 90,
+              "Scale": {
+                "Value": 0.45,
+                "Type": "spirit"
+              }
+            }
+          },
+          {
+            "MaxBounces": 8,
+            "AbilityCooldown": -30
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_unicorn_dazzlingorb",
+        "Name": "Shining Wonder",
+        "DescKey": "ability_unicorn_dazzlingorb_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 140,
+                "Scale": {
+                  "Value": 0.6,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 40,
+                "Type": "slow"
+              },
+              {
+                "Key": "MaxBounces",
+                "Name": "Bounces",
+                "Value": 8
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "GroundDashReductionPercent",
+              "Name": "Dash Distance",
+              "Value": -25,
+              "Type": "slow"
+            },
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 1.5,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "BounceRadius",
+              "Name": "Bounce Range",
+              "Value": 16.5,
+              "Scale": {
+                "Value": 1,
+                "Type": "range"
+              },
+              "Type": "distance"
+            },
+            {
+              "Key": "BounceGrace",
+              "Value": 3.25
+            }
+          ],
+          "DescKey": "ability_unicorn_dazzlingorb_desc"
+        },
+        "Upgrades": [
+          {
+            "GroundDashReductionPercent": -15,
+            "SlowPercent": 20,
+            "DescKey": "ability_unicorn_dazzlingorb_t1_desc"
+          },
+          {
+            "Damage": {
+              "Value": 90,
+              "Scale": {
+                "Value": 0.45,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "ability_unicorn_dazzlingorb_t2_desc"
+          },
+          {
+            "MaxBounces": 8,
+            "AbilityCooldown": -30,
+            "DescKey": "ability_unicorn_dazzlingorb_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "NextTargetDuration": {
+            "Name": null,
+            "Value": 4
+          },
+          "PriorityBounceRadius": {
+            "Name": null,
+            "Value": 13.5
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.75,
+          "Type": "cast"
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 9999,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 160,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_unicorn_dazzlingorb_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Launch a deadly orb of light that deals {g:citadel_inline_attribute:'SpiritDamage'} and applies {g:citadel_inline_attribute:'Slow'} and reduces <span class=\"highlight\">Dash Distance</span> on impact. The orb then bounces to the enemies within range. If no target is found, the orb will linger for a short duration while continuing to look for targets.<br><br><span class=\"diminish\">Prioritizes enemy heroes when picking targets.",
+          "plain_text": "Launch a deadly orb of light that deals spirit damage and applies slow and reduces Dash Distance on impact. The orb then bounces to the enemies within range. If no target is found, the orb will linger for a short duration while continuing to look for targets.\nPrioritizes enemy heroes when picking targets."
+        },
+        {
+          "localization_key": "ability_unicorn_dazzlingorb_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "-20% Move Speed and -15% Dash Distance",
+          "plain_text": "-20% Move Speed and -15% Dash Distance"
+        },
+        {
+          "localization_key": "ability_unicorn_dazzlingorb_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+90 Damage and Increased Spirit Scaling",
+          "plain_text": "+90 Damage and Increased Spirit Scaling"
+        },
+        {
+          "localization_key": "ability_unicorn_dazzlingorb_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+8 Max Bounces and -30s Cooldown",
+          "plain_text": "+8 Max Bounces and -30s Cooldown"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirControlAccelPercent": 10,
+    "AirControlPercent": 44,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.43,
+    "AirDashSpeed": 18.6,
+    "BaseHealthRegen": 1,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": -25,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GravityChange": -25,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.62,
+    "GroundDashSpeed": 16.1,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.82,
+      "MaxHealth": 33,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 1.4138,
+      "SustainedDPS": 0.98794
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_unicorn_lore",
+    "MaxHealth": 690,
+    "MaxMoveSpeed": 6.2,
+    "MoveAcceleration": 4,
+    "Name": "Celeste",
+    "Playstyle": "hero_unicorn_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_unicorn_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.6,
+    "Stamina": 4,
+    "StaminaCooldown": 5,
+    "StaminaRegenPerSecond": 0.2,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Marksman",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

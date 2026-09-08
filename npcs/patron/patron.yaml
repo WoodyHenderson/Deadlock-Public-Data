@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "npc.patron",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-04",
+  "evidence_status": "source_verified",
+  "sources": [
+    "deadlock-api.npc-units.client-6684.source-10933105",
+    "github.deadlock-data.npcs.311b2e8d895e",
+    "wiki.patron.110036"
+  ],
+  "identity": {
+    "name": "Patron",
+    "aliases": [
+      "Weakened Patron",
+      "Titan",
+      "Core"
+    ],
+    "internal_class": "npc_boss_tier3",
+    "numeric_id": 4137263170
+  },
+  "classification": {
+    "kind": "structure",
+    "mode": "standard"
+  },
+  "units": {
+    "distance": "meters",
+    "time": "seconds",
+    "speed": "meters_per_second",
+    "percentage": "percentage_points"
+  },
+  "field_sources": {
+    "numeric_id": "deadlock-api.npc-units.client-6684.source-10933105:npc_boss_tier3.id",
+    "gameplay_values": "github.deadlock-data.npcs.311b2e8d895e:npc_boss_tier3",
+    "behavior_context": "wiki.patron.110036"
+  },
+  "combat": {
+    "base_max_health": 12000,
+    "bullet_resistance_percent": 0,
+    "spirit_resistance_percent": 0.0
+  },
+  "objective_order_ref": "general.map.objectives-and-structures",
+  "economy_ref": "data.general.economy:bounties",
+  "structure_role": "final_objective",
+  "phases": 2,
+  "health": {
+    "phase_1_base": 12000,
+    "phase_2_base": 12000
+  },
+  "health_growth": {
+    "phase_1": {
+      "starts_at_match_minute": 20,
+      "per_minute": 250
+    },
+    "phase_2": {
+      "starts_at_match_minute": 1,
+      "per_minute": 450
+    }
+  },
+  "out_of_combat_regen": {
+    "per_second": 120.0,
+    "delay": 20.0
+  },
+  "backdoor_protection": {
+    "damage_resistance_percent": 65.0,
+    "additional_health_regen_per_second": 75.0
+  },
+  "phase_2": {
+    "damage_pulse": {
+      "damage": 75.0,
+      "maximum_targets": 3,
+      "radius": 19.05
+    },
+    "damageable_only_from_inside_pit": true
+  },
+  "on_phase_1_defeated": {
+    "defending_team_last_stand_ref": "general.rules.death-and-respawning"
+  },
+  "on_phase_2_defeated": {
+    "ends_match": true
+  }
+}

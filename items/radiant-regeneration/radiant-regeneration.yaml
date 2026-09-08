@@ -1,0 +1,688 @@
+{
+  "schema_version": 1,
+  "id": "item.radiant-regeneration",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Radiant Regeneration",
+    "numeric_id": 2947183272,
+    "internal_key": "upgrade_resonant_healing",
+    "aliases": [
+      "upgrade_resonant_healing"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "spirit",
+    "tier": 3,
+    "activation": "passive",
+    "is_active_item": false,
+    "is_imbue": false,
+    "shop_filters": [
+      "MagicDamage",
+      "Movement",
+      "Healing"
+    ],
+    "target_types": null
+  },
+  "purchase": {
+    "cost_souls": 3200,
+    "component_internal_keys": [
+      "upgrade_mystic_regeneration"
+    ]
+  },
+  "description_plain": "Heal and gain bonus Movement Speed for a short duration when you cast an ability.",
+  "displayed_effects": [
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "BonusHealth",
+      "label": "Bonus Health",
+      "value": "90",
+      "property": {
+        "value": "90",
+        "provided_property_type": "MODIFIER_VALUE_HEALTH_MAX",
+        "css_class": "health",
+        "prefix": "{s:sign}",
+        "label": "Bonus Health",
+        "postvalue_label": "Bonus Health",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "RegenerationDuration",
+      "label": "Regeneration Duration",
+      "value": "7s",
+      "property": {
+        "value": "7",
+        "css_class": "duration",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "duration_scale_function"
+        },
+        "label": "Regeneration Duration",
+        "postfix": "s",
+        "postvalue_label": "Regeneration Duration",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "important",
+      "key": "Regeneration",
+      "label": "Regeneration",
+      "value": "4 HP/s",
+      "property": {
+        "value": "4",
+        "css_class": "healing",
+        "scale_function": {
+          "class_name": "scale_function_healing_spirit_scale",
+          "subclass_name": "TotalHealthRegen_scale_function",
+          "stat_scale": 0.04
+        },
+        "label": "Regeneration",
+        "postfix": " HP/s",
+        "postvalue_label": "Regeneration",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "other",
+      "importance": "normal",
+      "key": "AbilityCooldown",
+      "label": "Cooldown",
+      "value": "6.0s",
+      "property": {
+        "value": 6.0,
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "other",
+      "importance": "normal",
+      "key": "AbilityDuration",
+      "label": "Duration",
+      "value": "3s",
+      "property": {
+        "value": "3",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "other",
+      "importance": "important",
+      "key": "HealingPerCast",
+      "label": "Healing on Ability Cast",
+      "value": "65",
+      "property": {
+        "value": "65",
+        "css_class": "healing",
+        "scale_function": {
+          "class_name": "scale_function_healing_boon_scale",
+          "subclass_name": "HealPercentAmount_scale_function",
+          "stat_scale": 2.0
+        },
+        "label": "Healing on Ability Cast",
+        "postvalue_label": "Healing on Ability Cast",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "other",
+      "importance": "important",
+      "key": "BonusMoveSpeed",
+      "label": "Move Speed",
+      "value": "1.75m",
+      "property": {
+        "value": "1.75m",
+        "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_MAX",
+        "css_class": "move_speed",
+        "usage_flags": [
+          "IntrinsicallyProvidedInAbility"
+        ],
+        "prefix": "{s:sign}",
+        "label": "Move Speed",
+        "postfix": " m",
+        "postvalue_label": "Move Speed",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "Regeneration",
+          "bonus": "9"
+        },
+        {
+          "name": "HealingPerCast",
+          "bonus": "60"
+        },
+        {
+          "name": "BonusHealth",
+          "bonus": "110"
+        },
+        {
+          "name": "BonusMoveSpeed",
+          "bonus": "1m"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 2947183272,
+    "class_name": "upgrade_resonant_healing",
+    "name": "Radiant Regeneration",
+    "start_trained": true,
+    "heroes": [],
+    "update_time": 1747423448,
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "spirit",
+    "item_tier": 3,
+    "properties": {
+      "AbilityCooldown": {
+        "value": 6.0,
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityDuration": {
+        "value": "3",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "HealingPerCast": {
+        "value": "65",
+        "css_class": "healing",
+        "scale_function": {
+          "class_name": "scale_function_healing_boon_scale",
+          "subclass_name": "HealPercentAmount_scale_function",
+          "stat_scale": 2.0
+        },
+        "label": "Healing on Ability Cast",
+        "postvalue_label": "Healing on Ability Cast",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "BonusMoveSpeed": {
+        "value": "1.75m",
+        "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_MAX",
+        "css_class": "move_speed",
+        "usage_flags": [
+          "IntrinsicallyProvidedInAbility"
+        ],
+        "prefix": "{s:sign}",
+        "label": "Move Speed",
+        "postfix": " m",
+        "postvalue_label": "Move Speed",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "Regeneration": {
+        "value": "4",
+        "css_class": "healing",
+        "scale_function": {
+          "class_name": "scale_function_healing_spirit_scale",
+          "subclass_name": "TotalHealthRegen_scale_function",
+          "stat_scale": 0.04
+        },
+        "label": "Regeneration",
+        "postfix": " HP/s",
+        "postvalue_label": "Regeneration",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "RegenerationDuration": {
+        "value": "7",
+        "css_class": "duration",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "duration_scale_function"
+        },
+        "label": "Regeneration Duration",
+        "postfix": "s",
+        "postvalue_label": "Regeneration Duration",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "BonusHealth": {
+        "value": "90",
+        "provided_property_type": "MODIFIER_VALUE_HEALTH_MAX",
+        "css_class": "health",
+        "prefix": "{s:sign}",
+        "label": "Bonus Health",
+        "postvalue_label": "Bonus Health",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    "description": {
+      "desc": "<span class=\"highlight\">Heal</span> and gain bonus <span class=\"highlight\">Movement Speed</span> for a short duration when you cast an ability."
+    },
+    "activation": "passive",
+    "component_items": [
+      "upgrade_mystic_regeneration"
+    ],
+    "tooltip_sections": [
+      {
+        "section_type": "innate",
+        "section_attributes": [
+          {
+            "properties": [
+              "BonusHealth"
+            ]
+          }
+        ]
+      },
+      {
+        "section_type": "passive",
+        "section_attributes": [
+          {
+            "loc_string": "Dealing \n<span class=\"inline-attribute-label SpiritDamage\">spirit damage</span> to enemy Heroes grants you Bonus \n<span class=\"inline-attribute-label Regen\" style=\"color: #0F9;\">regeneration</span>. Stacks when dealing damage to different heroes.",
+            "properties": [
+              "RegenerationDuration"
+            ],
+            "important_properties": [
+              "Regeneration"
+            ]
+          }
+        ]
+      },
+      {
+        "section_attributes": [
+          {
+            "loc_string": "<span class=\"highlight\">Heal</span> and gain bonus <span class=\"highlight\">Movement Speed</span> for a short duration when you cast an ability.",
+            "properties": [
+              "AbilityCooldown",
+              "AbilityDuration"
+            ],
+            "important_properties": [
+              "HealingPerCast",
+              "BonusMoveSpeed"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "Regeneration",
+            "bonus": "9"
+          },
+          {
+            "name": "HealingPerCast",
+            "bonus": "60"
+          },
+          {
+            "name": "BonusHealth",
+            "bonus": "110"
+          },
+          {
+            "name": "BonusMoveSpeed",
+            "bonus": "1m"
+          }
+        ]
+      }
+    ],
+    "is_active_item": false,
+    "shopable": true,
+    "cost": 3200
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Radiant Regeneration",
+    "Description": "<span class=\"highlight\">Heal</span> and gain bonus <span class=\"highlight\">Movement Speed</span> for a short duration when you cast an ability.",
+    "Cost": 3200,
+    "Tier": 3,
+    "Activation": "Passive",
+    "Slot": "Tech",
+    "Components": [
+      "upgrade_mystic_regeneration"
+    ],
+    "TargetTypes": null,
+    "ShopFilters": [
+      "MagicDamage",
+      "Movement",
+      "Healing"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityCooldown": 6,
+    "AbilityDuration": 3,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "HealingPerCast": {
+      "Value": 65,
+      "Scale": {
+        "Value": 2.0,
+        "Type": "power_increase"
+      }
+    },
+    "BonusMoveSpeed": "1.75m",
+    "Regeneration": {
+      "Value": 4,
+      "Scale": {
+        "Value": 0.04,
+        "Type": "spirit"
+      }
+    },
+    "RegenerationDuration": 7,
+    "BonusHealth": 90,
+    "PropertyUpgrades": {
+      "Regeneration": 9,
+      "HealingPerCast": 60,
+      "BonusHealth": 110,
+      "BonusMoveSpeed": "1m"
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_resonant_healing",
+    "Name": "Radiant Regeneration",
+    "Description": "<span class=\"highlight\">Heal</span> and gain bonus <span class=\"highlight\">Movement Speed</span> for a short duration when you cast an ability.",
+    "Cost": 3200,
+    "Tier": 3,
+    "Slot": "Tech",
+    "Activation": "Passive",
+    "Components": [
+      "upgrade_mystic_regeneration"
+    ],
+    "TargetTypes": null,
+    "ShopFilters": [
+      "MagicDamage",
+      "Movement",
+      "Healing"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Innate",
+      "DescKey": null,
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [],
+      "Alt": [
+        {
+          "Key": "BonusHealth",
+          "Value": 90,
+          "Type": "health"
+        }
+      ]
+    },
+    "Info2": {
+      "Type": "Passive",
+      "DescKey": "#upgrade_mystic_regeneration_desc",
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "Regeneration",
+          "Value": 4,
+          "Scale": {
+            "Value": 0.04,
+            "Type": "spirit"
+          },
+          "Type": "healing"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "RegenerationDuration",
+          "Value": 7,
+          "Type": "duration"
+        }
+      ]
+    },
+    "Info3": {
+      "Type": null,
+      "DescKey": "#upgrade_resonant_healing_desc",
+      "Cooldown": 6,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "HealingPerCast",
+          "Value": 65,
+          "Scale": {
+            "Value": 2.0,
+            "Type": "power_increase"
+          },
+          "Type": "healing"
+        },
+        {
+          "Key": "BonusMoveSpeed",
+          "Value": "1.75m",
+          "Type": "move_speed",
+          "UsageFlags": "IntrinsicallyProvidedInAbility"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "AbilityDuration",
+          "Value": 3,
+          "Type": "duration"
+        }
+      ]
+    },
+    "Upgrades": {
+      "Regeneration": 9,
+      "HealingPerCast": 60,
+      "BonusHealth": 110,
+      "BonusMoveSpeed": "1m"
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

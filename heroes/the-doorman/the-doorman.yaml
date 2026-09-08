@@ -1,0 +1,1313 @@
+{
+  "schema_version": 2,
+  "id": "hero.the-doorman",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.the-doorman.125570",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "The Doorman",
+  "aliases": [],
+  "internal_hero_key": "hero_doorman",
+  "hero_type": "Mystic",
+  "role_localization_key": "hero_doorman_role",
+  "playstyle_localization_key": "hero_doorman_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 755,
+    "health_regeneration_per_second": 1,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 7.9,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 16.1,
+      "distance_meters": 10,
+      "duration_seconds": 0.62
+    },
+    "air_dash": {
+      "speed_meters_per_second": 18.6,
+      "distance_meters": 8,
+      "duration_seconds": 0.43
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": -30,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 1.25,
+    "MaxHealth": 42,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 1.9841,
+    "SustainedDPS": 1.3441
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 203.2,
+    "BulletDamage": 24,
+    "RoundsPerSecond": 1.5873,
+    "ClipSize": 8,
+    "ReloadTime": 2.4,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 57.51,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0,
+    "BulletRadius": 0.254,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0.05,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 38.095,
+    "SustainedDPS": 25.806,
+    "NameKey": "citadel_weapon_hero_doorman_set",
+    "DescKey": "citadel_weapon_hero_doorman_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_HeavyHitter",
+      "Attribute_EWeaponAttribute_MediumRange"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Call Bell",
+      "internal_key": "ability_doorman_bomb",
+      "data": {
+        "AbilityCharges": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 18,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 7,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityDuration": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityPostCastDuration": 0.5,
+        "AbilityUnitTargetLimit": 1,
+        "AccuracyDebuffFalloffBias": 0.3,
+        "AuraModifier": {
+          "Class": "DoormanBellAura",
+          "Subclass": "DoormanBellAura",
+          "ProvidedByAura": {
+            "Class": "SlowBase",
+            "Subclass": "SlowAuraModifier"
+          }
+        },
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "DebuffAccuracy": -40,
+        "EnableAura": 1,
+        "ExplosionDamage": {
+          "Value": 55,
+          "Scale": {
+            "Value": 1.2,
+            "Type": "spirit"
+          }
+        },
+        "ImpactDamage": {
+          "Value": 40,
+          "Scale": {
+            "Value": 0.7,
+            "Type": "spirit"
+          }
+        },
+        "InaccuracyModifier": {
+          "Class": "DoomanBombDebuff",
+          "Subclass": "Debuff"
+        },
+        "IsDisabled": false,
+        "Key": "ability_doorman_bomb",
+        "Name": "Call Bell",
+        "ProjectileDrag": 0.975,
+        "ProjectileFuse": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "Radius": {
+          "Value": 5.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "SlowPercent": 35,
+        "Upgrades": [
+          {
+            "AbilityCharges": 1
+          },
+          {
+            "ImpactDamage": 30,
+            "ExplosionDamage": 40
+          },
+          {
+            "ProjectileFuse": 26,
+            "Radius": 4.5,
+            "ImpactDamage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.35,
+                "Type": "spirit"
+              }
+            },
+            "ExplosionDamage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.35,
+                "Type": "spirit"
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_doorman_bomb",
+        "Name": "Call Bell",
+        "DescKey": "ability_doorman_bomb_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Impact",
+                "Key": "ImpactDamage",
+                "Name": "Impact Damage",
+                "Value": 40,
+                "Scale": {
+                  "Value": 0.7,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_doorman_bomb_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "Explosion",
+                "Key": "ExplosionDamage",
+                "Name": "Explosion Damage",
+                "Value": 55,
+                "Scale": {
+                  "Value": 1.2,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "Explosion",
+                "Key": "DebuffAccuracy",
+                "Name": "Weapon Accuracy",
+                "Value": -40,
+                "Type": "fire_rate"
+              },
+              {
+                "Title": "Explosion",
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 35,
+                "Type": "slow"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "ProjectileFuse",
+              "Value": 3,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "AbilityDuration",
+              "Name": "Duration",
+              "Value": 4,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ]
+        },
+        "Upgrades": [
+          {
+            "AbilityCharges": 1,
+            "DescKey": "ability_doorman_bomb_t1_desc"
+          },
+          {
+            "ImpactDamage": 30,
+            "ExplosionDamage": 40,
+            "DescKey": "ability_doorman_bomb_t2_desc"
+          },
+          {
+            "ProjectileFuse": 26,
+            "Radius": 4.5,
+            "ImpactDamage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.35,
+                "Type": "spirit"
+              }
+            },
+            "ExplosionDamage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.35,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "ability_doorman_bomb_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AccuracyDebuffFalloffBias": {
+            "Name": null,
+            "Value": 0.3
+          },
+          "EnableAura": {
+            "Name": null,
+            "Value": 1
+          },
+          "ProjectileDrag": {
+            "Name": null,
+            "Value": 0.975
+          }
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 18,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 7,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 5.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_doorman_bomb_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Throw out a call bell that deals {g:citadel_inline_attribute:'SpiritDamage'} on impact. After a short delay it explodes, dealing additional {g:citadel_inline_attribute:'SpiritDamage'} and causing affected enemies to suffer reduced weapon accuracy and movement {g:citadel_inline_attribute:'Slow'}.<br><br><span class=\"diminish\">Can be shot to detonate early.</span>",
+          "plain_text": "Throw out a call bell that deals spirit damage on impact. After a short delay it explodes, dealing additional spirit damage and causing affected enemies to suffer reduced weapon accuracy and movement slow.\nCan be shot to detonate early."
+        },
+        {
+          "localization_key": "ability_doorman_bomb_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+1 Charge",
+          "plain_text": "+1 Charge"
+        },
+        {
+          "localization_key": "ability_doorman_bomb_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+30 Impact Damage<br>+40 Explosion Damage",
+          "plain_text": "+30 Impact Damage\n+40 Explosion Damage"
+        },
+        {
+          "localization_key": "ability_doorman_bomb_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+4.5m Radius<br>+26s Bell Lifetime<br>Improved Scaling",
+          "plain_text": "+4.5m Radius\n+26s Bell Lifetime\nImproved Scaling"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Doorway",
+      "internal_key": "ability_doorman_doorway",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 50,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 45,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 15,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorAllowAltCast",
+          "BehaviorCanSetQuickCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "CombatBarrier": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0,
+            "Type": "spirit"
+          }
+        },
+        "DoorwayCloseCooldown": 8,
+        "DoorwayDistance": {
+          "Value": 65,
+          "Scale": [
+            {
+              "Value": 0,
+              "Type": "spirit"
+            },
+            {
+              "Value": 1,
+              "Type": "range"
+            }
+          ]
+        },
+        "DoorwayTimerModifier": {
+          "Class": "Base",
+          "Subclass": "DoorwayTimerModifier"
+        },
+        "IsDisabled": false,
+        "Key": "ability_doorman_doorway",
+        "Name": "Doorway",
+        "PortalBarrierModifier": {
+          "Class": "Base",
+          "Subclass": "DoorwayBarrier"
+        },
+        "Upgrades": [
+          {
+            "AbilityDuration": 20
+          },
+          {
+            "CombatBarrier": {
+              "Value": 250,
+              "Scale": {
+                "Value": 1.5,
+                "Type": "spirit"
+              }
+            },
+            "BarrierDuration": 12
+          },
+          {
+            "DoorwayDistance": {
+              "Value": 40,
+              "Scale": {
+                "Value": 0.15,
+                "Type": "spirit"
+              }
+            },
+            "AbilityCastRange": 30
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_doorman_doorway",
+        "Name": "Doorway",
+        "DescKey": "ability_doorman_doorway_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "DoorwayDistance",
+                "Name": "Doorway Distance",
+                "Value": 65,
+                "Scale": [
+                  {
+                    "Value": 0,
+                    "Type": "spirit"
+                  },
+                  {
+                    "Value": 1,
+                    "Type": "range"
+                  }
+                ],
+                "Type": "distance"
+              },
+              {
+                "Title": "On Portal",
+                "Key": "CombatBarrier",
+                "Name": "Barrier",
+                "Value": 0,
+                "Scale": {
+                  "Value": 0,
+                  "Type": "spirit"
+                },
+                "Type": "bullet_armor_up"
+              },
+              {
+                "Title": "On Portal",
+                "Key": "BarrierDuration",
+                "Name": "Barrier Duration",
+                "Value": 0,
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_doorman_doorway_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityDuration": 20
+          },
+          {
+            "CombatBarrier": {
+              "Value": 250,
+              "Scale": {
+                "Value": 1.5,
+                "Type": "spirit"
+              }
+            },
+            "BarrierDuration": 12,
+            "DescKey": "ability_doorman_doorway_t2_desc"
+          },
+          {
+            "DoorwayDistance": {
+              "Value": 40,
+              "Scale": {
+                "Value": 0.15,
+                "Type": "spirit"
+              }
+            },
+            "AbilityCastRange": 30,
+            "DescKey": "ability_doorman_doorway_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "DoorwayCloseCooldown": {
+            "Name": null,
+            "Value": 8
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 50,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 45,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 15,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_doorman_doorway_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Place two connected doors in the world. Players and most projectiles entering one door will exit out through the other. The doors will close at the end of the duration.<br><br><span class=\"diminish\">The two doors must be placed within the doorway distance of each other.</span>",
+          "plain_text": "Place two connected doors in the world. Players and most projectiles entering one door will exit out through the other. The doors will close at the end of the duration.\nThe two doors must be placed within the doorway distance of each other."
+        },
+        {
+          "localization_key": "ability_doorman_doorway_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Grants a Barrier first time traveling through doors",
+          "plain_text": "Grants a Barrier first time traveling through doors"
+        },
+        {
+          "localization_key": "ability_doorman_doorway_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+30m Cast Range. +40m Doorway Distance<br> and scales with Spirit Power.",
+          "plain_text": "+30m Cast Range. +40m Doorway Distance\nand scales with Spirit Power."
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Luggage Cart",
+      "internal_key": "ability_doorman_luggage_cart",
+      "data": {
+        "AbilityCastDelay": 0.25,
+        "AbilityCastRange": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorAllowSelfCast",
+          "BehaviorProjectilePassThroughWorld",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "CartDamage": {
+          "Value": 60,
+          "Scale": {
+            "Value": 0.75,
+            "Type": "spirit"
+          }
+        },
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_doorman_luggage_cart",
+        "ModifierDrag": {
+          "Class": "LuggageDrag",
+          "Subclass": "Drag",
+          "StompIgnoreLingerModifier": {
+            "Class": "Base",
+            "Subclass": "LuggageDragStompIgnoreLinger",
+            "EnabledStateMask": [
+              "DoormanLuggageDragged"
+            ]
+          },
+          "StompIgnoreLingerDuration": 0.5,
+          "EnabledStateMask": [
+            "IgnorePortals"
+          ]
+        },
+        "Name": "Luggage Cart",
+        "Upgrades": [
+          {
+            "CartDamage": 80
+          },
+          {
+            "AbilityCastRange": 25,
+            "WallImpactDamage": {
+              "Value": 75,
+              "Scale": {
+                "Value": 0.6,
+                "Type": "spirit"
+              }
+            }
+          },
+          {
+            "StunDuration": 1.25,
+            "AbilityCooldown": -15
+          }
+        ],
+        "WallImpactDamage": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0,
+            "Type": "spirit"
+          }
+        }
+      },
+      "card": {
+        "Key": "ability_doorman_luggage_cart",
+        "Name": "Luggage Cart",
+        "DescKey": "ability_doorman_luggage_cart_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "CartDamage",
+                "Name": "Cart Damage",
+                "Value": 60,
+                "Scale": {
+                  "Value": 0.75,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_doorman_luggage_cart_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Wall Hit",
+                "Key": "WallImpactDamage",
+                "Name": "Impact Damage",
+                "Value": 0,
+                "Scale": {
+                  "Value": 0,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Wall Hit",
+                "Key": "StunDuration",
+                "Name": "Stun Duration",
+                "StatusEffect": "Stun",
+                "Value": 0,
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [],
+          "RequiresUpgradeIndex": 1,
+          "DescKey": "ability_doorman_luggage_cart_t3_note"
+        },
+        "Upgrades": [
+          {
+            "CartDamage": 80
+          },
+          {
+            "AbilityCastRange": 25,
+            "WallImpactDamage": {
+              "Value": 75,
+              "Scale": {
+                "Value": 0.6,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "ability_doorman_luggage_cart_t2_desc"
+          },
+          {
+            "StunDuration": 1.25,
+            "AbilityCooldown": -15,
+            "DescKey": "ability_doorman_luggage_cart_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.25,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_doorman_luggage_cart_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Send out a luggage Cart that deals {g:citadel_inline_attribute:'SpiritDamage'} and {g:citadel_inline_attribute:'Pulls'} enemy heroes along its path. <br><br>Can be alt cast with {g:citadel_binding:'AltCast'} to target friendly heroes instead.",
+          "plain_text": "Send out a luggage Cart that deals spirit damage and pulls enemy heroes along its path.\nCan be alt cast with [Alt Cast] to target friendly heroes instead."
+        },
+        {
+          "localization_key": "ability_doorman_luggage_cart_t3_note",
+          "card_paths": [
+            "card.Info2.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "If the cart collides with a wall while dragging an enemy, it will deal bonus damage to the targets.",
+          "plain_text": "If the cart collides with a wall while dragging an enemy, it will deal bonus damage to the targets."
+        },
+        {
+          "localization_key": "ability_doorman_luggage_cart_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+25m Cast Range<br>+75 Damage on wall impact",
+          "plain_text": "+25m Cast Range\n+75 Damage on wall impact"
+        },
+        {
+          "localization_key": "ability_doorman_luggage_cart_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "-15s Cooldown and 1.25s {g:citadel_inline_attribute:'Stun'} on wall impact",
+          "plain_text": "-15s Cooldown and 1.25s stun on wall impact"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Hotel Guest",
+      "internal_key": "ability_doorman_hotel",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 7,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityChannelTime": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 140,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": 6.5,
+        "AbilityPostCastDuration": 0.7,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorCannotCancelDuringChannel",
+          "BehaviorUseInstantCastUnitTargetUi",
+          "BehaviorCanSetQuickCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 75,
+          "Scale": {
+            "Value": 1,
+            "Type": "spirit"
+          }
+        },
+        "DamageModifier": {
+          "Class": "Base",
+          "Subclass": "DamageTimer"
+        },
+        "FreezeModifier": {
+          "Class": "DoormanHotelTransitionFreeze",
+          "Subclass": "Freeze"
+        },
+        "HotelModifier": {
+          "Class": "DoormanHotelVictim",
+          "Subclass": "Hotel",
+          "EnabledStateMask": [
+            "InvalidTeleportTarget",
+            "IgnoreOutOfPlayAreaCheck"
+          ]
+        },
+        "HotelTimeScale": null,
+        "ImposterModifier": {
+          "Class": "DoormanHotelImposter",
+          "Subclass": "Imposter",
+          "ImposterModifierFX": {
+            "Class": "DoormanHotelImposterFx",
+            "Subclass": "Fx"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_doorman_hotel",
+        "LateCheckoutDamage": {
+          "Value": 125,
+          "Scale": {
+            "Value": 1.5,
+            "Type": "spirit"
+          }
+        },
+        "Name": "Hotel Guest",
+        "NoDrawModifier": {
+          "Class": "Base",
+          "Subclass": "Nodraw",
+          "EnabledStateMask": [
+            "OutOfGame",
+            "IgnoredByNpcTargeting",
+            "UnitStatusHidden",
+            "DoNotDrawModel"
+          ]
+        },
+        "PreTeleportModifier": {
+          "Class": "Base",
+          "Subclass": "PreTeleport"
+        },
+        "TeleportFXModifier": {
+          "Class": "DoormanHotelTeleportFx",
+          "Subclass": "TeleportFx"
+        },
+        "TimeSlowDuration": 1,
+        "TimeSlowPercentage": 100,
+        "TimeslowModifier": {
+          "Class": "DoormanDiminishingTimestop",
+          "Subclass": "DoormanExitTimeslow"
+        },
+        "UnstoppableWhileChannelingModifier": {
+          "Class": "Unstoppable",
+          "Subclass": "DoormanHotelUnstoppable",
+          "EnabledStateMask": [
+            "StatusImmune",
+            "SlowImmune",
+            "KnockdownImmune",
+            "Unstoppable"
+          ],
+          "StatusEffectPriority": 25,
+          "DisabledStateMask": [
+            "Disarmed",
+            "Muted",
+            "Silenced",
+            "SilenceMovementAbilites",
+            "Slowed",
+            "Glitched",
+            "MeleeDisabledDebuff",
+            "DashDisabledDebuff"
+          ]
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -20,
+            "StaminaDrain": 1
+          },
+          {
+            "Damage": 150,
+            "LateCheckoutDamage": 150,
+            "LateCheckoutStun": 1.5
+          },
+          {
+            "UnstoppableWhileHotelOccupied": 1,
+            "LateCheckoutCooldown": 15
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_doorman_hotel",
+        "Name": "Hotel Guest",
+        "DescKey": "ability_doorman_hotel_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "Cost of Stay",
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 75,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "Failure to Check-Out",
+                "Key": "LateCheckoutDamage",
+                "Name": "Damage",
+                "Value": 125,
+                "Scale": {
+                  "Value": 1.5,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_doorman_hotel_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "While a Guest",
+                "Key": "AbilityDuration",
+                "Name": "Duration",
+                "Value": 6.5,
+                "Type": "duration"
+              },
+              {
+                "Title": "While a Guest",
+                "Key": "HotelTimeScale",
+                "Name": "Slow",
+                "Value": null,
+                "Type": "slow"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -20,
+            "StaminaDrain": 1,
+            "DescKey": "ability_doorman_hotel_t1_desc"
+          },
+          {
+            "Damage": 150,
+            "LateCheckoutDamage": 150,
+            "LateCheckoutStun": 1.5,
+            "DescKey": "ability_doorman_hotel_t2_desc"
+          },
+          {
+            "UnstoppableWhileHotelOccupied": 1,
+            "LateCheckoutCooldown": 15,
+            "DescKey": "ability_doorman_hotel_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.7
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "TimeSlowDuration": {
+            "Name": null,
+            "Value": 1
+          },
+          "TimeSlowPercentage": {
+            "Name": null,
+            "Value": 100
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 7,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 140,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 6.5,
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_doorman_hotel_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Send the target's physical body to be a guest at the Baroness Hotel. The guest is to promptly make their way to the exit elevator, where they'll be sent back to their original position. <br><br>A stay at the Baroness Hotel is paid for in {g:citadel_inline_attribute:'SpiritDamage'}. Failure to check-out on time costs additional {g:citadel_inline_attribute:'SpiritDamage'}.",
+          "plain_text": "Send the target's physical body to be a guest at the Baroness Hotel. The guest is to promptly make their way to the exit elevator, where they'll be sent back to their original position.\nA stay at the Baroness Hotel is paid for in spirit damage. Failure to check-out on time costs additional spirit damage."
+        },
+        {
+          "localization_key": "ability_doorman_hotel_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "1 Stamina Drain and -20 Cooldown",
+          "plain_text": "1 Stamina Drain and -20 Cooldown"
+        },
+        {
+          "localization_key": "ability_doorman_hotel_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+150 Damage<br>+1.5s Stun on Failure to Check Out",
+          "plain_text": "+150 Damage\n+1.5s Stun on Failure to Check Out"
+        },
+        {
+          "localization_key": "ability_doorman_hotel_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Unstoppable while the Baroness is occupied.<br>15s Cooldown on Failure to Check Out.",
+          "plain_text": "Unstoppable while the Baroness is occupied.\n15s Cooldown on Failure to Check Out."
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.43,
+    "AirDashSpeed": 18.6,
+    "BaseHealthRegen": 1,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": -30,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.62,
+    "GroundDashSpeed": 16.1,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 1.25,
+      "MaxHealth": 42,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 1.9841,
+      "SustainedDPS": 1.3441
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_doorman_lore",
+    "MaxHealth": 755,
+    "MaxMoveSpeed": 7.9,
+    "MoveAcceleration": 4,
+    "Name": "The Doorman",
+    "Playstyle": "hero_doorman_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_doorman_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.6,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Mystic",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

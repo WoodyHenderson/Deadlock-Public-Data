@@ -1,0 +1,833 @@
+{
+  "schema_version": 1,
+  "id": "item.shadow-weave",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Shadow Weave",
+    "numeric_id": 1798666702,
+    "internal_key": "upgrade_cloaking_device_active",
+    "aliases": [
+      "upgrade_cloaking_device_active"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "weapon",
+    "tier": 3,
+    "activation": "instant_cast",
+    "is_active_item": true,
+    "is_imbue": false,
+    "shop_filters": [
+      "MagicDamage",
+      "FireRate",
+      "Movement"
+    ],
+    "target_types": null
+  },
+  "purchase": {
+    "cost_souls": 3200,
+    "component_internal_keys": []
+  },
+  "description_plain": "Become Stealthed. Whenever you take damage while Stealthed you get briefly revealed.",
+  "displayed_effects": [
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "OutOfCombatHealthRegen",
+      "label": "Out of Combat Regen",
+      "value": "5",
+      "property": {
+        "value": "5",
+        "provided_property_type": "MODIFIER_VALUE_OUT_OF_COMBAT_HEALTH_REGEN",
+        "css_class": "healing",
+        "prefix": "{s:sign}",
+        "label": "Out of Combat Regen",
+        "postfix": "",
+        "postvalue_label": "Out of Combat Regen",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "BonusSprintSpeed",
+      "label": "Sprint Speed",
+      "value": "1.5m",
+      "property": {
+        "value": "1.5m",
+        "provided_property_type": "MODIFIER_VALUE_SPRINT_SPEED_BONUS",
+        "css_class": "move_speed",
+        "prefix": "{s:sign}",
+        "label": "Sprint Speed",
+        "postfix": "m",
+        "postvalue_label": "Sprint Speed",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "SpottedRadius",
+      "label": "Spot Radius",
+      "value": "20m",
+      "property": {
+        "value": "20m",
+        "label": "Spot Radius",
+        "postfix": "m",
+        "postvalue_label": "Spot Radius",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "InvisMoveSpeedMod",
+      "label": "Invis Sprint Speed",
+      "value": "5m",
+      "property": {
+        "value": "5m",
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "prefix": "{s:sign}",
+        "label": "Invis Sprint Speed",
+        "postfix": "m",
+        "postvalue_label": "Invis Sprint Speed",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "StatusEffectInvisible",
+      "label": "Status Effect Invisible",
+      "value": "Unknown",
+      "property": null
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "AbilityDuration",
+      "label": "Stealth Duration",
+      "value": "13s",
+      "property": {
+        "value": "13",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "loc_token_override": "StealthDuration",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Stealth Duration",
+        "postfix": "s",
+        "postvalue_label": "Stealth Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "AmbushDuration",
+      "label": "Ambush Duration",
+      "value": "5s",
+      "property": {
+        "value": "5",
+        "css_class": "duration",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "duration_scale_function"
+        },
+        "label": "Ambush Duration",
+        "postfix": "s",
+        "postvalue_label": "Ambush Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "AmbushBonusFireRate",
+      "label": "Ambush Fire Rate",
+      "value": "25%",
+      "property": {
+        "value": "25",
+        "provided_property_type": "MODIFIER_VALUE_FIRE_RATE",
+        "css_class": "bullet_damage",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "+",
+        "label": "Ambush Fire Rate",
+        "postfix": "%",
+        "postvalue_label": "Ambush Fire Rate",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "AmbushBonusTechPower",
+      "label": "Ambush Spirit Power",
+      "value": "25",
+      "property": {
+        "value": "25",
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "css_class": "tech_damage",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "+",
+        "label": "Ambush Spirit Power",
+        "postvalue_label": "Ambush Spirit Power",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "AmbushBonusMeleeDamage",
+      "label": "Ambush Melee Damage",
+      "value": "25%",
+      "property": {
+        "value": "25",
+        "provided_property_type": "MODIFIER_VALUE_MELEE_DAMAGE_INCREASE",
+        "css_class": "melee_damage",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "label": "Ambush Melee Damage",
+        "postfix": "%",
+        "postvalue_label": "Ambush Melee Damage",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "OutOfCombatHealthRegen",
+          "bonus": "20"
+        },
+        {
+          "name": "AmbushBonusFireRate",
+          "bonus": "35"
+        },
+        {
+          "name": "AmbushBonusMeleeDamage",
+          "bonus": "30"
+        },
+        {
+          "name": "AmbushBonusTechPower",
+          "bonus": "35"
+        },
+        {
+          "name": "AbilityCooldown",
+          "bonus": "-17"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 1798666702,
+    "class_name": "upgrade_cloaking_device_active",
+    "name": "Shadow Weave",
+    "start_trained": true,
+    "heroes": [],
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "weapon",
+    "item_tier": 3,
+    "properties": {
+      "AbilityCooldown": {
+        "value": 45.0,
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown"
+      },
+      "AbilityDuration": {
+        "value": "13",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "loc_token_override": "StealthDuration",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Stealth Duration",
+        "postfix": "s",
+        "postvalue_label": "Stealth Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "InvisAlertWhenFading": {
+        "value": "1"
+      },
+      "InvisCancelOnDamage": {
+        "value": "1"
+      },
+      "InvisFadeToDuration": {
+        "value": "0.6",
+        "css_class": "duration",
+        "label": "Fade Time",
+        "postfix": "s",
+        "postvalue_label": "Fade Time"
+      },
+      "InvisMoveSpeedMod": {
+        "value": "5m",
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "prefix": "{s:sign}",
+        "label": "Invis Sprint Speed",
+        "postfix": "m",
+        "postvalue_label": "Invis Sprint Speed",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "SpottedRadius": {
+        "value": "20m",
+        "label": "Spot Radius",
+        "postfix": "m",
+        "postvalue_label": "Spot Radius",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "RevealOnDamageDuration": {
+        "value": "1.5",
+        "css_class": "duration"
+      },
+      "RevealOnSpottedDuration": {
+        "value": "1.5",
+        "css_class": "duration"
+      },
+      "FullInvisDistance": {
+        "value": "30m"
+      },
+      "AmbushDuration": {
+        "value": "5",
+        "css_class": "duration",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "duration_scale_function"
+        },
+        "label": "Ambush Duration",
+        "postfix": "s",
+        "postvalue_label": "Ambush Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AmbushBonusFireRate": {
+        "value": "25",
+        "provided_property_type": "MODIFIER_VALUE_FIRE_RATE",
+        "css_class": "bullet_damage",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "+",
+        "label": "Ambush Fire Rate",
+        "postfix": "%",
+        "postvalue_label": "Ambush Fire Rate",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "AmbushBonusTechPower": {
+        "value": "25",
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "css_class": "tech_damage",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "+",
+        "label": "Ambush Spirit Power",
+        "postvalue_label": "Ambush Spirit Power",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "AmbushBonusMeleeDamage": {
+        "value": "25",
+        "provided_property_type": "MODIFIER_VALUE_MELEE_DAMAGE_INCREASE",
+        "css_class": "melee_damage",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "label": "Ambush Melee Damage",
+        "postfix": "%",
+        "postvalue_label": "Ambush Melee Damage",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "OutOfCombatHealthRegen": {
+        "value": "5",
+        "provided_property_type": "MODIFIER_VALUE_OUT_OF_COMBAT_HEALTH_REGEN",
+        "css_class": "healing",
+        "prefix": "{s:sign}",
+        "label": "Out of Combat Regen",
+        "postfix": "",
+        "postvalue_label": "Out of Combat Regen",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "BonusSprintSpeed": {
+        "value": "1.5m",
+        "provided_property_type": "MODIFIER_VALUE_SPRINT_SPEED_BONUS",
+        "css_class": "move_speed",
+        "prefix": "{s:sign}",
+        "label": "Sprint Speed",
+        "postfix": "m",
+        "postvalue_label": "Sprint Speed",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    "description": {
+      "desc": "Become <span class=\"highlight\">Stealthed</span>. Whenever you take damage while Stealthed you get briefly revealed.",
+      "active": "<br>Attacking or using an ability will end your stealth and start an <span class=\"highlight\">ambush</span>, temporarily granting you bonus <span class=\"highlight\">Fire Rate</span>, <span class=\"highlight\">Spirit Power</span> and <span class=\"highlight\">Melee Damage</span>."
+    },
+    "activation": "instant_cast",
+    "tooltip_sections": [
+      {
+        "section_type": "innate",
+        "section_attributes": [
+          {
+            "properties": [
+              "OutOfCombatHealthRegen",
+              "BonusSprintSpeed"
+            ]
+          }
+        ]
+      },
+      {
+        "section_type": "active",
+        "section_attributes": [
+          {
+            "loc_string": "Become <span class=\"highlight\">Stealthed</span>. Whenever you take damage while Stealthed you get briefly revealed.",
+            "properties": [
+              "SpottedRadius",
+              "InvisMoveSpeedMod"
+            ],
+            "important_properties": [
+              "StatusEffectInvisible",
+              "AbilityDuration"
+            ],
+            "important_properties_with_icon": [
+              {
+                "name": "StatusEffectInvisible",
+                "localized_name": "Invisible"
+              }
+            ]
+          },
+          {
+            "loc_string": "<br>Attacking or using an ability will end your stealth and start an <span class=\"highlight\">ambush</span>, temporarily granting you bonus <span class=\"highlight\">Fire Rate</span>, <span class=\"highlight\">Spirit Power</span> and <span class=\"highlight\">Melee Damage</span>.",
+            "properties": [
+              "AmbushDuration"
+            ],
+            "important_properties": [
+              "AmbushBonusFireRate",
+              "AmbushBonusTechPower",
+              "AmbushBonusMeleeDamage"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "OutOfCombatHealthRegen",
+            "bonus": "20"
+          },
+          {
+            "name": "AmbushBonusFireRate",
+            "bonus": "35"
+          },
+          {
+            "name": "AmbushBonusMeleeDamage",
+            "bonus": "30"
+          },
+          {
+            "name": "AmbushBonusTechPower",
+            "bonus": "35"
+          },
+          {
+            "name": "AbilityCooldown",
+            "bonus": "-17"
+          }
+        ]
+      }
+    ],
+    "is_active_item": true,
+    "shopable": true,
+    "cost": 3200
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Shadow Weave",
+    "Description": "Become <span class=\"highlight\">Stealthed</span>. Whenever you take damage while Stealthed you get briefly revealed.",
+    "Cost": 3200,
+    "Tier": 3,
+    "Activation": "InstantCast",
+    "Slot": "Weapon",
+    "Components": null,
+    "TargetTypes": null,
+    "ShopFilters": [
+      "MagicDamage",
+      "FireRate",
+      "Movement"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityCooldown": 45.0,
+    "AbilityDuration": 13,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "InvisAlertWhenFading": 1,
+    "InvisCancelOnDamage": 1,
+    "InvisFadeToDuration": 0.6,
+    "InvisMoveSpeedMod": "5m",
+    "SpottedRadius": "20m",
+    "RevealOnDamageDuration": 1.5,
+    "RevealOnSpottedDuration": 1.5,
+    "FullInvisDistance": "30m",
+    "AmbushDuration": 5,
+    "AmbushBonusFireRate": 25,
+    "AmbushBonusTechPower": 25,
+    "AmbushBonusMeleeDamage": 25,
+    "OutOfCombatHealthRegen": 5,
+    "BonusSprintSpeed": "1.5m",
+    "PropertyUpgrades": {
+      "OutOfCombatHealthRegen": 20,
+      "AmbushBonusFireRate": 35,
+      "AmbushBonusMeleeDamage": 30,
+      "AmbushBonusTechPower": 35,
+      "AbilityCooldown": -17
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_cloaking_device_active",
+    "Name": "Shadow Weave",
+    "Description": "Become <span class=\"highlight\">Stealthed</span>. Whenever you take damage while Stealthed you get briefly revealed.",
+    "Cost": 3200,
+    "Tier": 3,
+    "Slot": "Weapon",
+    "Activation": "InstantCast",
+    "Components": null,
+    "TargetTypes": null,
+    "ShopFilters": [
+      "MagicDamage",
+      "FireRate",
+      "Movement"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Innate",
+      "DescKey": null,
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [],
+      "Alt": [
+        {
+          "Key": "OutOfCombatHealthRegen",
+          "Value": 5,
+          "Type": "healing"
+        },
+        {
+          "Key": "BonusSprintSpeed",
+          "Value": "1.5m",
+          "Type": "move_speed"
+        }
+      ]
+    },
+    "Info2": {
+      "Type": "Active",
+      "DescKey": "#upgrade_cloaking_device_active_desc",
+      "Cooldown": 45.0,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "StatusEffectInvisible",
+          "Value": null
+        },
+        {
+          "Key": "AbilityDuration",
+          "Value": 13,
+          "Type": "duration",
+          "LocTokenOverride": "StealthDuration"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "SpottedRadius",
+          "Value": "20m"
+        },
+        {
+          "Key": "InvisMoveSpeedMod",
+          "Value": "5m",
+          "Type": "move_speed"
+        }
+      ]
+    },
+    "Info3": {
+      "Type": "Active",
+      "DescKey": "#upgrade_cloaking_device_active_ambush_desc",
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "AmbushBonusFireRate",
+          "Value": 25,
+          "Type": "bullet_damage",
+          "UsageFlags": "ConditionallyApplied"
+        },
+        {
+          "Key": "AmbushBonusTechPower",
+          "Value": 25,
+          "Type": "tech_damage",
+          "UsageFlags": "ConditionallyApplied"
+        },
+        {
+          "Key": "AmbushBonusMeleeDamage",
+          "Value": 25,
+          "Type": "melee_damage",
+          "UsageFlags": "ConditionallyApplied"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "AmbushDuration",
+          "Value": 5,
+          "Type": "duration"
+        }
+      ]
+    },
+    "Upgrades": {
+      "OutOfCombatHealthRegen": 20,
+      "AmbushBonusFireRate": 35,
+      "AmbushBonusMeleeDamage": 30,
+      "AmbushBonusTechPower": 35,
+      "AbilityCooldown": -17
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      },
+      "InvisAlertWhenFading": {
+        "Key": "InvisAlertWhenFading",
+        "Value": 1
+      },
+      "InvisCancelOnDamage": {
+        "Key": "InvisCancelOnDamage",
+        "Value": 1
+      },
+      "InvisFadeToDuration": {
+        "Key": "InvisFadeToDuration",
+        "Value": 0.6,
+        "Type": "duration"
+      },
+      "RevealOnDamageDuration": {
+        "Key": "RevealOnDamageDuration",
+        "Value": 1.5,
+        "Type": "duration"
+      },
+      "RevealOnSpottedDuration": {
+        "Key": "RevealOnSpottedDuration",
+        "Value": 1.5,
+        "Type": "duration"
+      },
+      "FullInvisDistance": {
+        "Key": "FullInvisDistance",
+        "Value": "30m"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

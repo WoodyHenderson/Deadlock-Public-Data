@@ -1,0 +1,536 @@
+{
+  "schema_version": 1,
+  "id": "item.mystical-piano",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Mystical Piano",
+    "numeric_id": 2054088113,
+    "internal_key": "upgrade_mystical_piano",
+    "aliases": [
+      "upgrade_mystical_piano"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": true
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "spirit",
+    "tier": 5,
+    "activation": "press",
+    "is_active_item": true,
+    "is_imbue": false,
+    "shop_filters": null,
+    "target_types": [
+      "AllEnemy"
+    ]
+  },
+  "purchase": {
+    "cost_souls": 9999,
+    "component_internal_keys": []
+  },
+  "description_plain": "After a short delay, enemies in the target area will be stunned and have their stamina depleted. After the stun they will be temporarily dazed.",
+  "displayed_effects": [
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "StunDelay",
+      "label": "Stun Delay",
+      "value": "1.7s",
+      "property": {
+        "value": 1.7,
+        "label": "Stun Delay",
+        "postfix": "s",
+        "postvalue_label": "Stun Delay",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "Radius",
+      "label": "Radius",
+      "value": "12m",
+      "property": {
+        "value": "12m",
+        "css_class": "distance",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "Radius_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Radius",
+        "postfix": "m",
+        "postvalue_label": "Radius",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "StatusEffectStun",
+      "label": "Status Effect Stun",
+      "value": "Unknown",
+      "property": null
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "StunDuration",
+      "label": "Stun Duration",
+      "value": "2.0s",
+      "property": {
+        "value": 2.0,
+        "css_class": "duration",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "stun_sf"
+        },
+        "label": "Stun Duration",
+        "postfix": "s",
+        "postvalue_label": "Stun Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "DazeDuration",
+      "label": "Daze Duration",
+      "value": "2.0s",
+      "property": {
+        "value": 2.0,
+        "css_class": "duration",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "daze_sf"
+        },
+        "label": "Daze Duration",
+        "postfix": "s",
+        "postvalue_label": "Daze Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "AbilityCooldown",
+          "bonus": "-15"
+        },
+        {
+          "name": "Radius",
+          "bonus": "3m"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 2054088113,
+    "class_name": "upgrade_mystical_piano",
+    "name": "Mystical Piano",
+    "start_trained": true,
+    "heroes": [],
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "spirit",
+    "item_tier": 5,
+    "properties": {
+      "AbilityCooldown": {
+        "value": 23.0,
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown"
+      },
+      "AbilityDuration": {
+        "value": 1.7,
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration"
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0.2",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "StunDelay": {
+        "value": 1.7,
+        "label": "Stun Delay",
+        "postfix": "s",
+        "postvalue_label": "Stun Delay",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "StunDuration": {
+        "value": 2.0,
+        "css_class": "duration",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "stun_sf"
+        },
+        "label": "Stun Duration",
+        "postfix": "s",
+        "postvalue_label": "Stun Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "DazeMoveSpeed": {
+        "value": "2m",
+        "provided_property_type": "MODIFIER_VALUE_MOVE_SPEED_LIMIT",
+        "css_class": "slow",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "display_units": "EDisplayUnit_MetersPerSecond"
+      },
+      "DazeDuration": {
+        "value": 2.0,
+        "css_class": "duration",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "daze_sf"
+        },
+        "label": "Daze Duration",
+        "postfix": "s",
+        "postvalue_label": "Daze Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "Radius": {
+        "value": "12m",
+        "css_class": "distance",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "Radius_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Radius",
+        "postfix": "m",
+        "postvalue_label": "Radius",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    "description": {
+      "desc": "After a short delay, enemies in the target area will be stunned and have their stamina depleted. After the stun they will be temporarily dazed."
+    },
+    "activation": "press",
+    "tooltip_sections": [
+      {
+        "section_type": "active",
+        "section_attributes": [
+          {
+            "loc_string": "After a short delay, enemies in the target area will be stunned and have their stamina depleted. After the stun they will be temporarily dazed.",
+            "properties": [
+              "StunDelay",
+              "Radius"
+            ],
+            "important_properties": [
+              "StatusEffectStun",
+              "StunDuration",
+              "DazeDuration"
+            ],
+            "important_properties_with_icon": [
+              {
+                "name": "StatusEffectStun",
+                "localized_name": "Stun"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "AbilityCooldown",
+            "bonus": "-15"
+          },
+          {
+            "name": "Radius",
+            "bonus": "3m"
+          }
+        ]
+      }
+    ],
+    "is_active_item": true,
+    "shopable": true,
+    "cost": 9999
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Mystical Piano",
+    "Description": "After a short delay, enemies in the target area will be stunned and have their stamina depleted. After the stun they will be temporarily dazed.",
+    "Cost": 9999,
+    "Tier": 5,
+    "Activation": "Press",
+    "Slot": "Tech",
+    "Components": null,
+    "TargetTypes": [
+      "AllEnemy"
+    ],
+    "ShopFilters": null,
+    "IsDisabled": false,
+    "StreetBrawl": true,
+    "IsImbue": false,
+    "AbilityCooldown": 23.0,
+    "AbilityDuration": 1.7,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCastDelay": 0.2,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "StunDelay": 1.7,
+    "StunDuration": 2.0,
+    "DazeMoveSpeed": "2m",
+    "DazeDuration": 2.0,
+    "Radius": "12m",
+    "PropertyUpgrades": {
+      "AbilityCooldown": -15,
+      "Radius": "3m"
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_mystical_piano",
+    "Name": "Mystical Piano",
+    "Description": "After a short delay, enemies in the target area will be stunned and have their stamina depleted. After the stun they will be temporarily dazed.",
+    "Cost": 9999,
+    "Tier": 5,
+    "Slot": "Tech",
+    "Activation": "Press",
+    "Components": null,
+    "TargetTypes": [
+      "AllEnemy"
+    ],
+    "ShopFilters": null,
+    "IsDisabled": false,
+    "StreetBrawl": true,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Active",
+      "DescKey": "#upgrade_mystical_piano_desc",
+      "Cooldown": 23.0,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "StatusEffectStun",
+          "Value": null
+        },
+        {
+          "Key": "StunDuration",
+          "Value": 2.0,
+          "Type": "duration"
+        },
+        {
+          "Key": "DazeDuration",
+          "Value": 2.0,
+          "Type": "duration"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "StunDelay",
+          "Value": 1.7
+        },
+        {
+          "Key": "Radius",
+          "Value": "12m",
+          "Type": "distance"
+        }
+      ]
+    },
+    "Upgrades": {
+      "AbilityCooldown": -15,
+      "Radius": "3m"
+    },
+    "Other": {
+      "AbilityDuration": {
+        "Key": "AbilityDuration",
+        "Value": 1.7,
+        "Type": "duration"
+      },
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCastDelay": {
+        "Key": "AbilityCastDelay",
+        "Value": 0.2,
+        "Type": "cast"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      },
+      "DazeMoveSpeed": {
+        "Key": "DazeMoveSpeed",
+        "Value": "2m",
+        "Type": "slow",
+        "UsageFlags": "ConditionallyApplied"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

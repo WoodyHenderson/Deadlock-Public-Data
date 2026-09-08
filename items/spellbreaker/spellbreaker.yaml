@@ -1,0 +1,578 @@
+{
+  "schema_version": 1,
+  "id": "item.spellbreaker",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Spellbreaker",
+    "numeric_id": 1955841979,
+    "internal_key": "upgrade_spellbreaker",
+    "aliases": [
+      "upgrade_spellbreaker"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "vitality",
+    "tier": 4,
+    "activation": "passive",
+    "is_active_item": false,
+    "is_imbue": false,
+    "shop_filters": [
+      "Durability"
+    ],
+    "target_types": null
+  },
+  "purchase": {
+    "cost_souls": 6400,
+    "component_internal_keys": [
+      "upgrade_debuff_reducer"
+    ]
+  },
+  "description_plain": "The next instance of high spirit damage you take is significantly reduced.",
+  "displayed_effects": [
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "BonusHealth",
+      "label": "Bonus Health",
+      "value": "90",
+      "property": {
+        "value": "90",
+        "provided_property_type": "MODIFIER_VALUE_HEALTH_MAX",
+        "css_class": "health",
+        "prefix": "{s:sign}",
+        "label": "Bonus Health",
+        "postvalue_label": "Bonus Health",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "elevated",
+      "key": "TechResist",
+      "label": "Spirit Resist",
+      "value": "18%",
+      "property": {
+        "value": "18",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RESIST",
+        "css_class": "tech_armor_up",
+        "prefix": "{s:sign}",
+        "label": "Spirit Resist",
+        "postfix": "%",
+        "postvalue_label": "Spirit Resist",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": true,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "elevated",
+      "key": "StatusResistancePercent",
+      "label": "Debuff Resist",
+      "value": "25%",
+      "property": {
+        "value": "25",
+        "provided_property_type": "MODIFIER_VALUE_STATUS_RESISTANCE",
+        "css_class": "duration",
+        "prefix": "{s:sign}",
+        "label": "Debuff Resist",
+        "postfix": "%",
+        "postvalue_label": "Debuff Resist",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": true,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "DamageThreshold",
+      "label": "Damage Threshold",
+      "value": "175",
+      "property": {
+        "value": "175",
+        "css_class": "tech_damage",
+        "display_units": "EDisplayUnit_Normal",
+        "label": "Damage Threshold",
+        "postvalue_label": "Damage Threshold",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "AbilityCooldown",
+      "label": "Cooldown",
+      "value": "9s",
+      "property": {
+        "value": "9",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "important",
+      "key": "SpiritDamageReductionProc",
+      "label": "Spirit Damage Reduction",
+      "value": "65%",
+      "property": {
+        "value": "65",
+        "css_class": "tech_armor_up",
+        "label": "Spirit Damage Reduction",
+        "postfix": "%",
+        "postvalue_label": "Spirit Damage Reduction",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "TechResist",
+          "bonus": "15"
+        },
+        {
+          "name": "StatusResistancePercent",
+          "bonus": "15"
+        },
+        {
+          "name": "AbilityCooldown",
+          "bonus": "-3"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 1955841979,
+    "class_name": "upgrade_spellbreaker",
+    "name": "Spellbreaker",
+    "start_trained": true,
+    "heroes": [],
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "vitality",
+    "item_tier": 4,
+    "properties": {
+      "AbilityCooldown": {
+        "value": "9",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityDuration": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration"
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "TechResist": {
+        "value": "18",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RESIST",
+        "css_class": "tech_armor_up",
+        "prefix": "{s:sign}",
+        "label": "Spirit Resist",
+        "postfix": "%",
+        "postvalue_label": "Spirit Resist",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": true,
+        "tooltip_is_important": false
+      },
+      "StatusResistancePercent": {
+        "value": "25",
+        "provided_property_type": "MODIFIER_VALUE_STATUS_RESISTANCE",
+        "css_class": "duration",
+        "prefix": "{s:sign}",
+        "label": "Debuff Resist",
+        "postfix": "%",
+        "postvalue_label": "Debuff Resist",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": true,
+        "tooltip_is_important": false
+      },
+      "DamageThreshold": {
+        "value": "175",
+        "css_class": "tech_damage",
+        "display_units": "EDisplayUnit_Normal",
+        "label": "Damage Threshold",
+        "postvalue_label": "Damage Threshold",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "SpiritDamageReductionProc": {
+        "value": "65",
+        "css_class": "tech_armor_up",
+        "label": "Spirit Damage Reduction",
+        "postfix": "%",
+        "postvalue_label": "Spirit Damage Reduction",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "BonusHealth": {
+        "value": "90",
+        "provided_property_type": "MODIFIER_VALUE_HEALTH_MAX",
+        "css_class": "health",
+        "prefix": "{s:sign}",
+        "label": "Bonus Health",
+        "postvalue_label": "Bonus Health",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    "description": {
+      "desc": "The next instance of high \n<span class=\"inline-attribute-label SpiritDamage\">spirit damage</span> you take is significantly reduced."
+    },
+    "activation": "passive",
+    "component_items": [
+      "upgrade_debuff_reducer"
+    ],
+    "tooltip_sections": [
+      {
+        "section_type": "innate",
+        "section_attributes": [
+          {
+            "properties": [
+              "BonusHealth"
+            ],
+            "elevated_properties": [
+              "TechResist",
+              "StatusResistancePercent"
+            ]
+          }
+        ]
+      },
+      {
+        "section_type": "passive",
+        "section_attributes": [
+          {
+            "loc_string": "The next instance of high \n<span class=\"inline-attribute-label SpiritDamage\">spirit damage</span> you take is significantly reduced.",
+            "properties": [
+              "DamageThreshold",
+              "AbilityCooldown"
+            ],
+            "important_properties": [
+              "SpiritDamageReductionProc"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "TechResist",
+            "bonus": "15"
+          },
+          {
+            "name": "StatusResistancePercent",
+            "bonus": "15"
+          },
+          {
+            "name": "AbilityCooldown",
+            "bonus": "-3"
+          }
+        ]
+      }
+    ],
+    "is_active_item": false,
+    "shopable": true,
+    "cost": 6400
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Spellbreaker",
+    "Description": "The next instance of high {g:citadel_inline_attribute:'SpiritDamage'} you take is significantly reduced.",
+    "Cost": 6400,
+    "Tier": 4,
+    "Activation": "Passive",
+    "Slot": "Armor",
+    "Components": [
+      "upgrade_debuff_reducer"
+    ],
+    "TargetTypes": null,
+    "ShopFilters": [
+      "Durability"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityCooldown": 9,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "TechResist": 18,
+    "StatusResistancePercent": 25,
+    "DamageThreshold": 175,
+    "SpiritDamageReductionProc": 65,
+    "BonusHealth": 90,
+    "PropertyUpgrades": {
+      "TechResist": 15,
+      "StatusResistancePercent": 15,
+      "AbilityCooldown": -3
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_spellbreaker",
+    "Name": "Spellbreaker",
+    "Description": "The next instance of high {g:citadel_inline_attribute:'SpiritDamage'} you take is significantly reduced.",
+    "Cost": 6400,
+    "Tier": 4,
+    "Slot": "Armor",
+    "Activation": "Passive",
+    "Components": [
+      "upgrade_debuff_reducer"
+    ],
+    "TargetTypes": null,
+    "ShopFilters": [
+      "Durability"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Innate",
+      "DescKey": null,
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "TechResist",
+          "Value": 18,
+          "Type": "tech_armor_up"
+        },
+        {
+          "Key": "StatusResistancePercent",
+          "Value": 25,
+          "Type": "duration"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "BonusHealth",
+          "Value": 90,
+          "Type": "health"
+        }
+      ]
+    },
+    "Info2": {
+      "Type": "Passive",
+      "DescKey": "#upgrade_spellbreaker_desc",
+      "Cooldown": 9,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "SpiritDamageReductionProc",
+          "Value": 65,
+          "Type": "tech_armor_up"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "DamageThreshold",
+          "Value": 175,
+          "Type": "tech_damage"
+        }
+      ]
+    },
+    "Upgrades": {
+      "TechResist": 15,
+      "StatusResistancePercent": 15,
+      "AbilityCooldown": -3
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

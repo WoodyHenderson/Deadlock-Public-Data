@@ -1,0 +1,604 @@
+{
+  "schema_version": 1,
+  "id": "item.escalating-exposure",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Escalating Exposure",
+    "numeric_id": 3005970438,
+    "internal_key": "upgrade_escalating_exposure",
+    "aliases": [
+      "upgrade_escalating_exposure"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "spirit",
+    "tier": 4,
+    "activation": "passive",
+    "is_active_item": false,
+    "is_imbue": false,
+    "shop_filters": [
+      "MagicDamage",
+      "Durability"
+    ],
+    "target_types": [
+      "AllEnemy"
+    ]
+  },
+  "purchase": {
+    "cost_souls": 6400,
+    "component_internal_keys": [
+      "upgrade_magic_vulnerability"
+    ]
+  },
+  "description_plain": "Dealing spirit damage applies a stacking Spirit Amp that increases your spirit damage to the target.",
+  "displayed_effects": [
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "TechArmorDamageReduction",
+      "label": "Spirit Resist On Spirit Damage",
+      "value": "-8%",
+      "property": {
+        "value": "-8",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RESIST_REDUCTION",
+        "css_class": "tech_armor_down",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "loc_token_override": "EscalatingExposureTechArmorDamageReduction",
+        "label": "Spirit Resist On Spirit Damage",
+        "postfix": "%",
+        "postvalue_label": "Spirit Resist On Spirit Damage",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "TechResist",
+      "label": "Spirit Resist",
+      "value": "17%",
+      "property": {
+        "value": "17",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RESIST",
+        "prefix": "{s:sign}",
+        "label": "Spirit Resist",
+        "postfix": "%",
+        "postvalue_label": "Spirit Resist",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "MaxStacks",
+      "label": "Max Stacks",
+      "value": "12",
+      "property": {
+        "value": "12",
+        "label": "Max Stacks",
+        "postvalue_label": "Max Stacks",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "AbilityDuration",
+      "label": "Duration",
+      "value": "12s",
+      "property": {
+        "value": "12",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "ProcCooldown",
+      "label": "Max Frequency Per Target",
+      "value": "0.7s",
+      "property": {
+        "value": "0.7",
+        "loc_token_override": "EscalatingExposureProcCooldown",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "ProcCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Max Frequency Per Target",
+        "postfix": "s",
+        "postvalue_label": "Max Frequency Per Target",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "important",
+      "key": "MagicIncreasePerStack",
+      "label": "Spirit Amp per Stack",
+      "value": "4.5%",
+      "property": {
+        "value": "4.5",
+        "css_class": "tech_armor_down",
+        "prefix": "{s:sign}",
+        "label": "Spirit Amp per Stack",
+        "postfix": "%",
+        "postvalue_label": "Spirit Amp per Stack",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "MagicIncreasePerStack",
+          "bonus": "1.5"
+        },
+        {
+          "name": "TechResist",
+          "bonus": "8"
+        },
+        {
+          "name": "TechArmorDamageReduction",
+          "bonus": "-10"
+        },
+        {
+          "name": "MaxStacks",
+          "bonus": "6"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 3005970438,
+    "class_name": "upgrade_escalating_exposure",
+    "name": "Escalating Exposure",
+    "start_trained": true,
+    "heroes": [],
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "spirit",
+    "item_tier": 4,
+    "properties": {
+      "AbilityCooldown": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown"
+      },
+      "AbilityDuration": {
+        "value": "12",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "ProcCooldown": {
+        "value": "0.7",
+        "loc_token_override": "EscalatingExposureProcCooldown",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "ProcCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Max Frequency Per Target",
+        "postfix": "s",
+        "postvalue_label": "Max Frequency Per Target",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "MagicIncreasePerStack": {
+        "value": "4.5",
+        "css_class": "tech_armor_down",
+        "prefix": "{s:sign}",
+        "label": "Spirit Amp per Stack",
+        "postfix": "%",
+        "postvalue_label": "Spirit Amp per Stack",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "TechResist": {
+        "value": "17",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RESIST",
+        "prefix": "{s:sign}",
+        "label": "Spirit Resist",
+        "postfix": "%",
+        "postvalue_label": "Spirit Resist",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "MaxStacks": {
+        "value": "12",
+        "label": "Max Stacks",
+        "postvalue_label": "Max Stacks",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "TechArmorDamageReduction": {
+        "value": "-8",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RESIST_REDUCTION",
+        "css_class": "tech_armor_down",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "loc_token_override": "EscalatingExposureTechArmorDamageReduction",
+        "label": "Spirit Resist On Spirit Damage",
+        "postfix": "%",
+        "postvalue_label": "Spirit Resist On Spirit Damage",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    "description": {
+      "desc": "Dealing \n<span class=\"inline-attribute-label SpiritDamage\">spirit damage</span> applies a stacking <span class=\"highlight\">Spirit Amp</span> that increases your \n<span class=\"inline-attribute-label SpiritDamage\">spirit damage</span> to the target."
+    },
+    "activation": "passive",
+    "component_items": [
+      "upgrade_magic_vulnerability"
+    ],
+    "tooltip_sections": [
+      {
+        "section_type": "innate",
+        "section_attributes": [
+          {
+            "properties": [
+              "TechArmorDamageReduction",
+              "TechResist"
+            ]
+          }
+        ]
+      },
+      {
+        "section_type": "passive",
+        "section_attributes": [
+          {
+            "loc_string": "Dealing \n<span class=\"inline-attribute-label SpiritDamage\">spirit damage</span> applies a stacking <span class=\"highlight\">Spirit Amp</span> that increases your \n<span class=\"inline-attribute-label SpiritDamage\">spirit damage</span> to the target.",
+            "properties": [
+              "MaxStacks",
+              "AbilityDuration",
+              "ProcCooldown"
+            ],
+            "important_properties": [
+              "MagicIncreasePerStack"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "MagicIncreasePerStack",
+            "bonus": "1.5"
+          },
+          {
+            "name": "TechResist",
+            "bonus": "8"
+          },
+          {
+            "name": "TechArmorDamageReduction",
+            "bonus": "-10"
+          },
+          {
+            "name": "MaxStacks",
+            "bonus": "6"
+          }
+        ]
+      }
+    ],
+    "is_active_item": false,
+    "shopable": true,
+    "cost": 6400
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Escalating Exposure",
+    "Description": "Dealing {g:citadel_inline_attribute:'SpiritDamage'} applies a stacking <span class=\"highlight\">Spirit Amp</span> that increases your {g:citadel_inline_attribute:'SpiritDamage'} to the target.",
+    "Cost": 6400,
+    "Tier": 4,
+    "Activation": "Passive",
+    "Slot": "Tech",
+    "Components": [
+      "upgrade_magic_vulnerability"
+    ],
+    "TargetTypes": [
+      "AllEnemy"
+    ],
+    "ShopFilters": [
+      "MagicDamage",
+      "Durability"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityDuration": 12,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "ProcCooldown": 0.7,
+    "MagicIncreasePerStack": 4.5,
+    "TechResist": 17,
+    "MaxStacks": 12,
+    "TechArmorDamageReduction": -8,
+    "PropertyUpgrades": {
+      "MagicIncreasePerStack": 1.5,
+      "TechResist": 8,
+      "TechArmorDamageReduction": -10,
+      "MaxStacks": 6
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_escalating_exposure",
+    "Name": "Escalating Exposure",
+    "Description": "Dealing {g:citadel_inline_attribute:'SpiritDamage'} applies a stacking <span class=\"highlight\">Spirit Amp</span> that increases your {g:citadel_inline_attribute:'SpiritDamage'} to the target.",
+    "Cost": 6400,
+    "Tier": 4,
+    "Slot": "Tech",
+    "Activation": "Passive",
+    "Components": [
+      "upgrade_magic_vulnerability"
+    ],
+    "TargetTypes": [
+      "AllEnemy"
+    ],
+    "ShopFilters": [
+      "MagicDamage",
+      "Durability"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Innate",
+      "DescKey": null,
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [],
+      "Alt": [
+        {
+          "Key": "TechArmorDamageReduction",
+          "Value": -8,
+          "Type": "tech_armor_down",
+          "UsageFlags": "ConditionallyApplied",
+          "LocTokenOverride": "EscalatingExposureTechArmorDamageReduction"
+        },
+        {
+          "Key": "TechResist",
+          "Value": 17
+        }
+      ]
+    },
+    "Info2": {
+      "Type": "Passive",
+      "DescKey": "#upgrade_escalating_exposure_desc",
+      "Cooldown": 0.7,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "MagicIncreasePerStack",
+          "Value": 4.5,
+          "Type": "tech_armor_down"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "MaxStacks",
+          "Value": 12
+        },
+        {
+          "Key": "AbilityDuration",
+          "Value": 12,
+          "Type": "duration"
+        }
+      ]
+    },
+    "Upgrades": {
+      "MagicIncreasePerStack": 1.5,
+      "TechResist": 8,
+      "TechArmorDamageReduction": -10,
+      "MaxStacks": 6
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

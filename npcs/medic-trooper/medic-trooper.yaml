@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "id": "npc.medic-trooper",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-04",
+  "evidence_status": "source_verified",
+  "sources": [
+    "deadlock-api.npc-units.client-6684.source-10933105",
+    "github.deadlock-data.npcs.311b2e8d895e",
+    "wiki.trooper.114174"
+  ],
+  "identity": {
+    "name": "Medic Trooper",
+    "aliases": [
+      "Banner Trooper",
+      "medic creep"
+    ],
+    "internal_class": "trooper_medic",
+    "numeric_id": 1003135509
+  },
+  "classification": {
+    "kind": "lane_unit",
+    "mode": "standard"
+  },
+  "units": {
+    "distance": "meters",
+    "time": "seconds",
+    "speed": "meters_per_second",
+    "percentage": "percentage_points"
+  },
+  "field_sources": {
+    "numeric_id": "deadlock-api.npc-units.client-6684.source-10933105:trooper_medic.id",
+    "gameplay_values": "github.deadlock-data.npcs.311b2e8d895e:trooper_medic",
+    "behavior_context": "wiki.trooper.114174"
+  },
+  "role": "medic",
+  "combat": {
+    "base_max_health": 350,
+    "out_of_combat_regen_per_second": 7,
+    "base_resistances": {
+      "bullet_percent": 0,
+      "spirit_percent": 0
+    },
+    "spirit_resistance_over_time": [
+      {
+        "match_time": 0,
+        "percent": 0
+      },
+      {
+        "match_time": 1500,
+        "percent": 20
+      },
+      {
+        "match_time": 3000,
+        "percent": 70
+      }
+    ],
+    "enemy_base_damage_resistance_percent": 35.0,
+    "maximum_health_multiplier_after_35_minutes": 1.5
+  },
+  "movement": {
+    "walk_speed": 6.299,
+    "run_speed": 13.0
+  },
+  "sight": {
+    "players": 22.86,
+    "npcs": 40.64
+  },
+  "melee": {
+    "damage": 25,
+    "attempt_range": 2.54,
+    "hit_range": 2.54,
+    "duration": 1.0
+  },
+  "super_trooper_modifier": {
+    "health_multiplier": 1.4,
+    "damage_bonus_percent": 60.0,
+    "enemy_bounty_reduction_percent": 15
+  },
+  "economy_ref": "data.general.economy:bounties[entity=trooper]",
+  "wave_ref": "data.general.map-timings:trooper_waves",
+  "ranged_attack": {
+    "bullet_damage": 36,
+    "rounds_per_second": 0.97087,
+    "damage_per_second": 34.951,
+    "range": 35.56,
+    "damage_type": "weapon",
+    "contextual_damage_per_second_vs_players": 28.0
+  },
+  "medic_pack": {
+    "effect_radius": 35.0,
+    "pickup_radius": {
+      "at_10_minutes": 18.01,
+      "growth_per_minute": 1.499,
+      "maximum": 30.0
+    },
+    "hero_heal_formula": "(missing_health * 0.13 + 150 + 2 * match_minutes) / nearby_allied_heroes",
+    "duration_for_heroes": 4.0,
+    "expiration": {
+      "at_10_minutes": 18.0,
+      "growth_per_minute": 2.0,
+      "maximum": 40.0
+    }
+  }
+}

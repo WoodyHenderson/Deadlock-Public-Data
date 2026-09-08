@@ -1,0 +1,1131 @@
+{
+  "schema_version": 2,
+  "id": "hero.sinclair",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.sinclair.124939",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Sinclair",
+  "aliases": [],
+  "internal_hero_key": "hero_magician",
+  "hero_type": "Mystic",
+  "role_localization_key": "hero_magician_role",
+  "playstyle_localization_key": "hero_magician_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 730,
+    "health_regeneration_per_second": 2,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 7.2,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 14.7,
+      "distance_meters": 10,
+      "duration_seconds": 0.68
+    },
+    "air_dash": {
+      "speed_meters_per_second": 17,
+      "distance_meters": 8,
+      "duration_seconds": 0.47
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.55,
+    "MaxHealth": 38,
+    "PowerIncreases": 1,
+    "TechPower": 1.3,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 1.4966,
+    "SustainedDPS": 1.0501
+  },
+  "spirit_scaling": {
+    "MaxMoveSpeed": 0.0138
+  },
+  "weapon": {
+    "BulletSpeed": 300,
+    "BulletDamage": 17.76,
+    "RoundsPerSecond": 2.7211,
+    "ClipSize": 16,
+    "ReloadTime": 2.5,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 25.4,
+    "FalloffEndRange": 60.96,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.3,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0,
+    "BulletRadius": 0.127,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 2,
+    "BurstInterShotInterval": 0.105,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 48.327,
+    "SustainedDPS": 33.909,
+    "NameKey": "citadel_weapon_hero_magician_set",
+    "DescKey": "citadel_weapon_hero_magician_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_BurstFire",
+      "Attribute_EWeaponAttribute_LongRange",
+      "Attribute_EWeaponAttribute_Projectile"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Vexing Bolt",
+      "internal_key": "ability_magician_magicbolt",
+      "data": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCastRange": {
+          "Value": 500,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCharges": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 24,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityPostCastDuration": 0.3,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorProjectile",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorTargetThroughWalls",
+          "BehaviorCleaveDisabled",
+          "BehaviorCooldownOnChannelEnd",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "CloneBoltDelay": 0.1,
+        "CloneDamagePercentage": 50,
+        "InitialProjectileVelocity": 800,
+        "IsDisabled": false,
+        "Key": "ability_magician_magicbolt",
+        "MaxDamage": {
+          "Value": 120,
+          "Scale": {
+            "Value": 1.86,
+            "Type": "spirit"
+          }
+        },
+        "MaxDamageTime": 2,
+        "MinDamage": {
+          "Value": 60,
+          "Scale": {
+            "Value": 0.93,
+            "Type": "spirit"
+          }
+        },
+        "Name": "Vexing Bolt",
+        "ProjectileLifetime": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "ProjectileRedirectCount": 1,
+        "Radius": {
+          "Value": 3.25,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "RedirectVelocity": 1500,
+        "TargetDebuffModifier": {
+          "Class": "Base",
+          "Subclass": "MagicianMagicboltDebuff"
+        },
+        "Upgrades": [
+          {
+            "FireRateSlow": 25,
+            "DebuffDuration": 5
+          },
+          {
+            "AbilityCooldown": -13
+          },
+          {
+            "MaxDamage": 126,
+            "CloneDamagePercentage": 50
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_magician_magicbolt",
+        "Name": "Vexing Bolt",
+        "DescKey": "ability_magician_magicbolt_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "MinDamage",
+                "Name": "Minimum Damage",
+                "Value": 60,
+                "Scale": {
+                  "Value": 0.93,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "MaxDamage",
+                "Name": "Max Damage",
+                "Value": 120,
+                "Scale": {
+                  "Value": 1.86,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "CloneDamagePercentage",
+                "Name": "Assistant Damage",
+                "Value": 50,
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "MaxDamageTime",
+              "Name": "Time for Max Damage",
+              "Value": 2,
+              "Type": "duration"
+            },
+            {
+              "Key": "FireRateSlow",
+              "Name": "Fire Rate",
+              "Value": 0,
+              "Type": "fire_rate"
+            },
+            {
+              "Key": "DebuffDuration",
+              "Name": "Debuff Duration",
+              "Value": 0,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_magician_magicbolt_desc"
+        },
+        "Upgrades": [
+          {
+            "FireRateSlow": 25,
+            "DebuffDuration": 5,
+            "DescKey": "ability_magician_magicbolt_t1_desc"
+          },
+          {
+            "AbilityCooldown": -13
+          },
+          {
+            "MaxDamage": 126,
+            "CloneDamagePercentage": 50,
+            "DescKey": "ability_magician_magicbolt_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.3
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "CloneBoltDelay": {
+            "Name": null,
+            "Value": 0.1
+          },
+          "InitialProjectileVelocity": {
+            "Name": null,
+            "Value": 800
+          },
+          "ProjectileLifetime": {
+            "Name": null,
+            "Value": 4,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            }
+          },
+          "ProjectileRedirectCount": {
+            "Name": "Max Redirects",
+            "Value": 1
+          },
+          "RedirectVelocity": {
+            "Name": null,
+            "Value": 1500
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.1,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 500,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 24,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 3.25,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_magician_magicbolt_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Fire a bolt of magic that deals <Panel class=\"AbilityPropertyIcon prop_tech_damage\"> <span class=\"highlight_spirit\">Damage</span>, <span class=\"highlight\">increasing as it travels</span>. If you have an <span class=\"highlight\">Assistant</span>, they also cast Vexing Bolt at reduced damage. <br><br>Press <span class=\"highlight\">{g:citadel_binding:'Ability1'}</span> to <span class=\"highlight\">redirect</span> the bolt towards your crosshairs.",
+          "plain_text": "Fire a bolt of magic that deals Damage, increasing as it travels. If you have an Assistant, they also cast Vexing Bolt at reduced damage.\nPress [Ability 1] to redirect the bolt towards your crosshairs."
+        },
+        {
+          "localization_key": "ability_magician_magicbolt_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Bolts apply <span class=\"highlight\">-25%</span> Fire Rate for <span class=\"highlight\">5</span>s.",
+          "plain_text": "Bolts apply -25% Fire Rate for 5s."
+        },
+        {
+          "localization_key": "ability_magician_magicbolt_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+126</span> Max Damage. +<span class=\"highlight\">50%</span> Assistant Damage.",
+          "plain_text": "+126 Max Damage. +50% Assistant Damage."
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Spectral Assistant",
+      "internal_key": "ability_magician_cloneturret",
+      "data": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCastRange": {
+          "Value": 15,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 40,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorAlwaysPreviewRadius",
+          "BehaviorPreventBotUsage",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BuffModifier": {
+          "Class": "Base",
+          "Subclass": "CloneturretBuffModifier",
+          "Duration": -1
+        },
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 15,
+          "Scale": {
+            "Value": 0.36,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_magician_cloneturret",
+        "LeashRadius": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "Name": "Spectral Assistant",
+        "TotalSwaps": 2,
+        "TurretBulletTargetAngle": 20,
+        "TurretBulletTargetRadius": 500,
+        "TurretBulletVerticalOffset": 2,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -10
+          },
+          {
+            "AbilityDuration": 7,
+            "AbilityCastRange": 5,
+            "LeashRadius": 5
+          },
+          {
+            "BonusFireRate": 60,
+            "Damage": 12.6
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_magician_cloneturret",
+        "Name": "Spectral Assistant",
+        "DescKey": "ability_magician_cloneturret_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 15,
+                "Scale": {
+                  "Value": 0.36,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "AbilityDuration",
+                "Name": "Duration",
+                "Value": 6,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              },
+              {
+                "Key": "TotalSwaps",
+                "Name": "Max Swaps",
+                "Value": 2
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_magician_cloneturret_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -10
+          },
+          {
+            "AbilityDuration": 7,
+            "AbilityCastRange": 5,
+            "LeashRadius": 5,
+            "DescKey": "ability_magician_cloneturret_t2_desc"
+          },
+          {
+            "BonusFireRate": 60,
+            "Damage": 12.6,
+            "DescKey": "ability_magician_cloneturret_t3_desc"
+          }
+        ],
+        "Range": {
+          "LeashRadius": {
+            "Name": "Max Leash Radius",
+            "Value": 20,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            },
+            "Type": "time"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "TurretBulletTargetAngle": {
+            "Name": null,
+            "Value": 20,
+            "Type": ""
+          },
+          "TurretBulletTargetRadius": {
+            "Name": null,
+            "Value": 500
+          },
+          "TurretBulletVerticalOffset": {
+            "Name": null,
+            "Value": 2
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.15,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 15,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 40,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_magician_cloneturret_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Summon an <span class=\"highlight\">Assistant</span> at the targeted location. The <span class=\"highlight\">Assistant</span> attacks whenever you fire your weapon, dealing <Panel class=\"AbilityPropertyIcon prop_tech_damage\"> <span class=\"highlight_spirit\">Damage</span>. <br><br>While the <span class=\"highlight\">Assistant</span> is out, you can press <span class=\"highlight\">{g:citadel_binding:'Ability2'}</span> to swap positions with your <span class=\"highlight\">Assistant</span>. <br><br><span class=\"diminish\">Casting Spectral Assistant also reloads your weapon.</span>",
+          "plain_text": "Summon an Assistant at the targeted location. The Assistant attacks whenever you fire your weapon, dealing Damage.\nWhile the Assistant is out, you can press [Ability 2] to swap positions with your Assistant.\nCasting Spectral Assistant also reloads your weapon."
+        },
+        {
+          "localization_key": "ability_magician_cloneturret_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+7s Duration</span> & <span class=\"highlight\">5m Range</span>",
+          "plain_text": "+7s Duration & 5m Range"
+        },
+        {
+          "localization_key": "ability_magician_cloneturret_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+60% Fire Rate</span> and +<span class=\"highlight\">12.6 Assistant Damage</span>",
+          "plain_text": "+60% Fire Rate and +12.6 Assistant Damage"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Rabbit Hex",
+      "internal_key": "ability_magician_animalhexarea",
+      "data": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCastRange": {
+          "Value": 24,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 26,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "AirDampingDuration": 1,
+        "BehaviourBits": [
+          "BehaviorAlwaysPreviewRadius",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorProjectilePassThroughWorld",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "DamageAmpPercentage": {
+          "Value": 15,
+          "Scale": {
+            "Value": 0.0558,
+            "Type": "spirit"
+          }
+        },
+        "DetonationDelay": 0.9,
+        "HexAreaModifier": {
+          "Class": "MagicianAnimalcurseHexarea",
+          "Subclass": "HexareaModifier",
+          "HexModifier": {
+            "Class": "CitadelAnimalcurse",
+            "Subclass": "AnimalhexCurseModifier",
+            "ModelScale": 0.75
+          }
+        },
+        "HexDuration": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "HexMoveSpeedLimit": 6,
+        "IsDisabled": false,
+        "Key": "ability_magician_animalhexarea",
+        "MoveSpeedBonusPct": 36,
+        "Name": "Rabbit Hex",
+        "Radius": {
+          "Value": 6.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "SelfBumpImpulse": 500,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -10
+          },
+          {
+            "HexDuration": 1
+          },
+          {
+            "Radius": 3,
+            "DamageAmpPercentage": 7
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_magician_animalhexarea",
+        "Name": "Rabbit Hex",
+        "DescKey": "ability_magician_animalhexarea_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 0,
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "HexDuration",
+                "Name": "Hex Duration",
+                "Value": 2,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                }
+              },
+              {
+                "Key": "DamageAmpPercentage",
+                "Name": "Damage Amp",
+                "Value": 15,
+                "Scale": {
+                  "Value": 0.0558,
+                  "Type": "spirit"
+                },
+                "Type": "damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "MoveSpeedBonusPct",
+              "Name": "Move Speed bonus",
+              "Value": 36,
+              "Type": "move_speed"
+            },
+            {
+              "Key": "Radius",
+              "Name": "Radius",
+              "Value": 6.5,
+              "Scale": {
+                "Value": 1,
+                "Type": "range"
+              },
+              "Type": "distance"
+            }
+          ],
+          "DescKey": "ability_magician_animalhexarea_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -10
+          },
+          {
+            "HexDuration": 1
+          },
+          {
+            "Radius": 3,
+            "DamageAmpPercentage": 7,
+            "DescKey": "ability_magician_animalhexarea_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          },
+          "HexMoveSpeedLimit": {
+            "Name": "Movement Speed Limit",
+            "Value": 6,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AirDampingDuration": {
+            "Name": null,
+            "Value": 1
+          },
+          "DetonationDelay": {
+            "Name": null,
+            "Value": 0.9
+          },
+          "SelfBumpImpulse": {
+            "Name": null,
+            "Value": 500
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.15,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 24,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 26,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 6.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_magician_animalhexarea_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Hex a target area and transforming all enemies into a <span class=\"highlight\">Rabbit</span> for a limited duration.<br><br> Rabbits are small and <Panel class=\"AbilityPropertyIcon prop_move_speed\"> <span class=\"highlight\">move faster</span>, but take increased <Panel class=\"AbilityPropertyIcon prop_damage\"><span class=\"highlight\">Damage</span> and are <Panel class=\"AbilityPropertyIcon prop_cast\"><span class=\"highlight\">unable to perform most actions</span>.<br><span class=\"diminish\">Hex does not interrupt abilities.</span>",
+          "plain_text": "Hex a target area and transforming all enemies into a Rabbit for a limited duration.\nRabbits are small and move faster, but take increased Damage and are unable to perform most actions.\nHex does not interrupt abilities."
+        },
+        {
+          "localization_key": "ability_magician_animalhexarea_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+7%</span> Damage Amp and <span class=\"highlight\">+3m</span> Radius",
+          "plain_text": "+7% Damage Amp and +3m Radius"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Audience Participation",
+      "internal_key": "ability_magician_copyult",
+      "data": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCastRange": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 85,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorAlwaysPreviewRadius",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorProjectilePassThroughWorld",
+          "BehaviorUseInstantCastUnitTargetUi",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "CopiedUltSpawnedEntityModifier": {
+          "Class": "CitadelCopiedultSpawnedentity",
+          "Subclass": "CopiedultSpawnedentity",
+          "EnabledStateMask": [
+            "MaterialOverride"
+          ]
+        },
+        "CopiedUltWindow": {
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "CopyCooldownPercentage": 40,
+        "CopyInternalCooldown": 0.5,
+        "InformTargetUltCopiedModifier": {
+          "Class": "Base",
+          "Subclass": "CopyultInformtargetultcopied"
+        },
+        "IsDisabled": false,
+        "Key": "ability_magician_copyult",
+        "Name": "Audience Participation",
+        "UltActiveModifier": {
+          "Class": "CitadelCopyult",
+          "Subclass": "CopyultModifier"
+        },
+        "UltCopiedModifier": {
+          "Class": "CitadelCopyultpending",
+          "Subclass": "Ultcopied"
+        },
+        "Upgrades": [
+          {},
+          {},
+          {}
+        ]
+      },
+      "card": {
+        "Key": "ability_magician_copyult",
+        "Name": "Audience Participation",
+        "DescKey": "ability_magician_copyult_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "CopiedUltWindow",
+                "Name": "Copy Duration",
+                "Value": 12,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "time"
+              },
+              {
+                "Key": "CopyCooldownPercentage",
+                "Name": "Copied Cooldown",
+                "Value": 40,
+                "Type": "cooldown"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_magician_copyult_desc"
+        },
+        "Upgrades": [
+          {
+            "DescKey": "ability_magician_copyult_t1_desc"
+          },
+          {
+            "DescKey": "ability_magician_copyult_t2_desc"
+          },
+          {
+            "DescKey": "ability_magician_copyult_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "CopyInternalCooldown": {
+            "Name": null,
+            "Value": 0.5
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.15,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 85,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_magician_copyult_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Copy the Ultimate</span> of an enemy hero for a limited time. Reactivating the ability will use the <span class=\"highlight\">Copied Ultimate</span> instead.<br><br><span class=\"diminish\">Copies will inherit this ability's upgrade points.<br>Audience Participation will also copy the cooldown.",
+          "plain_text": "Copy the Ultimate of an enemy hero for a limited time. Reactivating the ability will use the Copied Ultimate instead.\nCopies will inherit this ability's upgrade points.\nAudience Participation will also copy the cooldown."
+        },
+        {
+          "localization_key": "ability_magician_copyult_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Upgrade</span> the Copy.",
+          "plain_text": "Upgrade the Copy."
+        },
+        {
+          "localization_key": "ability_magician_copyult_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Upgrade</span> the Copy AGAIN!",
+          "plain_text": "Upgrade the Copy AGAIN!"
+        },
+        {
+          "localization_key": "ability_magician_copyult_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Upgrade</span> the Copy ONCE AGAIN!",
+          "plain_text": "Upgrade the Copy ONCE AGAIN!"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.47,
+    "AirDashSpeed": 17,
+    "BaseHealthRegen": 2,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.68,
+    "GroundDashSpeed": 14.7,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.55,
+      "MaxHealth": 38,
+      "PowerIncreases": 1,
+      "TechPower": 1.3,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 1.4966,
+      "SustainedDPS": 1.0501
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_magician_lore",
+    "MaxHealth": 730,
+    "MaxMoveSpeed": 7.2,
+    "MoveAcceleration": 4,
+    "Name": "Sinclair",
+    "Playstyle": "hero_magician_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_magician_role",
+    "SpiritScaling": {
+      "MaxMoveSpeed": 0.0138
+    },
+    "SprintSpeed": 1.6,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Mystic",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

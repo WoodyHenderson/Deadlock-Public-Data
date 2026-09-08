@@ -1,0 +1,491 @@
+{
+  "schema_version": 1,
+  "id": "item.rapid-recharge",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Rapid Recharge",
+    "numeric_id": 787198704,
+    "internal_key": "upgrade_rapid_recharge",
+    "aliases": [
+      "upgrade_rapid_recharge"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "spirit",
+    "tier": 3,
+    "activation": "passive",
+    "is_active_item": false,
+    "is_imbue": false,
+    "shop_filters": null,
+    "target_types": null
+  },
+  "purchase": {
+    "cost_souls": 3200,
+    "component_internal_keys": [
+      "upgrade_extra_charge"
+    ]
+  },
+  "description_plain": null,
+  "displayed_effects": [
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "CooldownReductionOnChargedAbilities",
+      "label": "Cooldown Reduction For Charged Abilities",
+      "value": "14%",
+      "property": {
+        "value": "14",
+        "provided_property_type": "MODIFIER_VALUE_COOLDOWN_REDUCTION_PERCENTAGE",
+        "prefix": "+",
+        "label": "Cooldown Reduction For Charged Abilities",
+        "postfix": "%",
+        "postvalue_label": "Cooldown Reduction For Charged Abilities",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "BonusSpiritForChargedAbilities",
+      "label": "Bonus Spirit Power for Charged Abilities",
+      "value": "14",
+      "property": {
+        "value": "14",
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "prefix": "+",
+        "label": "Bonus Spirit Power for Charged Abilities",
+        "postvalue_label": "Bonus Spirit Power for Charged Abilities",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "elevated",
+      "key": "BonusAbilityCharges",
+      "label": "Bonus Ability Charges",
+      "value": "2",
+      "property": {
+        "value": "2",
+        "provided_property_type": "MODIFIER_VALUE_BONUS_ABILITY_CHARGES",
+        "css_class": "cast",
+        "prefix": "{s:sign}",
+        "label": "Bonus Ability Charges",
+        "postvalue_label": "Bonus Ability Charges",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": true,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "elevated",
+      "key": "CooldownBetweenChargeReduction",
+      "label": "Faster Time Between Charges",
+      "value": "30%",
+      "property": {
+        "value": "30",
+        "provided_property_type": "MODIFIER_VALUE_COOLDOWN_BETWEEN_CHARGE_REDUCTION_PERCENTAGE",
+        "css_class": "cooldown",
+        "prefix": "{s:sign}",
+        "label": "Faster Time Between Charges",
+        "postfix": "%",
+        "postvalue_label": "Faster Time Between Charges",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": true,
+        "tooltip_is_important": false
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "BonusAbilityCharges",
+          "bonus": "2"
+        },
+        {
+          "name": "CooldownReductionOnChargedAbilities",
+          "bonus": "15"
+        },
+        {
+          "name": "BonusSpiritForChargedAbilities",
+          "bonus": "20"
+        },
+        {
+          "name": "CooldownBetweenChargeReduction",
+          "bonus": "5"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 787198704,
+    "class_name": "upgrade_rapid_recharge",
+    "name": "Rapid Recharge",
+    "start_trained": true,
+    "heroes": [],
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "spirit",
+    "item_tier": 3,
+    "properties": {
+      "AbilityCooldown": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown"
+      },
+      "AbilityDuration": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration"
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "CooldownBetweenChargeReduction": {
+        "value": "30",
+        "provided_property_type": "MODIFIER_VALUE_COOLDOWN_BETWEEN_CHARGE_REDUCTION_PERCENTAGE",
+        "css_class": "cooldown",
+        "prefix": "{s:sign}",
+        "label": "Faster Time Between Charges",
+        "postfix": "%",
+        "postvalue_label": "Faster Time Between Charges",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": true,
+        "tooltip_is_important": false
+      },
+      "BonusAbilityCharges": {
+        "value": "2",
+        "provided_property_type": "MODIFIER_VALUE_BONUS_ABILITY_CHARGES",
+        "css_class": "cast",
+        "prefix": "{s:sign}",
+        "label": "Bonus Ability Charges",
+        "postvalue_label": "Bonus Ability Charges",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": true,
+        "tooltip_is_important": false
+      },
+      "CooldownReductionOnChargedAbilities": {
+        "value": "14",
+        "provided_property_type": "MODIFIER_VALUE_COOLDOWN_REDUCTION_PERCENTAGE",
+        "prefix": "+",
+        "label": "Cooldown Reduction For Charged Abilities",
+        "postfix": "%",
+        "postvalue_label": "Cooldown Reduction For Charged Abilities",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "BonusSpiritForChargedAbilities": {
+        "value": "14",
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "prefix": "+",
+        "label": "Bonus Spirit Power for Charged Abilities",
+        "postvalue_label": "Bonus Spirit Power for Charged Abilities",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    "description": {},
+    "activation": "passive",
+    "component_items": [
+      "upgrade_extra_charge"
+    ],
+    "tooltip_sections": [
+      {
+        "section_type": "innate",
+        "section_attributes": [
+          {
+            "properties": [
+              "CooldownReductionOnChargedAbilities",
+              "BonusSpiritForChargedAbilities"
+            ],
+            "elevated_properties": [
+              "BonusAbilityCharges",
+              "CooldownBetweenChargeReduction"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "BonusAbilityCharges",
+            "bonus": "2"
+          },
+          {
+            "name": "CooldownReductionOnChargedAbilities",
+            "bonus": "15"
+          },
+          {
+            "name": "BonusSpiritForChargedAbilities",
+            "bonus": "20"
+          },
+          {
+            "name": "CooldownBetweenChargeReduction",
+            "bonus": "5"
+          }
+        ]
+      }
+    ],
+    "is_active_item": false,
+    "shopable": true,
+    "cost": 3200
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Rapid Recharge",
+    "Description": null,
+    "Cost": 3200,
+    "Tier": 3,
+    "Activation": "Passive",
+    "Slot": "Tech",
+    "Components": [
+      "upgrade_extra_charge"
+    ],
+    "TargetTypes": null,
+    "ShopFilters": null,
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "CooldownBetweenChargeReduction": 30,
+    "BonusAbilityCharges": 2,
+    "CooldownReductionOnChargedAbilities": 14,
+    "BonusSpiritForChargedAbilities": 14,
+    "PropertyUpgrades": {
+      "BonusAbilityCharges": 2,
+      "CooldownReductionOnChargedAbilities": 15,
+      "BonusSpiritForChargedAbilities": 20,
+      "CooldownBetweenChargeReduction": 5
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_rapid_recharge",
+    "Name": "Rapid Recharge",
+    "Description": null,
+    "Cost": 3200,
+    "Tier": 3,
+    "Slot": "Tech",
+    "Activation": "Passive",
+    "Components": [
+      "upgrade_extra_charge"
+    ],
+    "TargetTypes": null,
+    "ShopFilters": null,
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Innate",
+      "DescKey": null,
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "BonusAbilityCharges",
+          "Value": 2,
+          "Type": "cast"
+        },
+        {
+          "Key": "CooldownBetweenChargeReduction",
+          "Value": 30,
+          "Type": "cooldown"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "CooldownReductionOnChargedAbilities",
+          "Value": 14
+        },
+        {
+          "Key": "BonusSpiritForChargedAbilities",
+          "Value": 14
+        }
+      ]
+    },
+    "Upgrades": {
+      "BonusAbilityCharges": 2,
+      "CooldownReductionOnChargedAbilities": 15,
+      "BonusSpiritForChargedAbilities": 20,
+      "CooldownBetweenChargeReduction": 5
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

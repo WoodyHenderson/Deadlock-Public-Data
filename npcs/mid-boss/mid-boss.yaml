@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "npc.mid-boss",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-04",
+  "evidence_status": "source_verified",
+  "sources": [
+    "deadlock-api.npc-units.client-6684.source-10933105",
+    "github.deadlock-data.npcs.311b2e8d895e",
+    "wiki.mid-boss.107274"
+  ],
+  "identity": {
+    "name": "Mid-Boss",
+    "aliases": [
+      "Mid Boss",
+      "Temple Guardian",
+      "The Boss"
+    ],
+    "internal_class": "npc_super_neutral",
+    "numeric_id": 1166266048
+  },
+  "classification": {
+    "kind": "neutral_boss",
+    "mode": "standard"
+  },
+  "units": {
+    "distance": "meters",
+    "time": "seconds",
+    "speed": "meters_per_second",
+    "percentage": "percentage_points"
+  },
+  "field_sources": {
+    "numeric_id": "deadlock-api.npc-units.client-6684.source-10933105:npc_super_neutral.id",
+    "gameplay_values": "github.deadlock-data.npcs.311b2e8d895e:npc_super_neutral",
+    "behavior_context": "wiki.mid-boss.107274"
+  },
+  "combat": {
+    "base_max_health": 13000,
+    "health_growth_per_minute": 195,
+    "health_regen_per_second": 15.0,
+    "bullet_resistance_percent": 15,
+    "spirit_resistance_percent": 0.0,
+    "status_resistance_percent": 35,
+    "shield_absorption_per_second": {
+      "base": 35,
+      "growth_per_minute": 5
+    }
+  },
+  "ranged_attack": {
+    "bullet_damage": 20.0,
+    "rounds_per_second": 5.0,
+    "damage_per_second": 100.0,
+    "range": 38.1,
+    "damage_type": "weapon"
+  },
+  "spawn": {
+    "initial": 0,
+    "respawn_intervals_after_defeats": [
+      420,
+      360,
+      300
+    ]
+  },
+  "reward": {
+    "economy_ref": "data.general.economy:bounties[entity=mid-boss]",
+    "drops": "objective.rejuvenator",
+    "permanent_buffs_per_player": 2
+  },
+  "targeting": {
+    "damageable_only_by_players_inside_pit": true
+  }
+}

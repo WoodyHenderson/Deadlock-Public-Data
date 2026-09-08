@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "source": "wiki.data-hero-data.108817",
+  "selection_rule": "IsSelectable=true, IsDisabled=false, InDevelopment=false; transformed states are not separate roster heroes",
+  "hero_count": 38,
+  "heroes": [
+    {
+      "id": "hero.abrams",
+      "name": "Abrams",
+      "internal_hero_key": "hero_atlas"
+    },
+    {
+      "id": "hero.apollo",
+      "name": "Apollo",
+      "internal_hero_key": "hero_fencer"
+    },
+    {
+      "id": "hero.bebop",
+      "name": "Bebop",
+      "internal_hero_key": "hero_bebop"
+    },
+    {
+      "id": "hero.billy",
+      "name": "Billy",
+      "internal_hero_key": "hero_punkgoat"
+    },
+    {
+      "id": "hero.calico",
+      "name": "Calico",
+      "internal_hero_key": "hero_nano"
+    },
+    {
+      "id": "hero.celeste",
+      "name": "Celeste",
+      "internal_hero_key": "hero_unicorn"
+    },
+    {
+      "id": "hero.drifter",
+      "name": "Drifter",
+      "internal_hero_key": "hero_drifter"
+    },
+    {
+      "id": "hero.dynamo",
+      "name": "Dynamo",
+      "internal_hero_key": "hero_dynamo"
+    },
+    {
+      "id": "hero.graves",
+      "name": "Graves",
+      "internal_hero_key": "hero_necro"
+    },
+    {
+      "id": "hero.grey-talon",
+      "name": "Grey Talon",
+      "internal_hero_key": "hero_orion"
+    },
+    {
+      "id": "hero.haze",
+      "name": "Haze",
+      "internal_hero_key": "hero_haze"
+    },
+    {
+      "id": "hero.holliday",
+      "name": "Holliday",
+      "internal_hero_key": "hero_astro"
+    },
+    {
+      "id": "hero.infernus",
+      "name": "Infernus",
+      "internal_hero_key": "hero_inferno"
+    },
+    {
+      "id": "hero.ivy",
+      "name": "Ivy",
+      "internal_hero_key": "hero_tengu"
+    },
+    {
+      "id": "hero.kelvin",
+      "name": "Kelvin",
+      "internal_hero_key": "hero_kelvin"
+    },
+    {
+      "id": "hero.lady-geist",
+      "name": "Lady Geist",
+      "internal_hero_key": "hero_ghost"
+    },
+    {
+      "id": "hero.lash",
+      "name": "Lash",
+      "internal_hero_key": "hero_lash"
+    },
+    {
+      "id": "hero.mcginnis",
+      "name": "McGinnis",
+      "internal_hero_key": "hero_forge"
+    },
+    {
+      "id": "hero.mina",
+      "name": "Mina",
+      "internal_hero_key": "hero_vampirebat"
+    },
+    {
+      "id": "hero.mirage",
+      "name": "Mirage",
+      "internal_hero_key": "hero_mirage"
+    },
+    {
+      "id": "hero.mo-and-krill",
+      "name": "Mo & Krill",
+      "internal_hero_key": "hero_krill"
+    },
+    {
+      "id": "hero.paige",
+      "name": "Paige",
+      "internal_hero_key": "hero_bookworm"
+    },
+    {
+      "id": "hero.paradox",
+      "name": "Paradox",
+      "internal_hero_key": "hero_chrono"
+    },
+    {
+      "id": "hero.pocket",
+      "name": "Pocket",
+      "internal_hero_key": "hero_synth"
+    },
+    {
+      "id": "hero.rem",
+      "name": "Rem",
+      "internal_hero_key": "hero_familiar"
+    },
+    {
+      "id": "hero.seven",
+      "name": "Seven",
+      "internal_hero_key": "hero_gigawatt"
+    },
+    {
+      "id": "hero.shiv",
+      "name": "Shiv",
+      "internal_hero_key": "hero_shiv"
+    },
+    {
+      "id": "hero.silver",
+      "name": "Silver",
+      "internal_hero_key": "hero_werewolf"
+    },
+    {
+      "id": "hero.sinclair",
+      "name": "Sinclair",
+      "internal_hero_key": "hero_magician"
+    },
+    {
+      "id": "hero.the-doorman",
+      "name": "The Doorman",
+      "internal_hero_key": "hero_doorman"
+    },
+    {
+      "id": "hero.venator",
+      "name": "Venator",
+      "internal_hero_key": "hero_priest"
+    },
+    {
+      "id": "hero.victor",
+      "name": "Victor",
+      "internal_hero_key": "hero_frank"
+    },
+    {
+      "id": "hero.vindicta",
+      "name": "Vindicta",
+      "internal_hero_key": "hero_hornet"
+    },
+    {
+      "id": "hero.viscous",
+      "name": "Viscous",
+      "internal_hero_key": "hero_viscous"
+    },
+    {
+      "id": "hero.vyper",
+      "name": "Vyper",
+      "internal_hero_key": "hero_viper"
+    },
+    {
+      "id": "hero.warden",
+      "name": "Warden",
+      "internal_hero_key": "hero_warden"
+    },
+    {
+      "id": "hero.wraith",
+      "name": "Wraith",
+      "internal_hero_key": "hero_wraith"
+    },
+    {
+      "id": "hero.yamato",
+      "name": "Yamato",
+      "internal_hero_key": "hero_yamato"
+    }
+  ],
+  "excluded_selectable_entries": [
+    {
+      "name": "Boho",
+      "internal_hero_key": "hero_boho",
+      "reason": "disabled or in development"
+    },
+    {
+      "name": "Fortuna",
+      "internal_hero_key": "hero_fortuna",
+      "reason": "disabled or in development"
+    },
+    {
+      "name": "Graf",
+      "internal_hero_key": "hero_graf",
+      "reason": "disabled or in development"
+    },
+    {
+      "name": "Skyrunner",
+      "internal_hero_key": "hero_skyrunner",
+      "reason": "disabled or in development"
+    },
+    {
+      "name": "Swan",
+      "internal_hero_key": "hero_swan",
+      "reason": "disabled or in development"
+    },
+    {
+      "name": "Silver (Transformed)",
+      "internal_hero_key": "hero_werewolf_transformed",
+      "reason": "transformed state, not a separately selectable hero"
+    }
+  ]
+}

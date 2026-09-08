@@ -1,0 +1,1110 @@
+{
+  "schema_version": 2,
+  "id": "hero.warden",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.warden.124932",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Warden",
+  "aliases": [],
+  "internal_hero_key": "hero_warden",
+  "hero_type": "Brawler",
+  "role_localization_key": "hero_warden_role",
+  "playstyle_localization_key": "hero_warden_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 805,
+    "health_regeneration_per_second": 2,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.3,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 14.7,
+      "distance_meters": 10,
+      "duration_seconds": 0.68
+    },
+    "air_dash": {
+      "speed_meters_per_second": 17,
+      "distance_meters": 8,
+      "duration_seconds": 0.47
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.28,
+    "MaxHealth": 60,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 1.0667,
+    "SustainedDPS": 0.64529
+  },
+  "spirit_scaling": {
+    "RoundsPerSecond": 0.01,
+    "FireRate": 0.25,
+    "DPS": 0.1734,
+    "SustainedDPS": 0.063395
+  },
+  "weapon": {
+    "BulletSpeed": 290,
+    "BulletDamage": 17.34,
+    "RoundsPerSecond": 3.8095,
+    "ClipSize": 17,
+    "ReloadTime": 2.914,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 18,
+    "FalloffEndRange": 47,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.25,
+    "BulletRadius": 0.127,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 66.057,
+    "SustainedDPS": 39.962,
+    "NameKey": "citadel_weapon_hero_warden_set",
+    "DescKey": "citadel_weapon_hero_warden_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_MediumRange",
+      "Attribute_EWeaponAttribute_Projectile"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Alchemical Flask",
+      "internal_key": "ability_warden_crowd_control",
+      "data": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCooldown": {
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 60,
+          "Scale": {
+            "Value": 0.63,
+            "Type": "spirit"
+          }
+        },
+        "DebuffDuration": {
+          "Value": 7,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "WardenCrowdControlDebuff",
+          "Subclass": "WardenCrowdControlDebuff",
+          "EnabledStateMask": [
+            "Slowed"
+          ]
+        },
+        "ForwardVelocity": 800,
+        "IsDisabled": false,
+        "Key": "ability_warden_crowd_control",
+        "MoveSpeedSlowPct": 20,
+        "Name": "Alchemical Flask",
+        "ProjectileLifetime": 60,
+        "Radius": {
+          "Value": 5.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "SlowDuration": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "SlowModifier": {
+          "Class": "SlowBase",
+          "Subclass": "Slow"
+        },
+        "Upgrades": [
+          {
+            "StaminaReduction": 1
+          },
+          {
+            "Damage": 35,
+            "WeaponPowerDebuff": -25
+          },
+          {
+            "FireRateSlow": 30,
+            "AbilityCooldown": -7,
+            "Radius": 2
+          }
+        ],
+        "WeaponPowerDebuff": -25
+      },
+      "card": {
+        "Key": "ability_warden_crowd_control",
+        "Name": "Alchemical Flask",
+        "DescKey": "ability_warden_crowd_control_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 60,
+                "Scale": {
+                  "Value": 0.63,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "MoveSpeedSlowPct",
+                "Name": "Move Speed",
+                "Value": 20,
+                "Type": "slow"
+              },
+              {
+                "Key": "WeaponPowerDebuff",
+                "Name": "Weapon Damage",
+                "Value": -25,
+                "Type": "bullet_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 3,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "DebuffDuration",
+              "Name": "Debuff Duration",
+              "Value": 7,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "StaminaReduction",
+              "Name": "Stamina Reduction",
+              "Value": 0
+            }
+          ],
+          "DescKey": "ability_warden_crowd_control_desc"
+        },
+        "Upgrades": [
+          {
+            "StaminaReduction": 1,
+            "DescKey": "ability_warden_crowd_control_t1_desc"
+          },
+          {
+            "Damage": 35,
+            "WeaponPowerDebuff": -25,
+            "DescKey": "ability_warden_crowd_control_t2_desc"
+          },
+          {
+            "FireRateSlow": 30,
+            "AbilityCooldown": -7,
+            "Radius": 2,
+            "DescKey": "ability_warden_crowd_control_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "ForwardVelocity": {
+            "Name": null,
+            "Value": 800
+          },
+          "ProjectileLifetime": {
+            "Name": null,
+            "Value": 60
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.1,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 5.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_warden_crowd_control_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Throw a flask that <span class=\"highlight\">damages</span> and reduces the <span class=\"highlight\">weapon damage and move speed</span> of enemies it hits.",
+          "plain_text": "Throw a flask that damages and reduces the weapon damage and move speed of enemies it hits."
+        },
+        {
+          "localization_key": "ability_warden_crowd_control_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Hit enemies lose <span class=\"highlight\">1 Stamina</span>",
+          "plain_text": "Hit enemies lose 1 Stamina"
+        },
+        {
+          "localization_key": "ability_warden_crowd_control_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+35 Damage</span> and <span class=\"highlight\">-25% Weapon Damage</span>",
+          "plain_text": "+35 Damage and -25% Weapon Damage"
+        },
+        {
+          "localization_key": "ability_warden_crowd_control_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-7s</span> Cooldown and <span class=\"highlight\">+2m</span> Radius<br> Applies <span class=\"highlight\">-30%</span> Fire Rate",
+          "plain_text": "-7s Cooldown and +2m Radius\nApplies -30% Fire Rate"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Willpower",
+      "internal_key": "ability_warden_high_alert",
+      "data": {
+        "AbilityCooldown": {
+          "Value": 40,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
+        "BuffModifier": {
+          "Class": "WardenHighAlert",
+          "Subclass": "WardenHighAlert",
+          "StatusEffectPriority": 100
+        },
+        "ChannelMoveSpeed": -1,
+        "CombatBarrier": {
+          "Value": 125,
+          "Scale": {
+            "Value": 0.8,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_warden_high_alert",
+        "MoveSpeedBonusPct": 15,
+        "Name": "Willpower",
+        "Upgrades": [
+          {
+            "MoveSpeedBonusPct": 20
+          },
+          {
+            "AbilityCooldown": -24,
+            "AbilityDuration": 2
+          },
+          {
+            "StatusResistancePercent": 40,
+            "CombatBarrier": {
+              "Value": 0,
+              "Scale": {
+                "Value": 2.7,
+                "Type": "spirit"
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_warden_high_alert",
+        "Name": "Willpower",
+        "DescKey": "ability_warden_high_alert_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "CombatBarrier",
+                "Name": "Barrier",
+                "Value": 125,
+                "Scale": {
+                  "Value": 0.8,
+                  "Type": "spirit"
+                },
+                "Type": "combat_barrier"
+              },
+              {
+                "Key": "MoveSpeedBonusPct",
+                "Name": "Move Speed bonus",
+                "Value": 15,
+                "Type": "move_speed"
+              },
+              {
+                "Key": "StatusResistancePercent",
+                "Name": "Debuff Resist",
+                "Value": 0,
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_warden_high_alert_desc"
+        },
+        "Upgrades": [
+          {
+            "MoveSpeedBonusPct": 20
+          },
+          {
+            "AbilityCooldown": -24,
+            "AbilityDuration": 2,
+            "DescKey": "ability_warden_high_alert_t2_desc"
+          },
+          {
+            "StatusResistancePercent": 40,
+            "CombatBarrier": {
+              "Value": 0,
+              "Scale": {
+                "Value": 2.7,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "ability_warden_high_alert_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 40,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_warden_high_alert_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Gain a <span class=\"highlight\">Barrier</span> and <span class=\"highlight\">bonus move speed</span>.",
+          "plain_text": "Gain a Barrier and bonus move speed."
+        },
+        {
+          "localization_key": "ability_warden_high_alert_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "-24s Cooldown and +2s Duration",
+          "plain_text": "-24s Cooldown and +2s Duration"
+        },
+        {
+          "localization_key": "ability_warden_high_alert_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+40%</span> Debuff Resistance and improved Barrier scaling",
+          "plain_text": "+40% Debuff Resistance and improved Barrier scaling"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Binding Word",
+      "internal_key": "ability_warden_lock_down",
+      "data": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCastRange": {
+          "Value": 15,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 34,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AdditionalTargetRadius": 20,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorUseInstantCastUnitTargetUi",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 110,
+          "Scale": {
+            "Value": 2.437344,
+            "Type": "spirit"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "WardenLockdownDebuff",
+          "Subclass": "WardenLockdownDebuff",
+          "RootModifier": {
+            "Class": "CitadelRoot",
+            "Subclass": "CitadelRoot"
+          },
+          "BulletResistModifier": {
+            "Class": "LockdownBulletResist",
+            "Subclass": "LockdownBulletResist"
+          },
+          "SilencedModifier": {
+            "Class": "CitadelSilenced",
+            "Subclass": "CitadelSilenced"
+          }
+        },
+        "EscapeRange": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "EscapeTime": 2.8,
+        "ImmobilizeDuration": {
+          "Value": 1.75,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_warden_lock_down",
+        "Name": "Binding Word",
+        "Upgrades": [
+          {
+            "BulletArmorReduction": 20,
+            "BulletArmorReductionDuration": 5
+          },
+          {
+            "ImmobilizeDuration": 0.75
+          },
+          {
+            "AbilityCooldown": -14,
+            "SilenceDebuff": 1
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_warden_lock_down",
+        "Name": "Binding Word",
+        "DescKey": "ability_warden_lock_down_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 110,
+                "Scale": {
+                  "Value": 2.437344,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "ImmobilizeDuration",
+                "Name": "Immobilize Duration",
+                "Value": 1.75,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "EscapeTime",
+              "Name": "Escape Time",
+              "Value": 2.8,
+              "Type": "duration"
+            },
+            {
+              "Key": "EscapeRange",
+              "Name": "Escape Range",
+              "Value": 20,
+              "Scale": {
+                "Value": 1,
+                "Type": "range"
+              },
+              "Type": "distance"
+            }
+          ],
+          "DescKey": "ability_warden_lock_down_desc"
+        },
+        "Upgrades": [
+          {
+            "BulletArmorReduction": 20,
+            "BulletArmorReductionDuration": 5,
+            "DescKey": "ability_warden_lock_down_t1_desc"
+          },
+          {
+            "ImmobilizeDuration": 0.75,
+            "DescKey": "ability_warden_lock_down_t2_desc"
+          },
+          {
+            "AbilityCooldown": -14,
+            "SilenceDebuff": 1,
+            "DescKey": "ability_warden_lock_down_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AdditionalTargetRadius": {
+            "Name": null,
+            "Value": 20
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.15,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 15,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 34,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_warden_lock_down_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Curse an enemy hero. If they don't move away from their initial position within the <span class=\"highlight\">escape time</span>, they will be <span class=\"highlight\">damaged</span> and <span class=\"highlight\">immobilized</span>.",
+          "plain_text": "Curse an enemy hero. If they don't move away from their initial position within the escape time, they will be damaged and immobilized."
+        },
+        {
+          "localization_key": "ability_warden_lock_down_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Warden deals <span class=\"highlight\">+20% more Bullet Damage</span> to trapped Heroes for <span class=\"highlight\">5s</span>",
+          "plain_text": "Warden deals +20% more Bullet Damage to trapped Heroes for 5s"
+        },
+        {
+          "localization_key": "ability_warden_lock_down_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+0.75s Duration",
+          "plain_text": "+0.75s Duration"
+        },
+        {
+          "localization_key": "ability_warden_lock_down_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "-14s Cooldown <br>Silences enemies until they escape or are immobilized",
+          "plain_text": "-14s Cooldown\nSilences enemies until they escape or are immobilized"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Last Stand",
+      "internal_key": "ability_warden_riot_protocol",
+      "data": {
+        "AbilityCastDelay": 2,
+        "AbilityCooldown": {
+          "Value": 180,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AutoCastDelayModifier": {
+          "Class": "WardenRiotProtocolCastdelay",
+          "Subclass": "WardenRiotProtocolCastDelay",
+          "UnstoppableModifier": {
+            "Class": "Unstoppable",
+            "Subclass": "Unstoppable",
+            "EnabledStateMask": [
+              "StatusImmune",
+              "SlowImmune",
+              "KnockdownImmune",
+              "Unstoppable"
+            ],
+            "StatusEffectPriority": 25,
+            "DisabledStateMask": [
+              "Disarmed",
+              "Muted",
+              "Silenced",
+              "SilenceMovementAbilites",
+              "Slowed",
+              "Glitched",
+              "MeleeDisabledDebuff",
+              "DashDisabledDebuff"
+            ]
+          }
+        },
+        "BehaviourBits": [
+          "BehaviorExclusiveUse",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "BulletResist": 50,
+        "ConeAngle": 115,
+        "HealthStealPct": {
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "healing"
+          }
+        },
+        "HealthStealPctHero": {
+          "Value": 75,
+          "Scale": {
+            "Value": 1,
+            "Type": "healing"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_warden_riot_protocol",
+        "Name": "Last Stand",
+        "PulseDPS": {
+          "Value": 70,
+          "Scale": {
+            "Value": 1.3,
+            "Type": "spirit"
+          }
+        },
+        "PulseInterval": 0.5,
+        "Radius": {
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "TechResist": 50,
+        "Upgrades": [
+          {
+            "Radius": 4
+          },
+          {
+            "PulseDPS": 40.5,
+            "AbilityCooldown": -30
+          },
+          {
+            "AbilityDuration": 4,
+            "UnstoppableCastDelay": 1,
+            "BulletResist": 30,
+            "TechResist": 30
+          }
+        ],
+        "WardenBuffModifier": {
+          "Class": "WardenRiotProtocol",
+          "Subclass": "WardenRiotProtocol",
+          "EnabledStateMask": [
+            "SinclairTaxUltActive",
+            "SinclairTaxKeepModelSwap"
+          ],
+          "EnemyDebuffModifier": {
+            "Class": "WardenRiotProtocolEnemyDebuff",
+            "Subclass": "WardenRiotProtocolEnemyDebuff"
+          }
+        }
+      },
+      "card": {
+        "Key": "ability_warden_riot_protocol",
+        "Name": "Last Stand",
+        "DescKey": "ability_warden_riot_protocol_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "PulseDPS",
+                "Name": "DPS",
+                "Value": 70,
+                "Scale": {
+                  "Value": 1.3,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "HealthStealPctHero",
+                "Name": "Hero Lifesteal",
+                "Value": 75,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "healing"
+                },
+                "Type": "healing"
+              },
+              {
+                "Key": "BonusMoveSpeed",
+                "Name": "Move Speed",
+                "Value": 0,
+                "Type": "move_speed"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "PulseInterval",
+              "Name": "Pulse Interval",
+              "Value": 0.5,
+              "Type": "duration"
+            },
+            {
+              "Key": "HealthStealPct",
+              "Name": "Non-Hero Lifesteal",
+              "Value": 10,
+              "Scale": {
+                "Value": 1,
+                "Type": "healing"
+              },
+              "Type": "healing"
+            },
+            {
+              "Key": "BulletResist",
+              "Name": "Bullet Resist",
+              "Value": 50,
+              "Type": "bullet_armor_up"
+            },
+            {
+              "Key": "TechResist",
+              "Name": "Spirit Resist",
+              "Value": 50,
+              "Type": "tech_armor_up"
+            }
+          ],
+          "DescKey": "ability_warden_riot_protocol_desc"
+        },
+        "Upgrades": [
+          {
+            "Radius": 4
+          },
+          {
+            "PulseDPS": 40.5,
+            "AbilityCooldown": -30,
+            "DescKey": "ability_warden_riot_protocol_t2_desc"
+          },
+          {
+            "AbilityDuration": 4,
+            "UnstoppableCastDelay": 1,
+            "BulletResist": 30,
+            "TechResist": 30,
+            "DescKey": "ability_warden_riot_protocol_t3_desc"
+          }
+        ],
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "ConeAngle": {
+            "Name": "Cone Angle",
+            "Value": 115
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 2,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 180,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_warden_riot_protocol_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "After charging for 2s, <span class=\"highlight\">release pulses that damage enemies and heal you</span> based on the damage done. <br>While channeling Last Stand you have greatly increased <span class=\"highlight\">bullet and spirit resist</span>.",
+          "plain_text": "After charging for 2s, release pulses that damage enemies and heal you based on the damage done.\nWhile channeling Last Stand you have greatly increased bullet and spirit resist."
+        },
+        {
+          "localization_key": "ability_warden_riot_protocol_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+40.5 DPS<br>-30s Cooldown",
+          "plain_text": "+40.5 DPS\n-30s Cooldown"
+        },
+        {
+          "localization_key": "ability_warden_riot_protocol_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+4s Duration<br>Unstoppable and +30%  Resists while channeling",
+          "plain_text": "+4s Duration\nUnstoppable and +30% Resists while channeling"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.47,
+    "AirDashSpeed": 17,
+    "BaseHealthRegen": 2,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.68,
+    "GroundDashSpeed": 14.7,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.28,
+      "MaxHealth": 60,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 1.0667,
+      "SustainedDPS": 0.64529
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_warden_lore",
+    "MaxHealth": 805,
+    "MaxMoveSpeed": 6.3,
+    "MoveAcceleration": 4,
+    "Name": "Warden",
+    "Playstyle": "hero_warden_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_warden_role",
+    "SpiritScaling": {
+      "RoundsPerSecond": 0.01,
+      "FireRate": 0.25,
+      "DPS": 0.1734,
+      "SustainedDPS": 0.063395
+    },
+    "SprintSpeed": 1.6,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Brawler",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

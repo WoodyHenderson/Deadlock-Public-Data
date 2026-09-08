@@ -1,0 +1,1468 @@
+{
+  "schema_version": 2,
+  "id": "hero.paige",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.paige.125555",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Paige",
+  "aliases": [],
+  "internal_hero_key": "hero_bookworm",
+  "hero_type": "Mystic",
+  "role_localization_key": "hero_bookworm_role",
+  "playstyle_localization_key": "hero_bookworm_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 680,
+    "health_regeneration_per_second": 2,
+    "light_melee_damage": 42,
+    "heavy_melee_damage": 120,
+    "move_speed_meters_per_second": 6.9,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 3.5,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 13.9,
+      "distance_meters": 10,
+      "duration_seconds": 0.72
+    },
+    "air_dash": {
+      "speed_meters_per_second": 15.7,
+      "distance_meters": 8,
+      "duration_seconds": 0.51
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.52,
+    "MaxHealth": 31,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.2,
+    "HeavyMeleeDamage": 3.4286,
+    "DPS": 1.04,
+    "SustainedDPS": 0.76632
+  },
+  "spirit_scaling": {
+    "HeavyMeleeDamage": 0.3
+  },
+  "weapon": {
+    "BulletSpeed": 43.43,
+    "BulletDamage": 35,
+    "RoundsPerSecond": 2,
+    "ClipSize": 14,
+    "ReloadTime": 2.5,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 57.51,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0,
+    "BulletRadius": 0.635,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0.1,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": false,
+    "AmmoConsumedPerShot": 1,
+    "ExplosionRadius": 0.635,
+    "ExplosionDamageScaleAtMaxRadius": 1,
+    "DPS": 70,
+    "SustainedDPS": 51.579,
+    "NameKey": "citadel_weapon_hero_bookworm_set",
+    "DescKey": "citadel_weapon_hero_bookworm_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_RapidFire",
+      "Attribute_EWeaponAttribute_LongRange"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Bookwyrm",
+      "internal_key": "ability_bookworm_dragonfire",
+      "data": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCharges": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 33,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 7,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityDuration": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AuraLingerDuration": 0.1,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorProjectilePassThroughWorld",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorProjectileFiredAsBullet",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "DPS": {
+          "Value": 30,
+          "Scale": {
+            "Value": 0.3,
+            "Type": "spirit"
+          }
+        },
+        "Damage": {
+          "Value": 60,
+          "Scale": {
+            "Value": 1.3,
+            "Type": "spirit"
+          }
+        },
+        "DebuffDuration": 1.5,
+        "DragonConeRange": 5,
+        "DragonRangePerSecond": 500,
+        "DragonSearchRadius": 8.5,
+        "DragonSearchTickRate": 0.1,
+        "DragonTravelRange": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "DragonUpwardSpeed": 400,
+        "GroundAuraModifier": {
+          "Class": "DragonfireGroundAura",
+          "Subclass": "Groundaura",
+          "ProvidedByAura": {
+            "Class": "BookwormDragonfire",
+            "Subclass": "GroundauraBurn"
+          }
+        },
+        "GroundAuraSpacing": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "GroundFlameDuration": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_bookworm_dragonfire",
+        "Name": "Bookwyrm",
+        "Radius": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "StartupDelay": 0.3,
+        "TickRate": 0.3,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -12
+          },
+          {
+            "GroundFlameDuration": 2,
+            "Radius": 1,
+            "AbilityCharges": 1
+          },
+          {
+            "Damage": 100,
+            "DPS": 30,
+            "DragonTravelRange": 12
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_bookworm_dragonfire",
+        "Name": "Bookwyrm",
+        "DescKey": "ability_bookworm_dragonfire_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 60,
+                "Scale": {
+                  "Value": 1.3,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "DPS",
+                "Name": "Damage Per Second",
+                "Value": 30,
+                "Scale": {
+                  "Value": 0.3,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "GroundFlameDuration",
+                "Name": "Trail Duration",
+                "Value": 3,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "DragonTravelRange",
+              "Name": "Dragon Travel Range",
+              "Value": 20,
+              "Scale": {
+                "Value": 1,
+                "Type": "range"
+              },
+              "Type": "distance"
+            }
+          ],
+          "DescKey": "ability_bookworm_dragonfire_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -12,
+            "DescKey": "ability_bookworm_dragonfire_t1_desc"
+          },
+          {
+            "GroundFlameDuration": 2,
+            "Radius": 1,
+            "AbilityCharges": 1,
+            "DescKey": "ability_bookworm_dragonfire_t2_desc"
+          },
+          {
+            "Damage": 100,
+            "DPS": 30,
+            "DragonTravelRange": 12,
+            "DescKey": "ability_bookworm_dragonfire_t3_desc"
+          }
+        ],
+        "Duration": {
+          "DebuffDuration": {
+            "Name": "Debuff Duration",
+            "Value": 1.5,
+            "Type": "duration"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AuraLingerDuration": {
+            "Name": null,
+            "Value": 0.1
+          },
+          "DragonConeRange": {
+            "Name": null,
+            "Value": 5
+          },
+          "DragonRangePerSecond": {
+            "Name": null,
+            "Value": 500
+          },
+          "DragonSearchRadius": {
+            "Name": null,
+            "Value": 8.5
+          },
+          "DragonSearchTickRate": {
+            "Name": null,
+            "Value": 0.1
+          },
+          "DragonUpwardSpeed": {
+            "Name": null,
+            "Value": 400
+          },
+          "GroundAuraSpacing": {
+            "Name": null,
+            "Value": 2,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            }
+          },
+          "StartupDelay": {
+            "Name": null,
+            "Value": 0.3
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.3
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.1,
+          "Type": "cast"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 33,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 7,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_bookworm_dragonfire_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Conjure a dragon that appears at the target location before flying forward, dealing {g:citadel_inline_attribute:'SpiritDamage'} and leaving a burning path in its trail.",
+          "plain_text": "Conjure a dragon that appears at the target location before flying forward, dealing spirit damage and leaving a burning path in its trail."
+        },
+        {
+          "localization_key": "ability_bookworm_dragonfire_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-12s</span> Cooldown",
+          "plain_text": "-12s Cooldown"
+        },
+        {
+          "localization_key": "ability_bookworm_dragonfire_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+1</span> Charge<br><span class=\"highlight\">+2s</span> Trail Duration <br><span class=\"highlight\">+1m</span> Radius<br>",
+          "plain_text": "+1 Charge\n+2s Trail Duration\n+1m Radius"
+        },
+        {
+          "localization_key": "ability_bookworm_dragonfire_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+12m</span> Travel Range<br><span class=\"highlight\">+100</span> Damage <br><span class=\"highlight\">+30</span> DPS",
+          "plain_text": "+12m Travel Range\n+100 Damage\n+30 DPS"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Plot Armor",
+      "internal_key": "ability_bookworm_knightbarrier",
+      "data": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCastRange": {
+          "Value": 35,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 28,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityDuration": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityPostCastDuration": 0.2,
+        "AbilityUnitTargetLimit": 1,
+        "AttackModifier": {
+          "Class": "Base",
+          "Subclass": "Attackbuff"
+        },
+        "BarrierModifier": {
+          "Class": "BookwormKnightbarrier",
+          "Subclass": "Knightbarrier",
+          "DebuffModifier": {
+            "Class": "CitadelDisarmProc",
+            "Subclass": "Disarm",
+            "EnabledStateMask": [
+              "MeleeDisabled"
+            ]
+          }
+        },
+        "BaseAttackDamagePercent": {
+          "Value": 25,
+          "Scale": {
+            "Value": 0.3,
+            "Type": "spirit"
+          }
+        },
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorProjectilePassThroughWorld",
+          "BehaviorAllowSelfCast",
+          "BehaviorCannotCancelDuringChannel",
+          "BehaviorAllowAltCast",
+          "BehaviorUseInstantCastUnitTargetUi",
+          "BehaviorTriggerCancelMashProtectionOnCast",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BonusFireRate": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0,
+            "Type": "spirit"
+          }
+        },
+        "BonusSpiritDamagePercent": 15,
+        "BonusTargetRadius": 30,
+        "ChannelMoveSpeed": -1,
+        "CombatBarrier": {
+          "Value": 125,
+          "Scale": {
+            "Value": 1.5,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_bookworm_knightbarrier",
+        "Name": "Plot Armor",
+        "PushForce": 900,
+        "ShoveRadius": 6,
+        "Upgrades": [
+          {
+            "BonusFireRate": {
+              "Value": 14,
+              "Scale": {
+                "Value": 0.16,
+                "Type": "spirit"
+              }
+            }
+          },
+          {
+            "CombatBarrier": 100,
+            "AbilityDuration": 2
+          },
+          {
+            "CombatBarrier": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.5,
+                "Type": "spirit"
+              }
+            },
+            "BonusTargets": 2,
+            "BonusTargetsBarrierPercentage": 100
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_bookworm_knightbarrier",
+        "Name": "Plot Armor",
+        "DescKey": "ability_bookworm_knightbarrier_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "CombatBarrier",
+                "Name": "Barrier",
+                "Value": 125,
+                "Scale": {
+                  "Value": 1.5,
+                  "Type": "spirit"
+                },
+                "Type": "bullet_armor_up"
+              },
+              {
+                "Key": "BaseAttackDamagePercent",
+                "Name": "Weapon Damage",
+                "Value": 25,
+                "Scale": {
+                  "Value": 0.3,
+                  "Type": "spirit"
+                },
+                "Type": "bullet_damage"
+              },
+              {
+                "Key": "BonusFireRate",
+                "Name": "Fire Rate",
+                "Value": 0,
+                "Scale": {
+                  "Value": 0,
+                  "Type": "spirit"
+                },
+                "Type": "fire_rate"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_bookworm_knightbarrier_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": []
+          },
+          "Alt": []
+        },
+        "Upgrades": [
+          {
+            "BonusFireRate": {
+              "Value": 14,
+              "Scale": {
+                "Value": 0.16,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "ability_bookworm_knightbarrier_t1_desc"
+          },
+          {
+            "CombatBarrier": 100,
+            "AbilityDuration": 2,
+            "DescKey": "ability_bookworm_knightbarrier_t2_desc"
+          },
+          {
+            "CombatBarrier": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.5,
+                "Type": "spirit"
+              }
+            },
+            "BonusTargets": 2,
+            "BonusTargetsBarrierPercentage": 100,
+            "DescKey": "ability_bookworm_knightbarrier_t3_desc"
+          }
+        ],
+        "Range": {
+          "ShoveRadius": {
+            "Name": "Shove Radius",
+            "Value": 6,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.2
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "BonusSpiritDamagePercent": {
+            "Name": null,
+            "Value": 15
+          },
+          "BonusTargetRadius": {
+            "Name": null,
+            "Value": 30
+          },
+          "PushForce": {
+            "Name": null,
+            "Value": 900
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.1,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 35,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 28,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_bookworm_knightbarrier_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Grant an ally a {g:citadel_inline_attribute:'CombatBarrier'}. While the barrier holds, they gain {g:citadel_inline_attribute:'BonusWeaponDamage'}.",
+          "plain_text": "Grant an ally a barrier. While the barrier holds, they gain bonus weapon damage."
+        },
+        {
+          "localization_key": "ability_bookworm_knightbarrier_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On Barrier: <span class=\"highlight\">+14%</span> Fire Rate",
+          "plain_text": "On Barrier: +14% Fire Rate"
+        },
+        {
+          "localization_key": "ability_bookworm_knightbarrier_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+100</span> Barrier and <span class=\"highlight\">+2s</span> Duration",
+          "plain_text": "+100 Barrier and +2s Duration"
+        },
+        {
+          "localization_key": "ability_bookworm_knightbarrier_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Affects up to <span class=\"highlight\">2</span> additional allies.<br>Increases barrier scaling.",
+          "plain_text": "Affects up to 2 additional allies.\nIncreases barrier scaling."
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Captivating Read",
+      "internal_key": "ability_bookworm_aoemagic",
+      "data": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCastRange": {
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "AreaModifier": {
+          "Class": "BookwormAoemagicAreamodifier",
+          "Subclass": "Areamodifier",
+          "RootModifier": {
+            "Class": "BookwormImmobilize",
+            "Subclass": "Root"
+          },
+          "SlowModifier": {
+            "Class": "SlowBase",
+            "Subclass": "Slowmodifier"
+          },
+          "DebuffModifier": {
+            "Class": "Base",
+            "Subclass": "Debuff"
+          }
+        },
+        "BehaviourBits": [
+          "BehaviorAlwaysPreviewRadius",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorProjectilePassThroughWorld",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 90,
+          "Scale": {
+            "Value": 1.3,
+            "Type": "spirit"
+          }
+        },
+        "DetonationDelay": 1.25,
+        "Height": 8,
+        "ImmobilizeDuration": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_bookworm_aoemagic",
+        "Name": "Captivating Read",
+        "Radius": {
+          "Value": 7.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "SlowDuration": {
+          "Value": 0.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "SlowPercent": 45,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -11
+          },
+          {
+            "ImmobilizeDuration": 1
+          },
+          {
+            "TechArmorDamageReduction": -18,
+            "DebuffDuration": 6,
+            "Radius": 1
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_bookworm_aoemagic",
+        "Name": "Captivating Read",
+        "DescKey": "ability_bookworm_aoemagic_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Hit:",
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 90,
+                "Scale": {
+                  "Value": 1.3,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Hit:",
+                "Key": "ImmobilizeDuration",
+                "Name": "Immobilize Duration",
+                "StatusEffect": "Immobilize",
+                "Value": 1,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                }
+              },
+              {
+                "Title": "On Hit:",
+                "Key": "TechArmorDamageReduction",
+                "Name": "Spirit Resist",
+                "Value": 0,
+                "Type": "tech_armor_down"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "SlowPercent",
+              "Name": "Move Speed",
+              "Value": 45,
+              "Type": "slow"
+            },
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 0.5,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_bookworm_aoemagic_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -11
+          },
+          {
+            "ImmobilizeDuration": 1
+          },
+          {
+            "TechArmorDamageReduction": -18,
+            "DebuffDuration": 6,
+            "Radius": 1,
+            "DescKey": "ability_bookworm_aoemagic_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "DetonationDelay": {
+            "Name": null,
+            "Value": 1.25
+          },
+          "Height": {
+            "Name": null,
+            "Value": 8
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.15,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 7.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_bookworm_aoemagic_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Target an area with latent magic, applying {g:citadel_inline_attribute:'Slow'}. <br><br>The magic detonates after a delay, dealing {g:citadel_inline_attribute:'SpiritDamage'} and applying {g:citadel_inline_attribute:'Immobilize'}.",
+          "plain_text": "Target an area with latent magic, applying slow.\nThe magic detonates after a delay, dealing spirit damage and applying immobilize."
+        },
+        {
+          "localization_key": "ability_bookworm_aoemagic_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+1m</span> Radius<br>On Hit: Reduce Spirit Resist by <span class=\"highlight\">-18%</span> for <span class=\"highlight\">6s</span>",
+          "plain_text": "+1m Radius\nOn Hit: Reduce Spirit Resist by -18% for 6s"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Rallying Charge",
+      "internal_key": "ability_bookworm_knightcharge",
+      "data": {
+        "AbilityCastRange": 600,
+        "AbilityChannelTime": 0.7,
+        "AbilityCooldown": {
+          "Value": 210,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 13,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AirDrag": 0.8,
+        "AllyHeight": 20,
+        "AllyRadius": 4,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorProjectilePassThroughWorld",
+          "BehaviorCannotCancelDuringChannel",
+          "BehaviorRefundHalfCooldownOnChannelInterrupt"
+        ],
+        "BonusMoveSpeed": 5,
+        "BuffDuration": {
+          "Value": 9,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "BuffModifier": {
+          "Class": "BookwormKnightchargeBuff",
+          "Subclass": "Buff"
+        },
+        "CancelCooldownRefundPercentage": 50,
+        "ChannelMoveSpeed": 1.3,
+        "Damage": {
+          "Value": 125,
+          "Scale": {
+            "Value": 1,
+            "Type": "spirit"
+          }
+        },
+        "FallSpeedMax": 20,
+        "GravityAcceleration": -1900,
+        "GroundStickHeight": 0.05,
+        "HealAmount": {
+          "Value": 125,
+          "Scale": {
+            "Value": 1.6,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_bookworm_knightcharge",
+        "KnightBonusPerWave": -99,
+        "KnightChargeHeight": 3.5,
+        "KnightChargeWidth": 1.7,
+        "KnightCount": 5,
+        "KnightCountInFirstWave": 5,
+        "KnightJumpSpeed": 900,
+        "KnightMaxFallHeight": -35,
+        "KnightMaxJumpHeight": 30,
+        "KnightNavForwardDistance": 8,
+        "KnightNavSearchDistance": 10,
+        "KnightPositionSpread": {
+          "Value": 1.8,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "KnightPositionStagger": -4,
+        "KnightWhiskerLength": 300,
+        "KnightWhiskerSide": 50,
+        "KnightWhiskerStrength": 0.2,
+        "MaxAmp": 100,
+        "MaxAmpDistance": 250,
+        "Name": "Rallying Charge",
+        "StunDuration": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "TargetFindingDelay": 0.04,
+        "TossBackSpeed": 100,
+        "TossUpSpeed": 600,
+        "Upgrades": [
+          {
+            "HealAmount": 150
+          },
+          {
+            "KnightCount": 4,
+            "KnightCountInFirstWave": 4,
+            "AbilityCooldown": -45
+          },
+          {
+            "Damage": 160,
+            "StunDuration": 0.5,
+            "MaxAmp": 70
+          }
+        ],
+        "WaveCount": 2,
+        "WavePositionStagger": -15
+      },
+      "card": {
+        "Key": "ability_bookworm_knightcharge",
+        "Name": "Rallying Charge",
+        "DescKey": "ability_bookworm_knightcharge_desc",
+        "Info1": {
+          "Main": {
+            "Props": []
+          },
+          "Alt": [],
+          "DescKey": "ability_bookworm_knightcharge_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Enemy Hit:",
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 125,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Enemy Hit:",
+                "Key": "StunDuration",
+                "Name": "Stun Duration",
+                "StatusEffect": "Stun",
+                "Value": 1,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                }
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Info3": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Friendly Hit:",
+                "Key": "HealAmount",
+                "Name": "Heal Amount",
+                "Value": 125,
+                "Scale": {
+                  "Value": 1.6,
+                  "Type": "spirit"
+                },
+                "Type": "healing"
+              },
+              {
+                "Title": "On Friendly Hit:",
+                "Key": "BonusMoveSpeed",
+                "Name": "Move Speed",
+                "Value": 5,
+                "Type": "move_speed"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "MaxAmp",
+              "Value": 100,
+              "Type": "damage"
+            },
+            {
+              "Key": "MaxAmpDistance",
+              "Value": 250,
+              "Type": "distance"
+            }
+          ]
+        },
+        "Upgrades": [
+          {
+            "HealAmount": 150
+          },
+          {
+            "KnightCount": 4,
+            "KnightCountInFirstWave": 4,
+            "AbilityCooldown": -45,
+            "DescKey": "ability_bookworm_knightcharge_t2_desc"
+          },
+          {
+            "Damage": 160,
+            "StunDuration": 0.5,
+            "MaxAmp": 70,
+            "DescKey": "ability_bookworm_knightcharge_t3_desc"
+          }
+        ],
+        "Duration": {
+          "BuffDuration": {
+            "Name": "Buff Duration",
+            "Value": 9,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "duration"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 1.3,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AirDrag": {
+            "Name": null,
+            "Value": 0.8
+          },
+          "AllyHeight": {
+            "Name": null,
+            "Value": 20
+          },
+          "AllyRadius": {
+            "Name": null,
+            "Value": 4
+          },
+          "CancelCooldownRefundPercentage": {
+            "Name": null,
+            "Value": 50
+          },
+          "FallSpeedMax": {
+            "Name": null,
+            "Value": 20
+          },
+          "GravityAcceleration": {
+            "Name": null,
+            "Value": -1900
+          },
+          "GroundStickHeight": {
+            "Name": null,
+            "Value": 0.05
+          },
+          "KnightBonusPerWave": {
+            "Name": null,
+            "Value": -99
+          },
+          "KnightChargeHeight": {
+            "Name": null,
+            "Value": 3.5
+          },
+          "KnightChargeWidth": {
+            "Name": null,
+            "Value": 1.7
+          },
+          "KnightCount": {
+            "Name": null,
+            "Value": 5
+          },
+          "KnightCountInFirstWave": {
+            "Name": null,
+            "Value": 5
+          },
+          "KnightJumpSpeed": {
+            "Name": null,
+            "Value": 900
+          },
+          "KnightMaxFallHeight": {
+            "Name": null,
+            "Value": -35
+          },
+          "KnightMaxJumpHeight": {
+            "Name": null,
+            "Value": 30
+          },
+          "KnightNavForwardDistance": {
+            "Name": null,
+            "Value": 8
+          },
+          "KnightNavSearchDistance": {
+            "Name": null,
+            "Value": 10
+          },
+          "KnightPositionSpread": {
+            "Name": "Knight Spread",
+            "Value": 1.8,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            }
+          },
+          "KnightPositionStagger": {
+            "Name": null,
+            "Value": -4
+          },
+          "KnightWhiskerLength": {
+            "Name": null,
+            "Value": 300
+          },
+          "KnightWhiskerSide": {
+            "Name": null,
+            "Value": 50
+          },
+          "KnightWhiskerStrength": {
+            "Name": null,
+            "Value": 0.2
+          },
+          "TargetFindingDelay": {
+            "Name": null,
+            "Value": 0.04
+          },
+          "TossBackSpeed": {
+            "Name": null,
+            "Value": 100
+          },
+          "TossUpSpeed": {
+            "Name": null,
+            "Value": 600
+          },
+          "WaveCount": {
+            "Name": null,
+            "Value": 2
+          },
+          "WavePositionStagger": {
+            "Name": null,
+            "Value": -15
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 600,
+          "Type": "range"
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 0.7,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 210,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 13,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_bookworm_knightcharge_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Release a wave of spectral knights and steeds that charge across the <span class=\"highlight\">entire city</span>, {g:citadel_inline_attribute:'Healing'} allies and dealing {g:citadel_inline_attribute:'SpiritDamage'} to enemies. <br><br>The strength of the {g:citadel_inline_attribute:'Heal'} and {g:citadel_inline_attribute:'SpiritDamage'} is amplified as the knights travel further.",
+          "plain_text": "Release a wave of spectral knights and steeds that charge across the entire city, healing allies and dealing spirit damage to enemies.\nThe strength of the heal and spirit damage is amplified as the knights travel further."
+        },
+        {
+          "localization_key": "ability_bookworm_knightcharge_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Increase width by <span class=\"highlight\">+4 Steeds</span><br><span class=\"highlight\">-45</span> Cooldown",
+          "plain_text": "Increase width by +4 Steeds\n-45 Cooldown"
+        },
+        {
+          "localization_key": "ability_bookworm_knightcharge_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+160</span> Damage <br><span class=\"highlight\">+0.5s</span> Stun Duration<br><span class=\"highlight\">+70%</span> Max Amp",
+          "plain_text": "+160 Damage\n+0.5s Stun Duration\n+70% Max Amp"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.51,
+    "AirDashSpeed": 15.7,
+    "BaseHealthRegen": 2,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.72,
+    "GroundDashSpeed": 13.9,
+    "HeavyMeleeDamage": 120,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.52,
+      "MaxHealth": 31,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.2,
+      "HeavyMeleeDamage": 3.4286,
+      "DPS": 1.04,
+      "SustainedDPS": 0.76632
+    },
+    "LightMeleeDamage": 42,
+    "Lore": "hero_bookworm_lore",
+    "MaxHealth": 680,
+    "MaxMoveSpeed": 6.9,
+    "MoveAcceleration": 4,
+    "Name": "Paige",
+    "Playstyle": "hero_bookworm_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_bookworm_role",
+    "SpiritScaling": {
+      "HeavyMeleeDamage": 0.3
+    },
+    "SprintSpeed": 3.5,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Mystic",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

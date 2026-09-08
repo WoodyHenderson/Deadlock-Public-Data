@@ -1,0 +1,1110 @@
+{
+  "schema_version": 2,
+  "id": "hero.mo-and-krill",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.mo-and-krill.125559",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Mo & Krill",
+  "aliases": [],
+  "internal_hero_key": "hero_krill",
+  "hero_type": "Brawler",
+  "role_localization_key": "hero_krill_role",
+  "playstyle_localization_key": "hero_krill_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 930,
+    "health_regeneration_per_second": 1,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 8,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 13.9,
+      "distance_meters": 10,
+      "duration_seconds": 0.72
+    },
+    "air_dash": {
+      "speed_meters_per_second": 15.7,
+      "distance_meters": 8,
+      "duration_seconds": 0.51
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 20
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.0847,
+    "MaxHealth": 65,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 1.7926,
+    "SustainedDPS": 1.0267
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 320,
+    "BulletDamage": 2.82,
+    "RoundsPerSecond": 5.291,
+    "ClipSize": 20,
+    "ReloadTime": 2.82,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 57.51,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.8,
+    "BulletRadius": 0.0762,
+    "BulletsPerShot": 4,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 59.682,
+    "SustainedDPS": 34.182,
+    "NameKey": "citadel_weapon_hero_krill_set",
+    "DescKey": "citadel_weapon_hero_krill_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_RapidFire",
+      "Attribute_EWeaponAttribute_Spreadshot"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Scorn",
+      "internal_key": "ability_intimidate",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCooldown": {
+          "Value": 13,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorCastableWhileBusy",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": 1.3,
+        "Damage": {
+          "Value": 50,
+          "Scale": {
+            "Value": 0.75,
+            "Type": "spirit"
+          }
+        },
+        "DamageHealMult": {
+          "Value": 1.2,
+          "Scale": {
+            "Value": 1,
+            "Type": "healing"
+          }
+        },
+        "DamageHealMultNonHero": {
+          "Value": 0.35,
+          "Scale": {
+            "Value": 1,
+            "Type": "healing"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "IntimidateDebuff",
+          "Subclass": "IntimidateDebuff"
+        },
+        "EnemyModifier": {
+          "Class": "Intimidated",
+          "Subclass": "Intimidated"
+        },
+        "IsDisabled": false,
+        "Key": "ability_intimidate",
+        "Name": "Scorn",
+        "Radius": {
+          "Value": 9,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "TickRate": 0.1,
+        "Upgrades": [
+          {
+            "Damage": 35
+          },
+          {
+            "AbilityCooldown": -5,
+            "Radius": 1
+          },
+          {
+            "DamageBonus": 15,
+            "DebuffDuration": 16
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_intimidate",
+        "Name": "Scorn",
+        "DescKey": "ability_intimidate_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 50,
+                "Scale": {
+                  "Value": 0.75,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "DamageHealMult",
+                "Name": "Hero Damage to Heal",
+                "Value": 1.2,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "healing"
+                },
+                "Type": "healing"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "DamageHealMultNonHero",
+              "Name": "Damage to Heal",
+              "Value": 0.35,
+              "Scale": {
+                "Value": 1,
+                "Type": "healing"
+              },
+              "Type": "healing"
+            }
+          ],
+          "DescKey": "ability_intimidate_desc"
+        },
+        "Upgrades": [
+          {
+            "Damage": 35
+          },
+          {
+            "AbilityCooldown": -5,
+            "Radius": 1,
+            "DescKey": "ability_intimidate_t2_desc"
+          },
+          {
+            "DamageBonus": 15,
+            "DebuffDuration": 16,
+            "DescKey": "ability_intimidate_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 1.3,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.1
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 13,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 9,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_intimidate_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Deal <span class=\"highlight\">damage</span> to nearby enemies and <span class=\"highlight\">heal yourself</span> based on the damage done. Heal is stronger against enemy heroes.",
+          "plain_text": "Deal damage to nearby enemies and heal yourself based on the damage done. Heal is stronger against enemy heroes."
+        },
+        {
+          "localization_key": "ability_intimidate_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-5s Cooldown</span> <br><span class=\"highlight\">+1m Radius</span>",
+          "plain_text": "-5s Cooldown\n+1m Radius"
+        },
+        {
+          "localization_key": "ability_intimidate_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Adds a debuff to enemies that lets Mo & Krill deal <span class=\"highlight\">+15% Damage</span> to them. Stacks and lasts 16s.",
+          "plain_text": "Adds a debuff to enemies that lets Mo & Krill deal +15% Damage to them. Stacks and lasts 16s."
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Burrow",
+      "internal_key": "ability_burrow",
+      "data": {
+        "AbilityCastDelay": 1,
+        "AbilityChannelTime": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 40,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "BonusMoveSpeed": 5,
+        "BulletResist": 60,
+        "BurrowModifier": {
+          "Class": "Burrow",
+          "Subclass": "Burrow",
+          "EnabledStateMask": [
+            "Sprinting",
+            "DamageMovementPenaltyImmune",
+            "MantleDisabled",
+            "MeleeDisabled",
+            "DashDisabled",
+            "DuckingDisabled",
+            "ZiplineDisabled",
+            "AllowInTunnelsNoDuck",
+            "ShrunkCharacter",
+            "IsTinyCharacter"
+          ],
+          "DesatAmount": 0.3
+        },
+        "ChannelMoveSpeed": -1,
+        "DPS": {
+          "Value": 75,
+          "Scale": {
+            "Value": 1.488,
+            "Type": "spirit"
+          }
+        },
+        "EnemyDamageSpeedPenalty": 0.5,
+        "IsDisabled": false,
+        "Key": "ability_burrow",
+        "Name": "Burrow",
+        "Radius": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "SpeedLostDuration": 1,
+        "SpinDuration": {
+          "Value": 1.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "SpinModifier": {
+          "Class": "Spin",
+          "Subclass": "Spin",
+          "SlowModifier": {
+            "Class": "SlowBase",
+            "Subclass": "Slow"
+          }
+        },
+        "SpinSlowDuration": 0.3,
+        "SpinSlowPercent": 10,
+        "TechResist": 30,
+        "TickRate": 0.1,
+        "TossDuration": 1,
+        "UpForce": 250,
+        "Upgrades": [
+          {
+            "DPS": 50
+          },
+          {
+            "AbilityChannelTime": 4,
+            "Radius": 2
+          },
+          {
+            "AbilityCooldown": -20,
+            "BonusMoveSpeed": 4
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_burrow",
+        "Name": "Burrow",
+        "DescKey": "ability_burrow_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "BonusMoveSpeed",
+                "Name": "Move Speed",
+                "Value": 5,
+                "Type": "move_speed"
+              },
+              {
+                "Key": "DPS",
+                "Name": "Damage Per Second",
+                "Value": 75,
+                "Scale": {
+                  "Value": 1.488,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "SpinDuration",
+                "Name": "Spin Duration",
+                "Value": 1.5,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              },
+              {
+                "Key": "TossDuration",
+                "Name": "Duration",
+                "StatusEffect": "Displacement",
+                "Value": 1
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "BulletResist",
+              "Name": "Bullet Resist",
+              "Value": 60,
+              "Type": "bullet_armor_up"
+            },
+            {
+              "Key": "TechResist",
+              "Name": "Spirit Resist",
+              "Value": 30,
+              "Type": "tech_armor_up"
+            }
+          ],
+          "DescKey": "ability_burrow_desc"
+        },
+        "Upgrades": [
+          {
+            "DPS": 50,
+            "DescKey": "ability_burrow_t1_desc"
+          },
+          {
+            "AbilityChannelTime": 4,
+            "Radius": 2,
+            "DescKey": "ability_burrow_t2_desc"
+          },
+          {
+            "AbilityCooldown": -20,
+            "BonusMoveSpeed": 4,
+            "DescKey": "ability_burrow_t3_desc"
+          }
+        ],
+        "Duration": {
+          "SpeedLostDuration": {
+            "Name": null,
+            "Value": 1,
+            "Type": "duration"
+          },
+          "SpinSlowDuration": {
+            "Name": null,
+            "Value": 0.3,
+            "Type": "duration"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "EnemyDamageSpeedPenalty": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "SpinSlowPercent": {
+            "Name": null,
+            "Value": 10
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.1
+          },
+          "UpForce": {
+            "Name": null,
+            "Value": 250
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 1,
+          "Type": "cast"
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 40,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_burrow_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Burrow underground, <span class=\"highlight\">moving faster,</span> and gaining <span class=\"highlight\">spirit and bullet armor</span>. Damage from enemy heroes will reduce the speed bonus. <br><br>When you jump out, deal {g:citadel_inline_attribute:'SpiritDamage'}, {g:citadel_inline_attribute:'Slow'}, and {g:citadel_inline_attribute:'KnockUp'}.",
+          "plain_text": "Burrow underground, moving faster, and gaining spirit and bullet armor. Damage from enemy heroes will reduce the speed bonus.\nWhen you jump out, deal spirit damage, slow, and knockup."
+        },
+        {
+          "localization_key": "ability_burrow_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+50</span> Spin DPS",
+          "plain_text": "+50 Spin DPS"
+        },
+        {
+          "localization_key": "ability_burrow_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+4s</span> Burrow time and +2 radius",
+          "plain_text": "+4s Burrow time and +2 radius"
+        },
+        {
+          "localization_key": "ability_burrow_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-20</span> Cooldown and <span class=\"highlight\">+4m/s</span> Move Speed",
+          "plain_text": "-20 Cooldown and +4m/s Move Speed"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Sand Blast",
+      "internal_key": "ability_throw_sand",
+      "data": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCastRange": {
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 40,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 2.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorShowCastRangeAsSatSphereWhileCasting",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": 1.3,
+        "Damage": 40,
+        "DebuffModifier": {
+          "Class": "CitadelThrowSandDebuff",
+          "Subclass": "CitadelThrowSandDebuff"
+        },
+        "GrowthPerMeter": 0.5,
+        "HeightOffGround": 20,
+        "InitialWidth": 5,
+        "IsDisabled": false,
+        "Key": "ability_throw_sand",
+        "Name": "Sand Blast",
+        "Upgrades": [
+          {
+            "Damage": 50,
+            "AbilityCastRange": 5
+          },
+          {
+            "SlowPercent": 30,
+            "GroundDashReductionPercent": -30
+          },
+          {
+            "AbilityCooldown": -25,
+            "AbilityDuration": 1.5
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_throw_sand",
+        "Name": "Sand Blast",
+        "DescKey": "ability_throw_sand_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "AbilityDuration",
+                "Name": "Duration",
+                "StatusEffect": "Disarmed",
+                "Value": 2.5,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              },
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 40,
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 0,
+                "Type": "slow"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_throw_sand_desc"
+        },
+        "Upgrades": [
+          {
+            "Damage": 50,
+            "AbilityCastRange": 5,
+            "DescKey": "ability_throw_sand_t1_desc"
+          },
+          {
+            "SlowPercent": 30,
+            "GroundDashReductionPercent": -30,
+            "DescKey": "ability_throw_sand_t2_desc"
+          },
+          {
+            "AbilityCooldown": -25,
+            "AbilityDuration": 1.5,
+            "DescKey": "ability_throw_sand_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 1.3,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "GrowthPerMeter": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "HeightOffGround": {
+            "Name": null,
+            "Value": 20
+          },
+          "InitialWidth": {
+            "Name": null,
+            "Value": 5
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.15,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 40,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 2.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_throw_sand_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Spray sand that <span class=\"highlight\">disarms</span> enemies in front of you and deals <span class=\"highlight\">damage</span>.",
+          "plain_text": "Spray sand that disarms enemies in front of you and deals damage."
+        },
+        {
+          "localization_key": "ability_throw_sand_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+50 Damage and <span class=\"highlight\">+5m Range",
+          "plain_text": "+50 Damage and +5m Range"
+        },
+        {
+          "localization_key": "ability_throw_sand_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Slow targets by <span class=\"highlight\">-30% and reduces dash distances by -30%</span>",
+          "plain_text": "Slow targets by -30% and reduces dash distances by -30%"
+        },
+        {
+          "localization_key": "ability_throw_sand_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+1.5s</span> Duration and <span class=\"highlight\">-25</span> Cooldown",
+          "plain_text": "+1.5s Duration and -25 Cooldown"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Combo",
+      "internal_key": "ability_ult_combo",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityChannelTime": {
+          "Value": 2.4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 150,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorUseInstantCastUnitTargetUi",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "BonusHealthOnKill": {
+          "Value": 40,
+          "Scale": {
+            "Value": 2,
+            "Type": "power_increase"
+          }
+        },
+        "DPS": {
+          "Value": 40,
+          "Scale": {
+            "Value": 0.6,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_ult_combo",
+        "KillCheckModifier": {
+          "Class": "Base",
+          "Subclass": "KillcheckModifier"
+        },
+        "Name": "Combo",
+        "SelfModifier": {
+          "Class": "UltComboSelf",
+          "Subclass": "UltComboSelf",
+          "EnabledStateMask": [
+            "ForceCanParry"
+          ]
+        },
+        "TargetModifier": {
+          "Class": "UltComboTarget",
+          "Subclass": "UltComboTarget",
+          "StatusEffectPriority": 50,
+          "TargetPosDistance": 100,
+          "TargetPosRange": 20
+        },
+        "Upgrades": [
+          {
+            "LifeStealPercentOnHit": 100
+          },
+          {
+            "AbilityCooldown": -30,
+            "BulletResist": 50
+          },
+          {
+            "AbilityChannelTime": 0.7,
+            "DPS": {
+              "Value": 40,
+              "Scale": {
+                "Value": 0.4,
+                "Type": "spirit"
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_ult_combo",
+        "Name": "Combo",
+        "DescKey": "ability_ult_combo_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "DPS",
+                "Name": "Damage Per Second",
+                "Value": 40,
+                "Scale": {
+                  "Value": 0.6,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "LifeStealPercentOnHit",
+                "Name": "Unknown(LifeStealPercentOnHit)",
+                "Value": 0,
+                "Type": "health"
+              },
+              {
+                "Key": "BonusHealthOnKill",
+                "Name": "Bonus Max Health Per Kill",
+                "Value": 40,
+                "Scale": {
+                  "Value": 2,
+                  "Type": "power_increase"
+                },
+                "Type": "health"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_ult_combo_desc"
+        },
+        "Upgrades": [
+          {
+            "LifeStealPercentOnHit": 100,
+            "DescKey": "ability_ult_combo_t1_desc"
+          },
+          {
+            "AbilityCooldown": -30,
+            "BulletResist": 50,
+            "DescKey": "ability_ult_combo_t2_desc"
+          },
+          {
+            "AbilityChannelTime": 0.7,
+            "DPS": {
+              "Value": 40,
+              "Scale": {
+                "Value": 0.4,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "ability_ult_combo_t3_desc"
+          }
+        ],
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 2.4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 150,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_ult_combo_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Hold the target in place, <span class=\"highlight\">stunning them and dealing damage</span> during the channel. If they die during, or within 3 seconds of Combo ending, you permanently gain max health.",
+          "plain_text": "Hold the target in place, stunning them and dealing damage during the channel. If they die during, or within 3 seconds of Combo ending, you permanently gain max health."
+        },
+        {
+          "localization_key": "ability_ult_combo_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+100% lifesteal</span>",
+          "plain_text": "+100% lifesteal"
+        },
+        {
+          "localization_key": "ability_ult_combo_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-30s Cooldown</span> and <span class=\"highlight\">+50% Bullet Resist</span>",
+          "plain_text": "-30s Cooldown and +50% Bullet Resist"
+        },
+        {
+          "localization_key": "ability_ult_combo_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+0.7s</span> Duration and <span class=\"highlight\">+40</span> Damage Per Second and increased scaling",
+          "plain_text": "+0.7s Duration and +40 Damage Per Second and increased scaling"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.51,
+    "AirDashSpeed": 15.7,
+    "BaseHealthRegen": 1,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 20,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.72,
+    "GroundDashSpeed": 13.9,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.0847,
+      "MaxHealth": 65,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 1.7926,
+      "SustainedDPS": 1.0267
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_krill_lore",
+    "MaxHealth": 930,
+    "MaxMoveSpeed": 8,
+    "MoveAcceleration": 4,
+    "Name": "Mo & Krill",
+    "Playstyle": "hero_krill_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_krill_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.6,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Brawler",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

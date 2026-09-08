@@ -1,0 +1,1363 @@
+{
+  "schema_version": 2,
+  "id": "hero.mcginnis",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.mcginnis.125561",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "McGinnis",
+  "aliases": [],
+  "internal_hero_key": "hero_forge",
+  "hero_type": "Mystic",
+  "role_localization_key": "hero_forge_role",
+  "playstyle_localization_key": "hero_forge_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 780,
+    "health_regeneration_per_second": 2,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.7,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 14.7,
+      "distance_meters": 10,
+      "duration_seconds": 0.68
+    },
+    "air_dash": {
+      "speed_meters_per_second": 17,
+      "distance_meters": 8,
+      "duration_seconds": 0.47
+    },
+    "stamina": {
+      "charges": 2,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.171,
+    "MaxHealth": 52,
+    "PowerIncreases": 1,
+    "TechResist": 0.35,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 2.0357,
+    "SustainedDPS": 1.2776
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 650,
+    "BulletDamage": 6.08,
+    "RoundsPerSecond": 4.7619,
+    "ClipSize": 66,
+    "ReloadTime": 3.29,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 57.51,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.8,
+    "BulletRadius": 0.1016,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "RoundsPerSecondAtMaxSpin": 11.904761904761903,
+    "SpinAcceleration": 0.5,
+    "SpinDeceleration": 0.25,
+    "DPS": 72.381,
+    "SustainedDPS": 45.424,
+    "NameKey": "citadel_weapon_hero_forge_set",
+    "DescKey": "citadel_weapon_hero_forge_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_RapidFire",
+      "Attribute_EWeaponAttribute_MediumRange"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Mini Turret",
+      "internal_key": "citadel_ability_shieldedsentry",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCastRange": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCharges": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 18,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AttackConeAngle": 10,
+        "AttackSpeedMult": 100,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorPreventTrainingBotUsage",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BossDamagePercentIncoming": 50,
+        "BossDamagePercentOutgoing": 30,
+        "DebuffModifier": {
+          "Class": "SlowBase",
+          "Subclass": "ForgeMiniTurretDebuff"
+        },
+        "InnateModifier": {
+          "Class": "ForgeMiniTurretInnateModifier",
+          "Subclass": "ForgeMiniTurretInnateModifier"
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_shieldedsentry",
+        "MeleeResist": 35,
+        "ModelScale": 0.8,
+        "Name": "Mini Turret",
+        "NonHeroDamagePercentOutgoing": 50,
+        "TechResist": 35,
+        "TickRate": 0.5,
+        "TrackingSpeed": 430,
+        "TurretAttackDelay": 0.2,
+        "TurretAttackFalloffEnd": {
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "TurretAttackFalloffStart": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "TurretAttackRange": {
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "TurretBaseHealth": {
+          "Value": 100,
+          "Scale": {
+            "Value": 9,
+            "Type": "power_increase"
+          }
+        },
+        "TurretDPS": {
+          "Value": 24,
+          "Scale": {
+            "Value": 0.42,
+            "Type": "spirit"
+          }
+        },
+        "TurretDeployTime": 0.25,
+        "TurretLifetime": {
+          "Value": 35,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "Upgrades": [
+          {
+            "TurretAttackRange": 10,
+            "TurretDPS": 10
+          },
+          {
+            "AbilityCharges": 2
+          },
+          {
+            "AttackSpeedMult": 25,
+            "TurretLifetime": 12
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_shieldedsentry",
+        "Name": "Mini Turret",
+        "DescKey": "citadel_ability_shieldedsentry_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "TurretDPS",
+                "Name": "Turret DPS",
+                "Value": 24,
+                "Scale": {
+                  "Value": 0.42,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "TurretBaseHealth",
+                "Name": "Turret Health",
+                "Value": 100,
+                "Scale": {
+                  "Value": 9,
+                  "Type": "power_increase"
+                },
+                "Type": "health"
+              },
+              {
+                "Key": "TurretAttackRange",
+                "Name": "Attack Range",
+                "Value": 30,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "range"
+                },
+                "Type": "distance"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "TurretLifetime",
+              "Name": "Lifetime",
+              "Value": 35,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "citadel_ability_shieldedsentry_desc"
+        },
+        "Upgrades": [
+          {
+            "TurretAttackRange": 10,
+            "TurretDPS": 10,
+            "DescKey": "citadel_ability_shieldedsentry_t1_desc"
+          },
+          {
+            "AbilityCharges": 2
+          },
+          {
+            "AttackSpeedMult": 25,
+            "TurretLifetime": 12,
+            "DescKey": "citadel_ability_shieldedsentry_t3_desc"
+          }
+        ],
+        "Duration": {
+          "TurretDeployTime": {
+            "Name": "Deploy Time",
+            "Value": 0.25,
+            "Type": "duration"
+          }
+        },
+        "Range": {
+          "TurretAttackFalloffEnd": {
+            "Name": null,
+            "Value": 30,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            },
+            "Type": "distance"
+          },
+          "TurretAttackFalloffStart": {
+            "Name": null,
+            "Value": 20,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            },
+            "Type": "distance"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AttackConeAngle": {
+            "Name": null,
+            "Value": 10
+          },
+          "AttackSpeedMult": {
+            "Name": null,
+            "Value": 100
+          },
+          "BossDamagePercentIncoming": {
+            "Name": null,
+            "Value": 50
+          },
+          "BossDamagePercentOutgoing": {
+            "Name": null,
+            "Value": 30
+          },
+          "MeleeResist": {
+            "Name": null,
+            "Value": 35
+          },
+          "ModelScale": {
+            "Name": null,
+            "Value": 0.8
+          },
+          "NonHeroDamagePercentOutgoing": {
+            "Name": null,
+            "Value": 50
+          },
+          "TechResist": {
+            "Name": "Spirit Resist",
+            "Value": 35
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "TrackingSpeed": {
+            "Name": null,
+            "Value": 430
+          },
+          "TurretAttackDelay": {
+            "Name": null,
+            "Value": 0.2
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 18,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_shieldedsentry_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Deploy a turret that shoots enemies, dealing {g:citadel_inline_attribute:'SpiritDPS'}. The turret expires after a limited lifetime.<br><span class=\"diminish\">Turrets deal reduced damage to troopers and objectives.</span>",
+          "plain_text": "Deploy a turret that shoots enemies, dealing spirit damage over time. The turret expires after a limited lifetime.\nTurrets deal reduced damage to troopers and objectives."
+        },
+        {
+          "localization_key": "citadel_ability_shieldedsentry_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+10</span> Turret DPS and <span class=\"highlight\">+10m</span> Attack Range",
+          "plain_text": "+10 Turret DPS and +10m Attack Range"
+        },
+        {
+          "localization_key": "citadel_ability_shieldedsentry_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+25%</span> Turret Fire Rate and <span class=\"highlight\">+12s</span> Turret Lifetime",
+          "plain_text": "+25% Turret Fire Rate and +12s Turret Lifetime"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Medicinal Specter",
+      "internal_key": "citadel_ability_mobile_resupply",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCastRange": {
+          "Value": 15,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 50,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 6.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AuraModifier": {
+          "Class": "MobileResupplyAura",
+          "Subclass": "MobileResupplyAura",
+          "AmbientParticleRadiusControlPoint": 1,
+          "ModifierProvidedByAuraDuration": 1,
+          "ProvidedByAura": {
+            "Class": "MobileResupply",
+            "Subclass": "MobileResupply"
+          }
+        },
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCanHealPlayers",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "ExternalBonusHealthRegen": {
+          "Value": 25,
+          "Scale": {
+            "Value": 0.3,
+            "Type": "spirit"
+          }
+        },
+        "HealInterval": 0.1,
+        "HealRadius": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_mobile_resupply",
+        "Name": "Medicinal Specter",
+        "TurretHealMult": 1,
+        "Upgrades": [
+          {
+            "AbilityDuration": 1.5
+          },
+          {
+            "AbilityCooldown": -20,
+            "StaminaCooldownReduction": 100
+          },
+          {
+            "MaxHealthRegenPct": 2,
+            "HealRadius": 3,
+            "SpiritResist": 40
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_mobile_resupply",
+        "Name": "Medicinal Specter",
+        "DescKey": "citadel_ability_mobile_resupply_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "ExternalBonusHealthRegen",
+                "Name": "Health Regen",
+                "Value": 25,
+                "Scale": {
+                  "Value": 0.3,
+                  "Type": "spirit"
+                },
+                "Type": "healing"
+              },
+              {
+                "Key": "HealRadius",
+                "Name": "Heal Radius",
+                "Value": 6,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "radius"
+                },
+                "Type": "distance"
+              },
+              {
+                "Key": "AuraFireRateBonus",
+                "Name": "Unknown(AuraFireRateBonus)",
+                "Value": 0,
+                "Type": "fire_rate"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "StaminaCooldownReduction",
+              "Name": "Stamina Recovery",
+              "Value": 0,
+              "Type": "stamina_recovery"
+            },
+            {
+              "Key": "MaxHealthRegenPct",
+              "Name": "Max Health Regen",
+              "Value": 0,
+              "Type": "healing"
+            }
+          ],
+          "DescKey": "citadel_ability_mobile_resupply_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityDuration": 1.5,
+            "DescKey": "citadel_ability_mobile_resupply_t1_desc"
+          },
+          {
+            "AbilityCooldown": -20,
+            "StaminaCooldownReduction": 100,
+            "DescKey": "citadel_ability_mobile_resupply_t2_desc"
+          },
+          {
+            "MaxHealthRegenPct": 2,
+            "HealRadius": 3,
+            "SpiritResist": 40,
+            "DescKey": "citadel_ability_mobile_resupply_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Health": {
+          "TurretHealMult": {
+            "Name": null,
+            "Value": 1,
+            "Type": "healing"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "HealInterval": {
+            "Name": "Heal Interval",
+            "Value": 0.1
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 15,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 50,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 6.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_mobile_resupply_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Deploy a spirit that provides <span class=\"highlight\">{g:citadel_inline_attribute:'Healing'}</span> to nearby allies.",
+          "plain_text": "Deploy a spirit that provides healing to nearby allies."
+        },
+        {
+          "localization_key": "citadel_ability_mobile_resupply_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+1.5s</span> Duration",
+          "plain_text": "+1.5s Duration"
+        },
+        {
+          "localization_key": "citadel_ability_mobile_resupply_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-20s</span> Cooldown and provides <span class=\"highlight\">+100%</span> Stamina Recovery",
+          "plain_text": "-20s Cooldown and provides +100% Stamina Recovery"
+        },
+        {
+          "localization_key": "citadel_ability_mobile_resupply_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+2%</span> Max HP Regen <br><span class=\"highlight\">+3m</span> Heal Radius <br><span class=\"highlight\">+40%</span> Spirit Resist",
+          "plain_text": "+2% Max HP Regen\n+3m Heal Radius\n+40% Spirit Resist"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Spectral Wall",
+      "internal_key": "citadel_ability_fissure_wall",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 50,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 50,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorPreventBotUsage"
+        ],
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 60,
+          "Scale": {
+            "Value": 0.731203,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_fissure_wall",
+        "MinRange": 5,
+        "Name": "Spectral Wall",
+        "NumWallSegments": 8,
+        "PushForce": 175,
+        "SegmentEmitTime": 0.1,
+        "SlowDuration": {
+          "Value": 2.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "SlowModifier": {
+          "Class": "SlowBase",
+          "Subclass": "Slow"
+        },
+        "SlowPercent": 20,
+        "TimeBetweenSegments": 0.035,
+        "TimeToMaxDistance": 1.8,
+        "Upgrades": [
+          {
+            "BonusDamagePercent": 20,
+            "DebuffDuration": 7
+          },
+          {
+            "AbilityCooldown": -20,
+            "AbilityDuration": 2
+          },
+          {
+            "CreateTurrets": 2,
+            "TurretLifeTime": 8,
+            "SlowPercent": 30
+          }
+        ],
+        "WallImpactRange": 5,
+        "WallModifier": {
+          "Class": "FissureWall",
+          "Subclass": "FissureWall",
+          "EnemyVisionModifier": {
+            "Class": "Base",
+            "Subclass": "EnemyVision",
+            "EnabledStateMask": [
+              "GlowThroughWallsToEnemy"
+            ]
+          },
+          "DebuffModifier": {
+            "Class": "BonusDamagePercent",
+            "Subclass": "BonusDamagePercent"
+          },
+          "SlowModifier": {
+            "Class": "SlowBase",
+            "Subclass": "Slow"
+          },
+          "SentryDistanceFromWall": 80
+        }
+      },
+      "card": {
+        "Key": "citadel_ability_fissure_wall",
+        "Name": "Spectral Wall",
+        "DescKey": "citadel_ability_fissure_wall_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 60,
+                "Scale": {
+                  "Value": 0.731203,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 20,
+                "Type": "slow"
+              },
+              {
+                "Key": "WallStunDuration",
+                "Name": "Stun Duration",
+                "StatusEffect": "Stun",
+                "Value": 0,
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "MinRange",
+              "Name": "Minimum Range",
+              "Value": 5,
+              "Type": "distance"
+            },
+            {
+              "Key": "WallImpactRange",
+              "Name": "Impact Range",
+              "Value": 5,
+              "Type": "distance"
+            },
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 2.5,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "DebuffDuration",
+              "Name": "Debuff Duration",
+              "Value": 0,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "citadel_ability_fissure_wall_desc"
+        },
+        "Upgrades": [
+          {
+            "BonusDamagePercent": 20,
+            "DebuffDuration": 7,
+            "DescKey": "citadel_ability_fissure_wall_t1_desc"
+          },
+          {
+            "AbilityCooldown": -20,
+            "AbilityDuration": 2,
+            "DescKey": "citadel_ability_fissure_wall_t2_desc"
+          },
+          {
+            "CreateTurrets": 2,
+            "TurretLifeTime": 8,
+            "SlowPercent": 30,
+            "DescKey": "citadel_ability_fissure_wall_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "NumWallSegments": {
+            "Name": null,
+            "Value": 8
+          },
+          "PushForce": {
+            "Name": null,
+            "Value": 175
+          },
+          "SegmentEmitTime": {
+            "Name": null,
+            "Value": 0.1
+          },
+          "TimeBetweenSegments": {
+            "Name": null,
+            "Value": 0.035
+          },
+          "TimeToMaxDistance": {
+            "Name": null,
+            "Value": 1.8
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 50,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 50,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_fissure_wall_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Cast a wall that <span class=\"highlight\">applies slow</span> on enemies it passes through.  Erupt the wall to <span class=\"highlight\">divide the terrain</span> in half and <span class=\"highlight\">damage</span> nearby enemies. <br>After casting, press{g:citadel_binding:'Attack'}or{g:citadel_binding:'Ability3'}to erupt the wall early.  <br><br><span class=\"diminish\">Can be Destroyed with Melee Attacks</span>",
+          "plain_text": "Cast a wall that applies slow on enemies it passes through. Erupt the wall to divide the terrain in half and damage nearby enemies.\nAfter casting, press [Attack] or [Ability 3] to erupt the wall early.\nCan be Destroyed with Melee Attacks"
+        },
+        {
+          "localization_key": "citadel_ability_fissure_wall_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Amplifies McGinnis's damage by <span class=\"highlight\">+20%</span> on hit enemies for 7s",
+          "plain_text": "Amplifies McGinnis's damage by +20% on hit enemies for 7s"
+        },
+        {
+          "localization_key": "citadel_ability_fissure_wall_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-20s Cooldown</span> and <span class=\"highlight\">+2s Duration</span>",
+          "plain_text": "-20s Cooldown and +2s Duration"
+        },
+        {
+          "localization_key": "citadel_ability_fissure_wall_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Deploy <span class=\"highlight\">2 Mini Turrets</span> near the wall for 8s<br><span class=\"highlight\">+30% Slow</span>",
+          "plain_text": "Deploy 2 Mini Turrets near the wall for 8s\n+30% Slow"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Heavy Barrage",
+      "internal_key": "citadel_ability_rocket_barrage",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCastRange": {
+          "Value": 36,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 200,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 100,
+        "BarrageModifier": {
+          "Class": "CitadelRocketBarrageVolley",
+          "Subclass": "CitadelRocketBarrageVolley",
+          "EnabledStateMask": [
+            "AllowDashWhenChanneling",
+            "SinclairTaxUltActive",
+            "Disarmed"
+          ]
+        },
+        "BehaviourBits": [
+          "BehaviorExclusiveUse",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCleaveDisabled",
+          "BehaviorDeactivateCrouchToggleOnCast",
+          "BehaviorCanSetQuickCast",
+          "BehaviorRequireAbilityButtonToCancel",
+          "BehaviorDontSwitchAwayOnCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "DamagePerRocket": {
+          "Value": 21,
+          "Scale": {
+            "Value": 0.2,
+            "Type": "spirit"
+          }
+        },
+        "DetonateTimer": 5,
+        "ExplosionFalloffDisabled": 1,
+        "ExplosionRadius": {
+          "Value": 4.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "GrenadesPerSecond": 6,
+        "GroundDashReductionPercent": -35,
+        "IntervalRampUpStart": 0.35,
+        "IntervalRampUpTime": 0.3,
+        "IsDisabled": false,
+        "Key": "citadel_ability_rocket_barrage",
+        "MaxSpread": 5,
+        "MinDistance": 8.5,
+        "MoveSlowModifier": {
+          "Class": "SlowBase",
+          "Subclass": "ForgeRocketBarrageSlow"
+        },
+        "Name": "Heavy Barrage",
+        "ProjectileIgnoreCollisionTime": 0.2,
+        "TrackSpeedFar": 100,
+        "TrackSpeedNear": 150,
+        "TrackingTime": 0.4,
+        "Upgrades": [
+          {
+            "MoveSlowPercent": 30,
+            "EnemyDashSlowPercent": -18,
+            "MoveSlowDuration": 1
+          },
+          {
+            "AbilityCooldown": -45,
+            "AbilityDuration": 6
+          },
+          {
+            "DamagePerRocket": {
+              "Value": 15,
+              "Scale": {
+                "Value": 0.16,
+                "Type": "spirit"
+              }
+            },
+            "ExplosionRadius": 2
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_rocket_barrage",
+        "Name": "Heavy Barrage",
+        "DescKey": "citadel_ability_rocket_barrage_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "DamagePerRocket",
+                "Name": "Damage Per Rocket",
+                "Value": 21,
+                "Scale": {
+                  "Value": 0.2,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "GrenadesPerSecond",
+                "Name": "Rockets per second",
+                "Value": 6
+              },
+              {
+                "Key": "ExplosionRadius",
+                "Name": "Explosion Radius",
+                "Value": 4.5,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "radius"
+                },
+                "Type": "distance"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "MinDistance",
+              "Name": "Min Range",
+              "Value": 8.5,
+              "Type": "distance"
+            },
+            {
+              "Key": "AbilityDuration",
+              "Name": "Duration",
+              "Value": 8,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "MoveSlowDuration",
+              "Value": 0,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "citadel_ability_rocket_barrage_desc"
+        },
+        "Upgrades": [
+          {
+            "MoveSlowPercent": 30,
+            "EnemyDashSlowPercent": -18,
+            "MoveSlowDuration": 1,
+            "DescKey": "citadel_ability_rocket_barrage_t1_desc"
+          },
+          {
+            "AbilityCooldown": -45,
+            "AbilityDuration": 6,
+            "DescKey": "citadel_ability_rocket_barrage_t2_desc"
+          },
+          {
+            "DamagePerRocket": {
+              "Value": 15,
+              "Scale": {
+                "Value": 0.16,
+                "Type": "spirit"
+              }
+            },
+            "ExplosionRadius": 2,
+            "DescKey": "citadel_ability_rocket_barrage_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Debuff": {
+          "GroundDashReductionPercent": {
+            "Name": "Dash Distance",
+            "Value": -35,
+            "Type": "slow"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 100
+          },
+          "DetonateTimer": {
+            "Name": null,
+            "Value": 5
+          },
+          "ExplosionFalloffDisabled": {
+            "Name": null,
+            "Value": 1
+          },
+          "IntervalRampUpStart": {
+            "Name": null,
+            "Value": 0.35
+          },
+          "IntervalRampUpTime": {
+            "Name": null,
+            "Value": 0.3
+          },
+          "MaxSpread": {
+            "Name": null,
+            "Value": 5
+          },
+          "ProjectileIgnoreCollisionTime": {
+            "Name": null,
+            "Value": 0.2
+          },
+          "TrackSpeedFar": {
+            "Name": null,
+            "Value": 100
+          },
+          "TrackSpeedNear": {
+            "Name": null,
+            "Value": 150
+          },
+          "TrackingTime": {
+            "Name": null,
+            "Value": 0.4
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 36,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 200,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_rocket_barrage_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Unleashes a volley of rockets that home in on a targeted location. <br><br><span class=\"diminish\">McGinnis is slowed and is still able to use stamina.</span>",
+          "plain_text": "Unleashes a volley of rockets that home in on a targeted location.\nMcGinnis is slowed and is still able to use stamina."
+        },
+        {
+          "localization_key": "citadel_ability_rocket_barrage_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Applies <span class=\"highlight\">30% movement and dash slow</span> for 1s",
+          "plain_text": "Applies 30% movement and dash slow for 1s"
+        },
+        {
+          "localization_key": "citadel_ability_rocket_barrage_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-45s</span> Cooldown and <span class=\"highlight\">+6s</span> Duration",
+          "plain_text": "-45s Cooldown and +6s Duration"
+        },
+        {
+          "localization_key": "citadel_ability_rocket_barrage_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+2m</span> Radius and <span class=\"highlight\">+15</span> Damage per Rocket with increased spirit scaling",
+          "plain_text": "+2m Radius and +15 Damage per Rocket with increased spirit scaling"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.47,
+    "AirDashSpeed": 17,
+    "BaseHealthRegen": 2,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.68,
+    "GroundDashSpeed": 14.7,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.171,
+      "MaxHealth": 52,
+      "PowerIncreases": 1,
+      "TechResist": 0.35,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 2.0357,
+      "SustainedDPS": 1.2776
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_forge_lore",
+    "MaxHealth": 780,
+    "MaxMoveSpeed": 6.7,
+    "MoveAcceleration": 4,
+    "Name": "McGinnis",
+    "Playstyle": "hero_forge_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_forge_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.6,
+    "Stamina": 2,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Mystic",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

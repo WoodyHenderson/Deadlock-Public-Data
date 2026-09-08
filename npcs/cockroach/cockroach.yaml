@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "npc.cockroach",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-04",
+  "evidence_status": "source_verified",
+  "sources": [
+    "deadlock-api.npc-units.client-6684.source-10933105",
+    "github.deadlock-data.npcs.311b2e8d895e",
+    "wiki.neutral.125766"
+  ],
+  "identity": {
+    "name": "Cockroach",
+    "aliases": [
+      "vent cockroach",
+      "neutral bug"
+    ],
+    "internal_class": "npc_neutral_bug",
+    "numeric_id": 1838034729
+  },
+  "classification": {
+    "kind": "ambient_neutral",
+    "mode": "standard"
+  },
+  "units": {
+    "distance": "meters",
+    "time": "seconds",
+    "speed": "meters_per_second",
+    "percentage": "percentage_points"
+  },
+  "field_sources": {
+    "numeric_id": "deadlock-api.npc-units.client-6684.source-10933105:npc_neutral_bug.id",
+    "gameplay_values": "github.deadlock-data.npcs.311b2e8d895e:npc_neutral_bug",
+    "behavior_context": "wiki.neutral.125766"
+  },
+  "combat": {
+    "base_max_health": 1,
+    "attacks_heroes": false,
+    "ignored_by_npc_targeting": true
+  },
+  "spawn": {
+    "respawn_after_death": 30.0,
+    "respawns_independently": true
+  },
+  "reward": {
+    "souls": 1,
+    "unsecured": true
+  },
+  "behavior": {
+    "roams_near_spawn": true,
+    "killable_by_rem_lil_helpers": true
+  }
+}

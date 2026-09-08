@@ -1,0 +1,156 @@
+schema_version: 1
+id: data.general.map-timings
+snapshot_id: deadlock-wiki-2026-09-03
+current_as_of: "2026-09-03"
+evidence_status: source_verified
+sources:
+  - wiki.the-cursed-apple.125757
+  - wiki.neutral.125766
+  - wiki.trooper.114174
+
+units:
+  time: seconds
+  interval: seconds
+
+events:
+  - id: mid-boss.available
+    starts_at: 0
+    respawn_intervals_after_defeats:
+      - 420
+      - 360
+      - 300
+    minimum_respawn_interval: 300
+
+  - id: neutral.small
+    starts_at: 120
+    respawn_after_full_clear: 85
+    minimap_difficulty_lines: 0
+
+  - id: soul-well.active
+    starts_at: 180
+    recurrence: continuous
+    soul_value_per_orb: 10
+
+  - id: breakables.regular
+    starts_at: 180
+    respawn_after_destroyed: 180
+    central_room_starts_at: 600
+
+  - id: golden-statues.tier-1
+    starts_at: 180
+    ends_at: 600
+    respawn_after_destroyed: 180
+
+  - id: powerups
+    starts_at: 300
+    fixed_clock_interval: 300
+    simultaneous_locations: 2
+    duration: 160
+    claim_method: heavy_melee
+
+  - id: neutral.medium
+    starts_at: 300
+    respawn_after_full_clear: 290
+    minimap_difficulty_lines: 1
+
+  - id: neutral.large
+    starts_at: 480
+    respawn_after_full_clear: 335
+    minimap_difficulty_lines: 2
+
+  - id: sinners-sacrifice
+    starts_at: 480
+    respawn_after_full_clear: 300
+    map_locations: 10
+    total_machines: 12
+
+  - id: soul-urn
+    starts_at: 600
+    fixed_clock_interval: 300
+    descent_duration: 12.5
+    descent_duration_unit: seconds
+    source_ref: objective.soul-urn
+
+  - id: golden-statues.tier-2
+    starts_at: 600
+    ends_at: 1800
+    respawn_after_destroyed: 180
+
+  - id: unstable-rift
+    earliest_visual_spawn: 600
+    nominal_first_visual_spawn: 660
+    latest_visual_spawn: 720
+    recurrence_minimum: 360
+    recurrence_maximum: 480
+    contest_delay: null
+    evidence_status: source_conflict
+    review_id: review.unstable-rift-contest-delay
+
+  - id: guardian.minimum-timed-resistance
+    starts_at: 720
+    note: Lane Guardians have lost their final timed resistance tier.
+
+  - id: walker.minimum-timed-resistance
+    starts_at: 1080
+    note: Walkers have lost their final timed resistance tier.
+
+  - id: trooper-wave.interval-25
+    starts_at: 1200
+    interval: 25
+
+  - id: golden-statues.tier-3
+    starts_at: 1800
+    respawn_after_destroyed: 180
+
+  - id: trooper-wave.interval-20
+    starts_at: 2100
+    interval: 20
+    maximum_health_multiplier: 1.5
+
+trooper_waves:
+  initial_interval: 30
+  composition:
+    - starts_at: 0
+      ends_at: 300
+      ranged: 3
+      melee: 0
+      medic: 1
+    - starts_at: 300
+      ends_at: null
+      ranged: 2
+      melee: 1
+      medic: 1
+
+neutral_scaling:
+  health_increase_per_minute: 0.021
+  damage_increase_per_minute: 0.005
+  bounty_increase_fraction_of_base_per_minute: 0.0108
+  rewards_are_unsecured: true
+  releases_soul_orbs: false
+  sharing: equal_among_allied_damagers
+
+golden_statue_buffs:
+  - tier: 1
+    starts_at: 180
+    fire_rate_percent: 1.5
+    ammo_capacity_percent: 3
+    cooldown_reduction_percent: 0.5
+    weapon_damage_percent: 3
+    health: 15
+    spirit_power: 2
+  - tier: 2
+    starts_at: 600
+    fire_rate_percent: 2
+    ammo_capacity_percent: 5
+    cooldown_reduction_percent: 0.75
+    weapon_damage_percent: 4
+    health: 20
+    spirit_power: 3
+  - tier: 3
+    starts_at: 1800
+    fire_rate_percent: 2.5
+    ammo_capacity_percent: 7
+    cooldown_reduction_percent: 1
+    weapon_damage_percent: 6
+    health: 30
+    spirit_power: 4

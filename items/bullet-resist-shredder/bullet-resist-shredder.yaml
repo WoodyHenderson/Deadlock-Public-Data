@@ -1,0 +1,536 @@
+{
+  "schema_version": 1,
+  "id": "item.bullet-resist-shredder",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Bullet Resist Shredder",
+    "numeric_id": 2971868509,
+    "internal_key": "upgrade_bullet_resist_shredder",
+    "aliases": [
+      "upgrade_bullet_resist_shredder"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "spirit",
+    "tier": 2,
+    "activation": "passive",
+    "is_active_item": false,
+    "is_imbue": false,
+    "shop_filters": [
+      "WeaponDamage",
+      "Durability"
+    ],
+    "target_types": [
+      "HeroEnemy",
+      "CreepEnemy",
+      "MinionEnemy"
+    ]
+  },
+  "purchase": {
+    "cost_souls": 1600,
+    "component_internal_keys": []
+  },
+  "description_plain": "Reduces Bullet Resist on enemies when you deal spirit damage.",
+  "displayed_effects": [
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "BulletResist",
+      "label": "Bullet Resist",
+      "value": "9%",
+      "property": {
+        "value": "9",
+        "provided_property_type": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST",
+        "css_class": "bullet_armor_up",
+        "usage_flags": [
+          "IntrinsicallyProvidedInAbility"
+        ],
+        "prefix": "{s:sign}",
+        "label": "Bullet Resist",
+        "postfix": "%",
+        "postvalue_label": "Bullet Resist",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "BaseAttackDamagePercent",
+      "label": "Weapon Damage",
+      "value": "9%",
+      "property": {
+        "value": "9",
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_DAMAGE_INCREASE",
+        "css_class": "bullet_damage",
+        "display_units": "EDisplayUnit_Normal",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "AbilityDuration",
+      "label": "Duration",
+      "value": "8s",
+      "property": {
+        "value": "8",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "important",
+      "key": "BulletArmorReduction",
+      "label": "Bullet Resist",
+      "value": "-10%",
+      "property": {
+        "value": "-10",
+        "provided_property_type": "MODIFIER_VALUE_BULLET_AND_MELEE_RESIST_REDUCTION",
+        "css_class": "bullet_armor_down",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "{s:sign}",
+        "label": "Bullet Resist",
+        "postfix": "%",
+        "postvalue_label": "Bullet Resist",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "BulletResist",
+          "bonus": "7"
+        },
+        {
+          "name": "BulletArmorReduction",
+          "bonus": "-11"
+        },
+        {
+          "name": "BaseAttackDamagePercent",
+          "bonus": "15"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 2971868509,
+    "class_name": "upgrade_bullet_resist_shredder",
+    "name": "Bullet Resist Shredder",
+    "start_trained": true,
+    "heroes": [],
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "spirit",
+    "item_tier": 2,
+    "properties": {
+      "AbilityCooldown": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown"
+      },
+      "AbilityDuration": {
+        "value": "8",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "BulletArmorReduction": {
+        "value": "-10",
+        "provided_property_type": "MODIFIER_VALUE_BULLET_AND_MELEE_RESIST_REDUCTION",
+        "css_class": "bullet_armor_down",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "{s:sign}",
+        "label": "Bullet Resist",
+        "postfix": "%",
+        "postvalue_label": "Bullet Resist",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "BaseAttackDamagePercent": {
+        "value": "9",
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_DAMAGE_INCREASE",
+        "css_class": "bullet_damage",
+        "display_units": "EDisplayUnit_Normal",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "BulletResist": {
+        "value": "9",
+        "provided_property_type": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST",
+        "css_class": "bullet_armor_up",
+        "usage_flags": [
+          "IntrinsicallyProvidedInAbility"
+        ],
+        "prefix": "{s:sign}",
+        "label": "Bullet Resist",
+        "postfix": "%",
+        "postvalue_label": "Bullet Resist",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    "description": {
+      "desc": "Reduces <span class=\"highlight\">Bullet Resist</span> on enemies when you deal \n<span class=\"inline-attribute-label SpiritDamage\">spirit damage</span>."
+    },
+    "activation": "passive",
+    "tooltip_sections": [
+      {
+        "section_type": "innate",
+        "section_attributes": [
+          {
+            "properties": [
+              "BulletResist",
+              "BaseAttackDamagePercent"
+            ]
+          }
+        ]
+      },
+      {
+        "section_type": "passive",
+        "section_attributes": [
+          {
+            "loc_string": "Reduces <span class=\"highlight\">Bullet Resist</span> on enemies when you deal \n<span class=\"inline-attribute-label SpiritDamage\">spirit damage</span>.",
+            "properties": [
+              "AbilityDuration"
+            ],
+            "important_properties": [
+              "BulletArmorReduction"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "BulletResist",
+            "bonus": "7"
+          },
+          {
+            "name": "BulletArmorReduction",
+            "bonus": "-11"
+          },
+          {
+            "name": "BaseAttackDamagePercent",
+            "bonus": "15"
+          }
+        ]
+      }
+    ],
+    "is_active_item": false,
+    "shopable": true,
+    "cost": 1600
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Bullet Resist Shredder",
+    "Description": "Reduces <span class=\"highlight\">Bullet Resist</span> on enemies when you deal {g:citadel_inline_attribute:'SpiritDamage'}.",
+    "Cost": 1600,
+    "Tier": 2,
+    "Activation": "Passive",
+    "Slot": "Tech",
+    "Components": null,
+    "TargetTypes": [
+      "HeroEnemy",
+      "CreepEnemy",
+      "MinionEnemy"
+    ],
+    "ShopFilters": [
+      "WeaponDamage",
+      "Durability"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityDuration": 8,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "BulletArmorReduction": -10,
+    "BaseAttackDamagePercent": 9,
+    "BulletResist": 9,
+    "PropertyUpgrades": {
+      "BulletResist": 7,
+      "BulletArmorReduction": -11,
+      "BaseAttackDamagePercent": 15
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_bullet_resist_shredder",
+    "Name": "Bullet Resist Shredder",
+    "Description": "Reduces <span class=\"highlight\">Bullet Resist</span> on enemies when you deal {g:citadel_inline_attribute:'SpiritDamage'}.",
+    "Cost": 1600,
+    "Tier": 2,
+    "Slot": "Tech",
+    "Activation": "Passive",
+    "Components": null,
+    "TargetTypes": [
+      "HeroEnemy",
+      "CreepEnemy",
+      "MinionEnemy"
+    ],
+    "ShopFilters": [
+      "WeaponDamage",
+      "Durability"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Innate",
+      "DescKey": null,
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [],
+      "Alt": [
+        {
+          "Key": "BulletResist",
+          "Value": 9,
+          "Type": "bullet_armor_up",
+          "UsageFlags": "IntrinsicallyProvidedInAbility"
+        },
+        {
+          "Key": "BaseAttackDamagePercent",
+          "Value": 9,
+          "Type": "bullet_damage"
+        }
+      ]
+    },
+    "Info2": {
+      "Type": "Passive",
+      "DescKey": "#upgrade_bullet_resist_shredder_desc",
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "BulletArmorReduction",
+          "Value": -10,
+          "Type": "bullet_armor_down",
+          "UsageFlags": "ConditionallyApplied"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "AbilityDuration",
+          "Value": 8,
+          "Type": "duration"
+        }
+      ]
+    },
+    "Upgrades": {
+      "BulletResist": 7,
+      "BulletArmorReduction": -11,
+      "BaseAttackDamagePercent": 15
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

@@ -1,0 +1,2410 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "selection_rule": "Deadlock API shopable=true and disabled is not true; exact roster must match enabled named/costed deadlock-data item records",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "item_count": 173,
+  "counts_by_slot": {
+    "spirit": 56,
+    "vitality": 61,
+    "weapon": 56
+  },
+  "counts_by_tier": {
+    "1": 23,
+    "2": 43,
+    "3": 46,
+    "4": 44,
+    "5": 17
+  },
+  "source_artifacts": {
+    "primary_items_url": "https://api.deadlock-api.com/v1/assets/items?language=english&client_version=6684",
+    "primary_items_sha256": "75ee1c872303fd753327e56d3daa037171168567f42c7ca55f39d7fe45202474",
+    "primary_steam_info_sha256": "1b16718b1dad48e09d4a75cb0ad25a195ff83e10f3dd5b5f3ada950ac5ed11ba",
+    "secondary_repository_commit": "311b2e8d895eec837441ff3e29b7d7581a61768c",
+    "secondary_item_data_sha256": "88cd1b33e60e531d72dfb900d1ca34aa8c54b5ac51dc2f6307804526b045a9b1",
+    "secondary_item_cards_sha256": "07c00222dfc7b08eaaf1524dc60085d07d8c20ec537f4c0731119ae148088363"
+  },
+  "items": [
+    {
+      "id": "item.active-reload",
+      "name": "Active Reload",
+      "numeric_id": 381961617,
+      "internal_key": "upgrade_active_reload",
+      "slot": "weapon",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.alchemical-fire",
+      "name": "Alchemical Fire",
+      "numeric_id": 1932939246,
+      "internal_key": "upgrade_thermal_detonator",
+      "slot": "weapon",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "press",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.arcane-surge",
+      "name": "Arcane Surge",
+      "numeric_id": 1150006784,
+      "internal_key": "upgrade_arcane_surge",
+      "slot": "spirit",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_improved_stamina"
+      ]
+    },
+    {
+      "id": "item.arctic-blast",
+      "name": "Arctic Blast",
+      "numeric_id": 3812615317,
+      "internal_key": "upgrade_arctic_blast",
+      "slot": "spirit",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": [
+        "upgrade_cold_front"
+      ]
+    },
+    {
+      "id": "item.armor-piercing-rounds",
+      "name": "Armor Piercing Rounds",
+      "numeric_id": 673001892,
+      "internal_key": "upgrade_aprounds",
+      "slot": "weapon",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_high_velocity_mag"
+      ]
+    },
+    {
+      "id": "item.ballistic-enchantment",
+      "name": "Ballistic Enchantment",
+      "numeric_id": 3294954488,
+      "internal_key": "upgrade_bulletshredimbue",
+      "slot": "weapon",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": true,
+      "components": [
+        "upgrade_magic_reach"
+      ]
+    },
+    {
+      "id": "item.battle-vest",
+      "name": "Battle Vest",
+      "numeric_id": 1235347618,
+      "internal_key": "upgrade_regenerating_bullet_shield",
+      "slot": "vitality",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.berserker",
+      "name": "Berserker",
+      "numeric_id": 1414319208,
+      "internal_key": "upgrade_berserker",
+      "slot": "weapon",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.blood-tribute",
+      "name": "Blood Tribute",
+      "numeric_id": 989206714,
+      "internal_key": "upgrade_blood_tribute",
+      "slot": "weapon",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "instant_cast_toggle",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.boundless-spirit",
+      "name": "Boundless Spirit",
+      "numeric_id": 2519598785,
+      "internal_key": "upgrade_boundless_spirit",
+      "slot": "spirit",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_soaring_spirit"
+      ]
+    },
+    {
+      "id": "item.bullet-lifesteal",
+      "name": "Bullet Lifesteal",
+      "numeric_id": 499683006,
+      "internal_key": "upgrade_vampire",
+      "slot": "vitality",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.bullet-resilience",
+      "name": "Bullet Resilience",
+      "numeric_id": 3140772621,
+      "internal_key": "upgrade_improved_bullet_armor",
+      "slot": "vitality",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.bullet-resist-shredder",
+      "name": "Bullet Resist Shredder",
+      "numeric_id": 2971868509,
+      "internal_key": "upgrade_bullet_resist_shredder",
+      "slot": "spirit",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.burst-fire",
+      "name": "Burst Fire",
+      "numeric_id": 2739107182,
+      "internal_key": "upgrade_burst_fire",
+      "slot": "weapon",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_rapid_rounds"
+      ]
+    },
+    {
+      "id": "item.capacitor",
+      "name": "Capacitor",
+      "numeric_id": 710436191,
+      "internal_key": "upgrade_capacitor",
+      "slot": "weapon",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": [
+        "upgrade_chain_lightning"
+      ]
+    },
+    {
+      "id": "item.celestial-blessing",
+      "name": "Celestial Blessing",
+      "numeric_id": 3729138568,
+      "internal_key": "upgrade_celestial_guidance",
+      "slot": "vitality",
+      "tier": 5,
+      "cost_souls": 9999,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.cheat-death",
+      "name": "Cheat Death",
+      "numeric_id": 3361811174,
+      "internal_key": "upgrade_cheat_death",
+      "slot": "vitality",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.cloak-of-opportunity",
+      "name": "Cloak of Opportunity",
+      "numeric_id": 3523480953,
+      "internal_key": "upgrade_cloak_of_opportunity",
+      "slot": "vitality",
+      "tier": 5,
+      "cost_souls": 9999,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.close-quarters",
+      "name": "Close Quarters",
+      "numeric_id": 1342610602,
+      "internal_key": "upgrade_close_range",
+      "slot": "weapon",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.cold-front",
+      "name": "Cold Front",
+      "numeric_id": 1976391348,
+      "internal_key": "upgrade_cold_front",
+      "slot": "spirit",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.colossus",
+      "name": "Colossus",
+      "numeric_id": 2407781327,
+      "internal_key": "upgrade_colossus",
+      "slot": "vitality",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": [
+        "upgrade_health"
+      ]
+    },
+    {
+      "id": "item.compress-cooldown",
+      "name": "Compress Cooldown",
+      "numeric_id": 380806748,
+      "internal_key": "upgrade_magic_tempo",
+      "slot": "spirit",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": true,
+      "components": []
+    },
+    {
+      "id": "item.counterspell",
+      "name": "Counterspell",
+      "numeric_id": 1414025773,
+      "internal_key": "upgrade_counterspell",
+      "slot": "vitality",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.crippling-headshot",
+      "name": "Crippling Headshot",
+      "numeric_id": 3884003354,
+      "internal_key": "upgrade_banshee_slugs",
+      "slot": "weapon",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_headshot_booster2"
+      ]
+    },
+    {
+      "id": "item.crushing-fists",
+      "name": "Crushing Fists",
+      "numeric_id": 800008313,
+      "internal_key": "upgrade_crushing_fists",
+      "slot": "weapon",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_melee_charge"
+      ]
+    },
+    {
+      "id": "item.cultist-sacrifice",
+      "name": "Cultist Sacrifice",
+      "numeric_id": 709540378,
+      "internal_key": "upgrade_non_player_bonus_sacrifice",
+      "slot": "weapon",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "press",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": [
+        "upgrade_non_player_bonus"
+      ]
+    },
+    {
+      "id": "item.cursed-relic",
+      "name": "Cursed Relic",
+      "numeric_id": 2617435668,
+      "internal_key": "upgrade_glitch",
+      "slot": "spirit",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "press",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.debuff-reducer",
+      "name": "Debuff Reducer",
+      "numeric_id": 1047818222,
+      "internal_key": "upgrade_debuff_reducer",
+      "slot": "vitality",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.decay",
+      "name": "Decay",
+      "numeric_id": 3144988365,
+      "internal_key": "upgrade_rupture",
+      "slot": "spirit",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "press",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.disarming-hex",
+      "name": "Disarming Hex",
+      "numeric_id": 2061878743,
+      "internal_key": "upgrade_greater_withering_whip",
+      "slot": "spirit",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "press",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": [
+        "upgrade_withering_whip"
+      ]
+    },
+    {
+      "id": "item.dispel-magic",
+      "name": "Dispel Magic",
+      "numeric_id": 3731635960,
+      "internal_key": "upgrade_reduce_debuff_duration",
+      "slot": "vitality",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.divine-barrier",
+      "name": "Divine Barrier",
+      "numeric_id": 1662311306,
+      "internal_key": "upgrade_divine_barrier",
+      "slot": "vitality",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "press",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": [
+        "upgrade_guardian_ward"
+      ]
+    },
+    {
+      "id": "item.diviner-s-kevlar",
+      "name": "Diviner's Kevlar",
+      "numeric_id": 2820116164,
+      "internal_key": "upgrade_diviners_kevlar",
+      "slot": "vitality",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.duration-extender",
+      "name": "Duration Extender",
+      "numeric_id": 2951612397,
+      "internal_key": "upgrade_arcane_extension",
+      "slot": "spirit",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": true,
+      "components": []
+    },
+    {
+      "id": "item.echo-shard",
+      "name": "Echo Shard",
+      "numeric_id": 630839635,
+      "internal_key": "upgrade_ability_power_shard",
+      "slot": "spirit",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": true,
+      "components": []
+    },
+    {
+      "id": "item.electric-slippers",
+      "name": "Electric Slippers",
+      "numeric_id": 1825399334,
+      "internal_key": "upgrade_electric_slippers",
+      "slot": "vitality",
+      "tier": 5,
+      "cost_souls": 9999,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.enchanter-s-emblem",
+      "name": "Enchanter's Emblem",
+      "numeric_id": 3970837787,
+      "internal_key": "upgrade_magic_shield",
+      "slot": "vitality",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.enduring-speed",
+      "name": "Enduring Speed",
+      "numeric_id": 2447176615,
+      "internal_key": "upgrade_cardio_calibrator",
+      "slot": "vitality",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_sprint_booster"
+      ]
+    },
+    {
+      "id": "item.escalating-exposure",
+      "name": "Escalating Exposure",
+      "numeric_id": 3005970438,
+      "internal_key": "upgrade_escalating_exposure",
+      "slot": "spirit",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_magic_vulnerability"
+      ]
+    },
+    {
+      "id": "item.escalating-resilience",
+      "name": "Escalating Resilience",
+      "numeric_id": 2463960640,
+      "internal_key": "upgrade_reinforcing_casings",
+      "slot": "weapon",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_clip_size"
+      ]
+    },
+    {
+      "id": "item.eternal-gift",
+      "name": "Eternal Gift",
+      "numeric_id": 230297145,
+      "internal_key": "upgrade_eternal_gift",
+      "slot": "vitality",
+      "tier": 5,
+      "cost_souls": 9999,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.ethereal-shift",
+      "name": "Ethereal Shift",
+      "numeric_id": 2533252781,
+      "internal_key": "upgrade_self_bubble",
+      "slot": "spirit",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.express-shot",
+      "name": "Express Shot",
+      "numeric_id": 690458959,
+      "internal_key": "upgrade_express_shot",
+      "slot": "weapon",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_high_velocity_mag"
+      ]
+    },
+    {
+      "id": "item.extended-magazine",
+      "name": "Extended Magazine",
+      "numeric_id": 1548066885,
+      "internal_key": "upgrade_clip_size",
+      "slot": "weapon",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.extra-charge",
+      "name": "Extra Charge",
+      "numeric_id": 3776945997,
+      "internal_key": "upgrade_extra_charge",
+      "slot": "spirit",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.extra-health",
+      "name": "Extra Health",
+      "numeric_id": 3633614685,
+      "internal_key": "upgrade_health",
+      "slot": "vitality",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.extra-regen",
+      "name": "Extra Regen",
+      "numeric_id": 2829638276,
+      "internal_key": "upgrade_endurance",
+      "slot": "vitality",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.extra-spirit",
+      "name": "Extra Spirit",
+      "numeric_id": 968099481,
+      "internal_key": "upgrade_improved_spirit",
+      "slot": "spirit",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.extra-stamina",
+      "name": "Extra Stamina",
+      "numeric_id": 4139877411,
+      "internal_key": "upgrade_improved_stamina",
+      "slot": "vitality",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.fleetfoot",
+      "name": "Fleetfoot",
+      "numeric_id": 3403085434,
+      "internal_key": "upgrade_fleetfoot_boots",
+      "slot": "weapon",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.focus-lens",
+      "name": "Focus Lens",
+      "numeric_id": 2142980412,
+      "internal_key": "upgrade_focus_lens",
+      "slot": "spirit",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "press",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": [
+        "upgrade_spirit_sap"
+      ]
+    },
+    {
+      "id": "item.fortitude",
+      "name": "Fortitude",
+      "numeric_id": 3585132399,
+      "internal_key": "upgrade_chonky",
+      "slot": "vitality",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_health"
+      ]
+    },
+    {
+      "id": "item.frenzy",
+      "name": "Frenzy",
+      "numeric_id": 339443430,
+      "internal_key": "upgrade_fervor",
+      "slot": "weapon",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.frostbite-charm",
+      "name": "Frostbite Charm",
+      "numeric_id": 2068250483,
+      "internal_key": "upgrade_shivas_bracelet",
+      "slot": "spirit",
+      "tier": 5,
+      "cost_souls": 9999,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": true,
+      "components": []
+    },
+    {
+      "id": "item.fury-trance",
+      "name": "Fury Trance",
+      "numeric_id": 1409190604,
+      "internal_key": "upgrade_fury_trance",
+      "slot": "vitality",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": [
+        "upgrade_vampire"
+      ]
+    },
+    {
+      "id": "item.glass-cannon",
+      "name": "Glass Cannon",
+      "numeric_id": 365620721,
+      "internal_key": "upgrade_glass_cannon",
+      "slot": "weapon",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.golden-goose-egg",
+      "name": "Golden Goose Egg",
+      "numeric_id": 2462046703,
+      "internal_key": "upgrade_goose_egg",
+      "slot": "spirit",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.greater-expansion",
+      "name": "Greater Expansion",
+      "numeric_id": 1193964439,
+      "internal_key": "upgrade_tech_range",
+      "slot": "spirit",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_magic_reach"
+      ]
+    },
+    {
+      "id": "item.grit",
+      "name": "Grit",
+      "numeric_id": 1672893796,
+      "internal_key": "upgrade_grit",
+      "slot": "vitality",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.guardian-ward",
+      "name": "Guardian Ward",
+      "numeric_id": 857669956,
+      "internal_key": "upgrade_guardian_ward",
+      "slot": "vitality",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "press",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": [
+        "upgrade_grit"
+      ]
+    },
+    {
+      "id": "item.haunting-shot",
+      "name": "Haunting Shot",
+      "numeric_id": 3568217437,
+      "internal_key": "upgrade_eldritch_shot",
+      "slot": "weapon",
+      "tier": 5,
+      "cost_souls": 9999,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.headhunter",
+      "name": "Headhunter",
+      "numeric_id": 4053935515,
+      "internal_key": "upgrade_headhunter",
+      "slot": "weapon",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_headshot_booster"
+      ]
+    },
+    {
+      "id": "item.headshot-booster",
+      "name": "Headshot Booster",
+      "numeric_id": 2010028405,
+      "internal_key": "upgrade_headshot_booster",
+      "slot": "weapon",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.healbane",
+      "name": "Healbane",
+      "numeric_id": 2603935618,
+      "internal_key": "upgrade_healbane",
+      "slot": "vitality",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.healing-booster",
+      "name": "Healing Booster",
+      "numeric_id": 2566692615,
+      "internal_key": "upgrade_healing_booster",
+      "slot": "vitality",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_endurance"
+      ]
+    },
+    {
+      "id": "item.healing-nova",
+      "name": "Healing Nova",
+      "numeric_id": 2956256701,
+      "internal_key": "upgrade_health_nova",
+      "slot": "vitality",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": [
+        "upgrade_health_stimpak"
+      ]
+    },
+    {
+      "id": "item.healing-rite",
+      "name": "Healing Rite",
+      "numeric_id": 1710079648,
+      "internal_key": "upgrade_health_stimpak",
+      "slot": "vitality",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "press",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.healing-tempo",
+      "name": "Healing Tempo",
+      "numeric_id": 1427630806,
+      "internal_key": "upgrade_healbuff",
+      "slot": "vitality",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_healing_booster"
+      ]
+    },
+    {
+      "id": "item.heroic-aura",
+      "name": "Heroic Aura",
+      "numeric_id": 2108215830,
+      "internal_key": "upgrade_dps_aura",
+      "slot": "weapon",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.high-velocity-rounds",
+      "name": "High-Velocity Rounds",
+      "numeric_id": 3077079169,
+      "internal_key": "upgrade_high_velocity_mag",
+      "slot": "weapon",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.hollow-point",
+      "name": "Hollow Point",
+      "numeric_id": 2678489038,
+      "internal_key": "upgrade_hollow_point_rounds",
+      "slot": "weapon",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.hunter-s-aura",
+      "name": "Hunter's Aura",
+      "numeric_id": 2481177645,
+      "internal_key": "upgrade_bullet_armor_reduction_aura",
+      "slot": "weapon",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.improved-spirit",
+      "name": "Improved Spirit",
+      "numeric_id": 7409189,
+      "internal_key": "upgrade_soaring_spirit",
+      "slot": "spirit",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_improved_spirit"
+      ]
+    },
+    {
+      "id": "item.indomitable",
+      "name": "Indomitable",
+      "numeric_id": 951866250,
+      "internal_key": "upgrade_auto_cleanse",
+      "slot": "vitality",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_vex_barrier"
+      ]
+    },
+    {
+      "id": "item.infinite-rounds",
+      "name": "Infinite Rounds",
+      "numeric_id": 3269957497,
+      "internal_key": "upgrade_infinite_rounds",
+      "slot": "weapon",
+      "tier": 5,
+      "cost_souls": 9999,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.infuser",
+      "name": "Infuser",
+      "numeric_id": 1797283378,
+      "internal_key": "upgrade_infuser",
+      "slot": "vitality",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": [
+        "upgrade_health_stealing_magic"
+      ]
+    },
+    {
+      "id": "item.inhibitor",
+      "name": "Inhibitor",
+      "numeric_id": 2037039379,
+      "internal_key": "upgrade_inhibitor",
+      "slot": "vitality",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.intensifying-magazine",
+      "name": "Intensifying Magazine",
+      "numeric_id": 2407033488,
+      "internal_key": "upgrade_intensifying_clip",
+      "slot": "weapon",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.juggernaut",
+      "name": "Juggernaut",
+      "numeric_id": 1250307611,
+      "internal_key": "upgrade_juggernaut",
+      "slot": "vitality",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_cardio_calibrator"
+      ]
+    },
+    {
+      "id": "item.kinetic-dash",
+      "name": "Kinetic Dash",
+      "numeric_id": 3977876567,
+      "internal_key": "upgrade_kinetic_sash",
+      "slot": "weapon",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_improved_stamina"
+      ]
+    },
+    {
+      "id": "item.knockdown",
+      "name": "Knockdown",
+      "numeric_id": 1254091416,
+      "internal_key": "upgrade_target_stun",
+      "slot": "spirit",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "press",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.leech",
+      "name": "Leech",
+      "numeric_id": 865846625,
+      "internal_key": "upgrade_damage_recycler",
+      "slot": "vitality",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_vampire",
+        "upgrade_health_stealing_magic"
+      ]
+    },
+    {
+      "id": "item.lifestrike",
+      "name": "Lifestrike",
+      "numeric_id": 1252627263,
+      "internal_key": "upgrade_boxing_glove",
+      "slot": "vitality",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_lifestrike_gauntlets"
+      ]
+    },
+    {
+      "id": "item.lightning-scroll",
+      "name": "Lightning Scroll",
+      "numeric_id": 493591231,
+      "internal_key": "upgrade_ultimate_burst",
+      "slot": "spirit",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_magic_slow"
+      ]
+    },
+    {
+      "id": "item.long-range",
+      "name": "Long Range",
+      "numeric_id": 3331811235,
+      "internal_key": "upgrade_long_range",
+      "slot": "weapon",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.lucky-shot",
+      "name": "Lucky Shot",
+      "numeric_id": 1396247347,
+      "internal_key": "upgrade_critshot",
+      "slot": "weapon",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.magic-carpet",
+      "name": "Magic Carpet",
+      "numeric_id": 2800629741,
+      "internal_key": "upgrade_magic_carpet",
+      "slot": "spirit",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.majestic-leap",
+      "name": "Majestic Leap",
+      "numeric_id": 600033864,
+      "internal_key": "upgrade_rocket_booster",
+      "slot": "vitality",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.melee-charge",
+      "name": "Melee Charge",
+      "numeric_id": 26002154,
+      "internal_key": "upgrade_melee_charge",
+      "slot": "weapon",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.melee-lifesteal",
+      "name": "Melee Lifesteal",
+      "numeric_id": 1437614329,
+      "internal_key": "upgrade_lifestrike_gauntlets",
+      "slot": "vitality",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.mercurial-magnum",
+      "name": "Mercurial Magnum",
+      "numeric_id": 3919289022,
+      "internal_key": "upgrade_ethereal_bullets",
+      "slot": "spirit",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": true,
+      "components": [
+        "upgrade_quick_silver"
+      ]
+    },
+    {
+      "id": "item.metal-skin",
+      "name": "Metal Skin",
+      "numeric_id": 1378931225,
+      "internal_key": "upgrade_metal_skin",
+      "slot": "vitality",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.monster-rounds",
+      "name": "Monster Rounds",
+      "numeric_id": 1009965641,
+      "internal_key": "upgrade_non_player_bonus",
+      "slot": "weapon",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.mystic-burst",
+      "name": "Mystic Burst",
+      "numeric_id": 1998374645,
+      "internal_key": "upgrade_magic_burst",
+      "slot": "spirit",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.mystic-conduit",
+      "name": "Mystic Conduit",
+      "numeric_id": 4050602737,
+      "internal_key": "upgrade_patrons_blessing",
+      "slot": "spirit",
+      "tier": 5,
+      "cost_souls": 9999,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.mystic-expansion",
+      "name": "Mystic Expansion",
+      "numeric_id": 754480263,
+      "internal_key": "upgrade_magic_reach",
+      "slot": "spirit",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": true,
+      "components": []
+    },
+    {
+      "id": "item.mystic-regeneration",
+      "name": "Mystic Regeneration",
+      "numeric_id": 1439347412,
+      "internal_key": "upgrade_mystic_regeneration",
+      "slot": "spirit",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.mystic-reverb",
+      "name": "Mystic Reverb",
+      "numeric_id": 3577481646,
+      "internal_key": "upgrade_mystic_reverb",
+      "slot": "spirit",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": true,
+      "components": []
+    },
+    {
+      "id": "item.mystic-shot",
+      "name": "Mystic Shot",
+      "numeric_id": 395867183,
+      "internal_key": "upgrade_crackshot",
+      "slot": "weapon",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.mystic-slow",
+      "name": "Mystic Slow",
+      "numeric_id": 1102081447,
+      "internal_key": "upgrade_magic_slow",
+      "slot": "spirit",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.mystic-vulnerability",
+      "name": "Mystic Vulnerability",
+      "numeric_id": 2081037738,
+      "internal_key": "upgrade_magic_vulnerability",
+      "slot": "spirit",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.mystical-piano",
+      "name": "Mystical Piano",
+      "numeric_id": 2054088113,
+      "internal_key": "upgrade_mystical_piano",
+      "slot": "spirit",
+      "tier": 5,
+      "cost_souls": 9999,
+      "activation": "press",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.nullification-burst",
+      "name": "Nullification Burst",
+      "numeric_id": 3949773228,
+      "internal_key": "upgrade_nullification_aura",
+      "slot": "vitality",
+      "tier": 5,
+      "cost_souls": 9999,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.omnicharge-signet",
+      "name": "Omnicharge Signet",
+      "numeric_id": 424779525,
+      "internal_key": "upgrade_omnicharge_pendant",
+      "slot": "spirit",
+      "tier": 5,
+      "cost_souls": 9999,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": true,
+      "components": []
+    },
+    {
+      "id": "item.opening-rounds",
+      "name": "Opening Rounds",
+      "numeric_id": 2064029594,
+      "internal_key": "upgrade_pristine_emblem",
+      "slot": "weapon",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_high_velocity_mag"
+      ]
+    },
+    {
+      "id": "item.phantom-strike",
+      "name": "Phantom Strike",
+      "numeric_id": 1371725689,
+      "internal_key": "upgrade_phantom_strike",
+      "slot": "vitality",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "press",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.plated-armor",
+      "name": "Plated Armor",
+      "numeric_id": 3491236900,
+      "internal_key": "upgrade_deflecting_armor",
+      "slot": "vitality",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.point-blank",
+      "name": "Point Blank",
+      "numeric_id": 2095565695,
+      "internal_key": "upgrade_close_quarter_combat",
+      "slot": "weapon",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_close_range"
+      ]
+    },
+    {
+      "id": "item.prism-blast",
+      "name": "Prism Blast",
+      "numeric_id": 1132564516,
+      "internal_key": "upgrade_prism_blast",
+      "slot": "spirit",
+      "tier": 5,
+      "cost_souls": 9999,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.quicksilver-reload",
+      "name": "Quicksilver Reload",
+      "numeric_id": 84321454,
+      "internal_key": "upgrade_quick_silver",
+      "slot": "spirit",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": true,
+      "components": []
+    },
+    {
+      "id": "item.radiant-regeneration",
+      "name": "Radiant Regeneration",
+      "numeric_id": 2947183272,
+      "internal_key": "upgrade_resonant_healing",
+      "slot": "spirit",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_mystic_regeneration"
+      ]
+    },
+    {
+      "id": "item.rapid-recharge",
+      "name": "Rapid Recharge",
+      "numeric_id": 787198704,
+      "internal_key": "upgrade_rapid_recharge",
+      "slot": "spirit",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_extra_charge"
+      ]
+    },
+    {
+      "id": "item.rapid-rounds",
+      "name": "Rapid Rounds",
+      "numeric_id": 668299740,
+      "internal_key": "upgrade_rapid_rounds",
+      "slot": "weapon",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.reactive-barrier",
+      "name": "Reactive Barrier",
+      "numeric_id": 1644605047,
+      "internal_key": "upgrade_vex_barrier",
+      "slot": "vitality",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_grit"
+      ]
+    },
+    {
+      "id": "item.rebuttal",
+      "name": "Rebuttal",
+      "numeric_id": 4204808176,
+      "internal_key": "upgrade_melee_rebuttal",
+      "slot": "vitality",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.recharging-rush",
+      "name": "Recharging Rush",
+      "numeric_id": 1763073141,
+      "internal_key": "upgrade_rechargingbullets",
+      "slot": "weapon",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.refresher",
+      "name": "Refresher",
+      "numeric_id": 677738769,
+      "internal_key": "upgrade_ability_refresher",
+      "slot": "spirit",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.rescue-beam",
+      "name": "Rescue Beam",
+      "numeric_id": 1804594021,
+      "internal_key": "upgrade_rescue_beam",
+      "slot": "vitality",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "press",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": [
+        "upgrade_health_stimpak"
+      ]
+    },
+    {
+      "id": "item.restorative-locket",
+      "name": "Restorative Locket",
+      "numeric_id": 2059712766,
+      "internal_key": "upgrade_restorative_locket",
+      "slot": "vitality",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.restorative-shot",
+      "name": "Restorative Shot",
+      "numeric_id": 3862866912,
+      "internal_key": "upgrade_medic_bullets",
+      "slot": "weapon",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.return-fire",
+      "name": "Return Fire",
+      "numeric_id": 3361075077,
+      "internal_key": "upgrade_return_fire",
+      "slot": "vitality",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.ricochet",
+      "name": "Ricochet",
+      "numeric_id": 2480592370,
+      "internal_key": "upgrade_ricochet",
+      "slot": "weapon",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.runed-gauntlets",
+      "name": "Runed Gauntlets",
+      "numeric_id": 64550694,
+      "internal_key": "upgrade_runed_gauntlets",
+      "slot": "weapon",
+      "tier": 5,
+      "cost_souls": 9999,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.rusted-barrel",
+      "name": "Rusted Barrel",
+      "numeric_id": 2922054143,
+      "internal_key": "upgrade_withering_whip",
+      "slot": "spirit",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "press",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.scourge",
+      "name": "Scourge",
+      "numeric_id": 2417568017,
+      "internal_key": "upgrade_discord",
+      "slot": "spirit",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "press",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.seraphim-wings",
+      "name": "Seraphim Wings",
+      "numeric_id": 1736094134,
+      "internal_key": "upgrade_icarus_wings",
+      "slot": "vitality",
+      "tier": 5,
+      "cost_souls": 9999,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.shadow-strike",
+      "name": "Shadow Strike",
+      "numeric_id": 2319629810,
+      "internal_key": "upgrade_shadow_strike",
+      "slot": "vitality",
+      "tier": 5,
+      "cost_souls": 9999,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.shadow-weave",
+      "name": "Shadow Weave",
+      "numeric_id": 1798666702,
+      "internal_key": "upgrade_cloaking_device_active",
+      "slot": "weapon",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.sharpshooter",
+      "name": "Sharpshooter",
+      "numeric_id": 2152872419,
+      "internal_key": "upgrade_sharpshooter",
+      "slot": "weapon",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_long_range",
+        "upgrade_high_velocity_mag"
+      ]
+    },
+    {
+      "id": "item.shrink-ray",
+      "name": "Shrink Ray",
+      "numeric_id": 4121584236,
+      "internal_key": "upgrade_shrink_ray",
+      "slot": "spirit",
+      "tier": 5,
+      "cost_souls": 9999,
+      "activation": "press",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.silence-wave",
+      "name": "Silence Wave",
+      "numeric_id": 619484391,
+      "internal_key": "upgrade_targeted_silence",
+      "slot": "spirit",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.silencer",
+      "name": "Silencer",
+      "numeric_id": 1113837674,
+      "internal_key": "upgrade_proc_silence",
+      "slot": "weapon",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.siphon-bullets",
+      "name": "Siphon Bullets",
+      "numeric_id": 1282141666,
+      "internal_key": "upgrade_siphon_bullets",
+      "slot": "vitality",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.slowing-bullets",
+      "name": "Slowing Bullets",
+      "numeric_id": 393974127,
+      "internal_key": "upgrade_slowing_bullets",
+      "slot": "weapon",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.slowing-hex",
+      "name": "Slowing Hex",
+      "numeric_id": 1813726886,
+      "internal_key": "upgrade_containment",
+      "slot": "spirit",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "press",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.spellbreaker",
+      "name": "Spellbreaker",
+      "numeric_id": 1955841979,
+      "internal_key": "upgrade_spellbreaker",
+      "slot": "vitality",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_debuff_reducer"
+      ]
+    },
+    {
+      "id": "item.spellslinger",
+      "name": "Spellslinger",
+      "numeric_id": 2221211450,
+      "internal_key": "upgrade_enchanted_holsters",
+      "slot": "weapon",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.spirit-burn",
+      "name": "Spirit Burn",
+      "numeric_id": 343572757,
+      "internal_key": "upgrade_spirit_burn",
+      "slot": "spirit",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.spirit-lifesteal",
+      "name": "Spirit Lifesteal",
+      "numeric_id": 876563814,
+      "internal_key": "upgrade_health_stealing_magic",
+      "slot": "vitality",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.spirit-rend",
+      "name": "Spirit Rend",
+      "numeric_id": 4075861416,
+      "internal_key": "upgrade_spellslinger_headshots",
+      "slot": "weapon",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_tech_defense_shredders"
+      ]
+    },
+    {
+      "id": "item.spirit-resilience",
+      "name": "Spirit Resilience",
+      "numeric_id": 2163598980,
+      "internal_key": "upgrade_tech_purge",
+      "slot": "vitality",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.spirit-sap",
+      "name": "Spirit Sap",
+      "numeric_id": 1219329868,
+      "internal_key": "upgrade_spirit_sap",
+      "slot": "spirit",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "press",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.spirit-shielding",
+      "name": "Spirit Shielding",
+      "numeric_id": 112198670,
+      "internal_key": "upgrade_spirit_bubble",
+      "slot": "vitality",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_grit"
+      ]
+    },
+    {
+      "id": "item.spirit-shredder-bullets",
+      "name": "Spirit Shredder Bullets",
+      "numeric_id": 1144549437,
+      "internal_key": "upgrade_tech_defense_shredders",
+      "slot": "weapon",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.spirit-snatch",
+      "name": "Spirit Snatch",
+      "numeric_id": 3190916303,
+      "internal_key": "upgrade_spirit_snatch",
+      "slot": "spirit",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_acolytes_glove"
+      ]
+    },
+    {
+      "id": "item.spirit-strike",
+      "name": "Spirit Strike",
+      "numeric_id": 465043967,
+      "internal_key": "upgrade_acolytes_glove",
+      "slot": "spirit",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.spiritual-overflow",
+      "name": "Spiritual Overflow",
+      "numeric_id": 2226497419,
+      "internal_key": "upgrade_tech_overflow",
+      "slot": "weapon",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_health_stealing_magic"
+      ]
+    },
+    {
+      "id": "item.split-shot",
+      "name": "Split Shot",
+      "numeric_id": 3647584222,
+      "internal_key": "upgrade_split_shot",
+      "slot": "weapon",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.sprint-boots",
+      "name": "Sprint Boots",
+      "numeric_id": 3399065363,
+      "internal_key": "upgrade_sprint_booster",
+      "slot": "vitality",
+      "tier": 1,
+      "cost_souls": 800,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.stalker",
+      "name": "Stalker",
+      "numeric_id": 98582110,
+      "internal_key": "upgrade_weapon_backstabber",
+      "slot": "weapon",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.stamina-mastery",
+      "name": "Stamina Mastery",
+      "numeric_id": 334300056,
+      "internal_key": "upgrade_superior_stamina",
+      "slot": "vitality",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_improved_stamina"
+      ]
+    },
+    {
+      "id": "item.superior-cooldown",
+      "name": "Superior Cooldown",
+      "numeric_id": 3261353684,
+      "internal_key": "upgrade_cooldown_reduction",
+      "slot": "spirit",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_magic_tempo"
+      ]
+    },
+    {
+      "id": "item.superior-duration",
+      "name": "Superior Duration",
+      "numeric_id": 2717651715,
+      "internal_key": "upgrade_imbued_duration_extender",
+      "slot": "spirit",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_arcane_extension"
+      ]
+    },
+    {
+      "id": "item.suppressor",
+      "name": "Suppressor",
+      "numeric_id": 1925087134,
+      "internal_key": "upgrade_suppressor",
+      "slot": "spirit",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.surge-of-power",
+      "name": "Surge of Power",
+      "numeric_id": 1292979587,
+      "internal_key": "upgrade_magic_storm",
+      "slot": "spirit",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": true,
+      "components": [
+        "upgrade_improved_spirit"
+      ]
+    },
+    {
+      "id": "item.swift-striker",
+      "name": "Swift Striker",
+      "numeric_id": 4104549924,
+      "internal_key": "upgrade_blitz_bullets",
+      "slot": "weapon",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_rapid_rounds"
+      ]
+    },
+    {
+      "id": "item.tankbuster",
+      "name": "Tankbuster",
+      "numeric_id": 2121044373,
+      "internal_key": "upgrade_magic_shock",
+      "slot": "spirit",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_magic_burst"
+      ]
+    },
+    {
+      "id": "item.tesla-bullets",
+      "name": "Tesla Bullets",
+      "numeric_id": 811521119,
+      "internal_key": "upgrade_chain_lightning",
+      "slot": "weapon",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.titanic-magazine",
+      "name": "Titanic Magazine",
+      "numeric_id": 2356412290,
+      "internal_key": "upgrade_titan_round",
+      "slot": "weapon",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_clip_size"
+      ]
+    },
+    {
+      "id": "item.torment-pulse",
+      "name": "Torment Pulse",
+      "numeric_id": 395944548,
+      "internal_key": "upgrade_tech_damage_pulse",
+      "slot": "spirit",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.toxic-bullets",
+      "name": "Toxic Bullets",
+      "numeric_id": 3696726732,
+      "internal_key": "upgrade_toxic_bullets",
+      "slot": "weapon",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.transcendent-cooldown",
+      "name": "Transcendent Cooldown",
+      "numeric_id": 915014646,
+      "internal_key": "upgrade_transcendent_cooldown",
+      "slot": "spirit",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_cooldown_reduction"
+      ]
+    },
+    {
+      "id": "item.trophy-collector",
+      "name": "Trophy Collector",
+      "numeric_id": 3074274290,
+      "internal_key": "upgrade_trophy_collector",
+      "slot": "vitality",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_sprint_booster"
+      ]
+    },
+    {
+      "id": "item.unstable-concoction",
+      "name": "Unstable Concoction",
+      "numeric_id": 1558545403,
+      "internal_key": "upgrade_unstable_concoction",
+      "slot": "spirit",
+      "tier": 5,
+      "cost_souls": 9999,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.unstoppable",
+      "name": "Unstoppable",
+      "numeric_id": 3357231760,
+      "internal_key": "upgrade_unstoppable",
+      "slot": "vitality",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": [
+        "upgrade_debuff_reducer"
+      ]
+    },
+    {
+      "id": "item.vampiric-burst",
+      "name": "Vampiric Burst",
+      "numeric_id": 1055679805,
+      "internal_key": "upgrade_surging_power",
+      "slot": "vitality",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": [
+        "upgrade_vampire"
+      ]
+    },
+    {
+      "id": "item.veil-walker",
+      "name": "Veil Walker",
+      "numeric_id": 865958998,
+      "internal_key": "upgrade_veil_walker",
+      "slot": "vitality",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_sprint_booster"
+      ]
+    },
+    {
+      "id": "item.vortex-web",
+      "name": "Vortex Web",
+      "numeric_id": 1152158042,
+      "internal_key": "upgrade_aoe_root",
+      "slot": "spirit",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "press",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": [
+        "upgrade_containment"
+      ]
+    },
+    {
+      "id": "item.warp-stone",
+      "name": "Warp Stone",
+      "numeric_id": 3270001687,
+      "internal_key": "upgrade_warp_stone",
+      "slot": "vitality",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "instant_cast",
+      "is_active_item": true,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.weakening-headshot",
+      "name": "Weakening Headshot",
+      "numeric_id": 1770441818,
+      "internal_key": "upgrade_headshot_booster2",
+      "slot": "weapon",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    },
+    {
+      "id": "item.weapon-shielding",
+      "name": "Weapon Shielding",
+      "numeric_id": 805079544,
+      "internal_key": "upgrade_weapon_shielding",
+      "slot": "vitality",
+      "tier": 2,
+      "cost_souls": 1600,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_grit"
+      ]
+    },
+    {
+      "id": "item.weighted-shots",
+      "name": "Weighted Shots",
+      "numeric_id": 3791587546,
+      "internal_key": "upgrade_weighted_shots",
+      "slot": "weapon",
+      "tier": 3,
+      "cost_souls": 3200,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": [
+        "upgrade_slowing_bullets"
+      ]
+    },
+    {
+      "id": "item.witchmail",
+      "name": "Witchmail",
+      "numeric_id": 3028234315,
+      "internal_key": "upgrade_absorbing_armor",
+      "slot": "vitality",
+      "tier": 4,
+      "cost_souls": 6400,
+      "activation": "passive",
+      "is_active_item": false,
+      "is_imbue": false,
+      "components": []
+    }
+  ]
+}

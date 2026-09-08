@@ -1,0 +1,1329 @@
+{
+  "schema_version": 2,
+  "id": "hero.victor",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.victor.125760",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Victor",
+  "aliases": [],
+  "internal_hero_key": "hero_frank",
+  "hero_type": "Brawler",
+  "role_localization_key": "hero_frank_role",
+  "playstyle_localization_key": "hero_frank_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 800,
+    "health_regeneration_per_second": 1.5,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.3,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.1,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 13.9,
+      "distance_meters": 10,
+      "duration_seconds": 0.72
+    },
+    "air_dash": {
+      "speed_meters_per_second": 15.7,
+      "distance_meters": 8,
+      "duration_seconds": 0.51
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.26,
+    "MaxHealth": 34,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 1.5205,
+    "SustainedDPS": 0.95941
+  },
+  "spirit_scaling": {
+    "BaseHealthRegen": 0.08
+  },
+  "weapon": {
+    "BulletSpeed": 203.2,
+    "BulletDamage": 12,
+    "RoundsPerSecond": 5.0505,
+    "ClipSize": 24,
+    "ReloadTime": 2.4,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 57.51,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0,
+    "BulletRadius": 0.127,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "RoundsPerSecondAtMaxSpin": 5.847953216374268,
+    "SpinAcceleration": 0.6,
+    "SpinDeceleration": 1,
+    "DPS": 70.175,
+    "SustainedDPS": 44.28,
+    "NameKey": "citadel_weapon_hero_frank_set",
+    "DescKey": "citadel_weapon_hero_frank_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_MediumRange",
+      "Attribute_EWeaponAttribute_Projectile"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Pain Battery",
+      "internal_key": "ability_frank_shocktarget2",
+      "data": {
+        "AbilityCastDelay": 0.35,
+        "AbilityCastRange": {
+          "Value": 28,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityChargesConditionally": 1,
+        "AbilityCooldown": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityPostCastDuration": 0.2,
+        "AbilityUnitTargetLimit": 1,
+        "BatteryGenerationPercent": {
+          "Value": 100,
+          "Scale": {
+            "Value": -1,
+            "Type": "cooldown"
+          }
+        },
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorShowCastRangeAsSatSphereWhileCasting",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BoltCount": 7,
+        "BonusShocksDelay": 0.2,
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 100,
+          "Scale": {
+            "Value": 1.6,
+            "Type": "spirit"
+          }
+        },
+        "FullyChargedFXModifier": {
+          "Class": "FrankShockfullycharged",
+          "Subclass": "ChargedFx"
+        },
+        "HealOnHit": {
+          "Value": 0,
+          "Scale": {
+            "Value": 1,
+            "Type": "healing"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_frank_shocktarget2",
+        "MissingHealthPercentHeal": {
+          "Value": 0,
+          "Scale": {
+            "Value": 1,
+            "Type": "healing"
+          }
+        },
+        "Name": "Pain Battery",
+        "ShockModifier": {
+          "Class": "FrankShocktarget",
+          "Subclass": "Shock"
+        },
+        "SlowModifier": {
+          "Class": "DiminishingSlow",
+          "Subclass": "ZapSlow"
+        },
+        "SpreadAngle": 40,
+        "SpreadRandomness": 0.005,
+        "StoredDamageHealthPercentRequired": 40,
+        "Upgrades": [
+          {
+            "SlowPercent": 40,
+            "SlowDuration": "2s"
+          },
+          {
+            "Damage": 50
+          },
+          {
+            "MissingHealthPercentHeal": 15,
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.6,
+                "Type": "spirit"
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_frank_shocktarget2",
+        "Name": "Pain Battery",
+        "DescKey": "ability_frank_shocktarget2_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 100,
+                "Scale": {
+                  "Value": 1.6,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Hero Hit:",
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 0,
+                "Type": "slow"
+              },
+              {
+                "Title": "On Hero Hit:",
+                "Key": "MissingHealthPercentHeal",
+                "Name": "Missing Health as Healing",
+                "Value": 0,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "healing"
+                },
+                "Type": "healing"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_frank_shocktarget2_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": []
+          },
+          "Alt": []
+        },
+        "Upgrades": [
+          {
+            "SlowPercent": 40,
+            "SlowDuration": "2s",
+            "DescKey": "ability_frank_shocktarget2_t1_desc"
+          },
+          {
+            "Damage": 50
+          },
+          {
+            "MissingHealthPercentHeal": 15,
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.6,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "ability_frank_shocktarget2_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Health": {
+          "HealOnHit": {
+            "Name": null,
+            "Value": 0,
+            "Scale": {
+              "Value": 1,
+              "Type": "healing"
+            },
+            "Type": "healing"
+          }
+        },
+        "Other": {
+          "AbilityChargesConditionally": {
+            "Name": null,
+            "Value": 1
+          },
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.2
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "BatteryGenerationPercent": {
+            "Name": "Battery Generation",
+            "Value": 100,
+            "Scale": {
+              "Value": -1,
+              "Type": "cooldown"
+            }
+          },
+          "BoltCount": {
+            "Name": null,
+            "Value": 7
+          },
+          "BonusShocksDelay": {
+            "Name": null,
+            "Value": 0.2
+          },
+          "SpreadAngle": {
+            "Name": null,
+            "Value": 40
+          },
+          "SpreadRandomness": {
+            "Name": null,
+            "Value": 0.005
+          },
+          "StoredDamageHealthPercentRequired": {
+            "Name": null,
+            "Value": 40
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.35,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 28,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_frank_shocktarget2_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Taking any damage</span> passively charges up your Pain Battery. <br><br>Once full, activating the ability fires multiple shocking bolts, dealing {g:citadel_inline_attribute:'SpiritDamage'} once per target.",
+          "plain_text": "Taking any damage passively charges up your Pain Battery.\nOnce full, activating the ability fires multiple shocking bolts, dealing spirit damage once per target."
+        },
+        {
+          "localization_key": "ability_frank_shocktarget2_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On Hit: Apply <span class=\"highlight\">40%</span> Slow for <span class=\"highlight\">2s</span>",
+          "plain_text": "On Hit: Apply 40% Slow for 2s"
+        },
+        {
+          "localization_key": "ability_frank_shocktarget2_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On Hero Hit: Heal for <span class=\"highlight\">15%</span> of your missing health and increased Spirit scaling",
+          "plain_text": "On Hero Hit: Heal for 15% of your missing health and increased Spirit scaling"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Jumpstart",
+      "internal_key": "ability_frank_selfzap",
+      "data": {
+        "AbilityChannelTime": {
+          "Value": 0.35,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCharges": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityDuration": {
+          "Value": 4.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCannotCancelDuringChannel",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BonusMoveSpeed": 3,
+        "BuffModifier": {
+          "Class": "FrankSelfzap",
+          "Subclass": "Selfzap"
+        },
+        "ChannelMoveSpeed": -1,
+        "CurrentHealthPercentDamage": 15,
+        "IsDisabled": false,
+        "Key": "ability_frank_selfzap",
+        "Name": "Jumpstart",
+        "TotalHealthRegen": {
+          "Value": 100,
+          "Scale": {
+            "Value": 1.2,
+            "Type": "spirit"
+          }
+        },
+        "Upgrades": [
+          {
+            "BonusMoveSpeed": 3
+          },
+          {
+            "TotalHealthRegen": 70,
+            "AbilityCooldown": -8
+          },
+          {
+            "AbilityCharges": 1,
+            "TotalHealthRegen": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.9,
+                "Type": "spirit"
+              }
+            },
+            "StatusResistancePercent": 50
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_frank_selfzap",
+        "Name": "Jumpstart",
+        "DescKey": "ability_frank_selfzap_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "CurrentHealthPercentDamage",
+                "Name": "Current Health",
+                "Value": 15,
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Buff:",
+                "Key": "TotalHealthRegen",
+                "Name": "Total HP Regen",
+                "Value": 100,
+                "Scale": {
+                  "Value": 1.2,
+                  "Type": "spirit"
+                },
+                "Type": "healing"
+              },
+              {
+                "Title": "On Buff:",
+                "Key": "BonusMoveSpeed",
+                "Name": "Move Speed",
+                "Value": 3,
+                "Type": "move_speed"
+              },
+              {
+                "Title": "On Buff:",
+                "Key": "StatusResistancePercent",
+                "Name": "Debuff Resist",
+                "Value": 0,
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_frank_selfzap_desc"
+        },
+        "Upgrades": [
+          {
+            "BonusMoveSpeed": 3
+          },
+          {
+            "TotalHealthRegen": 70,
+            "AbilityCooldown": -8,
+            "DescKey": "ability_frank_selfzap_t2_desc"
+          },
+          {
+            "AbilityCharges": 1,
+            "TotalHealthRegen": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.9,
+                "Type": "spirit"
+              }
+            },
+            "StatusResistancePercent": 50,
+            "DescKey": "ability_frank_selfzap_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 0.35,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 4.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_frank_selfzap_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Deal {g:citadel_inline_attribute:'SpiritDamage'} to yourself. Then, gain bonus {g:citadel_inline_attribute:'Regen'} and {g:citadel_inline_attribute:'BonusMoveSpeed'}, decaying over time.",
+          "plain_text": "Deal spirit damage to yourself. Then, gain bonus regeneration and bonus move speed, decaying over time."
+        },
+        {
+          "localization_key": "ability_frank_selfzap_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+70</span> Total HP Regen and <span class=\"highlight\">-8s</span> Cooldown",
+          "plain_text": "+70 Total HP Regen and -8s Cooldown"
+        },
+        {
+          "localization_key": "ability_frank_selfzap_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+1</span> Charge<br>+50%</span> Debuff Resistance<br>Increases spirit scaling",
+          "plain_text": "+1 Charge\n+50% Debuff Resistance\nIncreases spirit scaling"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Aura of Suffering",
+      "internal_key": "ability_frank_painaura",
+      "data": {
+        "AbilityCooldown": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": 8,
+        "AbilityUnitTargetLimit": 1,
+        "AuraModifier": {
+          "Class": "FrankPainaura",
+          "Subclass": "Painaura",
+          "DebuffModifier": {
+            "Class": "FrankPainauraTarget",
+            "Subclass": "Painauradebuff"
+          }
+        },
+        "AuraOffModifier": {
+          "Class": "Base",
+          "Subclass": "Auraoff"
+        },
+        "BehaviourBits": [
+          "BehaviorStartCooldownOnToggleOff",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDoNotAllowSpamProc",
+          "BehaviorCanCastOnZipline"
+        ],
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 0,
+          "Scale": {
+            "Value": 1.1,
+            "Type": "spirit"
+          }
+        },
+        "DebuffDuration": 0.5,
+        "IsDisabled": false,
+        "Key": "ability_frank_painaura",
+        "MaxDPS": {
+          "Value": 58,
+          "Scale": {
+            "Value": 0.72,
+            "Type": "spirit"
+          }
+        },
+        "MinDPS": {
+          "Value": 13,
+          "Scale": {
+            "Value": 0.15,
+            "Type": "spirit"
+          }
+        },
+        "Name": "Aura of Suffering",
+        "Radius": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "SelfDPS": 15,
+        "SelfDamagePercentage": 70,
+        "TickRate": 0.25,
+        "ToggleOffDelay": 0.5,
+        "Upgrades": [
+          {
+            "SlowPercent": 25,
+            "EnemyDashSlowPercent": -25,
+            "DebuffDuration": 0.5
+          },
+          {
+            "MinDps": 6,
+            "MaxDPS": 34
+          },
+          {
+            "IncomingDamagePercent": 15,
+            "Radius": 1
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_frank_painaura",
+        "Name": "Aura of Suffering",
+        "DescKey": "ability_frank_painaura_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "MinDPS",
+                "Name": "Minimum DPS",
+                "Value": 13,
+                "Scale": {
+                  "Value": 0.15,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "MaxDPS",
+                "Name": "Max DPS",
+                "Value": 58,
+                "Scale": {
+                  "Value": 0.72,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Enemy Hit:",
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 0,
+                "Type": "slow"
+              },
+              {
+                "Title": "On Enemy Hit:",
+                "Key": "OutgoingDamagePercent",
+                "Name": "Damage",
+                "Value": 0,
+                "Type": "damage"
+              },
+              {
+                "Title": "On Enemy Hit:",
+                "Key": "IncomingDamagePercent",
+                "Name": "Damage Taken",
+                "Value": 0,
+                "Type": "health"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "SelfDamagePercentage",
+              "Name": "Self Damage",
+              "Value": 70,
+              "Type": "damage"
+            },
+            {
+              "Key": "StatusResistancePercent",
+              "Name": "Debuff Resist",
+              "Value": 0,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_frank_painaura_desc"
+        },
+        "Upgrades": [
+          {
+            "SlowPercent": 25,
+            "EnemyDashSlowPercent": -25,
+            "DebuffDuration": 0.5,
+            "DescKey": "ability_frank_painaura_t1_desc"
+          },
+          {
+            "MinDps": 6,
+            "MaxDPS": 34,
+            "DescKey": "ability_frank_painaura_t2_desc"
+          },
+          {
+            "IncomingDamagePercent": 15,
+            "Radius": 1,
+            "DescKey": "ability_frank_painaura_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Damage": {
+          "Damage": {
+            "Name": "Damage",
+            "Value": 0,
+            "Scale": {
+              "Value": 1.1,
+              "Type": "spirit"
+            },
+            "Type": "tech_damage"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "DebuffDuration": {
+            "Name": "Debuff Duration",
+            "Value": 0.5
+          },
+          "SelfDPS": {
+            "Name": null,
+            "Value": 15
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.25
+          },
+          "ToggleOffDelay": {
+            "Name": null,
+            "Value": 0.5
+          }
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 8,
+          "Type": "duration"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_frank_painaura_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Unleash pain, dealing {g:citadel_inline_attribute:'SpiritDPS'} to both enemies and yourself. <br><br>The damage <span class=\"highlight\">continues to increase</span> the longer the ability is channeled, up to a maximum amount.",
+          "plain_text": "Unleash pain, dealing spirit damage over time to both enemies and yourself.\nThe damage continues to increase the longer the ability is channeled, up to a maximum amount."
+        },
+        {
+          "localization_key": "ability_frank_painaura_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Enemies receive <span class=\"highlight\">25%</span> Move and Dash Slow",
+          "plain_text": "Enemies receive 25% Move and Dash Slow"
+        },
+        {
+          "localization_key": "ability_frank_painaura_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+6</span> Min DPS and <span class=\"highlight\">+34</span> Max DPS",
+          "plain_text": "+6 Min DPS and +34 Max DPS"
+        },
+        {
+          "localization_key": "ability_frank_painaura_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+1m</span> Radius<br>Enemies take <span class=\"highlight\">+15%</span> Damage",
+          "plain_text": "+1m Radius\nEnemies take +15% Damage"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Shocking Reanimation",
+      "internal_key": "ability_frank_revive",
+      "data": {
+        "AbilityChannelTime": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 240,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityPostCastDuration": 0.66,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorCastEvenIfBusyAndExclusive",
+          "BehaviorChannelled",
+          "BehaviorCastableWhileBusy",
+          "BehaviorNotSilencable",
+          "BehaviorNoTarget",
+          "BehaviorCastableWhileCmdRestricted",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCanCastWhileDead"
+        ],
+        "BonusDamagePerBullet": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0,
+            "Type": "spirit"
+          }
+        },
+        "BuffModifier": {
+          "Class": "Base",
+          "Subclass": "Selfbuff"
+        },
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 200,
+          "Scale": {
+            "Value": 2,
+            "Type": "spirit"
+          }
+        },
+        "DashSlowModifier": {
+          "Class": "Base",
+          "Subclass": "Dashslow"
+        },
+        "EnemyDashSlowPercent": -30,
+        "HalfHeight": {
+          "Value": 15,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "InitialDelay": 0.5,
+        "IsDisabled": false,
+        "Key": "ability_frank_revive",
+        "Name": "Shocking Reanimation",
+        "Radius": {
+          "Value": 18,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "RespawnDelay": 3,
+        "RespawnHealthPercent": 50,
+        "RevivingModifier": {
+          "Class": "FrankReviving",
+          "Subclass": "Reviving",
+          "EnabledStateMask": [
+            "Invulnerable",
+            "HideCrosshair",
+            "HideStamina",
+            "HideAmmo"
+          ]
+        },
+        "SlowDuration": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "SlowModifier": {
+          "Class": "DiminishingSlow",
+          "Subclass": "Slow"
+        },
+        "SlowPercent": 120,
+        "StunDuration": {
+          "Value": 1.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "Upgrades": [
+          {
+            "BonusDamagePerBullet": {
+              "Value": 6,
+              "Scale": {
+                "Value": 0.06,
+                "Type": "spirit"
+              }
+            },
+            "BonusFireRate": 15
+          },
+          {
+            "RespawnHealthPercent": 50
+          },
+          {
+            "Damage": 175,
+            "StunDuration": 1.5,
+            "AbilityCooldown": -95
+          }
+        ],
+        "ZombieModifier": {
+          "Class": "FrankZombie",
+          "Subclass": "Zombie"
+        },
+        "ZombieTickRate": 0.02
+      },
+      "card": {
+        "Key": "ability_frank_revive",
+        "Name": "Shocking Reanimation",
+        "DescKey": "ability_frank_revive_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "RespawnHealthPercent",
+                "Name": "Rebirth Health",
+                "Value": 50,
+                "Type": "healing"
+              },
+              {
+                "Title": "On Revive:",
+                "Key": "CombatBarrier",
+                "Name": "Barrier",
+                "Value": 0,
+                "Type": "tech_armor_up"
+              },
+              {
+                "Title": "On Revive:",
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 200,
+                "Scale": {
+                  "Value": 2,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Revive:",
+                "Key": "StunDuration",
+                "Name": "Stun Duration",
+                "StatusEffect": "Stun",
+                "Value": 1.5,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                }
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "BulletResist",
+              "Name": "Bullet Resist",
+              "Value": 0,
+              "Type": "bullet_armor_up"
+            },
+            {
+              "Key": "TechResist",
+              "Name": "Spirit Resist",
+              "Value": 0,
+              "Type": "tech_armor_up"
+            },
+            {
+              "Key": "BonusDamagePerBullet",
+              "Name": "Damage per Bullet",
+              "Value": 0,
+              "Scale": {
+                "Value": 0,
+                "Type": "spirit"
+              },
+              "Type": "tech_damage"
+            },
+            {
+              "Key": "BonusFireRate",
+              "Name": "Fire Rate",
+              "Value": 0,
+              "Type": "fire_rate"
+            },
+            {
+              "Key": "SlowPercent",
+              "Name": "Move Speed",
+              "Value": 120,
+              "Type": "slow"
+            },
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 3,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              }
+            }
+          ],
+          "DescKey": "ability_frank_revive_desc"
+        },
+        "Upgrades": [
+          {
+            "BonusDamagePerBullet": {
+              "Value": 6,
+              "Scale": {
+                "Value": 0.06,
+                "Type": "spirit"
+              }
+            },
+            "BonusFireRate": 15,
+            "DescKey": "ability_frank_revive_t1_desc"
+          },
+          {
+            "RespawnHealthPercent": 50
+          },
+          {
+            "Damage": 175,
+            "StunDuration": 1.5,
+            "AbilityCooldown": -95,
+            "DescKey": "ability_frank_revive_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Debuff": {
+          "EnemyDashSlowPercent": {
+            "Name": null,
+            "Value": -30,
+            "Type": "slow"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.66
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "HalfHeight": {
+            "Name": null,
+            "Value": 15,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            }
+          },
+          "InitialDelay": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "RespawnDelay": {
+            "Name": null,
+            "Value": 3
+          },
+          "ZombieTickRate": {
+            "Name": null,
+            "Value": 0.02
+          }
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 240,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 18,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_frank_revive_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Release a wave after taking lethal damage, applying a diminishing {g:citadel_inline_attribute:'Slow'}. <br><br>After a brief channel you reanimate, dealing {g:citadel_inline_attribute:'SpiritDamage'} and applying {g:citadel_inline_attribute:'Stun'} to nearby enemies.",
+          "plain_text": "Release a wave after taking lethal damage, applying a diminishing slow.\nAfter a brief channel you reanimate, dealing spirit damage and applying stun to nearby enemies."
+        },
+        {
+          "localization_key": "ability_frank_revive_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "While On Cooldown: Gain <span class=\"highlight\">+15%</span> Fire Rate and <span class=\"highlight\">6</span> Spirit Damage per Bullet",
+          "plain_text": "While On Cooldown: Gain +15% Fire Rate and 6 Spirit Damage per Bullet"
+        },
+        {
+          "localization_key": "ability_frank_revive_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+175</span> Damage<br><span class=\"highlight\">+1.5</span> Stun <br><span class=\"highlight\">-95s</span> Cooldown",
+          "plain_text": "+175 Damage\n+1.5 Stun\n-95s Cooldown"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.51,
+    "AirDashSpeed": 15.7,
+    "BaseHealthRegen": 1.5,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.72,
+    "GroundDashSpeed": 13.9,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.26,
+      "MaxHealth": 34,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 1.5205,
+      "SustainedDPS": 0.95941
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_frank_lore",
+    "MaxHealth": 800,
+    "MaxMoveSpeed": 6.3,
+    "MoveAcceleration": 4,
+    "Name": "Victor",
+    "Playstyle": "hero_frank_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_frank_role",
+    "SpiritScaling": {
+      "BaseHealthRegen": 0.08
+    },
+    "SprintSpeed": 1.1,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "TechResist": 0,
+    "Type": "Brawler",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

@@ -1,0 +1,504 @@
+{
+  "schema_version": 1,
+  "id": "item.ricochet",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Ricochet",
+    "numeric_id": 2480592370,
+    "internal_key": "upgrade_ricochet",
+    "aliases": [
+      "upgrade_ricochet"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "weapon",
+    "tier": 4,
+    "activation": "passive",
+    "is_active_item": false,
+    "is_imbue": false,
+    "shop_filters": [
+      "ClipSize"
+    ],
+    "target_types": [
+      "HeroEnemy",
+      "BossEnemy",
+      "TrooperEnemy",
+      "PropEnemy",
+      "MinionEnemy",
+      "Neutral"
+    ]
+  },
+  "purchase": {
+    "cost_souls": 6400,
+    "component_internal_keys": []
+  },
+  "description_plain": "Your bullets will ricochet on enemies near your target, applying any bullet procs and dealing a percentage of the original damage.",
+  "displayed_effects": [
+    {
+      "section": "innate",
+      "importance": "elevated",
+      "key": "BonusFireRate",
+      "label": "Fire Rate",
+      "value": "18%",
+      "property": {
+        "value": "18",
+        "provided_property_type": "MODIFIER_VALUE_FIRE_RATE",
+        "prefix": "{s:sign}",
+        "label": "Fire Rate",
+        "postfix": "%",
+        "postvalue_label": "Fire Rate",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": true,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "other",
+      "importance": "normal",
+      "key": "RicochetTargetsTooltipOnly",
+      "label": "Ricochet Targets",
+      "value": "2",
+      "property": {
+        "value": "2",
+        "label": "Ricochet Targets",
+        "postvalue_label": "Ricochet Targets",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "other",
+      "importance": "normal",
+      "key": "RicochetRadius",
+      "label": "Ricochet Range",
+      "value": "13m",
+      "property": {
+        "value": "13m",
+        "css_class": "distance",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "RicochetRadius_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Ricochet Range",
+        "postfix": "m",
+        "postvalue_label": "Ricochet Range",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "other",
+      "importance": "important",
+      "key": "RicochetDamagePercent",
+      "label": "Ricochet Damage",
+      "value": "65%",
+      "property": {
+        "value": "65",
+        "css_class": "bullet_damage",
+        "label": "Ricochet Damage",
+        "postfix": "%",
+        "postvalue_label": "Ricochet Damage",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "RicochetDamagePercent",
+          "bonus": "15"
+        },
+        {
+          "name": "BonusFireRate",
+          "bonus": "25"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 2480592370,
+    "class_name": "upgrade_ricochet",
+    "name": "Ricochet",
+    "start_trained": true,
+    "heroes": [],
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "weapon",
+    "item_tier": 4,
+    "properties": {
+      "AbilityCooldown": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown"
+      },
+      "AbilityDuration": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration"
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "RicochetDamagePercent": {
+        "value": "65",
+        "css_class": "bullet_damage",
+        "label": "Ricochet Damage",
+        "postfix": "%",
+        "postvalue_label": "Ricochet Damage",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "RicochetRadius": {
+        "value": "13m",
+        "css_class": "distance",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "RicochetRadius_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Ricochet Range",
+        "postfix": "m",
+        "postvalue_label": "Ricochet Range",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "RicochetTargetsTooltipOnly": {
+        "value": "2",
+        "label": "Ricochet Targets",
+        "postvalue_label": "Ricochet Targets",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "BonusFireRate": {
+        "value": "18",
+        "provided_property_type": "MODIFIER_VALUE_FIRE_RATE",
+        "prefix": "{s:sign}",
+        "label": "Fire Rate",
+        "postfix": "%",
+        "postvalue_label": "Fire Rate",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": true,
+        "tooltip_is_important": false
+      }
+    },
+    "description": {
+      "desc": "Your bullets will <span class=\"highlight\">ricochet</span> on enemies near your target, <span class=\"highlight\">applying any bullet procs</span> and <span class=\"highlight\">dealing a percentage of the original damage.</span>"
+    },
+    "activation": "passive",
+    "tooltip_sections": [
+      {
+        "section_type": "innate",
+        "section_attributes": [
+          {
+            "properties": [],
+            "elevated_properties": [
+              "BonusFireRate"
+            ]
+          }
+        ]
+      },
+      {
+        "section_attributes": [
+          {
+            "loc_string": "Your bullets will <span class=\"highlight\">ricochet</span> on enemies near your target, <span class=\"highlight\">applying any bullet procs</span> and <span class=\"highlight\">dealing a percentage of the original damage.</span>",
+            "properties": [
+              "RicochetTargetsTooltipOnly",
+              "RicochetRadius"
+            ],
+            "important_properties": [
+              "RicochetDamagePercent"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "RicochetDamagePercent",
+            "bonus": "15"
+          },
+          {
+            "name": "BonusFireRate",
+            "bonus": "25"
+          }
+        ]
+      }
+    ],
+    "is_active_item": false,
+    "shopable": true,
+    "cost": 6400
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Ricochet",
+    "Description": "Your bullets will <span class=\"highlight\">ricochet</span> on enemies near your target, <span class=\"highlight\">applying any bullet procs</span> and <span class=\"highlight\">dealing a percentage of the original damage.</span>",
+    "Cost": 6400,
+    "Tier": 4,
+    "Activation": "Passive",
+    "Slot": "Weapon",
+    "Components": null,
+    "TargetTypes": [
+      "HeroEnemy",
+      "BossEnemy",
+      "TrooperEnemy",
+      "PropEnemy",
+      "MinionEnemy",
+      "Neutral"
+    ],
+    "ShopFilters": [
+      "ClipSize"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "RicochetDamagePercent": 65,
+    "RicochetRadius": "13m",
+    "RicochetTargetsTooltipOnly": 2,
+    "BonusFireRate": 18,
+    "PropertyUpgrades": {
+      "RicochetDamagePercent": 15,
+      "BonusFireRate": 25
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_ricochet",
+    "Name": "Ricochet",
+    "Description": "Your bullets will <span class=\"highlight\">ricochet</span> on enemies near your target, <span class=\"highlight\">applying any bullet procs</span> and <span class=\"highlight\">dealing a percentage of the original damage.</span>",
+    "Cost": 6400,
+    "Tier": 4,
+    "Slot": "Weapon",
+    "Activation": "Passive",
+    "Components": null,
+    "TargetTypes": [
+      "HeroEnemy",
+      "BossEnemy",
+      "TrooperEnemy",
+      "PropEnemy",
+      "MinionEnemy",
+      "Neutral"
+    ],
+    "ShopFilters": [
+      "ClipSize"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Innate",
+      "DescKey": null,
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "BonusFireRate",
+          "Value": 18
+        }
+      ],
+      "Alt": []
+    },
+    "Info2": {
+      "Type": null,
+      "DescKey": "#upgrade_ricochet_desc",
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "RicochetDamagePercent",
+          "Value": 65,
+          "Type": "bullet_damage"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "RicochetTargetsTooltipOnly",
+          "Value": 2
+        },
+        {
+          "Key": "RicochetRadius",
+          "Value": "13m",
+          "Type": "distance"
+        }
+      ]
+    },
+    "Upgrades": {
+      "RicochetDamagePercent": 15,
+      "BonusFireRate": 25
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

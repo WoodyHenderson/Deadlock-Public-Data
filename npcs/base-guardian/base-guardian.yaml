@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "npc.base-guardian",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-04",
+  "evidence_status": "source_verified",
+  "sources": [
+    "deadlock-api.npc-units.client-6684.source-10933105",
+    "github.deadlock-data.npcs.311b2e8d895e",
+    "wiki.base-guardian.123836"
+  ],
+  "identity": {
+    "name": "Base Guardian",
+    "aliases": [
+      "Shrine Guardian",
+      "Watcher"
+    ],
+    "internal_class": "npc_barrack_boss",
+    "numeric_id": 2458524739
+  },
+  "classification": {
+    "kind": "structure",
+    "mode": "standard"
+  },
+  "units": {
+    "distance": "meters",
+    "time": "seconds",
+    "speed": "meters_per_second",
+    "percentage": "percentage_points"
+  },
+  "field_sources": {
+    "numeric_id": "deadlock-api.npc-units.client-6684.source-10933105:npc_barrack_boss.id",
+    "gameplay_values": "github.deadlock-data.npcs.311b2e8d895e:npc_barrack_boss",
+    "behavior_context": "wiki.base-guardian.123836"
+  },
+  "combat": {
+    "base_max_health": 4000,
+    "bullet_resistance_percent": 20,
+    "spirit_resistance_percent": 0.0
+  },
+  "objective_order_ref": "general.map.objectives-and-structures",
+  "economy_ref": "data.general.economy:bounties",
+  "structure_role": "base_entrance_defense",
+  "sets_per_team": 3,
+  "units_per_set": 2,
+  "attacks": {
+    "beam_dps_vs_players": 116.0,
+    "beam_damage_type": "weapon",
+    "melee_is_parryable": false
+  },
+  "player_bullet_resistance_percent": -25.0,
+  "nearby_enemy_bullet_resistance": {
+    "base_percent": 40,
+    "reduction_per_enemy_hero": 20,
+    "minimum_percent": 0
+  },
+  "backdoor_protection": {
+    "damage_resistance_percent": 65.0,
+    "health_regen_per_second": 65.0
+  },
+  "on_destroyed": {
+    "speeds_attacking_team_zipline_in_lane": true
+  }
+}

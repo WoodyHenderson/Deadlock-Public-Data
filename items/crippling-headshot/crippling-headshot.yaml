@@ -1,0 +1,630 @@
+{
+  "schema_version": 1,
+  "id": "item.crippling-headshot",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Crippling Headshot",
+    "numeric_id": 3884003354,
+    "internal_key": "upgrade_banshee_slugs",
+    "aliases": [
+      "upgrade_banshee_slugs"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "weapon",
+    "tier": 4,
+    "activation": "passive",
+    "is_active_item": false,
+    "is_imbue": false,
+    "shop_filters": [
+      "WeaponDamage",
+      "Disruption"
+    ],
+    "target_types": null
+  },
+  "purchase": {
+    "cost_souls": 6400,
+    "component_internal_keys": [
+      "upgrade_headshot_booster2"
+    ]
+  },
+  "description_plain": "Landing a Headshot will reduce their Bullet and Spirit Resist and applies Healing Reduction.",
+  "displayed_effects": [
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "BonusHealth",
+      "label": "Bonus Health",
+      "value": "125",
+      "property": {
+        "value": "125",
+        "provided_property_type": "MODIFIER_VALUE_HEALTH_MAX",
+        "css_class": "health",
+        "prefix": "{s:sign}",
+        "label": "Bonus Health",
+        "postvalue_label": "Bonus Health",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "DebuffDuration",
+      "label": "Debuff Duration",
+      "value": "12s",
+      "property": {
+        "value": "12",
+        "css_class": "duration",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "duration_scale_function"
+        },
+        "label": "Debuff Duration",
+        "postfix": "s",
+        "postvalue_label": "Debuff Duration",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "important",
+      "key": "BulletResistReduction",
+      "label": "Bullet Resist",
+      "value": "-16%",
+      "property": {
+        "value": "-16",
+        "provided_property_type": "MODIFIER_VALUE_BULLET_AND_MELEE_RESIST_REDUCTION",
+        "css_class": "bullet_armor_down",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "label": "Bullet Resist",
+        "postfix": "%",
+        "postvalue_label": "Bullet Resist",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "important",
+      "key": "MagicResistReduction",
+      "label": "Spirit Resist",
+      "value": "-16%",
+      "property": {
+        "value": "-16",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RESIST_REDUCTION",
+        "css_class": "tech_armor_down",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "label": "Spirit Resist",
+        "postfix": "%",
+        "postvalue_label": "Spirit Resist",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "important",
+      "key": "HealAmpRegenPenaltyPercent",
+      "label": "Healing Reduction",
+      "value": "-35%",
+      "property": {
+        "value": "-35",
+        "provided_property_type": "MODIFIER_VALUE_HEAL_AMP_REGEN_PERCENT",
+        "css_class": "damage",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "label": "Healing Reduction",
+        "postfix": "%",
+        "postvalue_label": "Healing Reduction",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "MagicResistReduction",
+          "bonus": "-12"
+        },
+        {
+          "name": "BulletResistReduction",
+          "bonus": "-12"
+        },
+        {
+          "name": "HealAmpReceivePenaltyPercent",
+          "bonus": "-25"
+        },
+        {
+          "name": "HealAmpRegenPenaltyPercent",
+          "bonus": "-25"
+        },
+        {
+          "name": "BonusHealth",
+          "bonus": "150"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 3884003354,
+    "class_name": "upgrade_banshee_slugs",
+    "name": "Crippling Headshot",
+    "start_trained": true,
+    "heroes": [],
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "weapon",
+    "item_tier": 4,
+    "properties": {
+      "AbilityCooldown": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown"
+      },
+      "AbilityDuration": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration"
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "BonusHealth": {
+        "value": "125",
+        "provided_property_type": "MODIFIER_VALUE_HEALTH_MAX",
+        "css_class": "health",
+        "prefix": "{s:sign}",
+        "label": "Bonus Health",
+        "postvalue_label": "Bonus Health",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "BulletResistReduction": {
+        "value": "-16",
+        "provided_property_type": "MODIFIER_VALUE_BULLET_AND_MELEE_RESIST_REDUCTION",
+        "css_class": "bullet_armor_down",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "label": "Bullet Resist",
+        "postfix": "%",
+        "postvalue_label": "Bullet Resist",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "MagicResistReduction": {
+        "value": "-16",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RESIST_REDUCTION",
+        "css_class": "tech_armor_down",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "label": "Spirit Resist",
+        "postfix": "%",
+        "postvalue_label": "Spirit Resist",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "HealAmpReceivePenaltyPercent": {
+        "value": "-35",
+        "provided_property_type": "MODIFIER_VALUE_HEAL_AMP_RECEIVE_PERCENT",
+        "css_class": "damage",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "",
+        "label": "Healing Reduction",
+        "postfix": "%",
+        "postvalue_label": "Healing Reduction"
+      },
+      "HealAmpRegenPenaltyPercent": {
+        "value": "-35",
+        "provided_property_type": "MODIFIER_VALUE_HEAL_AMP_REGEN_PERCENT",
+        "css_class": "damage",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "label": "Healing Reduction",
+        "postfix": "%",
+        "postvalue_label": "Healing Reduction",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "DebuffDuration": {
+        "value": "12",
+        "css_class": "duration",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "duration_scale_function"
+        },
+        "label": "Debuff Duration",
+        "postfix": "s",
+        "postvalue_label": "Debuff Duration",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "DiminishingMultiplier": {
+        "value": "0.5"
+      },
+      "HeadShotBonusDamage": {
+        "value": "0",
+        "css_class": "bullet_damage",
+        "prefix": "{s:sign}",
+        "label": "Head Shot Bonus Damage",
+        "postvalue_label": "Head Shot Bonus Damage"
+      }
+    },
+    "description": {
+      "desc": "Landing a <span class=\"highlight\">Headshot</span> will reduce their <span class=\"highlight\">Bullet and Spirit Resist</span> and applies <span class=\"highlight\">Healing Reduction</span>."
+    },
+    "activation": "passive",
+    "component_items": [
+      "upgrade_headshot_booster2"
+    ],
+    "tooltip_sections": [
+      {
+        "section_type": "innate",
+        "section_attributes": [
+          {
+            "properties": [
+              "BonusHealth"
+            ]
+          }
+        ]
+      },
+      {
+        "section_type": "passive",
+        "section_attributes": [
+          {
+            "loc_string": "Landing a <span class=\"highlight\">Headshot</span> will reduce their <span class=\"highlight\">Bullet and Spirit Resist</span> and applies <span class=\"highlight\">Healing Reduction</span>.",
+            "properties": [
+              "DebuffDuration"
+            ],
+            "important_properties": [
+              "BulletResistReduction",
+              "MagicResistReduction",
+              "HealAmpRegenPenaltyPercent"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "MagicResistReduction",
+            "bonus": "-12"
+          },
+          {
+            "name": "BulletResistReduction",
+            "bonus": "-12"
+          },
+          {
+            "name": "HealAmpReceivePenaltyPercent",
+            "bonus": "-25"
+          },
+          {
+            "name": "HealAmpRegenPenaltyPercent",
+            "bonus": "-25"
+          },
+          {
+            "name": "BonusHealth",
+            "bonus": "150"
+          }
+        ]
+      }
+    ],
+    "is_active_item": false,
+    "shopable": true,
+    "cost": 6400
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Crippling Headshot",
+    "Description": null,
+    "Cost": 6400,
+    "Tier": 4,
+    "Activation": "Passive",
+    "Slot": "Weapon",
+    "Components": [
+      "upgrade_headshot_booster2"
+    ],
+    "TargetTypes": null,
+    "ShopFilters": [
+      "WeaponDamage",
+      "Disruption"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "BonusHealth": 125,
+    "BulletResistReduction": -16,
+    "MagicResistReduction": -16,
+    "HealAmpReceivePenaltyPercent": -35,
+    "HealAmpRegenPenaltyPercent": -35,
+    "DebuffDuration": 12,
+    "DiminishingMultiplier": 0.5,
+    "PropertyUpgrades": {
+      "MagicResistReduction": -12,
+      "BulletResistReduction": -12,
+      "HealAmpReceivePenaltyPercent": -25,
+      "HealAmpRegenPenaltyPercent": -25,
+      "BonusHealth": 150
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_banshee_slugs",
+    "Name": "Crippling Headshot",
+    "Description": null,
+    "Cost": 6400,
+    "Tier": 4,
+    "Slot": "Weapon",
+    "Activation": "Passive",
+    "Components": [
+      "upgrade_headshot_booster2"
+    ],
+    "TargetTypes": null,
+    "ShopFilters": [
+      "WeaponDamage",
+      "Disruption"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Innate",
+      "DescKey": null,
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [],
+      "Alt": [
+        {
+          "Key": "BonusHealth",
+          "Value": 125,
+          "Type": "health"
+        }
+      ]
+    },
+    "Info2": {
+      "Type": "Passive",
+      "DescKey": "#upgrade_banshee_slugs_headshots_desc",
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "BulletResistReduction",
+          "Value": -16,
+          "Type": "bullet_armor_down",
+          "UsageFlags": "ConditionallyApplied"
+        },
+        {
+          "Key": "MagicResistReduction",
+          "Value": -16,
+          "Type": "tech_armor_down",
+          "UsageFlags": "ConditionallyApplied"
+        },
+        {
+          "Key": "HealAmpRegenPenaltyPercent",
+          "Value": -35,
+          "Type": "damage",
+          "UsageFlags": "ConditionallyApplied"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "DebuffDuration",
+          "Value": 12,
+          "Type": "duration"
+        }
+      ]
+    },
+    "Upgrades": {
+      "MagicResistReduction": -12,
+      "BulletResistReduction": -12,
+      "HealAmpReceivePenaltyPercent": -25,
+      "HealAmpRegenPenaltyPercent": -25,
+      "BonusHealth": 150
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      },
+      "HealAmpReceivePenaltyPercent": {
+        "Key": "HealAmpReceivePenaltyPercent",
+        "Value": -35,
+        "Type": "damage",
+        "UsageFlags": "ConditionallyApplied"
+      },
+      "DiminishingMultiplier": {
+        "Key": "DiminishingMultiplier",
+        "Value": 0.5
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

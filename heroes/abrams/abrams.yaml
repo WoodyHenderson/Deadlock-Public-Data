@@ -1,0 +1,1114 @@
+{
+  "schema_version": 2,
+  "id": "hero.abrams",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.abrams.125768",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Abrams",
+  "aliases": [],
+  "internal_hero_key": "hero_atlas",
+  "hero_type": "Brawler",
+  "role_localization_key": "hero_atlas_role",
+  "playstyle_localization_key": "hero_atlas_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 800,
+    "health_regeneration_per_second": 1.5,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.4,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 13.9,
+      "distance_meters": 10,
+      "duration_seconds": 0.72
+    },
+    "air_dash": {
+      "speed_meters_per_second": 15.7,
+      "distance_meters": 8,
+      "duration_seconds": 0.51
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.1,
+    "MaxHealth": 49,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.738,
+    "HeavyMeleeDamage": 4.0322,
+    "DPS": 1.4286,
+    "SustainedDPS": 0.84839
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 609.6,
+    "BulletDamage": 3.6,
+    "RoundsPerSecond": 1.5873,
+    "ClipSize": 9,
+    "ReloadTime": 0.3525,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0.705,
+    "ReloadSingle": true,
+    "FalloffStartRange": 17,
+    "FalloffEndRange": 40,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.8,
+    "BulletRadius": 0.0762,
+    "BulletsPerShot": 9,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 51.429,
+    "SustainedDPS": 30.542,
+    "NameKey": "citadel_weapon_hero_atlas_set",
+    "DescKey": "citadel_weapon_hero_atlas_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_Spreadshot",
+      "Attribute_EWeaponAttribute_CloseRange"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Siphon Life",
+      "internal_key": "citadel_ability_bull_heal",
+      "data": {
+        "AbilityCooldown": {
+          "Value": 42,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AuraModifier": {
+          "Class": "BullHealAura",
+          "Subclass": "BullHealAura",
+          "ProvidedByAura": {
+            "Class": "BullHealTarget",
+            "Subclass": "BullHealTarget"
+          },
+          "AuraRadius": 0
+        },
+        "BehaviourBits": [
+          "BehaviorCastableWhileBusy",
+          "BehaviorNoTarget"
+        ],
+        "ChannelMoveSpeed": -1,
+        "DPS": {
+          "Value": 22,
+          "Scale": {
+            "Value": 0.6,
+            "Type": "spirit"
+          }
+        },
+        "HealingFactor": {
+          "Value": 70,
+          "Scale": {
+            "Value": 1,
+            "Type": "healing"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_bull_heal",
+        "Name": "Siphon Life",
+        "NonHeroHealingFactor": {
+          "Value": 35,
+          "Scale": {
+            "Value": 1,
+            "Type": "healing"
+          }
+        },
+        "Radius": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "TickRate": 0.25,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -20
+          },
+          {
+            "AbilityDuration": 2
+          },
+          {
+            "DPS": {
+              "Value": 18,
+              "Scale": {
+                "Value": 0.12,
+                "Type": "spirit"
+              }
+            },
+            "Radius": 2
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_bull_heal",
+        "Name": "Siphon Life",
+        "DescKey": "citadel_ability_bull_heal_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "DPS",
+                "Name": "Damage Per Second",
+                "Value": 22,
+                "Scale": {
+                  "Value": 0.6,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "AbilityDuration",
+                "Name": "Duration",
+                "Value": 4,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              },
+              {
+                "Title": "On Hit:",
+                "Key": "HealingFactor",
+                "Name": "Lifesteal",
+                "Value": 70,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "healing"
+                },
+                "Type": "healing"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "NonHeroHealingFactor",
+              "Name": "Lifesteal vs Non-Heroes",
+              "Value": 35,
+              "Scale": {
+                "Value": 1,
+                "Type": "healing"
+              },
+              "Type": "healing"
+            }
+          ],
+          "DescKey": "citadel_ability_bull_heal_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -20
+          },
+          {
+            "AbilityDuration": 2
+          },
+          {
+            "DPS": {
+              "Value": 18,
+              "Scale": {
+                "Value": 0.12,
+                "Type": "spirit"
+              }
+            },
+            "Radius": 2,
+            "DescKey": "citadel_ability_bull_heal_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.25
+          }
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 42,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_bull_heal_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Drain health from nearby enemies, dealing {g:citadel_inline_attribute:'SpiritDPS'} and {g:citadel_inline_attribute:'Healing'} for a portion of the damage dealt.",
+          "plain_text": "Drain health from nearby enemies, dealing spirit damage over time and healing for a portion of the damage dealt."
+        },
+        {
+          "localization_key": "citadel_ability_bull_heal_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+2m</span> Radius and <span class=\"highlight\">+18</span> DPS with improved Spirit scaling</span>",
+          "plain_text": "+2m Radius and +18 DPS with improved Spirit scaling"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Shoulder Charge",
+      "internal_key": "citadel_ability_bull_charge",
+      "data": {
+        "AbilityCooldown": {
+          "Value": 33,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 1.4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorDontTriggerPostCastOnCastComplete",
+          "BehaviorMovement",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "CameraTurnRateMax": 200,
+        "ChannelMoveSpeed": -1,
+        "ChargeDragVerticalOffset": 30,
+        "ChargeRadius": 2.2,
+        "ChargeSpeedMax": 30,
+        "CollidePlayersStopTime": 0.3,
+        "Damage": {
+          "Value": 30,
+          "Scale": {
+            "Value": 1.4,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_bull_charge",
+        "ModifierBullCharging": {
+          "Class": "CitadelBullCharging",
+          "Subclass": "CitadelBullCharging",
+          "EnabledStateMask": [
+            "AbilityMovement",
+            "MantleDisabled",
+            "MeleeDisabled",
+            "SlidingDisabled",
+            "DuckingDisabled",
+            "ForceCanParry"
+          ]
+        },
+        "ModifierChargeDragEnemy": {
+          "Class": "ChargeDragEnemy",
+          "Subclass": "ChargeDragEnemy",
+          "EnabledStateMask": [
+            "AbilityMovementDebuff",
+            "IgnorePortals"
+          ],
+          "VerticalOffset": 30,
+          "ForwardOffset": 120
+        },
+        "ModifierTossAirControlLockout": {
+          "Class": "Base",
+          "Subclass": "AirControlLockout",
+          "Duration": 1,
+          "EnabledStateMask": [
+            "MovementAbilityRestricted"
+          ]
+        },
+        "ModifierWeaponPowerIncrease": {
+          "Class": "Base",
+          "Subclass": "ShoulderChargeBuff"
+        },
+        "Name": "Shoulder Charge",
+        "SideMoveSpeedReduction": -65,
+        "SlowModifier": {
+          "Class": "SlowBase",
+          "Subclass": "WallSlamSlow"
+        },
+        "SpeedInitial": 18.75,
+        "StunDuration": {
+          "Value": 0.3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "TossUpMagnitude": 0.5,
+        "TurnRateMax": 140,
+        "Upgrades": [
+          {
+            "SlowPercent": 40,
+            "SlowDuration": 3
+          },
+          {
+            "StunDuration": 0.8
+          },
+          {
+            "AbilityCooldown": -18,
+            "WeaponDamageBonus": 1.5,
+            "WeaponPowerIncreaseDuration": 6
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_bull_charge",
+        "Name": "Shoulder Charge",
+        "DescKey": "citadel_ability_bull_charge_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Hero Collide:",
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 30,
+                "Scale": {
+                  "Value": 1.4,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Hero Collide:",
+                "Key": "WeaponDamageBonus",
+                "Name": "Weapon Damage",
+                "Value": 0,
+                "Type": "bullet_damage"
+              },
+              {
+                "Title": "On Hero Collide:",
+                "Key": "WeaponPowerIncreaseDuration",
+                "Name": "Weapon Damage Duration",
+                "Value": 0,
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "citadel_ability_bull_charge_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Wall Hit:",
+                "Key": "StunDuration",
+                "Name": "Stun Duration",
+                "StatusEffect": "Stun",
+                "Value": 0.3,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              },
+              {
+                "Title": "On Wall Hit:",
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 0,
+                "Type": "slow"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Upgrades": [
+          {
+            "SlowPercent": 40,
+            "SlowDuration": 3,
+            "DescKey": "citadel_ability_bull_charge_t1_desc"
+          },
+          {
+            "StunDuration": 0.8,
+            "DescKey": "citadel_ability_bull_charge_t2_desc"
+          },
+          {
+            "AbilityCooldown": -18,
+            "WeaponDamageBonus": 1.5,
+            "WeaponPowerIncreaseDuration": 6,
+            "DescKey": "citadel_ability_bull_charge_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "CameraTurnRateMax": {
+            "Name": null,
+            "Value": 200
+          },
+          "ChargeDragVerticalOffset": {
+            "Name": null,
+            "Value": 30
+          },
+          "ChargeRadius": {
+            "Name": null,
+            "Value": 2.2
+          },
+          "ChargeSpeedMax": {
+            "Name": null,
+            "Value": 30
+          },
+          "CollidePlayersStopTime": {
+            "Name": null,
+            "Value": 0.3
+          },
+          "SideMoveSpeedReduction": {
+            "Name": null,
+            "Value": -65
+          },
+          "SpeedInitial": {
+            "Name": null,
+            "Value": 18.75
+          },
+          "TossUpMagnitude": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "TurnRateMax": {
+            "Name": null,
+            "Value": 140
+          }
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 33,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 1.4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_bull_charge_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Charge forward, {g:citadel_inline_attribute:'Pulling'} enemies you hit. Pushing a hero into a wall applies {g:citadel_inline_attribute:'Stun'}.<br><span class=\"diminish\">If you collide with a hero you move faster during your charge.</span>",
+          "plain_text": "Charge forward, pulling enemies you hit. Pushing a hero into a wall applies stun.\nIf you collide with a hero you move faster during your charge."
+        },
+        {
+          "localization_key": "citadel_ability_bull_charge_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Applies <span class=\"highlight\">+40%</span> Slow for <span class=\"highlight\">3s</span>",
+          "plain_text": "Applies +40% Slow for 3s"
+        },
+        {
+          "localization_key": "citadel_ability_bull_charge_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On Wall Hit: <span class=\"highlight\">+0.8s</span> Stun Duration",
+          "plain_text": "On Wall Hit: +0.8s Stun Duration"
+        },
+        {
+          "localization_key": "citadel_ability_bull_charge_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-18s</span> Cooldown <br>On Hero Collide: <span class=\"highlight\">+1.5</span> Weapon Damage for <span class=\"highlight\">6</span>s",
+          "plain_text": "-18s Cooldown\nOn Hero Collide: +1.5 Weapon Damage for 6s"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Infernal Resilience",
+      "internal_key": "citadel_ability_passive_beefy",
+      "data": {
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "AutoIntrinsicModifiers": [
+          {
+            "Class": "InfernalResilienceMelee",
+            "Subclass": "InfernalResilienceMelee"
+          },
+          {
+            "Class": "IntrinsicBase",
+            "Subclass": "IntrinsicBase"
+          }
+        ],
+        "BehaviourBits": null,
+        "BonusHealthRegen": 1,
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "citadel_ability_passive_beefy",
+        "Name": "Infernal Resilience",
+        "NonHeroHealPct": 40,
+        "RegenDamageInterval": 1,
+        "RegenIncomingDamageDuration": 20,
+        "RegenIncomingDamagePercent": {
+          "Value": 13,
+          "Scale": {
+            "Value": 1,
+            "Type": "healing"
+          }
+        },
+        "Upgrades": [
+          {
+            "BonusMaxHealth": 200
+          },
+          {
+            "MeleeLifesteal": 18
+          },
+          {
+            "RegenIncomingDamagePercent": 8,
+            "StatusResistancePercent": 20
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_passive_beefy",
+        "Name": "Infernal Resilience",
+        "DescKey": "citadel_ability_passive_beefy_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "Passive:",
+                "Key": "RegenIncomingDamagePercent",
+                "Name": "Damage Regenerated",
+                "Value": 13,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "healing"
+                },
+                "Type": "healing"
+              },
+              {
+                "Title": "Passive:",
+                "Key": "RegenIncomingDamageDuration",
+                "Name": "Regeneration Time",
+                "Value": 20,
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "BonusHealthRegen",
+              "Name": "Health Regen",
+              "Value": 1,
+              "Type": "health"
+            },
+            {
+              "Key": "BonusMaxHealth",
+              "Name": "Max Health",
+              "Value": 0,
+              "Type": "health"
+            },
+            {
+              "Key": "MeleeLifesteal",
+              "Name": "Melee Lifesteal",
+              "Value": 0,
+              "Type": "healing"
+            }
+          ],
+          "DescKey": "citadel_ability_passive_beefy_desc"
+        },
+        "Upgrades": [
+          {
+            "BonusMaxHealth": 200
+          },
+          {
+            "MeleeLifesteal": 18
+          },
+          {
+            "RegenIncomingDamagePercent": 8,
+            "StatusResistancePercent": 20,
+            "DescKey": "citadel_ability_passive_beefy_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "NonHeroHealPct": {
+            "Name": null,
+            "Value": 40
+          },
+          "RegenDamageInterval": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_passive_beefy_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Gain bonus defensive attributes. Taking damage grants temporary {g:citadel_inline_attribute:'Regen'} for a portion of the damage taken.",
+          "plain_text": "Gain bonus defensive attributes. Taking damage grants temporary regeneration for a portion of the damage taken."
+        },
+        {
+          "localization_key": "citadel_ability_passive_beefy_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+20%</span> Debuff Resist and <span class=\"highlight\">+8%</span> Damage Regenerated",
+          "plain_text": "+20% Debuff Resist and +8% Damage Regenerated"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Seismic Impact",
+      "internal_key": "citadel_ability_bull_leap",
+      "data": {
+        "AbilityCooldown": {
+          "Value": 215,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "ActiveModifier": {
+          "Class": "Base",
+          "Subclass": "LeapActive"
+        },
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorMovement",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "BoostModifier": {
+          "Class": "CitadelBullLeapBoosting",
+          "Subclass": "CitadelBullLeapBoosting"
+        },
+        "ChannelMoveSpeed": -1,
+        "CrashModifier": {
+          "Class": "CitadelBullLeapBoostingCrash",
+          "Subclass": "CitadelBullLeapBoostingCrash"
+        },
+        "Damage": {
+          "Value": 100,
+          "Scale": {
+            "Value": 2.325,
+            "Type": "spirit"
+          }
+        },
+        "DragModifier": {
+          "Class": "ChargeDragEnemy",
+          "Subclass": "ChargeDragEnemy",
+          "ForwardOffset": 200,
+          "VerticalOffset": 0
+        },
+        "ImmunityModifier": {
+          "Class": "Unstoppable",
+          "Subclass": "Unstoppable",
+          "EnabledStateMask": [
+            "StatusImmune",
+            "SlowImmune",
+            "KnockdownImmune",
+            "Unstoppable"
+          ],
+          "StatusEffectPriority": 25,
+          "DisabledStateMask": [
+            "Disarmed",
+            "Muted",
+            "Silenced",
+            "SilenceMovementAbilites",
+            "Slowed",
+            "Glitched",
+            "MeleeDisabledDebuff",
+            "DashDisabledDebuff"
+          ]
+        },
+        "ImpactHeight": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "ImpactRadius": {
+          "Value": 9,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_bull_leap",
+        "LandingBonusesModifier": {
+          "Class": "CitadelBullLeapLandingBonuses",
+          "Subclass": "CitadelBullLeapLandingBonuses"
+        },
+        "Name": "Seismic Impact",
+        "StunDuration": {
+          "Value": 1.6,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "TossSpeed": 450,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -30
+          },
+          {
+            "StunDuration": 0.8
+          },
+          {
+            "ImmunityDuration": 6,
+            "ImpactRadius": 6
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_bull_leap",
+        "Name": "Seismic Impact",
+        "DescKey": "citadel_ability_bull_leap_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "ImmunityDuration",
+                "Name": "Immunity Duration",
+                "StatusEffect": "Unstoppable",
+                "Value": 0,
+                "Type": "duration"
+              },
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 100,
+                "Scale": {
+                  "Value": 2.325,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Hit:",
+                "Key": "StunDuration",
+                "Name": "Stun Duration",
+                "StatusEffect": "Stun",
+                "Value": 1.6,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "citadel_ability_bull_leap_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Hero Hit:",
+                "Key": "BonusMaxHealthPerHero",
+                "Name": "Max Health",
+                "Value": 0,
+                "Type": "health"
+              },
+              {
+                "Title": "On Hero Hit:",
+                "Key": "BonusFireRatePerHero",
+                "Name": "Fire Rate",
+                "Value": 0,
+                "Type": "bullet_damage"
+              },
+              {
+                "Title": "On Hero Hit:",
+                "Key": "LandingBonusesDuration",
+                "Name": "Buff Duration",
+                "Value": 0,
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -30
+          },
+          {
+            "StunDuration": 0.8
+          },
+          {
+            "ImmunityDuration": 6,
+            "ImpactRadius": 6,
+            "DescKey": "citadel_ability_bull_leap_t3_desc"
+          }
+        ],
+        "Range": {
+          "ImpactRadius": {
+            "Name": "Impact Radius",
+            "Value": 9,
+            "Scale": {
+              "Value": 1,
+              "Type": "radius"
+            },
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "ImpactHeight": {
+            "Name": null,
+            "Value": 6,
+            "Scale": {
+              "Value": 1,
+              "Type": "radius"
+            }
+          },
+          "TossSpeed": {
+            "Name": null,
+            "Value": 450
+          }
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 215,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_bull_leap_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Leap high into the air before crashing into the ground, dealing {g:citadel_inline_attribute:'SpiritDamage'} and applying {g:citadel_inline_attribute:'Stun'}.",
+          "plain_text": "Leap high into the air before crashing into the ground, dealing spirit damage and applying stun."
+        },
+        {
+          "localization_key": "citadel_ability_bull_leap_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On cast, become <span class=\"highlight\">Unstoppable</span> for 6s and <span class=\"highlight\">+6m</span> Impact Radius",
+          "plain_text": "On cast, become Unstoppable for 6s and +6m Impact Radius"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.51,
+    "AirDashSpeed": 15.7,
+    "BaseHealthRegen": 1.5,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.72,
+    "GroundDashSpeed": 13.9,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.1,
+      "MaxHealth": 49,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.738,
+      "HeavyMeleeDamage": 4.0322,
+      "DPS": 1.4286,
+      "SustainedDPS": 0.84839
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_atlas_lore",
+    "MaxHealth": 800,
+    "MaxMoveSpeed": 6.4,
+    "MoveAcceleration": 4,
+    "Name": "Abrams",
+    "Playstyle": "hero_atlas_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_atlas_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.6,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Brawler",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

@@ -1,0 +1,1331 @@
+{
+  "schema_version": 2,
+  "id": "hero.ivy",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.ivy.124889",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Ivy",
+  "aliases": [],
+  "internal_hero_key": "hero_tengu",
+  "hero_type": "Marksman",
+  "role_localization_key": "hero_tengu_role",
+  "playstyle_localization_key": "hero_tengu_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 755,
+    "health_regeneration_per_second": 2,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 7.2,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 16.1,
+      "distance_meters": 10,
+      "duration_seconds": 0.62
+    },
+    "air_dash": {
+      "speed_meters_per_second": 18.6,
+      "distance_meters": 8,
+      "duration_seconds": 0.43
+    },
+    "stamina": {
+      "charges": 4,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.08,
+    "MaxHealth": 45,
+    "PowerIncreases": 1,
+    "TechPower": 1.2,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 1.0884,
+    "SustainedDPS": 0.54214
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 571.5,
+    "BulletDamage": 4.45,
+    "RoundsPerSecond": 13.605,
+    "ClipSize": 33,
+    "ReloadTime": 2.444,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 57.51,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.8,
+    "BulletRadius": 0.0762,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 60.542,
+    "SustainedDPS": 30.157,
+    "NameKey": "citadel_weapon_hero_tengu_set",
+    "DescKey": "citadel_weapon_hero_tengu_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_RapidFire",
+      "Attribute_EWeaponAttribute_MediumRange"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Entangling Thorns",
+      "internal_key": "citadel_ability_tengu_urn",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCharges": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 32,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityDuration": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AuraModifier": {
+          "Class": "CitadelTenguUrnAura",
+          "Subclass": "UrnAura",
+          "ProvidedByAura": {
+            "Class": "UrnDebuff",
+            "Subclass": "UrnDebuff",
+            "EntangleModifier": {
+              "Class": "CitadelRoot",
+              "Subclass": "Immobilize"
+            }
+          }
+        },
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorProjectileFiredAsBullet",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "DPS": {
+          "Value": 40,
+          "Scale": {
+            "Value": 0.55,
+            "Type": "spirit"
+          }
+        },
+        "Height": 2,
+        "IsDisabled": false,
+        "Key": "citadel_ability_tengu_urn",
+        "Name": "Entangling Thorns",
+        "Radius": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "SlowPercent": 35,
+        "TickRate": 0.25,
+        "Upgrades": [
+          {
+            "AbilityCharges": 1
+          },
+          {
+            "Radius": 2,
+            "DPS": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.5,
+                "Type": "spirit"
+              }
+            }
+          },
+          {
+            "TimeToEntangle": 2,
+            "EntangleDuration": 1.6
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_tengu_urn",
+        "Name": "Entangling Thorns",
+        "DescKey": "citadel_ability_tengu_urn_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "DPS",
+                "Name": "Damage Per Second",
+                "Value": 40,
+                "Scale": {
+                  "Value": 0.55,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 35,
+                "Type": "slow"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "citadel_ability_tengu_urn_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCharges": 1
+          },
+          {
+            "Radius": 2,
+            "DPS": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.5,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "citadel_ability_tengu_urn_t2_desc"
+          },
+          {
+            "TimeToEntangle": 2,
+            "EntangleDuration": 1.6,
+            "DescKey": "citadel_ability_tengu_urn_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "Height": {
+            "Name": null,
+            "Value": 2
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.25
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 32,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_tengu_urn_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Summon a patch of choking thorns that <span class=\"highlight\">damage</span> and <span class=\"highlight\">slows</span> enemies in its radius.",
+          "plain_text": "Summon a patch of choking thorns that damage and slows enemies in its radius."
+        },
+        {
+          "localization_key": "citadel_ability_tengu_urn_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+2m</span> Radius and increased DPS Spirit scaling",
+          "plain_text": "+2m Radius and increased DPS Spirit scaling"
+        },
+        {
+          "localization_key": "citadel_ability_tengu_urn_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Enemies caught in thorns for 2s are <span class=\"highlight\">Immobilized</span> for <span class=\"highlight\">+1.6s</span>",
+          "plain_text": "Enemies caught in thorns for 2s are Immobilized for +1.6s"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Kudzu Connection",
+      "internal_key": "citadel_ability_tangotether",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 16,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 37,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact"
+        ],
+        "BonusFireRate": {
+          "Value": 10,
+          "Scale": {
+            "Value": 0.18,
+            "Type": "spirit"
+          }
+        },
+        "BulletLifestealPercent": {
+          "Value": 15,
+          "Scale": {
+            "Value": 0.15,
+            "Type": "spirit"
+          }
+        },
+        "ChannelMoveSpeed": -1,
+        "GrappleTargetModifier": {
+          "Class": "CitadelModifierTangotetherTarget",
+          "Subclass": "Target"
+        },
+        "HealingPerGlub": 20,
+        "IsDisabled": false,
+        "Key": "citadel_ability_tangotether",
+        "MoveWhileShootingSpeedPenaltyReductionPercent": 100,
+        "MoveWhileZoomedSpeedPenaltyReductionPercent": 100,
+        "Name": "Kudzu Connection",
+        "TetherModifier": {
+          "Class": "CitadelModifierTangotetherTether",
+          "Subclass": "CitadelModifierTangotetherTether",
+          "MinConnectTime": 2,
+          "DisconnectDistanceBuffer": 100,
+          "TargetAwayDistance": 250,
+          "CandidateCloserDistance": 400,
+          "BuffModifier": {
+            "Class": "CitadelModifierTangotetherTetherReceiver",
+            "Subclass": "CitadelModifierTangotetherTetherReceiver",
+            "EnabledStateMask": [
+              "CoopTetherActive"
+            ]
+          },
+          "LockedTargetModifier": {
+            "Class": "Base",
+            "Subclass": "TetherLockedModifier",
+            "EnabledStateMask": [
+              "CoopTetherLockedTarget"
+            ]
+          },
+          "NoConnectionModifier": {
+            "Class": "TetherNoConnection",
+            "Subclass": "TetherNoConnection"
+          },
+          "StatusEffectPriority": 50
+        },
+        "TetherSharedHealPct": {
+          "Value": 35,
+          "Scale": {
+            "Value": 0.85,
+            "Type": "power_increase"
+          }
+        },
+        "TickRate": 0.1,
+        "TotalTetherTargets": 1,
+        "Upgrades": [
+          {
+            "MoveSpeedBonus": 2
+          },
+          {
+            "BonusFireRate": 8,
+            "BulletLifestealPercent": 8
+          },
+          {
+            "AbilityDuration": -13,
+            "AbilityCooldown": -37
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_tangotether",
+        "Name": "Kudzu Connection",
+        "DescKey": "citadel_ability_tangotether_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "BonusFireRate",
+                "Name": "Fire Rate",
+                "Value": 10,
+                "Scale": {
+                  "Value": 0.18,
+                  "Type": "spirit"
+                },
+                "Type": "fire_rate"
+              },
+              {
+                "Key": "BulletLifestealPercent",
+                "Name": "Bullet Lifesteal",
+                "Value": 15,
+                "Scale": {
+                  "Value": 0.15,
+                  "Type": "spirit"
+                },
+                "Type": "healing"
+              },
+              {
+                "Key": "TetherSharedHealPct",
+                "Name": "Replicated Healing",
+                "Value": 35,
+                "Scale": {
+                  "Value": 0.85,
+                  "Type": "power_increase"
+                },
+                "Type": "healing"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "MoveSpeedBonus",
+              "Name": "Move Speed",
+              "Value": 0,
+              "Type": "move_speed"
+            },
+            {
+              "Key": "TotalTetherTargets",
+              "Name": "Tether Count",
+              "Value": 1
+            }
+          ],
+          "DescKey": "citadel_ability_tangotether_desc"
+        },
+        "Upgrades": [
+          {
+            "MoveSpeedBonus": 2
+          },
+          {
+            "BonusFireRate": 8,
+            "BulletLifestealPercent": 8,
+            "DescKey": "citadel_ability_tangotether_t2_desc"
+          },
+          {
+            "AbilityDuration": -13,
+            "AbilityCooldown": -37,
+            "DescKey": "citadel_ability_tangotether_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          },
+          "MoveWhileShootingSpeedPenaltyReductionPercent": {
+            "Name": "move speed penalty while shooting reduction",
+            "Value": 100,
+            "Type": "move_speed"
+          },
+          "MoveWhileZoomedSpeedPenaltyReductionPercent": {
+            "Name": null,
+            "Value": 100,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "HealingPerGlub": {
+            "Name": null,
+            "Value": 20
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.1
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 16,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 37,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_tangotether_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Connect with a nearby ally to gain bonuses, <span class=\"highlight\">replicated healing,</span> and ignore the move speed penalty while shooting.<br><span class=\"diminish\"><br>Receive 50% of Bonuses with no connection<br>Connection requires line of sight.</span>",
+          "plain_text": "Connect with a nearby ally to gain bonuses, replicated healing, and ignore the move speed penalty while shooting.\nReceive 50% of Bonuses with no connection\nConnection requires line of sight."
+        },
+        {
+          "localization_key": "citadel_ability_tangotether_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+8%</span> Fire Rate and <span class=\"highlight\">+8%</span> Bullet Lifesteal",
+          "plain_text": "+8% Fire Rate and +8% Bullet Lifesteal"
+        },
+        {
+          "localization_key": "citadel_ability_tangotether_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Ability is always active",
+          "plain_text": "Ability is always active"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Stone Form",
+      "internal_key": "citadel_ability_tengu_stone_form",
+      "data": {
+        "AbilityCastDelay": 0.25,
+        "AbilityCooldown": {
+          "Value": 40,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorCastableWhileBusy",
+          "BehaviorInterruptMeleeOnCast",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 75,
+          "Scale": {
+            "Value": 0.6,
+            "Type": "spirit"
+          }
+        },
+        "DampingFactor": 0.25,
+        "DragModifier": {
+          "Class": "ChargeDragEnemy",
+          "Subclass": "ChargeDragEnemy",
+          "ForwardOffset": 0,
+          "VerticalOffset": -200,
+          "ForceDistScale": 10
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_tengu_stone_form",
+        "LiftHeight": 180,
+        "LiftTime": 1,
+        "MaxHealthRegen": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "healing"
+          }
+        },
+        "MoveSpeedMax": 8,
+        "Name": "Stone Form",
+        "Radius": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "StunDuration": {
+          "Value": 0.75,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "Upgrades": [
+          {
+            "MaxHealthRegen": 7
+          },
+          {
+            "AbilityCooldown": -25
+          },
+          {
+            "StunDuration": 0.75,
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 1.5,
+                "Type": "spirit"
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_tengu_stone_form",
+        "Name": "Stone Form",
+        "DescKey": "citadel_ability_tengu_stone_form_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 75,
+                "Scale": {
+                  "Value": 0.6,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "StunDuration",
+                "Name": "Stun Duration",
+                "StatusEffect": "Stun",
+                "Value": 0.75,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              },
+              {
+                "Key": "MaxHealthRegen",
+                "Name": "Max Health Heal",
+                "Value": 6,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "healing"
+                },
+                "Type": "healing"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "citadel_ability_tengu_stone_form_desc"
+        },
+        "Upgrades": [
+          {
+            "MaxHealthRegen": 7
+          },
+          {
+            "AbilityCooldown": -25
+          },
+          {
+            "StunDuration": 0.75,
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 1.5,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "citadel_ability_tengu_stone_form_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Debuff": {
+          "MoveSpeedMax": {
+            "Name": "Move Speed",
+            "Value": 8,
+            "Type": "slow"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "DampingFactor": {
+            "Name": null,
+            "Value": 0.25
+          },
+          "LiftHeight": {
+            "Name": null,
+            "Value": 180
+          },
+          "LiftTime": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.25,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 40,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_tengu_stone_form_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Turn yourself into <span class=\"highlight\">impervious stone</span> and smash into the ground, <span class=\"highlight\">stunning and damaging</span> enemies nearby. Heals you for a percentage of your max health.",
+          "plain_text": "Turn yourself into impervious stone and smash into the ground, stunning and damaging enemies nearby. Heals you for a percentage of your max health."
+        },
+        {
+          "localization_key": "citadel_ability_tengu_stone_form_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+0.75s</span> Stun Duration and increased Damage spirit scaling",
+          "plain_text": "+0.75s Stun Duration and increased Damage spirit scaling"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Air Drop",
+      "internal_key": "citadel_ability_tengu_airlift",
+      "data": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCastRange": {
+          "Value": 22,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 100,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 21,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AirDropBulletShield": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0,
+            "Type": "spirit"
+          }
+        },
+        "AirDropOutgoingDamagePercent": 20,
+        "AllyCastDelay": 0.1,
+        "AllyOutgoingDamagePercent": -20,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorAllowSelfCast",
+          "BehaviorUseInstantCastUnitTargetUi",
+          "BehaviorMovement",
+          "BehaviorRequireAbilityButtonToCancel",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "BuffDuration": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "BulletResistModifier": {
+          "Class": "Base",
+          "Subclass": "AirdropBulletresist"
+        },
+        "ChannelMoveSpeed": 1.3,
+        "CooldownReductionPctOnOthers": 30,
+        "DroppedBuffModifier": {
+          "Class": "Base",
+          "Subclass": "BarrierModifier"
+        },
+        "ExplodeDamage": {
+          "Value": 115,
+          "Scale": {
+            "Value": 0.7,
+            "Type": "spirit"
+          }
+        },
+        "ExplodingAllyModifier": {
+          "Class": "AirliftExplodingAlly",
+          "Subclass": "AirliftExplodingAlly"
+        },
+        "FlyingModifier": {
+          "Class": "Base",
+          "Subclass": "Base",
+          "EnabledStateMask": [
+            "AbilityMovement",
+            "Sprinting",
+            "DashDisabled",
+            "ShootingDisabled",
+            "JumpDisabled",
+            "DuckingDisabled",
+            "MantleDisabled",
+            "AimForwardWithPitch",
+            "MeleeDisabled",
+            "SlidingDisabled",
+            "HideCrosshair"
+          ]
+        },
+        "GrabModifier": {
+          "Class": "AirliftGrab",
+          "Subclass": "AirliftGrab",
+          "LiftHorizontal": 0,
+          "LiftHeight": -120,
+          "FollowDampingFactor": 20,
+          "FollowDistance": -60,
+          "AllyPossibleStuckDistance": 320,
+          "EnabledStateMask": [
+            "AbilityMovement",
+            "ShootingDisabled",
+            "MeleeDisabled",
+            "IgnorePortals"
+          ],
+          "AllyGrabCancelTime": 1
+        },
+        "InterruptCooldown": 3.5,
+        "IsDisabled": false,
+        "Key": "citadel_ability_tengu_airlift",
+        "Name": "Air Drop",
+        "OnLandDamageRadius": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "OnLandDamageRadiusStart": 16,
+        "SilenceBombSpeed": 12,
+        "SilenceModifier": {
+          "Class": "CitadelSilenced",
+          "Subclass": "CitadelSilenced"
+        },
+        "SlowModifier": {
+          "Class": "SlowBase",
+          "Subclass": "AirliftSlow"
+        },
+        "Upgrades": [
+          {
+            "AirDropBulletShield": {
+              "Value": 300,
+              "Scale": {
+                "Value": 0.7,
+                "Type": "spirit"
+              }
+            }
+          },
+          {
+            "SlowPercent": 40,
+            "DebuffDuration": 3
+          },
+          {
+            "SilenceDuration": 3,
+            "ExplodeDamage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 1.5,
+                "Type": "spirit"
+              }
+            },
+            "AirDropBulletShield": {
+              "Value": 0,
+              "Scale": {
+                "Value": 1,
+                "Type": "spirit"
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_tengu_airlift",
+        "Name": "Air Drop",
+        "DescKey": "citadel_ability_tengu_airlift_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "ExplodeDamage",
+                "Name": "Explode Damage",
+                "Value": 115,
+                "Scale": {
+                  "Value": 0.7,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "AirDropOutgoingDamagePercent",
+                "Name": "Outgoing Damage Bonus",
+                "Value": 20,
+                "Type": "damage"
+              },
+              {
+                "Key": "AirDropBulletShield",
+                "Name": "Barrier",
+                "Value": 0,
+                "Scale": {
+                  "Value": 0,
+                  "Type": "spirit"
+                },
+                "Type": "combat_barrier"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "OnLandDamageRadius",
+              "Name": "Landing Radius",
+              "Value": 20,
+              "Scale": {
+                "Value": 1,
+                "Type": "radius"
+              },
+              "Type": "distance"
+            },
+            {
+              "Key": "BuffDuration",
+              "Name": "Buff Duration",
+              "Value": 8,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "SlowPercent",
+              "Name": "Move Speed",
+              "Value": 0,
+              "Type": "slow"
+            },
+            {
+              "Key": "DebuffDuration",
+              "Name": "Debuff Duration",
+              "Value": 0,
+              "Type": "duration"
+            },
+            {
+              "Key": "BulletArmorReduction",
+              "Name": "Bullet Resist",
+              "Value": 0,
+              "Type": "bullet_armor_down"
+            },
+            {
+              "Key": "BulletArmorReductionDuration",
+              "Name": "Duration",
+              "Value": 0,
+              "Type": "duration"
+            },
+            {
+              "Key": "SilenceDuration",
+              "Name": "Silence Duration",
+              "Value": 0,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "citadel_ability_tengu_airlift_desc"
+        },
+        "Upgrades": [
+          {
+            "AirDropBulletShield": {
+              "Value": 300,
+              "Scale": {
+                "Value": 0.7,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "citadel_ability_tengu_airlift_t1_desc"
+          },
+          {
+            "SlowPercent": 40,
+            "DebuffDuration": 3,
+            "DescKey": "citadel_ability_tengu_airlift_t2_desc"
+          },
+          {
+            "SilenceDuration": 3,
+            "ExplodeDamage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 1.5,
+                "Type": "spirit"
+              }
+            },
+            "AirDropBulletShield": {
+              "Value": 0,
+              "Scale": {
+                "Value": 1,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "citadel_ability_tengu_airlift_t3_desc"
+          }
+        ],
+        "Duration": {
+          "AllyCastDelay": {
+            "Name": null,
+            "Value": 0.1,
+            "Type": "duration"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 1.3,
+            "Type": "move_speed"
+          }
+        },
+        "Damage": {
+          "AllyOutgoingDamagePercent": {
+            "Name": null,
+            "Value": -20,
+            "Type": "damage"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "CooldownReductionPctOnOthers": {
+            "Name": null,
+            "Value": 30
+          },
+          "InterruptCooldown": {
+            "Name": "Interrupt Cooldown",
+            "Value": 3.5
+          },
+          "OnLandDamageRadiusStart": {
+            "Name": null,
+            "Value": 16
+          },
+          "SilenceBombSpeed": {
+            "Name": null,
+            "Value": 12
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.1,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 22,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 100,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 21,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_tengu_airlift_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Grab an ally</span> and <span class=\"highlight\">take flight</span> with them. Drop your ally to cause an explosion, dealing {g:citadel_inline_attribute:'SpiritDamage'}. You and your ally gain increased Outgoing Damage when flying ends. <span class=\"diminish\"><br><br>Cooldown reduced by 30% when used on allies.<br>Taking damage briefly disables using the ability.<br>While lifted, your ally cannot attack and deals -20% damage.</span>",
+          "plain_text": "Grab an ally and take flight with them. Drop your ally to cause an explosion, dealing spirit damage. You and your ally gain increased Outgoing Damage when flying ends.\nCooldown reduced by 30% when used on allies.\nTaking damage briefly disables using the ability.\nWhile lifted, your ally cannot attack and deals -20% damage."
+        },
+        {
+          "localization_key": "citadel_ability_tengu_airlift_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On Fly End : <span class=\"highlight\">300</span> Barrier to Ivy and ally that scales with Spirit",
+          "plain_text": "On Fly End : 300 Barrier to Ivy and ally that scales with Spirit"
+        },
+        {
+          "localization_key": "citadel_ability_tengu_airlift_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+40%</span> Slow for <span class=\"highlight\">3s</span> on enemies hit",
+          "plain_text": "+40% Slow for 3s on enemies hit"
+        },
+        {
+          "localization_key": "citadel_ability_tengu_airlift_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Silence</span> for <span class=\"highlight\">3s</span> on enemies hit.<br>Increases damage and barrier scaling.",
+          "plain_text": "Silence for 3s on enemies hit.\nIncreases damage and barrier scaling."
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.43,
+    "AirDashSpeed": 18.6,
+    "BaseHealthRegen": 2,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GravityChange": -10,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.62,
+    "GroundDashSpeed": 16.1,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.08,
+      "MaxHealth": 45,
+      "PowerIncreases": 1,
+      "TechPower": 1.2,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 1.0884,
+      "SustainedDPS": 0.54214
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_tengu_lore",
+    "MaxHealth": 755,
+    "MaxMoveSpeed": 7.2,
+    "MoveAcceleration": 4,
+    "Name": "Ivy",
+    "Playstyle": "hero_tengu_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_tengu_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.6,
+    "Stamina": 4,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Marksman",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

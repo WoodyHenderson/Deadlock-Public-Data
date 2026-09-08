@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "npc.lane-guardian",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-04",
+  "evidence_status": "source_verified",
+  "sources": [
+    "deadlock-api.npc-units.client-6684.source-10933105",
+    "github.deadlock-data.npcs.311b2e8d895e",
+    "wiki.lane-guardian.123832"
+  ],
+  "identity": {
+    "name": "Lane Guardian",
+    "aliases": [
+      "Guardian",
+      "tier 1 guardian"
+    ],
+    "internal_class": "npc_boss_tier1",
+    "numeric_id": 2977181093
+  },
+  "classification": {
+    "kind": "structure",
+    "mode": "standard"
+  },
+  "units": {
+    "distance": "meters",
+    "time": "seconds",
+    "speed": "meters_per_second",
+    "percentage": "percentage_points"
+  },
+  "field_sources": {
+    "numeric_id": "deadlock-api.npc-units.client-6684.source-10933105:npc_boss_tier1.id",
+    "gameplay_values": "github.deadlock-data.npcs.311b2e8d895e:npc_boss_tier1",
+    "behavior_context": "wiki.lane-guardian.123832"
+  },
+  "combat": {
+    "base_max_health": 5500,
+    "bullet_resistance_percent": 10,
+    "spirit_resistance_percent": 0.0
+  },
+  "objective_order_ref": "general.map.objectives-and-structures",
+  "economy_ref": "data.general.economy:bounties",
+  "structure_role": "first_lane_defense",
+  "count_per_team": 3,
+  "attacks": {
+    "beam_dps_vs_players": 116.0,
+    "beam_damage_type": "weapon",
+    "melee_is_parryable": true
+  },
+  "resistance_over_time": [
+    {
+      "match_time": 0,
+      "percent": 50
+    },
+    {
+      "match_time": 360,
+      "percent": 0
+    },
+    {
+      "match_time": 720,
+      "percent": -50
+    }
+  ],
+  "player_bullet_resistance_percent": -25.0,
+  "invulnerability": {
+    "enemy_presence_range": 24.0,
+    "outside_player_attack_range_is_immune": true
+  },
+  "backdoor_protection": false
+}

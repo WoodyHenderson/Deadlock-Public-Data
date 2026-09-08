@@ -1,0 +1,571 @@
+{
+  "schema_version": 1,
+  "id": "item.tesla-bullets",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Tesla Bullets",
+    "numeric_id": 811521119,
+    "internal_key": "upgrade_chain_lightning",
+    "aliases": [
+      "upgrade_chain_lightning"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "weapon",
+    "tier": 3,
+    "activation": "passive",
+    "is_active_item": false,
+    "is_imbue": false,
+    "shop_filters": [
+      "MagicDamage",
+      "FireRate"
+    ],
+    "target_types": [
+      "AllEnemy"
+    ]
+  },
+  "purchase": {
+    "cost_souls": 3200,
+    "component_internal_keys": []
+  },
+  "description_plain": "Your bullets have a chance to shock your target. The shock will jump to a nearby enemy.",
+  "displayed_effects": [
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "ProcCooldown",
+      "label": "Max Frequency",
+      "value": "0.2s",
+      "property": {
+        "value": "0.2",
+        "css_class": "cooldown",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "ProcCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Max Frequency",
+        "postfix": "s",
+        "postvalue_label": "Max Frequency",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "ChainCount",
+      "label": "Max Jumps",
+      "value": "4",
+      "property": {
+        "value": "4",
+        "label": "Max Jumps",
+        "postvalue_label": "Max Jumps",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "ChainRadius",
+      "label": "Jump Radius",
+      "value": "8m",
+      "property": {
+        "value": "8m",
+        "css_class": "distance",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "ChainRadius_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Jump Radius",
+        "postfix": "m",
+        "postvalue_label": "Jump Radius",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "important",
+      "key": "DamagePerChain",
+      "label": "Shock Damage",
+      "value": "33",
+      "property": {
+        "value": "33",
+        "css_class": "tech_damage",
+        "scale_function": {
+          "class_name": "scale_function_tech_damage",
+          "subclass_name": "DamagePerChain_scale_function",
+          "specific_stat_scale_type": "ETechPower",
+          "stat_scale": 0.19
+        },
+        "label": "Shock Damage",
+        "postvalue_label": "Shock Damage",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "important",
+      "key": "ProcChance",
+      "label": "Proc Chance",
+      "value": "15%",
+      "property": {
+        "value": "15",
+        "label": "Proc Chance",
+        "postfix": "%",
+        "postvalue_label": "Proc Chance",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "DamagePerChain",
+          "bonus": "25"
+        },
+        {
+          "name": "BonusPerChain",
+          "bonus": "25"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 811521119,
+    "class_name": "upgrade_chain_lightning",
+    "name": "Tesla Bullets",
+    "start_trained": true,
+    "heroes": [],
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "weapon",
+    "item_tier": 3,
+    "properties": {
+      "AbilityCooldown": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown"
+      },
+      "AbilityDuration": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration"
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "ProcCooldown": {
+        "value": "0.2",
+        "css_class": "cooldown",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "ProcCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Max Frequency",
+        "postfix": "s",
+        "postvalue_label": "Max Frequency",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "DamagePerChain": {
+        "value": "33",
+        "css_class": "tech_damage",
+        "scale_function": {
+          "class_name": "scale_function_tech_damage",
+          "subclass_name": "DamagePerChain_scale_function",
+          "specific_stat_scale_type": "ETechPower",
+          "stat_scale": 0.19
+        },
+        "label": "Shock Damage",
+        "postvalue_label": "Shock Damage",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "BonusPerChain": {
+        "value": "33",
+        "css_class": "tech_damage",
+        "scale_function": {
+          "class_name": "scale_function_tech_damage",
+          "subclass_name": "BonusPerChain_scale_function",
+          "specific_stat_scale_type": "ETechPower",
+          "stat_scale": 0.19
+        },
+        "label": "Damage on Jump",
+        "postvalue_label": "Damage on Jump"
+      },
+      "ChainRadius": {
+        "value": "8m",
+        "css_class": "distance",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "ChainRadius_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Jump Radius",
+        "postfix": "m",
+        "postvalue_label": "Jump Radius",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "ProcChance": {
+        "value": "15",
+        "label": "Proc Chance",
+        "postfix": "%",
+        "postvalue_label": "Proc Chance",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "ChainCount": {
+        "value": "4",
+        "label": "Max Jumps",
+        "postvalue_label": "Max Jumps",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "ChainTickRate": {
+        "value": "0.4"
+      }
+    },
+    "description": {
+      "desc": "Your bullets have a chance to <span class=\"highlight\">shock</span> your target. The <span class=\"highlight\">shock</span> will jump to a nearby enemy."
+    },
+    "activation": "passive",
+    "tooltip_sections": [
+      {
+        "section_type": "passive",
+        "section_attributes": [
+          {
+            "loc_string": "Your bullets have a chance to <span class=\"highlight\">shock</span> your target. The <span class=\"highlight\">shock</span> will jump to a nearby enemy.",
+            "properties": [
+              "ProcCooldown",
+              "ChainCount",
+              "ChainRadius"
+            ],
+            "important_properties": [
+              "DamagePerChain",
+              "ProcChance"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "DamagePerChain",
+            "bonus": "25"
+          },
+          {
+            "name": "BonusPerChain",
+            "bonus": "25"
+          }
+        ]
+      }
+    ],
+    "is_active_item": false,
+    "shopable": true,
+    "cost": 3200
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Tesla Bullets",
+    "Description": "Your bullets have a chance to <span class=\"highlight\">shock</span> your target. The <span class=\"highlight\">shock</span> will jump to a nearby enemy.",
+    "Cost": 3200,
+    "Tier": 3,
+    "Activation": "Passive",
+    "Slot": "Weapon",
+    "Components": null,
+    "TargetTypes": [
+      "AllEnemy"
+    ],
+    "ShopFilters": [
+      "MagicDamage",
+      "FireRate"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "ProcCooldown": 0.2,
+    "DamagePerChain": {
+      "Value": 33,
+      "Scale": {
+        "Value": 0.19,
+        "Type": "spirit"
+      }
+    },
+    "BonusPerChain": {
+      "Value": 33,
+      "Scale": {
+        "Value": 0.19,
+        "Type": "spirit"
+      }
+    },
+    "ChainRadius": "8m",
+    "ProcChance": 15,
+    "ChainCount": 4,
+    "ChainTickRate": 0.4,
+    "PropertyUpgrades": {
+      "DamagePerChain": 25,
+      "BonusPerChain": 25
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_chain_lightning",
+    "Name": "Tesla Bullets",
+    "Description": "Your bullets have a chance to <span class=\"highlight\">shock</span> your target. The <span class=\"highlight\">shock</span> will jump to a nearby enemy.",
+    "Cost": 3200,
+    "Tier": 3,
+    "Slot": "Weapon",
+    "Activation": "Passive",
+    "Components": null,
+    "TargetTypes": [
+      "AllEnemy"
+    ],
+    "ShopFilters": [
+      "MagicDamage",
+      "FireRate"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Passive",
+      "DescKey": "#upgrade_chain_lightning_desc",
+      "Cooldown": 0.2,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "DamagePerChain",
+          "Value": 33.0,
+          "Scale": {
+            "Value": 0.19,
+            "Type": "spirit"
+          },
+          "Type": "tech_damage"
+        },
+        {
+          "Key": "ProcChance",
+          "Value": 15
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "ChainCount",
+          "Value": 4
+        },
+        {
+          "Key": "ChainRadius",
+          "Value": "8m",
+          "Type": "distance"
+        }
+      ]
+    },
+    "Upgrades": {
+      "DamagePerChain": 25,
+      "BonusPerChain": 25
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      },
+      "BonusPerChain": {
+        "Key": "BonusPerChain",
+        "Value": 33.0,
+        "Scale": {
+          "Value": 0.19,
+          "Type": "spirit"
+        },
+        "Type": "tech_damage"
+      },
+      "ChainTickRate": {
+        "Key": "ChainTickRate",
+        "Value": 0.4
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

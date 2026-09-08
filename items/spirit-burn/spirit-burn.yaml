@@ -1,0 +1,765 @@
+{
+  "schema_version": 1,
+  "id": "item.spirit-burn",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Spirit Burn",
+    "numeric_id": 343572757,
+    "internal_key": "upgrade_spirit_burn",
+    "aliases": [
+      "upgrade_spirit_burn"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "spirit",
+    "tier": 4,
+    "activation": "passive",
+    "is_active_item": false,
+    "is_imbue": false,
+    "shop_filters": [
+      "MagicDamage",
+      "Durability"
+    ],
+    "target_types": [
+      "AllEnemy"
+    ]
+  },
+  "purchase": {
+    "cost_souls": 6400,
+    "component_internal_keys": []
+  },
+  "description_plain": "Dealing significant spirit damage to an enemy within 5s causes an explosion dealing damage and a burn to that enemy. While burning, enemies take damage over time and receive reduced healing. The cooldown is per enemy, so each target can only be burned once per cooldown. Deals half-damage on non-heroes.",
+  "displayed_effects": [
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "TechRangeMultiplier",
+      "label": "Ability Range",
+      "value": "6%",
+      "property": {
+        "value": "6",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RANGE_PERCENT",
+        "css_class": "distance",
+        "prefix": "{s:sign}",
+        "label": "Ability Range",
+        "postfix": "%",
+        "postvalue_label": "Ability Range",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "ImmunityDuration",
+      "label": "Immunity Duration",
+      "value": "20s",
+      "property": {
+        "value": "20",
+        "css_class": "cooldown",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "ImmunityDuration_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Immunity Duration",
+        "postfix": "s",
+        "postvalue_label": "Immunity Duration",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "DebuffDuration",
+      "label": "Debuff Duration",
+      "value": "8s",
+      "property": {
+        "value": "8",
+        "css_class": "tech_damage",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "debuff_duration_scale_function"
+        },
+        "label": "Debuff Duration",
+        "postfix": "s",
+        "postvalue_label": "Debuff Duration",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "HealAmpReceivePenaltyPercent",
+      "label": "Healing Reduction",
+      "value": "-70%",
+      "property": {
+        "value": "-70",
+        "provided_property_type": "MODIFIER_VALUE_HEAL_AMP_RECEIVE_PERCENT",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "",
+        "label": "Healing Reduction",
+        "postfix": "%",
+        "postvalue_label": "Healing Reduction",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "important",
+      "key": "DamageThreshold",
+      "label": "Damage Threshold",
+      "value": "500",
+      "property": {
+        "value": "500",
+        "css_class": "tech_armor_up",
+        "label": "Damage Threshold",
+        "postvalue_label": "Damage Threshold",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "important",
+      "key": "ExplosionDamage",
+      "label": "Explosion Damage",
+      "value": "50",
+      "property": {
+        "value": "50",
+        "css_class": "tech_damage",
+        "scale_function": {
+          "class_name": "scale_function_tech_damage",
+          "subclass_name": "corpse_explosion_damage_sf",
+          "stat_scale": 0.0
+        },
+        "label": "Explosion Damage",
+        "postfix": "",
+        "postvalue_label": "Explosion Damage",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "important",
+      "key": "DPS",
+      "label": "Damage Per Second",
+      "value": "24",
+      "property": {
+        "value": "24",
+        "css_class": "tech_damage",
+        "scale_function": {
+          "class_name": "scale_function_tech_damage",
+          "subclass_name": "Damage_scale_function",
+          "specific_stat_scale_type": "ETechPower",
+          "stat_scale": 0.06
+        },
+        "prefix": "",
+        "label": "Damage Per Second",
+        "postfix": "",
+        "postvalue_label": "Damage Per Second",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "ExplosionDamage",
+          "bonus": "160"
+        },
+        {
+          "name": "TechRadiusMultiplier",
+          "bonus": "12"
+        },
+        {
+          "name": "TechRangeMultiplier",
+          "bonus": "12"
+        },
+        {
+          "name": "DPS",
+          "bonus": "20"
+        },
+        {
+          "name": "ImmunityDuration",
+          "bonus": "-6"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 343572757,
+    "class_name": "upgrade_spirit_burn",
+    "name": "Spirit Burn",
+    "start_trained": true,
+    "heroes": [],
+    "update_time": 1741724072,
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "spirit",
+    "item_tier": 4,
+    "properties": {
+      "AbilityCooldown": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown"
+      },
+      "AbilityDuration": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration"
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "TechRangeMultiplier": {
+        "value": "6",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RANGE_PERCENT",
+        "css_class": "distance",
+        "prefix": "{s:sign}",
+        "label": "Ability Range",
+        "postfix": "%",
+        "postvalue_label": "Ability Range",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "TechRadiusMultiplier": {
+        "value": "6",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RADIUS_PERCENT",
+        "css_class": "distance",
+        "prefix": "{s:sign}",
+        "label": "Radius",
+        "postfix": "%",
+        "postvalue_label": "Radius"
+      },
+      "DamageThreshold": {
+        "value": "500",
+        "css_class": "tech_armor_up",
+        "label": "Damage Threshold",
+        "postvalue_label": "Damage Threshold",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "DamageThresholdDuration": {
+        "value": "5",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "duration_scale_function"
+        }
+      },
+      "ExplosionDamage": {
+        "value": "50",
+        "css_class": "tech_damage",
+        "scale_function": {
+          "class_name": "scale_function_tech_damage",
+          "subclass_name": "corpse_explosion_damage_sf",
+          "stat_scale": 0.0
+        },
+        "label": "Explosion Damage",
+        "postfix": "",
+        "postvalue_label": "Explosion Damage",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "ExplosionRadius": {
+        "value": "3m",
+        "scale_function": {
+          "class_name": "scale_function_tech_range",
+          "subclass_name": "explosion_range_sf"
+        },
+        "label": "Explosion Radius",
+        "postfix": "m",
+        "postvalue_label": "Explosion Radius"
+      },
+      "DPS": {
+        "value": "24",
+        "css_class": "tech_damage",
+        "scale_function": {
+          "class_name": "scale_function_tech_damage",
+          "subclass_name": "Damage_scale_function",
+          "specific_stat_scale_type": "ETechPower",
+          "stat_scale": 0.06
+        },
+        "prefix": "",
+        "label": "Damage Per Second",
+        "postfix": "",
+        "postvalue_label": "Damage Per Second",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "DebuffDuration": {
+        "value": "8",
+        "css_class": "tech_damage",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "debuff_duration_scale_function"
+        },
+        "label": "Debuff Duration",
+        "postfix": "s",
+        "postvalue_label": "Debuff Duration",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "HealAmpReceivePenaltyPercent": {
+        "value": "-70",
+        "provided_property_type": "MODIFIER_VALUE_HEAL_AMP_RECEIVE_PERCENT",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "",
+        "label": "Healing Reduction",
+        "postfix": "%",
+        "postvalue_label": "Healing Reduction",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "HealAmpRegenPenaltyPercent": {
+        "value": "-70",
+        "provided_property_type": "MODIFIER_VALUE_HEAL_AMP_REGEN_PERCENT",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "label": "Healing Reduction",
+        "postfix": "%",
+        "postvalue_label": "Healing Reduction"
+      },
+      "TickRate": {
+        "value": "0.5"
+      },
+      "CooldownReductionPctOnNonHeroes": {
+        "value": "0"
+      },
+      "ImmunityDuration": {
+        "value": "20",
+        "css_class": "cooldown",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "ImmunityDuration_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Immunity Duration",
+        "postfix": "s",
+        "postvalue_label": "Immunity Duration",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "DamagePctVsNonHeroes": {
+        "value": "50"
+      }
+    },
+    "disabled": false,
+    "description": {
+      "desc": "Dealing significant \n<span class=\"inline-attribute-label SpiritDamage\">spirit damage</span> to an enemy within 5s causes an explosion dealing damage and a burn to that enemy. While burning, enemies take damage over time and receive reduced healing.<br><span class=\"diminish\">The cooldown is per enemy, so each target can only be burned once per cooldown. Deals half-damage on non-heroes.</span>"
+    },
+    "activation": "passive",
+    "tooltip_sections": [
+      {
+        "section_type": "innate",
+        "section_attributes": [
+          {
+            "properties": [
+              "TechRangeMultiplier"
+            ]
+          }
+        ]
+      },
+      {
+        "section_type": "passive",
+        "section_attributes": [
+          {
+            "loc_string": "Dealing significant \n<span class=\"inline-attribute-label SpiritDamage\">spirit damage</span> to an enemy within 5s causes an explosion dealing damage and a burn to that enemy. While burning, enemies take damage over time and receive reduced healing.<br><span class=\"diminish\">The cooldown is per enemy, so each target can only be burned once per cooldown. Deals half-damage on non-heroes.</span>",
+            "properties": [
+              "ImmunityDuration",
+              "DebuffDuration",
+              "HealAmpReceivePenaltyPercent"
+            ],
+            "important_properties": [
+              "DamageThreshold",
+              "ExplosionDamage",
+              "DPS"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "ExplosionDamage",
+            "bonus": "160"
+          },
+          {
+            "name": "TechRadiusMultiplier",
+            "bonus": "12"
+          },
+          {
+            "name": "TechRangeMultiplier",
+            "bonus": "12"
+          },
+          {
+            "name": "DPS",
+            "bonus": "20"
+          },
+          {
+            "name": "ImmunityDuration",
+            "bonus": "-6"
+          }
+        ]
+      }
+    ],
+    "is_active_item": false,
+    "shopable": true,
+    "cost": 6400
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Spirit Burn",
+    "Description": "Dealing significant {g:citadel_inline_attribute:'SpiritDamage'} to an enemy within 5s causes an explosion dealing damage and a burn to that enemy. While burning, enemies take damage over time and receive reduced healing.<br><span class=\"diminish\">The cooldown is per enemy, so each target can only be burned once per cooldown. Deals half-damage on non-heroes.</span>",
+    "Cost": 6400,
+    "Tier": 4,
+    "Activation": "Passive",
+    "Slot": "Tech",
+    "Components": null,
+    "TargetTypes": [
+      "AllEnemy"
+    ],
+    "ShopFilters": [
+      "MagicDamage",
+      "Durability"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "TechRangeMultiplier": 6,
+    "TechRadiusMultiplier": 6,
+    "DamageThreshold": 500,
+    "DamageThresholdDuration": 5,
+    "ExplosionDamage": 50,
+    "ExplosionRadius": "3m",
+    "DPS": {
+      "Value": 24,
+      "Scale": {
+        "Value": 0.06,
+        "Type": "spirit"
+      }
+    },
+    "DebuffDuration": 8,
+    "HealAmpReceivePenaltyPercent": -70,
+    "HealAmpRegenPenaltyPercent": -70,
+    "TickRate": 0.5,
+    "ImmunityDuration": 20,
+    "DamagePctVsNonHeroes": 50,
+    "PropertyUpgrades": {
+      "ExplosionDamage": 160,
+      "TechRadiusMultiplier": 12,
+      "TechRangeMultiplier": 12,
+      "DPS": 20,
+      "ImmunityDuration": -6
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_spirit_burn",
+    "Name": "Spirit Burn",
+    "Description": "Dealing significant {g:citadel_inline_attribute:'SpiritDamage'} to an enemy within 5s causes an explosion dealing damage and a burn to that enemy. While burning, enemies take damage over time and receive reduced healing.<br><span class=\"diminish\">The cooldown is per enemy, so each target can only be burned once per cooldown. Deals half-damage on non-heroes.</span>",
+    "Cost": 6400,
+    "Tier": 4,
+    "Slot": "Tech",
+    "Activation": "Passive",
+    "Components": null,
+    "TargetTypes": [
+      "AllEnemy"
+    ],
+    "ShopFilters": [
+      "MagicDamage",
+      "Durability"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Innate",
+      "DescKey": null,
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [],
+      "Alt": [
+        {
+          "Key": "TechRangeMultiplier",
+          "Value": 6,
+          "Type": "distance"
+        }
+      ]
+    },
+    "Info2": {
+      "Type": "Passive",
+      "DescKey": "#upgrade_spirit_burn_desc",
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "DamageThreshold",
+          "Value": 500,
+          "Type": "tech_armor_up"
+        },
+        {
+          "Key": "ExplosionDamage",
+          "Value": 50,
+          "Type": "tech_damage"
+        },
+        {
+          "Key": "DPS",
+          "Value": 24.0,
+          "Scale": {
+            "Value": 0.06,
+            "Type": "spirit"
+          },
+          "Type": "tech_damage"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "ImmunityDuration",
+          "Value": 20,
+          "Type": "cooldown"
+        },
+        {
+          "Key": "DebuffDuration",
+          "Value": 8,
+          "Type": "tech_damage"
+        },
+        {
+          "Key": "HealAmpReceivePenaltyPercent",
+          "Value": -70,
+          "UsageFlags": "ConditionallyApplied"
+        }
+      ]
+    },
+    "Upgrades": {
+      "ExplosionDamage": 160,
+      "TechRadiusMultiplier": 12,
+      "TechRangeMultiplier": 12,
+      "DPS": 20,
+      "ImmunityDuration": -6
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      },
+      "TechRadiusMultiplier": {
+        "Key": "TechRadiusMultiplier",
+        "Value": 6,
+        "Type": "distance"
+      },
+      "DamageThresholdDuration": {
+        "Key": "DamageThresholdDuration",
+        "Value": 5
+      },
+      "ExplosionRadius": {
+        "Key": "ExplosionRadius",
+        "Value": "3m"
+      },
+      "HealAmpRegenPenaltyPercent": {
+        "Key": "HealAmpRegenPenaltyPercent",
+        "Value": -70,
+        "UsageFlags": "ConditionallyApplied"
+      },
+      "TickRate": {
+        "Key": "TickRate",
+        "Value": 0.5
+      },
+      "DamagePctVsNonHeroes": {
+        "Key": "DamagePctVsNonHeroes",
+        "Value": 50
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

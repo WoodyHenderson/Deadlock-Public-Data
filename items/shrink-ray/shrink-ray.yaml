@@ -1,0 +1,590 @@
+{
+  "schema_version": 1,
+  "id": "item.shrink-ray",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Shrink Ray",
+    "numeric_id": 4121584236,
+    "internal_key": "upgrade_shrink_ray",
+    "aliases": [
+      "upgrade_shrink_ray"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": true
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "spirit",
+    "tier": 5,
+    "activation": "press",
+    "is_active_item": true,
+    "is_imbue": false,
+    "shop_filters": [
+      "Healing"
+    ],
+    "target_types": [
+      "HeroFriendly"
+    ]
+  },
+  "purchase": {
+    "cost_souls": 9999,
+    "component_internal_keys": []
+  },
+  "description_plain": "Reduces Model Size and grants Move Speed to the target. Allows usage of tunnels in this mode. Can be self-cast.",
+  "displayed_effects": [
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "AbilityCooldown",
+      "label": "Cooldown",
+      "value": "30s",
+      "property": {
+        "value": "30",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "ShrinkDuration",
+      "label": "Shrink Duration",
+      "value": "60s",
+      "property": {
+        "value": "60",
+        "css_class": "duration",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "ShrinkDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Shrink Duration",
+        "postfix": "s",
+        "postvalue_label": "Shrink Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "AbilityCastRange",
+      "label": "Cast Range",
+      "value": "40m",
+      "property": {
+        "value": "40m",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "ModelScaleGrowthTooltip",
+      "label": "Model Scale",
+      "value": "-50%",
+      "property": {
+        "value": "-50",
+        "label": "Model Scale",
+        "postfix": "%",
+        "postvalue_label": "Model Scale",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "BonusMoveSpeed",
+      "label": "Move Speed",
+      "value": "5.0m",
+      "property": {
+        "value": "5.0m",
+        "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_MAX",
+        "css_class": "move_speed",
+        "prefix": "{s:sign}",
+        "label": "Move Speed",
+        "postfix": " m",
+        "postvalue_label": "Move Speed",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "BonusFireRate",
+      "label": "Fire Rate",
+      "value": "20%",
+      "property": {
+        "value": "20",
+        "provided_property_type": "MODIFIER_VALUE_FIRE_RATE",
+        "prefix": "{s:sign}",
+        "label": "Fire Rate",
+        "postfix": "%",
+        "postvalue_label": "Fire Rate",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "ModelScaleGrowth",
+          "bonus": "-0.15"
+        },
+        {
+          "name": "ModelScaleGrowthTooltip",
+          "bonus": "-15"
+        },
+        {
+          "name": "BonusMoveSpeed",
+          "bonus": "2m"
+        },
+        {
+          "name": "BonusFireRate",
+          "bonus": "20"
+        },
+        {
+          "name": "AbilityCooldown",
+          "bonus": "-15"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 4121584236,
+    "class_name": "upgrade_shrink_ray",
+    "name": "Shrink Ray",
+    "start_trained": true,
+    "heroes": [],
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "spirit",
+    "item_tier": 5,
+    "properties": {
+      "AbilityCooldown": {
+        "value": "30",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityDuration": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration"
+      },
+      "AbilityCastRange": {
+        "value": "40m",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0.2",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "ShrinkDuration": {
+        "value": "60",
+        "css_class": "duration",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "ShrinkDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Shrink Duration",
+        "postfix": "s",
+        "postvalue_label": "Shrink Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "BonusMoveSpeed": {
+        "value": "5.0m",
+        "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_MAX",
+        "css_class": "move_speed",
+        "prefix": "{s:sign}",
+        "label": "Move Speed",
+        "postfix": " m",
+        "postvalue_label": "Move Speed",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "ModelScaleGrowth": {
+        "value": "0.5"
+      },
+      "ModelScaleGrowthTooltip": {
+        "value": "-50",
+        "label": "Model Scale",
+        "postfix": "%",
+        "postvalue_label": "Model Scale",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "BonusFireRate": {
+        "value": "20",
+        "provided_property_type": "MODIFIER_VALUE_FIRE_RATE",
+        "prefix": "{s:sign}",
+        "label": "Fire Rate",
+        "postfix": "%",
+        "postvalue_label": "Fire Rate",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    "description": {
+      "desc": "Reduces <span class=\"highlight\">Model Size</span> and grants <span class=\"highlight\">Move Speed</span> to the target. Allows <span class=\"highlight\">usage of tunnels</span> in this mode. Can be self-cast."
+    },
+    "activation": "press",
+    "tooltip_sections": [
+      {
+        "section_type": "active",
+        "section_attributes": [
+          {
+            "loc_string": "Reduces <span class=\"highlight\">Model Size</span> and grants <span class=\"highlight\">Move Speed</span> to the target. Allows <span class=\"highlight\">usage of tunnels</span> in this mode. Can be self-cast.",
+            "properties": [
+              "AbilityCooldown",
+              "ShrinkDuration",
+              "AbilityCastRange"
+            ],
+            "important_properties": [
+              "ModelScaleGrowthTooltip",
+              "BonusMoveSpeed",
+              "BonusFireRate"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "ModelScaleGrowth",
+            "bonus": "-0.15"
+          },
+          {
+            "name": "ModelScaleGrowthTooltip",
+            "bonus": "-15"
+          },
+          {
+            "name": "BonusMoveSpeed",
+            "bonus": "2m"
+          },
+          {
+            "name": "BonusFireRate",
+            "bonus": "20"
+          },
+          {
+            "name": "AbilityCooldown",
+            "bonus": "-15"
+          }
+        ]
+      }
+    ],
+    "is_active_item": true,
+    "shopable": true,
+    "cost": 9999
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Shrink Ray",
+    "Description": "Reduces <span class=\"highlight\">Model Size</span> and grants <span class=\"highlight\">Move Speed</span> to the target. Allows <span class=\"highlight\">usage of tunnels</span> in this mode. Can be self-cast.",
+    "Cost": 9999,
+    "Tier": 5,
+    "Activation": "Press",
+    "Slot": "Tech",
+    "Components": null,
+    "TargetTypes": [
+      "HeroFriendly"
+    ],
+    "ShopFilters": [
+      "Healing"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": true,
+    "IsImbue": false,
+    "AbilityCooldown": 30,
+    "AbilityCastRange": "40m",
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCastDelay": 0.2,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "ShrinkDuration": 60,
+    "BonusMoveSpeed": "5.0m",
+    "ModelScaleGrowth": 0.5,
+    "ModelScaleGrowthTooltip": -50,
+    "BonusFireRate": 20,
+    "PropertyUpgrades": {
+      "ModelScaleGrowth": -0.15,
+      "ModelScaleGrowthTooltip": -15,
+      "BonusMoveSpeed": "2m",
+      "BonusFireRate": 20,
+      "AbilityCooldown": -15
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_shrink_ray",
+    "Name": "Shrink Ray",
+    "Description": "Reduces <span class=\"highlight\">Model Size</span> and grants <span class=\"highlight\">Move Speed</span> to the target. Allows <span class=\"highlight\">usage of tunnels</span> in this mode. Can be self-cast.",
+    "Cost": 9999,
+    "Tier": 5,
+    "Slot": "Tech",
+    "Activation": "Press",
+    "Components": null,
+    "TargetTypes": [
+      "HeroFriendly"
+    ],
+    "ShopFilters": [
+      "Healing"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": true,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Active",
+      "DescKey": "#upgrade_shrink_ray_desc",
+      "Cooldown": 30,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "ModelScaleGrowthTooltip",
+          "Value": -50
+        },
+        {
+          "Key": "BonusMoveSpeed",
+          "Value": "5.0m",
+          "Type": "move_speed"
+        },
+        {
+          "Key": "BonusFireRate",
+          "Value": 20
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "ShrinkDuration",
+          "Value": 60,
+          "Type": "duration"
+        },
+        {
+          "Key": "AbilityCastRange",
+          "Value": "40m",
+          "Type": "range"
+        }
+      ]
+    },
+    "Upgrades": {
+      "ModelScaleGrowth": -0.15,
+      "ModelScaleGrowthTooltip": -15,
+      "BonusMoveSpeed": "2m",
+      "BonusFireRate": 20,
+      "AbilityCooldown": -15
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCastDelay": {
+        "Key": "AbilityCastDelay",
+        "Value": 0.2,
+        "Type": "cast"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      },
+      "ModelScaleGrowth": {
+        "Key": "ModelScaleGrowth",
+        "Value": 0.5
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

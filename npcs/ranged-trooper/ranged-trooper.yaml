@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "id": "npc.ranged-trooper",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-04",
+  "evidence_status": "source_verified",
+  "sources": [
+    "deadlock-api.npc-units.client-6684.source-10933105",
+    "github.deadlock-data.npcs.311b2e8d895e",
+    "wiki.trooper.114174"
+  ],
+  "identity": {
+    "name": "Ranged Trooper",
+    "aliases": [
+      "Trooper",
+      "creep",
+      "minion"
+    ],
+    "internal_class": "trooper_normal",
+    "numeric_id": 1773848083
+  },
+  "classification": {
+    "kind": "lane_unit",
+    "mode": "standard"
+  },
+  "units": {
+    "distance": "meters",
+    "time": "seconds",
+    "speed": "meters_per_second",
+    "percentage": "percentage_points"
+  },
+  "field_sources": {
+    "numeric_id": "deadlock-api.npc-units.client-6684.source-10933105:trooper_normal.id",
+    "gameplay_values": "github.deadlock-data.npcs.311b2e8d895e:trooper_normal",
+    "behavior_context": "wiki.trooper.114174"
+  },
+  "role": "ranged",
+  "combat": {
+    "base_max_health": 300,
+    "out_of_combat_regen_per_second": 7,
+    "base_resistances": {
+      "bullet_percent": 0,
+      "spirit_percent": 0
+    },
+    "spirit_resistance_over_time": [
+      {
+        "match_time": 0,
+        "percent": 0
+      },
+      {
+        "match_time": 1500,
+        "percent": 20
+      },
+      {
+        "match_time": 3000,
+        "percent": 70
+      }
+    ],
+    "enemy_base_damage_resistance_percent": 35.0,
+    "maximum_health_multiplier_after_35_minutes": 1.5
+  },
+  "movement": {
+    "walk_speed": 6.299,
+    "run_speed": 13.0
+  },
+  "sight": {
+    "players": 17.78,
+    "npcs": 40.64
+  },
+  "melee": {
+    "damage": 50,
+    "attempt_range": 2.54,
+    "hit_range": 2.54,
+    "duration": 1.5
+  },
+  "super_trooper_modifier": {
+    "health_multiplier": 1.4,
+    "damage_bonus_percent": 60.0,
+    "enemy_bounty_reduction_percent": 15
+  },
+  "economy_ref": "data.general.economy:bounties[entity=trooper]",
+  "wave_ref": "data.general.map-timings:trooper_waves",
+  "ranged_attack": {
+    "bullet_damage": 36,
+    "rounds_per_second": 0.97087,
+    "damage_per_second": 34.951,
+    "range": 25.4,
+    "damage_type": "weapon",
+    "contextual_damage_per_second_vs_players": 28.0
+  }
+}

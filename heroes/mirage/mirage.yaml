@@ -1,0 +1,1217 @@
+{
+  "schema_version": 2,
+  "id": "hero.mirage",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.mirage.125560",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Mirage",
+  "aliases": [],
+  "internal_hero_key": "hero_mirage",
+  "hero_type": "Assassin",
+  "role_localization_key": "hero_mirage_role",
+  "playstyle_localization_key": "hero_mirage_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 730,
+    "health_regeneration_per_second": 1.5,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 7,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 14.7,
+      "distance_meters": 10,
+      "duration_seconds": 0.68
+    },
+    "air_dash": {
+      "speed_meters_per_second": 17,
+      "distance_meters": 8,
+      "duration_seconds": 0.47
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.3,
+    "MaxHealth": 45,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 0.81633,
+    "SustainedDPS": 0.56604
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 828,
+    "BulletDamage": 14.8,
+    "RoundsPerSecond": 2.7211,
+    "ClipSize": 16,
+    "ReloadTime": 2.6,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 57.51,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.8,
+    "BulletRadius": 0.127,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 40.272,
+    "SustainedDPS": 27.925,
+    "NameKey": "citadel_weapon_hero_mirage_set",
+    "DescKey": "citadel_weapon_hero_mirage_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_MediumRange",
+      "Attribute_EWeaponAttribute_HeavyHitter"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Fire Scarabs",
+      "internal_key": "mirage_fire_beetles",
+      "data": {
+        "AbilityCastDelay": 0.05,
+        "AbilityCharges": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 35,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "DPS": {
+          "Value": 8,
+          "Scale": {
+            "Value": 0.1,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "mirage_fire_beetles",
+        "MaxStacks": 100,
+        "Name": "Fire Scarabs",
+        "OutgoingDamagePenaltyPercent": -20,
+        "StatStolenDebuffModifier": {
+          "Class": "MirageFireScarabsHealthLoss",
+          "Subclass": "MirageFireScarabsHealthLoss",
+          "EnabledStateMask": [
+            "HasFirebeetlesDebuff"
+          ]
+        },
+        "StealDuration": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "Upgrades": [
+          {
+            "DPS": 7
+          },
+          {
+            "AbilityCharges": 1,
+            "StealDuration": 2
+          },
+          {
+            "OutgoingDamagePenaltyPercent": -15,
+            "DPS": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.13,
+                "Type": "spirit"
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "mirage_fire_beetles",
+        "Name": "Fire Scarabs",
+        "DescKey": "mirage_fire_beetles_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "DPS",
+                "Name": "Damage Per Second",
+                "Value": 8,
+                "Scale": {
+                  "Value": 0.1,
+                  "Type": "spirit"
+                },
+                "Type": "healing"
+              },
+              {
+                "Key": "OutgoingDamagePenaltyPercent",
+                "Name": "Damage Penalty",
+                "Value": -20,
+                "Type": "damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "StealDuration",
+              "Name": "Steal Duration",
+              "Value": 5,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "mirage_fire_beetles_desc"
+        },
+        "Upgrades": [
+          {
+            "DPS": 7
+          },
+          {
+            "AbilityCharges": 1,
+            "StealDuration": 2,
+            "DescKey": "mirage_fire_beetles_t2_desc"
+          },
+          {
+            "OutgoingDamagePenaltyPercent": -15,
+            "DPS": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.13,
+                "Type": "spirit"
+              }
+            }
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "MaxStacks": {
+            "Name": "Max Stacks",
+            "Value": 100
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.05,
+          "Type": "cast"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 35,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "mirage_fire_beetles_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Infest an enemy with fire scarabs, stealing life from them and causing them to deal reduced damage.",
+          "plain_text": "Infest an enemy with fire scarabs, stealing life from them and causing them to deal reduced damage."
+        },
+        {
+          "localization_key": "mirage_fire_beetles_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+1 Charge<br>+2s Duration",
+          "plain_text": "+1 Charge\n+2s Duration"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Dust Devil",
+      "internal_key": "mirage_tornado",
+      "data": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCastRange": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 36,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorDontInterruptSprint",
+          "BehaviorProjectile",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorMovement",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "ClimbHeight": 1,
+        "Damage": {
+          "Value": 65,
+          "Scale": {
+            "Value": 0.3,
+            "Type": "spirit"
+          }
+        },
+        "DampingFactor": 0.1,
+        "DistanceAboveGround": 0.5,
+        "DropDownRate": 10,
+        "EnemyLiftDuration": 0.2,
+        "HoldInPlaceDuration": {
+          "Value": 0.3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "mirage_tornado",
+        "LiftHeight": 3,
+        "MaxDeltaMovementControl": 2,
+        "Name": "Dust Devil",
+        "OpenHeight": 8,
+        "ProjectileThinkInterval": 0.01,
+        "Radius": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "SlowDuration": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "SlowPercent": 30,
+        "TickRate": 0.25,
+        "TornadoSpeed": 24,
+        "Upgrades": [
+          {
+            "Damage": 60
+          },
+          {
+            "AbilityCooldown": -12,
+            "WhirlwindEvasionChance": 30
+          },
+          {
+            "RecastWindow": 6,
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.6,
+                "Type": "spirit"
+              }
+            }
+          }
+        ],
+        "WhirlwindDuration": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "WhirlwindEvasionChance": 30,
+        "WhirlwindEvasionModifier": {
+          "Class": "MirageTornadoEvasion",
+          "Subclass": "MirageTornadoEvasion"
+        }
+      },
+      "card": {
+        "Key": "mirage_tornado",
+        "Name": "Dust Devil",
+        "DescKey": "mirage_tornado_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 65,
+                "Scale": {
+                  "Value": 0.3,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "HoldInPlaceDuration",
+                "Name": "Lift Duration",
+                "Value": 0.3,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              },
+              {
+                "Key": "WhirlwindEvasionChance",
+                "Name": "Bullet Evasion Chance",
+                "Value": 30
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "Radius",
+              "Name": "Radius",
+              "Value": 4,
+              "Scale": {
+                "Value": 1,
+                "Type": "radius"
+              },
+              "Type": "distance"
+            },
+            {
+              "Key": "WhirlwindDuration",
+              "Name": "Bullet Evasion Duration",
+              "Value": 4,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "SlowPercent",
+              "Name": "Move Speed",
+              "Value": 30,
+              "Type": "slow"
+            },
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 3,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "mirage_tornado_desc"
+        },
+        "Upgrades": [
+          {
+            "Damage": 60,
+            "DescKey": "mirage_tornado_t1_desc"
+          },
+          {
+            "AbilityCooldown": -12,
+            "WhirlwindEvasionChance": 30,
+            "DescKey": "mirage_tornado_t2_desc"
+          },
+          {
+            "RecastWindow": 6,
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.6,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "mirage_tornado_t3_desc"
+          }
+        ],
+        "Duration": {
+          "EnemyLiftDuration": {
+            "Name": "Lift Up Time",
+            "Value": 0.2,
+            "Type": "duration"
+          }
+        },
+        "Range": {
+          "OpenHeight": {
+            "Name": null,
+            "Value": 8,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "ClimbHeight": {
+            "Name": null,
+            "Value": 1
+          },
+          "DampingFactor": {
+            "Name": null,
+            "Value": 0.1
+          },
+          "DistanceAboveGround": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "DropDownRate": {
+            "Name": null,
+            "Value": 10
+          },
+          "LiftHeight": {
+            "Name": null,
+            "Value": 3
+          },
+          "MaxDeltaMovementControl": {
+            "Name": null,
+            "Value": 2
+          },
+          "ProjectileThinkInterval": {
+            "Name": null,
+            "Value": 0.01
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.25
+          },
+          "TornadoSpeed": {
+            "Name": null,
+            "Value": 24
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.1,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "distance"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 36,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "mirage_tornado_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Transform yourself into a whirlwind that travels forward, <span class=\"highlight\">damaging enemies</span>, slowing their <span class=\"highlight\">move speed</span> and <span class=\"highlight\">lifting them up</span> in the air. After emerging from the tornado you gain <span class=\"highlight\">bullet evasion</span>.",
+          "plain_text": "Transform yourself into a whirlwind that travels forward, damaging enemies, slowing their move speed and lifting them up in the air. After emerging from the tornado you gain bullet evasion."
+        },
+        {
+          "localization_key": "mirage_tornado_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+60</span> Damage",
+          "plain_text": "+60 Damage"
+        },
+        {
+          "localization_key": "mirage_tornado_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<br><span class=\"highlight\">-12s</span> Cooldown<br><span class=\"highlight\">+30%</span> Evasion",
+          "plain_text": "-12s Cooldown\n+30% Evasion"
+        },
+        {
+          "localization_key": "mirage_tornado_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Recast within <span class=\"highlight\">6s</span>.<br>Increases spirit scaling.",
+          "plain_text": "Recast within 6s.\nIncreases spirit scaling."
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Djinn's Mark",
+      "internal_key": "mirage_sand_phantom",
+      "data": {
+        "AbilityCooldown": {
+          "Value": 2.75,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "AutoIntrinsicModifiers": [
+          {
+            "Class": "MirageSandPhantomProc",
+            "Subclass": "MirageSandPhantomProc",
+            "MaxBulletsToProcInShot": 1,
+            "ProcReadyModifier": {
+              "Class": "MirageSandPhantomProcReady",
+              "Subclass": "MirageSandPhantomProcReady"
+            },
+            "PassiveVictimModifier": {
+              "Class": "MirageSandPhantomPassiveVictim",
+              "Subclass": "MirageSandPhantomPassiveVictim",
+              "SlowModifier": {
+                "Class": "DiminishingSlow",
+                "Subclass": "MirageDjinnsMarkSlow"
+              }
+            }
+          }
+        ],
+        "BehaviourBits": [
+          "BehaviorDontInterruptSprint",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCanCastOnZipline",
+          "BehaviorDoNotAllowSpamProc"
+        ],
+        "ChannelMoveSpeed": -1,
+        "DMarkMultiplierPerStack": 2,
+        "IsDisabled": false,
+        "Key": "mirage_sand_phantom",
+        "MaxStacks": 4,
+        "Name": "Djinn's Mark",
+        "ProcChance": 100,
+        "ProcCooldown": {
+          "Value": 2.75,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "ProcDamageBase": {
+          "Value": 11,
+          "Scale": {
+            "Value": 0.35,
+            "Type": "spirit"
+          }
+        },
+        "ProcMaxRange": 40,
+        "RevealDuration": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "Upgrades": [
+          {
+            "MovementSpeedSlow": 60,
+            "SlowDuration": 0.8
+          },
+          {
+            "ProcDamageBase": 20,
+            "VictimStackDuration": 3
+          },
+          {
+            "AbilityCooldown": -0.75,
+            "ProcCooldown": -0.75,
+            "StunDuration": 0.5,
+            "MaxStacks": 1
+          }
+        ],
+        "VictimStackDuration": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        }
+      },
+      "card": {
+        "Key": "mirage_sand_phantom",
+        "Name": "Djinn's Mark",
+        "DescKey": "mirage_sand_phantom_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "ProcDamageBase",
+                "Name": "Base Damage",
+                "Value": 11,
+                "Scale": {
+                  "Value": 0.35,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "DMarkMultiplierPerStack",
+                "Name": "Damage Per Mark",
+                "Value": 2,
+                "Type": "damage"
+              },
+              {
+                "Key": "MaxStacks",
+                "Name": "Max Stacks",
+                "Value": 4,
+                "Type": "distance"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "ProcCooldown",
+              "Name": "Max Frequency",
+              "Value": 2.75,
+              "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+              },
+              "Type": "cooldown"
+            },
+            {
+              "Key": "VictimStackDuration",
+              "Name": "Djinn's Mark Duration",
+              "Value": 5,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "RevealDuration",
+              "Name": "Reveal Duration",
+              "Value": 6,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "ProcMaxRange",
+              "Name": "Proc Max Range",
+              "Value": 40,
+              "Type": "range"
+            },
+            {
+              "Key": "StunDuration",
+              "Name": "Stun Duration",
+              "Value": 0,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "mirage_sand_phantom_passive_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": []
+          },
+          "Alt": [],
+          "DescKey": "mirage_sand_phantom_desc"
+        },
+        "Upgrades": [
+          {
+            "MovementSpeedSlow": 60,
+            "SlowDuration": 0.8,
+            "DescKey": "mirage_sand_phantom_t1_desc"
+          },
+          {
+            "ProcDamageBase": 20,
+            "VictimStackDuration": 3,
+            "DescKey": "mirage_sand_phantom_t2_desc"
+          },
+          {
+            "AbilityCooldown": -0.75,
+            "ProcCooldown": -0.75,
+            "StunDuration": 0.5,
+            "MaxStacks": 1,
+            "DescKey": "mirage_sand_phantom_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "ProcChance": {
+            "Name": "Proc Chance",
+            "Value": 100
+          }
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 2.75,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "mirage_sand_phantom_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info2.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Active: <span class=\"highlight\">Consume</span> all Djinn Mark's to deal its damage now.",
+          "plain_text": "Active: Consume all Djinn Mark's to deal its damage now."
+        },
+        {
+          "localization_key": "mirage_sand_phantom_passive_desc",
+          "card_paths": [
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Passive: Your shots <span class=\"highlight\">apply a Djinn Mark</span> on the target. When the mark expires or is consumed, it deals {g:citadel_inline_attribute:'SpiritDamage'} and the target is briefly <span class=\"highlight\">revealed on the map</span>. Each added mark doubles the current damage.<br><span class=\"diminish\"><br>There is a per target Cooldown for applying additional marks</span>",
+          "plain_text": "Passive: Your shots apply a Djinn Mark on the target. When the mark expires or is consumed, it deals spirit damage and the target is briefly revealed on the map. Each added mark doubles the current damage.\nThere is a per target Cooldown for applying additional marks"
+        },
+        {
+          "localization_key": "mirage_sand_phantom_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On Proc: Apply a fading <span class=\"highlight\">60%</span> Slow for <span class=\"highlight\">0.8s</span>",
+          "plain_text": "On Proc: Apply a fading 60% Slow for 0.8s"
+        },
+        {
+          "localization_key": "mirage_sand_phantom_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+20</span> Base Damage and <span class=\"highlight\">+3s</span> Multiplier Duration",
+          "plain_text": "+20 Base Damage and +3s Multiplier Duration"
+        },
+        {
+          "localization_key": "mirage_sand_phantom_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-0.75s</span> Cooldown <br><span class=\"highlight\">+1</span> Max Marks <br>Stun Victim for <span class=\"highlight\">0.5s</span> on Max Marks",
+          "plain_text": "-0.75s Cooldown\n+1 Max Marks\nStun Victim for 0.5s on Max Marks"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Traveler",
+      "internal_key": "mirage_teleport",
+      "data": {
+        "AbilityCooldown": {
+          "Value": 140,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorCanCastOnZipline",
+          "BehaviorCastableWhileBusy",
+          "BehaviorRequireAbilityButtonToCancel",
+          "BehaviorCanCancelDuringCastDelay"
+        ],
+        "BuffModifier": {
+          "Class": "MirageTravelerMovementSpeed",
+          "Subclass": "MirageTeleportMovementSpeed"
+        },
+        "ChannelMoveSpeed": -1,
+        "CombatBarrier": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0,
+            "Type": "spirit"
+          }
+        },
+        "ImmunityModifier": {
+          "Class": "Unstoppable",
+          "Subclass": "Unstoppable",
+          "EnabledStateMask": [
+            "StatusImmune",
+            "SlowImmune",
+            "KnockdownImmune",
+            "Unstoppable"
+          ],
+          "StatusEffectPriority": 0,
+          "DisabledStateMask": [
+            "Disarmed",
+            "Muted",
+            "Silenced",
+            "SilenceMovementAbilites",
+            "Slowed",
+            "Glitched",
+            "MeleeDisabledDebuff",
+            "DashDisabledDebuff"
+          ]
+        },
+        "InterruptCooldown": 4,
+        "InterruptNotificationModifier": {
+          "Class": "Base",
+          "Subclass": "Notification",
+          "Duration": 2
+        },
+        "IsDisabled": false,
+        "Key": "mirage_teleport",
+        "Name": "Traveler",
+        "SearchRadius": 30,
+        "TeleportCompletedTime": 2,
+        "Upgrades": [
+          {
+            "BonusMoveSpeed": 3,
+            "BonusFireRate": 20,
+            "MovementSpeedBonusDuration": 12
+          },
+          {
+            "CombatBarrier": {
+              "Value": 400,
+              "Scale": {
+                "Value": 0.6,
+                "Type": "spirit"
+              }
+            }
+          },
+          {
+            "AbilityCooldown": -90
+          }
+        ]
+      },
+      "card": {
+        "Key": "mirage_teleport",
+        "Name": "Traveler",
+        "DescKey": "mirage_teleport_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "TeleportCompletedTime",
+                "Name": "Wait Time",
+                "Value": 2,
+                "Type": "duration"
+              },
+              {
+                "Key": "BonusFireRate",
+                "Name": "Fire Rate",
+                "Value": 0
+              },
+              {
+                "Key": "BonusMoveSpeed",
+                "Name": "Move Speed",
+                "Value": 0,
+                "Type": "move_speed"
+              },
+              {
+                "Key": "CombatBarrier",
+                "Name": "Barrier",
+                "Value": 0,
+                "Scale": {
+                  "Value": 0,
+                  "Type": "spirit"
+                },
+                "Type": "bullet_armor_up"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "MovementSpeedBonusDuration",
+              "Name": "Move Speed Duration",
+              "Value": 0,
+              "Type": "duration"
+            },
+            {
+              "Key": "InterruptCooldown",
+              "Name": "Interrupt Cooldown",
+              "Value": 4,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "mirage_teleport_desc"
+        },
+        "Upgrades": [
+          {
+            "BonusMoveSpeed": 3,
+            "BonusFireRate": 20,
+            "MovementSpeedBonusDuration": 12,
+            "DescKey": "mirage_teleport_t1_desc"
+          },
+          {
+            "CombatBarrier": {
+              "Value": 400,
+              "Scale": {
+                "Value": 0.6,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "mirage_teleport_t2_desc"
+          },
+          {
+            "AbilityCooldown": -90
+          }
+        ],
+        "Range": {
+          "SearchRadius": {
+            "Name": "Search Radius",
+            "Value": 30,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 140,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "mirage_teleport_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Target a location on the minimap.  After a brief wait, <span class=\"highlight\">teleport</span> to that location.  Taking damage during the wait period causes the teleport to be interrupted.",
+          "plain_text": "Target a location on the minimap. After a brief wait, teleport to that location. Taking damage during the wait period causes the teleport to be interrupted."
+        },
+        {
+          "localization_key": "mirage_teleport_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+3m Move Speed and +20% Fire Rate for 12s",
+          "plain_text": "+3m Move Speed and +20% Fire Rate for 12s"
+        },
+        {
+          "localization_key": "mirage_teleport_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "400 Barrier that scales with Spirit",
+          "plain_text": "400 Barrier that scales with Spirit"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.47,
+    "AirDashSpeed": 17,
+    "BaseHealthRegen": 1.5,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.68,
+    "GroundDashSpeed": 14.7,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.3,
+      "MaxHealth": 45,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 0.81633,
+      "SustainedDPS": 0.56604
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_mirage_lore",
+    "MaxHealth": 730,
+    "MaxMoveSpeed": 7,
+    "MoveAcceleration": 4,
+    "Name": "Mirage",
+    "Playstyle": "hero_mirage_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_mirage_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.6,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Assassin",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

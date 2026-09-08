@@ -1,0 +1,1194 @@
+{
+  "schema_version": 2,
+  "id": "hero.infernus",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.infernus.124880",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Infernus",
+  "aliases": [],
+  "internal_hero_key": "hero_inferno",
+  "hero_type": "Marksman",
+  "role_localization_key": "hero_inferno_role",
+  "playstyle_localization_key": "hero_inferno_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": true,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 830,
+    "health_regeneration_per_second": 2,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.7,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 14.7,
+      "distance_meters": 10,
+      "duration_seconds": 0.68
+    },
+    "air_dash": {
+      "speed_meters_per_second": 17,
+      "distance_meters": 8,
+      "duration_seconds": 0.47
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.088,
+    "MaxHealth": 39,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 0.83809,
+    "SustainedDPS": 0.46726
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 660.4,
+    "BulletDamage": 5.5,
+    "RoundsPerSecond": 9.5238,
+    "ClipSize": 27,
+    "ReloadTime": 2.25,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 18,
+    "FalloffEndRange": 55,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.8,
+    "BulletRadius": 0.1016,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 52.381,
+    "SustainedDPS": 29.204,
+    "NameKey": "citadel_weapon_hero_inferno_set",
+    "DescKey": "citadel_weapon_hero_inferno_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_RapidFire",
+      "Attribute_EWeaponAttribute_MediumRange"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Napalm",
+      "internal_key": "ability_incendiary_projectile",
+      "data": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCastRange": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCharges": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorShowCastRangeAsSatSphereWhileCasting",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": 18,
+        "Damage": {
+          "Value": 40,
+          "Scale": {
+            "Value": 0.6,
+            "Type": "spirit"
+          }
+        },
+        "DebuffDuration": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "IncendiaryDebuff",
+          "Subclass": "IncendiaryDebuff",
+          "StatusEffectPriority": 50
+        },
+        "GrowthPerMeter": 0.5,
+        "HeightOffGround": 50,
+        "IncomingDamagePercentFromCaster": 16,
+        "InitialWidth": 1,
+        "IsDisabled": false,
+        "Key": "ability_incendiary_projectile",
+        "Name": "Napalm",
+        "ParticleRadiusMultiplier": 1.15,
+        "SlowDuration": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "SlowModifier": {
+          "Class": "SlowBase",
+          "Subclass": "Slow"
+        },
+        "SlowPercent": 35,
+        "TickRate": 0.5,
+        "Upgrades": [
+          {
+            "AbilityCharges": 1
+          },
+          {
+            "LifestealPercentHero": 15
+          },
+          {
+            "IncomingDamagePercentFromCaster": 17,
+            "HealAmpReceivePenaltyPercent": -33,
+            "HealAmpRegenPenaltyPercent": -33
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_incendiary_projectile",
+        "Name": "Napalm",
+        "DescKey": "ability_incendiary_projectile_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 40,
+                "Scale": {
+                  "Value": 0.6,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Hit:",
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 35,
+                "Type": "slow"
+              },
+              {
+                "Title": "On Hit:",
+                "Key": "SlowDuration",
+                "Name": "Slow Duration",
+                "Value": 4,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_incendiary_projectile_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "Napalm Effects:",
+                "Key": "IncomingDamagePercentFromCaster",
+                "Name": "Damage Taken",
+                "Value": 16,
+                "Type": "damage"
+              },
+              {
+                "Title": "Napalm Effects:",
+                "Key": "LifestealPercentHero",
+                "Name": "Lifesteal",
+                "Value": 0,
+                "Type": "healing"
+              },
+              {
+                "Title": "Napalm Effects:",
+                "Key": "HealAmpReceivePenaltyPercent",
+                "Name": "Healing Reduction",
+                "Value": 0,
+                "Type": "healing"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "DebuffDuration",
+              "Name": "Debuff Duration",
+              "Value": 8,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ]
+        },
+        "Upgrades": [
+          {
+            "AbilityCharges": 1
+          },
+          {
+            "LifestealPercentHero": 15,
+            "DescKey": "ability_incendiary_projectile_t2_desc"
+          },
+          {
+            "IncomingDamagePercentFromCaster": 17,
+            "HealAmpReceivePenaltyPercent": -33,
+            "HealAmpRegenPenaltyPercent": -33,
+            "DescKey": "ability_incendiary_projectile_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 18,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "GrowthPerMeter": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "HeightOffGround": {
+            "Name": null,
+            "Value": 50
+          },
+          "InitialWidth": {
+            "Name": null,
+            "Value": 1
+          },
+          "ParticleRadiusMultiplier": {
+            "Name": null,
+            "Value": 1.15
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.5
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.1,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_incendiary_projectile_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Spew an incendiary mixture, dealing {g:citadel_inline_attribute:'SpiritDamage'}, applying {g:citadel_inline_attribute:'Slow'}, and coating targets in <span class=\"highlight\">napalm</span>.",
+          "plain_text": "Spew an incendiary mixture, dealing spirit damage, applying slow, and coating targets in napalm."
+        },
+        {
+          "localization_key": "ability_incendiary_projectile_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Napalm Effect: +<span class=\"highlight\">15% Lifesteal</span>",
+          "plain_text": "Napalm Effect: +15% Lifesteal"
+        },
+        {
+          "localization_key": "ability_incendiary_projectile_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Napalm Effect: <span class=\"highlight\">+17%</span> Damage Taken and <span class=\"highlight\">-33%</span> Healing",
+          "plain_text": "Napalm Effect: +17% Damage Taken and -33% Healing"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Flame Dash",
+      "internal_key": "ability_flame_dash",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCooldown": {
+          "Value": 38,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityDuration": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AuraLingerDuration": 1,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorPreventBotUsage",
+          "BehaviorMovement",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "ChannelMoveSpeed": 18,
+        "DPS": {
+          "Value": 30,
+          "Scale": {
+            "Value": 0.7,
+            "Type": "spirit"
+          }
+        },
+        "DashAirSpeed": 8,
+        "DashSpeed": 12,
+        "FlameAuraRadius": {
+          "Value": 4.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "FlameDashJumpBonus": 50,
+        "FlameDashModifier": {
+          "Class": "Flamedash",
+          "Subclass": "Flamedash",
+          "EnabledStateMask": [
+            "AbilityMovement",
+            "MantleDisabled",
+            "MeleeDisabled",
+            "SlidingDisabled",
+            "DuckingDisabled"
+          ],
+          "GroundAuraModifier": {
+            "Class": "FlamedashGroundAura",
+            "Subclass": "FlamedashGroundAura",
+            "Height": 80,
+            "ProvidedByAura": {
+              "Class": "FlamedashBurn",
+              "Subclass": "FlamedashBurn",
+              "DebuffModifier": {
+                "Class": "Base",
+                "Subclass": "FlamedashDebuff"
+              }
+            }
+          },
+          "ProgressModifier": {
+            "Class": "Base",
+            "Subclass": "ProgressWatcher"
+          }
+        },
+        "GroundAuraSpacing": 1,
+        "GroundFlameDuration": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_flame_dash",
+        "Name": "Flame Dash",
+        "SideMoveSpeedReduction": -65,
+        "SlowResistance": 50,
+        "SpeedBurstSpeed": 20,
+        "TickRate": 0.5,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -12
+          },
+          {
+            "DPS": 20,
+            "GroundFlameDuration": 1
+          },
+          {
+            "AbilityCharges": 2,
+            "AbilityCooldownBetweenCharge": 14
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_flame_dash",
+        "Name": "Flame Dash",
+        "DescKey": "ability_flame_dash_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "SpeedBurstSpeed",
+                "Name": "Max Dash Speed",
+                "Value": 20,
+                "Type": "move_speed"
+              },
+              {
+                "Key": "DPS",
+                "Name": "Damage Per Second",
+                "Value": 30,
+                "Scale": {
+                  "Value": 0.7,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Hit:",
+                "Key": "FireRateSlow",
+                "Name": "Fire Rate",
+                "Value": 0,
+                "Type": "fire_rate"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "GroundFlameDuration",
+              "Name": "Trail Duration",
+              "Value": 4,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "FlameAuraRadius",
+              "Name": "Trail Width",
+              "Value": 4.5,
+              "Scale": {
+                "Value": 1,
+                "Type": "radius"
+              },
+              "Type": "distance"
+            },
+            {
+              "Key": "SlowResistance",
+              "Name": "Slow Resistance",
+              "Value": 50,
+              "Type": "move_speed"
+            }
+          ],
+          "DescKey": "ability_flame_dash_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -12
+          },
+          {
+            "DPS": 20,
+            "GroundFlameDuration": 1,
+            "DescKey": "ability_flame_dash_t2_desc"
+          },
+          {
+            "AbilityCharges": 2,
+            "AbilityCooldownBetweenCharge": 14,
+            "DescKey": "ability_flame_dash_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 18,
+            "Type": "move_speed"
+          },
+          "DashAirSpeed": {
+            "Name": null,
+            "Value": 8,
+            "Type": "move_speed"
+          },
+          "DashSpeed": {
+            "Name": "Dash Speed",
+            "Value": 12,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AuraLingerDuration": {
+            "Name": null,
+            "Value": 1
+          },
+          "FlameDashJumpBonus": {
+            "Name": null,
+            "Value": 50
+          },
+          "GroundAuraSpacing": {
+            "Name": null,
+            "Value": 1
+          },
+          "SideMoveSpeedReduction": {
+            "Name": null,
+            "Value": -65
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.5
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 38,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_flame_dash_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Dash forward, gaining {g:citadel_inline_attribute:'SlowResistance'} while leaving a flaming trail that deals {g:citadel_inline_attribute:'SpiritDPS'}. <br><br><span class=\"diminish\">Hold{g:citadel_binding:'MoveForward'}while active to dash farther.",
+          "plain_text": "Dash forward, gaining slow resistance while leaving a flaming trail that deals spirit damage over time.\nHold [Move Forward] while active to dash farther."
+        },
+        {
+          "localization_key": "ability_flame_dash_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+1s</span> Trail Duration and <span class=\"highlight\">+20 DPS</span>",
+          "plain_text": "+1s Trail Duration and +20 DPS"
+        },
+        {
+          "localization_key": "ability_flame_dash_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Enable <span class=\"highlight\">2 Ability Charges</span> with <span class=\"highlight\">14s</span> Recharge time",
+          "plain_text": "Enable 2 Ability Charges with 14s Recharge time"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Afterburn",
+      "internal_key": "ability_afterburn",
+      "data": {
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "AutoIntrinsicModifiers": [
+          {
+            "Class": "AfterburnWatcher",
+            "Subclass": "AfterburnWatcher",
+            "LightMeleeBuildUp": 20,
+            "HeavyMeleeBuildUp": 35,
+            "LightMeleeRefresh": 1.5,
+            "HeavyMeleeRefresh": 3,
+            "AfterburnDotModifier": {
+              "Class": "AfterburnDot",
+              "Subclass": "AfterburnDot",
+              "StatusEffectPriority": 50,
+              "EnabledStateMask": [
+                "Afterburning"
+              ]
+            },
+            "BuildUpModifier": {
+              "Class": "CitadelBaseBuildup",
+              "Subclass": "CitadelBaseBuildup"
+            }
+          }
+        ],
+        "BehaviourBits": [
+          "BehaviorCleaveDisabled",
+          "BehaviorDisplaysDamageImpact"
+        ],
+        "BuildUpBulletPercentPerHit": 8.1,
+        "BuildUpDuration": {
+          "Value": 17,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "BurnDuration": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "BurnDurationBase": 3,
+        "ChannelMoveSpeed": -1,
+        "CritBuildup": 15.4,
+        "DPS": {
+          "Value": 14,
+          "Scale": {
+            "Value": 0.66,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_afterburn",
+        "Name": "Afterburn",
+        "RefillDuration": 0.5,
+        "RefillDurationCrit": 1,
+        "TickRate": 0.5,
+        "Upgrades": [
+          {
+            "DPS": 16
+          },
+          {
+            "OutgoingTechDamagePercent": -35
+          },
+          {
+            "BurnDuration": 3
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_afterburn",
+        "Name": "Afterburn",
+        "DescKey": "ability_afterburn_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "Burn Effect:",
+                "Key": "DPS",
+                "Name": "Damage Per Second",
+                "Value": 14,
+                "Scale": {
+                  "Value": 0.66,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "Burn Effect:",
+                "Key": "BurnDurationBase",
+                "Name": "Unknown(BurnDurationBase)",
+                "Value": 3,
+                "Type": "duration"
+              },
+              {
+                "Title": "Burn Effect:",
+                "Key": "BurnDuration",
+                "Name": "Burn Duration",
+                "Value": 3,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              },
+              {
+                "Title": "Burn Effect:",
+                "Key": "OutgoingTechDamagePercent",
+                "Name": "Spirit Damage",
+                "Value": 0,
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "BuildUpBulletPercentPerHit",
+              "Name": "Buildup Per Bullet",
+              "Value": 8.1,
+              "Type": "cast"
+            },
+            {
+              "Key": "CritBuildup",
+              "Name": "Buildup Per Headshot",
+              "Value": 15.4,
+              "Type": "cast"
+            },
+            {
+              "Key": "RefillDuration",
+              "Value": 0.5,
+              "Type": "duration"
+            },
+            {
+              "Key": "RefillDurationCrit",
+              "Name": "Extend Per Headshot",
+              "Value": 1,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_afterburn_desc"
+        },
+        "Upgrades": [
+          {
+            "DPS": 16
+          },
+          {
+            "OutgoingTechDamagePercent": -35,
+            "DescKey": "ability_afterburn_t2_desc"
+          },
+          {
+            "BurnDuration": 3,
+            "DescKey": "ability_afterburn_t3_desc"
+          }
+        ],
+        "Duration": {
+          "BuildUpDuration": {
+            "Name": null,
+            "Value": 17,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "duration"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.5
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_afterburn_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Weapon hits build up a burning effect, dealing {g:citadel_inline_attribute:'SpiritDPS'}. <br><br><span class=\"diminish\">Abilities refresh to the base burn duration and weapon hits extend it.",
+          "plain_text": "Weapon hits build up a burning effect, dealing spirit damage over time.\nAbilities refresh to the base burn duration and weapon hits extend it."
+        },
+        {
+          "localization_key": "ability_afterburn_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Burn Effect: <span class=\"highlight\">-35%</span> Spirit Damage",
+          "plain_text": "Burn Effect: -35% Spirit Damage"
+        },
+        {
+          "localization_key": "ability_afterburn_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+3s</span> Max Burn Duration",
+          "plain_text": "+3s Max Burn Duration"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Concussive Combustion",
+      "internal_key": "ability_fire_bomb",
+      "data": {
+        "AbilityCooldown": {
+          "Value": 190,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorCastableWhileBusy",
+          "BehaviorDisplaysDamageImpact"
+        ],
+        "BuffModifier": {
+          "Class": "FirebombBuff",
+          "Subclass": "Buff"
+        },
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 125,
+          "Scale": {
+            "Value": 0.974938,
+            "Type": "spirit"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "SlowBase",
+          "Subclass": "Slow"
+        },
+        "ExplodeDelay": 3.25,
+        "FireBombModifier": {
+          "Class": "Firebomb",
+          "Subclass": "Firebomb",
+          "StatusEffectPriority": 45
+        },
+        "IsDisabled": false,
+        "Key": "ability_fire_bomb",
+        "Name": "Concussive Combustion",
+        "ProgressBarModifier": {
+          "Class": "Base",
+          "Subclass": "Progressbar"
+        },
+        "Radius": {
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "StunDuration": {
+          "Value": 1.25,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "Upgrades": [
+          {
+            "Damage": 100
+          },
+          {
+            "AbilityCooldown": -65,
+            "LifeStealPercentOnHit": 100
+          },
+          {
+            "StunDuration": 0.9,
+            "Radius": 10
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_fire_bomb",
+        "Name": "Concussive Combustion",
+        "DescKey": "ability_fire_bomb_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "ExplodeDelay",
+                "Name": "Explosion Delay",
+                "Value": 3.25,
+                "Type": "duration"
+              },
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 125,
+                "Scale": {
+                  "Value": 0.974938,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Hit:",
+                "Key": "StunDuration",
+                "Name": "Stun Duration",
+                "StatusEffect": "Stun",
+                "Value": 1.25,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "Radius",
+              "Name": "Radius",
+              "Value": 12,
+              "Scale": {
+                "Value": 1,
+                "Type": "radius"
+              },
+              "Type": "distance"
+            }
+          ],
+          "DescKey": "ability_fire_bomb_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Hero Hit:",
+                "Key": "FireRatePerHero",
+                "Name": "Unknown(FireRatePerHero)",
+                "Value": 0,
+                "Type": "fire_rate"
+              },
+              {
+                "Title": "On Hero Hit:",
+                "Key": "BuffDuration",
+                "Name": "Buff Duration",
+                "Value": 0,
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Upgrades": [
+          {
+            "Damage": 100
+          },
+          {
+            "AbilityCooldown": -65,
+            "LifeStealPercentOnHit": 100,
+            "DescKey": "ability_fire_bomb_t2_desc"
+          },
+          {
+            "StunDuration": 0.9,
+            "Radius": 10,
+            "DescKey": "ability_fire_bomb_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 190,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_fire_bomb_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Become a living bomb, dealing {g:citadel_inline_attribute:'SpiritDamage'} and applying {g:citadel_inline_attribute:'Stun'} to all nearby enemies after a delay.<br><br><span class=\"diminish\">Once cast, Concussive Combustion cannot be interrupted.</span>",
+          "plain_text": "Become a living bomb, dealing spirit damage and applying stun to all nearby enemies after a delay.\nOnce cast, Concussive Combustion cannot be interrupted."
+        },
+        {
+          "localization_key": "ability_fire_bomb_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-65s</span> Cooldown and <span class=\"highlight\">+100%</span> Explosion Lifesteal",
+          "plain_text": "-65s Cooldown and +100% Explosion Lifesteal"
+        },
+        {
+          "localization_key": "ability_fire_bomb_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+0.9s</span> Stun Duration and <span class=\"highlight\">+10m</span> Radius",
+          "plain_text": "+0.9s Stun Duration and +10m Radius"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.47,
+    "AirDashSpeed": 17,
+    "BaseHealthRegen": 2,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.68,
+    "GroundDashSpeed": 14.7,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": true,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.088,
+      "MaxHealth": 39,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 0.83809,
+      "SustainedDPS": 0.46726
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_inferno_lore",
+    "MaxHealth": 830,
+    "MaxMoveSpeed": 6.7,
+    "MoveAcceleration": 4,
+    "Name": "Infernus",
+    "Playstyle": "hero_inferno_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_inferno_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.6,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Marksman",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

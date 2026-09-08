@@ -1,0 +1,628 @@
+{
+  "schema_version": 1,
+  "id": "item.indomitable",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Indomitable",
+    "numeric_id": 951866250,
+    "internal_key": "upgrade_auto_cleanse",
+    "aliases": [
+      "upgrade_auto_cleanse"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "vitality",
+    "tier": 4,
+    "activation": "passive",
+    "is_active_item": false,
+    "is_imbue": false,
+    "shop_filters": [
+      "Durability"
+    ],
+    "target_types": null
+  },
+  "purchase": {
+    "cost_souls": 6400,
+    "component_internal_keys": [
+      "upgrade_vex_barrier"
+    ]
+  },
+  "description_plain": null,
+  "displayed_effects": [
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "OutOfCombatHealthRegen",
+      "label": "Out of Combat Regen",
+      "value": "2.0",
+      "property": {
+        "value": "2.0",
+        "provided_property_type": "MODIFIER_VALUE_OUT_OF_COMBAT_HEALTH_REGEN",
+        "css_class": "healing",
+        "prefix": "{s:sign}",
+        "label": "Out of Combat Regen",
+        "postfix": "",
+        "postvalue_label": "Out of Combat Regen",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "elevated",
+      "key": "BulletResist",
+      "label": "Bullet Resist",
+      "value": "10%",
+      "property": {
+        "value": "10",
+        "provided_property_type": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST",
+        "css_class": "bullet_armor_up",
+        "prefix": "{s:sign}",
+        "label": "Bullet Resist",
+        "postfix": "%",
+        "postvalue_label": "Bullet Resist",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": true,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "elevated",
+      "key": "TechResist",
+      "label": "Spirit Resist",
+      "value": "10%",
+      "property": {
+        "value": "10",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RESIST",
+        "css_class": "tech_armor_up",
+        "prefix": "{s:sign}",
+        "label": "Spirit Resist",
+        "postfix": "%",
+        "postvalue_label": "Spirit Resist",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": true,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "other",
+      "importance": "normal",
+      "key": "AbilityCooldown",
+      "label": "Cooldown",
+      "value": "55s",
+      "property": {
+        "value": "55",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "other",
+      "importance": "normal",
+      "key": "AbilityDuration",
+      "label": "Duration",
+      "value": "10s",
+      "property": {
+        "value": "10",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "other",
+      "importance": "important",
+      "key": "VexBarrierCombatBarrier",
+      "label": "Barrier",
+      "value": "325",
+      "property": {
+        "value": "325",
+        "provided_property_type": "MODIFIER_VALUE_BARRIER_HEALTH",
+        "css_class": "combat_barrier",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "loc_token_override": "CombatBarrier",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "CombatBarrier_scale_function",
+          "specific_stat_scale_type": "ETechPower",
+          "stat_scale": 2.0
+        },
+        "label": "Barrier",
+        "postvalue_label": "Barrier",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "BulletResist",
+          "bonus": "14"
+        },
+        {
+          "name": "TechResist",
+          "bonus": "14"
+        },
+        {
+          "name": "AbilityCooldown",
+          "bonus": "-35"
+        },
+        {
+          "name": "VexBarrierCombatBarrier",
+          "bonus": "450"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 951866250,
+    "class_name": "upgrade_auto_cleanse",
+    "name": "Indomitable",
+    "start_trained": true,
+    "heroes": [],
+    "update_time": 1777311199,
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "vitality",
+    "item_tier": 4,
+    "properties": {
+      "AbilityCooldown": {
+        "value": "55",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityDuration": {
+        "value": "10",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "BulletResist": {
+        "value": "10",
+        "provided_property_type": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST",
+        "css_class": "bullet_armor_up",
+        "prefix": "{s:sign}",
+        "label": "Bullet Resist",
+        "postfix": "%",
+        "postvalue_label": "Bullet Resist",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": true,
+        "tooltip_is_important": false
+      },
+      "TechResist": {
+        "value": "10",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RESIST",
+        "css_class": "tech_armor_up",
+        "prefix": "{s:sign}",
+        "label": "Spirit Resist",
+        "postfix": "%",
+        "postvalue_label": "Spirit Resist",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": true,
+        "tooltip_is_important": false
+      },
+      "CooldownReductionOnProc": {
+        "value": "20",
+        "css_class": "cooldown",
+        "prefix": "{s:sign}",
+        "label": "Cooldown Reduction",
+        "postfix": "s",
+        "postvalue_label": "Cooldown Reduction"
+      },
+      "VexBarrierCombatBarrier": {
+        "value": "325",
+        "provided_property_type": "MODIFIER_VALUE_BARRIER_HEALTH",
+        "css_class": "combat_barrier",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "loc_token_override": "CombatBarrier",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "CombatBarrier_scale_function",
+          "specific_stat_scale_type": "ETechPower",
+          "stat_scale": 2.0
+        },
+        "label": "Barrier",
+        "postvalue_label": "Barrier",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "OutOfCombatHealthRegen": {
+        "value": "2.0",
+        "provided_property_type": "MODIFIER_VALUE_OUT_OF_COMBAT_HEALTH_REGEN",
+        "css_class": "healing",
+        "prefix": "{s:sign}",
+        "label": "Out of Combat Regen",
+        "postfix": "",
+        "postvalue_label": "Out of Combat Regen",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    "description": {},
+    "activation": "passive",
+    "component_items": [
+      "upgrade_vex_barrier"
+    ],
+    "tooltip_sections": [
+      {
+        "section_type": "innate",
+        "section_attributes": [
+          {
+            "properties": [
+              "OutOfCombatHealthRegen"
+            ],
+            "elevated_properties": [
+              "BulletResist",
+              "TechResist"
+            ]
+          }
+        ]
+      },
+      {
+        "section_attributes": [
+          {
+            "loc_string": "The next <span class=\"highlight\">Stun, Chain, Immobilize, Sleep or Silence</span> is automatically cleansed. When this happens, you gain a <span class=\"highlight\">barrier</span> and all your <span class=\"highlight\">ability cooldowns</span> get reduced by 20%.",
+            "properties": [
+              "AbilityCooldown",
+              "AbilityDuration"
+            ],
+            "important_properties": [
+              "VexBarrierCombatBarrier"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "BulletResist",
+            "bonus": "14"
+          },
+          {
+            "name": "TechResist",
+            "bonus": "14"
+          },
+          {
+            "name": "AbilityCooldown",
+            "bonus": "-35"
+          },
+          {
+            "name": "VexBarrierCombatBarrier",
+            "bonus": "450"
+          }
+        ]
+      }
+    ],
+    "is_active_item": false,
+    "shopable": true,
+    "cost": 6400
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Indomitable",
+    "Description": null,
+    "Cost": 6400,
+    "Tier": 4,
+    "Activation": "Passive",
+    "Slot": "Armor",
+    "Components": [
+      "upgrade_vex_barrier"
+    ],
+    "TargetTypes": null,
+    "ShopFilters": [
+      "Durability"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityCooldown": 55,
+    "AbilityDuration": 10,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "BulletResist": 10,
+    "TechResist": 10,
+    "CooldownReductionOnProc": 20,
+    "VexBarrierCombatBarrier": {
+      "Value": 325,
+      "Scale": {
+        "Value": 2.0,
+        "Type": "spirit"
+      }
+    },
+    "OutOfCombatHealthRegen": 2.0,
+    "PropertyUpgrades": {
+      "BulletResist": 14,
+      "TechResist": 14,
+      "AbilityCooldown": -35,
+      "VexBarrierCombatBarrier": 450
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_auto_cleanse",
+    "Name": "Indomitable",
+    "Description": null,
+    "Cost": 6400,
+    "Tier": 4,
+    "Slot": "Armor",
+    "Activation": "Passive",
+    "Components": [
+      "upgrade_vex_barrier"
+    ],
+    "TargetTypes": null,
+    "ShopFilters": [
+      "Durability"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Innate",
+      "DescKey": null,
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "BulletResist",
+          "Value": 10,
+          "Type": "bullet_armor_up"
+        },
+        {
+          "Key": "TechResist",
+          "Value": 10,
+          "Type": "tech_armor_up"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "OutOfCombatHealthRegen",
+          "Value": 2.0,
+          "Type": "healing"
+        }
+      ]
+    },
+    "Info2": {
+      "Type": null,
+      "DescKey": "#upgrade_upgrade_auto_cleanse_desc",
+      "Cooldown": 55,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "VexBarrierCombatBarrier",
+          "Value": 325.0,
+          "Scale": {
+            "Value": 2.0,
+            "Type": "spirit"
+          },
+          "Type": "combat_barrier",
+          "UsageFlags": "ConditionallyApplied",
+          "LocTokenOverride": "CombatBarrier"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "AbilityDuration",
+          "Value": 10,
+          "Type": "duration"
+        }
+      ]
+    },
+    "Upgrades": {
+      "BulletResist": 14,
+      "TechResist": 14,
+      "AbilityCooldown": -35,
+      "VexBarrierCombatBarrier": 450
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      },
+      "CooldownReductionOnProc": {
+        "Key": "CooldownReductionOnProc",
+        "Value": 20,
+        "Type": "cooldown"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

@@ -1,0 +1,1317 @@
+{
+  "schema_version": 2,
+  "id": "hero.drifter",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.drifter.125577",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Drifter",
+  "aliases": [],
+  "internal_hero_key": "hero_drifter",
+  "hero_type": "Assassin",
+  "role_localization_key": "hero_drifter_role",
+  "playstyle_localization_key": "hero_drifter_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 755,
+    "health_regeneration_per_second": 3.5,
+    "light_melee_damage": 51.5,
+    "heavy_melee_damage": 120,
+    "move_speed_meters_per_second": 6.9,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 14.7,
+      "distance_meters": 10,
+      "duration_seconds": 0.68
+    },
+    "air_dash": {
+      "speed_meters_per_second": 17,
+      "distance_meters": 8,
+      "duration_seconds": 0.47
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": -45,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.49,
+    "MaxHealth": 41,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6816,
+    "DPS": 1.1111,
+    "SustainedDPS": 0.76009
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 508,
+    "BulletDamage": 19.5,
+    "RoundsPerSecond": 2.2676,
+    "ClipSize": 12,
+    "ReloadTime": 2.444,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 22,
+    "FalloffEndRange": 27,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.6,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0,
+    "BulletRadius": 0.1524,
+    "BulletsPerShot": 3,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": true,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 44.218,
+    "SustainedDPS": 30.248,
+    "NameKey": "citadel_weapon_hero_drifter_set",
+    "DescKey": "citadel_weapon_hero_drifter_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_Spreadshot",
+      "Attribute_EWeaponAttribute_CloseRange"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Rend",
+      "internal_key": "drifter_blood_blast",
+      "data": {
+        "AbilityCastDelay": 0.4,
+        "AbilityCastRange": {
+          "Value": 16,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 16,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityPostCastDuration": 0.4,
+        "AbilityUnitTargetLimit": 30,
+        "AirSpeedMax": 70,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorNoTarget",
+          "BehaviorShowCastRangeAsSatSphereWhileCasting",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BonusDamage": {
+          "Value": 40,
+          "Scale": {
+            "Value": 1.4,
+            "Type": "spirit"
+          }
+        },
+        "ChannelMoveSpeed": 1.3,
+        "Damage": {
+          "Value": 0,
+          "Scale": {
+            "Value": 1.2,
+            "Type": "melee"
+          }
+        },
+        "DamageHeavyMelee": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0,
+            "Type": "heavy_melee"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "CitadelSilenced",
+          "Subclass": "Debuff"
+        },
+        "ExtraSweepConeAngle": 60,
+        "ExtraSweepOffsetBehindCaster": 80,
+        "ExtraSweepRange": 3,
+        "FallSpeedMax": 1,
+        "IsDisabled": false,
+        "Key": "drifter_blood_blast",
+        "Name": "Rend",
+        "RangeForBonusDamage": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "TargetModifier": {
+          "Class": "DrifterRendBulletLifesteal",
+          "Subclass": "DrifterRendBulletLifesteal"
+        },
+        "TargetingConeAngle": 50,
+        "Upgrades": [
+          {
+            "BonusDamage": 40
+          },
+          {
+            "AbilityCooldown": -8
+          },
+          {
+            "DebuffDuration": 2,
+            "UseHeavyMelee": 1,
+            "DamageHeavyMelee": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.55,
+                "Type": "heavy_melee"
+              }
+            },
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0,
+                "Type": "melee",
+                "Multiply": true
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "drifter_blood_blast",
+        "Name": "Rend",
+        "DescKey": "drifter_blood_blast_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "BonusDamage",
+                "Name": "Bonus Damage",
+                "Value": 40,
+                "Scale": {
+                  "Value": 1.4,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Close Range",
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 0,
+                "Scale": {
+                  "Value": 1.2,
+                  "Type": "melee"
+                },
+                "Type": "melee_damage"
+              },
+              {
+                "Title": "On Close Range",
+                "Key": "DamageHeavyMelee",
+                "Name": "Damage",
+                "Value": 0,
+                "Scale": {
+                  "Value": 0,
+                  "Type": "heavy_melee"
+                },
+                "Type": "melee_damage"
+              },
+              {
+                "Title": "On Close Range",
+                "Key": "BulletLifestealPercentHero",
+                "Name": "Bullet Lifesteal",
+                "Value": 0,
+                "Type": "healing"
+              },
+              {
+                "Title": "On Close Range",
+                "Key": "DebuffDuration",
+                "Name": "Debuff Duration",
+                "StatusEffect": "Silence",
+                "Value": 0,
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "RangeForBonusDamage",
+              "Name": "Close Range",
+              "Value": 8,
+              "Scale": {
+                "Value": 1,
+                "Type": "range"
+              },
+              "Type": "distance"
+            },
+            {
+              "Key": "LifestealDuration",
+              "Name": "Lifesteal Duration",
+              "Value": 0,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "drifter_blood_blast_desc"
+        },
+        "Upgrades": [
+          {
+            "BonusDamage": 40
+          },
+          {
+            "AbilityCooldown": -8,
+            "DescKey": "drifter_blood_blast_t2_desc"
+          },
+          {
+            "DebuffDuration": 2,
+            "UseHeavyMelee": 1,
+            "DamageHeavyMelee": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.55,
+                "Type": "heavy_melee"
+              }
+            },
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0,
+                "Type": "melee",
+                "Multiply": true
+              }
+            },
+            "DescKey": "drifter_blood_blast_t3_desc"
+          }
+        ],
+        "Range": {
+          "TargetingConeAngle": {
+            "Name": "Attack Angle",
+            "Value": 50,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 1.3,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.4
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 30
+          },
+          "AirSpeedMax": {
+            "Name": null,
+            "Value": 70
+          },
+          "ExtraSweepConeAngle": {
+            "Name": null,
+            "Value": 60
+          },
+          "ExtraSweepOffsetBehindCaster": {
+            "Name": null,
+            "Value": 80
+          },
+          "ExtraSweepRange": {
+            "Name": null,
+            "Value": 3
+          },
+          "FallSpeedMax": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.4,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 16,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 16,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "drifter_blood_blast_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Swipe at enemies in a cone ahead of you, dealing {g:citadel_inline_attribute:'SpiritDamage'}. If the enemy is in <span class=\"highlight\">close range</span>, deal bonus {g:citadel_inline_attribute:'MeleeDamage'}.",
+          "plain_text": "Swipe at enemies in a cone ahead of you, dealing spirit damage. If the enemy is in close range, deal bonus melee damage."
+        },
+        {
+          "localization_key": "drifter_blood_blast_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "-8s Cooldown",
+          "plain_text": "-8s Cooldown"
+        },
+        {
+          "localization_key": "drifter_blood_blast_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Deals 55% Heavy Melee Damage<br>Silences enemies for 2s if close range",
+          "plain_text": "Deals 55% Heavy Melee Damage\nSilences enemies for 2s if close range"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Stalker's Mark",
+      "internal_key": "drifter_shadow_mark",
+      "data": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCooldown": {
+          "Value": 26,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AirDrag": 3,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCleaveDisabled",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BuffModifier": {
+          "Class": "Base",
+          "Subclass": "DrifterStalkersMarkBuff"
+        },
+        "ChannelMoveSpeed": -1,
+        "DotHealthPercent": {
+          "Value": 2,
+          "Scale": {
+            "Value": 0.015,
+            "Type": "spirit"
+          }
+        },
+        "FallSpeedMax": 0.3,
+        "IsDisabled": false,
+        "Key": "drifter_shadow_mark",
+        "Name": "Stalker's Mark",
+        "PostTeleportModifier": {
+          "Class": "DrifterStalkersMarkPostTeleport",
+          "Subclass": "DrifterStalkersMarkPostTeleport"
+        },
+        "TargetModifier": {
+          "Class": "DrifterShadowMarkTarget",
+          "Subclass": "DrifterShadowMarkTarget"
+        },
+        "TargetTeleportModifier": {
+          "Class": "Base",
+          "Subclass": "DrifterShadowMarkTeleportTarget"
+        },
+        "TeleportBackOffsetFromTarget": 135,
+        "TeleportDamage": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0.5,
+            "Type": "spirit"
+          }
+        },
+        "TickRate": 0.5,
+        "Upgrades": [
+          {
+            "BulletResistReduction": -8
+          },
+          {
+            "AbilityDuration": 3,
+            "AbilityCooldown": -10
+          },
+          {
+            "DotHealthPercent": 1.5,
+            "HealAmpReceivePenaltyPercent": -40,
+            "HealAmpRegenPenaltyPercent": -40
+          }
+        ],
+        "VerticalDrag": 1
+      },
+      "card": {
+        "Key": "drifter_shadow_mark",
+        "Name": "Stalker's Mark",
+        "DescKey": "drifter_shadow_mark_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "DotHealthPercent",
+                "Name": "Bleed Damage",
+                "Value": 2,
+                "Scale": {
+                  "Value": 0.015,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "AbilityDuration",
+                "Name": "Duration",
+                "Value": 5,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              },
+              {
+                "Key": "HealAmpReceivePenaltyPercent",
+                "Name": "Healing Reduction",
+                "Value": 0
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "AbilityCharges",
+              "Name": "Charges",
+              "Value": 0,
+              "Type": "cast"
+            },
+            {
+              "Key": "BulletResistReduction",
+              "Name": "Bullet Resist",
+              "Value": 0,
+              "Type": "bullet_armor_down"
+            },
+            {
+              "Key": "AbilityCooldownBetweenCharge",
+              "Name": "Charge Delay",
+              "Value": -1,
+              "Type": "charge_cooldown"
+            }
+          ],
+          "DescKey": "drifter_shadow_mark_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "After ambushing:",
+                "Key": "BonusFireRate",
+                "Name": "Fire Rate",
+                "Value": 0,
+                "Type": "fire_rate"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Upgrades": [
+          {
+            "BulletResistReduction": -8,
+            "DescKey": "drifter_shadow_mark_t1_desc"
+          },
+          {
+            "AbilityDuration": 3,
+            "AbilityCooldown": -10,
+            "DescKey": "drifter_shadow_mark_t2_desc"
+          },
+          {
+            "DotHealthPercent": 1.5,
+            "HealAmpReceivePenaltyPercent": -40,
+            "HealAmpRegenPenaltyPercent": -40,
+            "DescKey": "drifter_shadow_mark_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Damage": {
+          "TeleportDamage": {
+            "Name": "Blink Damage",
+            "Value": 0,
+            "Scale": {
+              "Value": 0.5,
+              "Type": "spirit"
+            },
+            "Type": "tech_damage"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AirDrag": {
+            "Name": null,
+            "Value": 3
+          },
+          "FallSpeedMax": {
+            "Name": null,
+            "Value": 0.3
+          },
+          "TeleportBackOffsetFromTarget": {
+            "Name": null,
+            "Value": 135
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "VerticalDrag": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.15,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 26,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "drifter_shadow_mark_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Send out a mark that bleeds the first target it hits, dealing {g:citadel_inline_attribute:'SpiritDPS'}.<br><br>While the enemy is bleeding you can re-activate Stalker's Mark to instantly <span class=\"highlight\">appear behind their back.</span>",
+          "plain_text": "Send out a mark that bleeds the first target it hits, dealing spirit damage over time.\nWhile the enemy is bleeding you can re-activate Stalker's Mark to instantly appear behind their back."
+        },
+        {
+          "localization_key": "drifter_shadow_mark_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-8% Bullet Resist",
+          "plain_text": "-8% Bullet Resist"
+        },
+        {
+          "localization_key": "drifter_shadow_mark_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-10s Cooldown and +3s</span> Duration",
+          "plain_text": "-10s Cooldown and +3s Duration"
+        },
+        {
+          "localization_key": "drifter_shadow_mark_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+1.5% Bleed</span> and <span class=\"highlight\">-40% Healing Reduction</span>",
+          "plain_text": "+1.5% Bleed and -40% Healing Reduction"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Bloodscent",
+      "internal_key": "ability_drifter_hunger",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 80,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "AmpDamagePercent": 15,
+        "BehaviourBits": null,
+        "BuffModifier": {
+          "Class": "Base",
+          "Subclass": "DrifterHungerBuff"
+        },
+        "ChannelMoveSpeed": -1,
+        "DelayBeforeInvisStarts": 0.6,
+        "HealOnKillPct": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0,
+            "Type": "spirit"
+          }
+        },
+        "InvisDuration": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0,
+            "Type": "spirit"
+          }
+        },
+        "InvisFadeToDuration": 0.3,
+        "InvisModifier": {
+          "Class": "Invis",
+          "Subclass": "Invis"
+        },
+        "IsDisabled": false,
+        "IsolationAssistPercentValue": 100,
+        "IsolationRange": 20,
+        "Key": "ability_drifter_hunger",
+        "KillDuration": 300,
+        "LowHealthThreshold": 30,
+        "MaxTrailTargets": 2,
+        "Name": "Bloodscent",
+        "RevealOnDamageDuration": 0.25,
+        "RevealOnSpottedDuration": 1.5,
+        "SpottedRadius": 15,
+        "TargetLingerDuration": 3,
+        "TargetModifier": {
+          "Class": "HungerTarget",
+          "Subclass": "HungerTarget"
+        },
+        "TickRate": 1,
+        "TrailDuration": {
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "Upgrades": [
+          {
+            "BonusMoveSpeed": 3
+          },
+          {
+            "HealOnKillPct": 24,
+            "StaminaToRestore": 2
+          },
+          {
+            "AmpDamagePercent": 11
+          }
+        ],
+        "WeaponDmgPerIsolationKill": 3
+      },
+      "card": {
+        "Key": "ability_drifter_hunger",
+        "Name": "Bloodscent",
+        "DescKey": "ability_drifter_hunger_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "AmpDamagePercent",
+                "Name": "Amplified Damage",
+                "Value": 15,
+                "Type": "damage"
+              },
+              {
+                "Key": "IsolationRange",
+                "Name": "Isolation Range",
+                "Value": 20,
+                "Type": "distance"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "BonusMoveSpeed",
+              "Name": "Move Speed",
+              "Value": 0,
+              "Type": "move_speed"
+            }
+          ],
+          "DescKey": "ability_drifter_hunger_passive_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Isolated Hero Death:",
+                "Key": "WeaponDmgPerIsolationKill",
+                "Name": "Permanent Weapon Damage",
+                "Value": 3,
+                "Type": "bullet_damage"
+              },
+              {
+                "Title": "On Isolated Hero Death:",
+                "Key": "HealOnKillPct",
+                "Name": "Missing Health as Healing",
+                "Value": 0,
+                "Scale": {
+                  "Value": 0,
+                  "Type": "spirit"
+                },
+                "Type": "healing"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Upgrades": [
+          {
+            "BonusMoveSpeed": 3,
+            "DescKey": "ability_drifter_hunger_t1_desc"
+          },
+          {
+            "HealOnKillPct": 24,
+            "StaminaToRestore": 2,
+            "DescKey": "ability_drifter_hunger_t2_desc"
+          },
+          {
+            "AmpDamagePercent": 11
+          }
+        ],
+        "Duration": {
+          "InvisDuration": {
+            "Name": "Invisibility Duration",
+            "Value": 0,
+            "Scale": {
+              "Value": 0,
+              "Type": "spirit"
+            },
+            "Type": "duration"
+          },
+          "KillDuration": {
+            "Name": "Kill Duration",
+            "Value": 300,
+            "Type": "duration"
+          },
+          "TrailDuration": {
+            "Name": "Trail Duration",
+            "Value": 10,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "duration"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Health": {
+          "LowHealthThreshold": {
+            "Name": "Health Threshold",
+            "Value": 30,
+            "Type": "health"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "DelayBeforeInvisStarts": {
+            "Name": null,
+            "Value": 0.6
+          },
+          "InvisFadeToDuration": {
+            "Name": "Fade Time",
+            "Value": 0.3
+          },
+          "IsolationAssistPercentValue": {
+            "Name": null,
+            "Value": 100
+          },
+          "MaxTrailTargets": {
+            "Name": "Max Trail Targets",
+            "Value": 2
+          },
+          "RevealOnDamageDuration": {
+            "Name": null,
+            "Value": 0.25
+          },
+          "RevealOnSpottedDuration": {
+            "Name": null,
+            "Value": 1.5
+          },
+          "SpottedRadius": {
+            "Name": "Spot Radius",
+            "Value": 15
+          },
+          "TargetLingerDuration": {
+            "Name": null,
+            "Value": 3
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 80,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_drifter_hunger_desc",
+          "card_paths": [
+            "card.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "When enemy heroes are <span class=\"highlight\">low on health</span> you deal <span class=\"highlight\">amplified damage</span> against them. These enemies leave a <span class=\"highlight\">lingering blood trail</span> as they move.",
+          "plain_text": "When enemy heroes are low on health you deal amplified damage against them. These enemies leave a lingering blood trail as they move."
+        },
+        {
+          "localization_key": "ability_drifter_hunger_passive_desc",
+          "card_paths": [
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Isolated</span> heroes leave a trail as they move, and emit their heartbeat from afar. <br><br>You deal <span class=\"highlight\">amplified damage</span> against <span class=\"highlight\">isolated</span> heroes, and when isolated heroes die nearby you gain permanent {g:citadel_inline_attribute:'WeaponDamage'}.",
+          "plain_text": "Isolated heroes leave a trail as they move, and emit their heartbeat from afar.\nYou deal amplified damage against isolated heroes, and when isolated heroes die nearby you gain permanent weapon damage."
+        },
+        {
+          "localization_key": "ability_drifter_hunger_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+3m/s Move Speed when around an isolated enemy hero",
+          "plain_text": "+3m/s Move Speed when around an isolated enemy hero"
+        },
+        {
+          "localization_key": "ability_drifter_hunger_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On isolated hero death: Heal 24% of your missing health and restores 2 Stamina",
+          "plain_text": "On isolated hero death: Heal 24% of your missing health and restores 2 Stamina"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Eternal Night",
+      "internal_key": "drifter_darkness",
+      "data": {
+        "AbilityCastDelay": 1,
+        "AbilityCastRange": {
+          "Value": 100,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 145,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 6.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AuraLingerDuration": 0.001,
+        "BehaviourBits": [
+          "BehaviorProjectilePassThroughWorld",
+          "BehaviorDisplaysDamageImpact"
+        ],
+        "BonusFireRate": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0,
+            "Type": "spirit"
+          }
+        },
+        "BonusSprintAcceleration": 12,
+        "BonusSprintSpeed": 2,
+        "CasterModifier": {
+          "Class": "DrifterDarknessCaster",
+          "Subclass": "DrifterDarknessCaster",
+          "EnabledStateMask": [
+            "SinclairTaxUltActive"
+          ]
+        },
+        "ChannelMoveSpeed": 1.3,
+        "DarkFactor": 1,
+        "DistanceForMaxProjSpeed": 200,
+        "DrifterNearbyRangeCheck": 40,
+        "IsDisabled": false,
+        "Key": "drifter_darkness",
+        "MaxProjectileSpeed": 3000,
+        "MaxTargets": 2,
+        "MinProjectileSpeed": 3000,
+        "Name": "Eternal Night",
+        "PostProcessFadeInTime": 0.2,
+        "PostProcessFadeOutTime": 1,
+        "RevealDuration": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "SmallVisionDistance": 15,
+        "TargetModifier": {
+          "Class": "DrifterDarknessTarget",
+          "Subclass": "DrifterDarknessTarget",
+          "ProvidedByAura": {
+            "Class": "DrifterDarknessTargetBoundaryUnit",
+            "Subclass": "DrifterDarknessTargetBoundaryUnit"
+          }
+        },
+        "TargetRevealModifier": {
+          "Class": "Base",
+          "Subclass": "DrifterDarknessTargetReveal",
+          "EnabledStateMask": [
+            "VisibleToEnemy",
+            "GlowThroughWallsToProvider"
+          ]
+        },
+        "Upgrades": [
+          {
+            "BonusSprintSpeed": 10
+          },
+          {
+            "AbilityCooldown": -40
+          },
+          {
+            "AbilityDuration": 2.5,
+            "MaxTargets": 1
+          }
+        ]
+      },
+      "card": {
+        "Key": "drifter_darkness",
+        "Name": "Eternal Night",
+        "DescKey": "drifter_darkness_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "SmallVisionDistance",
+                "Name": "Reduced Vision",
+                "Value": 15,
+                "Type": "distance"
+              },
+              {
+                "Key": "BonusSprintSpeed",
+                "Name": "Sprint Speed",
+                "Value": 2,
+                "Type": "move_speed"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "MaxTargets",
+              "Name": "Max Targets",
+              "Value": 2
+            }
+          ],
+          "DescKey": "drifter_darkness_desc"
+        },
+        "Upgrades": [
+          {
+            "BonusSprintSpeed": 10
+          },
+          {
+            "AbilityCooldown": -40
+          },
+          {
+            "AbilityDuration": 2.5,
+            "MaxTargets": 1,
+            "DescKey": "drifter_darkness_t3_desc"
+          }
+        ],
+        "Duration": {
+          "RevealDuration": {
+            "Name": "Reveal Duration",
+            "Value": 3,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "duration"
+          }
+        },
+        "Range": {
+          "DrifterNearbyRangeCheck": {
+            "Name": "Drifter Nearby",
+            "Value": 40,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 1.3,
+            "Type": "move_speed"
+          }
+        },
+        "Damage": {
+          "BonusFireRate": {
+            "Name": "Fire Rate",
+            "Value": 0,
+            "Scale": {
+              "Value": 0,
+              "Type": "spirit"
+            },
+            "Type": "fire_rate"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AuraLingerDuration": {
+            "Name": null,
+            "Value": 0.001
+          },
+          "BonusSprintAcceleration": {
+            "Name": null,
+            "Value": 12
+          },
+          "DarkFactor": {
+            "Name": null,
+            "Value": 1
+          },
+          "DistanceForMaxProjSpeed": {
+            "Name": null,
+            "Value": 200
+          },
+          "MaxProjectileSpeed": {
+            "Name": null,
+            "Value": 3000
+          },
+          "MinProjectileSpeed": {
+            "Name": null,
+            "Value": 3000
+          },
+          "PostProcessFadeInTime": {
+            "Name": null,
+            "Value": 0.2
+          },
+          "PostProcessFadeOutTime": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 1,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 100,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 145,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 6.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "drifter_darkness_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Surround nearby enemy heroes in darkness, <span class=\"highlight\">severely limiting their vision of other units</span>. Affected enemies are briefly revealed to you and are considered <span class=\"highlight\">isolated</span> for the duration.<br><br>You gain {g:citadel_inline_attribute:'BonusSprintSpeed'}.",
+          "plain_text": "Surround nearby enemy heroes in darkness, severely limiting their vision of other units. Affected enemies are briefly revealed to you and are considered isolated for the duration.\nYou gain bonus sprint speed."
+        },
+        {
+          "localization_key": "drifter_darkness_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+2.5s Duration and +1 Max Targets.",
+          "plain_text": "+2.5s Duration and +1 Max Targets."
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.47,
+    "AirDashSpeed": 17,
+    "BaseHealthRegen": 3.5,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": -45,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.68,
+    "GroundDashSpeed": 14.7,
+    "HeavyMeleeDamage": 120,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.49,
+      "MaxHealth": 41,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6816,
+      "DPS": 1.1111,
+      "SustainedDPS": 0.76009
+    },
+    "LightMeleeDamage": 51.5,
+    "Lore": "hero_drifter_lore",
+    "MaxHealth": 755,
+    "MaxMoveSpeed": 6.9,
+    "MoveAcceleration": 4,
+    "Name": "Drifter",
+    "Playstyle": "hero_drifter_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_drifter_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.6,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Assassin",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

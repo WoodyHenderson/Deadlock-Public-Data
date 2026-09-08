@@ -1,0 +1,1248 @@
+{
+  "schema_version": 2,
+  "id": "hero.bebop",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.bebop.124925",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Bebop",
+  "aliases": [],
+  "internal_hero_key": "hero_bebop",
+  "hero_type": "Brawler",
+  "role_localization_key": "hero_bebop_role",
+  "playstyle_localization_key": "hero_bebop_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 880,
+    "health_regeneration_per_second": 2.5,
+    "light_melee_damage": 63,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.45,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 4,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 13.9,
+      "distance_meters": 10,
+      "duration_seconds": 0.72
+    },
+    "air_dash": {
+      "speed_meters_per_second": 15.7,
+      "distance_meters": 8,
+      "duration_seconds": 0.51
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 5.5000055000055,
+      "regeneration_per_second": 0.181818
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.115,
+    "MaxHealth": 52,
+    "BonusAttackRange": 1.5,
+    "PowerIncreases": 1,
+    "BulletResist": 0.3,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 2.9092,
+    "DPS": 1.3691,
+    "SustainedDPS": 0.9615
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 508,
+    "BulletDamage": 4.98,
+    "RoundsPerSecond": 11.905,
+    "ClipSize": 66,
+    "ReloadTime": 2.35,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 50.8,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.8,
+    "BulletRadius": 0.0762,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 59.287,
+    "SustainedDPS": 41.637,
+    "NameKey": "citadel_weapon_hero_bebop_set",
+    "DescKey": "citadel_weapon_hero_bebop_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_BeamWeapon",
+      "Attribute_EWeaponAttribute_MediumRange"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Exploding Uppercut",
+      "internal_key": "citadel_ability_uppercut",
+      "data": {
+        "AbilityCooldown": {
+          "Value": 22,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "BonusFireRate": {
+          "Value": -14,
+          "Scale": {
+            "Value": -0.186,
+            "Type": "spirit"
+          }
+        },
+        "BuffGunRangePercent": 100,
+        "BuffModifier": {
+          "Class": "UppercutBuff",
+          "Subclass": "UppercutBuff",
+          "EnabledStateMask": [
+            "NoWindup"
+          ]
+        },
+        "ChannelMoveSpeed": -1,
+        "ClipModifier": {
+          "Class": "UppercutClipsize",
+          "Subclass": "UppercutClipsize"
+        },
+        "EnemyHeroTossVelocity": 20,
+        "ExplodeDebuffDuration": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "ForceReductionOnAngleDown": 0.75,
+        "IsDisabled": false,
+        "Key": "citadel_ability_uppercut",
+        "LandingDamage": {
+          "Value": 75,
+          "Scale": {
+            "Value": 0.6,
+            "Type": "spirit"
+          }
+        },
+        "MeleeAttackLength": 6,
+        "MeleeHalfAngle": 60,
+        "MeleeRadius": 2.5,
+        "Name": "Exploding Uppercut",
+        "OnLandDamageRadius": {
+          "Value": 14,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "TossDuration": 0.5,
+        "TossDurationFriendly": 0.3,
+        "TossVelocity": 25,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -11
+          },
+          {
+            "UppercutBuffOnHit": 9,
+            "BuffBaseWeaponPct": 30
+          },
+          {
+            "RestoreHookCooldown": 1,
+            "MissingHPHeal": 18
+          }
+        ],
+        "UppercutDamage": {
+          "Value": 0.01,
+          "Scale": {
+            "Value": 1,
+            "Type": "melee"
+          }
+        },
+        "UppercutModifier": {
+          "Class": "CitadelUppercutted",
+          "Subclass": "CitadelUppercutted",
+          "NoExplodeModifier": {
+            "Class": "Base",
+            "Subclass": "NoUppercutExplosionDamage"
+          },
+          "ExplodeDebuffModifier": {
+            "Class": "Base",
+            "Subclass": "UppercutDebuff"
+          },
+          "StatusEffectPriority": 20
+        }
+      },
+      "card": {
+        "Key": "citadel_ability_uppercut",
+        "Name": "Exploding Uppercut",
+        "DescKey": "citadel_ability_uppercut_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "UppercutDamage",
+                "Name": "Uppercut Damage",
+                "Value": 0.01,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "melee"
+                },
+                "Type": "melee_damage"
+              },
+              {
+                "Key": "MissingHPHeal",
+                "Name": "Missing HP Heal",
+                "Value": 0,
+                "Type": "healing"
+              },
+              {
+                "Key": "TossDuration",
+                "Name": "Duration",
+                "StatusEffect": "Displacement",
+                "Value": 0.5
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "citadel_ability_uppercut_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Landing:",
+                "Key": "LandingDamage",
+                "Name": "Area Damage",
+                "Value": 75,
+                "Scale": {
+                  "Value": 0.6,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Landing:",
+                "Key": "BonusFireRate",
+                "Name": "Fire Rate",
+                "Value": -14,
+                "Scale": {
+                  "Value": -0.186,
+                  "Type": "spirit"
+                },
+                "Type": "slow"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "OnLandDamageRadius",
+              "Name": "Landing Radius",
+              "Value": 14,
+              "Scale": {
+                "Value": 1,
+                "Type": "radius"
+              },
+              "Type": "distance"
+            }
+          ]
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -11
+          },
+          {
+            "UppercutBuffOnHit": 9,
+            "BuffBaseWeaponPct": 30,
+            "DescKey": "citadel_ability_uppercut_t2_desc"
+          },
+          {
+            "RestoreHookCooldown": 1,
+            "MissingHPHeal": 18,
+            "DescKey": "citadel_ability_uppercut_t3_desc"
+          }
+        ],
+        "Duration": {
+          "ExplodeDebuffDuration": {
+            "Name": "Fire Rate Slow Duration",
+            "Value": 5,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "duration"
+          }
+        },
+        "Range": {
+          "MeleeAttackLength": {
+            "Name": "Melee Range",
+            "Value": 6,
+            "Type": "distance"
+          },
+          "MeleeRadius": {
+            "Name": null,
+            "Value": 2.5,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "BuffGunRangePercent": {
+            "Name": null,
+            "Value": 100
+          },
+          "EnemyHeroTossVelocity": {
+            "Name": null,
+            "Value": 20
+          },
+          "ForceReductionOnAngleDown": {
+            "Name": null,
+            "Value": 0.75
+          },
+          "MeleeHalfAngle": {
+            "Name": null,
+            "Value": 60
+          },
+          "TossDurationFriendly": {
+            "Name": null,
+            "Value": 0.3
+          },
+          "TossVelocity": {
+            "Name": null,
+            "Value": 25
+          }
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 22,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_uppercut_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Deal {g:citadel_inline_attribute:'MeleeDamage'} to nearby enemies and apply {g:citadel_inline_attribute:'KnockBack'}. <br><br>When they land, they deal {g:citadel_inline_attribute:'SpiritDamage'} and apply {g:citadel_inline_attribute:'ReducedFireRate'} to other nearby enemies. <br><br><span class=\"diminish\">Exploding Uppercut can be used on allies.</br>",
+          "plain_text": "Deal melee damage to nearby enemies and apply knockback.\nWhen they land, they deal spirit damage and apply reduced fire rate to other nearby enemies.\nExploding Uppercut can be used on allies."
+        },
+        {
+          "localization_key": "citadel_ability_uppercut_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On Hero Hit: Gain <span class=\"highlight\">fast spin-up time, 2x weapon range and +30% weapon damage</span> for 9s",
+          "plain_text": "On Hero Hit: Gain fast spin-up time, 2x weapon range and +30% weapon damage for 9s"
+        },
+        {
+          "localization_key": "citadel_ability_uppercut_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On Hero Hit: Set <span class=\"highlight\">Grapple Arm cooldown to 0</span> and restores <span class=\"highlight\">+18%</span> of your missing health",
+          "plain_text": "On Hero Hit: Set Grapple Arm cooldown to 0 and restores +18% of your missing health"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Sticky Bomb",
+      "internal_key": "citadel_ability_sticky_bomb",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 18,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 3.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorAllowSelfCast",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorUseInstantCastUnitTargetUi",
+          "BehaviorCanSetQuickCast"
+        ],
+        "BombAttachedModifier": {
+          "Class": "CitadelStickyBombAttached",
+          "Subclass": "CitadelStickyBombAttached",
+          "OnGroundModifier": {
+            "Class": "CitadelStickyBombOnGround",
+            "Subclass": "CitadelStickyBombOnGround",
+            "OnGroundModifier": {
+              "Class": "Base",
+              "Subclass": "Empty"
+            }
+          }
+        },
+        "BonusDamagePctPerPlayerHit": {
+          "Value": 1,
+          "Scale": {
+            "Value": 0.0015,
+            "Type": "spirit"
+          }
+        },
+        "BonusDamagePctPerPlayerKilled": {
+          "Value": 2.5,
+          "Scale": {
+            "Value": 0.01,
+            "Type": "spirit"
+          }
+        },
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 85,
+          "Scale": {
+            "Value": 1.5,
+            "Type": "spirit"
+          }
+        },
+        "FuseTime": 3.5,
+        "IsDisabled": false,
+        "Key": "citadel_ability_sticky_bomb",
+        "KillCheckModifier": {
+          "Class": "Base",
+          "Subclass": "KillcheckModifier"
+        },
+        "KillCheckWindow": 10,
+        "Name": "Sticky Bomb",
+        "OnHitDiminish": 60,
+        "OnKillDiminish": 7,
+        "Radius": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "SelfBuffModifier": {
+          "Class": "Base",
+          "Subclass": "CitadelStickyBombSelfBuff"
+        },
+        "SelfDamagePercent": 20,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -8
+          },
+          {
+            "Damage": 85
+          },
+          {
+            "MovementSpeedBonus": 5,
+            "StatusResistancePercent": 25,
+            "MovementSpeedBonusDuration": 6
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_sticky_bomb",
+        "Name": "Sticky Bomb",
+        "DescKey": "citadel_ability_sticky_bomb_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "FuseTime",
+                "Name": "Fuse Time",
+                "Value": 3.5,
+                "Type": "duration"
+              },
+              {
+                "Title": "On Hit:",
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 85,
+                "Scale": {
+                  "Value": 1.5,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "citadel_ability_sticky_bomb_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Attach:",
+                "Key": "DebuffDuration",
+                "Name": "Debuff Duration",
+                "Value": 0,
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Info3": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Hero Hit:",
+                "Key": "BonusDamagePctPerPlayerHit",
+                "Name": "Sticky Bomb Damage",
+                "Value": 1,
+                "Scale": {
+                  "Value": 0.0015,
+                  "Type": "spirit"
+                },
+                "Type": "damage"
+              },
+              {
+                "Title": "On Hero Kill:",
+                "Key": "BonusDamagePctPerPlayerKilled",
+                "Name": "Sticky Bomb Damage",
+                "Value": 2.5,
+                "Scale": {
+                  "Value": 0.01,
+                  "Type": "spirit"
+                },
+                "Type": "damage"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -8
+          },
+          {
+            "Damage": 85
+          },
+          {
+            "MovementSpeedBonus": 5,
+            "StatusResistancePercent": 25,
+            "MovementSpeedBonusDuration": 6,
+            "DescKey": "citadel_ability_sticky_bomb_t3_desc"
+          }
+        ],
+        "Duration": {
+          "KillCheckWindow": {
+            "Name": null,
+            "Value": 10,
+            "Type": "duration"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "OnHitDiminish": {
+            "Name": null,
+            "Value": 60
+          },
+          "OnKillDiminish": {
+            "Name": null,
+            "Value": 7
+          },
+          "SelfDamagePercent": {
+            "Name": null,
+            "Value": 20
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 18,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 3.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_sticky_bomb_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Attach a bomb that explodes after a delay, dealing {g:citadel_inline_attribute:'SpiritDamage'} to nearby enemies. <br><br>If the bomb hits or kills a hero, you gain <span class=\"highlight\">permanent bonus damage</span> on Sticky Bomb. <br><br><span class=\"diminish\">Stacks diminish by half after 60 hits and 7 kills",
+          "plain_text": "Attach a bomb that explodes after a delay, dealing spirit damage to nearby enemies.\nIf the bomb hits or kills a hero, you gain permanent bonus damage on Sticky Bomb.\nStacks diminish by half after 60 hits and 7 kills"
+        },
+        {
+          "localization_key": "citadel_ability_sticky_bomb_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On Cast: <span class=\"highlight\">+5m</span> Move Speed and <span class=\"highlight\">+25%</span> Debuff Resistance for <span class=\"highlight\">6s</span>",
+          "plain_text": "On Cast: +5m Move Speed and +25% Debuff Resistance for 6s"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Grapple Arm",
+      "internal_key": "citadel_ability_hook",
+      "data": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCastRange": {
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 23,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityPostCastDuration": 0.2,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorPreventBotUsage",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BulletAmpModifier": {
+          "Class": "BebopHookBulletAmp",
+          "Subclass": "BebopHookBulletAmp"
+        },
+        "CancelHookDuration": 0.2,
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0.7,
+            "Type": "melee"
+          }
+        },
+        "FriendlyHookIgnoreRange": 8,
+        "HookImpactDelay": 0.5,
+        "HookingSlowSpeedLimit": 5,
+        "IsDisabled": false,
+        "Key": "citadel_ability_hook",
+        "Name": "Grapple Arm",
+        "RestrictionDuration": 0.5,
+        "SelfModifier": {
+          "Class": "CitadelHookself",
+          "Subclass": "CitadelHookself",
+          "EnabledStateMask": [
+            "CastingHook"
+          ]
+        },
+        "SlowPercent": 90,
+        "TargetModifier": {
+          "Class": "CitadelHooktarget",
+          "Subclass": "CitadelHooktarget",
+          "RestrictionModifier": {
+            "Class": "SlowBase",
+            "Subclass": "SlowBases",
+            "EnabledStateMask": [
+              "SilenceMovementAbilites",
+              "MovementAbilityRestricted",
+              "DashDisabled",
+              "Slowed"
+            ]
+          },
+          "TossUpSpeed": 0,
+          "ReturnSpeed": 2000,
+          "ReturnPositionForwardOffset": 100,
+          "CloseEnoughDistance": 30,
+          "FailSafeDurationMult": 2,
+          "FailSafeMinTime": 1,
+          "ReturnSpeedFail": 100,
+          "ReturnStuckTime": 0.2
+        },
+        "Upgrades": [
+          {
+            "BulletAmp": 20,
+            "BulletAmpDuration": 6
+          },
+          {
+            "AbilityCastRange": 30
+          },
+          {
+            "AbilityCooldown": -11.5
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_hook",
+        "Name": "Grapple Arm",
+        "DescKey": "citadel_ability_hook_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "AbilityCastRange",
+                "Name": "Cast Range",
+                "Value": 30,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "range"
+                },
+                "Type": "range"
+              },
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 0,
+                "Scale": {
+                  "Value": 0.7,
+                  "Type": "melee"
+                },
+                "Type": "melee_damage"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "citadel_ability_hook_desc"
+        },
+        "Upgrades": [
+          {
+            "BulletAmp": 20,
+            "BulletAmpDuration": 6,
+            "DescKey": "citadel_ability_hook_t1_desc"
+          },
+          {
+            "AbilityCastRange": 30
+          },
+          {
+            "AbilityCooldown": -11.5
+          }
+        ],
+        "Duration": {
+          "RestrictionDuration": {
+            "Name": null,
+            "Value": 0.5,
+            "Type": "duration"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.2
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "CancelHookDuration": {
+            "Name": null,
+            "Value": 0.2
+          },
+          "FriendlyHookIgnoreRange": {
+            "Name": null,
+            "Value": 8
+          },
+          "HookImpactDelay": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "HookingSlowSpeedLimit": {
+            "Name": null,
+            "Value": 5
+          },
+          "SlowPercent": {
+            "Name": "Move Speed",
+            "Value": 90
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.1,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 23,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_hook_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Launch out a mechanical hand that {g:citadel_inline_attribute:'Pulls'} the first character it hits, reeling them in. <br><br><span class=\"diminish\">Grapple Arm can be used on allies.</br>",
+          "plain_text": "Launch out a mechanical hand that pulls the first character it hits, reeling them in.\nGrapple Arm can be used on allies."
+        },
+        {
+          "localization_key": "citadel_ability_hook_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+20% weapon damage</span> against victims for 6s",
+          "plain_text": "+20% weapon damage against victims for 6s"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Hyper Beam",
+      "internal_key": "citadel_ability_bebop_laser_beam",
+      "data": {
+        "AbilityCastDelay": 1,
+        "AbilityChannelTime": {
+          "Value": 11,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 120,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "AirSpeedMax": 70,
+        "BeamCloseDamagePercent": 75,
+        "BeamCloseRadius": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "BeamEndRadius": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "BeamLength": {
+          "Value": 70,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "BeamWidth": 2.9,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "ChannelMoveSpeed": 1.8,
+        "DPS": {
+          "Value": 160,
+          "Scale": {
+            "Value": 2.511,
+            "Type": "spirit"
+          }
+        },
+        "FallSpeedMax": 1,
+        "GroundDashReductionPercent": -40,
+        "Interval": 0.1,
+        "IsDisabled": false,
+        "Key": "citadel_ability_bebop_laser_beam",
+        "Name": "Hyper Beam",
+        "RestrictionModifier": {
+          "Class": "SlowBase",
+          "Subclass": "BebopLaserSlow"
+        },
+        "SlowPercent": 25,
+        "SlowTargetDuration": 0.5,
+        "TrackingSpeed": 55,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -20
+          },
+          {
+            "DPS": 108
+          },
+          {
+            "BeamLifesteal": 65,
+            "BeamLifestealNonHeroPercent": 20
+          }
+        ],
+        "ZoomBias": 0.5,
+        "ZoomTime": 0.1
+      },
+      "card": {
+        "Key": "citadel_ability_bebop_laser_beam",
+        "Name": "Hyper Beam",
+        "DescKey": "citadel_ability_bebop_laser_beam_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "DPS",
+                "Name": "Damage Per Second",
+                "Value": 160,
+                "Scale": {
+                  "Value": 2.511,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Hit:",
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 25,
+                "Type": "slow"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "BeamLength",
+              "Name": "Beam Length",
+              "Value": 70,
+              "Scale": {
+                "Value": 1,
+                "Type": "range"
+              },
+              "Type": "distance"
+            },
+            {
+              "Key": "BeamWidth",
+              "Name": "Beam Width",
+              "Value": 2.9
+            }
+          ],
+          "DescKey": "citadel_ability_bebop_laser_beam_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -20
+          },
+          {
+            "DPS": 108
+          },
+          {
+            "BeamLifesteal": 65,
+            "BeamLifestealNonHeroPercent": 20,
+            "DescKey": "citadel_ability_bebop_laser_beam_t3_desc"
+          }
+        ],
+        "Duration": {
+          "SlowTargetDuration": {
+            "Name": null,
+            "Value": 0.5,
+            "Type": "duration"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 1.8,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AirSpeedMax": {
+            "Name": null,
+            "Value": 70
+          },
+          "BeamCloseDamagePercent": {
+            "Name": null,
+            "Value": 75
+          },
+          "BeamCloseRadius": {
+            "Name": null,
+            "Value": 5,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            }
+          },
+          "BeamEndRadius": {
+            "Name": null,
+            "Value": 4,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            }
+          },
+          "FallSpeedMax": {
+            "Name": null,
+            "Value": 1
+          },
+          "GroundDashReductionPercent": {
+            "Name": "Dash Distance",
+            "Value": -40
+          },
+          "Interval": {
+            "Name": null,
+            "Value": 0.1
+          },
+          "TrackingSpeed": {
+            "Name": null,
+            "Value": 55
+          },
+          "ZoomBias": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "ZoomTime": {
+            "Name": null,
+            "Value": 0.1
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 1,
+          "Type": "cast"
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 11,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 120,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_bebop_laser_beam_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Channel a powerful torrent of energy that deals {g:citadel_inline_attribute:'SpiritDamage'} and applies {g:citadel_inline_attribute:'Slow'}.",
+          "plain_text": "Channel a powerful torrent of energy that deals spirit damage and applies slow."
+        },
+        {
+          "localization_key": "citadel_ability_bebop_laser_beam_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Hyper Beam heals Bebop for <span class=\"highlight\">65%</span> of its damage on Heroes. 20% on non-hero",
+          "plain_text": "Hyper Beam heals Bebop for 65% of its damage on Heroes. 20% on non-hero"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.51,
+    "AirDashSpeed": 15.7,
+    "BaseHealthRegen": 2.5,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.72,
+    "GroundDashSpeed": 13.9,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.115,
+      "MaxHealth": 52,
+      "BonusAttackRange": 1.5,
+      "PowerIncreases": 1,
+      "BulletResist": 0.3,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 2.9092,
+      "DPS": 1.3691,
+      "SustainedDPS": 0.9615
+    },
+    "LightMeleeDamage": 63,
+    "Lore": "hero_bebop_lore",
+    "MaxHealth": 880,
+    "MaxMoveSpeed": 6.45,
+    "MoveAcceleration": 4,
+    "Name": "Bebop",
+    "Playstyle": "hero_bebop_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_bebop_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 4,
+    "Stamina": 3,
+    "StaminaCooldown": 5.5000055000055,
+    "StaminaRegenPerSecond": 0.181818,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Brawler",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

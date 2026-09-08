@@ -1,0 +1,776 @@
+schema_version: 1
+snapshot:
+  id: deadlock-wiki-2026-09-03
+  curated_at: "2026-09-03"
+  source_name: Deadlock Wiki
+  source_url: "https://deadlock.wiki/"
+  text_license: CC-BY-NC-SA-4.0
+  excludes_media: true
+
+sources:
+  - id: wiki.soul-urn.114949
+    title: Soul Urn
+    url: "https://deadlock.wiki/Soul_Urn"
+    revision_url: "https://deadlock.wiki/Soul_Urn?oldid=114949"
+    revision_id: 114949
+    last_modified: "2026-08-26T19:25:37Z"
+    accessed_at: "2026-09-03"
+    scope: Soul Urn carrying bonuses, delivery rewards, and permanent Golden Statue buffs
+
+  - id: wiki.the-cursed-apple.125757
+    title: The Cursed Apple
+    url: "https://deadlock.wiki/The_Cursed_Apple"
+    revision_url: "https://deadlock.wiki/The_Cursed_Apple?oldid=125757"
+    revision_id: 125757
+    last_modified: "2026-09-02T16:04:00"
+    accessed_at: "2026-09-03"
+    scope: map layout, objectives, map timings, territory, and visibility
+
+  - id: wiki.mechanics.110139
+    title: Mechanics
+    url: "https://deadlock.wiki/Mechanics"
+    revision_url: "https://deadlock.wiki/Mechanics?oldid=110139"
+    revision_id: 110139
+    last_modified: "2026-08-19T09:21:00"
+    accessed_at: "2026-09-03"
+    scope: general gameplay and map mechanics overview
+
+  - id: wiki.souls.124122
+    title: Souls
+    url: "https://deadlock.wiki/Souls"
+    revision_url: "https://deadlock.wiki/Souls?oldid=124122"
+    revision_id: 124122
+    last_modified: "2026-08-29T08:52:00"
+    accessed_at: "2026-09-03"
+    scope: economy, soul orbs, soul sharing, unsecured souls, and comeback rules
+
+  - id: wiki.boon.98787
+    title: Boon
+    url: "https://deadlock.wiki/Boon"
+    revision_url: "https://deadlock.wiki/Boon?oldid=98787"
+    revision_id: 98787
+    last_modified: "2026-07-23T01:57:00"
+    accessed_at: "2026-09-03"
+    scope: leveling thresholds, ability unlocks, ability points, and boon rewards
+
+  - id: wiki.extra-slots.60786
+    title: Extra Slots
+    url: "https://deadlock.wiki/Extra_Slots"
+    revision_url: "https://deadlock.wiki/Extra_Slots?oldid=60786"
+    revision_id: 60786
+    last_modified: "2026-02-27T23:20:00"
+    accessed_at: "2026-09-03"
+    scope: objective-based extra slot unlocks
+
+  - id: wiki.movement.78724
+    title: Movement
+    url: "https://deadlock.wiki/Movement"
+    revision_url: "https://deadlock.wiki/Movement?oldid=78724"
+    revision_id: 78724
+    last_modified: "2026-06-12T05:15:00"
+    accessed_at: "2026-09-03"
+    scope: universal movement and map traversal
+    source_quality_note: Page is marked under construction and needing citations.
+
+  - id: wiki.melee-attack.114941
+    title: Melee Attack
+    url: "https://deadlock.wiki/Melee_Attack"
+    revision_url: "https://deadlock.wiki/Melee_Attack?oldid=114941"
+    revision_id: 114941
+    last_modified: "2026-08-26T18:31:00"
+    accessed_at: "2026-09-03"
+    scope: light melee, heavy melee, parry, and melee interactions
+
+  - id: wiki.health.111364
+    title: Health
+    url: "https://deadlock.wiki/Health"
+    revision_url: "https://deadlock.wiki/Health?oldid=111364"
+    revision_id: 111364
+    last_modified: "2026-08-21T18:43:00"
+    accessed_at: "2026-09-03"
+    scope: maximum health, health recovery, and health display
+
+  - id: wiki.death.95455
+    title: Death
+    url: "https://deadlock.wiki/Death"
+    revision_url: "https://deadlock.wiki/Death?oldid=95455"
+    revision_id: 95455
+    last_modified: "2026-07-18T15:06:00"
+    accessed_at: "2026-09-03"
+    scope: death, respawn timing, and last-stand rules
+
+  - id: wiki.stats.87937
+    title: Stats
+    url: "https://deadlock.wiki/Stats"
+    revision_url: "https://deadlock.wiki/Stats?oldid=87937"
+    revision_id: 87937
+    last_modified: "2026-07-03T20:15:00"
+    accessed_at: "2026-09-03"
+    scope: weapon, vitality, spirit, and other stat categories
+
+  - id: wiki.status-effects.114074
+    title: Status Effects
+    url: "https://deadlock.wiki/Status_Effects"
+    revision_url: "https://deadlock.wiki/Status_Effects?oldid=114074"
+    revision_id: 114074
+    last_modified: "2026-08-23T09:59:00"
+    accessed_at: "2026-09-03"
+    scope: universal buff and debuff terminology
+
+  - id: wiki.crowd-control.110151
+    title: Crowd Control
+    url: "https://deadlock.wiki/Crowd_Control"
+    revision_url: "https://deadlock.wiki/Crowd_Control?oldid=110151"
+    revision_id: 110151
+    last_modified: "2026-08-19T15:43:00"
+    accessed_at: "2026-09-03"
+    scope: crowd-control effects, reductions, and immunities
+
+  - id: wiki.backdoor-protection.78476
+    title: Backdoor Protection
+    url: "https://deadlock.wiki/Backdoor_Protection"
+    revision_url: "https://deadlock.wiki/Backdoor_Protection?oldid=78476"
+    revision_id: 78476
+    last_modified: "2026-06-09T23:07:00"
+    accessed_at: "2026-09-03"
+    scope: structure protection and regeneration
+
+  - id: wiki.structures.122019
+    title: Structures
+    url: "https://deadlock.wiki/Structures"
+    revision_url: "https://deadlock.wiki/Structures?oldid=122019"
+    revision_id: 122019
+    last_modified: "2026-08-28T14:44:00"
+    accessed_at: "2026-09-03"
+    scope: lane and base objective sequence
+
+  - id: wiki.trooper.114174
+    title: Trooper
+    url: "https://deadlock.wiki/Trooper"
+    revision_url: "https://deadlock.wiki/Trooper?oldid=114174"
+    revision_id: 114174
+    last_modified: "2026-08-24T11:52:00"
+    accessed_at: "2026-09-03"
+    scope: lane waves, trooper types, soul bounty, and lane pressure
+
+  - id: wiki.neutral.125766
+    title: Neutral
+    url: "https://deadlock.wiki/Neutral"
+    revision_url: "https://deadlock.wiki/Neutral?oldid=125766"
+    revision_id: 125766
+    last_modified: "2026-09-03T08:46:00"
+    accessed_at: "2026-09-03"
+    scope: neutral camps, scaling, spawn timing, and soul rewards
+
+  - id: wiki.minimap.89774
+    title: Minimap
+    url: "https://deadlock.wiki/Minimap"
+    revision_url: "https://deadlock.wiki/Minimap?oldid=89774"
+    revision_id: 89774
+    last_modified: "2026-07-10T00:52:00"
+    accessed_at: "2026-09-03"
+    scope: minimap information and hero reveal rules
+    source_quality_note: Page is marked as a stub.
+
+  - id: wiki.damage-resistance.125735
+    title: Damage Resistance
+    url: "https://deadlock.wiki/Damage_Resistance"
+    revision_url: "https://deadlock.wiki/Damage_Resistance?oldid=125735"
+    revision_id: 125735
+    last_modified: "2026-09-01T19:05:00"
+    accessed_at: "2026-09-03"
+    scope: resistance types, stacking, reduction, and negative resistance
+    source_quality_note: The effective-health section is marked under construction.
+
+  - id: wiki.damage-amplification.114181
+    title: Damage Amplification
+    url: "https://deadlock.wiki/Damage_Amplification"
+    revision_url: "https://deadlock.wiki/Damage_Amplification?oldid=114181"
+    revision_id: 114181
+    last_modified: "2026-08-24T15:37:00"
+    accessed_at: "2026-09-03"
+    scope: damage amplification categories, output reduction, and calculation order
+    source_quality_note: Generalized formula is based on community testing and documents live exceptions.
+
+  - id: wiki.healing.96635
+    title: Healing
+    url: "https://deadlock.wiki/Healing"
+    revision_url: "https://deadlock.wiki/Healing?oldid=96635"
+    revision_id: 96635
+    last_modified: "2026-07-19T12:46:00"
+    accessed_at: "2026-09-03"
+    scope: healing, healing amplification, healing reduction, and calculation
+
+  - id: wiki.pure-damage.106367
+    title: Pure Damage
+    url: "https://deadlock.wiki/Pure_Damage"
+    revision_url: "https://deadlock.wiki/Pure_Damage?oldid=106367"
+    revision_id: 106367
+    last_modified: "2026-08-09T19:11:00"
+    accessed_at: "2026-09-03"
+    scope: pure damage classification and mitigation behavior
+
+  - id: wiki.melee-damage.104072
+    title: Melee Damage
+    url: "https://deadlock.wiki/Melee_Damage"
+    revision_url: "https://deadlock.wiki/Melee_Damage?oldid=104072"
+    revision_id: 104072
+    last_modified: "2026-07-29T00:37:00"
+    accessed_at: "2026-09-03"
+    scope: melee scaling and resistance
+
+  - id: wiki.spirit-damage.125734
+    title: Spirit Damage
+    url: "https://deadlock.wiki/Spirit_Damage"
+    revision_url: "https://deadlock.wiki/Spirit_Damage?oldid=125734"
+    revision_id: 125734
+    last_modified: "2026-09-01T16:49:00"
+    accessed_at: "2026-09-03"
+    scope: spirit damage, scaling, and resistance
+    source_quality_note: Page is marked as a stub.
+
+  - id: wiki.bullet-damage.108550
+    title: Bullet Damage
+    url: "https://deadlock.wiki/Bullet_Damage"
+    revision_url: "https://deadlock.wiki/Bullet_Damage?oldid=108550"
+    revision_id: 108550
+    last_modified: "2026-08-11T21:11:00"
+    accessed_at: "2026-09-03"
+    scope: base bullet damage and boon scaling
+
+  - id: wiki.seven.124882
+    title: Seven
+    url: "https://deadlock.wiki/Seven"
+    revision_url: "https://deadlock.wiki/Seven?oldid=124882"
+    revision_id: 124882
+    last_modified: "2026-08-31T18:05:00"
+    accessed_at: "2026-09-03"
+    scope: Seven identity, weapon, abilities, lore, and update history
+    source_quality_note: Hero page includes current ability data and update history; numerical interactions remain subject to the quality of their referenced mechanics pages.
+
+  - id: wiki.data-hero-data.108817
+    title: "Data:HeroData.json"
+    url: "https://deadlock.wiki/Data:HeroData.json"
+    revision_url: "https://deadlock.wiki/index.php?title=Data:HeroData.json&oldid=108817"
+    revision_id: 108817
+    last_modified: "2026-08-12T23:07:18"
+    accessed_at: "2026-09-03"
+    scope: Seven base stats, per-boon growth, movement, stamina, availability, weapon behavior, and bound ability keys
+    source_quality_note: Generated game-data page. Raw precision is retained where the rendered hero infobox rounds values.
+
+  - id: wiki.data-ability-cards.114010
+    title: "Data:AbilityCards.json"
+    url: "https://deadlock.wiki/Data:AbilityCards.json"
+    revision_url: "https://deadlock.wiki/index.php?title=Data:AbilityCards.json&oldid=114010"
+    revision_id: 114010
+    last_modified: "2026-08-22T21:50:02"
+    accessed_at: "2026-09-03"
+    scope: Seven ability-card labels, display groups, description keys, status labels, and upgrade presentation
+    source_quality_note: Generated game-data page used to map raw ability fields to the labels presented by the wiki.
+
+  - id: wiki.data-ability-data.114011
+    title: "Data:AbilityData.json"
+    url: "https://deadlock.wiki/Data:AbilityData.json"
+    revision_url: "https://deadlock.wiki/index.php?title=Data:AbilityData.json&oldid=114011"
+    revision_id: 114011
+    last_modified: "2026-08-22T21:50:03"
+    accessed_at: "2026-09-03"
+    scope: Seven ability values, scaling coefficients, upgrade deltas, behavior flags, timing, modifiers, and hidden gameplay fields
+    source_quality_note: Generated game-data page. Internal field names are preserved when their physical unit or interpretation is not defined by the source.
+
+  - id: wiki.abrams.125768
+    title: "Abrams"
+    url: "https://deadlock.wiki/Abrams"
+    revision_url: "https://deadlock.wiki/Abrams?oldid=125768"
+    revision_id: 125768
+    last_modified: "2026-09-03T11:02:40"
+    accessed_at: "2026-09-03"
+    scope: Abrams identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.apollo.124913
+    title: "Apollo"
+    url: "https://deadlock.wiki/Apollo"
+    revision_url: "https://deadlock.wiki/Apollo?oldid=124913"
+    revision_id: 124913
+    last_modified: "2026-08-31T21:01:22"
+    accessed_at: "2026-09-03"
+    scope: Apollo identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.bebop.124925
+    title: "Bebop"
+    url: "https://deadlock.wiki/Bebop"
+    revision_url: "https://deadlock.wiki/Bebop?oldid=124925"
+    revision_id: 124925
+    last_modified: "2026-08-31T21:33:50"
+    accessed_at: "2026-09-03"
+    scope: Bebop identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.billy.125748
+    title: "Billy"
+    url: "https://deadlock.wiki/Billy"
+    revision_url: "https://deadlock.wiki/Billy?oldid=125748"
+    revision_id: 125748
+    last_modified: "2026-09-02T00:44:18"
+    accessed_at: "2026-09-03"
+    scope: Billy identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.calico.125743
+    title: "Calico"
+    url: "https://deadlock.wiki/Calico"
+    revision_url: "https://deadlock.wiki/Calico?oldid=125743"
+    revision_id: 125743
+    last_modified: "2026-09-01T22:03:33"
+    accessed_at: "2026-09-03"
+    scope: Calico identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.celeste.125568
+    title: "Celeste"
+    url: "https://deadlock.wiki/Celeste"
+    revision_url: "https://deadlock.wiki/Celeste?oldid=125568"
+    revision_id: 125568
+    last_modified: "2026-09-01T03:35:30"
+    accessed_at: "2026-09-03"
+    scope: Celeste identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.drifter.125577
+    title: "Drifter"
+    url: "https://deadlock.wiki/Drifter"
+    revision_url: "https://deadlock.wiki/Drifter?oldid=125577"
+    revision_id: 125577
+    last_modified: "2026-09-01T04:04:51"
+    accessed_at: "2026-09-03"
+    scope: Drifter identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.dynamo.124881
+    title: "Dynamo"
+    url: "https://deadlock.wiki/Dynamo"
+    revision_url: "https://deadlock.wiki/Dynamo?oldid=124881"
+    revision_id: 124881
+    last_modified: "2026-08-31T18:04:46"
+    accessed_at: "2026-09-03"
+    scope: Dynamo identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.graves.124944
+    title: "Graves"
+    url: "https://deadlock.wiki/Graves"
+    revision_url: "https://deadlock.wiki/Graves?oldid=124944"
+    revision_id: 124944
+    last_modified: "2026-09-01T00:12:33"
+    accessed_at: "2026-09-03"
+    scope: Graves identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.grey-talon.125566
+    title: "Grey Talon"
+    url: "https://deadlock.wiki/Grey_Talon"
+    revision_url: "https://deadlock.wiki/Grey_Talon?oldid=125566"
+    revision_id: 125566
+    last_modified: "2026-09-01T03:33:48"
+    accessed_at: "2026-09-03"
+    scope: Grey Talon identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.haze.124874
+    title: "Haze"
+    url: "https://deadlock.wiki/Haze"
+    revision_url: "https://deadlock.wiki/Haze?oldid=124874"
+    revision_id: 124874
+    last_modified: "2026-08-31T17:59:09"
+    accessed_at: "2026-09-03"
+    scope: Haze identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.holliday.125565
+    title: "Holliday"
+    url: "https://deadlock.wiki/Holliday"
+    revision_url: "https://deadlock.wiki/Holliday?oldid=125565"
+    revision_id: 125565
+    last_modified: "2026-09-01T03:33:03"
+    accessed_at: "2026-09-03"
+    scope: Holliday identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.infernus.124880
+    title: "Infernus"
+    url: "https://deadlock.wiki/Infernus"
+    revision_url: "https://deadlock.wiki/Infernus?oldid=124880"
+    revision_id: 124880
+    last_modified: "2026-08-31T18:03:41"
+    accessed_at: "2026-09-03"
+    scope: Infernus identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.ivy.124889
+    title: "Ivy"
+    url: "https://deadlock.wiki/Ivy"
+    revision_url: "https://deadlock.wiki/Ivy?oldid=124889"
+    revision_id: 124889
+    last_modified: "2026-08-31T19:31:08"
+    accessed_at: "2026-09-03"
+    scope: Ivy identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.kelvin.125564
+    title: "Kelvin"
+    url: "https://deadlock.wiki/Kelvin"
+    revision_url: "https://deadlock.wiki/Kelvin?oldid=125564"
+    revision_id: 125564
+    last_modified: "2026-09-01T03:32:08"
+    accessed_at: "2026-09-03"
+    scope: Kelvin identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.lady-geist.124875
+    title: "Lady Geist"
+    url: "https://deadlock.wiki/Lady_Geist"
+    revision_url: "https://deadlock.wiki/Lady_Geist?oldid=124875"
+    revision_id: 124875
+    last_modified: "2026-08-31T17:59:42"
+    accessed_at: "2026-09-03"
+    scope: Lady Geist identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.lash.125562
+    title: "Lash"
+    url: "https://deadlock.wiki/Lash"
+    revision_url: "https://deadlock.wiki/Lash?oldid=125562"
+    revision_id: 125562
+    last_modified: "2026-09-01T03:30:49"
+    accessed_at: "2026-09-03"
+    scope: Lash identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.mcginnis.125561
+    title: "McGinnis"
+    url: "https://deadlock.wiki/McGinnis"
+    revision_url: "https://deadlock.wiki/McGinnis?oldid=125561"
+    revision_id: 125561
+    last_modified: "2026-09-01T03:29:15"
+    accessed_at: "2026-09-03"
+    scope: McGinnis identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.mina.124886
+    title: "Mina"
+    url: "https://deadlock.wiki/Mina"
+    revision_url: "https://deadlock.wiki/Mina?oldid=124886"
+    revision_id: 124886
+    last_modified: "2026-08-31T18:37:23"
+    accessed_at: "2026-09-03"
+    scope: Mina identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.mirage.125560
+    title: "Mirage"
+    url: "https://deadlock.wiki/Mirage"
+    revision_url: "https://deadlock.wiki/Mirage?oldid=125560"
+    revision_id: 125560
+    last_modified: "2026-09-01T03:22:00"
+    accessed_at: "2026-09-03"
+    scope: Mirage identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.mo-and-krill.125559
+    title: "Mo & Krill"
+    url: "https://deadlock.wiki/Mo_%26_Krill"
+    revision_url: "https://deadlock.wiki/Mo_%26_Krill?oldid=125559"
+    revision_id: 125559
+    last_modified: "2026-09-01T03:19:43"
+    accessed_at: "2026-09-03"
+    scope: Mo & Krill identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.paige.125555
+    title: "Paige"
+    url: "https://deadlock.wiki/Paige"
+    revision_url: "https://deadlock.wiki/Paige?oldid=125555"
+    revision_id: 125555
+    last_modified: "2026-09-01T03:15:23"
+    accessed_at: "2026-09-03"
+    scope: Paige identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.paradox.125556
+    title: "Paradox"
+    url: "https://deadlock.wiki/Paradox"
+    revision_url: "https://deadlock.wiki/Paradox?oldid=125556"
+    revision_id: 125556
+    last_modified: "2026-09-01T03:15:37"
+    accessed_at: "2026-09-03"
+    scope: Paradox identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.pocket.125557
+    title: "Pocket"
+    url: "https://deadlock.wiki/Pocket"
+    revision_url: "https://deadlock.wiki/Pocket?oldid=125557"
+    revision_id: 125557
+    last_modified: "2026-09-01T03:16:19"
+    accessed_at: "2026-09-03"
+    scope: Pocket identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.rem.124942
+    title: "Rem"
+    url: "https://deadlock.wiki/Rem"
+    revision_url: "https://deadlock.wiki/Rem?oldid=124942"
+    revision_id: 124942
+    last_modified: "2026-09-01T00:05:57"
+    accessed_at: "2026-09-03"
+    scope: Rem identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.shiv.125552
+    title: "Shiv"
+    url: "https://deadlock.wiki/Shiv"
+    revision_url: "https://deadlock.wiki/Shiv?oldid=125552"
+    revision_id: 125552
+    last_modified: "2026-09-01T02:39:22"
+    accessed_at: "2026-09-03"
+    scope: Shiv identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.silver.124941
+    title: "Silver"
+    url: "https://deadlock.wiki/Silver"
+    revision_url: "https://deadlock.wiki/Silver?oldid=124941"
+    revision_id: 124941
+    last_modified: "2026-09-01T00:01:49"
+    accessed_at: "2026-09-03"
+    scope: Silver identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.sinclair.124939
+    title: "Sinclair"
+    url: "https://deadlock.wiki/Sinclair"
+    revision_url: "https://deadlock.wiki/Sinclair?oldid=124939"
+    revision_id: 124939
+    last_modified: "2026-08-31T23:05:59"
+    accessed_at: "2026-09-03"
+    scope: Sinclair identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.the-doorman.125570
+    title: "The Doorman"
+    url: "https://deadlock.wiki/The_Doorman"
+    revision_url: "https://deadlock.wiki/The_Doorman?oldid=125570"
+    revision_id: 125570
+    last_modified: "2026-09-01T03:36:24"
+    accessed_at: "2026-09-03"
+    scope: The Doorman identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.venator.124906
+    title: "Venator"
+    url: "https://deadlock.wiki/Venator"
+    revision_url: "https://deadlock.wiki/Venator?oldid=124906"
+    revision_id: 124906
+    last_modified: "2026-08-31T20:42:52"
+    accessed_at: "2026-09-03"
+    scope: Venator identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.victor.125760
+    title: "Victor"
+    url: "https://deadlock.wiki/Victor"
+    revision_url: "https://deadlock.wiki/Victor?oldid=125760"
+    revision_id: 125760
+    last_modified: "2026-09-02T22:32:53"
+    accessed_at: "2026-09-03"
+    scope: Victor identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.vindicta.124937
+    title: "Vindicta"
+    url: "https://deadlock.wiki/Vindicta"
+    revision_url: "https://deadlock.wiki/Vindicta?oldid=124937"
+    revision_id: 124937
+    last_modified: "2026-08-31T23:03:26"
+    accessed_at: "2026-09-03"
+    scope: Vindicta identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.viscous.124936
+    title: "Viscous"
+    url: "https://deadlock.wiki/Viscous"
+    revision_url: "https://deadlock.wiki/Viscous?oldid=124936"
+    revision_id: 124936
+    last_modified: "2026-08-31T23:02:29"
+    accessed_at: "2026-09-03"
+    scope: Viscous identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.vyper.124934
+    title: "Vyper"
+    url: "https://deadlock.wiki/Vyper"
+    revision_url: "https://deadlock.wiki/Vyper?oldid=124934"
+    revision_id: 124934
+    last_modified: "2026-08-31T23:01:21"
+    accessed_at: "2026-09-03"
+    scope: Vyper identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.warden.124932
+    title: "Warden"
+    url: "https://deadlock.wiki/Warden"
+    revision_url: "https://deadlock.wiki/Warden?oldid=124932"
+    revision_id: 124932
+    last_modified: "2026-08-31T23:00:01"
+    accessed_at: "2026-09-03"
+    scope: Warden identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.wraith.124931
+    title: "Wraith"
+    url: "https://deadlock.wiki/Wraith"
+    revision_url: "https://deadlock.wiki/Wraith?oldid=124931"
+    revision_id: 124931
+    last_modified: "2026-08-31T22:59:22"
+    accessed_at: "2026-09-03"
+    scope: Wraith identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.yamato.124895
+    title: "Yamato"
+    url: "https://deadlock.wiki/Yamato"
+    revision_url: "https://deadlock.wiki/Yamato?oldid=124895"
+    revision_id: 124895
+    last_modified: "2026-08-31T20:10:22"
+    accessed_at: "2026-09-03"
+    scope: Yamato identity and article context; numeric facts use the pinned generated datasets
+
+  - id: deadlock-api.items.client-6684.source-10933105
+    title: Deadlock API English item assets for client 6684
+    url: "https://api.deadlock-api.com/v1/assets/items?language=english&client_version=6684"
+    version_endpoint: "https://api.deadlock-api.com/v1/assets/steam-info"
+    client_version: 6684
+    server_version: 6684
+    source_revision: 10933105
+    version_datetime: "2026-08-22T10:38:36"
+    accessed_at: "2026-09-03"
+    sha256: 75ee1c872303fd753327e56d3daa037171168567f42c7ca55f39d7fe45202474
+    scope: Primary structured authority for current item identity, availability, purchase data, properties, descriptions, tooltip sections, activation, components, and upgrades
+    source_quality_note: Community API generated from game data. Requests are pinned to a client version; the response hash is retained because API output is not an immutable revision URL.
+
+  - id: github.deadlock-data.changelogs.raw.afc8e9c
+    title: deadlock-wiki/deadlock-data historical raw changelogs
+    url: "https://github.com/deadlock-wiki/deadlock-data/tree/afc8e9c10bedd12ef7d1cf750bcdb612ed0c21af/data/changelogs/raw"
+    commit: afc8e9c10bedd12ef7d1cf750bcdb612ed0c21af
+    accessed_at: "2026-09-08"
+    scope: 135 dated raw patch changelogs from 2024-05-03 through 2026-08-22
+    local_manifest: patches/manifest.yaml
+    source_quality_note: Historical changelog text only. This source is intentionally excluded from current entity facts and calculations; patch-note intent does not prove final runtime behavior or override current structured data.
+
+  - id: github.deadlock-data.english.311b2e8d895e
+    title: deadlock-wiki/deadlock-data English ability localization for client 6684
+    url: "https://github.com/deadlock-wiki/deadlock-data/blob/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json"
+    raw_url: "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json"
+    commit: 311b2e8d895eec837441ff3e29b7d7581a61768c
+    client_version: 6684
+    source_revision: 10933105
+    accessed_at: "2026-09-08"
+    sha256: 92041569d3d5384f57aafca6276792ce36adad9ec736e0b1388fe83aef7d4db5
+    scope: All 152 selectable-hero abilities; 170 base/secondary descriptions and 311 upgrade descriptions, resolving all 630 ability-card DescKey references
+    extraction: "Localization keys joined to pinned English text; raw text and normalized plain text retained per ability."
+    source_quality_note: Immutable English game text from the same wiki-data commit already used by the snapshot. Canonical hero records preserve raw text, keys, card paths, and normalized plain text. Inline attributes use source English labels; bindings remain action names, not invented default keys. HTML is removed, including a stray less-than sign before Singularity's inline token. Descriptions supplement rather than overwrite numerical data; tooltip wording is not independent runtime verification. This import does not update the snapshot to the live patch.
+
+  - id: github.deadlock-data.items.311b2e8d895e
+    title: deadlock-wiki/deadlock-data item datasets for client 6684
+    url: "https://github.com/deadlock-wiki/deadlock-data/tree/311b2e8d895eec837441ff3e29b7d7581a61768c/data"
+    item_data_url: "https://github.com/deadlock-wiki/deadlock-data/blob/311b2e8d895eec837441ff3e29b7d7581a61768c/data/json/item-data.json"
+    item_cards_url: "https://github.com/deadlock-wiki/deadlock-data/blob/311b2e8d895eec837441ff3e29b7d7581a61768c/data/json/item-cards.json"
+    commit: 311b2e8d895eec837441ff3e29b7d7581a61768c
+    client_version: 6684
+    server_version: 6684
+    source_revision: 10933105
+    last_modified: "2026-08-22T21:50:25"
+    accessed_at: "2026-09-03"
+    item_data_sha256: 88cd1b33e60e531d72dfb900d1ca34aa8c54b5ac51dc2f6307804526b045a9b1
+    item_cards_sha256: 07c00222dfc7b08eaaf1524dc60085d07d8c20ec537f4c0731119ae148088363
+    scope: Secondary structured item source and card-oriented cross-check for current item fields, hidden values, targets, conditions, and presentation grouping
+    source_quality_note: Immutable Git commit generated for the Deadlock Wiki; used as a secondary source and never allowed to silently replace a conflicting primary API value.
+
+  - id: deadlock-api.npc-units.client-6684.source-10933105
+    title: Deadlock API NPC unit assets for client 6684
+    url: "https://api.deadlock-api.com/v1/assets/npc-units?client_version=6684"
+    version_endpoint: "https://api.deadlock-api.com/v1/assets/steam-info"
+    client_version: 6684
+    server_version: 6684
+    source_revision: 10933105
+    version_datetime: "2026-08-22T10:38:36"
+    accessed_at: "2026-09-04"
+    sha256: e84f35a8da6f02f1564b2aab300274fa67b4a47c254e20fab8e197fce50ac2c8
+    scope: Primary structured authority for NPC numeric IDs, internal classes, base combat fields, weapons, intrinsic modifiers, and bound abilities
+    source_quality_note: Community API generated from game data. Requests are pinned to client 6684 and guarded by a retained response hash.
+
+  - id: github.deadlock-data.npcs.311b2e8d895e
+    title: deadlock-wiki/deadlock-data NPC dataset for client 6684
+    url: "https://github.com/deadlock-wiki/deadlock-data/blob/311b2e8d895eec837441ff3e29b7d7581a61768c/data/json/npc-data.json"
+    commit: 311b2e8d895eec837441ff3e29b7d7581a61768c
+    client_version: 6684
+    server_version: 6684
+    source_revision: 10933105
+    last_modified: "2026-08-22T21:50:25"
+    accessed_at: "2026-09-04"
+    sha256: 721c1efc599b0212fd89acfbda1f88ce3f60ab73c05e5853404e792a4f3d03e7
+    scope: Immutable unit-normalized NPC fields, contextual attacks, nested abilities, spawning, scaling, objective protection, and rewards
+    source_quality_note: Generated from the same pinned game-data revision as the API. Used for normalized units and fields not exposed by the API response.
+
+  - id: github.deadlock-data.gameplay.311b2e8d895e
+    title: deadlock-wiki/deadlock-data generic and miscellaneous gameplay datasets for client 6684
+    url: "https://github.com/deadlock-wiki/deadlock-data/tree/311b2e8d895eec837441ff3e29b7d7581a61768c/data/json"
+    generic_data_url: "https://github.com/deadlock-wiki/deadlock-data/blob/311b2e8d895eec837441ff3e29b7d7581a61768c/data/json/generic-data.json"
+    misc_data_url: "https://github.com/deadlock-wiki/deadlock-data/blob/311b2e8d895eec837441ff3e29b7d7581a61768c/data/json/misc-data.json"
+    commit: 311b2e8d895eec837441ff3e29b7d7581a61768c
+    client_version: 6684
+    server_version: 6684
+    source_revision: 10933105
+    last_modified: "2026-08-22T21:50:25"
+    accessed_at: "2026-09-04"
+    generic_data_sha256: 2da49c6ba5cda2a70c31431fc443796bd28aa095b1857e5c0f88af4aebfc1a6c
+    misc_data_sha256: 8dd2e524e98fa63d2e974889508959be72632856955b7b878d52aea1d5c509b9
+    scope: Immutable generated values for map pickups, Rejuvenator credits, powerups, Unstable Rift, breakables, and other gameplay entities not represented as NPC units
+
+  - id: wiki.mid-boss.107274
+    title: Mid-Boss
+    url: "https://deadlock.wiki/Mid-Boss"
+    revision_url: "https://deadlock.wiki/Mid-Boss?oldid=107274"
+    revision_id: 107274
+    last_modified: "2026-08-10T18:58:20"
+    accessed_at: "2026-09-04"
+    scope: Mid-Boss behavior, pit restrictions, shield, rewards, Rejuvenator drop, and respawn sequence
+
+  - id: wiki.rejuvenator.125036
+    title: Rejuvenator
+    url: "https://deadlock.wiki/Rejuvenator"
+    revision_url: "https://deadlock.wiki/Rejuvenator?oldid=125036"
+    revision_id: 125036
+    last_modified: "2026-09-01T01:13:58"
+    accessed_at: "2026-09-04"
+    scope: Rejuvenator descent, claim process, credits, buff duration, and revive behavior
+
+  - id: wiki.lane-guardian.123832
+    title: Lane Guardian
+    url: "https://deadlock.wiki/Lane_Guardian"
+    revision_url: "https://deadlock.wiki/Lane_Guardian?oldid=123832"
+    revision_id: 123832
+    last_modified: "2026-08-29T00:44:17"
+    accessed_at: "2026-09-04"
+    scope: Lane Guardian attacks, vulnerability range, resistance curve, parry behavior, and bounty context
+
+  - id: wiki.base-guardian.123836
+    title: Base Guardian
+    url: "https://deadlock.wiki/Base_Guardian"
+    revision_url: "https://deadlock.wiki/Base_Guardian?oldid=123836"
+    revision_id: 123836
+    last_modified: "2026-08-29T00:47:26"
+    accessed_at: "2026-09-04"
+    scope: Base Guardian attacks, scaling Bullet Resistance, Backdoor Protection, and destruction effect
+
+  - id: wiki.walker.124899
+    title: Walker
+    url: "https://deadlock.wiki/Walker"
+    revision_url: "https://deadlock.wiki/Walker?oldid=124899"
+    revision_id: 124899
+    last_modified: "2026-08-31T20:24:02"
+    accessed_at: "2026-09-04"
+    scope: Walker health states, attacks, resistance curves, allied aura, Backdoor Protection, and rewards
+
+  - id: wiki.shrine.123837
+    title: Shrine
+    url: "https://deadlock.wiki/Shrine"
+    revision_url: "https://deadlock.wiki/Shrine?oldid=123837"
+    revision_id: 123837
+    last_modified: "2026-08-29T02:06:08"
+    accessed_at: "2026-09-04"
+    scope: Shrine health states, protection, resistance, Super Trooper unlock, and Patron exposure
+
+  - id: wiki.patron.110036
+    title: Patron
+    url: "https://deadlock.wiki/Patron"
+    revision_url: "https://deadlock.wiki/Patron?oldid=110036"
+    revision_id: 110036
+    last_modified: "2026-08-17T17:50:48"
+    accessed_at: "2026-09-04"
+    scope: Patron phases, attacks, health growth, pit restrictions, regeneration, Last Stand, and victory
+
+  - id: wiki.sinners-sacrifice.110087
+    title: Sinner's Sacrifice
+    url: "https://deadlock.wiki/Sinner%27s_Sacrifice"
+    revision_url: "https://deadlock.wiki/Sinner%27s_Sacrifice?oldid=110087"
+    revision_id: 110087
+    last_modified: "2026-08-18T12:52:50"
+    accessed_at: "2026-09-04"
+    scope: Sinner's Sacrifice locations, melee-only damage, retaliation, jackpot, Souls, buffs, and respawn

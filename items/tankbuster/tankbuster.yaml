@@ -1,0 +1,537 @@
+{
+  "schema_version": 1,
+  "id": "item.tankbuster",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Tankbuster",
+    "numeric_id": 2121044373,
+    "internal_key": "upgrade_magic_shock",
+    "aliases": [
+      "upgrade_magic_shock"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "spirit",
+    "tier": 3,
+    "activation": "passive",
+    "is_active_item": false,
+    "is_imbue": false,
+    "shop_filters": [
+      "MagicDamage",
+      "Disruption"
+    ],
+    "target_types": [
+      "AllEnemy"
+    ]
+  },
+  "purchase": {
+    "cost_souls": 3200,
+    "component_internal_keys": [
+      "upgrade_magic_burst"
+    ]
+  },
+  "description_plain": "Charges up over time with bonus spirit damage, causing abilities dealing more than 165 damage to deal additional damage. Ignores Spirit Resistance.",
+  "displayed_effects": [
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "BonusHealth",
+      "label": "Bonus Health",
+      "value": "50",
+      "property": {
+        "value": "50",
+        "provided_property_type": "MODIFIER_VALUE_HEALTH_MAX",
+        "css_class": "health",
+        "prefix": "{s:sign}",
+        "label": "Bonus Health",
+        "postvalue_label": "Bonus Health",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "AbilityChargeUpTime",
+      "label": "Charge-Up Time",
+      "value": "14s",
+      "property": {
+        "value": "14",
+        "label": "Charge-Up Time",
+        "postfix": "s",
+        "postvalue_label": "Charge-Up Time",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "important",
+      "key": "Damage",
+      "label": "Damage",
+      "value": "40",
+      "property": {
+        "value": "40",
+        "css_class": "tech_damage",
+        "label": "Damage",
+        "postvalue_label": "Damage",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "important",
+      "key": "CurrentHealthDamage",
+      "label": "Current Health Bonus Damage",
+      "value": "8%",
+      "property": {
+        "value": "8",
+        "css_class": "tech_damage",
+        "loc_token_override": "MagicShockDamage",
+        "label": "Current Health Bonus Damage",
+        "postfix": "%",
+        "postvalue_label": "Current Health Bonus Damage",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "CurrentHealthDamage",
+          "bonus": "5"
+        },
+        {
+          "name": "BonusHealth",
+          "bonus": "100"
+        },
+        {
+          "name": "Damage",
+          "bonus": "60"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 2121044373,
+    "class_name": "upgrade_magic_shock",
+    "name": "Tankbuster",
+    "start_trained": true,
+    "heroes": [],
+    "update_time": 1710448256,
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "spirit",
+    "item_tier": 3,
+    "properties": {
+      "AbilityCooldown": {
+        "value": "14",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown"
+      },
+      "AbilityDuration": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration"
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "MinimumDamage": {
+        "value": "165"
+      },
+      "ReProcLockoutTime": {
+        "value": "5"
+      },
+      "WatcherMaxDuration": {
+        "value": "30"
+      },
+      "CurrentHealthDamage": {
+        "value": "8",
+        "css_class": "tech_damage",
+        "loc_token_override": "MagicShockDamage",
+        "label": "Current Health Bonus Damage",
+        "postfix": "%",
+        "postvalue_label": "Current Health Bonus Damage",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "Damage": {
+        "value": "40",
+        "css_class": "tech_damage",
+        "label": "Damage",
+        "postvalue_label": "Damage",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "AbilityChargeUpTime": {
+        "value": "14",
+        "label": "Charge-Up Time",
+        "postfix": "s",
+        "postvalue_label": "Charge-Up Time",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "BonusHealth": {
+        "value": "50",
+        "provided_property_type": "MODIFIER_VALUE_HEALTH_MAX",
+        "css_class": "health",
+        "prefix": "{s:sign}",
+        "label": "Bonus Health",
+        "postvalue_label": "Bonus Health",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    "description": {
+      "desc": "Charges up over time with \n<span class=\"inline-attribute-label BonusSpiritDamage\">bonus spirit damage</span>, causing abilities dealing more than <span class=\"highlight\">165</span> damage to deal additional damage. <span class=\"highlight\">Ignores Spirit Resistance.</span>"
+    },
+    "activation": "passive",
+    "component_items": [
+      "upgrade_magic_burst"
+    ],
+    "tooltip_sections": [
+      {
+        "section_type": "innate",
+        "section_attributes": [
+          {
+            "properties": [
+              "BonusHealth"
+            ]
+          }
+        ]
+      },
+      {
+        "section_type": "passive",
+        "section_attributes": [
+          {
+            "loc_string": "Charges up over time with \n<span class=\"inline-attribute-label BonusSpiritDamage\">bonus spirit damage</span>, causing abilities dealing more than <span class=\"highlight\">165</span> damage to deal additional damage. <span class=\"highlight\">Ignores Spirit Resistance.</span>",
+            "properties": [
+              "AbilityChargeUpTime"
+            ],
+            "important_properties": [
+              "Damage",
+              "CurrentHealthDamage"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "CurrentHealthDamage",
+            "bonus": "5"
+          },
+          {
+            "name": "BonusHealth",
+            "bonus": "100"
+          },
+          {
+            "name": "Damage",
+            "bonus": "60"
+          }
+        ]
+      }
+    ],
+    "is_active_item": false,
+    "shopable": true,
+    "cost": 3200
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Tankbuster",
+    "Description": "Charges up over time with {g:citadel_inline_attribute:'BonusSpiritDamage'}, causing abilities dealing more than <span class=\"highlight\">165</span> damage to deal additional damage. <span class=\"highlight\">Ignores Spirit Resistance.</span>",
+    "Cost": 3200,
+    "Tier": 3,
+    "Activation": "Passive",
+    "Slot": "Tech",
+    "Components": [
+      "upgrade_magic_burst"
+    ],
+    "TargetTypes": [
+      "AllEnemy"
+    ],
+    "ShopFilters": [
+      "MagicDamage",
+      "Disruption"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityCooldown": 14,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "MinimumDamage": 165,
+    "ReProcLockoutTime": 5,
+    "WatcherMaxDuration": 30,
+    "CurrentHealthDamage": 8,
+    "Damage": 40,
+    "AbilityChargeUpTime": 14,
+    "BonusHealth": 50,
+    "PropertyUpgrades": {
+      "CurrentHealthDamage": 5,
+      "BonusHealth": 100,
+      "Damage": 60
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_magic_shock",
+    "Name": "Tankbuster",
+    "Description": "Charges up over time with {g:citadel_inline_attribute:'BonusSpiritDamage'}, causing abilities dealing more than <span class=\"highlight\">165</span> damage to deal additional damage. <span class=\"highlight\">Ignores Spirit Resistance.</span>",
+    "Cost": 3200,
+    "Tier": 3,
+    "Slot": "Tech",
+    "Activation": "Passive",
+    "Components": [
+      "upgrade_magic_burst"
+    ],
+    "TargetTypes": [
+      "AllEnemy"
+    ],
+    "ShopFilters": [
+      "MagicDamage",
+      "Disruption"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Innate",
+      "DescKey": null,
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [],
+      "Alt": [
+        {
+          "Key": "BonusHealth",
+          "Value": 50,
+          "Type": "health"
+        }
+      ]
+    },
+    "Info2": {
+      "Type": "Passive",
+      "DescKey": "#upgrade_magic_shock_desc",
+      "Cooldown": null,
+      "ChargeUp": 14,
+      "Main": [
+        {
+          "Key": "Damage",
+          "Value": 40,
+          "Type": "tech_damage"
+        },
+        {
+          "Key": "CurrentHealthDamage",
+          "Value": 8,
+          "Type": "tech_damage",
+          "LocTokenOverride": "MagicShockDamage"
+        }
+      ],
+      "Alt": []
+    },
+    "Upgrades": {
+      "CurrentHealthDamage": 5,
+      "BonusHealth": 100,
+      "Damage": 60
+    },
+    "Other": {
+      "AbilityCooldown": {
+        "Key": "AbilityCooldown",
+        "Value": 14,
+        "Type": "cooldown"
+      },
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      },
+      "MinimumDamage": {
+        "Key": "MinimumDamage",
+        "Value": 165
+      },
+      "ReProcLockoutTime": {
+        "Key": "ReProcLockoutTime",
+        "Value": 5
+      },
+      "WatcherMaxDuration": {
+        "Key": "WatcherMaxDuration",
+        "Value": 30
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

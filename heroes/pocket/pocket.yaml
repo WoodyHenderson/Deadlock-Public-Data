@@ -1,0 +1,1045 @@
+{
+  "schema_version": 2,
+  "id": "hero.pocket",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.pocket.125557",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Pocket",
+  "aliases": [],
+  "internal_hero_key": "hero_synth",
+  "hero_type": "Assassin",
+  "role_localization_key": "hero_synth_role",
+  "playstyle_localization_key": "hero_synth_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 780,
+    "health_regeneration_per_second": 1,
+    "light_melee_damage": 60,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 7.2,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 14.7,
+      "distance_meters": 10,
+      "duration_seconds": 0.68
+    },
+    "air_dash": {
+      "speed_meters_per_second": 17,
+      "distance_meters": 8,
+      "duration_seconds": 0.47
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.14,
+    "MaxHealth": 36,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.0547,
+    "DPS": 1.8667,
+    "SustainedDPS": 1.2542
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 558.8,
+    "BulletDamage": 4.28,
+    "RoundsPerSecond": 1.9048,
+    "ClipSize": 11,
+    "ReloadTime": 2.82,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 16,
+    "FalloffEndRange": 45.72,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.8,
+    "BulletRadius": 0.0762,
+    "BulletsPerShot": 7,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 57.068,
+    "SustainedDPS": 38.344,
+    "NameKey": "citadel_weapon_hero_synth_set",
+    "DescKey": "citadel_weapon_hero_synth_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_Spreadshot",
+      "Attribute_EWeaponAttribute_CloseRange"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Barrage",
+      "internal_key": "synth_barrage",
+      "data": {
+        "AbilityCastDelay": 0.3,
+        "AbilityChannelTime": 2,
+        "AbilityCooldown": {
+          "Value": 32,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "AirDrag": 0.3,
+        "AirSpeedMax": 2.54,
+        "AmpDuration": {
+          "Value": 15,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AmpModifier": {
+          "Class": "SynthBarrageAmp",
+          "Subclass": "SynthBarrageAmp"
+        },
+        "AmpPercentPerStack": 6,
+        "AutoChannelModifier": {
+          "Class": "IntrinsicBase",
+          "Subclass": "IntrinsicBase"
+        },
+        "BarrageCasterModifier": {
+          "Class": "SynthBarrageCaster",
+          "Subclass": "SynthBarrageCaster"
+        },
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorChannelled",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": 1.3,
+        "DamagePerProjectile": {
+          "Value": 32,
+          "Scale": {
+            "Value": 0.465,
+            "Type": "spirit"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "SlowBase",
+          "Subclass": "SynthBarrageDebuff"
+        },
+        "FallSpeedMax": 10,
+        "IsDisabled": false,
+        "Key": "synth_barrage",
+        "MoveSlowPercent": 30,
+        "Name": "Barrage",
+        "ProjectileAmount": 4,
+        "Radius": {
+          "Value": 4.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "SlowDuration": {
+          "Value": 1.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "Upgrades": [
+          {
+            "DamagePerProjectile": 16
+          },
+          {
+            "AbilityCooldown": -16
+          },
+          {
+            "AmpPercentPerStack": 4,
+            "Radius": 3
+          }
+        ]
+      },
+      "card": {
+        "Key": "synth_barrage",
+        "Name": "Barrage",
+        "DescKey": "synth_barrage_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "AmpPercentPerStack",
+                "Name": "Amp Per Stack",
+                "Value": 6,
+                "Type": "damage"
+              },
+              {
+                "Key": "DamagePerProjectile",
+                "Name": "Damage Per Projectile",
+                "Value": 32,
+                "Scale": {
+                  "Value": 0.465,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "MoveSlowPercent",
+                "Name": "Movement Slow",
+                "Value": 30,
+                "Type": "slow"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "ProjectileAmount",
+              "Name": "Projectile Amount",
+              "Value": 4
+            },
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 1.5,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "AmpDuration",
+              "Name": "Amp Duration",
+              "Value": 15,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "synth_barrage_desc"
+        },
+        "Upgrades": [
+          {
+            "DamagePerProjectile": 16
+          },
+          {
+            "AbilityCooldown": -16
+          },
+          {
+            "AmpPercentPerStack": 4,
+            "Radius": 3,
+            "DescKey": "synth_barrage_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 1.3,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AirDrag": {
+            "Name": null,
+            "Value": 0.3
+          },
+          "AirSpeedMax": {
+            "Name": null,
+            "Value": 2.54
+          },
+          "FallSpeedMax": {
+            "Name": null,
+            "Value": 10
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.3,
+          "Type": "cast"
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 2,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 32,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 4.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "synth_barrage_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Channel to start launching projectiles that <span class=\"highlight\">deal {g:citadel_inline_attribute:'SpiritDamage'}</span> and <span class=\"highlight\">apply {g:citadel_inline_attribute:'Slow'}</span> around their impact point. Projectiles that hit a hero grant Pocket <span class=\"highlight\">{g:citadel_inline_attribute:'DamageAmp'} that stacks</span>.<br>Casting while airborne will cause Pocket to <span class=\"highlight\">float</span>.<span class=\"diminish\"><br><br>Casting AirDash or Flying Cloaking will not cancel Barrage.</span>",
+          "plain_text": "Channel to start launching projectiles that deal spirit damage and apply slow around their impact point. Projectiles that hit a hero grant Pocket increased damage that stacks.\nCasting while airborne will cause Pocket to float.\nCasting AirDash or Flying Cloaking will not cancel Barrage."
+        },
+        {
+          "localization_key": "synth_barrage_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+4%</span> Amp Per Stack and <span class=\"highlight\">3m</span> Radius",
+          "plain_text": "+4% Amp Per Stack and 3m Radius"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Flying Cloak",
+      "internal_key": "synth_plasma_flux",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCooldown": {
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorTriggerCancelMashProtectionOnCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 60,
+          "Scale": {
+            "Value": 1.3,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "synth_plasma_flux",
+        "MaxLifetime": {
+          "Value": 3.8,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "Name": "Flying Cloak",
+        "Radius": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "TickRate": 0.1,
+        "Upgrades": [
+          {
+            "Damage": 70
+          },
+          {
+            "WeaponDamageBonus": 5,
+            "WeaponDamageBonusDuration": 6
+          },
+          {
+            "MaxLifetime": 1.6,
+            "AbilityCooldown": -10
+          }
+        ],
+        "WeaponDamageBonusModifier": {
+          "Class": "SynthPlasmaFluxWeaponDamage",
+          "Subclass": "SynthPlasmaFluxWeaponDamage"
+        }
+      },
+      "card": {
+        "Key": "synth_plasma_flux",
+        "Name": "Flying Cloak",
+        "DescKey": "synth_plasma_flux_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 60,
+                "Scale": {
+                  "Value": 1.3,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "MaxLifetime",
+              "Name": "Lifetime",
+              "Value": 3.8,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "synth_plasma_flux_desc"
+        },
+        "Upgrades": [
+          {
+            "Damage": 70
+          },
+          {
+            "WeaponDamageBonus": 5,
+            "WeaponDamageBonusDuration": 6,
+            "DescKey": "synth_plasma_flux_t2_desc"
+          },
+          {
+            "MaxLifetime": 1.6,
+            "AbilityCooldown": -10,
+            "DescKey": "synth_plasma_flux_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.1
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "synth_plasma_flux_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Launch a sentient cloak that <span class=\"highlight\">travels forward</span> and <span class=\"highlight\">damages enemies</span>. You can press <span class=\"highlight\">{g:citadel_binding:'Ability2'}</span> to <span class=\"highlight\">teleport</span> to its location.",
+          "plain_text": "Launch a sentient cloak that travels forward and damages enemies. You can press [Ability 2] to teleport to its location."
+        },
+        {
+          "localization_key": "synth_plasma_flux_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+5</span> Weapon Damage for 6s</span>",
+          "plain_text": "+5 Weapon Damage for 6s"
+        },
+        {
+          "localization_key": "synth_plasma_flux_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+1.6s</span> Lifetime and <span class=\"highlight\">-10s</span> Cooldown.",
+          "plain_text": "+1.6s Lifetime and -10s Cooldown."
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Enchanter's Satchel",
+      "internal_key": "synth_pulse",
+      "data": {
+        "AbilityCastDelay": 0.15,
+        "AbilityChannelTime": {
+          "Value": 1.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 17,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "ChannelMoveSpeed": 1.3,
+        "Damage": {
+          "Value": 65,
+          "Scale": {
+            "Value": 1.1,
+            "Type": "spirit"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "Base",
+          "Subclass": "Debuff"
+        },
+        "EscapeModifier": {
+          "Class": "SynthPulseEscape",
+          "Subclass": "SynthPulseEscape",
+          "EnabledStateMask": [
+            "DashDisabled",
+            "MantleDisabled",
+            "DuckingDisabled",
+            "MeleeDisabled"
+          ]
+        },
+        "FallSpeedMax": 0.0254,
+        "IsDisabled": false,
+        "Key": "synth_pulse",
+        "Name": "Enchanter's Satchel",
+        "Radius": {
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -5
+          },
+          {
+            "Damage": 90
+          },
+          {
+            "FireRateSlow": 40,
+            "MoveSlowPercent": 40,
+            "DebuffDuration": 4,
+            "AbilityChannelTime": 1.5,
+            "Radius": 4
+          }
+        ]
+      },
+      "card": {
+        "Key": "synth_pulse",
+        "Name": "Enchanter's Satchel",
+        "DescKey": "synth_pulse_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "AbilityChannelTime",
+                "Name": "Channel Duration",
+                "Value": 1.5,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "cast"
+              },
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 65,
+                "Scale": {
+                  "Value": 1.1,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "MoveSlowPercent",
+                "Name": "Movement Slow",
+                "Value": 0,
+                "Type": "slow"
+              },
+              {
+                "Key": "FireRateSlow",
+                "Name": "Fire Rate",
+                "Value": 0,
+                "Type": "bullet_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "DebuffDuration",
+              "Name": "Debuff Duration",
+              "Value": 0,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "synth_pulse_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -5
+          },
+          {
+            "Damage": 90
+          },
+          {
+            "FireRateSlow": 40,
+            "MoveSlowPercent": 40,
+            "DebuffDuration": 4,
+            "AbilityChannelTime": 1.5,
+            "Radius": 4,
+            "DescKey": "synth_pulse_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 1.3,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "FallSpeedMax": {
+            "Name": null,
+            "Value": 0.0254
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.15,
+          "Type": "cast"
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 1.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 17,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "synth_pulse_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Escape</span> into your suitcase. When the duration ends, <span class=\"highlight\">deal {g:citadel_inline_attribute:'SpiritDamage'}</span> to nearby enemies. Duration can be ended early by performing any action.",
+          "plain_text": "Escape into your suitcase. When the duration ends, deal spirit damage to nearby enemies. Duration can be ended early by performing any action."
+        },
+        {
+          "localization_key": "synth_pulse_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+1.5s</span> Duration<br><span class=\"highlight\">+4m</span> Radius<br><span class=\"highlight\">-40%</span> Move Speed and Fire Rate for 4s",
+          "plain_text": "+1.5s Duration\n+4m Radius\n-40% Move Speed and Fire Rate for 4s"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Affliction",
+      "internal_key": "synth_affliction",
+      "data": {
+        "AbilityCastDelay": 0.6,
+        "AbilityCooldown": {
+          "Value": 170,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact"
+        ],
+        "CanBePurged": 1,
+        "ChannelMoveSpeed": 1.3,
+        "CurrentHealthDamage": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0,
+            "Type": "spirit"
+          }
+        },
+        "DPS": {
+          "Value": 32,
+          "Scale": {
+            "Value": 0.21,
+            "Type": "spirit"
+          }
+        },
+        "DamageInterval": 0.5,
+        "DebuffDuration": {
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "SynthAfflictionDebuff",
+          "Subclass": "SynthAfflictionDebuff"
+        },
+        "IsDisabled": false,
+        "Key": "synth_affliction",
+        "Name": "Affliction",
+        "Radius": {
+          "Value": 9,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -35
+          },
+          {
+            "DebuffDuration": 3,
+            "Radius": 4
+          },
+          {
+            "DPS": {
+              "Value": 13,
+              "Scale": {
+                "Value": 0.1,
+                "Type": "spirit"
+              }
+            },
+            "DisableHealing": 1
+          }
+        ]
+      },
+      "card": {
+        "Key": "synth_affliction",
+        "Name": "Affliction",
+        "DescKey": "synth_affliction_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "CurrentHealthDamage",
+                "Name": "Current Health Damage",
+                "Value": 0,
+                "Scale": {
+                  "Value": 0,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "DPS",
+                "Name": "Damage Per Second",
+                "Value": 32,
+                "Scale": {
+                  "Value": 0.21,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "DebuffDuration",
+                "Name": "Debuff Duration",
+                "Value": 10,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "HealAmpReceivePenaltyPercent",
+              "Name": "Healing Reduction",
+              "Value": 0
+            }
+          ],
+          "DescKey": "synth_affliction_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -35
+          },
+          {
+            "DebuffDuration": 3,
+            "Radius": 4,
+            "DescKey": "synth_affliction_t2_desc"
+          },
+          {
+            "DPS": {
+              "Value": 13,
+              "Scale": {
+                "Value": 0.1,
+                "Type": "spirit"
+              }
+            },
+            "DisableHealing": 1,
+            "DescKey": "synth_affliction_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 1.3,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "CanBePurged": {
+            "Name": null,
+            "Value": 1
+          },
+          "DamageInterval": {
+            "Name": null,
+            "Value": 0.5
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.6,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 170,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 9,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "synth_affliction_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Applies {g:citadel_inline_attribute:'SpiritIcon'}<span class=\"highlight\">damage over time</span> to enemies nearby.<span class=\"diminish\"><br><br>Affliction's damage is non-lethal and does not apply item procs.</span>",
+          "plain_text": "Applies damage over time to enemies nearby.\nAffliction's damage is non-lethal and does not apply item procs."
+        },
+        {
+          "localization_key": "synth_affliction_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+3s</span> Duration and <span class=\"highlight\">+4m</span> Radius",
+          "plain_text": "+3s Duration and +4m Radius"
+        },
+        {
+          "localization_key": "synth_affliction_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Prevents all healing</span><br><span class=\"highlight\">+13</span> DPS with increase Spirit scaling",
+          "plain_text": "Prevents all healing\n+13 DPS with increase Spirit scaling"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.47,
+    "AirDashSpeed": 17,
+    "BaseHealthRegen": 1,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.68,
+    "GroundDashSpeed": 14.7,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.14,
+      "MaxHealth": 36,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.0547,
+      "DPS": 1.8667,
+      "SustainedDPS": 1.2542
+    },
+    "LightMeleeDamage": 60,
+    "Lore": "hero_synth_lore",
+    "MaxHealth": 780,
+    "MaxMoveSpeed": 7.2,
+    "MoveAcceleration": 4,
+    "Name": "Pocket",
+    "Playstyle": "hero_synth_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_synth_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.6,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "TechResist": -15,
+    "Type": "Assassin",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

@@ -1,0 +1,558 @@
+{
+  "schema_version": 1,
+  "id": "item.ballistic-enchantment",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Ballistic Enchantment",
+    "numeric_id": 3294954488,
+    "internal_key": "upgrade_bulletshredimbue",
+    "aliases": [
+      "upgrade_bulletshredimbue"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "weapon",
+    "tier": 3,
+    "activation": "passive",
+    "is_active_item": false,
+    "is_imbue": true,
+    "shop_filters": [
+      "WeaponDamage"
+    ],
+    "target_types": [
+      "AllEnemy"
+    ]
+  },
+  "purchase": {
+    "cost_souls": 3200,
+    "component_internal_keys": [
+      "upgrade_magic_reach"
+    ]
+  },
+  "description_plain": "Imbue an ability with increased range. Dealing damage with that ability grants you increased weapon damage per unique hero hit. Has reduced effect on non-heroes.",
+  "displayed_effects": [
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "AbilityDuration",
+      "label": "Duration",
+      "value": "14s",
+      "property": {
+        "value": "14",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "WeaponPowerPerStackNonHero",
+      "label": "Non-Hero Weapon Damage",
+      "value": "5%",
+      "property": {
+        "value": "5",
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_DAMAGE_INCREASE",
+        "prefix": "{s:sign}",
+        "label": "Non-Hero Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Non-Hero Weapon Damage",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "normal",
+      "key": "NonHeroStackLimit",
+      "label": "Non-Hero Stack Limit",
+      "value": "8",
+      "property": {
+        "value": "8",
+        "prefix": "",
+        "label": "Non-Hero Stack Limit",
+        "postfix": "",
+        "postvalue_label": "Non-Hero Stack Limit",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "important",
+      "key": "WeaponPowerPerStack",
+      "label": "Weapon Damage per Stack",
+      "value": "20%",
+      "property": {
+        "value": "20",
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_DAMAGE_INCREASE",
+        "css_class": "bullet_damage",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "display_units": "EDisplayUnit_Normal",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage per Stack",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage per Stack",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "passive",
+      "importance": "important",
+      "key": "TechRangeMultiplier",
+      "label": "Ability Range",
+      "value": "22%",
+      "property": {
+        "value": "22",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RANGE_PERCENT",
+        "css_class": "distance",
+        "prefix": "{s:sign}",
+        "label": "Ability Range",
+        "postfix": "%",
+        "postvalue_label": "Ability Range",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "WeaponPowerPerStack",
+          "bonus": "15"
+        },
+        {
+          "name": "TechRangeMultiplier",
+          "bonus": "15"
+        },
+        {
+          "name": "TechRadiusMultiplier",
+          "bonus": "15"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 3294954488,
+    "class_name": "upgrade_bulletshredimbue",
+    "name": "Ballistic Enchantment",
+    "start_trained": true,
+    "heroes": [],
+    "update_time": 1769068800,
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "weapon",
+    "item_tier": 3,
+    "properties": {
+      "AbilityCooldown": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown"
+      },
+      "AbilityDuration": {
+        "value": "14",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "TechRangeMultiplier": {
+        "value": "22",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RANGE_PERCENT",
+        "css_class": "distance",
+        "prefix": "{s:sign}",
+        "label": "Ability Range",
+        "postfix": "%",
+        "postvalue_label": "Ability Range",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "TechRadiusMultiplier": {
+        "value": "22",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RADIUS_PERCENT",
+        "css_class": "distance",
+        "prefix": "{s:sign}",
+        "label": "Radius",
+        "postfix": "%",
+        "postvalue_label": "Radius"
+      },
+      "WeaponPowerPerStack": {
+        "value": "20",
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_DAMAGE_INCREASE",
+        "css_class": "bullet_damage",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "display_units": "EDisplayUnit_Normal",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage per Stack",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage per Stack",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "WeaponPowerPerStackNonHero": {
+        "value": "5",
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_DAMAGE_INCREASE",
+        "prefix": "{s:sign}",
+        "label": "Non-Hero Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Non-Hero Weapon Damage",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "NonHeroStackLimit": {
+        "value": "8",
+        "prefix": "",
+        "label": "Non-Hero Stack Limit",
+        "postfix": "",
+        "postvalue_label": "Non-Hero Stack Limit",
+        "tooltip_section": "passive",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    "description": {
+      "desc": "Imbue an ability with increased <span class=\"highlight\">range</span>. Dealing damage with that ability grants you increased <span class=\"highlight\">weapon damage</span> per <span class=\"highlight\">unique hero hit</span>. Has reduced effect on non-heroes."
+    },
+    "activation": "passive",
+    "imbue": "imbue_active",
+    "component_items": [
+      "upgrade_magic_reach"
+    ],
+    "tooltip_sections": [
+      {
+        "section_type": "passive",
+        "section_attributes": [
+          {
+            "loc_string": "Imbue an ability with increased <span class=\"highlight\">range</span>. Dealing damage with that ability grants you increased <span class=\"highlight\">weapon damage</span> per <span class=\"highlight\">unique hero hit</span>. Has reduced effect on non-heroes.",
+            "properties": [
+              "AbilityDuration",
+              "WeaponPowerPerStackNonHero",
+              "NonHeroStackLimit"
+            ],
+            "important_properties": [
+              "WeaponPowerPerStack",
+              "TechRangeMultiplier"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "WeaponPowerPerStack",
+            "bonus": "15"
+          },
+          {
+            "name": "TechRangeMultiplier",
+            "bonus": "15"
+          },
+          {
+            "name": "TechRadiusMultiplier",
+            "bonus": "15"
+          }
+        ]
+      }
+    ],
+    "is_active_item": false,
+    "shopable": true,
+    "cost": 3200
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Ballistic Enchantment",
+    "Description": "Imbue an ability with increased <span class=\"highlight\">range</span>. Dealing damage with that ability grants you increased <span class=\"highlight\">weapon damage</span> per <span class=\"highlight\">unique hero hit</span>. Has reduced effect on non-heroes.",
+    "Cost": 3200,
+    "Tier": 3,
+    "Activation": "Passive",
+    "Slot": "Weapon",
+    "Components": [
+      "upgrade_magic_reach"
+    ],
+    "TargetTypes": [
+      "AllEnemy"
+    ],
+    "ShopFilters": [
+      "WeaponDamage"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": true,
+    "AbilityDuration": 14,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "TechRangeMultiplier": 22,
+    "TechRadiusMultiplier": 22,
+    "WeaponPowerPerStack": 20,
+    "WeaponPowerPerStackNonHero": 5,
+    "NonHeroStackLimit": 8,
+    "PropertyUpgrades": {
+      "WeaponPowerPerStack": 15,
+      "TechRangeMultiplier": 15,
+      "TechRadiusMultiplier": 15
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_bulletshredimbue",
+    "Name": "Ballistic Enchantment",
+    "Description": "Imbue an ability with increased <span class=\"highlight\">range</span>. Dealing damage with that ability grants you increased <span class=\"highlight\">weapon damage</span> per <span class=\"highlight\">unique hero hit</span>. Has reduced effect on non-heroes.",
+    "Cost": 3200,
+    "Tier": 3,
+    "Slot": "Weapon",
+    "Activation": "Passive",
+    "Components": [
+      "upgrade_magic_reach"
+    ],
+    "TargetTypes": [
+      "AllEnemy"
+    ],
+    "ShopFilters": [
+      "WeaponDamage"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": true,
+    "Info1": {
+      "Type": "Passive",
+      "DescKey": "#upgrade_bulletshredimbue_desc",
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "WeaponPowerPerStack",
+          "Value": 20,
+          "Type": "bullet_damage",
+          "UsageFlags": "ConditionallyApplied"
+        },
+        {
+          "Key": "TechRangeMultiplier",
+          "Value": 22,
+          "Type": "distance"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "AbilityDuration",
+          "Value": 14,
+          "Type": "duration"
+        },
+        {
+          "Key": "WeaponPowerPerStackNonHero",
+          "Value": 5
+        },
+        {
+          "Key": "NonHeroStackLimit",
+          "Value": 8
+        }
+      ]
+    },
+    "Upgrades": {
+      "WeaponPowerPerStack": 15,
+      "TechRangeMultiplier": 15,
+      "TechRadiusMultiplier": 15
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      },
+      "TechRadiusMultiplier": {
+        "Key": "TechRadiusMultiplier",
+        "Value": 22,
+        "Type": "distance"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

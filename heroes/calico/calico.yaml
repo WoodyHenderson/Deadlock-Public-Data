@@ -1,0 +1,1060 @@
+{
+  "schema_version": 2,
+  "id": "hero.calico",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.calico.125743",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Calico",
+  "aliases": [],
+  "internal_hero_key": "hero_nano",
+  "hero_type": "Assassin",
+  "role_localization_key": "hero_nano_role",
+  "playstyle_localization_key": "hero_nano_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 730,
+    "health_regeneration_per_second": 2,
+    "light_melee_damage": 63,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.8,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 16.1,
+      "distance_meters": 10,
+      "duration_seconds": 0.62
+    },
+    "air_dash": {
+      "speed_meters_per_second": 18.6,
+      "distance_meters": 8,
+      "duration_seconds": 0.43
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.043,
+    "MaxHealth": 37,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 2.9092,
+    "DPS": 1.8429,
+    "SustainedDPS": 0.90703
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 317.5,
+    "BulletDamage": 1.84,
+    "RoundsPerSecond": 4.7619,
+    "ClipSize": 12,
+    "ReloadTime": 2.6,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 57.51,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0,
+    "BulletRadius": 0.0762,
+    "BulletsPerShot": 9,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 78.857,
+    "SustainedDPS": 38.812,
+    "NameKey": "citadel_weapon_hero_nano_set",
+    "DescKey": "citadel_weapon_hero_nano_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_Spreadshot",
+      "Attribute_EWeaponAttribute_CloseRange"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Gloom Bombs",
+      "internal_key": "ability_nano_clustergrenade",
+      "data": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCooldown": {
+          "Value": 14,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 45,
+          "Scale": {
+            "Value": 0.644,
+            "Type": "spirit"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "NanoClusterGrenadeDebuff",
+          "Subclass": "NanoClusterGrenadeDebuff"
+        },
+        "GrenadeAngleVariance": 0.08,
+        "GrenadeCount": 4,
+        "IsDisabled": false,
+        "Key": "ability_nano_clustergrenade",
+        "Lifetime": 0.75,
+        "ModifierDragEnemy": {
+          "Class": "PerchedPredatorDrag",
+          "Subclass": "PerchedPredatorDrag"
+        },
+        "MultiHitPenaltyPercentage": 65,
+        "Name": "Gloom Bombs",
+        "Radius": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "TimeBetweenGrenades": 0.05,
+        "TossSpeed": 400,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -3
+          },
+          {
+            "MeleeResistReduction": -6,
+            "MeleeResistReductionDuration": 6
+          },
+          {
+            "GrenadeCount": 3
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_nano_clustergrenade",
+        "Name": "Gloom Bombs",
+        "DescKey": "ability_nano_clustergrenade_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "GrenadeCount",
+                "Name": "Bomb Count",
+                "Value": 4,
+                "Type": "cast"
+              },
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 45,
+                "Scale": {
+                  "Value": 0.644,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "BonusDamageVsBarrier",
+                "Name": "Bonus Damage vs Barriers",
+                "Value": 0,
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_nano_clustergrenade_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -3
+          },
+          {
+            "MeleeResistReduction": -6,
+            "MeleeResistReductionDuration": 6,
+            "DescKey": "ability_nano_clustergrenade_t2_desc"
+          },
+          {
+            "GrenadeCount": 3
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "GrenadeAngleVariance": {
+            "Name": null,
+            "Value": 0.08
+          },
+          "Lifetime": {
+            "Name": "Lifetime",
+            "Value": 0.75
+          },
+          "MultiHitPenaltyPercentage": {
+            "Name": null,
+            "Value": 65
+          },
+          "TimeBetweenGrenades": {
+            "Name": null,
+            "Value": 0.05
+          },
+          "TossSpeed": {
+            "Name": null,
+            "Value": 400
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.15,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 14,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_nano_clustergrenade_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Throw a cluster of bombs that detonate after a delay, dealing {g:citadel_inline_attribute:'SpiritDamage'}.<br><br><span class=\"diminish\">Enemies hit by multiple bombs take 65% damage.</span>",
+          "plain_text": "Throw a cluster of bombs that detonate after a delay, dealing spirit damage.\nEnemies hit by multiple bombs take 65% damage."
+        },
+        {
+          "localization_key": "ability_nano_clustergrenade_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Per Bomb Touch : <span class=\"highlight\">-6%</span> Melee Resist for 6s</span>",
+          "plain_text": "Per Bomb Touch : -6% Melee Resist for 6s"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Leaping Slash",
+      "internal_key": "ability_nano_dash",
+      "data": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCastRange": {
+          "Value": 9,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 13,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontTriggerPostCastOnCastComplete",
+          "BehaviorMovement",
+          "BehaviorTriggerCancelMashProtectionOnCast",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "BountyModifier": {
+          "Class": "NanoBounty",
+          "Subclass": "Bounty"
+        },
+        "CameraDistance": 550,
+        "ChannelMoveSpeed": -1,
+        "DashAngleThreshold": 89,
+        "DashModifier": {
+          "Class": "CitadelShivDash",
+          "Subclass": "CitadelShivDash"
+        },
+        "DashRadius": 2,
+        "DashSpeed": 60.96,
+        "HealAmount": {
+          "Value": 40,
+          "Scale": {
+            "Value": 1.4,
+            "Type": "spirit"
+          }
+        },
+        "ImpactDamage": {
+          "Value": 10,
+          "Scale": {
+            "Value": 0.8,
+            "Type": "melee"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_nano_dash",
+        "MoveSpeedPenaltyMaxSpeed": 200,
+        "Name": "Leaping Slash",
+        "PostDashMaintainedVelocityRatio": 0.15,
+        "SideMoveSpeedReduction": -90,
+        "SlashForwardOffset": 1.5,
+        "SlashHeight": 2.5,
+        "SlashRadius": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "Upgrades": [
+          {
+            "HealAmount": 25
+          },
+          {
+            "BonusGoldOnKill": 200,
+            "BountyDuration": 3
+          },
+          {
+            "CooldownRefundPercent": 50,
+            "ImpactDamage": 60
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_nano_dash",
+        "Name": "Leaping Slash",
+        "DescKey": "ability_nano_dash_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "ImpactDamage",
+                "Name": "Impact Damage",
+                "Value": 10,
+                "Scale": {
+                  "Value": 0.8,
+                  "Type": "melee"
+                },
+                "Type": "melee_damage"
+              },
+              {
+                "Title": "On Hero Hit:",
+                "Key": "HealAmount",
+                "Name": "Heal Amount",
+                "Value": 40,
+                "Scale": {
+                  "Value": 1.4,
+                  "Type": "spirit"
+                },
+                "Type": "healing"
+              },
+              {
+                "Title": "On Hero Hit:",
+                "Key": "CooldownRefundPercent",
+                "Name": "Cooldown Refund",
+                "Value": 0,
+                "Type": "cooldown"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "BountyDuration",
+              "Name": "Bounty Duration",
+              "Value": 0
+            }
+          ],
+          "DescKey": "ability_nano_dash_desc"
+        },
+        "Upgrades": [
+          {
+            "HealAmount": 25
+          },
+          {
+            "BonusGoldOnKill": 200,
+            "BountyDuration": 3,
+            "DescKey": "ability_nano_dash_t2_desc"
+          },
+          {
+            "CooldownRefundPercent": 50,
+            "ImpactDamage": 60,
+            "DescKey": "ability_nano_dash_t3_desc"
+          }
+        ],
+        "Range": {
+          "SlashRadius": {
+            "Name": "Slash Radius",
+            "Value": 4,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            },
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "CameraDistance": {
+            "Name": null,
+            "Value": 550
+          },
+          "DashAngleThreshold": {
+            "Name": null,
+            "Value": 89
+          },
+          "DashRadius": {
+            "Name": "Radius",
+            "Value": 2
+          },
+          "DashSpeed": {
+            "Name": "Dash Speed",
+            "Value": 60.96
+          },
+          "MoveSpeedPenaltyMaxSpeed": {
+            "Name": null,
+            "Value": 200
+          },
+          "PostDashMaintainedVelocityRatio": {
+            "Name": null,
+            "Value": 0.15
+          },
+          "SideMoveSpeedReduction": {
+            "Name": null,
+            "Value": -90
+          },
+          "SlashForwardOffset": {
+            "Name": null,
+            "Value": 1.5
+          },
+          "SlashHeight": {
+            "Name": null,
+            "Value": 2.5
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.1,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 9,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 13,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_nano_dash_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Dash forward before slashing all enemies in a circle, dealing {g:citadel_inline_attribute:'MeleeDamage'}. <br><br>If the ability hits at least one hero, {g:citadel_inline_attribute:'Heal'} a small amount of health.",
+          "plain_text": "Dash forward before slashing all enemies in a circle, dealing melee damage.\nIf the ability hits at least one hero, heal a small amount of health."
+        },
+        {
+          "localization_key": "ability_nano_dash_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Heros killed within 3s grant <span class=\"highlight\">+200</span> souls",
+          "plain_text": "Heros killed within 3s grant +200 souls"
+        },
+        {
+          "localization_key": "ability_nano_dash_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+60</span> Damage & On Hero Hit: <span class=\"highlight\">50%</span> Cooldown Refund",
+          "plain_text": "+60 Damage & On Hero Hit: 50% Cooldown Refund"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Ava",
+      "internal_key": "ability_nano_catform",
+      "data": {
+        "AbilityCooldown": {
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorNoTarget",
+          "BehaviorCannotCancelDuringChannel",
+          "BehaviorInhibitSoftCameraCollision",
+          "BehaviorMovement",
+          "BehaviorPreventBotUsage",
+          "BehaviorRequireAbilityButtonToCancel"
+        ],
+        "BuffDuration": {
+          "Value": 15,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "BuffModifier": {
+          "Class": "NanoCatform",
+          "Subclass": "Catform",
+          "EnabledStateMask": [
+            "IsTinyCharacter"
+          ],
+          "ModelScale": 1
+        },
+        "CatFormDamageDealtReduction": -100,
+        "ChannelMoveSpeed": -1,
+        "DamageAmpModifier": {
+          "Class": "NanoDamageamp",
+          "Subclass": "Damageamp"
+        },
+        "EnemyDamageSpeedPenalty": 65,
+        "InterruptCooldown": 6,
+        "IsDisabled": false,
+        "Key": "ability_nano_catform",
+        "MaxBonusMoveSpeedPercent": 65,
+        "MinBonusMoveSpeedPercent": 30,
+        "Name": "Ava",
+        "SpeedBuildDuration": 4,
+        "Upgrades": [
+          {
+            "BuffDuration": 15
+          },
+          {
+            "MaxBonusMoveSpeedPercent": 40,
+            "HealthRegen": 15
+          },
+          {
+            "OutgoingDamagePercent": 18,
+            "DamageAmpDuration": 6,
+            "DamageAmpBuildDuration": 10
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_nano_catform",
+        "Name": "Ava",
+        "DescKey": "ability_nano_catform_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "MinBonusMoveSpeedPercent",
+                "Name": "Min Move Speed",
+                "Value": 30,
+                "Type": "move_speed"
+              },
+              {
+                "Key": "MaxBonusMoveSpeedPercent",
+                "Name": "Max Move Speed",
+                "Value": 65,
+                "Type": "move_speed"
+              },
+              {
+                "Key": "BuffDuration",
+                "Name": "Buff Duration",
+                "Value": 15,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "SpeedBuildDuration",
+              "Value": 4,
+              "Type": "duration"
+            },
+            {
+              "Key": "InterruptCooldown",
+              "Name": "Interrupt Cooldown",
+              "Value": 6,
+              "Type": "duration"
+            },
+            {
+              "Key": "HealthRegen",
+              "Name": "Health Regen",
+              "Value": 0,
+              "Type": "healing"
+            }
+          ],
+          "DescKey": "ability_nano_catform_desc"
+        },
+        "Upgrades": [
+          {
+            "BuffDuration": 15
+          },
+          {
+            "MaxBonusMoveSpeedPercent": 40,
+            "HealthRegen": 15,
+            "DescKey": "ability_nano_catform_t2_desc"
+          },
+          {
+            "OutgoingDamagePercent": 18,
+            "DamageAmpDuration": 6,
+            "DamageAmpBuildDuration": 10,
+            "DescKey": "ability_nano_catform_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "CatFormDamageDealtReduction": {
+            "Name": null,
+            "Value": -100
+          },
+          "EnemyDamageSpeedPenalty": {
+            "Name": null,
+            "Value": 65
+          }
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_nano_catform_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Turn to shadows and possess Ava. You gain {g:citadel_inline_attribute:'BonusMoveSpeed'} that increases over time, and become <Panel class=\"AbilityPropertyIcon prop_invisible\"> <span class=\"highlight\">hidden on the minimap</span>. <br><br><span class=\"diminish\">Taking damage from an enemy hero resets your bonus move speed and puts Ava on a brief cooldown.</span>",
+          "plain_text": "Turn to shadows and possess Ava. You gain bonus move speed that increases over time, and become hidden on the minimap.\nTaking damage from an enemy hero resets your bonus move speed and puts Ava on a brief cooldown."
+        },
+        {
+          "localization_key": "ability_nano_catform_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+15</span> Health Regen & <span class=\"highlight\">+40%</span> Max Move Speed",
+          "plain_text": "+15 Health Regen & +40% Max Move Speed"
+        },
+        {
+          "localization_key": "ability_nano_catform_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Gain Damage Amp over time, up to <span class=\"highlight\">18%</span>. Lingers for 6s",
+          "plain_text": "Gain Damage Amp over time, up to 18%. Lingers for 6s"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Return to Shadows",
+      "internal_key": "ability_nano_shadow_pulse",
+      "data": {
+        "AbilityChannelTime": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 115,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "AirDrag": 4,
+        "AirSpeedMax": 100,
+        "AutoChannelModifier": {
+          "Class": "Base",
+          "Subclass": "Channeling",
+          "EnabledStateMask": [
+            "DoNotDrawModel"
+          ]
+        },
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCannotCancelDuringChannel",
+          "BehaviorCastableWhileDodging",
+          "BehaviorMovement",
+          "BehaviorDeactivateCrouchToggleOnCast",
+          "BehaviorInhibitSoftCameraCollision"
+        ],
+        "BonusMoveSpeedPercent": 20,
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 150,
+          "Scale": {
+            "Value": 0.609336,
+            "Type": "spirit"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "Base",
+          "Subclass": "Buff"
+        },
+        "FallSpeedMax": 0.254,
+        "IsDisabled": false,
+        "Key": "ability_nano_shadow_pulse",
+        "Name": "Return to Shadows",
+        "Radius": {
+          "Value": 7.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -20
+          },
+          {
+            "Damage": 75,
+            "BonusMoveSpeedPercent": 20
+          },
+          {
+            "RefundCooldowns": 1,
+            "HealAmount": 450
+          }
+        ],
+        "ZAcceleration": 800
+      },
+      "card": {
+        "Key": "ability_nano_shadow_pulse",
+        "Name": "Return to Shadows",
+        "DescKey": "ability_nano_shadow_pulse_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 150,
+                "Scale": {
+                  "Value": 0.609336,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "BonusMoveSpeedPercent",
+                "Name": "Move Speed",
+                "Value": 20,
+                "Type": "move_speed"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "AbilityChannelTime",
+              "Name": "Channel Duration",
+              "Value": 3,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "cast"
+            },
+            {
+              "Key": "OutgoingDamagePercent",
+              "Name": "Damage",
+              "Value": 0,
+              "Type": "damage"
+            }
+          ],
+          "DescKey": "ability_nano_shadow_pulse_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -20
+          },
+          {
+            "Damage": 75,
+            "BonusMoveSpeedPercent": 20,
+            "DescKey": "ability_nano_shadow_pulse_t2_desc"
+          },
+          {
+            "RefundCooldowns": 1,
+            "HealAmount": 450,
+            "DescKey": "ability_nano_shadow_pulse_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AirDrag": {
+            "Name": null,
+            "Value": 4
+          },
+          "AirSpeedMax": {
+            "Name": null,
+            "Value": 100
+          },
+          "FallSpeedMax": {
+            "Name": null,
+            "Value": 0.254
+          },
+          "ZAcceleration": {
+            "Name": null,
+            "Value": 800
+          }
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 115,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 7.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_nano_shadow_pulse_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Instantly turn to shadows, becoming <span class=\"highlight\">untargetable</span>, gaining {g:citadel_inline_attribute:'BonusMoveSpeed'}, and dealing {g:citadel_inline_attribute:'SpiritDamage'}.<br><br> After a delay, return from the shadows, dealing {g:citadel_inline_attribute:'SpiritDamage'} again.",
+          "plain_text": "Instantly turn to shadows, becoming untargetable, gaining bonus move speed, and dealing spirit damage.\nAfter a delay, return from the shadows, dealing spirit damage again."
+        },
+        {
+          "localization_key": "ability_nano_shadow_pulse_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+75</span> Damage and <span class=\"highlight\">+20%</span> Move Speed",
+          "plain_text": "+75 Damage and +20% Move Speed"
+        },
+        {
+          "localization_key": "ability_nano_shadow_pulse_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On Completion: Heal for <span class=\"highlight\">450</span> and <span class=\"highlight\">refund</span> all ability cooldowns",
+          "plain_text": "On Completion: Heal for 450 and refund all ability cooldowns"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.43,
+    "AirDashSpeed": 18.6,
+    "BaseHealthRegen": 2,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.62,
+    "GroundDashSpeed": 16.1,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.043,
+      "MaxHealth": 37,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 2.9092,
+      "DPS": 1.8429,
+      "SustainedDPS": 0.90703
+    },
+    "LightMeleeDamage": 63,
+    "Lore": "hero_nano_lore",
+    "MaxHealth": 730,
+    "MaxMoveSpeed": 6.8,
+    "MoveAcceleration": 4,
+    "Name": "Calico",
+    "Playstyle": "hero_nano_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_nano_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.6,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Assassin",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

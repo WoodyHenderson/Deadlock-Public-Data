@@ -1,0 +1,1291 @@
+{
+  "schema_version": 2,
+  "id": "hero.kelvin",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.kelvin.125564",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Kelvin",
+  "aliases": [],
+  "internal_hero_key": "hero_kelvin",
+  "hero_type": "Brawler",
+  "role_localization_key": "hero_kelvin_role",
+  "playstyle_localization_key": "hero_kelvin_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 880,
+    "health_regeneration_per_second": 1,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.7,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.1,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 13.9,
+      "distance_meters": 10,
+      "duration_seconds": 0.72
+    },
+    "air_dash": {
+      "speed_meters_per_second": 15.7,
+      "distance_meters": 8,
+      "duration_seconds": 0.51
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 5.500247511138001,
+      "regeneration_per_second": 0.18181
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": -25,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.418,
+    "MaxHealth": 60,
+    "PowerIncreases": 1,
+    "TechResist": 0.625,
+    "TechPower": 1.3,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 1.5924,
+    "SustainedDPS": 0.93482
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 160,
+    "BulletDamage": 18.6,
+    "RoundsPerSecond": 3.8095,
+    "ClipSize": 14,
+    "ReloadTime": 2.585,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 57.51,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.3,
+    "BulletRadius": 0.1524,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 70.857,
+    "SustainedDPS": 41.597,
+    "NameKey": "citadel_weapon_hero_kelvin_set",
+    "DescKey": "citadel_weapon_hero_kelvin_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_MediumRange",
+      "Attribute_EWeaponAttribute_HeavyHitter",
+      "Attribute_EWeaponAttribute_Projectile"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Frost Grenade",
+      "internal_key": "ability_ice_grenade",
+      "data": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCharges": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 7,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCanHealPlayers",
+          "BehaviorProjectileFiredAsBullet",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 60,
+          "Scale": {
+            "Value": 0.6,
+            "Type": "spirit"
+          }
+        },
+        "HealAmount": {
+          "Value": 60,
+          "Scale": {
+            "Value": 0.8,
+            "Type": "spirit"
+          }
+        },
+        "IceGrenadeSlowModifier": {
+          "Class": "IcegrenadeDebuff",
+          "Subclass": "KelvinIceGrenadeSlow"
+        },
+        "IsDisabled": false,
+        "Key": "ability_ice_grenade",
+        "Name": "Frost Grenade",
+        "Radius": {
+          "Value": 6.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "SlowDuration": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "SlowPercent": 40,
+        "Upgrades": [
+          {
+            "Damage": 30,
+            "HealAmount": 30
+          },
+          {
+            "PauseStaminaRegen": 1,
+            "AbilityCooldown": -10
+          },
+          {
+            "Radius": 2,
+            "HealAmount": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.9,
+                "Type": "spirit"
+              }
+            },
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.8,
+                "Type": "spirit"
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_ice_grenade",
+        "Name": "Frost Grenade",
+        "DescKey": "ability_ice_grenade_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 60,
+                "Scale": {
+                  "Value": 0.6,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "HealAmount",
+                "Name": "Heal Amount",
+                "Value": 60,
+                "Scale": {
+                  "Value": 0.8,
+                  "Type": "spirit"
+                },
+                "Type": "healing"
+              },
+              {
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 40,
+                "Type": "slow"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 4,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_ice_grenade_desc"
+        },
+        "Upgrades": [
+          {
+            "Damage": 30,
+            "HealAmount": 30,
+            "DescKey": "ability_ice_grenade_t1_desc"
+          },
+          {
+            "PauseStaminaRegen": 1,
+            "AbilityCooldown": -10,
+            "DescKey": "ability_ice_grenade_t2_desc"
+          },
+          {
+            "Radius": 2,
+            "HealAmount": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.9,
+                "Type": "spirit"
+              }
+            },
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.8,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "ability_ice_grenade_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.1,
+          "Type": "cast"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 7,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 6.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_ice_grenade_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Throw a grenade that explodes in a cloud of freezing ice that {g:citadel_inline_attribute:'Heals'} allies and applies {g:citadel_inline_attribute:'SpiritDamage'} and <span class=\"highlight\">move speed reduction</span> to enemies.",
+          "plain_text": "Throw a grenade that explodes in a cloud of freezing ice that heals allies and applies spirit damage and move speed reduction to enemies."
+        },
+        {
+          "localization_key": "ability_ice_grenade_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+30</span> Damage and <span class=\"highlight\">+30</span> Heal Amount",
+          "plain_text": "+30 Damage and +30 Heal Amount"
+        },
+        {
+          "localization_key": "ability_ice_grenade_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-10</span> Cooldown and debuff now <span class=\"highlight\">freezes Stamina Regen</span>",
+          "plain_text": "-10 Cooldown and debuff now freezes Stamina Regen"
+        },
+        {
+          "localization_key": "ability_ice_grenade_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+2m</span> Radius. Damage and Heal Spirit Scaling increased.",
+          "plain_text": "+2m Radius. Damage and Heal Spirit Scaling increased."
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Ice Path",
+      "internal_key": "ability_icepath",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCooldown": {
+          "Value": 50,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorDontInterruptSprint",
+          "BehaviorCastableWhileBusy",
+          "BehaviorInterruptMeleeOnCast",
+          "BehaviorNoTarget",
+          "BehaviorPreventBotUsage",
+          "BehaviorMovement",
+          "BehaviorDeactivateCrouchToggleOnCast",
+          "BehaviorRequireAbilityButtonToCancel"
+        ],
+        "CameraDistance": 250,
+        "ChannelMoveSpeed": -1,
+        "IcePathAuraDuration": 18,
+        "IcePathEdgeWidth": 0.7,
+        "IcePathInterval": 0.5,
+        "IcePathModifier": {
+          "Class": "Icepath",
+          "Subclass": "Icepath",
+          "EnabledStateMask": [
+            "AbilityMovement"
+          ],
+          "FriendlyAuraModifier": {
+            "Class": "BaseAura",
+            "Subclass": "IcepathFriendlyAura",
+            "ProvidedByAura": {
+              "Class": "IcepathFriendlyModifier",
+              "Subclass": "IcepathBuff"
+            }
+          },
+          "BonusSpiritLingerModifier": {
+            "Class": "IcepathTechPowerLinger",
+            "Subclass": "IcepathTechPowerLinger"
+          }
+        },
+        "IcePathPullInStrength": 20,
+        "IcePathShardRadius": 1.2,
+        "IsDisabled": false,
+        "Key": "ability_icepath",
+        "MinHeight": 20,
+        "ModifierRadius": 5,
+        "MoveSpeedBonus": 2,
+        "MoveWhileShootingSpeedPenaltyReductionPercent": 100,
+        "MoveWhileZoomedSpeedPenaltyReductionPercent": 100,
+        "Name": "Ice Path",
+        "PopupForce": 30,
+        "SlideScale": 50,
+        "SlowResistancePercent": 60,
+        "SprintSpeedBonus": 2,
+        "Upgrades": [
+          {
+            "MoveSpeedBonus": 2,
+            "BulletResist": 35
+          },
+          {
+            "AbilityCooldown": -25
+          },
+          {
+            "BonusSpiritPct": 35,
+            "BonusSpirit": 20
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_icepath",
+        "Name": "Ice Path",
+        "DescKey": "ability_icepath_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "MoveSpeedBonus",
+                "Name": "Move Speed",
+                "Value": 2,
+                "Type": "move_speed"
+              },
+              {
+                "Key": "SprintSpeedBonus",
+                "Name": "Sprint Speed",
+                "Value": 2,
+                "Type": "move_speed"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "IcePathAuraDuration",
+              "Name": "Ice Trail Duration",
+              "Value": 18,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_icepath_desc"
+        },
+        "Upgrades": [
+          {
+            "MoveSpeedBonus": 2,
+            "BulletResist": 35,
+            "DescKey": "ability_icepath_t1_desc"
+          },
+          {
+            "AbilityCooldown": -25
+          },
+          {
+            "BonusSpiritPct": 35,
+            "BonusSpirit": 20,
+            "DescKey": "ability_icepath_t3_desc"
+          }
+        ],
+        "Range": {
+          "IcePathShardRadius": {
+            "Name": "Path Width",
+            "Value": 1.2,
+            "Type": "distance"
+          },
+          "ModifierRadius": {
+            "Name": null,
+            "Value": 5,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          },
+          "MoveWhileShootingSpeedPenaltyReductionPercent": {
+            "Name": "move speed penalty while shooting reduction",
+            "Value": 100,
+            "Type": "move_speed"
+          },
+          "MoveWhileZoomedSpeedPenaltyReductionPercent": {
+            "Name": null,
+            "Value": 100,
+            "Type": "move_speed"
+          },
+          "SlideScale": {
+            "Name": "Slide Distance",
+            "Value": 50,
+            "Type": "move_speed"
+          },
+          "SlowResistancePercent": {
+            "Name": "Slow Resist",
+            "Value": 60,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "CameraDistance": {
+            "Name": null,
+            "Value": 250
+          },
+          "IcePathEdgeWidth": {
+            "Name": null,
+            "Value": 0.7
+          },
+          "IcePathInterval": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "IcePathPullInStrength": {
+            "Name": null,
+            "Value": 20
+          },
+          "MinHeight": {
+            "Name": null,
+            "Value": 20
+          },
+          "PopupForce": {
+            "Name": null,
+            "Value": 30
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 50,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_icepath_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Kelvin creates a <span class=\"highlight\">floating trail</span> of ice and snow that gives movement bonuses to him and his allies. Kelvin gains 60% slow resistance for the duration. Enemies can also walk on the floating trail. <br>Press {g:citadel_binding:'Roll'} / {g:citadel_binding:'Crouch'} to travel up or down while in Ice Path.",
+          "plain_text": "Kelvin creates a floating trail of ice and snow that gives movement bonuses to him and his allies. Kelvin gains 60% slow resistance for the duration. Enemies can also walk on the floating trail.\nPress [Roll] / [Crouch] to travel up or down while in Ice Path."
+        },
+        {
+          "localization_key": "ability_icepath_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+2m</span> Move Speed and <span class=\"highlight\">+35%</span> Bullet Resist for Kelvin while on Ice Path",
+          "plain_text": "+2m Move Speed and +35% Bullet Resist for Kelvin while on Ice Path"
+        },
+        {
+          "localization_key": "ability_icepath_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+35%</span> Spirit and <span class=\"highlight\">+20</span> Spirit for Kelvin while on Ice Path",
+          "plain_text": "+35% Spirit and +20 Spirit for Kelvin while on Ice Path"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Arctic Beam",
+      "internal_key": "ability_icebeam",
+      "data": {
+        "AbilityCooldown": {
+          "Value": 28,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BeamSplit": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0,
+            "Type": "range"
+          }
+        },
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorDontAimFacingEnemy",
+          "BehaviorRequireAbilityButtonToCancel"
+        ],
+        "BuildupModifier": {
+          "Class": "IcebeamStackingSlow",
+          "Subclass": "IcebeamStackingSlow",
+          "BuildUpDecayDelay": 0.4,
+          "EnabledStateMask": [
+            "Slowed"
+          ],
+          "StatusEffectPriority": 50
+        },
+        "CameraDistance": 250,
+        "ChannelMoveSpeed": -1,
+        "ChannelSlowPercent": 8,
+        "DPS": {
+          "Value": 45,
+          "Scale": {
+            "Value": 0.38,
+            "Type": "spirit"
+          }
+        },
+        "IceBeamBuildupProcDuration": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "IceBeamModifier": {
+          "Class": "Base",
+          "Subclass": "Icebeaming"
+        },
+        "IsDisabled": false,
+        "Key": "ability_icebeam",
+        "MaxFireRateSlowPercent": 20,
+        "MaxGroundDashReductionPercent": -20,
+        "MaxSlowPercent": 20,
+        "MaxSlowTime": 2,
+        "MinSlowPercent": 30,
+        "Name": "Arctic Beam",
+        "PathLength": {
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "PathWidth": 1.1,
+        "SlowDuration": {
+          "Value": 0.6,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "TickRate": 0.1,
+        "Upgrades": [
+          {
+            "MaxSlowPercent": 25,
+            "MaxFireRateSlowPercent": 25
+          },
+          {
+            "DPS": {
+              "Value": 20,
+              "Scale": {
+                "Value": 0.6,
+                "Type": "spirit"
+              }
+            }
+          },
+          {
+            "BeamSplit": {
+              "Value": 10,
+              "Scale": {
+                "Value": 0.93,
+                "Type": "range"
+              }
+            },
+            "BeamSplitCount": 2,
+            "AbilityCooldown": -13
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_icebeam",
+        "Name": "Arctic Beam",
+        "DescKey": "ability_icebeam_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "DPS",
+                "Name": "Damage Per Second",
+                "Value": 45,
+                "Scale": {
+                  "Value": 0.38,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "MaxSlowPercent",
+                "Name": "Max Move Speed",
+                "Value": 20,
+                "Type": "slow"
+              },
+              {
+                "Key": "MaxFireRateSlowPercent",
+                "Name": "Max Fire Rate",
+                "Value": 20,
+                "Type": "fire_rate"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "MaxSlowTime",
+              "Name": "Time To Max Debuff",
+              "Value": 2,
+              "Type": "duration"
+            },
+            {
+              "Key": "PathLength",
+              "Name": "Beam Length",
+              "Value": 25,
+              "Scale": {
+                "Value": 1,
+                "Type": "range"
+              },
+              "Type": "distance"
+            },
+            {
+              "Key": "IceBeamBuildupProcDuration",
+              "Name": "Debuff Linger Duration",
+              "Value": 2,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "BeamSplit",
+              "Name": "Extra Beam Range",
+              "Value": 0,
+              "Scale": {
+                "Value": 0,
+                "Type": "range"
+              },
+              "Type": "radius"
+            },
+            {
+              "Key": "MaxGroundDashReductionPercent",
+              "Name": "Max Dash Slow",
+              "Value": -20
+            }
+          ],
+          "DescKey": "ability_icebeam_desc"
+        },
+        "Upgrades": [
+          {
+            "MaxSlowPercent": 25,
+            "MaxFireRateSlowPercent": 25,
+            "DescKey": "ability_icebeam_t1_desc"
+          },
+          {
+            "DPS": {
+              "Value": 20,
+              "Scale": {
+                "Value": 0.6,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "ability_icebeam_t2_desc"
+          },
+          {
+            "BeamSplit": {
+              "Value": 10,
+              "Scale": {
+                "Value": 0.93,
+                "Type": "range"
+              }
+            },
+            "BeamSplitCount": 2,
+            "AbilityCooldown": -13,
+            "DescKey": "ability_icebeam_t3_desc"
+          }
+        ],
+        "Duration": {
+          "SlowDuration": {
+            "Name": "Slow Duration",
+            "Value": 0.6,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "duration"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Debuff": {
+          "ChannelSlowPercent": {
+            "Name": null,
+            "Value": 8,
+            "Type": "slow"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "CameraDistance": {
+            "Name": null,
+            "Value": 250
+          },
+          "MinSlowPercent": {
+            "Name": null,
+            "Value": 30
+          },
+          "PathWidth": {
+            "Name": null,
+            "Value": 1.1
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.1
+          }
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 28,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_icebeam_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Shoot freezing cold energy out in front of you, <span class=\"highlight\">damaging targets</span> and progressively reducing their <span class=\"highlight\">movement and fire rate</span> the longer you sustain the beam on them. You have reduced move speed while using Arctic Beam. The beam may also claim Souls.",
+          "plain_text": "Shoot freezing cold energy out in front of you, damaging targets and progressively reducing their movement and fire rate the longer you sustain the beam on them. You have reduced move speed while using Arctic Beam. The beam may also claim Souls."
+        },
+        {
+          "localization_key": "ability_icebeam_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-25%</span> to Fire Rate and Move Speed",
+          "plain_text": "-25% to Fire Rate and Move Speed"
+        },
+        {
+          "localization_key": "ability_icebeam_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+20</span> DPS and increased Spirit Scaling",
+          "plain_text": "+20 DPS and increased Spirit Scaling"
+        },
+        {
+          "localization_key": "ability_icebeam_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-13s</span> Cooldown and Fires <span class=\"highlight\">2 additional Arctic Beams</span> within 10m of the last target hit.",
+          "plain_text": "-13s Cooldown and Fires 2 additional Arctic Beams within 10m of the last target hit."
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Frozen Shelter",
+      "internal_key": "ability_ice_dome",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCastRange": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 185,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorCastableWhileBusy",
+          "BehaviorInterruptMeleeOnCast",
+          "BehaviorUseInstantCastUnitTargetUi",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorRequireAbilityButtonToCancel",
+          "BehaviorCanSetQuickCast",
+          "BehaviorAllowSelfCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BlockerScaleFactor": 115,
+        "BonusHealthRegen": {
+          "Value": 90,
+          "Scale": {
+            "Value": 0,
+            "Type": "spirit"
+          }
+        },
+        "ChannelMoveSpeed": -1,
+        "EnemyDragSpeed": 25.4,
+        "GrowTime": 0.2,
+        "IceDomeModifier": {
+          "Class": "IceDome",
+          "Subclass": "IceDome",
+          "EnabledStateMask": [
+            "SinclairTaxUltActive"
+          ],
+          "FriendlyAuraModifier": {
+            "Class": "BaseAura",
+            "Subclass": "IceDomeFriendlyAura",
+            "ProvidedByAura": {
+              "Class": "IceDomeFriendly",
+              "Subclass": "IceDomeFriendly",
+              "Duration": 0.5
+            }
+          },
+          "EnemyAuraModifier": {
+            "Class": "BaseAura",
+            "Subclass": "IceDomeEnemyAura",
+            "ProvidedByAura": {
+              "Class": "IcedomeAuramodifierBase",
+              "Subclass": "Debuff",
+              "EnabledStateMask": [
+                "Slowed"
+              ],
+              "Duration": 0.5
+            }
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_ice_dome",
+        "Name": "Frozen Shelter",
+        "Radius": {
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "SlowPercent": 35,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -20
+          },
+          {
+            "AbilityDuration": 1.5
+          },
+          {
+            "BonusHealthRegen": {
+              "Value": 65,
+              "Scale": {
+                "Value": 1,
+                "Type": "spirit"
+              }
+            },
+            "PurgeOnCast": 1
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_ice_dome",
+        "Name": "Frozen Shelter",
+        "DescKey": "ability_ice_dome_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "BonusHealthRegen",
+                "Name": "Health Regen",
+                "Value": 90,
+                "Scale": {
+                  "Value": 0,
+                  "Type": "spirit"
+                },
+                "Type": "healing"
+              },
+              {
+                "Key": "FireRateSlow",
+                "Name": "Fire Rate",
+                "Value": 0,
+                "Type": "fire_rate"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "SlowPercent",
+              "Name": "Move Speed",
+              "Value": 35,
+              "Type": "slow"
+            },
+            {
+              "Key": "MaxHealthRegen",
+              "Name": "Max Health Heal",
+              "Value": 0,
+              "Type": "healing"
+            }
+          ],
+          "DescKey": "ability_ice_dome_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -20
+          },
+          {
+            "AbilityDuration": 1.5
+          },
+          {
+            "BonusHealthRegen": {
+              "Value": 65,
+              "Scale": {
+                "Value": 1,
+                "Type": "spirit"
+              }
+            },
+            "PurgeOnCast": 1,
+            "DescKey": "ability_ice_dome_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "BlockerScaleFactor": {
+            "Name": null,
+            "Value": 115
+          },
+          "EnemyDragSpeed": {
+            "Name": null,
+            "Value": 25.4
+          },
+          "GrowTime": {
+            "Name": null,
+            "Value": 0.2
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 185,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_ice_dome_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Target yourself or a Hero to freeze the air and create an <span class=\"highlight\">impenetrable dome</span> around them. While in the dome, allies gain rapid {g:citadel_inline_attribute:'Regen'} and enemies are <span class=\"highlight\">slowed</span>. <br><br><span class=\"diminish\">Objectives becomes Invulnerable and Frozen under Frozen Shelter</span>",
+          "plain_text": "Target yourself or a Hero to freeze the air and create an impenetrable dome around them. While in the dome, allies gain rapid regeneration and enemies are slowed.\nObjectives becomes Invulnerable and Frozen under Frozen Shelter"
+        },
+        {
+          "localization_key": "ability_ice_dome_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Purges</span> non-ult debuffs for you and your allies. <br><span class=\"highlight\">+65</span> Health Regen that now scales with Spirit",
+          "plain_text": "Purges non-ult debuffs for you and your allies.\n+65 Health Regen that now scales with Spirit"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.51,
+    "AirDashSpeed": 15.7,
+    "BaseHealthRegen": 1,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": -25,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.72,
+    "GroundDashSpeed": 13.9,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.418,
+      "MaxHealth": 60,
+      "PowerIncreases": 1,
+      "TechResist": 0.625,
+      "TechPower": 1.3,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 1.5924,
+      "SustainedDPS": 0.93482
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_kelvin_lore",
+    "MaxHealth": 880,
+    "MaxMoveSpeed": 6.7,
+    "MoveAcceleration": 4,
+    "Name": "Kelvin",
+    "Playstyle": "hero_kelvin_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_kelvin_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.1,
+    "Stamina": 3,
+    "StaminaCooldown": 5.500247511138001,
+    "StaminaRegenPerSecond": 0.18181,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Brawler",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

@@ -1,0 +1,497 @@
+{
+  "schema_version": 1,
+  "id": "item.warp-stone",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Warp Stone",
+    "numeric_id": 3270001687,
+    "internal_key": "upgrade_warp_stone",
+    "aliases": [
+      "upgrade_warp_stone"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "vitality",
+    "tier": 3,
+    "activation": "instant_cast",
+    "is_active_item": true,
+    "is_imbue": false,
+    "shop_filters": [
+      "WeaponDamage",
+      "Movement"
+    ],
+    "target_types": null
+  },
+  "purchase": {
+    "cost_souls": 3200,
+    "component_internal_keys": []
+  },
+  "description_plain": "Teleport straight ahead, gaining Bullet Resist.",
+  "displayed_effects": [
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "CasterBuffDuration",
+      "label": "Buff Duration",
+      "value": "6s",
+      "property": {
+        "value": "6",
+        "css_class": "duration",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "duration_scale_function"
+        },
+        "label": "Buff Duration",
+        "postfix": "s",
+        "postvalue_label": "Buff Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "AbilityCooldown",
+      "label": "Cooldown",
+      "value": "16.0s",
+      "property": {
+        "value": 16.0,
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "AbilityCastRange",
+      "label": "Teleport Range",
+      "value": "11m",
+      "property": {
+        "value": "11m",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "loc_token_override": "WarpStoneRange",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Teleport Range",
+        "postfix": "m",
+        "postvalue_label": "Teleport Range",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "BulletResist",
+      "label": "Bullet Resist",
+      "value": "30%",
+      "property": {
+        "value": "30",
+        "provided_property_type": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST",
+        "css_class": "bullet_armor_up",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "{s:sign}",
+        "label": "Bullet Resist",
+        "postfix": "%",
+        "postvalue_label": "Bullet Resist",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "BulletResist",
+          "bonus": "20"
+        },
+        {
+          "name": "AbilityCastRange",
+          "bonus": "9m"
+        },
+        {
+          "name": "AbilityCooldown",
+          "bonus": "-3"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 3270001687,
+    "class_name": "upgrade_warp_stone",
+    "name": "Warp Stone",
+    "start_trained": true,
+    "heroes": [],
+    "update_time": 1709075150,
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "vitality",
+    "item_tier": 3,
+    "properties": {
+      "AbilityCooldown": {
+        "value": 16.0,
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityDuration": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration"
+      },
+      "AbilityCastRange": {
+        "value": "11m",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "loc_token_override": "WarpStoneRange",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Teleport Range",
+        "postfix": "m",
+        "postvalue_label": "Teleport Range",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0.0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "BulletResist": {
+        "value": "30",
+        "provided_property_type": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST",
+        "css_class": "bullet_armor_up",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "{s:sign}",
+        "label": "Bullet Resist",
+        "postfix": "%",
+        "postvalue_label": "Bullet Resist",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "CasterBuffDuration": {
+        "value": "6",
+        "css_class": "duration",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "duration_scale_function"
+        },
+        "label": "Buff Duration",
+        "postfix": "s",
+        "postvalue_label": "Buff Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    "disabled": false,
+    "description": {
+      "desc": "<span class=\"highlight\">Teleport</span> straight ahead, gaining <span class=\"highlight\">Bullet Resist</span>."
+    },
+    "activation": "instant_cast",
+    "tooltip_sections": [
+      {
+        "section_type": "active",
+        "section_attributes": [
+          {
+            "loc_string": "<span class=\"highlight\">Teleport</span> straight ahead, gaining <span class=\"highlight\">Bullet Resist</span>.",
+            "properties": [
+              "CasterBuffDuration",
+              "AbilityCooldown"
+            ],
+            "important_properties": [
+              "AbilityCastRange",
+              "BulletResist"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "BulletResist",
+            "bonus": "20"
+          },
+          {
+            "name": "AbilityCastRange",
+            "bonus": "9m"
+          },
+          {
+            "name": "AbilityCooldown",
+            "bonus": "-3"
+          }
+        ]
+      }
+    ],
+    "is_active_item": true,
+    "shopable": true,
+    "cost": 3200
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Warp Stone",
+    "Description": "<span class=\"highlight\">Teleport</span> straight ahead, gaining <span class=\"highlight\">Bullet Resist</span>.",
+    "Cost": 3200,
+    "Tier": 3,
+    "Activation": "InstantCast",
+    "Slot": "Armor",
+    "Components": null,
+    "TargetTypes": null,
+    "ShopFilters": [
+      "WeaponDamage",
+      "Movement"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityCooldown": 16.0,
+    "AbilityCastRange": "11m",
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "BulletResist": 30,
+    "CasterBuffDuration": 6,
+    "PropertyUpgrades": {
+      "BulletResist": 20,
+      "AbilityCastRange": "9m",
+      "AbilityCooldown": -3
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_warp_stone",
+    "Name": "Warp Stone",
+    "Description": "<span class=\"highlight\">Teleport</span> straight ahead, gaining <span class=\"highlight\">Bullet Resist</span>.",
+    "Cost": 3200,
+    "Tier": 3,
+    "Slot": "Armor",
+    "Activation": "InstantCast",
+    "Components": null,
+    "TargetTypes": null,
+    "ShopFilters": [
+      "WeaponDamage",
+      "Movement"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Active",
+      "DescKey": "#upgrade_warp_stone_desc",
+      "Cooldown": 16.0,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "AbilityCastRange",
+          "Value": "11m",
+          "Type": "range",
+          "LocTokenOverride": "WarpStoneRange"
+        },
+        {
+          "Key": "BulletResist",
+          "Value": 30,
+          "Type": "bullet_armor_up",
+          "UsageFlags": "ConditionallyApplied"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "CasterBuffDuration",
+          "Value": 6,
+          "Type": "duration"
+        }
+      ]
+    },
+    "Upgrades": {
+      "BulletResist": 20,
+      "AbilityCastRange": "9m",
+      "AbilityCooldown": -3
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

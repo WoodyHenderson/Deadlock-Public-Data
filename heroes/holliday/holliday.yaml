@@ -1,0 +1,1230 @@
+{
+  "schema_version": 2,
+  "id": "hero.holliday",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.holliday.125565",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Holliday",
+  "aliases": [],
+  "internal_hero_key": "hero_astro",
+  "hero_type": "Marksman",
+  "role_localization_key": "hero_astro_role",
+  "playstyle_localization_key": "hero_astro_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 780,
+    "health_regeneration_per_second": 2,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 8.2,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 16.1,
+      "distance_meters": 10,
+      "duration_seconds": 0.62
+    },
+    "air_dash": {
+      "speed_meters_per_second": 18.6,
+      "distance_meters": 8,
+      "duration_seconds": 0.43
+    },
+    "stamina": {
+      "charges": 2,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 1.144,
+    "MaxHealth": 41,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 2.4212,
+    "SustainedDPS": 1.5304
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 1156,
+    "BulletDamage": 19.7,
+    "RoundsPerSecond": 2.1164,
+    "ClipSize": 10,
+    "ReloadTime": 2.75,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 57.51,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0,
+    "BulletRadius": 0.127,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 41.693,
+    "SustainedDPS": 26.354,
+    "NameKey": "citadel_weapon_hero_astro_set",
+    "DescKey": "citadel_weapon_hero_astro_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_MediumRange",
+      "Attribute_EWeaponAttribute_HeavyHitter"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Powder Keg",
+      "internal_key": "ability_explosive_barrel",
+      "data": {
+        "AbilityCastDelay": 0.125,
+        "AbilityCharges": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 28,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 7.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "ArmTime": 0.1,
+        "BarrelHeavyMeleeForceForward": 1800,
+        "BarrelHeavyMeleeForceUp": 300,
+        "BarrelLifetime": 8,
+        "BarrelLightMeleeForceForward": 1400,
+        "BarrelLightMeleeForceUp": 300,
+        "BarrelPitchMax": 90,
+        "BarrelPitchMin": 2,
+        "BarrelRollSpeedMoveAir": 10,
+        "BarrelRollSpeedMoveMin": 20,
+        "BarrelScale": 1.3,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorIgnoreSelectionMashProtection",
+          "BehaviorDontInterruptSlideOnCast",
+          "BehaviorAllowAltCast",
+          "BehaviorCastImmediateOnOtherAbility"
+        ],
+        "BurnDuration": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "BurnModifier": {
+          "Class": "BaseDot",
+          "Subclass": "BarrelBurn"
+        },
+        "ChannelMoveSpeed": -1,
+        "DPS": {
+          "Value": 13.3333,
+          "Scale": {
+            "Value": 0.175,
+            "Type": "spirit"
+          }
+        },
+        "ImpactDamage": {
+          "Value": 40,
+          "Scale": {
+            "Value": 0.525,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_explosive_barrel",
+        "MinTimeBeforeDestroy": 0.1,
+        "Name": "Powder Keg",
+        "Radius": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "TickRate": 0.5,
+        "TossDuration": 0.4,
+        "TossSpeed": 3.556,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -10
+          },
+          {
+            "AbilityCharges": 1
+          },
+          {
+            "ImpactDamage": {
+              "Value": 40,
+              "Scale": {
+                "Value": 0.25,
+                "Type": "spirit"
+              }
+            },
+            "DPS": {
+              "Value": 13.3333,
+              "Scale": {
+                "Value": 0.083333,
+                "Type": "spirit"
+              }
+            },
+            "AbilityCooldownBetweenCharge": -5
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_explosive_barrel",
+        "Name": "Powder Keg",
+        "DescKey": "ability_explosive_barrel_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "ImpactDamage",
+                "Name": "Impact Damage",
+                "Value": 40,
+                "Scale": {
+                  "Value": 0.525,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "DPS",
+                "Name": "Damage Per Second",
+                "Value": 13.3333,
+                "Scale": {
+                  "Value": 0.175,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "TossDuration",
+                "Name": "Duration",
+                "StatusEffect": "Displacement",
+                "Value": 0.4
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "BurnDuration",
+              "Name": "Burn Duration",
+              "Value": 3,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "ArmTime",
+              "Name": "Arm Time",
+              "Value": 0.1,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_explosive_barrel_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -10
+          },
+          {
+            "AbilityCharges": 1
+          },
+          {
+            "ImpactDamage": {
+              "Value": 40,
+              "Scale": {
+                "Value": 0.25,
+                "Type": "spirit"
+              }
+            },
+            "DPS": {
+              "Value": 13.3333,
+              "Scale": {
+                "Value": 0.083333,
+                "Type": "spirit"
+              }
+            },
+            "AbilityCooldownBetweenCharge": -5,
+            "DescKey": "ability_explosive_barrel_t3_desc"
+          }
+        ],
+        "Duration": {
+          "BarrelLifetime": {
+            "Name": "Barrel Life Time",
+            "Value": 8,
+            "Type": "duration"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "BarrelHeavyMeleeForceForward": {
+            "Name": null,
+            "Value": 1800
+          },
+          "BarrelHeavyMeleeForceUp": {
+            "Name": null,
+            "Value": 300
+          },
+          "BarrelLightMeleeForceForward": {
+            "Name": null,
+            "Value": 1400
+          },
+          "BarrelLightMeleeForceUp": {
+            "Name": null,
+            "Value": 300
+          },
+          "BarrelPitchMax": {
+            "Name": null,
+            "Value": 90
+          },
+          "BarrelPitchMin": {
+            "Name": null,
+            "Value": 2
+          },
+          "BarrelRollSpeedMoveAir": {
+            "Name": null,
+            "Value": 10
+          },
+          "BarrelRollSpeedMoveMin": {
+            "Name": null,
+            "Value": 20
+          },
+          "BarrelScale": {
+            "Name": null,
+            "Value": 1.3
+          },
+          "MinTimeBeforeDestroy": {
+            "Name": null,
+            "Value": 0.1
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "TossSpeed": {
+            "Name": null,
+            "Value": 3.556
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.125,
+          "Type": "cast"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 28,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 7.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_explosive_barrel_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Throw a barrel that explodes after a delay, dealing {g:citadel_inline_attribute:'SpiritDamage'}, <span class=\"highlight\">setting enemies on fire</span> and applying {g:citadel_inline_attribute:'KnockUp'}. <br><br> The barrel can be detonated early by being <span class=\"highlight\">shot</span>, <span class=\"highlight\">melee'd</span>, or <span class=\"highlight\">detonated</span> by another barrel.  <br><br><span class=\"diminish\">The burn stacks, so overlapping barrels burn for their combined damage.<br>Can be Alt-Cast to place the barrel infront of Holliday.</span>",
+          "plain_text": "Throw a barrel that explodes after a delay, dealing spirit damage, setting enemies on fire and applying knockup.\nThe barrel can be detonated early by being shot, melee'd, or detonated by another barrel.\nThe burn stacks, so overlapping barrels burn for their combined damage.\nCan be Alt-Cast to place the barrel infront of Holliday."
+        },
+        {
+          "localization_key": "ability_explosive_barrel_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+40</span> Impact Damage<br><span class=\"highlight\">+13.3333</span> Burn Damage per Second<br><span class=\"highlight\">-5</span> Charge Time<br><span class=\"highlight\">Improved Spirit Scaling</span>",
+          "plain_text": "+40 Impact Damage\n+13.3333 Burn Damage per Second\n-5 Charge Time\nImproved Spirit Scaling"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Bounce Pad",
+      "internal_key": "ability_bounce_pad",
+      "data": {
+        "AbilityCastDelay": 0.08,
+        "AbilityCharges": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 41,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 3.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityDuration": {
+          "Value": 22,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AirControlAccelPercent": 50,
+        "AirControlPercent": 100,
+        "AllyBounceModifier": {
+          "Class": "BouncePadAlly",
+          "Subclass": "BouncePadAlly"
+        },
+        "BarrelBounceVelocity": 800,
+        "BarrelUpFactor": 1,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorMovement",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BounceModifier": {
+          "Class": "CitadelBouncePadStomp",
+          "Subclass": "CitadelBouncePadStomp"
+        },
+        "BounceVelocity": 750,
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_bounce_pad",
+        "MinAirTimeForStomp": 0.2,
+        "Name": "Bounce Pad",
+        "PlaceDistance": 200,
+        "Radius": {
+          "Value": 9,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "Scale": 1,
+        "SpeedOnLandModifier": {
+          "Class": "Base",
+          "Subclass": "SpeedOnLand"
+        },
+        "StompDamage": {
+          "Value": 60,
+          "Scale": {
+            "Value": 0.372,
+            "Type": "spirit"
+          }
+        },
+        "TossSpeed": 12.7,
+        "UpFactor": 1.2,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -10
+          },
+          {
+            "SpeedOnLand": 4,
+            "SpeedOnLandDuration": 4
+          },
+          {
+            "StompStunDuration": 0.7
+          }
+        ],
+        "VerticalDifferenceTolerance": 60
+      },
+      "card": {
+        "Key": "ability_bounce_pad",
+        "Name": "Bounce Pad",
+        "DescKey": "ability_bounce_pad_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "StompDamage",
+                "Name": "Stomp Damage",
+                "Value": 60,
+                "Scale": {
+                  "Value": 0.372,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "Radius",
+                "Name": "Radius",
+                "Value": 9,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "radius"
+                },
+                "Type": "distance"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "AirControlPercent",
+              "Name": "Air Control",
+              "Value": 100,
+              "Type": "move_speed"
+            },
+            {
+              "Key": "SpeedOnLandDuration",
+              "Value": 0,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_bounce_pad_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -10,
+            "DescKey": "ability_bounce_pad_t1_desc"
+          },
+          {
+            "SpeedOnLand": 4,
+            "SpeedOnLandDuration": 4,
+            "DescKey": "ability_bounce_pad_t2_desc"
+          },
+          {
+            "StompStunDuration": 0.7,
+            "DescKey": "ability_bounce_pad_t3_desc"
+          }
+        ],
+        "Duration": {
+          "MinAirTimeForStomp": {
+            "Name": "Min Air Time for Stomp",
+            "Value": 0.2,
+            "Type": "duration"
+          }
+        },
+        "Move": {
+          "AirControlAccelPercent": {
+            "Name": "Air Acceleration",
+            "Value": 50,
+            "Type": "move_speed"
+          },
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "BarrelBounceVelocity": {
+            "Name": null,
+            "Value": 800
+          },
+          "BarrelUpFactor": {
+            "Name": null,
+            "Value": 1
+          },
+          "BounceVelocity": {
+            "Name": null,
+            "Value": 750
+          },
+          "PlaceDistance": {
+            "Name": null,
+            "Value": 200
+          },
+          "Scale": {
+            "Name": null,
+            "Value": 1
+          },
+          "TossSpeed": {
+            "Name": null,
+            "Value": 12.7
+          },
+          "UpFactor": {
+            "Name": null,
+            "Value": 1.2
+          },
+          "VerticalDifferenceTolerance": {
+            "Name": null,
+            "Value": 60
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.08,
+          "Type": "cast"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 41,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 3.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 22,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 9,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_bounce_pad_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Drop a bounce pad in the world that <span class=\"highlight\">launches any hero</span>. <br><br>You <span class=\"highlight\">explode</span> on landing, dealing <Panel class=\"AbilityPropertyIcon prop_tech_damage\"> <span class=\"highlight_spirit\">Damage</span> to any nearby enemies. <br><br><span class=\"diminish\">The explosion can only occur once per person per Bounce Pad.</span>",
+          "plain_text": "Drop a bounce pad in the world that launches any hero.\nYou explode on landing, dealing Damage to any nearby enemies.\nThe explosion can only occur once per person per Bounce Pad."
+        },
+        {
+          "localization_key": "ability_bounce_pad_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-10s</span> Cooldown",
+          "plain_text": "-10s Cooldown"
+        },
+        {
+          "localization_key": "ability_bounce_pad_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "You and allies gain a +4m/s move speed bonus for 4s on landing",
+          "plain_text": "You and allies gain a +4m/s move speed bonus for 4s on landing"
+        },
+        {
+          "localization_key": "ability_bounce_pad_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+0.7s</span> Stomp Stun",
+          "plain_text": "+0.7s Stomp Stun"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Crackshot",
+      "internal_key": "ability_crackshot",
+      "data": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCooldown": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact"
+        ],
+        "CrackshotNPCCDReduction": 50,
+        "Damage": {
+          "Value": 55,
+          "Scale": {
+            "Value": 1.116,
+            "Type": "spirit"
+          }
+        },
+        "DebuffDuration": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "DiminishingSlow",
+          "Subclass": "Slow"
+        },
+        "ExplosionRadius": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "FadingSlowPercent": 50,
+        "IsDisabled": false,
+        "Key": "ability_crackshot",
+        "Name": "Crackshot",
+        "Upgrades": [
+          {
+            "FadingSlowPercent": 25
+          },
+          {
+            "Damage": 49.5
+          },
+          {
+            "AbilityCooldownPerHeadshot": -6,
+            "AbilityCooldownPerHeadshotNPC": -3
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_crackshot",
+        "Name": "Crackshot",
+        "DescKey": "ability_crackshot_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 55,
+                "Scale": {
+                  "Value": 1.116,
+                  "Type": "spirit"
+                },
+                "Type": "bullet_damage"
+              },
+              {
+                "Key": "FadingSlowPercent",
+                "Name": "Fading Move Speed",
+                "Value": 50,
+                "Type": "slow"
+              },
+              {
+                "Key": "DebuffDuration",
+                "Name": "Debuff Duration",
+                "Value": 2,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_crackshot_desc"
+        },
+        "Upgrades": [
+          {
+            "FadingSlowPercent": 25,
+            "DescKey": "ability_crackshot_t1_desc"
+          },
+          {
+            "Damage": 49.5
+          },
+          {
+            "AbilityCooldownPerHeadshot": -6,
+            "AbilityCooldownPerHeadshotNPC": -3,
+            "DescKey": "ability_crackshot_t3_desc"
+          }
+        ],
+        "Range": {
+          "ExplosionRadius": {
+            "Name": "Explosion Radius",
+            "Value": 2,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            },
+            "Type": "distance"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "CrackshotNPCCDReduction": {
+            "Name": null,
+            "Value": 50
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.15,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_crackshot_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Headshots deal bonus <Panel class=\"AbilityPropertyIcon prop_bullet_damage\"> <span class=\"highlight_courage\">Damage</span> and applies a <Panel class=\"AbilityPropertyIcon prop_slow\"> <span class=\"highlight\">Fading Move Speed penalty</span>. This effect can only occur when off cooldown. <br><br>Cooldown is reduced by 50% on NPC hits. <br><span class=\"diminish\">Crackshot ignores range damage fall-off and does not apply to objectives.</span>",
+          "plain_text": "Headshots deal bonus Damage and applies a Fading Move Speed penalty. This effect can only occur when off cooldown.\nCooldown is reduced by 50% on NPC hits.\nCrackshot ignores range damage fall-off and does not apply to objectives."
+        },
+        {
+          "localization_key": "ability_crackshot_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-25%</span> Fading Move Speed",
+          "plain_text": "-25% Fading Move Speed"
+        },
+        {
+          "localization_key": "ability_crackshot_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-6s</span> Cooldown on Hero Headshots. -3s on NPC Headshots",
+          "plain_text": "-6s Cooldown on Hero Headshots. -3s on NPC Headshots"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Spirit Lasso",
+      "internal_key": "ability_gravity_lasso",
+      "data": {
+        "AbilityCastDelay": 0.5,
+        "AbilityCastRange": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 130,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 2.25,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorCleaveDisabled",
+          "BehaviorShowCastRangeAsSatSphereWhileCasting",
+          "BehaviorDontInterruptSlideOnCast",
+          "BehaviorInterruptMeleeOnCast"
+        ],
+        "BouncePadExtendDuration": 1,
+        "CameraPreviewDistance": 200,
+        "CameraPreviewOffset": 25,
+        "CameraPreviewSpeed": 0.6,
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 80,
+          "Scale": {
+            "Value": 0.93,
+            "Type": "spirit"
+          }
+        },
+        "ExtraTargetConeAngle": 60,
+        "ExtraTargetHorizontalOffset": 30,
+        "FollowDampingFactor": 8,
+        "FollowDistance": 60,
+        "GrabExtraTargetsRadiusMult": 2,
+        "IsDisabled": false,
+        "Key": "ability_gravity_lasso",
+        "LassoTargetMaxSpeed": 55,
+        "LiftHeight": 7,
+        "LiftHorizontal": -30,
+        "LiftInitialDelay": 0.5,
+        "LiftInitialRisingSpeed": 100,
+        "LiftInitialVelocityStart": 500,
+        "Name": "Spirit Lasso",
+        "Upgrades": [
+          {
+            "Damage": 80
+          },
+          {
+            "AbilityDuration": 0.75
+          },
+          {
+            "AbilityCooldown": -40
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_gravity_lasso",
+        "Name": "Spirit Lasso",
+        "DescKey": "ability_gravity_lasso_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "AbilityDuration",
+                "Name": "Duration",
+                "StatusEffect": "Stun",
+                "Value": 2.25,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              },
+              {
+                "Key": "AbilityCastRange",
+                "Name": "Cast Range",
+                "Value": 20,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "range"
+                },
+                "Type": "range"
+              },
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 80,
+                "Scale": {
+                  "Value": 0.93,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "BouncePadExtendDuration",
+              "Value": 1
+            }
+          ],
+          "DescKey": "ability_gravity_lasso_desc"
+        },
+        "Upgrades": [
+          {
+            "Damage": 80
+          },
+          {
+            "AbilityDuration": 0.75
+          },
+          {
+            "AbilityCooldown": -40
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "CameraPreviewDistance": {
+            "Name": null,
+            "Value": 200
+          },
+          "CameraPreviewOffset": {
+            "Name": null,
+            "Value": 25
+          },
+          "CameraPreviewSpeed": {
+            "Name": null,
+            "Value": 0.6
+          },
+          "ExtraTargetConeAngle": {
+            "Name": "Targetting Cone Angle",
+            "Value": 60
+          },
+          "ExtraTargetHorizontalOffset": {
+            "Name": null,
+            "Value": 30
+          },
+          "FollowDampingFactor": {
+            "Name": null,
+            "Value": 8
+          },
+          "FollowDistance": {
+            "Name": null,
+            "Value": 60
+          },
+          "GrabExtraTargetsRadiusMult": {
+            "Name": null,
+            "Value": 2
+          },
+          "LassoTargetMaxSpeed": {
+            "Name": null,
+            "Value": 55
+          },
+          "LiftHeight": {
+            "Name": null,
+            "Value": 7
+          },
+          "LiftHorizontal": {
+            "Name": null,
+            "Value": -30
+          },
+          "LiftInitialDelay": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "LiftInitialRisingSpeed": {
+            "Name": null,
+            "Value": 100
+          },
+          "LiftInitialVelocityStart": {
+            "Name": null,
+            "Value": 500
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.5,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 130,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 2.25,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_gravity_lasso_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Throw out your lasso, dealing {g:citadel_inline_attribute:'SpiritDamage'}, {g:citadel_inline_attribute:'Pulling'}, and applying {g:citadel_inline_attribute:'Stun'}.<br>Using a Bounce Pad extends the duration of Spirit Lasso.",
+          "plain_text": "Throw out your lasso, dealing spirit damage, pulling, and applying stun.\nUsing a Bounce Pad extends the duration of Spirit Lasso."
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.43,
+    "AirDashSpeed": 18.6,
+    "BaseHealthRegen": 2,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.62,
+    "GroundDashSpeed": 16.1,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 1.144,
+      "MaxHealth": 41,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 2.4212,
+      "SustainedDPS": 1.5304
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_astro_lore",
+    "MaxHealth": 780,
+    "MaxMoveSpeed": 8.2,
+    "MoveAcceleration": 4,
+    "Name": "Holliday",
+    "Playstyle": "hero_astro_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_astro_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.6,
+    "Stamina": 2,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Marksman",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

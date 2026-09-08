@@ -1,0 +1,1289 @@
+{
+  "schema_version": 2,
+  "id": "hero.wraith",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.wraith.124931",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Wraith",
+  "aliases": [],
+  "internal_hero_key": "hero_wraith",
+  "hero_type": "Marksman",
+  "role_localization_key": "hero_wraith_role",
+  "playstyle_localization_key": "hero_wraith_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 730,
+    "health_regeneration_per_second": 2,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 7.2,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 14.7,
+      "distance_meters": 10,
+      "duration_seconds": 0.68
+    },
+    "air_dash": {
+      "speed_meters_per_second": 17,
+      "distance_meters": 8,
+      "duration_seconds": 0.47
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.14,
+    "MaxHealth": 35,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 1.4815,
+    "SustainedDPS": 0.9413
+  },
+  "spirit_scaling": {
+    "SprintSpeed": 0.05
+  },
+  "weapon": {
+    "BulletSpeed": 571.5,
+    "BulletDamage": 5.64,
+    "RoundsPerSecond": 10.582,
+    "ClipSize": 52,
+    "ReloadTime": 2.82,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 18,
+    "FalloffEndRange": 52,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0,
+    "BulletRadius": 0.0762,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 59.682,
+    "SustainedDPS": 37.921,
+    "NameKey": "citadel_weapon_hero_wraith_set",
+    "DescKey": "citadel_weapon_hero_wraith_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_RapidFire",
+      "Attribute_EWeaponAttribute_MediumRange"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Card Trick",
+      "internal_key": "citadel_ability_card_toss",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 500,
+          "Scale": {
+            "Value": 0,
+            "Type": "range"
+          }
+        },
+        "AbilityCharges": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityChargesConditionally": 1,
+        "AbilityCooldown": {
+          "Value": 0.6,
+          "Scale": {
+            "Value": 0,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityPostCastDuration": 0.1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorUseInstantCastUnitTargetUi",
+          "BehaviorAllowAltCast",
+          "BehaviorAllowAltCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BonusAbilityResource": 100,
+        "CardResourceGenPctScale": {
+          "Value": 85,
+          "Scale": {
+            "Value": -1,
+            "Type": "cooldown"
+          }
+        },
+        "CardResourcePerBulletCrit": 6,
+        "CardResourcePerBulletHit": 4,
+        "CardResourcePerHeavyMelee": 25,
+        "CardResourcePerLightMelee": 10,
+        "ChannelMoveSpeed": -1,
+        "ClubModifier": {
+          "Class": "SlowBase",
+          "Subclass": "ClubDebuff"
+        },
+        "ClubSlowDuration": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "ClubSlowPercent": 30,
+        "CooldownBetweenCards": 0.5,
+        "Damage": {
+          "Value": 45,
+          "Scale": {
+            "Value": 0.55,
+            "Type": "spirit"
+          }
+        },
+        "DiamondModifier": {
+          "Class": "CardtossStackingResistShred",
+          "Subclass": "DiamondCardDebuff"
+        },
+        "DiamondResistShred": -8,
+        "DiamondResistShredDuration": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "stats_count"
+          }
+        },
+        "HeartHeal": {
+          "Value": 75,
+          "Scale": {
+            "Value": 0.75,
+            "Type": "spirit"
+          }
+        },
+        "HeartHealNonHeroRatio": 0.5,
+        "IsDisabled": false,
+        "JokerExtraCardSearchRadius": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "Key": "citadel_ability_card_toss",
+        "Name": "Card Trick",
+        "NonPlayerCardResourceScale": 0.35,
+        "ProjectileOriginHeightOffset": 50,
+        "Radius": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "ResourcePerCard": 100,
+        "SpadeDamageBonus": 60,
+        "Upgrades": [
+          {
+            "AbilityCharges": 2
+          },
+          {
+            "Damage": {
+              "Value": 40,
+              "Scale": {
+                "Value": 0.4,
+                "Type": "spirit"
+              }
+            }
+          },
+          {
+            "ImprovedJokerChance": 1,
+            "SpadeDamageBonus": 40,
+            "DiamondResistShred": -5,
+            "HeartHeal": {
+              "Value": 75,
+              "Scale": {
+                "Value": 0.5,
+                "Type": "spirit"
+              }
+            },
+            "ClubSlowPercent": 20
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_card_toss",
+        "Name": "Card Trick",
+        "DescKey": "citadel_ability_card_toss_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 45,
+                "Scale": {
+                  "Value": 0.55,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "citadel_ability_card_toss_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "Spade",
+                "Key": "SpadeDamageBonus",
+                "Name": "Bonus Damage",
+                "Value": 60,
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "Diamond",
+                "Key": "DiamondResistShred",
+                "Name": "Bullet and Spirit Resist Reduction",
+                "Value": -8,
+                "Type": "bullet_armor_down"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_header_card_toss_suits_desc"
+        },
+        "Info3": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "Club",
+                "Key": "ClubSlowPercent",
+                "Name": "Move Speed",
+                "Value": 30,
+                "Type": "slow"
+              },
+              {
+                "Title": "Heart",
+                "Key": "HeartHeal",
+                "Name": "Heal",
+                "Value": 75,
+                "Scale": {
+                  "Value": 0.75,
+                  "Type": "spirit"
+                },
+                "Type": "healing"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Upgrades": [
+          {
+            "AbilityCharges": 2
+          },
+          {
+            "Damage": {
+              "Value": 40,
+              "Scale": {
+                "Value": 0.4,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "citadel_ability_card_toss_t2_desc"
+          },
+          {
+            "ImprovedJokerChance": 1,
+            "SpadeDamageBonus": 40,
+            "DiamondResistShred": -5,
+            "HeartHeal": {
+              "Value": 75,
+              "Scale": {
+                "Value": 0.5,
+                "Type": "spirit"
+              }
+            },
+            "ClubSlowPercent": 20,
+            "DescKey": "citadel_ability_card_toss_t3_desc"
+          }
+        ],
+        "Duration": {
+          "ClubSlowDuration": {
+            "Name": null,
+            "Value": 3,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "duration"
+          }
+        },
+        "Range": {
+          "JokerExtraCardSearchRadius": {
+            "Name": null,
+            "Value": 20,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            },
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityChargesConditionally": {
+            "Name": null,
+            "Value": 1
+          },
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.1
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "BonusAbilityResource": {
+            "Name": null,
+            "Value": 100
+          },
+          "CardResourceGenPctScale": {
+            "Name": "Card Summon Rate",
+            "Value": 85,
+            "Scale": {
+              "Value": -1,
+              "Type": "cooldown"
+            }
+          },
+          "CardResourcePerBulletCrit": {
+            "Name": null,
+            "Value": 6
+          },
+          "CardResourcePerBulletHit": {
+            "Name": null,
+            "Value": 4
+          },
+          "CardResourcePerHeavyMelee": {
+            "Name": null,
+            "Value": 25
+          },
+          "CardResourcePerLightMelee": {
+            "Name": null,
+            "Value": 10
+          },
+          "CooldownBetweenCards": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "DiamondResistShredDuration": {
+            "Name": null,
+            "Value": 5,
+            "Scale": {
+              "Value": 1,
+              "Type": "stats_count"
+            }
+          },
+          "HeartHealNonHeroRatio": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "NonPlayerCardResourceScale": {
+            "Name": null,
+            "Value": 0.35
+          },
+          "ProjectileOriginHeightOffset": {
+            "Name": null,
+            "Value": 50
+          },
+          "ResourcePerCard": {
+            "Name": null,
+            "Value": 100
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 500,
+          "Scale": {
+            "Value": 0,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 0.6,
+          "Scale": {
+            "Value": 0,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_card_toss_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Deal weapon damage to summon cards of a random suit. Each card can be thrown, dealing damage and applying a different effect depending of its suit. Cards thrown fly towards the enemy or point under your crosshair. <br><br><span class=\"diminish\">Alt-cast to throw first card</span>",
+          "plain_text": "Deal weapon damage to summon cards of a random suit. Each card can be thrown, dealing damage and applying a different effect depending of its suit. Cards thrown fly towards the enemy or point under your crosshair.\nAlt-cast to throw first card"
+        },
+        {
+          "localization_key": "ability_header_card_toss_suits_desc",
+          "card_paths": [
+            "card.Info2.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<br>Each suit provides a different bonus. <span class=\"highlight\">Jokers</span> counts as all suits</span>",
+          "plain_text": "Each suit provides a different bonus. Jokers counts as all suits"
+        },
+        {
+          "localization_key": "citadel_ability_card_toss_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+40 Damage and increased Spirit Scaling",
+          "plain_text": "+40 Damage and increased Spirit Scaling"
+        },
+        {
+          "localization_key": "citadel_ability_card_toss_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "All suits are improved and higher chance for <span class=\"highlight\">Jokers</span>",
+          "plain_text": "All suits are improved and higher chance for Jokers"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Project Mind",
+      "internal_key": "citadel_ability_projectmind",
+      "data": {
+        "AbilityCastDelay": 0.75,
+        "AbilityCastRange": {
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 46,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorPreventBotUsage",
+          "BehaviorMovement",
+          "BehaviorCanSetQuickCast"
+        ],
+        "CameraDistance": 250,
+        "ChannelMoveSpeed": 5.1,
+        "CombatBarrier": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_projectmind",
+        "Name": "Project Mind",
+        "ProjectMindModifier": {
+          "Class": "CitadelProjectmind",
+          "Subclass": "CitadelProjectmind",
+          "ShieldModifier": {
+            "Class": "WraithProjectMindShield",
+            "Subclass": "WraithProjectMindShield"
+          }
+        },
+        "TrailInterval": 0.1,
+        "Upgrades": [
+          {
+            "AbilityCastRange": 15
+          },
+          {
+            "CombatBarrier": {
+              "Value": 300,
+              "Scale": {
+                "Value": 1.7,
+                "Type": "spirit"
+              }
+            },
+            "BarrierDuration": 5
+          },
+          {
+            "AbilityCooldown": -32
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_projectmind",
+        "Name": "Project Mind",
+        "DescKey": "citadel_ability_projectmind_desc",
+        "Info1": {
+          "Main": {},
+          "Alt": [],
+          "DescKey": "citadel_ability_projectmind_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "Barrier:",
+                "Key": "AbilityCastRange",
+                "Name": "Cast Range",
+                "Value": 25,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "range"
+                },
+                "Type": "range"
+              },
+              {
+                "Title": "Barrier:",
+                "Key": "CombatBarrier",
+                "Name": "Barrier",
+                "Value": 0,
+                "Scale": {
+                  "Value": 0,
+                  "Type": "spirit"
+                },
+                "Type": "bullet_armor_up"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "BarrierDuration",
+              "Name": "Barrier Duration",
+              "Value": 0,
+              "Type": "duration"
+            }
+          ]
+        },
+        "Upgrades": [
+          {
+            "AbilityCastRange": 15
+          },
+          {
+            "CombatBarrier": {
+              "Value": 300,
+              "Scale": {
+                "Value": 1.7,
+                "Type": "spirit"
+              }
+            },
+            "BarrierDuration": 5,
+            "DescKey": "citadel_ability_projectmind_t2_desc"
+          },
+          {
+            "AbilityCooldown": -32
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 5.1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "CameraDistance": {
+            "Name": null,
+            "Value": 250
+          },
+          "TrailInterval": {
+            "Name": null,
+            "Value": 0.1
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.75,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 46,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_projectmind_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Teleport</span> to the targeted location.",
+          "plain_text": "Teleport to the targeted location."
+        },
+        {
+          "localization_key": "citadel_ability_projectmind_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">300 Barrier</span> for 5s. Barrier scales with Spirit Power.",
+          "plain_text": "300 Barrier for 5s. Barrier scales with Spirit Power."
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Full Auto",
+      "internal_key": "citadel_ability_wraith_rapidfire",
+      "data": {
+        "AbilityCooldown": {
+          "Value": 45,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
+        "BonusFireRate": 20,
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "citadel_ability_wraith_rapidfire",
+        "MagicDamagePerBullet": {
+          "Value": 2,
+          "Scale": {
+            "Value": 0.03,
+            "Type": "spirit"
+          }
+        },
+        "Name": "Full Auto",
+        "RapidFireModifier": {
+          "Class": "Rapidfire",
+          "Subclass": "Rapidfire"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -20
+          },
+          {
+            "BonusFireRate": 10,
+            "AbilityDuration": 3
+          },
+          {
+            "MagicDamagePerBullet": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.045,
+                "Type": "spirit"
+              }
+            },
+            "UnlimitedAmmo": 1
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_wraith_rapidfire",
+        "Name": "Full Auto",
+        "DescKey": "citadel_ability_wraith_rapidfire_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "BonusFireRate",
+                "Name": "Fire Rate",
+                "Value": 20,
+                "Type": "fire_rate"
+              },
+              {
+                "Key": "MagicDamagePerBullet",
+                "Name": "Spirit Damage Per Bullet",
+                "Value": 2,
+                "Scale": {
+                  "Value": 0.03,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "AbilityLifestealPercent",
+              "Name": "Spirit Lifesteal",
+              "Value": 0,
+              "Type": "healing"
+            },
+            {
+              "Key": "BulletLifestealPercent",
+              "Name": "Bullet Lifesteal",
+              "Value": 0,
+              "Type": "healing"
+            }
+          ],
+          "DescKey": "citadel_ability_wraith_rapidfire_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -20
+          },
+          {
+            "BonusFireRate": 10,
+            "AbilityDuration": 3,
+            "DescKey": "citadel_ability_wraith_rapidfire_t2_desc"
+          },
+          {
+            "MagicDamagePerBullet": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.045,
+                "Type": "spirit"
+              }
+            },
+            "UnlimitedAmmo": 1,
+            "DescKey": "citadel_ability_wraith_rapidfire_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 45,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_wraith_rapidfire_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Temporarily boosts your <span class=\"highlight\">fire rate</span> and deal bonus {g:citadel_inline_attribute:'SpiritDamage'}",
+          "plain_text": "Temporarily boosts your fire rate and deal bonus spirit damage"
+        },
+        {
+          "localization_key": "citadel_ability_wraith_rapidfire_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+10% Fire Rate</span> and <span class=\"highlight\">+3s Duration</span>",
+          "plain_text": "+10% Fire Rate and +3s Duration"
+        },
+        {
+          "localization_key": "citadel_ability_wraith_rapidfire_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Unlimited Ammo</span> and Increased Scaling on Spirit Damage Per Bullet",
+          "plain_text": "Unlimited Ammo and Increased Scaling on Spirit Damage Per Bullet"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Telekinesis",
+      "internal_key": "citadel_ability_psychic_lift",
+      "data": {
+        "AbilityCastDelay": 0.45,
+        "AbilityCastRange": {
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityChannelTime": {
+          "Value": 0.65,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 150,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 2.25,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorProjectilePassThroughWorld",
+          "BehaviorUseInstantCastUnitTargetUi",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 100,
+          "Scale": {
+            "Value": 1,
+            "Type": "spirit"
+          }
+        },
+        "DampingFactor": 0.3,
+        "IsDisabled": false,
+        "Key": "citadel_ability_psychic_lift",
+        "LiftChainRadius": 20,
+        "LiftDuration": 2,
+        "LiftHeight": 80,
+        "LiftModifier": {
+          "Class": "CitadelPsychiclift",
+          "Subclass": "Lift",
+          "EnabledStateMask": [
+            "Stunned"
+          ],
+          "RiseMaxSpeed": 750,
+          "RiseAcc": 3000,
+          "RiseTime": 0.75,
+          "SlamAcc": 6000,
+          "SlamImpactRadius": 100,
+          "SilenceModifier": {
+            "Class": "CitadelSilenced",
+            "Subclass": "Silence",
+            "EnabledStateMask": [
+              "Silenced"
+            ]
+          },
+          "DisarmModifier": {
+            "Class": "CitadelDisarmed",
+            "Subclass": "Disarm",
+            "EnabledStateMask": [
+              "Disarmed"
+            ]
+          },
+          "RiseDecayFracEnd": 0.95,
+          "RiseDecayFracStart": 0.3,
+          "OccilateMaxDistance": 400,
+          "OccilateDegreesPerSecond": 300,
+          "SlowModifier": {
+            "Class": "SlowBase",
+            "Subclass": "LiftSlowModifier",
+            "EnabledStateMask": [
+              "Slowed",
+              "DashDisabledDebuff",
+              "SilenceMovementAbilites"
+            ]
+          },
+          "SlamTime": 0.5
+        },
+        "Name": "Telekinesis",
+        "SlowPercent": 40,
+        "TossDistance": {
+          "Value": 13,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "TossUpStrength": 220,
+        "Upgrades": [
+          {
+            "Damage": 100
+          },
+          {
+            "AbilityCooldown": -45
+          },
+          {
+            "AbilityDuration": 1.5,
+            "TossDistance": 6,
+            "AbilityCastRange": 6
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_psychic_lift",
+        "Name": "Telekinesis",
+        "DescKey": "citadel_ability_psychic_lift_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 100,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "TossDistance",
+                "Name": "Throw Range",
+                "Value": 13,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "range"
+                }
+              },
+              {
+                "Key": "AbilityChannelTime",
+                "Name": "Channel Duration",
+                "StatusEffect": "Stun",
+                "Value": 0.65,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "cast"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "citadel_ability_psychic_lift_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "AbilityDuration",
+                "Name": "Duration",
+                "Value": 2.25,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              },
+              {
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 40,
+                "Type": "slow"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "citadel_ability_psychic_lift_slam_desc"
+        },
+        "Upgrades": [
+          {
+            "Damage": 100
+          },
+          {
+            "AbilityCooldown": -45
+          },
+          {
+            "AbilityDuration": 1.5,
+            "TossDistance": 6,
+            "AbilityCastRange": 6,
+            "DescKey": "citadel_ability_psychic_lift_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "DampingFactor": {
+            "Name": null,
+            "Value": 0.3
+          },
+          "LiftChainRadius": {
+            "Name": null,
+            "Value": 20
+          },
+          "LiftDuration": {
+            "Name": null,
+            "Value": 2
+          },
+          "LiftHeight": {
+            "Name": null,
+            "Value": 80
+          },
+          "TossUpStrength": {
+            "Name": null,
+            "Value": 220
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.45,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 0.65,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 150,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 2.25,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_psychic_lift_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Lift an enemy hero into the air and then slam them <span class=\"highlight\">towards the target location</span>.",
+          "plain_text": "Lift an enemy hero into the air and then slam them towards the target location."
+        },
+        {
+          "localization_key": "citadel_ability_psychic_lift_slam_desc",
+          "card_paths": [
+            "card.Info2.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<br>Slamming the target into the ground deals {g:citadel_inline_attribute:'SpiritDamage'}, applying {g:citadel_inline_attribute:'Slow'} and prevents <span class=\"highlight\">Stamina and movement-based items and abilities</span>",
+          "plain_text": "Slamming the target into the ground deals spirit damage, applying slow and prevents Stamina and movement-based items and abilities"
+        },
+        {
+          "localization_key": "citadel_ability_psychic_lift_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+1.5s Debuff Duration and +6m Throw and Cast Range",
+          "plain_text": "+1.5s Debuff Duration and +6m Throw and Cast Range"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.47,
+    "AirDashSpeed": 17,
+    "BaseHealthRegen": 2,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.68,
+    "GroundDashSpeed": 14.7,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.14,
+      "MaxHealth": 35,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 1.4815,
+      "SustainedDPS": 0.9413
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_wraith_lore",
+    "MaxHealth": 730,
+    "MaxMoveSpeed": 7.2,
+    "MoveAcceleration": 4,
+    "Name": "Wraith",
+    "Playstyle": "hero_wraith_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_wraith_role",
+    "SpiritScaling": {
+      "SprintSpeed": 0.05
+    },
+    "SprintSpeed": 1.6,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Marksman",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

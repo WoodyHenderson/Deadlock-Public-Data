@@ -1,0 +1,1238 @@
+{
+  "schema_version": 2,
+  "id": "hero.mina",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.mina.124886",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Mina",
+  "aliases": [],
+  "internal_hero_key": "hero_vampirebat",
+  "hero_type": "Marksman",
+  "role_localization_key": "hero_vampirebat_role",
+  "playstyle_localization_key": "hero_vampirebat_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": true,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 660,
+    "health_regeneration_per_second": 2,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.5,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 16.1,
+      "distance_meters": 10,
+      "duration_seconds": 0.62
+    },
+    "air_dash": {
+      "speed_meters_per_second": 18.6,
+      "distance_meters": 8,
+      "duration_seconds": 0.43
+    },
+    "stamina": {
+      "charges": 2,
+      "cooldown_seconds": 4.2000042000042,
+      "regeneration_per_second": 0.238095
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.275,
+    "MaxHealth": 27,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 1.0913,
+    "SustainedDPS": 0.69857
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 762,
+    "BulletDamage": 7.31,
+    "RoundsPerSecond": 3.9683,
+    "ClipSize": 12,
+    "ReloadTime": 1.7,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 46,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0,
+    "BulletRadius": 0.127,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 29.008,
+    "SustainedDPS": 18.569,
+    "NameKey": "citadel_weapon_hero_vampirebat_set",
+    "DescKey": "citadel_weapon_hero_vampirebat_set_desc",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_BurstFire",
+      "Attribute_EWeaponAttribute_MediumRange"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Rake",
+      "internal_key": "ability_vampirebat_steallife",
+      "data": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCastRange": {
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 16,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityPostCastDuration": 0.4,
+        "AbilityUnitTargetLimit": 6,
+        "AirDrag": 0.2,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontInterruptSlideOnCast",
+          "BehaviorUseLagCompensationForUnitTargeting"
+        ],
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 60,
+          "Scale": {
+            "Value": 1,
+            "Type": "stats_count"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "Base",
+          "Subclass": "Debuff"
+        },
+        "FallSpeedMax": 3,
+        "FallingDrag": 20,
+        "FloatingModifier": {
+          "Class": "Base",
+          "Subclass": "Floatingmodifier"
+        },
+        "IsDisabled": false,
+        "Key": "ability_vampirebat_steallife",
+        "MaxFloatTime": 4,
+        "MiniJumpVelocity": 200,
+        "MissingHealthDamagePercentage": 6,
+        "Name": "Rake",
+        "RakeHealPerKill": {
+          "Value": 25,
+          "Scale": {
+            "Value": 0.3,
+            "Type": "spirit"
+          }
+        },
+        "TargetingConeAngle": 60,
+        "TimeBetweenAttacks": 0.04,
+        "TrooperExecuteThreshold": 60,
+        "Upgrades": [
+          {
+            "Damage": 60
+          },
+          {
+            "RakeHealPerKill": 30,
+            "AbilityCooldown": -8
+          },
+          {
+            "MissingHealthDamagePercentage": 7,
+            "RakeHealPerKill": {
+              "Value": 0,
+              "Scale": {
+                "Value": 1.2,
+                "Type": "spirit"
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_vampirebat_steallife",
+        "Name": "Rake",
+        "DescKey": "ability_vampirebat_steallife_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 60,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "stats_count"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Hero Hit:",
+                "Key": "MissingHealthDamagePercentage",
+                "Name": "Missing Health Damage",
+                "Value": 6,
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_vampirebat_steallife_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Kill:",
+                "Key": "RakeHealPerKill",
+                "Name": "Heal Per Kill",
+                "Value": 25,
+                "Scale": {
+                  "Value": 0.3,
+                  "Type": "spirit"
+                },
+                "Type": "healing"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Upgrades": [
+          {
+            "Damage": 60
+          },
+          {
+            "RakeHealPerKill": 30,
+            "AbilityCooldown": -8,
+            "DescKey": "ability_vampirebat_steallife_t2_desc"
+          },
+          {
+            "MissingHealthDamagePercentage": 7,
+            "RakeHealPerKill": {
+              "Value": 0,
+              "Scale": {
+                "Value": 1.2,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "ability_vampirebat_steallife_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.4
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 6
+          },
+          "AirDrag": {
+            "Name": null,
+            "Value": 0.2
+          },
+          "FallSpeedMax": {
+            "Name": null,
+            "Value": 3
+          },
+          "FallingDrag": {
+            "Name": null,
+            "Value": 20
+          },
+          "MaxFloatTime": {
+            "Name": null,
+            "Value": 4
+          },
+          "MiniJumpVelocity": {
+            "Name": null,
+            "Value": 200
+          },
+          "TargetingConeAngle": {
+            "Name": "Attack Angle",
+            "Value": 60
+          },
+          "TimeBetweenAttacks": {
+            "Name": null,
+            "Value": 0.04
+          },
+          "TrooperExecuteThreshold": {
+            "Name": null,
+            "Value": 60
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.1,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 16,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_vampirebat_steallife_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"diminish\">Active:</span> Slash with your umbrella, dealing {g:citadel_inline_attribute:'SpiritDamage'}, increasing with their missing health. Receive a {g:citadel_inline_attribute:'Heal'} for every target killed.<br><br><span class=\"diminish\">Passive: </span>Holding {g:citadel_binding:'ADS'} causes you to briefly float.<br><span class=\"diminish\">Rake executes non-heroes below 60 health.</span>",
+          "plain_text": "Active: Slash with your umbrella, dealing spirit damage, increasing with their missing health. Receive a heal for every target killed.\nPassive: Holding [ADS] causes you to briefly float.\nRake executes non-heroes below 60 health."
+        },
+        {
+          "localization_key": "ability_vampirebat_steallife_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+30</span> Heal per Kill <br><span class=\"highlight\">-8s</span> Cooldown",
+          "plain_text": "+30 Heal per Kill\n-8s Cooldown"
+        },
+        {
+          "localization_key": "ability_vampirebat_steallife_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+7%</span> Missing health damage and increased Heal per Kill Spirit scaling",
+          "plain_text": "+7% Missing health damage and increased Heal per Kill Spirit scaling"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Sanguine Retreat",
+      "internal_key": "ability_vampirebat_batblink",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 9,
+          "Scale": [
+            {
+              "Value": 0.02,
+              "Type": "spirit"
+            },
+            {
+              "Value": 1,
+              "Type": "range"
+            }
+          ]
+        },
+        "AbilityCooldown": {
+          "Value": 32,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": 0.65,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorPreventBotUsage",
+          "BehaviorCannotCancelDuringChannel",
+          "BehaviorAllowAltCast",
+          "BehaviorMovement",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "BuffModifier": {
+          "Class": "Base",
+          "Subclass": "Buff"
+        },
+        "ChannelMoveSpeed": -1,
+        "EndJumpVelocity": 200,
+        "ExitVelocity": 5,
+        "IsDisabled": false,
+        "Key": "ability_vampirebat_batblink",
+        "MaxRecasts": 1,
+        "Name": "Sanguine Retreat",
+        "RecastWindow": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "SelfBuffModifier": {
+          "Class": "Base",
+          "Subclass": "Selfbuff",
+          "StatusEffectPriority": 101
+        },
+        "Upgrades": [
+          {
+            "BonusFireRate": 25,
+            "BuffDuration": 8,
+            "BonusBullets": 8
+          },
+          {
+            "AbilityCooldown": -10
+          },
+          {
+            "MaxRecasts": 1,
+            "AbilityCastRange": 4
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_vampirebat_batblink",
+        "Name": "Sanguine Retreat",
+        "DescKey": "ability_vampirebat_batblink_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "AbilityCastRange",
+                "Name": "Cast Range",
+                "Value": 9,
+                "Scale": [
+                  {
+                    "Value": 0.02,
+                    "Type": "spirit"
+                  },
+                  {
+                    "Value": 1,
+                    "Type": "range"
+                  }
+                ],
+                "Type": "range"
+              },
+              {
+                "Key": "RecastWindow",
+                "Name": "Recast Window",
+                "Value": 4,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "cooldown"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_vampirebat_batblink_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Cast:",
+                "Key": "BonusFireRate",
+                "Name": "Fire Rate",
+                "Value": 0,
+                "Type": "fire_rate"
+              },
+              {
+                "Title": "On Cast:",
+                "Key": "BonusBullets",
+                "Name": "Bonus Bullets",
+                "Value": 0
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Upgrades": [
+          {
+            "BonusFireRate": 25,
+            "BuffDuration": 8,
+            "BonusBullets": 8,
+            "DescKey": "ability_vampirebat_batblink_t1_desc"
+          },
+          {
+            "AbilityCooldown": -10
+          },
+          {
+            "MaxRecasts": 1,
+            "AbilityCastRange": 4,
+            "DescKey": "ability_vampirebat_batblink_t3_desc"
+          }
+        ],
+        "Cast": {
+          "MaxRecasts": {
+            "Name": "Max Recasts",
+            "Value": 1,
+            "Type": "cast"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "EndJumpVelocity": {
+            "Name": null,
+            "Value": 200
+          },
+          "ExitVelocity": {
+            "Name": null,
+            "Value": 5
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 9,
+          "Scale": [
+            {
+              "Value": 0.02,
+              "Type": "spirit"
+            },
+            {
+              "Value": 1,
+              "Type": "range"
+            }
+          ],
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 32,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 0.65,
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_vampirebat_batblink_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Briefly disperse, becoming <span class=\"highlight\">untargetable</span> and flying to a target location. <br><br>Can be <span class=\"highlight\">recast</span> within a brief window.",
+          "plain_text": "Briefly disperse, becoming untargetable and flying to a target location.\nCan be recast within a brief window."
+        },
+        {
+          "localization_key": "ability_vampirebat_batblink_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On Cast: Gain <span class=\"highlight\">+25%</span> Fire Rate for 8s and add <span class=\"highlight\">8</span> bullets",
+          "plain_text": "On Cast: Gain +25% Fire Rate for 8s and add 8 bullets"
+        },
+        {
+          "localization_key": "ability_vampirebat_batblink_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+1</span> Recast<br><span class=\"highlight\">+4m</span> Range",
+          "plain_text": "+1 Recast\n+4m Range"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Love Bites",
+      "internal_key": "ability_vampirebat_lovebites",
+      "data": {
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
+        "BonusDamage": {
+          "Value": 45,
+          "Scale": {
+            "Value": 1.85,
+            "Type": "spirit"
+          }
+        },
+        "BuildUpDuration": 5,
+        "BuildUpHeadshotBonus": 1.5,
+        "BuildUpModifier": {
+          "Class": "CitadelBaseBuildup",
+          "Subclass": "LovebitesBuildup",
+          "BuildUpDecayDelay": 3
+        },
+        "BuildUpPerBat": 20,
+        "BuildUpPerDagger": 30,
+        "BuildUpPerShot": 18.4,
+        "ChannelMoveSpeed": -1,
+        "DamageProcModifier": {
+          "Class": "VampirebatLovebitesproc",
+          "Subclass": "LovebitesProc",
+          "BuffModifier": {
+            "Class": "Base",
+            "Subclass": "LovebitesBuff"
+          },
+          "SlowModifier": {
+            "Class": "SlowBase",
+            "Subclass": "Slowsf"
+          }
+        },
+        "EffectivenessVolumeScaleMax": 1,
+        "EffectivenessVolumeScaleMin": 0.5,
+        "IsDisabled": false,
+        "Key": "ability_vampirebat_lovebites",
+        "MagicDamagePerBullet": {
+          "Value": 4,
+          "Scale": {
+            "Value": 0.09,
+            "Type": "spirit"
+          }
+        },
+        "Name": "Love Bites",
+        "PerTargetCooldown": {
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "Upgrades": [
+          {
+            "SlowDuration": 3,
+            "SlowPercent": 30
+          },
+          {
+            "MagicDamagePerBullet": 3,
+            "BonusDamage": 45
+          },
+          {
+            "PerTargetCooldown": -5,
+            "BonusFireRate": 25,
+            "BuffDuration": 5
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_vampirebat_lovebites",
+        "Name": "Love Bites",
+        "DescKey": "ability_vampirebat_lovebites_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "MagicDamagePerBullet",
+                "Name": "Spirit Damage Per Bullet",
+                "Value": 4,
+                "Scale": {
+                  "Value": 0.09,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Proc:",
+                "Key": "BonusDamage",
+                "Name": "Bonus Damage",
+                "Value": 45,
+                "Scale": {
+                  "Value": 1.85,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Proc:",
+                "Key": "BonusFireRate",
+                "Name": "Fire Rate",
+                "Value": 0,
+                "Type": "fire_rate"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "SlowPercent",
+              "Name": "Move Speed",
+              "Value": 0,
+              "Type": "slow"
+            },
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 0,
+              "Type": "duration"
+            },
+            {
+              "Key": "BuffDuration",
+              "Name": "Buff Duration",
+              "Value": 0,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_vampirebat_lovebites_desc"
+        },
+        "Upgrades": [
+          {
+            "SlowDuration": 3,
+            "SlowPercent": 30,
+            "DescKey": "ability_vampirebat_lovebites_t1_desc"
+          },
+          {
+            "MagicDamagePerBullet": 3,
+            "BonusDamage": 45,
+            "DescKey": "ability_vampirebat_lovebites_t2_desc"
+          },
+          {
+            "PerTargetCooldown": -5,
+            "BonusFireRate": 25,
+            "BuffDuration": 5,
+            "DescKey": "ability_vampirebat_lovebites_t3_desc"
+          }
+        ],
+        "Cooldown": {
+          "PerTargetCooldown": {
+            "Name": null,
+            "Value": 10,
+            "Scale": {
+              "Value": 1,
+              "Type": "cooldown"
+            },
+            "Type": "cooldown"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "BuildUpDuration": {
+            "Name": null,
+            "Value": 5
+          },
+          "BuildUpHeadshotBonus": {
+            "Name": null,
+            "Value": 1.5
+          },
+          "BuildUpPerBat": {
+            "Name": null,
+            "Value": 20
+          },
+          "BuildUpPerDagger": {
+            "Name": null,
+            "Value": 30
+          },
+          "BuildUpPerShot": {
+            "Name": null,
+            "Value": 18.4
+          },
+          "EffectivenessVolumeScaleMax": {
+            "Name": null,
+            "Value": 1
+          },
+          "EffectivenessVolumeScaleMin": {
+            "Name": null,
+            "Value": 0.5
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_vampirebat_lovebites_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Your bullets apply additional {g:citadel_inline_attribute:'SpiritDamage'}. Dealing damage your abilities builds up to a vicious <span class=\"highlight\">bite</span>, dealing a burst of {g:citadel_inline_attribute:'BonusSpiritDamage'}. <br><br><span class=\"diminish\">Love Bites has a unique cooldown per target.</span>",
+          "plain_text": "Your bullets apply additional spirit damage. Dealing damage your abilities builds up to a vicious bite, dealing a burst of bonus spirit damage.\nLove Bites has a unique cooldown per target."
+        },
+        {
+          "localization_key": "ability_vampirebat_lovebites_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On Proc: <span class=\"highlight\">+30%</span> Slow for 3s",
+          "plain_text": "On Proc: +30% Slow for 3s"
+        },
+        {
+          "localization_key": "ability_vampirebat_lovebites_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+3</span> Spirit Damage per Bullet & <br><span class=\"highlight\">+45</span> Bonus Damage",
+          "plain_text": "+3 Spirit Damage per Bullet &\n+45 Bonus Damage"
+        },
+        {
+          "localization_key": "ability_vampirebat_lovebites_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-5</span> Cooldown <br>On Proc: <span class=\"highlight\">+25%</span> Fire Rate for 5s",
+          "plain_text": "-5 Cooldown\nOn Proc: +25% Fire Rate for 5s"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Nox Nostra",
+      "internal_key": "ability_vampirebat_batswarm",
+      "data": {
+        "AbilityCastDelay": 0.5,
+        "AbilityCastRange": {
+          "Value": 40,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 150,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 12,
+        "AirDrag": 12,
+        "BatCount": 75,
+        "BatCountPerWave": 1,
+        "BatEffectiveness": 0.2,
+        "BatPerSecond": 30,
+        "BatSpawnRadius": 1.5,
+        "BatSpawnRandomAngle": 0.15,
+        "BatSpawnRandomVelocity": 300,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact"
+        ],
+        "BonusBatsMax": 50,
+        "BonusBatsPerProc": 2,
+        "ChannelMoveSpeed": -1,
+        "CurrentHealthDamageCapToBosses": 20,
+        "Damage": {
+          "Value": 4.6,
+          "Scale": {
+            "Value": 0.094,
+            "Type": "spirit"
+          }
+        },
+        "DebuffDuration": {
+          "Value": 1.25,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "CitadelSilenced",
+          "Subclass": "Debuff"
+        },
+        "FallSpeedMax": 1,
+        "GroundAccelerationPercentage": -80,
+        "GroundFrictioNpercentage": -80,
+        "IsDisabled": false,
+        "JumpCeilingCheckDistance": 11,
+        "JumpPitch": -60,
+        "JumpSpeed": 17,
+        "Key": "ability_vampirebat_batswarm",
+        "LockonConeAngle": 40,
+        "MaxBatTargets": 2,
+        "MaxLockonStacks": 1,
+        "Name": "Nox Nostra",
+        "NotInConeLosesLock": 1,
+        "StacksCanDecay": 1,
+        "TargetingConeAngle": 20,
+        "TimeToGainLockonStack": 0.01,
+        "TimeToLoseLockonStack": 0.3,
+        "Upgrades": [
+          {
+            "Damage": 1.9
+          },
+          {
+            "AbilityCooldown": -45
+          },
+          {
+            "CurrentHealthPercent": 0.5
+          }
+        ],
+        "VerticalDrag": 1
+      },
+      "card": {
+        "Key": "ability_vampirebat_batswarm",
+        "Name": "Nox Nostra",
+        "DescKey": "ability_vampirebat_batswarm_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "BatPerSecond",
+                "Name": "Bats per Second",
+                "Value": 30
+              },
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 4.6,
+                "Scale": {
+                  "Value": 0.094,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Hit:",
+                "Key": "DebuffDuration",
+                "Name": "Debuff Duration",
+                "StatusEffect": "Silence",
+                "Value": 1.25,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                }
+              },
+              {
+                "Title": "On Hit:",
+                "Key": "CurrentHealthPercent",
+                "Name": "Current Health",
+                "Value": 0,
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "BonusBatsPerProc",
+              "Name": "Additional Bats Per Love Bite",
+              "Value": 2,
+              "Type": "cast"
+            },
+            {
+              "Key": "BatCount",
+              "Name": "Total Bats Released",
+              "Value": 75,
+              "Type": "cast"
+            }
+          ],
+          "DescKey": "ability_vampirebat_batswarm_desc"
+        },
+        "Upgrades": [
+          {
+            "Damage": 1.9
+          },
+          {
+            "AbilityCooldown": -45
+          },
+          {
+            "CurrentHealthPercent": 0.5,
+            "DescKey": "ability_vampirebat_batswarm_t3_desc"
+          }
+        ],
+        "Cooldown": {
+          "TimeToGainLockonStack": {
+            "Name": null,
+            "Value": 0.01,
+            "Type": "cooldown"
+          }
+        },
+        "Range": {
+          "LockonConeAngle": {
+            "Name": null,
+            "Value": 40,
+            "Type": "distance"
+          }
+        },
+        "Cast": {
+          "BonusBatsMax": {
+            "Name": "Max Additional Bats",
+            "Value": 50,
+            "Type": "cast"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 12
+          },
+          "AirDrag": {
+            "Name": null,
+            "Value": 12
+          },
+          "BatCountPerWave": {
+            "Name": null,
+            "Value": 1
+          },
+          "BatEffectiveness": {
+            "Name": null,
+            "Value": 0.2
+          },
+          "BatSpawnRadius": {
+            "Name": null,
+            "Value": 1.5
+          },
+          "BatSpawnRandomAngle": {
+            "Name": null,
+            "Value": 0.15
+          },
+          "BatSpawnRandomVelocity": {
+            "Name": null,
+            "Value": 300
+          },
+          "CurrentHealthDamageCapToBosses": {
+            "Name": null,
+            "Value": 20
+          },
+          "FallSpeedMax": {
+            "Name": null,
+            "Value": 1
+          },
+          "GroundAccelerationPercentage": {
+            "Name": null,
+            "Value": -80
+          },
+          "GroundFrictioNpercentage": {
+            "Name": null,
+            "Value": -80
+          },
+          "JumpCeilingCheckDistance": {
+            "Name": null,
+            "Value": 11
+          },
+          "JumpPitch": {
+            "Name": null,
+            "Value": -60
+          },
+          "JumpSpeed": {
+            "Name": null,
+            "Value": 17
+          },
+          "MaxBatTargets": {
+            "Name": null,
+            "Value": 2
+          },
+          "MaxLockonStacks": {
+            "Name": null,
+            "Value": 1
+          },
+          "NotInConeLosesLock": {
+            "Name": null,
+            "Value": 1
+          },
+          "StacksCanDecay": {
+            "Name": null,
+            "Value": 1
+          },
+          "TargetingConeAngle": {
+            "Name": "Attack Angle",
+            "Value": 20
+          },
+          "TimeToLoseLockonStack": {
+            "Name": null,
+            "Value": 0.3
+          },
+          "VerticalDrag": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.5,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 40,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 150,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_vampirebat_batswarm_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"diminish\">Active:</span> Unleash a cloud of bats that seek out targets, each dealing {g:citadel_inline_attribute:'SpiritDamage'} and applying {g:citadel_inline_attribute:'Silence'}.<br><br><span class=\"diminish\">Passive:</span> Triggering Love Bites against heroes permanently increases the <span class=\"highlight\">number of bats</span> released.",
+          "plain_text": "Active: Unleash a cloud of bats that seek out targets, each dealing spirit damage and applying Silence.\nPassive: Triggering Love Bites against heroes permanently increases the number of bats released."
+        },
+        {
+          "localization_key": "ability_vampirebat_batswarm_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "On Hit: Deal <span class=\"highlight\">+0.5%</span> Current Health as Damage",
+          "plain_text": "On Hit: Deal +0.5% Current Health as Damage"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.43,
+    "AirDashSpeed": 18.6,
+    "BaseHealthRegen": 2,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "DebuffResist": -8,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.62,
+    "GroundDashSpeed": 16.1,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": true,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.275,
+      "MaxHealth": 27,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 1.0913,
+      "SustainedDPS": 0.69857
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_vampirebat_lore",
+    "MaxHealth": 660,
+    "MaxMoveSpeed": 6.5,
+    "MoveAcceleration": 4,
+    "Name": "Mina",
+    "Playstyle": "hero_vampirebat_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_vampirebat_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.6,
+    "Stamina": 2,
+    "StaminaCooldown": 4.2000042000042,
+    "StaminaRegenPerSecond": 0.238095,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Marksman",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

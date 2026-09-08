@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "npc.large-neutral",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-04",
+  "evidence_status": "source_verified",
+  "sources": [
+    "deadlock-api.npc-units.client-6684.source-10933105",
+    "github.deadlock-data.npcs.311b2e8d895e",
+    "wiki.neutral.125766"
+  ],
+  "identity": {
+    "name": "Large Neutral",
+    "aliases": [
+      "large denizen",
+      "large jungle creep"
+    ],
+    "internal_class": "neutral_trooper_strong",
+    "numeric_id": 3392417854
+  },
+  "classification": {
+    "kind": "neutral_unit",
+    "mode": "standard"
+  },
+  "units": {
+    "distance": "meters",
+    "time": "seconds",
+    "speed": "meters_per_second",
+    "percentage": "percentage_points"
+  },
+  "field_sources": {
+    "numeric_id": "deadlock-api.npc-units.client-6684.source-10933105:neutral_trooper_strong.id",
+    "gameplay_values": "github.deadlock-data.npcs.311b2e8d895e:neutral_trooper_strong",
+    "behavior_context": "wiki.neutral.125766"
+  },
+  "tier": "large",
+  "camp": {
+    "initial_spawn": 480,
+    "respawn_after_full_clear": 335,
+    "standard_unit_count": null
+  },
+  "combat": {
+    "base_max_health": 1133,
+    "bullet_resistance_percent": 60.0,
+    "spirit_resistance_percent": 55.0,
+    "health_growth_fraction_per_minute": 0.021,
+    "damage_growth_percent_per_minute": 0.5,
+    "melee_resistance_percent": 20.0,
+    "melee_resistance_evidence_status": "needs_primary_verification"
+  },
+  "ranged_attack": {
+    "bullet_damage": 9.1,
+    "rounds_per_second": 2.0,
+    "damage_per_second": 18.2,
+    "range": 38.1,
+    "damage_type": "weapon"
+  },
+  "weak_points": {
+    "count": 3,
+    "respawn_time": 3.0,
+    "type": "ENWP_Strong"
+  },
+  "reward": {
+    "base_unsecured_souls": 181,
+    "growth_percent_of_base_per_minute": 1.08,
+    "releases_soul_orbs": false
+  },
+  "economy_ref": "data.general.economy:bounties[entity=neutral.large]"
+}

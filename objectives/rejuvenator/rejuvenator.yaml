@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "objective.rejuvenator",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-04",
+  "evidence_status": "source_verified",
+  "sources": [
+    "github.deadlock-data.gameplay.311b2e8d895e",
+    "wiki.rejuvenator.125036",
+    "wiki.mid-boss.107274"
+  ],
+  "identity": {
+    "name": "Rejuvenator",
+    "aliases": ["Rejuvenator crystal", "Rejuvenation Credit", "Rejuv"]
+  },
+  "classification": {
+    "kind": "claimable_team_buff",
+    "mode": "standard",
+    "created_by": "npc.mid-boss"
+  },
+  "spawn": {
+    "trigger": "npc.mid-boss defeated",
+    "descent_duration": 6,
+    "claimable_during_descent": false
+  },
+  "claim": {
+    "method": "heavy_melee",
+    "credits_per_successful_hit": 1,
+    "maximum_team_credits_per_crystal": 3,
+    "either_team_may_claim": true,
+    "first_successful_claim_heals_claiming_hero_to_full": true
+  },
+  "team_buff": {
+    "duration": 180,
+    "expiration_warning_at_remaining_seconds": 30,
+    "removed_when_all_credits_consumed": true,
+    "one_credit_consumed_per_reviving_hero": true,
+    "each_hero_can_consume_at_most_one_credit_from_the_buff": true
+  },
+  "revive": {
+    "delay": 3,
+    "health_percent": 100,
+    "location": "death_location_or_ground_below_if_airborne"
+  },
+  "death_interactions": {
+    "credit_death_grants_killer_souls": false,
+    "credit_death_appears_as_kill_in_hud": false,
+    "credit_death_triggers_on_hero_kill_effects": true,
+    "hero_counts_as_dead_during_revive_delay": true,
+    "hero_contests_unstable_rift_during_revive_delay": false,
+    "hero_provides_ally_presence_effects_during_revive_delay": false
+  },
+  "units": {
+    "time": "seconds",
+    "percentage": "percentage_points"
+  }
+}

@@ -1,0 +1,1446 @@
+{
+  "schema_version": 2,
+  "id": "hero.viscous",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.viscous.124936",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Viscous",
+  "aliases": [],
+  "internal_hero_key": "hero_viscous",
+  "hero_type": "Mystic",
+  "role_localization_key": "hero_viscous_role",
+  "playstyle_localization_key": "hero_viscous_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 780,
+    "health_regeneration_per_second": 2,
+    "light_melee_damage": 63,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 7.2,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 14.7,
+      "distance_meters": 10,
+      "duration_seconds": 0.68
+    },
+    "air_dash": {
+      "speed_meters_per_second": 17,
+      "distance_meters": 8,
+      "duration_seconds": 0.47
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.36,
+    "BulletDamageAltFire": 1.6,
+    "MaxHealth": 45,
+    "PowerIncreases": 1,
+    "TechPower": 1.3,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 2.9092,
+    "DPS": 1.7143,
+    "SustainedDPS": 1.0746
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 254,
+    "BulletDamage": 10.34,
+    "RoundsPerSecond": 4.7619,
+    "ClipSize": 20,
+    "ReloadTime": 2.5,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 57.51,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0,
+    "BulletRadius": 0.2032,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "ExplosionDamageScaleAtMaxRadius": 0.3,
+    "DPS": 49.238,
+    "SustainedDPS": 30.866,
+    "NameKey": "citadel_weapon_hero_viscous_set",
+    "DescKey": "citadel_weapon_hero_viscous_set_desc",
+    "AltFire": {
+      "BulletSpeed": 38.1,
+      "BulletDamage": 42,
+      "RoundsPerSecond": 0.79365,
+      "ClipSize": 10,
+      "ReloadTime": 2.1,
+      "ReloadMovespeed": 1,
+      "ReloadDelay": 0,
+      "ReloadSingle": false,
+      "FalloffStartRange": 19.99,
+      "FalloffEndRange": 57.51,
+      "FalloffStartScale": 1,
+      "FalloffEndScale": 0.1,
+      "FalloffBias": 0.5,
+      "BulletGravityScale": 0.2,
+      "BulletRadius": 0.508,
+      "BulletsPerShot": 1,
+      "BulletsPerBurst": 1,
+      "BurstInterShotInterval": 0,
+      "ShootMoveSpeed": 0.75,
+      "HitOnceAcrossAllBullets": false,
+      "CanCrit": false,
+      "AmmoConsumedPerShot": 5,
+      "ExplosionRadius": 3.556,
+      "ExplosionDamageScaleAtMaxRadius": 0.5,
+      "DPS": 33.333,
+      "SustainedDPS": 28.571,
+      "NameKey": "citadel_weapon_viscous_set_2",
+      "DescKey": "citadel_weapon_viscous_set_2_desc"
+    },
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_MediumRange",
+      "Attribute_EWeaponAttribute_Projectile"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Splatter",
+      "internal_key": "viscous_goo_grenade",
+      "data": {
+        "AbilityCastDelay": 0.001,
+        "AbilityCooldown": {
+          "Value": 26,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityPostCastDuration": 0.2,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 55,
+          "Scale": {
+            "Value": 0.7,
+            "Type": "spirit"
+          }
+        },
+        "DetonateCooldown": 0.15,
+        "FourthHitDamagePercentage": 0.26,
+        "GooGrenadeImpactModifier": {
+          "Class": "ViscousGooGrenadeDebuff",
+          "Subclass": "ViscousGooGrenadeDebuff"
+        },
+        "GooGrenadePuddleAuraFriendlyModifier": {
+          "Class": "BaseAura",
+          "Subclass": "GooGrenadeFriendlyAura",
+          "AuraRadius": -1,
+          "ProvidedByAura": {
+            "Class": "Base",
+            "Subclass": "GooPuddleSlideModifier"
+          }
+        },
+        "GooGrenadePuddleAuraModifier": {
+          "Class": "ViscousGooAura",
+          "Subclass": "GooGrenadePuddleAura",
+          "ProvidedByAura": {
+            "Class": "SlowBase",
+            "Subclass": "PuddleSlow"
+          },
+          "AuraRadius": -1
+        },
+        "IsDisabled": false,
+        "Key": "viscous_goo_grenade",
+        "MaxBounces": 2,
+        "Name": "Splatter",
+        "PuddleDuration": {
+          "Value": 10,
+          "Scale": {
+            "Value": 1.1,
+            "Type": "duration"
+          }
+        },
+        "PuddleSlideBuff": 60,
+        "Radius": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "SecondHitDamagePercentage": 0.5,
+        "SlowPercent": 35,
+        "ThirdHitDamagePercentage": 0.38,
+        "Upgrades": [
+          {
+            "Damage": 36,
+            "Radius": 2
+          },
+          {
+            "AbilityCooldown": -14
+          },
+          {
+            "MaxBounces": 1,
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.9,
+                "Type": "spirit"
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "viscous_goo_grenade",
+        "Name": "Splatter",
+        "DescKey": "viscous_goo_grenade_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 55,
+                "Scale": {
+                  "Value": 0.7,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "MaxBounces",
+                "Name": "Bounces",
+                "Value": 2
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "viscous_goo_grenade_desc"
+        },
+        "Info2": {
+          "Main": {},
+          "Alt": [],
+          "RequiresUpgradeIndex": 2,
+          "DescKey": "viscous_goo_grenade_bounce_desc"
+        },
+        "Info3": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 35,
+                "Type": "slow"
+              },
+              {
+                "Key": "PuddleDuration",
+                "Name": "Puddle Duration",
+                "Value": 10,
+                "Scale": {
+                  "Value": 1.1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "viscous_goo_grenade_puddle_desc"
+        },
+        "Upgrades": [
+          {
+            "Damage": 36,
+            "Radius": 2,
+            "DescKey": "viscous_goo_grenade_t1_desc"
+          },
+          {
+            "AbilityCooldown": -14
+          },
+          {
+            "MaxBounces": 1,
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.9,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "viscous_goo_grenade_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.2
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "DetonateCooldown": {
+            "Name": null,
+            "Value": 0.15
+          },
+          "FourthHitDamagePercentage": {
+            "Name": null,
+            "Value": 0.26
+          },
+          "PuddleSlideBuff": {
+            "Name": null,
+            "Value": 60
+          },
+          "SecondHitDamagePercentage": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "ThirdHitDamagePercentage": {
+            "Name": null,
+            "Value": 0.38
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.001,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 26,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "viscous_goo_grenade_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Throw a ball of goo that <span class=\"highlight\">deals damage</span> and leaves puddles of goo behind that apply <span class=\"highlight\">movement slow</span> to enemies in the radius.",
+          "plain_text": "Throw a ball of goo that deals damage and leaves puddles of goo behind that apply movement slow to enemies in the radius."
+        },
+        {
+          "localization_key": "viscous_goo_grenade_bounce_desc",
+          "card_paths": [
+            "card.Info2.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Multiple hits to the same target deal less damage.",
+          "plain_text": "Multiple hits to the same target deal less damage."
+        },
+        {
+          "localization_key": "viscous_goo_grenade_puddle_desc",
+          "card_paths": [
+            "card.Info3.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Goo puddles linger on the ground and apply a <span class=\"highlight\">movement slow</span> to enemies walking on them. <br><br><span class=\"diminish\">You and your allies slide faster on goo puddles.</span>",
+          "plain_text": "Goo puddles linger on the ground and apply a movement slow to enemies walking on them.\nYou and your allies slide faster on goo puddles."
+        },
+        {
+          "localization_key": "viscous_goo_grenade_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+36 Damage and +2m Radius",
+          "plain_text": "+36 Damage and +2m Radius"
+        },
+        {
+          "localization_key": "viscous_goo_grenade_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Bounces 1 times and improves Spirit Scaling",
+          "plain_text": "Bounces 1 times and improves Spirit Scaling"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "The Cube",
+      "internal_key": "viscous_restorative_goo",
+      "data": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCastRange": {
+          "Value": 26,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 42,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorEqualUnitTargetPriority",
+          "BehaviorAllowSelfCast",
+          "BehaviorCanHealPlayers",
+          "BehaviorUseInstantCastUnitTargetUi",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BonusHealthRegen": {
+          "Value": 40,
+          "Scale": {
+            "Value": 0.3,
+            "Type": "spirit"
+          }
+        },
+        "BreakoutTime": 1,
+        "BulletForce": 600,
+        "ChannelMoveSpeed": -1,
+        "CubeScale": 1.5,
+        "Friction": -80,
+        "HeavyMeleeForce": 700,
+        "IsDisabled": false,
+        "Key": "viscous_restorative_goo",
+        "LightMeleeForce": 300,
+        "Name": "The Cube",
+        "PostCubeBuffDuration": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "PushBackForce": 250,
+        "PushBackRadius": 50,
+        "RestorativeGooModifier": {
+          "Class": "RestorativeGoo",
+          "Subclass": "RestorativeGoo",
+          "DistanceCameraOffset": 450,
+          "DistanceCameraOffsetLerpTime": 0.5,
+          "DistanceCameraOffsetBias": 0.75,
+          "BreakoutProgressBarModifier": {
+            "Class": "Base",
+            "Subclass": "Breakoutprogress"
+          },
+          "PostCubeBuffModifier": {
+            "Class": "Base",
+            "Subclass": "CubePostSpeedBuff"
+          }
+        },
+        "SelfCubeModelSwapModifier": {
+          "Class": "Base",
+          "Subclass": "ViscousSelfCubeModelSwap",
+          "EnabledStateMask": [
+            "DoNotDrawModel"
+          ]
+        },
+        "SlideForce": 70,
+        "Upgrades": [
+          {
+            "BonusMoveSpeed": 2.5,
+            "StaminaCooldownReduction": 30,
+            "PostCubeBuff": 1
+          },
+          {
+            "BonusHealthRegen": 25,
+            "AbilityDuration": 1
+          },
+          {
+            "AbilityCooldown": -20,
+            "PurgeDebuffs": 1
+          }
+        ]
+      },
+      "card": {
+        "Key": "viscous_restorative_goo",
+        "Name": "The Cube",
+        "DescKey": "viscous_restorative_goo_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "BonusHealthRegen",
+                "Name": "Health Regen",
+                "Value": 40,
+                "Scale": {
+                  "Value": 0.3,
+                  "Type": "spirit"
+                },
+                "Type": "healing"
+              },
+              {
+                "Key": "AbilityDuration",
+                "Name": "Duration",
+                "Value": 3,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "viscous_restorative_goo_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "BonusMoveSpeed",
+                "Name": "Move Speed",
+                "Value": 0
+              },
+              {
+                "Key": "StaminaCooldownReduction",
+                "Name": "Stamina Recovery",
+                "Value": 0
+              },
+              {
+                "Key": "PostCubeBuffDuration",
+                "Name": "Buff Duration",
+                "Value": 8,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                }
+              }
+            ]
+          },
+          "Alt": [],
+          "RequiresUpgradeIndex": 0,
+          "DescKey": "viscous_restorative_goo_buff_desc"
+        },
+        "Upgrades": [
+          {
+            "BonusMoveSpeed": 2.5,
+            "StaminaCooldownReduction": 30,
+            "PostCubeBuff": 1,
+            "DescKey": "viscous_restorative_goo_t1_desc"
+          },
+          {
+            "BonusHealthRegen": 25,
+            "AbilityDuration": 1,
+            "DescKey": "viscous_restorative_goo_t2_desc"
+          },
+          {
+            "AbilityCooldown": -20,
+            "PurgeDebuffs": 1,
+            "DescKey": "viscous_restorative_goo_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "BreakoutTime": {
+            "Name": null,
+            "Value": 1
+          },
+          "BulletForce": {
+            "Name": null,
+            "Value": 600
+          },
+          "CubeScale": {
+            "Name": null,
+            "Value": 1.5
+          },
+          "Friction": {
+            "Name": null,
+            "Value": -80
+          },
+          "HeavyMeleeForce": {
+            "Name": null,
+            "Value": 700
+          },
+          "LightMeleeForce": {
+            "Name": null,
+            "Value": 300
+          },
+          "PushBackForce": {
+            "Name": null,
+            "Value": 250
+          },
+          "PushBackRadius": {
+            "Name": null,
+            "Value": 50
+          },
+          "SlideForce": {
+            "Name": null,
+            "Value": 70
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.1,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 26,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 42,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "viscous_restorative_goo_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Encase the target in a cube of restorative goo that <span class=\"highlight\">protects from damage, and increases health regen</span>. Target is <span class=\"highlight\">unable to take any new actions</span> while cubed. Can be used on self. Press <span class=\"highlight\">{g:citadel_binding:'Mantle'}</span> to escape early.",
+          "plain_text": "Encase the target in a cube of restorative goo that protects from damage, and increases health regen. Target is unable to take any new actions while cubed. Can be used on self. Press [Mantle] to escape early."
+        },
+        {
+          "localization_key": "viscous_restorative_goo_buff_desc",
+          "card_paths": [
+            "card.Info2.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "After exiting the cube, the target has increased <span class=\"highlight\">move speed and stamina recovery</span> for a short duration.",
+          "plain_text": "After exiting the cube, the target has increased move speed and stamina recovery for a short duration."
+        },
+        {
+          "localization_key": "viscous_restorative_goo_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Increases Move Speed and Stamina Recovery",
+          "plain_text": "Increases Move Speed and Stamina Recovery"
+        },
+        {
+          "localization_key": "viscous_restorative_goo_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+25 Health Regen and +1s Duration",
+          "plain_text": "+25 Health Regen and +1s Duration"
+        },
+        {
+          "localization_key": "viscous_restorative_goo_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">Removes all non-ult Debuffs</span> and <span class=\"highlight\">-20s</span> Cooldown",
+          "plain_text": "Removes all non-ult Debuffs and -20s Cooldown"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Puddle Punch",
+      "internal_key": "viscous_telepunch",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 40,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCharges": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 21,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 1.7,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 20,
+          "Scale": {
+            "Value": 0.6,
+            "Type": "melee"
+          }
+        },
+        "DamageHeavyMelee": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0,
+            "Type": "heavy_melee"
+          }
+        },
+        "FriendlyImpactDuration": 2,
+        "FriendlyImpactModifier": {
+          "Class": "Base",
+          "Subclass": "FriendlyPunchAirControl"
+        },
+        "ImpactDuration": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "ImpactModifier": {
+          "Class": "SlowBase",
+          "Subclass": "ViscousTelepunchMovementSlow"
+        },
+        "IsDisabled": false,
+        "Key": "viscous_telepunch",
+        "Name": "Puddle Punch",
+        "PunchFriendlyAirControl": 30,
+        "PunchHalfHeight": 5.5,
+        "PunchRollSlow": -40,
+        "PunchRollSlowDuration": 1,
+        "PunchRollSlowModifier": {
+          "Class": "Base",
+          "Subclass": "ViscousPunchRollSlow"
+        },
+        "Radius": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "SlowPercent": 30,
+        "TossDuration": 0.6,
+        "TossGroundSideRatio": 0.7,
+        "TossSpeed": 625,
+        "TossSpeedUpWall": 500,
+        "TossSpeedWall": 750,
+        "Upgrades": [
+          {
+            "AbilityCharges": 1,
+            "Damage": 20
+          },
+          {
+            "Radius": 1.5,
+            "LifeStealPercentOnHit": 60
+          },
+          {
+            "AbilityCooldown": -14,
+            "UseHeavyMelee": 1,
+            "DamageHeavyMelee": {
+              "Value": 40,
+              "Scale": {
+                "Value": 0.6,
+                "Type": "heavy_melee"
+              }
+            },
+            "Damage": {
+              "Value": -40,
+              "Scale": {
+                "Value": 0,
+                "Type": "melee",
+                "Multiply": true
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "viscous_telepunch",
+        "Name": "Puddle Punch",
+        "DescKey": "viscous_telepunch_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 20,
+                "Scale": {
+                  "Value": 0.6,
+                  "Type": "melee"
+                },
+                "Type": "melee_damage"
+              },
+              {
+                "Key": "DamageHeavyMelee",
+                "Name": "Damage",
+                "Value": 0,
+                "Scale": {
+                  "Value": 0,
+                  "Type": "heavy_melee"
+                },
+                "Type": "melee_damage"
+              },
+              {
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 30,
+                "Type": "slow"
+              },
+              {
+                "Key": "TossDuration",
+                "Name": "Duration",
+                "StatusEffect": "Displacement",
+                "Value": 0.6
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "ImpactDuration",
+              "Name": "Slow Duration",
+              "Value": 3,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              }
+            },
+            {
+              "Key": "LifeStealPercentOnHit",
+              "Value": 0,
+              "Type": "healing"
+            }
+          ],
+          "DescKey": "viscous_telepunch_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCharges": 1,
+            "Damage": 20,
+            "DescKey": "viscous_telepunch_t1_desc"
+          },
+          {
+            "Radius": 1.5,
+            "LifeStealPercentOnHit": 60,
+            "DescKey": "viscous_telepunch_t2_desc"
+          },
+          {
+            "AbilityCooldown": -14,
+            "UseHeavyMelee": 1,
+            "DamageHeavyMelee": {
+              "Value": 40,
+              "Scale": {
+                "Value": 0.6,
+                "Type": "heavy_melee"
+              }
+            },
+            "Damage": {
+              "Value": -40,
+              "Scale": {
+                "Value": 0,
+                "Type": "melee",
+                "Multiply": true
+              }
+            },
+            "DescKey": "viscous_telepunch_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "FriendlyImpactDuration": {
+            "Name": null,
+            "Value": 2
+          },
+          "PunchFriendlyAirControl": {
+            "Name": null,
+            "Value": 30
+          },
+          "PunchHalfHeight": {
+            "Name": null,
+            "Value": 5.5
+          },
+          "PunchRollSlow": {
+            "Name": null,
+            "Value": -40
+          },
+          "PunchRollSlowDuration": {
+            "Name": null,
+            "Value": 1
+          },
+          "TossGroundSideRatio": {
+            "Name": null,
+            "Value": 0.7
+          },
+          "TossSpeed": {
+            "Name": null,
+            "Value": 625
+          },
+          "TossSpeedUpWall": {
+            "Name": null,
+            "Value": 500
+          },
+          "TossSpeedWall": {
+            "Name": null,
+            "Value": 750
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 40,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 21,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 1.7,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "viscous_telepunch_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Materialize a fist in the world that punches everyone in the area, applying {g:citadel_inline_attribute:'KnockUp'}. <br><br>Punching an enemy deals {g:citadel_inline_attribute:'MeleeDamage'} and applies {g:citadel_inline_attribute:'Slow'}.<br><br><span class=\"diminish\">You and your allies have increased Air Control.</span>",
+          "plain_text": "Materialize a fist in the world that punches everyone in the area, applying knockup.\nPunching an enemy deals melee damage and applies slow.\nYou and your allies have increased Air Control."
+        },
+        {
+          "localization_key": "viscous_telepunch_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+1 Charge and +20 Damage",
+          "plain_text": "+1 Charge and +20 Damage"
+        },
+        {
+          "localization_key": "viscous_telepunch_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+1.5m Radius and +60% Lifesteal",
+          "plain_text": "+1.5m Radius and +60% Lifesteal"
+        },
+        {
+          "localization_key": "viscous_telepunch_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "-14s Cooldown and now deals <span class=\"highlight\">Heavy Melee Damage</span>",
+          "plain_text": "-14s Cooldown and now deals Heavy Melee Damage"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Goo Ball",
+      "internal_key": "viscous_goo_bowling_ball",
+      "data": {
+        "AbilityCastDelay": 0.55,
+        "AbilityCooldown": {
+          "Value": 150,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityDuration": {
+          "Value": 11,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AccelerationPercentage": -60,
+        "AirJumpForce": 500,
+        "BallHitRadius": {
+          "Value": 1.8,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "BallOffset": 50,
+        "BallRadius": {
+          "Value": 1.4,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCannotCancelDuringChannel",
+          "BehaviorTriggerCancelMashProtectionOnCast",
+          "BehaviorDeactivateCrouchToggleOnCast",
+          "BehaviorRequireAbilityButtonToCancel",
+          "BehaviorInhibitSoftCameraCollision"
+        ],
+        "BreakablePropDamageRadius": 75,
+        "BulletResist": 35,
+        "CastWhileRolling": 1,
+        "ChannelMoveSpeed": 7,
+        "Damage": {
+          "Value": 110,
+          "Scale": {
+            "Value": 1,
+            "Type": "spirit"
+          }
+        },
+        "DamagePreventionModifier": {
+          "Class": "Base",
+          "Subclass": "ViscousBallDamagePrevention",
+          "Duration": 1.2
+        },
+        "FrictionPercentage": -85,
+        "IsDisabled": false,
+        "JumpForce": 500,
+        "Key": "viscous_goo_bowling_ball",
+        "KnockForce": 400,
+        "MoveSpeedMax": 7,
+        "Name": "Goo Ball",
+        "ParticleRadiusMultiplier": 1.2,
+        "RollingModifier": {
+          "Class": "ViscousBall",
+          "Subclass": "ViscousRollingResist"
+        },
+        "StunDuration": {
+          "Value": 0.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "TechResist": 35,
+        "TickRate": 0.25,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -25
+          },
+          {
+            "Damage": 70,
+            "BulletResist": 20,
+            "TechResist": 20
+          },
+          {
+            "AbilityDuration": 7,
+            "StunDuration": 0.3
+          }
+        ]
+      },
+      "card": {
+        "Key": "viscous_goo_bowling_ball",
+        "Name": "Goo Ball",
+        "DescKey": "viscous_goo_bowling_ball_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 110,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "StunDuration",
+                "Name": "Stun Duration",
+                "Value": 0.5,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                }
+              },
+              {
+                "Key": "BallRadius",
+                "Name": "Ball Radius",
+                "Value": 1.4,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "radius"
+                },
+                "Type": "radius"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "TechResist",
+              "Name": "Spirit Resist",
+              "Value": 35
+            },
+            {
+              "Key": "BulletResist",
+              "Name": "Bullet Resist",
+              "Value": 35
+            }
+          ],
+          "DescKey": "viscous_goo_bowling_ball_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -25
+          },
+          {
+            "Damage": 70,
+            "BulletResist": 20,
+            "TechResist": 20,
+            "DescKey": "viscous_goo_bowling_ball_t2_desc"
+          },
+          {
+            "AbilityDuration": 7,
+            "StunDuration": 0.3,
+            "DescKey": "viscous_goo_bowling_ball_t3_desc"
+          }
+        ],
+        "Range": {
+          "BallHitRadius": {
+            "Name": null,
+            "Value": 1.8,
+            "Scale": {
+              "Value": 1,
+              "Type": "radius"
+            },
+            "Type": "radius"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 7,
+            "Type": "move_speed"
+          },
+          "MoveSpeedMax": {
+            "Name": "Move Speed",
+            "Value": 7,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AccelerationPercentage": {
+            "Name": null,
+            "Value": -60
+          },
+          "AirJumpForce": {
+            "Name": null,
+            "Value": 500
+          },
+          "BallOffset": {
+            "Name": null,
+            "Value": 50
+          },
+          "BreakablePropDamageRadius": {
+            "Name": null,
+            "Value": 75
+          },
+          "CastWhileRolling": {
+            "Name": null,
+            "Value": 1
+          },
+          "FrictionPercentage": {
+            "Name": null,
+            "Value": -85
+          },
+          "JumpForce": {
+            "Name": null,
+            "Value": 500
+          },
+          "KnockForce": {
+            "Name": null,
+            "Value": 400
+          },
+          "ParticleRadiusMultiplier": {
+            "Name": null,
+            "Value": 1.2
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.25
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.55,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 150,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 11,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "viscous_goo_bowling_ball_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Morph into a large goo ball that <span class=\"highlight\">deals damage</span> and <span class=\"highlight\">stuns</span> enemies on impact. The ball grants large amounts of <span class=\"highlight\">Bullet</span> and <span class=\"highlight\">Spirit</span> resist, bounces off walls and can <span class=\"highlight\">double jump</span>.",
+          "plain_text": "Morph into a large goo ball that deals damage and stuns enemies on impact. The ball grants large amounts of Bullet and Spirit resist, bounces off walls and can double jump."
+        },
+        {
+          "localization_key": "viscous_goo_bowling_ball_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+70 Damage and +20% Resists",
+          "plain_text": "+70 Damage and +20% Resists"
+        },
+        {
+          "localization_key": "viscous_goo_bowling_ball_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+7s Duration and +0.3s\t Stun Duration",
+          "plain_text": "+7s Duration and +0.3s Stun Duration"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.47,
+    "AirDashSpeed": 17,
+    "BaseHealthRegen": 2,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.68,
+    "GroundDashSpeed": 14.7,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.36,
+      "BulletDamageAltFire": 1.6,
+      "MaxHealth": 45,
+      "PowerIncreases": 1,
+      "TechPower": 1.3,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 2.9092,
+      "DPS": 1.7143,
+      "SustainedDPS": 1.0746
+    },
+    "LightMeleeDamage": 63,
+    "Lore": "hero_viscous_lore",
+    "MaxHealth": 780,
+    "MaxMoveSpeed": 7.2,
+    "MoveAcceleration": 4,
+    "Name": "Viscous",
+    "Playstyle": "hero_viscous_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_viscous_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.6,
+    "Stamina": 3,
+    "StaminaCooldown": 4.5000045000045,
+    "StaminaRegenPerSecond": 0.222222,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Mystic",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}

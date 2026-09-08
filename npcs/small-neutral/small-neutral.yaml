@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "npc.small-neutral",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-04",
+  "evidence_status": "source_verified",
+  "sources": [
+    "deadlock-api.npc-units.client-6684.source-10933105",
+    "github.deadlock-data.npcs.311b2e8d895e",
+    "wiki.neutral.125766"
+  ],
+  "identity": {
+    "name": "Small Neutral",
+    "aliases": [
+      "small denizen",
+      "small jungle creep"
+    ],
+    "internal_class": "neutral_trooper_weak",
+    "numeric_id": 1250952856
+  },
+  "classification": {
+    "kind": "neutral_unit",
+    "mode": "standard"
+  },
+  "units": {
+    "distance": "meters",
+    "time": "seconds",
+    "speed": "meters_per_second",
+    "percentage": "percentage_points"
+  },
+  "field_sources": {
+    "numeric_id": "deadlock-api.npc-units.client-6684.source-10933105:neutral_trooper_weak.id",
+    "gameplay_values": "github.deadlock-data.npcs.311b2e8d895e:neutral_trooper_weak",
+    "behavior_context": "wiki.neutral.125766"
+  },
+  "tier": "small",
+  "camp": {
+    "initial_spawn": 120,
+    "respawn_after_full_clear": 85,
+    "standard_unit_count": 3
+  },
+  "combat": {
+    "base_max_health": 129,
+    "bullet_resistance_percent": 50.0,
+    "spirit_resistance_percent": 45.0,
+    "health_growth_fraction_per_minute": 0.021,
+    "damage_growth_percent_per_minute": 0.5
+  },
+  "ranged_attack": {
+    "bullet_damage": 2.415,
+    "rounds_per_second": 2.0,
+    "damage_per_second": 4.83,
+    "range": 38.1,
+    "damage_type": "weapon"
+  },
+  "weak_points": {
+    "count": 1,
+    "respawn_time": 6.0,
+    "type": "ENWP_Weak"
+  },
+  "reward": {
+    "base_unsecured_souls": 41,
+    "growth_percent_of_base_per_minute": 1.08,
+    "releases_soul_orbs": false
+  },
+  "economy_ref": "data.general.economy:bounties[entity=neutral.small]"
+}

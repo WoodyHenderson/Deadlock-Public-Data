@@ -1,0 +1,683 @@
+{
+  "schema_version": 1,
+  "id": "item.arctic-blast",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "client_version": 6684,
+  "server_version": 6684,
+  "source_revision": 10933105,
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "source_priority": [
+    "deadlock-api.items.client-6684.source-10933105",
+    "github.deadlock-data.items.311b2e8d895e"
+  ],
+  "sources": {
+    "primary": "deadlock-api.items.client-6684.source-10933105",
+    "secondary": "github.deadlock-data.items.311b2e8d895e"
+  },
+  "identity": {
+    "name": "Arctic Blast",
+    "numeric_id": 3812615317,
+    "internal_key": "upgrade_arctic_blast",
+    "aliases": [
+      "upgrade_arctic_blast"
+    ]
+  },
+  "availability": {
+    "shopable": true,
+    "disabled": false,
+    "street_brawl": false
+  },
+  "classification": {
+    "type": "upgrade",
+    "slot": "spirit",
+    "tier": 4,
+    "activation": "instant_cast",
+    "is_active_item": true,
+    "is_imbue": false,
+    "shop_filters": [
+      "MagicDamage",
+      "Disruption",
+      "Durability"
+    ],
+    "target_types": [
+      "AllEnemy"
+    ]
+  },
+  "purchase": {
+    "cost_souls": 6400,
+    "component_internal_keys": [
+      "upgrade_cold_front"
+    ]
+  },
+  "description_plain": "Release an expanding ice blast that deals spirit damage, Freezing and then Slowing targets it hits. Slowed targets have their stamina regen frozen",
+  "displayed_effects": [
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "TechResist",
+      "label": "Spirit Resist",
+      "value": "10%",
+      "property": {
+        "value": "10",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RESIST",
+        "prefix": "{s:sign}",
+        "label": "Spirit Resist",
+        "postfix": "%",
+        "postvalue_label": "Spirit Resist",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "EndRadius",
+      "label": "End Radius",
+      "value": "16m",
+      "property": {
+        "value": "16m",
+        "css_class": "distance",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "EndRadius_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "End Radius",
+        "postfix": "m",
+        "postvalue_label": "End Radius",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "normal",
+      "key": "AbilityCooldown",
+      "label": "Cooldown",
+      "value": "24.0s",
+      "property": {
+        "value": 24.0,
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "Damage",
+      "label": "Damage",
+      "value": "175",
+      "property": {
+        "value": "175",
+        "css_class": "tech_damage",
+        "scale_function": {
+          "class_name": "scale_function_tech_damage",
+          "subclass_name": "Damage_scale_function",
+          "specific_stat_scale_type": "ETechPower",
+          "stat_scale": 0.6975
+        },
+        "label": "Damage",
+        "postvalue_label": "Damage",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    },
+    {
+      "section": "active",
+      "importance": "important",
+      "key": "FreezeDuration",
+      "label": "Freeze Duration",
+      "value": "1s",
+      "property": {
+        "value": "1",
+        "css_class": "duration",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "freeze_duration_scale_function"
+        },
+        "label": "Freeze Duration",
+        "postfix": "s",
+        "postvalue_label": "Freeze Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "property_upgrades": [
+        {
+          "name": "Damage",
+          "bonus": "150"
+        },
+        {
+          "name": "AbilityCooldown",
+          "bonus": "-12"
+        },
+        {
+          "name": "TechResist",
+          "bonus": "15"
+        },
+        {
+          "name": "FreezeDuration",
+          "bonus": "0.25"
+        }
+      ]
+    }
+  ],
+  "primary_api_record_sanitized": {
+    "id": 3812615317,
+    "class_name": "upgrade_arctic_blast",
+    "name": "Arctic Blast",
+    "start_trained": true,
+    "heroes": [],
+    "weapon_info": {},
+    "type": "upgrade",
+    "item_slot_type": "spirit",
+    "item_tier": 4,
+    "properties": {
+      "AbilityCooldown": {
+        "value": 24.0,
+        "can_set_token_override": true,
+        "css_class": "cooldown",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCooldown_scale_function",
+          "specific_stat_scale_type": "EItemCooldown"
+        },
+        "label": "Cooldown",
+        "postfix": "s",
+        "postvalue_label": "Cooldown",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "AbilityDuration": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "duration",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityDuration_scale_function",
+          "specific_stat_scale_type": "ETechDuration"
+        },
+        "label": "Duration",
+        "postfix": "s",
+        "postvalue_label": "Duration"
+      },
+      "AbilityCastRange": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "range",
+        "display_units": "EDisplayUnit_Meters",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "AbilityCastRange_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "Cast Range",
+        "postfix": "m",
+        "postvalue_label": "Cast Range"
+      },
+      "AbilityUnitTargetLimit": {
+        "value": "1",
+        "can_set_token_override": true
+      },
+      "AbilityCastDelay": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "label": "Cast Delay",
+        "postfix": "s",
+        "postvalue_label": "Cast Delay"
+      },
+      "AbilityChannelTime": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0",
+        "scale_function": {
+          "class_name": "scale_function_multi_stats",
+          "subclass_name": "scale_duration",
+          "scaling_stats": [
+            "EChannelDuration",
+            "ETechDuration"
+          ]
+        },
+        "label": "Channel Duration",
+        "postfix": "s",
+        "postvalue_label": "Channel Duration"
+      },
+      "AbilityPostCastDuration": {
+        "value": "0",
+        "disable_value": "0"
+      },
+      "AbilityCharges": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "-1",
+        "scale_function": {
+          "class_name": "scale_function_ability_charges",
+          "subclass_name": "AbilityCharges_scale_function"
+        },
+        "label": "Charges",
+        "postvalue_label": "Charges"
+      },
+      "AbilityCooldownBetweenCharge": {
+        "value": "-1.0",
+        "can_set_token_override": true,
+        "css_class": "charge_cooldown",
+        "disable_value": "-2",
+        "scale_function": {
+          "class_name": "scale_function_ability_recharge_time",
+          "subclass_name": "scale_function_ability_recharge_time"
+        },
+        "label": "Charge Delay",
+        "postfix": "s",
+        "postvalue_label": "Charge Delay"
+      },
+      "ChannelMoveSpeed": {
+        "value": "-1",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_INVALID",
+        "css_class": "move_speed",
+        "display_units": "EDisplayUnit_MetersPerSecond",
+        "postfix": "m"
+      },
+      "AbilityResourceCost": {
+        "value": "0",
+        "can_set_token_override": true,
+        "css_class": "cast",
+        "disable_value": "0"
+      },
+      "TechPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Spirit Power",
+        "postfix": "",
+        "postvalue_label": "Spirit Power"
+      },
+      "WeaponPower": {
+        "value": "0",
+        "can_set_token_override": true,
+        "provided_property_type": "MODIFIER_VALUE_WEAPON_POWER",
+        "disable_value": "0",
+        "prefix": "{s:sign}",
+        "label": "Weapon Damage",
+        "postfix": "%",
+        "postvalue_label": "Weapon Damage"
+      },
+      "SpreadDuration": {
+        "value": "0.6",
+        "css_class": "duration",
+        "postfix": "s"
+      },
+      "StartRadius": {
+        "value": "2m",
+        "css_class": "distance",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "StartRadius_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        }
+      },
+      "EndRadius": {
+        "value": "16m",
+        "css_class": "distance",
+        "scale_function": {
+          "class_name": "scale_function_single_stat",
+          "subclass_name": "EndRadius_scale_function",
+          "specific_stat_scale_type": "ETechRange"
+        },
+        "label": "End Radius",
+        "postfix": "m",
+        "postvalue_label": "End Radius",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "SlowPercent": {
+        "value": "60",
+        "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
+        "css_class": "slow",
+        "usage_flags": [
+          "ConditionallyApplied"
+        ],
+        "prefix": "-",
+        "label": "Move Speed",
+        "postfix": "%",
+        "postvalue_label": "Move Speed"
+      },
+      "SlowDuration": {
+        "value": "4",
+        "css_class": "duration",
+        "loc_token_override": "ArcticBlastSlowDuration",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "duration_scale_function"
+        },
+        "label": "Slow Duration",
+        "postfix": "s",
+        "postvalue_label": "Slow Duration"
+      },
+      "Damage": {
+        "value": "175",
+        "css_class": "tech_damage",
+        "scale_function": {
+          "class_name": "scale_function_tech_damage",
+          "subclass_name": "Damage_scale_function",
+          "specific_stat_scale_type": "ETechPower",
+          "stat_scale": 0.6975
+        },
+        "label": "Damage",
+        "postvalue_label": "Damage",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "DamageHeight": {
+        "value": "7m"
+      },
+      "NPCDamageMult": {
+        "value": "1",
+        "css_class": "tech_damage"
+      },
+      "TechResist": {
+        "value": "10",
+        "provided_property_type": "MODIFIER_VALUE_TECH_RESIST",
+        "prefix": "{s:sign}",
+        "label": "Spirit Resist",
+        "postfix": "%",
+        "postvalue_label": "Spirit Resist",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      },
+      "FreezeDuration": {
+        "value": "1",
+        "css_class": "duration",
+        "scale_function": {
+          "class_name": "scale_function_tech_duration",
+          "subclass_name": "freeze_duration_scale_function"
+        },
+        "label": "Freeze Duration",
+        "postfix": "s",
+        "postvalue_label": "Freeze Duration",
+        "tooltip_section": "active",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": true
+      },
+      "PercentDamage": {
+        "value": "0",
+        "css_class": "damage",
+        "loc_token_override": "ArcticBlastPercentDamage",
+        "label": "Frozen Bonus Damage",
+        "postfix": "%",
+        "postvalue_label": "Frozen Bonus Damage"
+      }
+    },
+    "description": {
+      "desc": "Release an expanding ice blast that deals \n<span class=\"inline-attribute-label SpiritDamage\">spirit damage</span>, <span class=\"highlight\">Freezing</span> and then <span class=\"highlight\">Slowing</span> targets it hits.<br><br>Slowed targets have their <span class=\"highlight\">stamina regen frozen</span>"
+    },
+    "activation": "instant_cast",
+    "component_items": [
+      "upgrade_cold_front"
+    ],
+    "tooltip_sections": [
+      {
+        "section_type": "innate",
+        "section_attributes": [
+          {
+            "properties": [
+              "TechResist"
+            ]
+          }
+        ]
+      },
+      {
+        "section_type": "active",
+        "section_attributes": [
+          {
+            "loc_string": "Release an expanding ice blast that deals \n<span class=\"inline-attribute-label SpiritDamage\">spirit damage</span>, <span class=\"highlight\">Freezing</span> and then <span class=\"highlight\">Slowing</span> targets it hits.<br><br>Slowed targets have their <span class=\"highlight\">stamina regen frozen</span>",
+            "properties": [
+              "EndRadius",
+              "AbilityCooldown"
+            ],
+            "important_properties": [
+              "Damage",
+              "FreezeDuration"
+            ]
+          }
+        ]
+      }
+    ],
+    "upgrades": [
+      {
+        "property_upgrades": [
+          {
+            "name": "Damage",
+            "bonus": "150"
+          },
+          {
+            "name": "AbilityCooldown",
+            "bonus": "-12"
+          },
+          {
+            "name": "TechResist",
+            "bonus": "15"
+          },
+          {
+            "name": "FreezeDuration",
+            "bonus": "0.25"
+          }
+        ]
+      }
+    ],
+    "is_active_item": true,
+    "shopable": true,
+    "cost": 6400
+  },
+  "secondary_deadlock_data_record": {
+    "Name": "Arctic Blast",
+    "Description": "Release an expanding ice blast that deals {g:citadel_inline_attribute:'SpiritDamage'}, <span class=\"highlight\">Freezing</span> and then <span class=\"highlight\">Slowing</span> targets it hits.<br><br>Slowed targets have their <span class=\"highlight\">stamina regen frozen</span>",
+    "Cost": 6400,
+    "Tier": 4,
+    "Activation": "InstantCast",
+    "Slot": "Tech",
+    "Components": [
+      "upgrade_cold_front"
+    ],
+    "TargetTypes": [
+      "AllEnemy"
+    ],
+    "ShopFilters": [
+      "MagicDamage",
+      "Disruption",
+      "Durability"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "AbilityCooldown": 24.0,
+    "AbilityUnitTargetLimit": 1,
+    "AbilityCooldownBetweenCharge": -1.0,
+    "ChannelMoveSpeed": -1,
+    "SpreadDuration": 0.6,
+    "StartRadius": "2m",
+    "EndRadius": "16m",
+    "SlowPercent": 60,
+    "SlowDuration": 4,
+    "Damage": {
+      "Value": 175,
+      "Scale": {
+        "Value": 0.6975,
+        "Type": "spirit"
+      }
+    },
+    "DamageHeight": "7m",
+    "NPCDamageMult": 1,
+    "TechResist": 10,
+    "FreezeDuration": 1,
+    "PropertyUpgrades": {
+      "Damage": 150,
+      "AbilityCooldown": -12,
+      "TechResist": 15,
+      "FreezeDuration": 0.25
+    }
+  },
+  "secondary_deadlock_card_record": {
+    "Key": "upgrade_arctic_blast",
+    "Name": "Arctic Blast",
+    "Description": "Release an expanding ice blast that deals {g:citadel_inline_attribute:'SpiritDamage'}, <span class=\"highlight\">Freezing</span> and then <span class=\"highlight\">Slowing</span> targets it hits.<br><br>Slowed targets have their <span class=\"highlight\">stamina regen frozen</span>",
+    "Cost": 6400,
+    "Tier": 4,
+    "Slot": "Tech",
+    "Activation": "InstantCast",
+    "Components": [
+      "upgrade_cold_front"
+    ],
+    "TargetTypes": [
+      "AllEnemy"
+    ],
+    "ShopFilters": [
+      "MagicDamage",
+      "Disruption",
+      "Durability"
+    ],
+    "IsDisabled": false,
+    "StreetBrawl": false,
+    "IsImbue": false,
+    "Info1": {
+      "Type": "Innate",
+      "DescKey": null,
+      "Cooldown": null,
+      "ChargeUp": null,
+      "Main": [],
+      "Alt": [
+        {
+          "Key": "TechResist",
+          "Value": 10
+        }
+      ]
+    },
+    "Info2": {
+      "Type": "Active",
+      "DescKey": "#upgrade_arctic_blast_desc",
+      "Cooldown": 24.0,
+      "ChargeUp": null,
+      "Main": [
+        {
+          "Key": "Damage",
+          "Value": 175.0,
+          "Scale": {
+            "Value": 0.6975,
+            "Type": "spirit"
+          },
+          "Type": "tech_damage"
+        },
+        {
+          "Key": "FreezeDuration",
+          "Value": 1,
+          "Type": "duration"
+        }
+      ],
+      "Alt": [
+        {
+          "Key": "EndRadius",
+          "Value": "16m",
+          "Type": "distance"
+        }
+      ]
+    },
+    "Upgrades": {
+      "Damage": 150,
+      "AbilityCooldown": -12,
+      "TechResist": 15,
+      "FreezeDuration": 0.25
+    },
+    "Other": {
+      "AbilityUnitTargetLimit": {
+        "Key": "AbilityUnitTargetLimit",
+        "Value": 1
+      },
+      "AbilityCooldownBetweenCharge": {
+        "Key": "AbilityCooldownBetweenCharge",
+        "Value": -1.0,
+        "Type": "charge_cooldown"
+      },
+      "ChannelMoveSpeed": {
+        "Key": "ChannelMoveSpeed",
+        "Value": -1,
+        "Type": "move_speed"
+      },
+      "SpreadDuration": {
+        "Key": "SpreadDuration",
+        "Value": 0.6,
+        "Type": "duration"
+      },
+      "StartRadius": {
+        "Key": "StartRadius",
+        "Value": "2m",
+        "Type": "distance"
+      },
+      "SlowPercent": {
+        "Key": "SlowPercent",
+        "Value": 60,
+        "Type": "slow",
+        "UsageFlags": "ConditionallyApplied"
+      },
+      "SlowDuration": {
+        "Key": "SlowDuration",
+        "Value": 4,
+        "Type": "duration",
+        "LocTokenOverride": "ArcticBlastSlowDuration"
+      },
+      "DamageHeight": {
+        "Key": "DamageHeight",
+        "Value": "7m"
+      },
+      "NPCDamageMult": {
+        "Key": "NPCDamageMult",
+        "Value": 1,
+        "Type": "tech_damage"
+      }
+    }
+  },
+  "cross_source_core_check": {
+    "name": true,
+    "cost": true,
+    "tier": true,
+    "slot": true,
+    "enabled": true
+  },
+  "data_boundaries": [
+    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
+    "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+  ]
+}

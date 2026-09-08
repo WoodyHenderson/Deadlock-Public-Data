@@ -1,0 +1,1264 @@
+{
+  "schema_version": 2,
+  "id": "hero.shiv",
+  "snapshot_id": "deadlock-wiki-2026-09-03",
+  "current_as_of": "2026-09-03",
+  "evidence_status": "source_verified",
+  "sources": {
+    "article": "wiki.shiv.125552",
+    "hero_data": "wiki.data-hero-data.108817",
+    "ability_data": "wiki.data-ability-data.114011",
+    "ability_cards": "wiki.data-ability-cards.114010",
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+  },
+  "name": "Shiv",
+  "aliases": [],
+  "internal_hero_key": "hero_shiv",
+  "hero_type": "Brawler",
+  "role_localization_key": "hero_shiv_role",
+  "playstyle_localization_key": "hero_shiv_playstyle",
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false
+  },
+  "base_stats": {
+    "maximum_health": 830,
+    "health_regeneration_per_second": 2,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.5,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 13.9,
+      "distance_meters": 10,
+      "duration_seconds": 0.72
+    },
+    "air_dash": {
+      "speed_meters_per_second": 15.7,
+      "distance_meters": 8,
+      "duration_seconds": 0.51
+    },
+    "stamina": {
+      "charges": 3,
+      "cooldown_seconds": 5.999988000024,
+      "regeneration_per_second": 0.166667
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0,
+    "critical_damage_received_percent": 0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.165,
+    "BulletDamageAltFire": 0.2,
+    "MaxHealth": 46,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 1.796,
+    "SustainedDPS": 1.191
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 609.6,
+    "BulletDamage": 4.8,
+    "RoundsPerSecond": 1.8141,
+    "ClipSize": 10,
+    "ReloadTime": 2.8,
+    "ReloadMovespeed": 1,
+    "ReloadDelay": 0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.79,
+    "FalloffEndRange": 41.15,
+    "FalloffStartScale": 1,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.8,
+    "BulletRadius": 0.0762,
+    "BulletsPerShot": 6,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 52.246,
+    "SustainedDPS": 34.647,
+    "NameKey": "citadel_weapon_hero_shiv_set",
+    "DescKey": "citadel_weapon_hero_shiv_set_desc",
+    "AltFire": {
+      "BulletSpeed": 609.6,
+      "BulletDamage": 4.36,
+      "RoundsPerSecond": 0.79365,
+      "ClipSize": 8,
+      "ReloadTime": 2,
+      "ReloadMovespeed": 1,
+      "ReloadDelay": 0,
+      "ReloadSingle": false,
+      "FalloffStartRange": 19.99,
+      "FalloffEndRange": 57.51,
+      "FalloffStartScale": 1,
+      "FalloffEndScale": 0.1,
+      "FalloffBias": 0.5,
+      "BulletGravityScale": 0.8,
+      "BulletRadius": 0.0762,
+      "BulletsPerShot": 12,
+      "BulletsPerBurst": 1,
+      "BurstInterShotInterval": 0.05,
+      "ShootMoveSpeed": 0.75,
+      "HitOnceAcrossAllBullets": false,
+      "CanCrit": true,
+      "AmmoConsumedPerShot": 4,
+      "DPS": 41.524,
+      "SustainedDPS": 34.649,
+      "NameKey": "citadel_weapon_shiv_alt",
+      "DescKey": "citadel_weapon_shiv_alt_desc"
+    },
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_Spreadshot",
+      "Attribute_EWeaponAttribute_CloseRange"
+    ]
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Serrated Knives",
+      "internal_key": "citadel_ability_shiv_dagger",
+      "data": {
+        "AOERadius": {
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityChannelTime": {
+          "Value": 0.2,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCharges": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 16,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityPostCastDuration": 0.3,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorProjectile",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCleaveDisabled",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BleedDPSPerStack": {
+          "Value": 10,
+          "Scale": {
+            "Value": 0.13,
+            "Type": "spirit"
+          }
+        },
+        "BleedDuration": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "BleedTickRate": 1,
+        "ChannelMoveSpeed": -1,
+        "DamageDebuffModifier": {
+          "Class": "ShivThrownShivDamageDebuff",
+          "Subclass": "ShivThrownShivDamageDebuff"
+        },
+        "ImpactDamage": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_shiv_dagger",
+        "MovementSlow": 35,
+        "Name": "Serrated Knives",
+        "RicochetCount": 1,
+        "SlowDebuffModifier": {
+          "Class": "ShivThrownShivSlowDebuff",
+          "Subclass": "ShivThrownShivSlowDebuff"
+        },
+        "Upgrades": [
+          {
+            "BleedDuration": 2
+          },
+          {
+            "AbilityCharges": 2
+          },
+          {
+            "BleedDPSPerStack": {
+              "Value": 12,
+              "Scale": {
+                "Value": 0.07,
+                "Type": "spirit"
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_shiv_dagger",
+        "Name": "Serrated Knives",
+        "DescKey": "citadel_ability_shiv_dagger_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "ImpactDamage",
+                "Name": "Impact Damage",
+                "Value": 0,
+                "Scale": {
+                  "Value": 0,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "BleedDPSPerStack",
+                "Name": "Bleed DPS Per Knife",
+                "Value": 10,
+                "Scale": {
+                  "Value": 0.13,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "BleedDuration",
+                "Name": "Bleed Duration",
+                "Value": 5,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "citadel_ability_shiv_dagger_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "MovementSlow",
+                "Name": "Movement Slow",
+                "Value": 35,
+                "Type": "slow"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "citadel_ability_shiv_dagger_max_rage_desc"
+        },
+        "Upgrades": [
+          {
+            "BleedDuration": 2
+          },
+          {
+            "AbilityCharges": 2,
+            "DescKey": "citadel_ability_shiv_dagger_t2_desc"
+          },
+          {
+            "BleedDPSPerStack": {
+              "Value": 12,
+              "Scale": {
+                "Value": 0.07,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "citadel_ability_shiv_dagger_t3_desc"
+          }
+        ],
+        "Range": {
+          "AOERadius": {
+            "Name": "Impact Radius",
+            "Value": 10,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            },
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.3
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "BleedTickRate": {
+            "Name": null,
+            "Value": 1
+          },
+          "RicochetCount": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 0.2,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 16,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_shiv_dagger_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Throw a knife that <span class=\"highlight\">bleeds</span> an enemy. Each additional hit adds a <span class=\"highlight\">stack</span> and refreshes the bleed duration, causing the bleed to increase per stack.",
+          "plain_text": "Throw a knife that bleeds an enemy. Each additional hit adds a stack and refreshes the bleed duration, causing the bleed to increase per stack."
+        },
+        {
+          "localization_key": "citadel_ability_shiv_dagger_max_rage_desc",
+          "card_paths": [
+            "card.Info2.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<br>Ultimate Unlock: <span class=\"highlight\"> While rage is full</span> knives will ricochet to another enemy and apply a slow to enemies they bleed.",
+          "plain_text": "Ultimate Unlock: While rage is full knives will ricochet to another enemy and apply a slow to enemies they bleed."
+        },
+        {
+          "localization_key": "citadel_ability_shiv_dagger_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+2 Charges",
+          "plain_text": "+2 Charges"
+        },
+        {
+          "localization_key": "citadel_ability_shiv_dagger_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "+12 Bleed DPS with increased Spirit scaling",
+          "plain_text": "+12 Bleed DPS with increased Spirit scaling"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Slice and Dice",
+      "internal_key": "citadel_ability_shiv_dash",
+      "data": {
+        "AbilityCastDelay": 0.25,
+        "AbilityCooldown": {
+          "Value": 16,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityPostCastDuration": 0.2,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontTriggerPostCastOnCastComplete",
+          "BehaviorMovement",
+          "BehaviorTriggerCancelMashProtectionOnCast",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "CameraDistance": 250,
+        "ChannelMoveSpeed": -1,
+        "DashAngleThreshold": 89,
+        "DashModifier": {
+          "Class": "CitadelShivDash",
+          "Subclass": "CitadelShivDash"
+        },
+        "DashRadius": 2.5,
+        "DashRange": {
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "DashSpeed": 60.96,
+        "DebuffDuration": {
+          "Value": 14,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "Base",
+          "Subclass": "ShivDashDebuff"
+        },
+        "ImpactDamage": {
+          "Value": 75,
+          "Scale": {
+            "Value": 1.2,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_shiv_dash",
+        "MoveSpeedPenaltyMaxSpeed": 200,
+        "Name": "Slice and Dice",
+        "SideMoveSpeedReduction": -100,
+        "TechArmorDamageReduction": -6,
+        "TechCleaveExpireTime": 0.35,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -6
+          },
+          {
+            "TechArmorDamageReduction": -4,
+            "DashRange": 2
+          },
+          {
+            "ImpactDamage": 50,
+            "CooldownReductionOnHit": 2,
+            "CooldownReductionOnHitNonHero": 1,
+            "MaxCooldownReductionsFromHits": 8
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_shiv_dash",
+        "Name": "Slice and Dice",
+        "DescKey": "citadel_ability_shiv_dash_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "ImpactDamage",
+                "Name": "Impact Damage",
+                "Value": 75,
+                "Scale": {
+                  "Value": 1.2,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "DashRange",
+                "Name": "Time Window",
+                "Value": 12,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "range"
+                },
+                "Type": "distance"
+              },
+              {
+                "Key": "TechArmorDamageReduction",
+                "Name": "Spirit Resist",
+                "Value": -6,
+                "Type": "tech_armor_down"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "DebuffDuration",
+              "Name": "Debuff Duration",
+              "Value": 14,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "citadel_ability_shiv_dash_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On hit",
+                "Key": "CooldownReductionOnHit",
+                "Name": "Cooldown Reduced on Hero Hit",
+                "Value": 0,
+                "Type": "cooldown"
+              },
+              {
+                "Title": "On hit",
+                "Key": "MaxCooldownReductionsFromHits",
+                "Name": "Max Cooldown Reduction",
+                "Value": 0
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "CooldownReductionOnHitNonHero",
+              "Name": "Cooldown Reduced on Non-Hero Hit",
+              "Value": 0,
+              "Type": "cooldown"
+            }
+          ],
+          "RequiresUpgradeIndex": 2
+        },
+        "Info3": {
+          "Main": {},
+          "Alt": [],
+          "DescKey": "citadel_ability_shiv_dash_ult_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -6
+          },
+          {
+            "TechArmorDamageReduction": -4,
+            "DashRange": 2,
+            "DescKey": "citadel_ability_shiv_dash_t2_desc"
+          },
+          {
+            "ImpactDamage": 50,
+            "CooldownReductionOnHit": 2,
+            "CooldownReductionOnHitNonHero": 1,
+            "MaxCooldownReductionsFromHits": 8,
+            "DescKey": "citadel_ability_shiv_dash_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.2
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "CameraDistance": {
+            "Name": null,
+            "Value": 250
+          },
+          "DashAngleThreshold": {
+            "Name": null,
+            "Value": 89
+          },
+          "DashRadius": {
+            "Name": "Radius",
+            "Value": 2.5
+          },
+          "DashSpeed": {
+            "Name": "Dash Speed",
+            "Value": 60.96
+          },
+          "MoveSpeedPenaltyMaxSpeed": {
+            "Name": null,
+            "Value": 200
+          },
+          "SideMoveSpeedReduction": {
+            "Name": null,
+            "Value": -100
+          },
+          "TechCleaveExpireTime": {
+            "Name": null,
+            "Value": 0.35
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.25,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 16,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_shiv_dash_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Perform a <span class=\"highlight\">dash forward, damaging enemies along the path</span>.  Hit Enemies have their {g:citadel_inline_attribute:'SpiritResist'} reduced. This debuff can stack.",
+          "plain_text": "Perform a dash forward, damaging enemies along the path. Hit Enemies have their spirit resist reduced. This debuff can stack."
+        },
+        {
+          "localization_key": "citadel_ability_shiv_dash_ult_desc",
+          "card_paths": [
+            "card.Info3.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<br>Ultimate Unlock: <span class=\"highlight\">While rage is full</span> an echo of Shiv retraces the dash path after a short delay, damaging enemies again.",
+          "plain_text": "Ultimate Unlock: While rage is full an echo of Shiv retraces the dash path after a short delay, damaging enemies again."
+        },
+        {
+          "localization_key": "citadel_ability_shiv_dash_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">-4%</span> Spirit Resist<br><span class=\"highlight\">+2m</span> Dash Range",
+          "plain_text": "-4% Spirit Resist\n+2m Dash Range"
+        },
+        {
+          "localization_key": "citadel_ability_shiv_dash_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+50</span> Impact Damage<br><span class=\"highlight\">-2s</span> Cooldown per Hero hit.",
+          "plain_text": "+50 Impact Damage\n-2s Cooldown per Hero hit."
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Bloodletting",
+      "internal_key": "citadel_ability_shiv_defer_damage",
+      "data": {
+        "AbilityCastDelay": 0.25,
+        "AbilityCooldown": {
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityUnitTargetLimit": 1,
+        "AutoCastDelayModifier": {
+          "Class": "Base",
+          "Subclass": "Cast"
+        },
+        "BehaviourBits": [
+          "BehaviorDamageDoesntWakeFromSleep",
+          "BehaviorDontConsumeAbilityResourceOnCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "DamagePctDeferred": 25,
+        "DamagePctDeferredMaxRage": 15,
+        "DeferClearPct": 30,
+        "DeferredDamageDuration": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_shiv_defer_damage",
+        "Name": "Bloodletting",
+        "Upgrades": [
+          {
+            "AbilityCooldown": -15
+          },
+          {
+            "DeferClearPct": 40
+          },
+          {
+            "DamagePctDeferred": 15
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_shiv_defer_damage",
+        "Name": "Bloodletting",
+        "DescKey": "citadel_ability_shiv_defer_damage_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "DamagePctDeferred",
+                "Name": "Incoming Damage Deferred",
+                "Value": 25,
+                "Type": "damage"
+              },
+              {
+                "Key": "DeferredDamageDuration",
+                "Name": "Deferred Damage Duration",
+                "Value": 6,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "citadel_ability_shiv_defer_damage_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Activate",
+                "Key": "DeferClearPct",
+                "Name": "Deferred Damage Cleared",
+                "Value": 30,
+                "Type": "healing"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Info3": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "DamagePctDeferredMaxRage",
+                "Name": "Incoming Damage Deferred",
+                "Value": 15,
+                "Type": "damage"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "citadel_ability_shiv_defer_damage_max_rage_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -15
+          },
+          {
+            "DeferClearPct": 40
+          },
+          {
+            "DamagePctDeferred": 15
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.25,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_shiv_defer_damage_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "Take only a portion of incoming damage immediately and defer the rest to be taken over time. Activate to <span class=\"highlight\">clear a portion of the deferred damage</span>.",
+          "plain_text": "Take only a portion of incoming damage immediately and defer the rest to be taken over time. Activate to clear a portion of the deferred damage."
+        },
+        {
+          "localization_key": "citadel_ability_shiv_defer_damage_max_rage_desc",
+          "card_paths": [
+            "card.Info3.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<br>Ultimate Unlock: <span class=\"highlight\">While rage is full</span> the amount of damage deferred is increased.",
+          "plain_text": "Ultimate Unlock: While rage is full the amount of damage deferred is increased."
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Killing Blow",
+      "internal_key": "citadel_ability_shiv_killing_blow",
+      "data": {
+        "AbilityCastDelay": 0.05,
+        "AbilityCastRange": {
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 145,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1,
+        "AbilityPostCastDuration": 0.15,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontTriggerPostCastOnCastComplete",
+          "BehaviorUseInstantCastUnitTargetUi",
+          "BehaviorMovement",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDeactivateCrouchToggleOnCast"
+        ],
+        "BonusAbilityResource": 10,
+        "BuffDamage": 8,
+        "CameraDistance": 400,
+        "ChannelMoveSpeed": -1,
+        "Damage": 200,
+        "EnemyHealthPercent": 18,
+        "EnemyHealthPercentBuffer": 3,
+        "FailedExecuteCooldownPenalty": 30,
+        "IsDisabled": false,
+        "Key": "citadel_ability_shiv_killing_blow",
+        "KillableModifier": {
+          "Class": "KillingBlowGlow",
+          "Subclass": "KillingBlowGlow"
+        },
+        "LeapModifier": {
+          "Class": "CitadelShivKillingblowLeap",
+          "Subclass": "CitadelShivKillingblowLeap"
+        },
+        "MinTimeToTarget": 0.5,
+        "MoveSpeedToTarget": 30,
+        "Name": "Killing Blow",
+        "RageDrainDelayDuration": {
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "RageDrainRate": 0.25,
+        "RagePerHeavyMelee": 2.85384,
+        "RagePerLightMelee": 1.55664,
+        "RagePerSpiritDamage": 0.01452864,
+        "RagePerWeaponDamage": 0.0158766,
+        "RecastWindow": {
+          "Value": 16,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "SlashRange": 90,
+        "Upgrades": [
+          {
+            "BonusMoveSpeed": 2,
+            "AbilityCastRange": 6
+          },
+          {
+            "BuffDamage": 16,
+            "AbilityCooldown": -25
+          },
+          {
+            "EnemyHealthPercent": 10
+          }
+        ]
+      },
+      "card": {
+        "Key": "citadel_ability_shiv_killing_blow",
+        "Name": "Killing Blow",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 200,
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "EnemyHealthPercent",
+                "Name": "Enemy health threshold",
+                "Value": 18,
+                "Type": "health"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "citadel_ability_shiv_killing_blow_active_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "BuffDamage",
+                "Name": "Full Rage Damage Bonus",
+                "Value": 8,
+                "Type": "damage"
+              },
+              {
+                "Key": "BonusMoveSpeed",
+                "Name": "Move Speed",
+                "Value": 0,
+                "Type": "move_speed"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "citadel_ability_shiv_killing_blow_passive_desc"
+        },
+        "Info3": {
+          "Main": {},
+          "Alt": [],
+          "DescKey": "citadel_ability_shiv_killing_blow_passive_desc_footer"
+        },
+        "Upgrades": [
+          {
+            "BonusMoveSpeed": 2,
+            "AbilityCastRange": 6,
+            "DescKey": "citadel_ability_shiv_killing_blow_t1_desc"
+          },
+          {
+            "BuffDamage": 16,
+            "AbilityCooldown": -25,
+            "DescKey": "citadel_ability_shiv_killing_blow_t2_desc"
+          },
+          {
+            "EnemyHealthPercent": 10,
+            "DescKey": "citadel_ability_shiv_killing_blow_t3_desc"
+          }
+        ],
+        "Cooldown": {
+          "RageDrainDelayDuration": {
+            "Name": null,
+            "Value": 12,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "cooldown"
+          },
+          "RecastWindow": {
+            "Name": "Recast Window",
+            "Value": 16,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "cooldown"
+          }
+        },
+        "Duration": {
+          "RageDrainRate": {
+            "Name": null,
+            "Value": 0.25,
+            "Type": "duration"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.15
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "BonusAbilityResource": {
+            "Name": null,
+            "Value": 10
+          },
+          "CameraDistance": {
+            "Name": null,
+            "Value": 400
+          },
+          "EnemyHealthPercentBuffer": {
+            "Name": null,
+            "Value": 3
+          },
+          "FailedExecuteCooldownPenalty": {
+            "Name": null,
+            "Value": 30
+          },
+          "MinTimeToTarget": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "MoveSpeedToTarget": {
+            "Name": null,
+            "Value": 30
+          },
+          "RagePerHeavyMelee": {
+            "Name": null,
+            "Value": 2.85384
+          },
+          "RagePerLightMelee": {
+            "Name": null,
+            "Value": 1.55664
+          },
+          "RagePerSpiritDamage": {
+            "Name": null,
+            "Value": 0.01452864
+          },
+          "RagePerWeaponDamage": {
+            "Name": null,
+            "Value": 0.0158766
+          },
+          "SlashRange": {
+            "Name": null,
+            "Value": 90
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.05,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 145,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "citadel_ability_shiv_killing_blow_active_desc",
+          "card_paths": [
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"diminish\">Active:</span> Leap forward, dealing {g:citadel_inline_attribute:'SpiritDamage'} to the first enemy hero. If they are below the <span class=\"highlight\">kill threshold</span>, <span class=\"highlight\">execute</span> them instead.<br><br>Finishing an enemy with Killing Blow lets you recast for <span class=\"highlight\">16s</span>",
+          "plain_text": "Active: Leap forward, dealing spirit damage to the first enemy hero. If they are below the kill threshold, execute them instead.\nFinishing an enemy with Killing Blow lets you recast for 16s"
+        },
+        {
+          "localization_key": "citadel_ability_shiv_killing_blow_passive_desc",
+          "card_paths": [
+            "card.Info2.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"diminish\">Passive:</span> Damaging enemies fills you with rage. While at full rage, Shiv gains increased damage and <span class=\"highlight\">unlocks special properties</span> on his other abilities.",
+          "plain_text": "Passive: Damaging enemies fills you with rage. While at full rage, Shiv gains increased damage and unlocks special properties on his other abilities."
+        },
+        {
+          "localization_key": "citadel_ability_shiv_killing_blow_passive_desc_footer",
+          "card_paths": [
+            "card.Info3.DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<br><span class=\"diminish\">Cooldown is increased by +30% if no hero is impacted.</span>",
+          "plain_text": "Cooldown is increased by +30% if no hero is impacted."
+        },
+        {
+          "localization_key": "citadel_ability_shiv_killing_blow_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+6 m</span> Range<br><span class=\"highlight\">+2 m/s</span> in Full Rage.",
+          "plain_text": "+6 m Range\n+2 m/s in Full Rage."
+        },
+        {
+          "localization_key": "citadel_ability_shiv_killing_blow_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+16%</span> Full Rage Bonus Damage<br><span class=\"highlight\">-25s</span> Cooldown",
+          "plain_text": "+16% Full Rage Bonus Damage\n-25s Cooldown"
+        },
+        {
+          "localization_key": "citadel_ability_shiv_killing_blow_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.311b2e8d895e",
+          "raw_text": "<span class=\"highlight\">+10%</span> Enemy Health Threshold",
+          "plain_text": "+10% Enemy Health Threshold"
+        }
+      ]
+    }
+  ],
+  "source_fields": {
+    "AbilityResourceMax": 0,
+    "AbilityResourceRegenPerSecond": 0,
+    "AirDashDistanceInMeters": 8,
+    "AirDashDuration": 0.51,
+    "AirDashSpeed": 15.7,
+    "BaseHealthRegen": 2,
+    "BaseWeaponDamageIncrease": 0,
+    "CritDamageBonusPercent": 0,
+    "CritDamageReceivedPercent": 0,
+    "CrouchSpeed": 4.75,
+    "GroundDashDistanceInMeters": 10,
+    "GroundDashDuration": 0.72,
+    "GroundDashSpeed": 13.9,
+    "HeavyMeleeDamage": 116,
+    "HeroBulletLifestealEffectiveness": 1,
+    "HeroSpiritLifestealEffectiveness": 1,
+    "InDevelopment": false,
+    "InHeroLabs": false,
+    "IsDisabled": false,
+    "IsRecommended": false,
+    "IsSelectable": true,
+    "LevelScaling": {
+      "BulletDamage": 0.165,
+      "BulletDamageAltFire": 0.2,
+      "MaxHealth": 46,
+      "PowerIncreases": 1,
+      "TechPower": 1.1,
+      "LightMeleeDamage": 1.58,
+      "HeavyMeleeDamage": 3.6656,
+      "DPS": 1.796,
+      "SustainedDPS": 1.191
+    },
+    "LightMeleeDamage": 50,
+    "Lore": "hero_shiv_lore",
+    "MaxHealth": 830,
+    "MaxMoveSpeed": 6.5,
+    "MoveAcceleration": 4,
+    "Name": "Shiv",
+    "Playstyle": "hero_shiv_playstyle",
+    "ProcBuildUpRateScale": 1,
+    "ReloadSpeed": 0,
+    "Role": "hero_shiv_role",
+    "SpiritScaling": {},
+    "SprintSpeed": 1.6,
+    "Stamina": 3,
+    "StaminaCooldown": 5.999988000024,
+    "StaminaRegenPerSecond": 0.166667,
+    "TechDuration": 0,
+    "TechRange": 0,
+    "Type": "Brawler",
+    "WeaponPowerScale": 1
+  },
+  "data_boundaries": [
+    "Generated source field names and raw precision are retained; undocumented units are not inferred.",
+    "Localization keys are retained where generated datasets omit localized prose.",
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ]
+}
