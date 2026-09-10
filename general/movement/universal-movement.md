@@ -51,6 +51,9 @@ calculation until this conflict is verified.
 
 ## Stamina Actions
 
+For hero-specific dash-speed tiers and ground/air dash durations, see
+[Hero Stamina Buckets](hero-stamina-buckets.md).
+
 | Action | Baseline stamina cost | Baseline airborne limit |
 | --- | --- | --- |
 | Ground dash | 1 | Not applicable |

@@ -72,6 +72,13 @@ sources:
     scope: universal movement and map traversal
     source_quality_note: Page is marked under construction and needing citations.
 
+  - id: wiki.stamina.unknown
+    title: Stamina
+    url: "https://deadlock.wiki/Stamina"
+    evidence_status: needs_primary_verification
+    scope: proposed stamina bucket terminology and dash-speed percentage labels
+    source_quality_note: User-supplied reference and summary; content was not independently retrieved. No revision or access date is established. Retrieval attempts failed with a TLS error and HTTP 403. Verify and pin the page before treating its percentage labels as source-verified.
+
   - id: wiki.melee-attack.114941
     title: Melee Attack
     url: "https://deadlock.wiki/Melee_Attack"
