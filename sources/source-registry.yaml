@@ -209,6 +209,21 @@ sources:
     scope: damage amplification categories, output reduction, and calculation order
     source_quality_note: Generalized formula is based on community testing and documents live exceptions.
 
+  - id: wiki.lifesteal.146618
+    title: Lifesteal
+    url: "https://deadlock.wiki/Lifesteal"
+    revision_url: "https://deadlock.wiki/Lifesteal?oldid=146618"
+    revision_id: 146618
+    last_modified: "2026-09-10T23:21:00"
+    accessed_at: "2026-09-11"
+    scope: bullet, spirit, and melee lifesteal calculation, stacking, creep effectiveness, and distinctions
+    evidence_status: source_verified
+    source_quality_note: >-
+      Worked-example item values differ from the dynamic item table. The hub
+      describes Melee Lifesteal as percentage-based, but its item-specific
+      description and pinned API record provide a flat proc heal. Use specific
+      records for exceptions. Transcluded tables are not pinned by article revision.
+
   - id: wiki.healing.96635
     title: Healing
     url: "https://deadlock.wiki/Healing"
@@ -610,6 +625,15 @@ sources:
     last_modified: "2026-08-31T23:01:21"
     accessed_at: "2026-09-03"
     scope: Vyper identity and article context; numeric facts use the pinned generated datasets
+
+  - id: wiki.warden.125788
+    title: Warden
+    url: "https://deadlock.wiki/Warden"
+    revision_url: "https://deadlock.wiki/Warden?oldid=125788"
+    revision_id: 125788
+    accessed_at: "2026-09-11"
+    scope: Explicit Street Brawl Last Stand hero and non-hero lifesteal overrides
+    evidence_status: source_verified
 
   - id: wiki.warden.124932
     title: "Warden"

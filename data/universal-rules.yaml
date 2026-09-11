@@ -12,6 +12,12 @@ sources:
   - wiki.backdoor-protection.78476
   - wiki.damage-resistance.125735
   - wiki.healing.96635
+  - wiki.lifesteal.146618
+  - wiki.warden.125788
+  - wiki.data-ability-data.114011
+  - wiki.data-ability-cards.114010
+  - github.deadlock-data.english.311b2e8d895e
+  - deadlock-api.items.client-6684.source-10933105
 
 movement:
   no_fall_damage: true
@@ -103,6 +109,113 @@ healing:
   total_reduction_formula: 1 - product(1 - each_reduction)
   final_healing_formula: initial_healing * (1 - total_reduction) * (1 + healing_amp)
   duplicate_same_source_stacks: false
+  lifesteal:
+    domains:
+      bullet:
+        damage_type: bullet
+        non_hero_effectiveness: 0.60
+      spirit:
+        damage_type: spirit
+        non_hero_effectiveness: 0.40
+      melee:
+        damage_type: melee
+        non_hero_effectiveness: 0.40
+        note: Applies to continuously active melee lifesteal; proc items can define their own non-hero behavior.
+    same_domain_stacking_formula: 1 - product(1 - each_lifesteal_source)
+    stacking_scope: Compatible sources of the same lifesteal stat, not arbitrary ability heals or item procs.
+    formula_percentage_inputs: fractions
+    domains_calculated_independently: true
+    source_specific_non_hero_factor_overrides_domain_default: true
+    target_resolution:
+      required_context: [effect, target_type, upgrade_tier, game_mode]
+      distinguish: [absolute_damage_to_heal_fraction, multiplier_on_proc_heal]
+      apply_generic_npc_reduction_to_explicit_npc_value: false
+      override_scope: Only the named effect; other lifesteal sources retain their own rules.
+      separate_ability_heal_and_purchased_lifesteal_combination: needs_primary_verification
+    target_specific_effects:
+      - id: abrams.siphon-life
+        record: heroes/abrams/abrams.yaml
+        ability_key: citadel_ability_bull_heal
+        source_fields: [HealingFactor, NonHeroHealingFactor]
+        value_kind: absolute_damage_to_heal_fraction
+        hero: 0.70
+        non_hero: 0.35
+        source: wiki.data-ability-data.114011
+      - id: bebop.hyper-beam.tier-3
+        record: heroes/bebop/bebop.yaml
+        source_fields: [BeamLifesteal, BeamLifestealNonHeroPercent]
+        required_upgrade_tier: 3
+        value_kind: absolute_damage_to_heal_fraction
+        hero: 0.65
+        non_hero: 0.20
+        source: github.deadlock-data.english.311b2e8d895e
+      - id: warden.last-stand
+        record: heroes/warden/warden.yaml
+        source_fields: [HealthStealPctHero, HealthStealPct]
+        game_mode: standard
+        value_kind: absolute_damage_to_heal_fraction
+        hero: 0.75
+        non_hero: 0.10
+        source: wiki.data-ability-data.114011
+      - id: warden.last-stand.street-brawl
+        record: heroes/warden/warden.yaml
+        game_mode: street_brawl
+        value_kind: absolute_damage_to_heal_fraction
+        hero: 0.4875
+        non_hero: 0.075
+        source: wiki.warden.125788
+      - id: lash.flog
+        record: heroes/lash/lash.yaml
+        source_fields: [HealPctVsHeroes, HealPctVsNonHeroes]
+        value_kind: absolute_damage_to_heal_fraction
+        hero: 0.50
+        non_hero: 0.16
+        tier_3_additive_fraction_deltas: {hero: 0.20, non_hero: 0.06}
+        source: wiki.data-ability-data.114011
+      - id: mo-and-krill.scorn
+        record: heroes/mo-and-krill/mo-and-krill.yaml
+        source_fields: [DamageHealMult, DamageHealMultNonHero]
+        value_kind: absolute_damage_to_heal_fraction
+        hero: 1.2
+        non_hero: 0.35
+        source: wiki.data-ability-data.114011
+      - id: item.melee-lifesteal
+        record: items/melee-lifesteal/melee-lifesteal.yaml
+        value_kind: multiplier_on_proc_heal
+        base_proc_heal: 100
+        hero: 1.0
+        non_hero: 0.30
+        light_melee_cooldown_multiplier: 1.5
+        source: deadlock-api.items.client-6684.source-10933105
+      - id: item.lifestrike
+        record: items/lifestrike/lifestrike.yaml
+        value_kind: multiplier_on_proc_heal
+        base_proc_heal_formula: 100 + 0.30 * melee_damage_dealt
+        hero: 1.0
+        non_hero: 0.40
+        light_melee_cooldown_multiplier: 1.5
+        source: deadlock-api.items.client-6684.source-10933105
+    target_specific_values_scope: >-
+      Base values except explicit tier/mode overrides, before applicable upgrades,
+      healing modifiers, separate lifesteal sources, and available-health caps.
+      Generic non-hero defaults do not themselves establish target eligibility.
+    ability_only_lifesteal:
+      - record: heroes/mo-and-krill/mo-and-krill.yaml
+        ability: Combo
+        required_upgrade_tier: 1
+        lifesteal_percent: 100
+        applies_to: Combo damage only
+      - record: heroes/infernus/infernus.yaml
+        ability: Concussive Combustion
+        required_upgrade_tier: 2
+        lifesteal_percent: 100
+        applies_to: Explosion damage only
+    ability_only_lifesteal_source: github.deadlock-data.english.311b2e8d895e
+    melee_item_proc_distinction: >-
+      Melee Lifesteal provides a flat proc heal; Lifestrike provides a flat plus
+      damage-based proc heal. Neither is a continuous global lifesteal stat.
+      Their cooldowns do not block healing from other sources.
+    source: wiki.lifesteal.146618
 
 damage_resistance:
   total_resistance_formula: 1 - product(1 - each_resistance)

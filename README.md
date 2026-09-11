@@ -90,8 +90,10 @@ python scripts/validate.py
 ```
 
 Validation checks local links, YAML parsing, roster counts, description coverage,
-source references, allowed source origins, and historical file hashes. It runs
-without network access and makes no changes. This export does not include an
+source references, allowed source origins, historical file hashes, and lifesteal
+rule consistency with canonical records (including upgrade gates and mode
+isolation). These checks validate local data consistency, not in-game behavior.
+Validation runs without network access and makes no changes. This export does not include an
 automated data updater. Future updates should pin sources, retain prior evidence,
 review changes, and regenerate the affected records and index together.
 

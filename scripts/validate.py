@@ -3,6 +3,7 @@
 from collections import Counter
 from datetime import date
 from hashlib import sha256
+from math import isclose
 from pathlib import Path
 import re
 from urllib.parse import unquote, urlsplit
@@ -55,6 +56,65 @@ def card_refs(value, prefix="card"):
             yield from card_refs(child, prefix + f"[{i}]")
 
 
+def validate_lifesteal(records, source_ids):
+    """Check curation consistency, not whether the rules match runtime behavior."""
+    rules = records["data/universal-rules.yaml"]["healing"]["lifesteal"]
+    entries = rules["target_specific_effects"]
+    effects = {e["id"]: e for e in entries}
+    check(len(effects) == len(entries), "Duplicate lifesteal effect IDs")
+    for effect in entries:
+        check(effect.get("source") in source_ids, f"Lifesteal source: {effect['id']}")
+        check(effect.get("record") in records, f"Lifesteal record: {effect['id']}")
+
+    # Compare curated fractions to their pinned ability fields, including upgrades.
+    # Scorn's source values are already ratios; the other fields are percentages.
+    for name, divisor, tier in [
+        ("abrams.siphon-life", 100, None),
+        ("warden.last-stand", 100, None),
+        ("lash.flog", 100, None),
+        ("mo-and-krill.scorn", 1, None),
+        ("bebop.hyper-beam.tier-3", 100, 3),
+    ]:
+        effect = effects.get(name)
+        check(effect is not None, f"Missing lifesteal effect: {name}")
+        if effect is None or effect.get("record") not in records:
+            continue
+        fields = effect.get("source_fields", [])
+        check(len(fields) == 2, f"Lifesteal source fields: {name}")
+        if len(fields) != 2:
+            continue
+        candidates = []
+        for ability in records[effect["record"]].get("abilities", []):
+            data = ability["data"]
+            if tier is not None:
+                upgrades = data.get("Upgrades", [])
+                data = upgrades[tier - 1] if len(upgrades) >= tier else {}
+            if all(field in data for field in fields):
+                candidates.append(data)
+        check(len(candidates) == 1, f"Ambiguous or missing lifesteal source fields: {name}")
+        if len(candidates) != 1:
+            continue
+        check(effect.get("value_kind") == "absolute_damage_to_heal_fraction",
+              f"Lifesteal value kind: {name}")
+        if tier is not None:
+            check(effect.get("required_upgrade_tier") == tier, f"Lifesteal upgrade gate: {name}")
+        for target, field in zip(("hero", "non_hero"), fields):
+            raw = candidates[0][field]
+            raw = raw["Value"] if isinstance(raw, dict) else raw
+            value = effect.get(target)
+            check(isinstance(value, (int, float)) and isclose(value, raw / divisor),
+                  f"Lifesteal value differs from canonical field: {name}.{target}")
+
+    check(rules["target_resolution"].get("apply_generic_npc_reduction_to_explicit_npc_value") is False,
+          "Explicit NPC lifesteal values must not receive a second generic reduction")
+    for name in ("item.melee-lifesteal", "item.lifestrike"):
+        check(effects.get(name, {}).get("value_kind") == "multiplier_on_proc_heal",
+              f"Item proc must remain separate from damage-to-healing fractions: {name}")
+    for name, mode in [("warden.last-stand", "standard"),
+                       ("warden.last-stand.street-brawl", "street_brawl")]:
+        check(effects.get(name, {}).get("game_mode") == mode, f"Lifesteal mode isolation: {name}")
+
+
 def main():
     registry = load("sources/source-registry.yaml")
     sources = registry["sources"]
@@ -95,6 +155,7 @@ def main():
             for value in walk(record):
                 if re.fullmatch(r"(?:wiki\.|deadlock-api\.|github\.deadlock-data\.)[\w.-]+", value):
                     check(value in ids, f"Missing source ID: {relative}: {value}")
+    validate_lifesteal(records, ids)
     index = (ROOT / "INDEX.md").read_text()
     for domain, collection, count_key in [
         ("heroes", "heroes", "hero_count"), ("items", "items", "item_count"),
@@ -149,7 +210,7 @@ def main():
         raise SystemExit("Validation failed:\n" + "\n".join(errors))
     print(f"PASS: {len(records)} YAML files; 38 heroes, 173 items, 14 NPCs, 2 objectives; "
           f"{counts['abilities']} abilities, {counts['descriptions']} descriptions; "
-          f"{len(expected)} hash-verified changelogs; local links and source references valid.")
+          f"{len(expected)} hash-verified changelogs; local links, source references, and lifesteal consistency valid.")
 
 
 if __name__ == "__main__":
