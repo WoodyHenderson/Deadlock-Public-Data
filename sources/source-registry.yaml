@@ -72,6 +72,16 @@ sources:
     scope: universal movement and map traversal
     source_quality_note: Page is marked under construction and needing citations.
 
+  - id: wiki.move-speed.146579
+    title: Move Speed
+    url: "https://deadlock.wiki/Move_Speed"
+    revision_url: "https://deadlock.wiki/Move_Speed?oldid=146579"
+    revision_id: 146579
+    last_modified: "2026-09-10T17:34:00"
+    accessed_at: "2026-09-11"
+    scope: movement speed, sprint speed, firing penalties, slide threshold, stacking, and map speed effects
+    evidence_status: source_verified
+
   - id: wiki.stamina.unknown
     title: Stamina
     url: "https://deadlock.wiki/Stamina"

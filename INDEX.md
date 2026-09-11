@@ -41,7 +41,7 @@ historical values as current facts.
 | Cooldown, duration, radius, range, charges | Owning ability or item's explicit descriptions and fields below |
 | Status effects, stun, slow, silence, disarm | [Status effects](general/combat/status-effects-and-crowd-control.md); named effect |
 | Melee, heavy melee, parry | [Melee and parry](general/combat/weapons-melee-and-parry.md) |
-| Stamina, dash, slide, wall jump | [Movement](general/movement/universal-movement.md) |
+| Stamina, dash, slide, wall jump, move speed, sprint speed | [Movement](general/movement/universal-movement.md) |
 | Character buckets, stamina buckets, dash speed tiers, dash duration | [Hero stamina buckets](general/movement/hero-stamina-buckets.md) |
 | Zipline, lanes, traversal | [Map layout](general/map/map-layout-and-traversal.md) |
 | Minimap, detection, visibility | [Visibility](general/map/minimap-and-visibility.md); named ability |

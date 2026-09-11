@@ -9,6 +9,9 @@ topics:
   - jump
   - slide
   - mantle
+  - move speed
+  - sprint speed
+  - movement speed
 aliases:
   - air jump
   - double jump
@@ -22,6 +25,7 @@ evidence_status: source_conflict
 sources:
   - wiki.movement.78724
   - wiki.mechanics.110139
+  - wiki.move-speed.146579
 ---
 
 # Universal Movement
@@ -39,6 +43,32 @@ unit as 0.0254 meters. Deadlock has no fall damage.
 Heroes move with directional controls, jump, and crouch. Sprint activates after
 the hero has been out of combat for five seconds. Entering combat or zooming in
 ends sprint and returns movement to base speed.
+
+**Move Speed** is the hero's ordinary movement velocity. Move-speed bonuses from
+items and abilities stack with diminishing returns rather than simply adding. For
+bonuses expressed in meters per second, the Wiki describes the effective bonus
+as:
+
+`12 × (1 − product(1 − bonus_i / 12))`
+
+The effective bonus is added to base Move Speed. **Sprint Speed** is separate and
+is added to Move Speed while sprinting; sprint bonuses stack additively. Sprint
+speed above 2.5 m/s ramps in at 0.6 m/s per second while moving, rather than
+appearing immediately at full value.
+
+While firing, a hero normally moves at 75% of the combined Move Speed and Sprint
+Speed. Fleetfoot can mitigate this penalty. Zooming does not incur the firing
+penalty. Crouch speed is normally 4.8 m/s and is not affected by firing, except
+Grey Talon and Warden use 4.4 m/s while firing. Rem and Silver in transformed
+form are exceptions to the normal firing movement penalty.
+
+Sprinting is interrupted or reset by taking damage, shooting an enemy hero,
+being stunned, immobilized, displaced, or slept, using a Zipline, crouching,
+stopping movement input, or zooming in. Light melee, heavy melee, shooting
+neutral camps without taking damage, shooting breakables, sliding, using a
+Teleporter, walking into walls/corners, and flying on Magic Carpet do not
+normally interrupt it. These state transitions are separate from the five-second
+condition that initially activates sprint.
 
 Crouching lowers the hero's profile. At sufficient speed, holding crouch starts
 a slide that preserves momentum. Sliding also grants infinite ammunition for
@@ -83,12 +113,16 @@ slow that tapers to 20% over two seconds.
 ## Source Limitations
 
 The Movement page was marked under construction and included a citation-needed
-claim about exact wall-jump fatigue recovery. Advanced engine techniques and
-hero-specific movement interactions are excluded from this trusted general
-baseline.
+claim about exact wall-jump fatigue recovery. The Move Speed article's generic
+movement formula and many reset conditions are useful reference rules, but
+hero-, item-, and ability-specific exceptions should be resolved from their
+individual records. The exact flat-ground slide threshold remains disputed:
+the Movement page reports 8.9 m/s while the Mechanics hub reports 9.6 m/s.
+Advanced engine techniques remain excluded from this trusted general baseline.
 
 ## Source Notes
 
 Adapted from the pinned Deadlock Wiki revisions for
-[Movement](https://deadlock.wiki/Movement?oldid=78724) and
-[Mechanics](https://deadlock.wiki/Mechanics?oldid=110139).
+[Movement](https://deadlock.wiki/Movement?oldid=78724),
+[Mechanics](https://deadlock.wiki/Mechanics?oldid=110139), and
+[Move Speed](https://deadlock.wiki/Move_Speed?oldid=146579).

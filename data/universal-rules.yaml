@@ -16,6 +16,41 @@ sources:
 movement:
   no_fall_damage: true
   sprint_out_of_combat_delay_seconds: 5
+  move_speed:
+    bonus_stacking: diminishing_returns
+    bonus_formula: "12 * (1 - product(1 - each_bonus_meters_per_second / 12))"
+    sprint_bonus_stacking: additive
+    sprint_speed_ramp_threshold_meters_per_second: 2.5
+    sprint_speed_ramp_meters_per_second_per_second: 0.6
+    firing_speed_multiplier: 0.75
+    firing_penalty_exceptions: [rem, silver_transformed]
+    crouch_speed_meters_per_second: 4.8
+    firing_crouch_speed_exceptions:
+      grey_talon: 4.4
+      warden: 4.4
+    source: wiki.move-speed.146579
+  sprint_state:
+    reset_events:
+      - enemy_hero_damage
+      - enemy_hero_shot
+      - stun
+      - immobilize
+      - displace
+      - sleep
+      - zipline_use
+      - crouch
+      - stopped_movement_input
+      - zoom
+    non_reset_events:
+      - light_melee
+      - heavy_melee
+      - neutral_camp_shot_without_damage_taken
+      - breakable_shot
+      - slide
+      - teleporter_use
+      - magic_carpet
+      - walking_into_walls_or_corners
+    source: wiki.move-speed.146579
   slide_threshold_meters_per_second: null
   slide_threshold_evidence_status: source_conflict
   slide_threshold_review_id: review.slide-speed-threshold
