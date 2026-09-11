@@ -12,6 +12,7 @@ sources:
   - wiki.backdoor-protection.78476
   - wiki.damage-resistance.125735
   - wiki.healing.96635
+  - wiki.fire-rate.110395
   - wiki.lifesteal.146618
   - wiki.warden.125788
   - wiki.data-ability-data.114011
@@ -73,6 +74,39 @@ movement:
     starts_percent: 80
     tapers_to_percent: 20
     duration_seconds: 2
+
+fire_rate:
+  source: wiki.fire-rate.110395
+  accessed_at: "2026-09-11"
+  evidence_status: source_verified
+  scope: Wiki general rate calculation; not a verified transform for individual burst timers.
+  percentage_inputs: fractions
+  slow_input_convention: Positive fractions denote reductions, e.g. 0.25 for a 25% slow.
+  preconditions: Resolve active bonuses and slows from the owning effect records first.
+  bonus_stacking: additive
+  total_bonus_formula: sum(each_bonus)
+  slow_stacking: complement_product
+  total_slow_formula: 1 - product(1 - each_slow)
+  empty_group_contribution: 0
+  total_modifier_formula: max(-0.50, total_bonus - total_slow)
+  minimum_total_modifier: -0.50
+  positive_cap: null
+  positive_cap_status: not_established_by_source
+  rate_formula_nonnegative_modifier: base_rate * (1 + total_modifier)
+  rate_formula_negative_modifier: base_rate / (1 + abs(total_modifier))
+  equivalent_interval_formulas:
+    evidence_status: derived
+    nonnegative_modifier: base_interval / (1 + total_modifier)
+    negative_modifier: base_interval * (1 + abs(total_modifier))
+    scope: Algebraic equivalents for a rate, not individual burst timer behavior.
+  ui_reports: combined_modifier_not_actual_fractional_change_in_shots_per_second
+  rounding: Retain intermediate precision; round only for display.
+  unresolved:
+    - wind_up_timing_transforms
+  burst_weapon_scope: See data/burst-weapons.yaml for the separately labeled working model and evidence limits.
+  not_supplied_by_this_rule:
+    - reload_and_sustained_dps
+    - effect_specific_proc_conditions_or_cooldowns
 
 melee:
   weapon_damage_bonus_conversion_fraction: 0.5

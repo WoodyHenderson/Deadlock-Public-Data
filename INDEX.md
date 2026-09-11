@@ -37,7 +37,9 @@ historical values as current facts.
 | Boons, levels, ability points, upgrades | [Progression](general/progression/boons-and-abilities.md); [data](data/progression.yaml) |
 | Item cost, category, components | [Item roster](items/roster.yaml) and named items below; [transaction coverage limits](LIMITATIONS.md) |
 | Damage, Spirit, resistance, healing, lifesteal | [Combat stats](general/combat/stats-damage-and-healing.md); [general rules](data/universal-rules.yaml); named effect |
-| Weapon, fire rate, burst, magazine, reload | Owning hero's weapon fields below; [formula limitations](LIMITATIONS.md) |
+| Fire rate, firing speed, fire rate slow, bonus/slow stacking | [Fire Rate](general/combat/fire-rate.md); [general rules](data/universal-rules.yaml); owning hero/item |
+| Burst weapons, intra-burst interval, between-burst gap, burst delay | [Burst profiles and examples](general/combat/burst-weapons.md); [structured timing data](data/burst-weapons.yaml) |
+| Weapon, magazine, reload | Owning hero's weapon fields below; [formula limitations](LIMITATIONS.md) |
 | Cooldown, duration, radius, range, charges | Owning ability or item's explicit descriptions and fields below |
 | Status effects, stun, slow, silence, disarm | [Status effects](general/combat/status-effects-and-crowd-control.md); named effect |
 | Melee, heavy melee, parry | [Melee and parry](general/combat/weapons-melee-and-parry.md) |

@@ -1,0 +1,139 @@
+schema_version: 1
+id: data.weapons.burst-timing
+snapshot_id: deadlock-wiki-2026-09-03
+current_as_of: "2026-09-11"
+client_version: 6684
+evidence_status: needs_primary_verification
+sources:
+  - deadlock-api.weapon.gigawatt.client-6684
+  - deadlock-api.weapon.lash.client-6684
+  - deadlock-api.weapon.chrono.client-6684
+  - deadlock-api.weapon.magician.client-6684
+units:
+  intervals: seconds
+  rate: shots_per_second
+scope: Baseline API fields and derived averages; modified burst timing is not runtime-verified.
+weapons:
+  - hero: Seven
+    record: heroes/seven/seven.yaml
+    source: deadlock-api.weapon.gigawatt.client-6684
+    evidence_status: source_verified
+    internal_key: citadel_weapon_gigawatt_set
+    burst_shot_count: 3
+    intra_burst_cycle_time: 0.084
+    cycle_time: 0.2625
+    burst_shot_cooldown: 0
+    shots_per_second: 5.830903790087464
+  - hero: Lash
+    record: heroes/lash/lash.yaml
+    source: deadlock-api.weapon.lash.client-6684
+    evidence_status: source_verified
+    internal_key: citadel_weapon_lash_set
+    burst_shot_count: 3
+    intra_burst_cycle_time: 0.084
+    cycle_time: 0.2625
+    burst_shot_cooldown: 0
+    shots_per_second: 5.830903790087464
+  - hero: Paradox
+    record: heroes/paradox/paradox.yaml
+    source: deadlock-api.weapon.chrono.client-6684
+    evidence_status: source_verified
+    internal_key: citadel_weapon_chrono_set
+    burst_shot_count: 5
+    intra_burst_cycle_time: 0.0735
+    cycle_time: 0.294
+    burst_shot_cooldown: 0
+    shots_per_second: 7.558578987150416
+  - hero: Sinclair
+    record: heroes/sinclair/sinclair.yaml
+    source: deadlock-api.weapon.magician.client-6684
+    evidence_status: source_verified
+    internal_key: citadel_weapon_magician_set
+    burst_shot_count: 2
+    intra_burst_cycle_time: 0.105
+    cycle_time: 0.525
+    burst_shot_cooldown: 0
+    shots_per_second: 2.7210884353741496
+estimated_between_burst_gaps:
+  evidence_status: derived
+  verification_status: needs_primary_verification
+  definition: Time from the last bullet of one burst to the first bullet of the next.
+  derivation: cycle_time + intra_burst_cycle_time
+  working_model_gap: cycle_time
+  assumption: >-
+    The working model treats cycle_time as the last-shot-to-next-burst gap;
+    the alternative cycle_time + intra_burst_cycle_time values preserve the
+    API-average reconciliation only and are not expressly confirmed.
+  values_seconds:
+    Seven: 0.3465
+    Lash: 0.3465
+    Paradox: 0.3675
+    Sinclair: 0.6300
+  suggested_display_seconds:
+    Seven: 0.35
+    Lash: 0.35
+    Paradox: 0.37
+    Sinclair: 0.63
+  usage: Approximate descriptive context only; not measured runtime constants or verified modified-DPS inputs.
+  warning: These alternative estimates inherit an unresolved API timer interpretation; no measured error bound is established and they are not the working gap assumption.
+api_average_reproduction:
+  evidence_status: derived
+  period_formula: burst_shot_count * intra_burst_cycle_time + cycle_time
+  rate_formula: burst_shot_count / period
+  interpretation: Reproduces returned API averages; does not establish projectile timestamps.
+  last_shot_to_next_burst_gap: null
+  gap_status: needs_primary_verification
+  warning: The working model treats cycle_time as the gap, but this is not expressly confirmed by the API or Wiki; do not present it as an exact measured runtime value.
+fixed_gap_model:
+  evidence_status: needs_primary_verification
+  provenance: Runtime behavior supplied during review; formulas below are derived from that working model.
+  executable_game_rule: false
+  variables:
+    N: Number of sequential shots in a full burst
+    I: Interval between consecutive shots within the burst
+    G: Measured time from the last shot to the first shot of the next burst
+  assumptions:
+    - G is fixed when the modifier changes.
+    - All N shots are fired; no reload, interruption, or partial burst occurs.
+    - Intra-burst intervals are uniform for this example.
+  positive_modifier_interval_formula: I / (1 + modifier)
+  negative_modifier_interval_formula: I * (1 + abs(modifier))
+  post_burst_gap_under_fire_rate_modifiers: G
+  period_formula: (N - 1) * modified_I + G
+  rate_formula: N / period
+  hypothetical_example:
+    scope: Illustrative inputs, not a measured hero weapon profile
+    N: 3
+    I: 0.1
+    G: 0.3
+    base_period: 0.5
+    base_rate: 6
+    at_positive_50_percent_modifier:
+      additional_assumption: Only I is divided by 1.5; G stays fixed.
+      I_formula: 0.1 / 1.5
+      period_formula: 2 * (0.1 / 1.5) + 0.3
+      rate_formula: 3 / (2 * (0.1 / 1.5) + 0.3)
+      approximate_rate: 6.9230769231
+working_observations:
+  evidence_status: needs_primary_verification
+  provenance: Runtime observations supplied during review; not independently pinned to a public source.
+  rules:
+    fire_rate_changes_within_burst_timing: true
+    fire_rate_does_not_change_between_burst_downtime: true
+    fire_rate_transform_matches_normal_guns: true
+    partial_burst_uses_remaining_ammo_then_reloads: true
+    bullet_procs_trigger_per_bullet_not_per_burst: true
+  interpretation: >-
+    Fire Rate changes the time between bullets within a burst, while the
+    downtime after a burst remains unchanged for both bonuses and slows. A 25%
+    Fire Rate bonus therefore makes the first-to-last firing portion of a burst
+    25% faster under this working model; it does not shorten the post-burst
+    downtime. If fewer rounds remain than a full burst requires, the weapon fires
+    the remaining rounds and then begins reloading. Bullet-based procs such as
+    Toxic Bullets and Mercurial Magnum trigger per qualifying bullet, not once
+    per burst, subject to their own conditions and cooldowns.
+unresolved:
+  - id: review.burst-timer-mapping
+    question: Is the working assumption that cycle_time is the last-shot-to-next-burst gap correct, or is it an API-derived timing value with another convention?
+  - id: review.burst-proc-counting
+    question: Are there any specific effects that are exceptions to the working per-bullet proc model?

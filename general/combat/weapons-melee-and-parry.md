@@ -35,6 +35,10 @@ magazine size, fire rate, reload time, projectile velocity, and effective
 range. These values belong in hero-specific structured records and are not part
 of the general baseline.
 
+For general bonus/slow stacking and the asymmetric rate calculation, see
+[Fire Rate](fire-rate.md). See also [burst profiles and timing examples](burst-weapons.md),
+which separate API-supported baseline fields from the working runtime model.
+
 Ranged attacks can damage enemies and claim floating Soul Orbs. One bullet or
 pellet claims an orb regardless of its damage, and the claiming shot is refunded
 to the magazine.

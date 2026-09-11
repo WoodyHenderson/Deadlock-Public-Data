@@ -37,6 +37,17 @@ These identifiers name unresolved issues documented here, not an external or
 missing review database. Other field-level uncertainty labels must also be
 preserved by consumers.
 
+## Burst timing boundary
+
+[Baseline burst profiles](general/combat/burst-weapons.md) reproduce the versioned
+API's average rates. For the current working model, `cycle_time` is assumed to
+represent the last-shot-to-next-burst gap. That interpretation is not expressly
+confirmed by the API or Wiki and must not be treated as an exact runtime fact.
+The documented fixed-gap Fire Rate behavior, partial-burst handling, and
+per-bullet proc default are review observations that still need a pinned public
+source or reproducible runtime capture. Fixed-gap examples are conditional
+calculations, not source-verified gameplay formulas; see [burst timing data](data/burst-weapons.yaml).
+
 ## Source text defects and history
 
 Apollo's Itani Lo Sahn tier-three tooltip contains an upstream unresolved

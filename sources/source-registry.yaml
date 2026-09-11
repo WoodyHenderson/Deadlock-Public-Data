@@ -209,6 +209,53 @@ sources:
     scope: damage amplification categories, output reduction, and calculation order
     source_quality_note: Generalized formula is based on community testing and documents live exceptions.
 
+  - id: deadlock-api.weapon.gigawatt.client-6684
+    title: Seven weapon, client 6684
+    url: "https://api.deadlock-api.com/v1/assets/items/citadel_weapon_gigawatt_set?client_version=6684&language=english"
+    accessed_at: "2026-09-11"
+    client_version: 6684
+    sha256: 1717d30865f94a468ddf8935217f2f59e754b1657b7e71eed9a0bdaba2a4aa04
+    scope: weapon_info baseline burst fields and API-derived shots_per_second
+    source_quality_note: Hash identifies the retrieved response bytes, not proof of runtime timing or applied modifiers.
+
+  - id: deadlock-api.weapon.lash.client-6684
+    title: Lash weapon, client 6684
+    url: "https://api.deadlock-api.com/v1/assets/items/citadel_weapon_lash_set?client_version=6684&language=english"
+    accessed_at: "2026-09-11"
+    client_version: 6684
+    sha256: fb535d6a4ac1aadaca2680fcdfa0389f3a95b1ce68bf7d0e61252ff2e8461920
+    scope: weapon_info baseline burst fields and API-derived shots_per_second
+
+  - id: deadlock-api.weapon.chrono.client-6684
+    title: Paradox weapon, client 6684
+    url: "https://api.deadlock-api.com/v1/assets/items/citadel_weapon_chrono_set?client_version=6684&language=english"
+    accessed_at: "2026-09-11"
+    client_version: 6684
+    sha256: 2b11039dd754ea7f7ee9806c51049f7513368b67de0425645b55ad66f8f7e1f3
+    scope: weapon_info baseline burst fields and API-derived shots_per_second
+
+  - id: deadlock-api.weapon.magician.client-6684
+    title: Sinclair weapon, client 6684
+    url: "https://api.deadlock-api.com/v1/assets/items/citadel_weapon_magician_set?client_version=6684&language=english"
+    accessed_at: "2026-09-11"
+    client_version: 6684
+    sha256: 47cebfd11406e17659a6ea1a8389f8604b43972defb60440a685ced136e098b9
+    scope: weapon_info baseline burst fields and API-derived shots_per_second
+
+  - id: wiki.fire-rate.110395
+    title: Fire Rate
+    url: "https://deadlock.wiki/Fire_Rate"
+    revision_url: "https://deadlock.wiki/Fire_Rate?oldid=110395"
+    revision_id: 110395
+    last_modified: "2026-08-20T16:05:27Z"
+    accessed_at: "2026-09-11"
+    scope: General Fire Rate bonus and slow aggregation, combined modifier floor, asymmetric rate calculation, and UI interpretation
+    evidence_status: source_verified
+    source_quality_note: >-
+      Documents general calculations, not which individual burst intervals are
+      modified. Dynamic hero/item tables are not imported or pinned by this
+      article revision. Source support is not independent runtime validation.
+
   - id: wiki.lifesteal.146618
     title: Lifesteal
     url: "https://deadlock.wiki/Lifesteal"

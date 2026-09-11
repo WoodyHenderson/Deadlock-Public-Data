@@ -115,6 +115,39 @@ def validate_lifesteal(records, source_ids):
         check(effects.get(name, {}).get("game_mode") == mode, f"Lifesteal mode isolation: {name}")
 
 
+def validate_burst_profiles(records):
+    """Cross-check baseline curation; do not validate hypothetical runtime models."""
+    profiles = records["data/burst-weapons.yaml"]["weapons"]
+    expected = {p for p, r in records.items() if p.startswith("heroes/")
+                and r.get("weapon", {}).get("BulletsPerBurst", 1) > 1}
+    actual = {p["record"] for p in profiles}
+    check(actual == expected, "Burst profile coverage differs from canonical weapons")
+    check(len(actual) == len(profiles), "Duplicate burst profiles")
+    estimates = records["data/burst-weapons.yaml"]["estimated_between_burst_gaps"]
+    estimate_values = estimates["values_seconds"]
+    for profile in profiles:
+        path = profile["record"]
+        check(path in records, f"Missing burst weapon record: {path}")
+        if path not in records:
+            continue
+        weapon = records[path]["weapon"]
+        n, intra, cycle = (profile[k] for k in
+                           ("burst_shot_count", "intra_burst_cycle_time", "cycle_time"))
+        check(n == weapon["BulletsPerBurst"], f"Burst shot count: {path}")
+        check(isclose(intra, weapon["BurstInterShotInterval"]), f"Burst interval: {path}")
+        period = n * intra + cycle
+        check(period > 0, f"Nonpositive API burst period: {path}")
+        if period > 0:
+            check(isclose(n / period, profile["shots_per_second"]), f"API burst average: {path}")
+            check(abs(n / period - weapon["RoundsPerSecond"]) <= 0.00005,
+                  f"Burst rate differs from rounded canonical rate: {path}")
+        expected_gap = intra + cycle
+        check(profile["hero"] in estimate_values, f"Missing burst gap estimate: {path}")
+        if profile["hero"] in estimate_values:
+            check(isclose(estimate_values[profile["hero"]], expected_gap),
+                  f"Burst gap estimate differs from documented derivation: {path}")
+
+
 def main():
     registry = load("sources/source-registry.yaml")
     sources = registry["sources"]
@@ -156,6 +189,7 @@ def main():
                 if re.fullmatch(r"(?:wiki\.|deadlock-api\.|github\.deadlock-data\.)[\w.-]+", value):
                     check(value in ids, f"Missing source ID: {relative}: {value}")
     validate_lifesteal(records, ids)
+    validate_burst_profiles(records)
     index = (ROOT / "INDEX.md").read_text()
     for domain, collection, count_key in [
         ("heroes", "heroes", "hero_count"), ("items", "items", "item_count"),
@@ -210,7 +244,7 @@ def main():
         raise SystemExit("Validation failed:\n" + "\n".join(errors))
     print(f"PASS: {len(records)} YAML files; 38 heroes, 173 items, 14 NPCs, 2 objectives; "
           f"{counts['abilities']} abilities, {counts['descriptions']} descriptions; "
-          f"{len(expected)} hash-verified changelogs; local links, source references, and lifesteal consistency valid.")
+          f"{len(expected)} hash-verified changelogs; local links, source references, lifesteal consistency, and burst profiles valid.")
 
 
 if __name__ == "__main__":
