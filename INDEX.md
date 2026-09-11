@@ -88,7 +88,7 @@ holds exact fields. Names reflect the pinned roster, not a live-game check.
 | [Rem](heroes/rem/rem.md) | Pillow Toss; Tag Along; Lil Helpers; Naptime |
 | [Seven](heroes/seven/seven.md) | Lightning Ball; Static Charge; Power Surge; Storm Cloud |
 | [Shiv](heroes/shiv/shiv.md) | Serrated Knives; Slice and Dice; Bloodletting; Killing Blow |
-| [Silver](heroes/silver/silver.md) | Slam Fire; Boot Kick; Entangling Bola; Lycan Curse |
+| [Silver](heroes/silver/silver.md) | Slam Fire; Boot Kick; Entangling Bola; Lycan Curse; Go For The Throat; Mauling Leap; Tail Whack; Loose Muzzle (transformed) |
 | [Sinclair](heroes/sinclair/sinclair.md) | Vexing Bolt; Spectral Assistant; Rabbit Hex; Audience Participation |
 | [The Doorman](heroes/the-doorman/the-doorman.md) | Call Bell; Doorway; Luggage Cart; Hotel Guest |
 | [Venator](heroes/venator/venator.md) | Consecrating Grenade; Gutshot; Hex-Lined Snap Trap; Ira Domini |

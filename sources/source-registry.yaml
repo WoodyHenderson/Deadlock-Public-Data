@@ -528,6 +528,16 @@ sources:
     accessed_at: "2026-09-03"
     scope: Silver identity and article context; numeric facts use the pinned generated datasets
 
+  - id: wiki.silver.145833
+    title: "Silver"
+    url: "https://deadlock.wiki/Silver"
+    revision_url: "https://deadlock.wiki/Silver?oldid=145833"
+    revision_id: 145833
+    last_modified: "2026-09-10T00:24:12Z"
+    accessed_at: "2026-09-11"
+    scope: Silver transformed-form weapon, replacement abilities, and form-specific interactions
+    evidence_status: source_verified
+
   - id: wiki.sinclair.124939
     title: "Sinclair"
     url: "https://deadlock.wiki/Sinclair"

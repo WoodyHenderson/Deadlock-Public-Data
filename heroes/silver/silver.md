@@ -186,10 +186,57 @@ Upgrade deltas:
 - Tier 2: `{"BonusMoveSpeed":4,"BonusHealth":200}`
 - Tier 3: `{"KillDurationBonus":15,"KillCreditWindow":1.5}`
 
+## Lycan Curse: Transformed Form
+
+While **Lycan Curse** is active, Silver replaces her weapon and abilities with the ferocious versions below. This is a transformed state, not a separately selectable hero. The structured YAML stores this under `forms[0]`; the replacement abilities are not counted as additional selectable-hero abilities.
+
+### Transformed weapon: Loose Muzzle
+
+- **Weapon Damage:** 25 per attack; 2 attacks per second; approximately 50 DPS.
+- Close-range cone that can hit multiple enemies; it has no ammo count, reload, or headshot damage.
+- Its falloff range is fixed at 7m and cannot be increased by items such as Sharpshooter.
+- It can activate Ricochet; Split Shot has no effect.
+- Confirmed hits on enemies and NPCs grant one Fire Rate stack, up to 15 stacks. Each stack grants `(60 + 0.45 × Spirit Power) / 15%` Fire Rate, so the base value is +4% per stack at 0 Spirit Power and +60% at maximum stacks. Each attack refreshes existing stacks for 5 seconds; the stacks do not transfer after Lycan Curse ends.
+- **Source conflict:** the article's Loose Muzzle paragraph says to divide by 16, but its MaxStacks formula and explicit 60 / 15 example say 15. The knowledgebase records the MaxStacks-based `/15` interpretation while retaining this conflict.
+
+### Replacement abilities
+
+#### Go For The Throat
+
+Deal melee damage to all enemies in front of Silver, healing for a portion of the damage. Damage increases as targets have less health.
+
+- Base: 75 + 1.5× Melee Damage; 6% Missing Health as Damage; 40% Lifesteal; 7.5m range; 6.5s cooldown.
+- Tier 1: +30 Damage.
+- Tier 2: +25% Lifesteal.
+- Tier 3: +4% Missing Health as Damage.
+- Benefits from melee items. Healing is affected by Healing Reduction and Healing Amp.
+
+#### Mauling Leap
+
+Leap forward and maul the first enemy hit for melee damage. The target suffers reduced Bullet Resist and Spirit damage over time.
+
+- Base: 75 + 1.5× Melee Damage; 15 Spirit Damage per second; −8% Bullet Resist for 6s; 18.1m range; 16s cooldown.
+- Tier 1: +10 Spirit Damage per second.
+- Tier 2: −9s cooldown.
+- Tier 3: −12% Bullet Resist.
+- Benefits from melee items. The primary hit is Melee Damage; only the damage-over-time component is Spirit Damage. Debuff duration is reduced by Debuff Resist and the effect can be dispelled.
+
+#### Tail Whack
+
+Smash nearby enemies for Spirit damage, Disarm, and a brief movement slow.
+
+- Base: 45 + 1.5× Spirit Power; 2s Disarm; −30% Move Speed; 18s cooldown.
+- Tier 1: +25 Damage.
+- Tier 2: −40% Move Speed.
+- Tier 3: +1.5s Debuff Duration.
+- The effect can be dispelled, and its crowd-control effects are suppressed by Unstoppable.
+
+The wiki notes that Mauling Leap’s UI uses the Spirit Damage icon despite its primary hit being Melee Damage. These transformed values and interactions are sourced from the transformed-form article and are not silently merged into Silver’s base-form ability records.
+
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.
 
 ## Source Notes
 
-Adapted from the pinned [Silver](https://deadlock.wiki/Silver?oldid=124941) article and generated data revisions. No wiki media is included.
+Adapted from the pinned [Silver](https://deadlock.wiki/Silver?oldid=124941) article, transformed-form material in [revision 145833](https://deadlock.wiki/Silver?oldid=145833), and generated data revisions. No wiki media is included.

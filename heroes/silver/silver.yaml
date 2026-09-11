@@ -9,7 +9,8 @@
     "hero_data": "wiki.data-hero-data.108817",
     "ability_data": "wiki.data-ability-data.114011",
     "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "ability_localization": "github.deadlock-data.english.311b2e8d895e",
+    "article_transformed": "wiki.silver.145833"
   },
   "name": "Silver",
   "aliases": [],
@@ -1360,6 +1361,173 @@
   "data_boundaries": [
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
-    "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+    "Mode-specific overrides are excluded unless exposed by the pinned generated data.",
+    "The transformed form is a wiki-sourced supplemental form record; its wiki article does not expose generated internal ability keys or full API card fields."
+  ],
+  "forms": [
+    {
+      "id": "transformed",
+      "name": "Lycan Curse (transformed)",
+      "not_separately_selectable": true,
+      "source": "wiki.silver.145833",
+      "weapon": {
+        "name": "Loose Muzzle",
+        "display_name": "Loose Muzzle",
+        "damage_type": "Weapon Damage",
+        "damage_per_second": 50,
+        "bullet_damage": 25,
+        "bullets_per_second": 2,
+        "ammo": null,
+        "reload_time_seconds": null,
+        "falloff_range_meters": {
+          "start": 0,
+          "end": 7,
+          "cannot_be_increased": true
+        },
+        "headshot_damage": false,
+        "shape": "close-range cone",
+        "multi_target": true,
+        "notes": [
+          "Has no ammo count and no reload.",
+          "Can hit multiple enemies.",
+          "Can activate Ricochet; Split Shot has no effect.",
+          "Confirmed hits on enemies and NPCs grant stacking Fire Rate; the buff lasts approximately 6 seconds without a hit and does not transfer after transformation ends."
+        ],
+        "fire_rate_stacking": {
+          "confirmed_hit_grants_one_stack": true,
+          "maximum_stacks": 15,
+          "maximum_bonus_fire_rate_percent": {
+            "value": 60,
+            "spirit_scaling": 0.45
+          },
+          "per_stack_formula": "(60 + 0.45 * Spirit Power) / 15 percent Fire Rate",
+          "stack_duration_seconds": 5,
+          "refreshes_all_existing_stacks": true,
+          "source": "wiki.silver.145833",
+          "evidence_status": "source_conflict",
+          "conflict": "The Loose Muzzle paragraph says to divide by 16, but the same article states the maximum is reached at MaxStacks and its explicit example calculates 60 / 15 = 4 percent per attack. The /16 wording is retained as an unresolved source-text inconsistency."
+        },
+        "source": "wiki.silver.145833"
+      },
+      "abilities": [
+        {
+          "slot": "replacement_1",
+          "name": "Go For The Throat",
+          "internal_key": null,
+          "description": "Deal melee damage to all enemies in front of you, receiving a heal for a portion of the damage dealt. The damage is increased the lower health they have.",
+          "data": {
+            "damage": {
+              "value": 75,
+              "scale": {
+                "value": 1.5,
+                "type": "melee"
+              }
+            },
+            "missing_health_as_damage_percent": 6,
+            "lifesteal_percent": 40,
+            "cooldown_seconds": 6.5,
+            "cast_range_meters": 7.5
+          },
+          "upgrades": [
+            {
+              "damage": 30
+            },
+            {
+              "lifesteal_percent": 25
+            },
+            {
+              "missing_health_as_damage_percent": 4
+            }
+          ],
+          "interactions": [
+            "Benefits from melee items such as Melee Lifesteal.",
+            "Healing is affected by Healing Reduction and Healing Amp."
+          ],
+          "source": "wiki.silver.145833"
+        },
+        {
+          "slot": "replacement_2",
+          "name": "Mauling Leap",
+          "internal_key": null,
+          "description": "Leap forward, mauling the first enemy hit for melee damage. They suffer from reduced Bullet Resist and take Spirit damage over time.",
+          "data": {
+            "damage": {
+              "value": 75,
+              "scale": {
+                "value": 1.5,
+                "type": "melee"
+              }
+            },
+            "spirit_damage_per_second": 15,
+            "bullet_resist_reduction_percent": 8,
+            "debuff_duration_seconds": 6,
+            "cast_range_meters": 18.1,
+            "cast_delay_seconds": 0.55,
+            "cooldown_seconds": 16
+          },
+          "upgrades": [
+            {
+              "spirit_damage_per_second": 10
+            },
+            {
+              "cooldown_seconds": -9
+            },
+            {
+              "bullet_resist_reduction_percent": 12
+            }
+          ],
+          "interactions": [
+            "Benefits from melee items such as Melee Lifesteal.",
+            "Debuff duration is reduced by Debuff Resist and the effect can be dispelled.",
+            "Slowing Hex disables it."
+          ],
+          "notes": [
+            "The wiki notes that the ability UI uses the Spirit Damage icon even though the primary hit is Melee Damage; only the damage-over-time component is Spirit Damage.",
+            "The start-up can be cancelled by immediately inputting jump twice without placing the ability on cooldown."
+          ],
+          "source": "wiki.silver.145833"
+        },
+        {
+          "slot": "replacement_3",
+          "name": "Tail Whack",
+          "internal_key": null,
+          "description": "Smash enemies around you, dealing Spirit damage. They suffer from Disarm and a brief slow.",
+          "data": {
+            "damage": {
+              "value": 45,
+              "scale": {
+                "value": 1.5,
+                "type": "spirit"
+              }
+            },
+            "disarm_duration_seconds": 2,
+            "move_speed_slow_percent": 30,
+            "cooldown_seconds": 18
+          },
+          "upgrades": [
+            {
+              "damage": 25
+            },
+            {
+              "move_speed_slow_percent": 40
+            },
+            {
+              "debuff_duration_seconds": 1.5
+            }
+          ],
+          "interactions": [
+            "Debuff duration is reduced by Debuff Resist and the effect can be dispelled.",
+            "Crowd-control effects are suppressed by Unstoppable."
+          ],
+          "source": "wiki.silver.145833"
+        }
+      ],
+      "notes": [
+        "The transformed form retains Silver’s ordinary melee attacks.",
+        "Lycan Curse replaces Silver’s ordinary weapon and abilities while active; it is not a separately selectable hero.",
+        "If Silver imbues an item in one form, the imbued item affects the corresponding ability in both forms.",
+        "Fire Rate stacking has a source-text inconsistency: the article says divide the maximum by 16, while its MaxStacks-based formula and 60% example establish 15 stacks and 4% per attack at zero Spirit Power. Treat the /15 rule as the supported calculation interpretation, but preserve the conflict."
+      ]
+    }
   ]
 }
