@@ -731,6 +731,15 @@ sources:
     local_manifest: patches/manifest.yaml
     source_quality_note: Historical changelog text only. This source is intentionally excluded from current entity facts and calculations; patch-note intent does not prove final runtime behavior or override current structured data.
 
+  - id: github.deadlock-data.changelogs.raw.fc4f540f12e0
+    title: deadlock-wiki/deadlock-data latest raw changelogs
+    url: "https://github.com/deadlock-wiki/deadlock-data/tree/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/changelogs/raw"
+    commit: fc4f540f12e019a6a2a422e0818917a4eedaf881
+    accessed_at: "2026-09-17"
+    scope: Latest raw patch changelog, including 2026-09-16
+    local_manifest: patches/manifest.yaml
+    source_quality_note: Historical changelog text only. This source is intentionally excluded from current entity facts and calculations; patch-note intent does not prove final runtime behavior or override current structured data.
+
   - id: github.deadlock-data.english.311b2e8d895e
     title: deadlock-wiki/deadlock-data English ability localization for client 6684
     url: "https://github.com/deadlock-wiki/deadlock-data/blob/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json"

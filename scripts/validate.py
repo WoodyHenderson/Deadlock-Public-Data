@@ -239,7 +239,7 @@ def main():
         date.fromisoformat(str(entry["date"]))
         check(allowed_source(entry["source_url"]), f"Patch origin: {entry['path']}")
     check(expected == set((ROOT / "patches/raw").glob("*.txt")), "Patch inventory mismatch")
-    check(len(expected) == 135, "Patch count")
+    check(len(expected) == 136, "Patch count")
     if errors:
         raise SystemExit("Validation failed:\n" + "\n".join(errors))
     print(f"PASS: {len(records)} YAML files; 38 heroes, 173 items, 14 NPCs, 2 objectives; "

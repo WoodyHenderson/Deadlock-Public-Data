@@ -2,7 +2,7 @@
 
 A community-maintained, source-attributed Deadlock data snapshot in Markdown and
 YAML. It includes **38 heroes, 152 abilities, 173 items, 14 NPC records, two
-claimable objectives, and 135 historical changelogs**.
+claimable objectives, and 136 historical changelogs**.
 
 Start with the [keyword index](INDEX.md) to find a hero, ability, item, or mechanic.
 Use Markdown for readable explanations and adjacent YAML for structured fields.
@@ -16,7 +16,7 @@ documents, evaluation answers, or private source notes.
 - Source access dates, wiki revisions, commits, and hashes are recorded separately.
 - Ability descriptions resolve all 630 card references into 481 distinct entries:
   170 base/secondary descriptions and 311 upgrade descriptions.
-- Historical changelogs cover **2024-05-03 through 2026-08-22**, including separate
+- Historical changelogs cover **2024-05-03 through 2026-09-16**, including separate
   same-date and Hero Lab files.
 
 A curation/access date is not a claim that the data matches today's game. An old

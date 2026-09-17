@@ -6,6 +6,7 @@ source_commit: afc8e9c10bedd12ef7d1cf750bcdb612ed0c21af
 source_repository: deadlock-wiki/deadlock-data
 source_directory: data/changelogs/raw
 current_knowledgebase_policy: historical_only
+latest_source_commit: fc4f540f12e019a6a2a422e0818917a4eedaf881
 files:
 - date: '2024-05-03'
   path: raw/2024-05-03.txt
@@ -952,4 +953,11 @@ files:
   id: '2026-08-22'
   variant: standard
   source_url: https://github.com/deadlock-wiki/deadlock-data/blob/afc8e9c10bedd12ef7d1cf750bcdb612ed0c21af/data/changelogs/raw/2026-08-22.txt
+- date: '2026-09-16'
+  path: raw/2026-09-16.txt
+  sha256: 489f7329d627055b723f8c6e840d092818db49a020316a4af08248cae910a50f
+  bytes: 8805
+  id: '2026-09-16'
+  variant: standard
+  source_url: https://github.com/deadlock-wiki/deadlock-data/blob/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/changelogs/raw/2026-09-16.txt
 retrieval_policy: explicit_history_requests_only
