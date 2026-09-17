@@ -5,8 +5,8 @@ domain: patches
 topics: [patches, history, balance, changelogs]
 aliases: [patch notes, patch history, changelogs, balance history]
 summary: Historical Deadlock patch changelogs for explicitly requested historical or change-tracking questions.
-snapshot_id: deadlock-wiki-2026-09-08
-current_as_of: "2026-09-08"
+snapshot_id: deadlock-wiki-2026-09-17
+current_as_of: "2026-09-17"
 evidence_status: source_verified
 sources:
   - github.deadlock-data.changelogs.raw.afc8e9c
@@ -14,8 +14,8 @@ sources:
 
 # Historical Patch Changelogs
 
-This section contains **135 dated raw changelogs** from 2024-05-03 through
-2026-08-22, imported from the pinned `deadlock-wiki/deadlock-data` commit.
+This section contains **136 dated raw changelogs** from 2024-05-03 through
+2026-09-16, imported from the latest `deadlock-wiki/deadlock-data` commit.
 See [`manifest.yaml`](manifest.yaml) for the per-file hashes and source paths.
 
 ## Retrieval policy
@@ -39,7 +39,7 @@ normalized into current entity facts.
 ## Source and update policy
 
 The source is pinned to commit
-`afc8e9c10bedd12ef7d1cf750bcdb612ed0c21af`. Updates should import a new pinned
+`fc4f540f12e019a6a2a422e0818917a4eedaf881`. Updates should import a new pinned
 commit, retain the old manifest/files for reproducibility, and never silently
 rewrite current records. New changelog files can be added without requiring a
 current knowledgebase refresh.
