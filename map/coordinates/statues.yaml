@@ -1,0 +1,1191 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "private-map-2026-10-06",
+  "current_as_of": "2026-10-06",
+  "evidence_status": "source_verified",
+  "source_id": "private.map-coordinates.2026-10-06",
+  "category": "statues",
+  "count": 166,
+  "points": [
+    {
+      "id": "map.statues.0001",
+      "u": 0.558,
+      "v": 0.5007,
+      "h_m": 9.75,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.statues.0002",
+      "u": 0.5112,
+      "v": 0.6942,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.statues.0003",
+      "u": 0.5253,
+      "v": 0.6302,
+      "h_m": 17.98,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.statues.0004",
+      "u": 0.4159,
+      "v": 0.5699,
+      "h_m": 6.5,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.statues.0005",
+      "u": 0.4621,
+      "v": 0.6042,
+      "h_m": 17.88,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.statues.0006",
+      "u": 0.4821,
+      "v": 0.3058,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.statues.0007",
+      "u": 0.4754,
+      "v": 0.369,
+      "h_m": 17.98,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.statues.0008",
+      "u": 0.5826,
+      "v": 0.4301,
+      "h_m": 6.5,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.statues.0009",
+      "u": 0.5357,
+      "v": 0.3981,
+      "h_m": 18.69,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.statues.0010",
+      "u": 0.442,
+      "v": 0.5,
+      "h_m": 9.75,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.statues.0011",
+      "u": 0.6384,
+      "v": 0.3817,
+      "h_m": 12.26,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0012",
+      "u": 0.6396,
+      "v": 0.356,
+      "h_m": 9.75,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0013",
+      "u": 0.4926,
+      "v": 0.4222,
+      "h_m": 3.28,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.statues.0014",
+      "u": 0.6961,
+      "v": 0.567,
+      "h_m": -3.66,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0015",
+      "u": 0.6436,
+      "v": 0.5625,
+      "h_m": 63.58,
+      "zone_id": "bell-tower-20",
+      "group": 3
+    },
+    {
+      "id": "map.statues.0016",
+      "u": 0.6436,
+      "v": 0.6129,
+      "h_m": 63.58,
+      "zone_id": "bell-tower-20",
+      "group": 3
+    },
+    {
+      "id": "map.statues.0017",
+      "u": 0.3043,
+      "v": 0.433,
+      "h_m": -3.66,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.statues.0018",
+      "u": 0.6473,
+      "v": 0.6958,
+      "h_m": 18.42,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0019",
+      "u": 0.6443,
+      "v": 0.6958,
+      "h_m": 18.42,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0020",
+      "u": 0.6481,
+      "v": 0.6643,
+      "h_m": 18.44,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0021",
+      "u": 0.6429,
+      "v": 0.6057,
+      "h_m": 9.75,
+      "zone_id": "bell-tower-20"
+    },
+    {
+      "id": "map.statues.0022",
+      "u": 0.6065,
+      "v": 0.6121,
+      "h_m": 9.86,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0023",
+      "u": 0.6339,
+      "v": 0.5623,
+      "h_m": 9.75,
+      "zone_id": "bell-tower-20"
+    },
+    {
+      "id": "map.statues.0024",
+      "u": 0.6696,
+      "v": 0.5357,
+      "h_m": 6.5,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0025",
+      "u": 0.5843,
+      "v": 0.6073,
+      "h_m": 19.51,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0026",
+      "u": 0.5692,
+      "v": 0.7128,
+      "h_m": 9.75,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0027",
+      "u": 0.6287,
+      "v": 0.7485,
+      "h_m": 13,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0028",
+      "u": 0.6213,
+      "v": 0.7321,
+      "h_m": 13,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0029",
+      "u": 0.6869,
+      "v": 0.615,
+      "h_m": 6.5,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0030",
+      "u": 0.5722,
+      "v": 0.5759,
+      "h_m": 13,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0031",
+      "u": 0.6696,
+      "v": 0.5372,
+      "h_m": 30.78,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0032",
+      "u": 0.7336,
+      "v": 0.638,
+      "h_m": 16.66,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.statues.0033",
+      "u": 0.7228,
+      "v": 0.638,
+      "h_m": 16.66,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0034",
+      "u": 0.6436,
+      "v": 0.567,
+      "h_m": 9.75,
+      "zone_id": "bell-tower-20"
+    },
+    {
+      "id": "map.statues.0035",
+      "u": 0.5052,
+      "v": 0.5049,
+      "h_m": -2.17,
+      "zone_id": "times-square-4",
+      "group": 2
+    },
+    {
+      "id": "map.statues.0036",
+      "u": 0.5087,
+      "v": 0.5112,
+      "h_m": -2.44,
+      "zone_id": "times-square-4",
+      "group": 2
+    },
+    {
+      "id": "map.statues.0037",
+      "u": 0.5,
+      "v": 0.5295,
+      "h_m": -2.44,
+      "zone_id": "times-square-4",
+      "group": 2
+    },
+    {
+      "id": "map.statues.0038",
+      "u": 0.4914,
+      "v": 0.5114,
+      "h_m": -2.44,
+      "zone_id": "times-square-4",
+      "group": 2
+    },
+    {
+      "id": "map.statues.0039",
+      "u": 0.5,
+      "v": 0.5402,
+      "h_m": -11.38,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.statues.0040",
+      "u": 0.4714,
+      "v": 0.5562,
+      "h_m": -16.26,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.statues.0041",
+      "u": 0.4948,
+      "v": 0.4951,
+      "h_m": -2.17,
+      "zone_id": "times-square-4",
+      "group": 2
+    },
+    {
+      "id": "map.statues.0042",
+      "u": 0.4913,
+      "v": 0.4888,
+      "h_m": -2.44,
+      "zone_id": "times-square-4",
+      "group": 2
+    },
+    {
+      "id": "map.statues.0043",
+      "u": 0.5,
+      "v": 0.4705,
+      "h_m": -2.44,
+      "zone_id": "times-square-4",
+      "group": 2
+    },
+    {
+      "id": "map.statues.0044",
+      "u": 0.5086,
+      "v": 0.4886,
+      "h_m": -2.44,
+      "zone_id": "times-square-4",
+      "group": 2
+    },
+    {
+      "id": "map.statues.0045",
+      "u": 0.5,
+      "v": 0.4598,
+      "h_m": -11.38,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.statues.0046",
+      "u": 0.7814,
+      "v": 0.5538,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.statues.0047",
+      "u": 0.8594,
+      "v": 0.5938,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.statues.0048",
+      "u": 0.8795,
+      "v": 0.6235,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.statues.0049",
+      "u": 0.7039,
+      "v": 0.6093,
+      "h_m": 6.48,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0050",
+      "u": 0.8914,
+      "v": 0.5104,
+      "h_m": 7.32,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.statues.0051",
+      "u": 0.756,
+      "v": 0.5632,
+      "h_m": 23.57,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.statues.0052",
+      "u": 0.7005,
+      "v": 0.5908,
+      "h_m": 15.85,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0053",
+      "u": 0.7132,
+      "v": 0.6105,
+      "h_m": 15.85,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0054",
+      "u": 0.7277,
+      "v": 0.5759,
+      "h_m": 15.85,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.statues.0055",
+      "u": 0.8065,
+      "v": 0.5,
+      "h_m": 3.25,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.statues.0056",
+      "u": 0.724,
+      "v": 0.5387,
+      "h_m": 12.92,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0057",
+      "u": 0.8914,
+      "v": 0.4896,
+      "h_m": 7.32,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.statues.0058",
+      "u": 0.9048,
+      "v": 0.3958,
+      "h_m": 6.5,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.statues.0059",
+      "u": 0.7913,
+      "v": 0.4059,
+      "h_m": 6.5,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.statues.0060",
+      "u": 0.7723,
+      "v": 0.3891,
+      "h_m": 26.01,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0061",
+      "u": 0.753,
+      "v": 0.4003,
+      "h_m": 31.5,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0062",
+      "u": 0.8067,
+      "v": 0.41,
+      "h_m": 13.41,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.statues.0063",
+      "u": 0.3441,
+      "v": 0.558,
+      "h_m": -9.75,
+      "zone_id": "haunted-lot-6",
+      "group": 1
+    },
+    {
+      "id": "map.statues.0064",
+      "u": 0.1782,
+      "v": 0.6008,
+      "h_m": 0.81,
+      "zone_id": "factory-13",
+      "group": 1
+    },
+    {
+      "id": "map.statues.0065",
+      "u": 0.3021,
+      "v": 0.5744,
+      "h_m": -3.25,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0066",
+      "u": 0.3439,
+      "v": 0.5947,
+      "h_m": 6.5,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0067",
+      "u": 0.2872,
+      "v": 0.6507,
+      "h_m": 9.75,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0068",
+      "u": 0.3145,
+      "v": 0.5319,
+      "h_m": 6.45,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0069",
+      "u": 0.3534,
+      "v": 0.5833,
+      "h_m": 22.71,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0070",
+      "u": 0.2961,
+      "v": 0.5919,
+      "h_m": -3.25,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0071",
+      "u": 0.3229,
+      "v": 0.6116,
+      "h_m": -3.24,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0072",
+      "u": 0.2723,
+      "v": 0.5387,
+      "h_m": 27.23,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0073",
+      "u": 0.266,
+      "v": 0.5424,
+      "h_m": 6.5,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0074",
+      "u": 0.25,
+      "v": 0.5528,
+      "h_m": 29.06,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0075",
+      "u": 0.3568,
+      "v": 0.6142,
+      "h_m": -3.25,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0076",
+      "u": 0.2292,
+      "v": 0.5949,
+      "h_m": 27.64,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0077",
+      "u": 0.3216,
+      "v": 0.5183,
+      "h_m": 6.45,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0078",
+      "u": 0.3333,
+      "v": 0.5208,
+      "h_m": 31.7,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0079",
+      "u": 0.2827,
+      "v": 0.676,
+      "h_m": 30.89,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0080",
+      "u": 0.3824,
+      "v": 0.5878,
+      "h_m": 0,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.statues.0081",
+      "u": 0.3475,
+      "v": 0.7143,
+      "h_m": 9.75,
+      "zone_id": null
+    },
+    {
+      "id": "map.statues.0082",
+      "u": 0.2121,
+      "v": 0.5885,
+      "h_m": 6.5,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.statues.0083",
+      "u": 0.3705,
+      "v": 0.635,
+      "h_m": 15.04,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0084",
+      "u": 0.3408,
+      "v": 0.5603,
+      "h_m": 13.77,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0085",
+      "u": 0.3539,
+      "v": 0.561,
+      "h_m": 13.77,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0086",
+      "u": 0.2602,
+      "v": 0.5517,
+      "h_m": 0.42,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0087",
+      "u": 0.2381,
+      "v": 0.5551,
+      "h_m": -3.25,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0088",
+      "u": 0.2403,
+      "v": 0.6042,
+      "h_m": 6.5,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0089",
+      "u": 0.2987,
+      "v": 0.5673,
+      "h_m": 6.5,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0090",
+      "u": 0.3021,
+      "v": 0.6347,
+      "h_m": 19.51,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0091",
+      "u": 0.2872,
+      "v": 0.6652,
+      "h_m": 19.51,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0092",
+      "u": 0.2872,
+      "v": 0.6198,
+      "h_m": 6.5,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0093",
+      "u": 0.6957,
+      "v": 0.4643,
+      "h_m": 8.13,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0094",
+      "u": 0.6768,
+      "v": 0.3681,
+      "h_m": 9.78,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0095",
+      "u": 0.6853,
+      "v": 0.4643,
+      "h_m": -3.25,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0096",
+      "u": 0.7039,
+      "v": 0.4081,
+      "h_m": -3.25,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0097",
+      "u": 0.6771,
+      "v": 0.3884,
+      "h_m": -3.24,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0098",
+      "u": 0.6935,
+      "v": 0.3865,
+      "h_m": 19.39,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0099",
+      "u": 0.7336,
+      "v": 0.4524,
+      "h_m": 23.45,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0100",
+      "u": 0.7225,
+      "v": 0.3467,
+      "h_m": 25.6,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0101",
+      "u": 0.6935,
+      "v": 0.4232,
+      "h_m": 6.5,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0102",
+      "u": 0.7413,
+      "v": 0.3651,
+      "h_m": 9.75,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0103",
+      "u": 0.7396,
+      "v": 0.4286,
+      "h_m": 35.76,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0104",
+      "u": 0.7009,
+      "v": 0.4293,
+      "h_m": -3.25,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0105",
+      "u": 0.7388,
+      "v": 0.3408,
+      "h_m": 23.98,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0106",
+      "u": 0.7378,
+      "v": 0.3409,
+      "h_m": 11.38,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0107",
+      "u": 0.6473,
+      "v": 0.311,
+      "h_m": 12.95,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0108",
+      "u": 0.6432,
+      "v": 0.388,
+      "h_m": -3.25,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0109",
+      "u": 0.7143,
+      "v": 0.4658,
+      "h_m": -3.25,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0110",
+      "u": 0.6656,
+      "v": 0.4609,
+      "h_m": 32.51,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0111",
+      "u": 0.6027,
+      "v": 0.4141,
+      "h_m": 0,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.statues.0112",
+      "u": 0.6935,
+      "v": 0.3612,
+      "h_m": 25.6,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0113",
+      "u": 0.6467,
+      "v": 0.3406,
+      "h_m": 11.38,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0114",
+      "u": 0.6462,
+      "v": 0.3828,
+      "h_m": 36.72,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0115",
+      "u": 0.3393,
+      "v": 0.381,
+      "h_m": 0,
+      "zone_id": "sunken-plaza-19"
+    },
+    {
+      "id": "map.statues.0116",
+      "u": 0.4358,
+      "v": 0.2751,
+      "h_m": 13,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.statues.0117",
+      "u": 0.4568,
+      "v": 0.3307,
+      "h_m": 9.75,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.statues.0118",
+      "u": 0.3434,
+      "v": 0.381,
+      "h_m": -0.81,
+      "zone_id": "sunken-plaza-19",
+      "group": 3
+    },
+    {
+      "id": "map.statues.0119",
+      "u": 0.3289,
+      "v": 0.4613,
+      "h_m": 30.78,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.statues.0120",
+      "u": 0.2928,
+      "v": 0.3511,
+      "h_m": 9.73,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.statues.0121",
+      "u": 0.3624,
+      "v": 0.4353,
+      "h_m": -3.25,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.statues.0122",
+      "u": 0.369,
+      "v": 0.4092,
+      "h_m": -0.81,
+      "zone_id": "sunken-plaza-19",
+      "group": 3
+    },
+    {
+      "id": "map.statues.0123",
+      "u": 0.4062,
+      "v": 0.372,
+      "h_m": -0.81,
+      "zone_id": "sunken-plaza-19",
+      "group": 3
+    },
+    {
+      "id": "map.statues.0124",
+      "u": 0.4263,
+      "v": 0.3289,
+      "h_m": 9.75,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.statues.0125",
+      "u": 0.4211,
+      "v": 0.3216,
+      "h_m": 9.75,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.statues.0126",
+      "u": 0.439,
+      "v": 0.3943,
+      "h_m": 9.75,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.statues.0127",
+      "u": 0.3289,
+      "v": 0.4643,
+      "h_m": 6.5,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.statues.0128",
+      "u": 0.3047,
+      "v": 0.381,
+      "h_m": 16.26,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.statues.0129",
+      "u": 0.2626,
+      "v": 0.3899,
+      "h_m": 6.5,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.statues.0130",
+      "u": 0.3065,
+      "v": 0.4479,
+      "h_m": 6.5,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.statues.0131",
+      "u": 0.2801,
+      "v": 0.4051,
+      "h_m": 6.5,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.statues.0132",
+      "u": 0.4062,
+      "v": 0.3899,
+      "h_m": -0.81,
+      "zone_id": "sunken-plaza-19",
+      "group": 3
+    },
+    {
+      "id": "map.statues.0133",
+      "u": 0.1504,
+      "v": 0.3987,
+      "h_m": 6.87,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.statues.0134",
+      "u": 0.0693,
+      "v": 0.3655,
+      "h_m": 12.34,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.statues.0135",
+      "u": 0.131,
+      "v": 0.3073,
+      "h_m": 9.75,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.statues.0136",
+      "u": 0.2076,
+      "v": 0.4468,
+      "h_m": 6.5,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.statues.0137",
+      "u": 0.1086,
+      "v": 0.4896,
+      "h_m": 7.38,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.statues.0138",
+      "u": 0.1741,
+      "v": 0.5,
+      "h_m": 10.35,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.statues.0139",
+      "u": 0.328,
+      "v": 0.1696,
+      "h_m": 10.84,
+      "zone_id": "docks-3a"
+    },
+    {
+      "id": "map.statues.0140",
+      "u": 0.3445,
+      "v": 0.2481,
+      "h_m": 10.22,
+      "zone_id": "docks-3a"
+    },
+    {
+      "id": "map.statues.0141",
+      "u": 0.3297,
+      "v": 0.2656,
+      "h_m": 9.99,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.statues.0142",
+      "u": 0.3862,
+      "v": 0.2738,
+      "h_m": 11.18,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.statues.0143",
+      "u": 0.4211,
+      "v": 0.2794,
+      "h_m": 11.18,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.statues.0144",
+      "u": 0.2537,
+      "v": 0.4308,
+      "h_m": 23.57,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.statues.0145",
+      "u": 0.2768,
+      "v": 0.4464,
+      "h_m": 14.58,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.statues.0146",
+      "u": 0.151,
+      "v": 0.346,
+      "h_m": 9.75,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.statues.0147",
+      "u": 0.25,
+      "v": 0.3444,
+      "h_m": 9.75,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.statues.0148",
+      "u": 0.1086,
+      "v": 0.5104,
+      "h_m": 7.41,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.statues.0149",
+      "u": 0.0915,
+      "v": 0.6049,
+      "h_m": 6.5,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.statues.0150",
+      "u": 0.2431,
+      "v": 0.7559,
+      "h_m": 11.27,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.statues.0151",
+      "u": 0.2965,
+      "v": 0.6927,
+      "h_m": 19.51,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.statues.0152",
+      "u": 0.1614,
+      "v": 0.763,
+      "h_m": 19.07,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.statues.0153",
+      "u": 0.3586,
+      "v": 0.2909,
+      "h_m": 26.82,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.statues.0154",
+      "u": 0.7133,
+      "v": 0.2935,
+      "h_m": 9.75,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.statues.0155",
+      "u": 0.7946,
+      "v": 0.2411,
+      "h_m": 9.75,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.statues.0156",
+      "u": 0.785,
+      "v": 0.2186,
+      "h_m": 9.75,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.statues.0157",
+      "u": 0.7262,
+      "v": 0.2308,
+      "h_m": 14.63,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.statues.0158",
+      "u": 0.6429,
+      "v": 0.7552,
+      "h_m": 13.41,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.statues.0159",
+      "u": 0.8214,
+      "v": 0.7609,
+      "h_m": 9.75,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.statues.0160",
+      "u": 0.9163,
+      "v": 0.6411,
+      "h_m": 13,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.statues.0161",
+      "u": 0.8698,
+      "v": 0.6879,
+      "h_m": 16.26,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.statues.0162",
+      "u": 0.8996,
+      "v": 0.7083,
+      "h_m": 13,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.statues.0163",
+      "u": 0.6618,
+      "v": 0.7256,
+      "h_m": 9.75,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0164",
+      "u": 0.8449,
+      "v": 0.6801,
+      "h_m": 9.75,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.statues.0165",
+      "u": 0.6295,
+      "v": 0.7262,
+      "h_m": 26.01,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.statues.0166",
+      "u": 0.7366,
+      "v": 0.7746,
+      "h_m": 16.26,
+      "zone_id": "brownstones-17"
+    }
+  ]
+}

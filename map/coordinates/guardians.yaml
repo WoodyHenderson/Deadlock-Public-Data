@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "private-map-2026-10-06",
+  "current_as_of": "2026-10-06",
+  "evidence_status": "source_verified",
+  "source_id": "private.map-coordinates.2026-10-06",
+  "category": "guardians",
+  "count": 6,
+  "points": [
+    {
+      "id": "map.guardians.0001",
+      "u": 0.119,
+      "v": 0.5863,
+      "h_m": 6.3,
+      "zone_id": "factory-13",
+      "team": "amber",
+      "lane": "York"
+    },
+    {
+      "id": "map.guardians.0002",
+      "u": 0.8274,
+      "v": 0.5923,
+      "h_m": 6.5,
+      "zone_id": "central-park-5",
+      "team": "amber",
+      "lane": "Greenwich"
+    },
+    {
+      "id": "map.guardians.0003",
+      "u": 0.878,
+      "v": 0.4137,
+      "h_m": 6.3,
+      "zone_id": "campus-18",
+      "team": "sapphire",
+      "lane": "Greenwich"
+    },
+    {
+      "id": "map.guardians.0004",
+      "u": 0.1726,
+      "v": 0.4077,
+      "h_m": 6.3,
+      "zone_id": "docks-3b",
+      "team": "sapphire",
+      "lane": "York"
+    },
+    {
+      "id": "map.guardians.0005",
+      "u": 0.5,
+      "v": 0.5833,
+      "h_m": 9.75,
+      "zone_id": "times-square-4",
+      "team": "amber",
+      "lane": "Broadway"
+    },
+    {
+      "id": "map.guardians.0006",
+      "u": 0.5,
+      "v": 0.4167,
+      "h_m": 9.75,
+      "zone_id": "times-square-4",
+      "team": "sapphire",
+      "lane": "Broadway"
+    }
+  ]
+}

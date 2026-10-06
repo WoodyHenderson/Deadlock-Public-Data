@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "private-map-2026-10-06",
+  "current_as_of": "2026-10-06",
+  "evidence_status": "source_verified",
+  "source_id": "private.map-coordinates.2026-10-06",
+  "category": "sinners_sacrifice",
+  "count": 15,
+  "points": [
+    {
+      "id": "map.sinners_sacrifice.0001",
+      "u": 0.66,
+      "v": 0.5952,
+      "h_m": 63.4,
+      "zone_id": "bell-tower-20",
+      "name": "Chinatown Bell 1"
+    },
+    {
+      "id": "map.sinners_sacrifice.0002",
+      "u": 0.628,
+      "v": 0.5878,
+      "h_m": 63.4,
+      "zone_id": "bell-tower-20",
+      "name": "Chinatown Bell 1"
+    },
+    {
+      "id": "map.sinners_sacrifice.0003",
+      "u": 0.66,
+      "v": 0.5809,
+      "h_m": 63.4,
+      "zone_id": "bell-tower-20",
+      "name": "Chinatown Bell 1"
+    },
+    {
+      "id": "map.sinners_sacrifice.0004",
+      "u": 0.3541,
+      "v": 0.5709,
+      "h_m": 14.27,
+      "zone_id": "haunted-lot-6",
+      "name": "Slums Garage Up"
+    },
+    {
+      "id": "map.sinners_sacrifice.0005",
+      "u": 0.3408,
+      "v": 0.5804,
+      "h_m": 14.43,
+      "zone_id": "haunted-lot-6",
+      "name": "Slums Garage Up"
+    },
+    {
+      "id": "map.sinners_sacrifice.0006",
+      "u": 0.686,
+      "v": 0.3601,
+      "h_m": 25.6,
+      "zone_id": "theater-9",
+      "name": "Theater Balcony"
+    },
+    {
+      "id": "map.sinners_sacrifice.0007",
+      "u": 0.7009,
+      "v": 0.3601,
+      "h_m": 25.6,
+      "zone_id": "theater-9",
+      "name": "Theater Balcony"
+    },
+    {
+      "id": "map.sinners_sacrifice.0008",
+      "u": 0.6101,
+      "v": 0.5446,
+      "h_m": 9.96,
+      "zone_id": "times-square-4",
+      "name": "Drug Store"
+    },
+    {
+      "id": "map.sinners_sacrifice.0009",
+      "u": 0.3908,
+      "v": 0.4524,
+      "h_m": 9.96,
+      "zone_id": "times-square-4",
+      "name": "Hotel 1"
+    },
+    {
+      "id": "map.sinners_sacrifice.0010",
+      "u": 0.7679,
+      "v": 0.5528,
+      "h_m": 6.5,
+      "zone_id": "central-park-5",
+      "name": "Park Library"
+    },
+    {
+      "id": "map.sinners_sacrifice.0011",
+      "u": 0.2336,
+      "v": 0.4494,
+      "h_m": 6.5,
+      "zone_id": "stock-exchange-14",
+      "name": "York Radio"
+    },
+    {
+      "id": "map.sinners_sacrifice.0012",
+      "u": 0.2202,
+      "v": 0.5551,
+      "h_m": 6.5,
+      "zone_id": "docks-3b",
+      "name": "Dock Authority"
+    },
+    {
+      "id": "map.sinners_sacrifice.0013",
+      "u": 0.7794,
+      "v": 0.4373,
+      "h_m": 6.5,
+      "zone_id": "central-park-5",
+      "name": "Park Club"
+    },
+    {
+      "id": "map.sinners_sacrifice.0014",
+      "u": 0.3988,
+      "v": 0.3542,
+      "h_m": -0.81,
+      "zone_id": "sunken-plaza-19",
+      "name": "Plaza Pit 1"
+    },
+    {
+      "id": "map.sinners_sacrifice.0015",
+      "u": 0.3988,
+      "v": 0.4077,
+      "h_m": -0.81,
+      "zone_id": "sunken-plaza-19",
+      "name": "Plaza Pit 2"
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "private-map-2026-10-06",
+  "current_as_of": "2026-10-06",
+  "evidence_status": "source_verified",
+  "source_id": "private.map-coordinates.2026-10-06",
+  "category": "jump_pads",
+  "count": 17,
+  "points": [
+    {
+      "id": "map.jump_pads.0001",
+      "u": 0.6507,
+      "v": 0.1626,
+      "h_m": 31.29,
+      "zone_id": "base-2",
+      "destination_uvh_m": [
+        0.5,
+        0.1711,
+        31.29
+      ]
+    },
+    {
+      "id": "map.jump_pads.0002",
+      "u": 0.4684,
+      "v": 0.1626,
+      "h_m": 31.29,
+      "zone_id": "base-2",
+      "destination_uvh_m": [
+        0.619,
+        0.1711,
+        31.23
+      ]
+    },
+    {
+      "id": "map.jump_pads.0003",
+      "u": 0.3565,
+      "v": 0.8285,
+      "h_m": 32.45,
+      "zone_id": "base-1",
+      "destination_uvh_m": [
+        0.5112,
+        0.8219,
+        31.52
+      ]
+    },
+    {
+      "id": "map.jump_pads.0004",
+      "u": 0.5247,
+      "v": 0.8285,
+      "h_m": 32.45,
+      "zone_id": "base-1",
+      "destination_uvh_m": [
+        0.3685,
+        0.8218,
+        31.52
+      ]
+    },
+    {
+      "id": "map.jump_pads.0005",
+      "u": 0.7068,
+      "v": 0.6101,
+      "h_m": 16.26,
+      "zone_id": "chinatown-7",
+      "destination_uvh_m": [
+        0.6897,
+        0.6875,
+        17.38
+      ]
+    },
+    {
+      "id": "map.jump_pads.0006",
+      "u": 0.3006,
+      "v": 0.381,
+      "h_m": 16.56,
+      "zone_id": "plaza-8",
+      "destination_uvh_m": [
+        0.2738,
+        0.3244,
+        25.6
+      ]
+    },
+    {
+      "id": "map.jump_pads.0007",
+      "u": 0.8512,
+      "v": 0.6771,
+      "h_m": 16.74,
+      "zone_id": "brownstones-17",
+      "destination_uvh_m": [
+        0.7768,
+        0.6771,
+        17.48
+      ]
+    },
+    {
+      "id": "map.jump_pads.0008",
+      "u": 0.2158,
+      "v": 0.5327,
+      "h_m": 14.95,
+      "zone_id": "docks-3b",
+      "destination_uvh_m": [
+        0.317,
+        0.494,
+        23.57
+      ]
+    },
+    {
+      "id": "map.jump_pads.0009",
+      "u": 0.7842,
+      "v": 0.4732,
+      "h_m": 15.09,
+      "zone_id": "central-park-5",
+      "destination_uvh_m": [
+        0.683,
+        0.506,
+        23.57
+      ]
+    },
+    {
+      "id": "map.jump_pads.0010",
+      "u": 0.6153,
+      "v": 0.6812,
+      "h_m": 15.04,
+      "zone_id": "chinatown-7",
+      "destination_uvh_m": [
+        0.6153,
+        0.7232,
+        27.64
+      ]
+    },
+    {
+      "id": "map.jump_pads.0011",
+      "u": 0.5848,
+      "v": 0.5952,
+      "h_m": 19.91,
+      "zone_id": "chinatown-7",
+      "destination_uvh_m": [
+        0.4792,
+        0.5952,
+        21.13
+      ]
+    },
+    {
+      "id": "map.jump_pads.0012",
+      "u": 0.4182,
+      "v": 0.4068,
+      "h_m": 17.58,
+      "zone_id": "plaza-8",
+      "destination_uvh_m": [
+        0.5208,
+        0.4048,
+        21.13
+      ]
+    },
+    {
+      "id": "map.jump_pads.0013",
+      "u": 0.3899,
+      "v": 0.4747,
+      "h_m": 17.07,
+      "zone_id": "times-square-4",
+      "destination_uvh_m": [
+        0.317,
+        0.494,
+        23.57
+      ]
+    },
+    {
+      "id": "map.jump_pads.0014",
+      "u": 0.6101,
+      "v": 0.5253,
+      "h_m": 17.07,
+      "zone_id": "times-square-4",
+      "destination_uvh_m": [
+        0.683,
+        0.506,
+        23.57
+      ]
+    },
+    {
+      "id": "map.jump_pads.0015",
+      "u": 0.6935,
+      "v": 0.4315,
+      "h_m": 8.53,
+      "zone_id": "theater-9",
+      "destination_uvh_m": [
+        0.6935,
+        0.3869,
+        24.38
+      ]
+    },
+    {
+      "id": "map.jump_pads.0016",
+      "u": 0.1098,
+      "v": 0.3243,
+      "h_m": 21.45,
+      "zone_id": "stock-exchange-14",
+      "destination_uvh_m": [
+        0.2232,
+        0.3389,
+        17.48
+      ]
+    },
+    {
+      "id": "map.jump_pads.0017",
+      "u": 0.4185,
+      "v": 0.3544,
+      "h_m": 17.58,
+      "zone_id": "plaza-8",
+      "destination_uvh_m": [
+        0.3966,
+        0.3032,
+        28.45
+      ]
+    }
+  ]
+}

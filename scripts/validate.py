@@ -6,6 +6,8 @@ from hashlib import sha256
 from math import isclose
 from pathlib import Path
 import re
+import subprocess
+import sys
 from urllib.parse import unquote, urlsplit
 
 import yaml
@@ -154,7 +156,11 @@ def main():
     ids = {s["id"] for s in sources}
     check(len(ids) == len(sources), "Duplicate source IDs")
     for source in sources:
-        check(allowed_source(source["url"]), f"Unapproved source: {source['id']}")
+        if source["id"] == "private.map-coordinates.2026-10-06":
+            check("url" not in source, "Private map source identity must not be published")
+            check("non-commercial" in source.get("permission_scope", ""), "Missing map redistribution scope")
+        else:
+            check(allowed_source(source["url"]), f"Unapproved source: {source['id']}")
         for key, value in source.items():
             if isinstance(value, str) and (key == "url" or key.endswith("_url")):
                 check(allowed_source(value), f"Unapproved URL: {source['id']}.{key}")
@@ -240,6 +246,10 @@ def main():
         check(allowed_source(entry["source_url"]), f"Patch origin: {entry['path']}")
     check(expected == set((ROOT / "patches/raw").glob("*.txt")), "Patch inventory mismatch")
     check(len(expected) == 136, "Patch count")
+    if (ROOT / "map").exists():
+        result = subprocess.run([sys.executable, str(ROOT / "scripts/map/sync_map_coordinates.py"), "--check"],
+                                capture_output=True, text=True)
+        check(result.returncode == 0, f"Map snapshot consistency: {result.stdout}{result.stderr}")
     if errors:
         raise SystemExit("Validation failed:\n" + "\n".join(errors))
     print(f"PASS: {len(records)} YAML files; 38 heroes, 173 items, 14 NPCs, 2 objectives; "

@@ -1,0 +1,627 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "private-map-2026-10-06",
+  "current_as_of": "2026-10-06",
+  "evidence_status": "source_verified",
+  "source_id": "private.map-coordinates.2026-10-06",
+  "category": "veils",
+  "count": 88,
+  "points": [
+    {
+      "id": "map.veils.0001",
+      "u": 0.314,
+      "v": 0.5714,
+      "h_m": -3.25,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.veils.0002",
+      "u": 0.4524,
+      "v": 0.6208,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.veils.0003",
+      "u": 0.4286,
+      "v": 0.5699,
+      "h_m": 6.5,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.veils.0004",
+      "u": 0.3423,
+      "v": 0.5969,
+      "h_m": -3.25,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.veils.0005",
+      "u": 0.4494,
+      "v": 0.5878,
+      "h_m": 17.88,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.veils.0006",
+      "u": 0.4107,
+      "v": 0.5878,
+      "h_m": 13.01,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.veils.0007",
+      "u": 0.4416,
+      "v": 0.6027,
+      "h_m": 17.88,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.veils.0008",
+      "u": 0.3869,
+      "v": 0.6114,
+      "h_m": 0,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.veils.0009",
+      "u": 0.2723,
+      "v": 0.4596,
+      "h_m": 14.63,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.veils.0010",
+      "u": 0.2545,
+      "v": 0.4435,
+      "h_m": 6.5,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.veils.0011",
+      "u": 0.6935,
+      "v": 0.5432,
+      "h_m": -3.66,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.veils.0012",
+      "u": 0.3512,
+      "v": 0.7072,
+      "h_m": 9.75,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.veils.0013",
+      "u": 0.3065,
+      "v": 0.4567,
+      "h_m": -3.66,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.veils.0014",
+      "u": 0.6536,
+      "v": 0.737,
+      "h_m": 9.75,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.veils.0015",
+      "u": 0.2932,
+      "v": 0.692,
+      "h_m": 9.75,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.veils.0016",
+      "u": 0.5561,
+      "v": 0.5,
+      "h_m": -13,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.veils.0017",
+      "u": 0.6324,
+      "v": 0.7362,
+      "h_m": 13.01,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.veils.0018",
+      "u": 0.5526,
+      "v": 0.3785,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.veils.0019",
+      "u": 0.5714,
+      "v": 0.4301,
+      "h_m": 6.5,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.veils.0020",
+      "u": 0.5584,
+      "v": 0.3973,
+      "h_m": 17.88,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.veils.0021",
+      "u": 0.5893,
+      "v": 0.4122,
+      "h_m": 13.01,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.veils.0022",
+      "u": 0.5506,
+      "v": 0.4122,
+      "h_m": 17.88,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.veils.0023",
+      "u": 0.6131,
+      "v": 0.3873,
+      "h_m": 0,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.veils.0024",
+      "u": 0.4573,
+      "v": 0.8241,
+      "h_m": 20.09,
+      "zone_id": "base-1"
+    },
+    {
+      "id": "map.veils.0025",
+      "u": 0.7422,
+      "v": 0.5558,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.veils.0026",
+      "u": 0.4233,
+      "v": 0.8072,
+      "h_m": 20.09,
+      "zone_id": "base-1"
+    },
+    {
+      "id": "map.veils.0027",
+      "u": 0.2534,
+      "v": 0.6778,
+      "h_m": 11.58,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.veils.0028",
+      "u": 0.5487,
+      "v": 0.7679,
+      "h_m": 17.07,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.veils.0029",
+      "u": 0.1276,
+      "v": 0.2917,
+      "h_m": 9.75,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.veils.0030",
+      "u": 0.8906,
+      "v": 0.5112,
+      "h_m": 2.95,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.veils.0031",
+      "u": 0.8906,
+      "v": 0.489,
+      "h_m": 2.95,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.veils.0032",
+      "u": 0.5005,
+      "v": 0.6652,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.veils.0033",
+      "u": 0.6935,
+      "v": 0.3593,
+      "h_m": 26.89,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.veils.0034",
+      "u": 0.3624,
+      "v": 0.2701,
+      "h_m": 11.18,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.veils.0035",
+      "u": 0.1094,
+      "v": 0.4888,
+      "h_m": 2.95,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.veils.0036",
+      "u": 0.1094,
+      "v": 0.5112,
+      "h_m": 2.95,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.veils.0037",
+      "u": 0.5725,
+      "v": 0.84,
+      "h_m": 13.21,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.veils.0038",
+      "u": 0.4836,
+      "v": 0.4561,
+      "h_m": -16.26,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.veils.0039",
+      "u": 0.5164,
+      "v": 0.4561,
+      "h_m": -11.38,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.veils.0040",
+      "u": 0.1942,
+      "v": 0.6008,
+      "h_m": 6.5,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.veils.0041",
+      "u": 0.6935,
+      "v": 0.3434,
+      "h_m": 23.98,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.veils.0042",
+      "u": 0.3743,
+      "v": 0.7279,
+      "h_m": 30.89,
+      "zone_id": null
+    },
+    {
+      "id": "map.veils.0043",
+      "u": 0.833,
+      "v": 0.3976,
+      "h_m": 7.11,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.veils.0044",
+      "u": 0.7411,
+      "v": 0.6086,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.veils.0045",
+      "u": 0.7202,
+      "v": 0.6248,
+      "h_m": 6.3,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.veils.0046",
+      "u": 0.7394,
+      "v": 0.6731,
+      "h_m": 9.55,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.veils.0047",
+      "u": 0.7307,
+      "v": 0.6023,
+      "h_m": 15.85,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.veils.0048",
+      "u": 0.7321,
+      "v": 0.625,
+      "h_m": 6.3,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.veils.0049",
+      "u": 0.7262,
+      "v": 0.635,
+      "h_m": 16.66,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.veils.0050",
+      "u": 0.9025,
+      "v": 0.697,
+      "h_m": 13.01,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.veils.0051",
+      "u": 0.5164,
+      "v": 0.5439,
+      "h_m": -16.26,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.veils.0052",
+      "u": 0.4836,
+      "v": 0.5439,
+      "h_m": -11.38,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.veils.0053",
+      "u": 0.4226,
+      "v": 0.4635,
+      "h_m": 9.55,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.veils.0054",
+      "u": 0.7173,
+      "v": 0.436,
+      "h_m": -3.25,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.veils.0055",
+      "u": 0.6727,
+      "v": 0.5939,
+      "h_m": 6.3,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.veils.0056",
+      "u": 0.5833,
+      "v": 0.5335,
+      "h_m": 9.75,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.veils.0057",
+      "u": 0.6592,
+      "v": 0.6466,
+      "h_m": 31.7,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.veils.0058",
+      "u": 0.2009,
+      "v": 0.5945,
+      "h_m": 13.41,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.veils.0059",
+      "u": 0.2552,
+      "v": 0.5425,
+      "h_m": 19.71,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.veils.0060",
+      "u": 0.4439,
+      "v": 0.5,
+      "h_m": -13,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.veils.0061",
+      "u": 0.1594,
+      "v": 0.5959,
+      "h_m": 6.3,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.veils.0062",
+      "u": 0.7284,
+      "v": 0.5461,
+      "h_m": 13.01,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.veils.0063",
+      "u": 0.2716,
+      "v": 0.3363,
+      "h_m": 9.55,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.veils.0064",
+      "u": 0.3099,
+      "v": 0.4081,
+      "h_m": 6.5,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.veils.0065",
+      "u": 0.3099,
+      "v": 0.3538,
+      "h_m": 6.5,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.veils.0066",
+      "u": 0.3214,
+      "v": 0.3638,
+      "h_m": 0,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.veils.0067",
+      "u": 0.3289,
+      "v": 0.3966,
+      "h_m": 6.5,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.veils.0068",
+      "u": 0.3289,
+      "v": 0.3653,
+      "h_m": 6.5,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.veils.0069",
+      "u": 0.3214,
+      "v": 0.3981,
+      "h_m": 0,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.veils.0070",
+      "u": 0.7556,
+      "v": 0.3393,
+      "h_m": 9.75,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.veils.0071",
+      "u": 0.6353,
+      "v": 0.3424,
+      "h_m": 12.93,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.veils.0072",
+      "u": 0.6168,
+      "v": 0.3415,
+      "h_m": 11.38,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.veils.0073",
+      "u": 0.6285,
+      "v": 0.3416,
+      "h_m": 12.93,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.veils.0074",
+      "u": 0.623,
+      "v": 0.3416,
+      "h_m": 12.93,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.veils.0075",
+      "u": 0.7701,
+      "v": 0.3646,
+      "h_m": 6.5,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.veils.0076",
+      "u": 0.7991,
+      "v": 0.3929,
+      "h_m": 13.41,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.veils.0077",
+      "u": 0.8058,
+      "v": 0.3992,
+      "h_m": 6.5,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.veils.0078",
+      "u": 0.6488,
+      "v": 0.5699,
+      "h_m": -3.66,
+      "zone_id": "bell-tower-20"
+    },
+    {
+      "id": "map.veils.0079",
+      "u": 0.872,
+      "v": 0.6908,
+      "h_m": 9.55,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.veils.0080",
+      "u": 0.4965,
+      "v": 0.3351,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.veils.0081",
+      "u": 0.6235,
+      "v": 0.1632,
+      "h_m": 19.71,
+      "zone_id": "base-2"
+    },
+    {
+      "id": "map.veils.0082",
+      "u": 0.6287,
+      "v": 0.1358,
+      "h_m": 19.71,
+      "zone_id": "base-2"
+    },
+    {
+      "id": "map.veils.0083",
+      "u": 0.6162,
+      "v": 0.1476,
+      "h_m": 19.71,
+      "zone_id": "base-2"
+    },
+    {
+      "id": "map.veils.0084",
+      "u": 0.3763,
+      "v": 0.8505,
+      "h_m": 19.51,
+      "zone_id": "base-1"
+    },
+    {
+      "id": "map.veils.0085",
+      "u": 0.5047,
+      "v": 0.8504,
+      "h_m": 19.51,
+      "zone_id": "base-1"
+    },
+    {
+      "id": "map.veils.0086",
+      "u": 0.4955,
+      "v": 0.1632,
+      "h_m": 19.71,
+      "zone_id": "base-2"
+    },
+    {
+      "id": "map.veils.0087",
+      "u": 0.4903,
+      "v": 0.1357,
+      "h_m": 19.71,
+      "zone_id": "base-2"
+    },
+    {
+      "id": "map.veils.0088",
+      "u": 0.5029,
+      "v": 0.1476,
+      "h_m": 19.71,
+      "zone_id": "base-2"
+    }
+  ]
+}

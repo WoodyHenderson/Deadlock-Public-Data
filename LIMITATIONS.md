@@ -3,6 +3,15 @@
 This is a pinned reference snapshot, not an exhaustive or independently
 runtime-tested description of Deadlock.
 
+## Separate map snapshot
+
+[Map point markers and area counts](map/README.md) come from an October 6, 2026
+private-source snapshot. They are potential locations, not live loot availability,
+a September 29 client-verified map, or an update to the September 3 gameplay
+baseline. Permission to redistribute this derived layer is non-commercial only;
+source identity stays private by request. Camp and breakable mechanics still
+require independent verification.
+
 ## Intentionally excluded rules
 
 This edition publishes only wiki/API-backed source material. Seven specialized

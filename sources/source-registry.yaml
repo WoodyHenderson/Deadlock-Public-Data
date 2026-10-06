@@ -8,6 +8,13 @@ snapshot:
   excludes_media: true
 
 sources:
+  - id: private.map-coordinates.2026-10-06
+    title: Private owner-authorized map coordinate snapshot
+    accessed_at: "2026-10-06"
+    scope: Normalized minimap points, elevations, area polygons and derived breakable counts; excludes site code, images, and gameplay mechanics.
+    permission_scope: Project owner reports permission to publicly redistribute the derived coordinate layer without attribution, provided the use is non-commercial; not a general license for raw exports, source code, images or commercial use.
+    source_quality_note: Upstream identity, URL and access details are intentionally kept outside this repository at the source owner's request. This layer is pinned to its local snapshot and date, not a game client version; independent public verification is unavailable. The assumption that unmentioned map features persisted since the major update is not patch-time proof.
+
   - id: wiki.soul-urn.114949
     title: Soul Urn
     url: "https://deadlock.wiki/Soul_Urn"

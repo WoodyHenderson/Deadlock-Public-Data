@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "private-map-2026-10-06",
+  "current_as_of": "2026-10-06",
+  "evidence_status": "source_verified",
+  "source_id": "private.map-coordinates.2026-10-06",
+  "category": "walkers",
+  "count": 6,
+  "points": [
+    {
+      "id": "map.walkers.0001",
+      "u": 0.2481,
+      "v": 0.2664,
+      "h_m": 10.97,
+      "zone_id": "stock-exchange-14",
+      "team": "sapphire",
+      "lane": "York"
+    },
+    {
+      "id": "map.walkers.0002",
+      "u": 0.7997,
+      "v": 0.2779,
+      "h_m": 9.55,
+      "zone_id": "campus-18",
+      "team": "sapphire",
+      "lane": "Greenwich"
+    },
+    {
+      "id": "map.walkers.0003",
+      "u": 0.7617,
+      "v": 0.7353,
+      "h_m": 10.16,
+      "zone_id": "brownstones-17",
+      "team": "amber",
+      "lane": "Greenwich"
+    },
+    {
+      "id": "map.walkers.0004",
+      "u": 0.2083,
+      "v": 0.7202,
+      "h_m": 9.75,
+      "zone_id": "factory-13",
+      "team": "amber",
+      "lane": "York"
+    },
+    {
+      "id": "map.walkers.0005",
+      "u": 0.4401,
+      "v": 0.6615,
+      "h_m": 9.55,
+      "zone_id": "downtown-16",
+      "team": "amber",
+      "lane": "Broadway"
+    },
+    {
+      "id": "map.walkers.0006",
+      "u": 0.5599,
+      "v": 0.3385,
+      "h_m": 9.55,
+      "zone_id": "uptown-15",
+      "team": "sapphire",
+      "lane": "Broadway"
+    }
+  ]
+}

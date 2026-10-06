@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "private-map-2026-10-06",
+  "current_as_of": "2026-10-06",
+  "evidence_status": "source_verified",
+  "source_id": "private.map-coordinates.2026-10-06",
+  "category": "base_guardians",
+  "count": 12,
+  "points": [
+    {
+      "id": "map.base_guardians.0001",
+      "u": 0.4501,
+      "v": 0.7536,
+      "h_m": 16.28,
+      "zone_id": "base-1",
+      "team": "amber",
+      "lane": "Broadway"
+    },
+    {
+      "id": "map.base_guardians.0002",
+      "u": 0.4308,
+      "v": 0.7538,
+      "h_m": 16.28,
+      "zone_id": "base-1",
+      "team": "amber",
+      "lane": "Broadway"
+    },
+    {
+      "id": "map.base_guardians.0003",
+      "u": 0.5223,
+      "v": 0.8142,
+      "h_m": 16.29,
+      "zone_id": "base-1",
+      "team": "amber",
+      "lane": "Greenwich"
+    },
+    {
+      "id": "map.base_guardians.0004",
+      "u": 0.5223,
+      "v": 0.7974,
+      "h_m": 16.29,
+      "zone_id": "base-1",
+      "team": "amber",
+      "lane": "Greenwich"
+    },
+    {
+      "id": "map.base_guardians.0005",
+      "u": 0.3586,
+      "v": 0.7974,
+      "h_m": 16.29,
+      "zone_id": "base-1",
+      "team": "amber",
+      "lane": "York"
+    },
+    {
+      "id": "map.base_guardians.0006",
+      "u": 0.3586,
+      "v": 0.8142,
+      "h_m": 16.29,
+      "zone_id": "base-1",
+      "team": "amber",
+      "lane": "York"
+    },
+    {
+      "id": "map.base_guardians.0007",
+      "u": 0.5696,
+      "v": 0.2464,
+      "h_m": 16.26,
+      "zone_id": "base-2",
+      "team": "sapphire",
+      "lane": "Broadway"
+    },
+    {
+      "id": "map.base_guardians.0008",
+      "u": 0.5495,
+      "v": 0.2464,
+      "h_m": 16.26,
+      "zone_id": "base-2",
+      "team": "sapphire",
+      "lane": "Broadway"
+    },
+    {
+      "id": "map.base_guardians.0009",
+      "u": 0.4777,
+      "v": 0.2026,
+      "h_m": 16.26,
+      "zone_id": "base-2",
+      "team": "sapphire",
+      "lane": "York"
+    },
+    {
+      "id": "map.base_guardians.0010",
+      "u": 0.4777,
+      "v": 0.1843,
+      "h_m": 16.26,
+      "zone_id": "base-2",
+      "team": "sapphire",
+      "lane": "York"
+    },
+    {
+      "id": "map.base_guardians.0011",
+      "u": 0.6414,
+      "v": 0.2026,
+      "h_m": 16.26,
+      "zone_id": "base-2",
+      "team": "sapphire",
+      "lane": "Greenwich"
+    },
+    {
+      "id": "map.base_guardians.0012",
+      "u": 0.6414,
+      "v": 0.1843,
+      "h_m": 16.26,
+      "zone_id": "base-2",
+      "team": "sapphire",
+      "lane": "Greenwich"
+    }
+  ]
+}

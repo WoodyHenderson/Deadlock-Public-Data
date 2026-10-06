@@ -14,6 +14,13 @@
   localization, and raw changelogs use immutable commits identified in the
   registry and [patch manifest](patches/manifest.yaml).
 
+The separately dated [map-coordinate layer](map/README.md) has a private source
+whose owner requested no public attribution or identification. The project owner
+reports permission to publicly redistribute this derived layer for **non-commercial
+use only**; it is not an unrestricted license for the source code, images, raw
+exports or monetized use. Identifying provenance is retained privately by the
+project owner and is intentionally not published here.
+
 Deadlock, its game text, and related intellectual property belong to Valve and
 other applicable rights holders. This repository is an unofficial reference.
 No game images or other media assets are included. Links appearing inside raw

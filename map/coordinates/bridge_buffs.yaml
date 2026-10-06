@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "private-map-2026-10-06",
+  "current_as_of": "2026-10-06",
+  "evidence_status": "source_verified",
+  "source_id": "private.map-coordinates.2026-10-06",
+  "category": "bridge_buffs",
+  "count": 2,
+  "points": [
+    {
+      "id": "map.bridge_buffs.0001",
+      "u": 0.317,
+      "v": 0.4937,
+      "h_m": 23.16,
+      "zone_id": "canal-12"
+    },
+    {
+      "id": "map.bridge_buffs.0002",
+      "u": 0.683,
+      "v": 0.506,
+      "h_m": 23.16,
+      "zone_id": "canal-11"
+    }
+  ]
+}

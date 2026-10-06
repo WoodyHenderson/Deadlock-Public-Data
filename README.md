@@ -1,8 +1,8 @@
 # Deadlock Data Reference
 
-A community-maintained, source-attributed Deadlock data snapshot in Markdown and
-YAML. It includes **38 heroes, 152 abilities, 173 items, 14 NPC records, two
-claimable objectives, and 136 historical changelogs**.
+A community-maintained Deadlock data snapshot in Markdown and YAML. It includes
+**38 heroes, 152 abilities, 173 items, 14 NPC records, two claimable objectives,
+and 136 historical changelogs**, plus a separately dated map-coordinate layer.
 
 Start with the [keyword index](INDEX.md) to find a hero, ability, item, or mechanic.
 Use Markdown for readable explanations and adjacent YAML for structured fields.
@@ -34,21 +34,25 @@ source records have their own references.
 | [general/](general/) | Wiki-sourced gameplay and mechanics explanations |
 | [data/](data/) | Structured economy, progression, timing, and general rules |
 | [patches/](patches/) | Historical changelogs, isolated from the current snapshot |
+| [map/README.md](map/README.md) | Separately pinned map coordinates and breakable counts by named area; potential locations, not live availability |
 | [sources/source-registry.yaml](sources/source-registry.yaml) | Source attribution, revisions, and provenance |
 | [LIMITATIONS.md](LIMITATIONS.md) | Source conflicts and intentionally omitted unsupported rules |
 | [ATTRIBUTION.md](ATTRIBUTION.md) | Upstream credits and licensing boundaries |
 
 ### Source policy
 
-Only **Deadlock Wiki**, **Deadlock API**, and the **Deadlock Wiki's
-`deadlock-wiki/deadlock-data` repository** are used as published data sources.
+The September 3 gameplay baseline uses only **Deadlock Wiki**, **Deadlock API**,
+and the **Deadlock Wiki's `deadlock-wiki/deadlock-data` repository** as published
+data sources. The separately dated map layer uses a private, authorized source
+whose derived coordinates may be redistributed non-commercially without attribution;
+see [map permissions and limitations](map/README.md).
 The versioned API is the structured authority for item records; wiki-generated
 data provides the secondary representation. Hero descriptions and changelogs
 come from pinned wiki-data commits. Existing material source disagreements stay
 visible rather than being silently merged.
 
-Rules that relied on private confirmations or internal documents were excluded
-from this edition. They have not been relabeled as wiki/API-verified. See
+Gameplay rules that relied on private confirmations or internal documents were excluded
+from the September 3 baseline. They have not been relabeled as wiki/API-verified. See
 [limitations](LIMITATIONS.md) for the resulting coverage boundary.
 
 ### Historical archive boundary

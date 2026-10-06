@@ -1,0 +1,3057 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "private-map-2026-10-06",
+  "current_as_of": "2026-10-06",
+  "evidence_status": "source_verified",
+  "source_id": "private.map-coordinates.2026-10-06",
+  "category": "crates",
+  "count": 423,
+  "points": [
+    {
+      "id": "map.crates.0001",
+      "u": 0.4628,
+      "v": 0.6935,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0002",
+      "u": 0.4665,
+      "v": 0.6935,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0003",
+      "u": 0.5129,
+      "v": 0.6673,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0004",
+      "u": 0.4189,
+      "v": 0.5699,
+      "h_m": 6.5,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.crates.0005",
+      "u": 0.5141,
+      "v": 0.6935,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0006",
+      "u": 0.5179,
+      "v": 0.6935,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0007",
+      "u": 0.5171,
+      "v": 0.6674,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0008",
+      "u": 0.4429,
+      "v": 0.6308,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0009",
+      "u": 0.4397,
+      "v": 0.6322,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0010",
+      "u": 0.4487,
+      "v": 0.6071,
+      "h_m": 6.5,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0011",
+      "u": 0.5439,
+      "v": 0.5751,
+      "h_m": 9.75,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0012",
+      "u": 0.4947,
+      "v": 0.6638,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0013",
+      "u": 0.5071,
+      "v": 0.6582,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0014",
+      "u": 0.5476,
+      "v": 0.5751,
+      "h_m": 9.75,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0015",
+      "u": 0.5249,
+      "v": 0.6064,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0016",
+      "u": 0.3988,
+      "v": 0.5491,
+      "h_m": 6.5,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.crates.0017",
+      "u": 0.4022,
+      "v": 0.5491,
+      "h_m": 6.5,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.crates.0018",
+      "u": 0.4487,
+      "v": 0.5387,
+      "h_m": 9.75,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.crates.0019",
+      "u": 0.4524,
+      "v": 0.5387,
+      "h_m": 9.75,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.crates.0020",
+      "u": 0.5238,
+      "v": 0.6994,
+      "h_m": 13,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0021",
+      "u": 0.5461,
+      "v": 0.5268,
+      "h_m": 9.75,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.crates.0022",
+      "u": 0.5249,
+      "v": 0.6101,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0023",
+      "u": 0.5246,
+      "v": 0.6332,
+      "h_m": 17.98,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0024",
+      "u": 0.5246,
+      "v": 0.6272,
+      "h_m": 17.98,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0025",
+      "u": 0.4561,
+      "v": 0.6071,
+      "h_m": 6.5,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0026",
+      "u": 0.4524,
+      "v": 0.6071,
+      "h_m": 6.5,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0027",
+      "u": 0.4896,
+      "v": 0.5708,
+      "h_m": 3.31,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0028",
+      "u": 0.4916,
+      "v": 0.5708,
+      "h_m": 3.28,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0029",
+      "u": 0.5513,
+      "v": 0.3936,
+      "h_m": 6.5,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0030",
+      "u": 0.5476,
+      "v": 0.3936,
+      "h_m": 6.5,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0031",
+      "u": 0.5439,
+      "v": 0.3936,
+      "h_m": 6.5,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0032",
+      "u": 0.5065,
+      "v": 0.3359,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0033",
+      "u": 0.4916,
+      "v": 0.3426,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0034",
+      "u": 0.6388,
+      "v": 0.3531,
+      "h_m": 9.77,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0035",
+      "u": 0.5654,
+      "v": 0.3654,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0036",
+      "u": 0.5622,
+      "v": 0.3673,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0037",
+      "u": 0.5372,
+      "v": 0.3058,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0038",
+      "u": 0.5335,
+      "v": 0.3058,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0039",
+      "u": 0.4903,
+      "v": 0.3058,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0040",
+      "u": 0.4859,
+      "v": 0.3058,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0041",
+      "u": 0.4866,
+      "v": 0.3326,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0042",
+      "u": 0.4829,
+      "v": 0.3325,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0043",
+      "u": 0.4762,
+      "v": 0.3006,
+      "h_m": 13,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0044",
+      "u": 0.4561,
+      "v": 0.4263,
+      "h_m": 9.75,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0045",
+      "u": 0.4598,
+      "v": 0.4263,
+      "h_m": 9.75,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0046",
+      "u": 0.5469,
+      "v": 0.4635,
+      "h_m": 9.75,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.crates.0047",
+      "u": 0.5506,
+      "v": 0.4635,
+      "h_m": 9.75,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.crates.0048",
+      "u": 0.5792,
+      "v": 0.4301,
+      "h_m": 6.5,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.crates.0049",
+      "u": 0.4751,
+      "v": 0.3899,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0050",
+      "u": 0.4751,
+      "v": 0.3936,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0051",
+      "u": 0.5975,
+      "v": 0.4509,
+      "h_m": 6.5,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.crates.0052",
+      "u": 0.6012,
+      "v": 0.4509,
+      "h_m": 6.5,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.crates.0053",
+      "u": 0.455,
+      "v": 0.4728,
+      "h_m": 9.75,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.crates.0054",
+      "u": 0.4163,
+      "v": 0.4438,
+      "h_m": 3.25,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0055",
+      "u": 0.4145,
+      "v": 0.4435,
+      "h_m": 3.28,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0056",
+      "u": 0.6376,
+      "v": 0.3865,
+      "h_m": 9.77,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0057",
+      "u": 0.6376,
+      "v": 0.3906,
+      "h_m": 9.77,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0058",
+      "u": 0.4904,
+      "v": 0.4226,
+      "h_m": 3.31,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0059",
+      "u": 0.4885,
+      "v": 0.4225,
+      "h_m": 3.28,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0060",
+      "u": 0.4754,
+      "v": 0.3653,
+      "h_m": 17.98,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0061",
+      "u": 0.4754,
+      "v": 0.3728,
+      "h_m": 17.98,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0062",
+      "u": 0.622,
+      "v": 0.5568,
+      "h_m": 4.44,
+      "zone_id": "bell-tower-20",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0063",
+      "u": 0.6239,
+      "v": 0.557,
+      "h_m": 4.47,
+      "zone_id": "bell-tower-20",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0064",
+      "u": 0.6626,
+      "v": 0.5469,
+      "h_m": -3.66,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0065",
+      "u": 0.7094,
+      "v": 0.5923,
+      "h_m": -3.66,
+      "zone_id": "chinatown-7",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0066",
+      "u": 0.7094,
+      "v": 0.5964,
+      "h_m": -3.66,
+      "zone_id": "chinatown-7",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0067",
+      "u": 0.7094,
+      "v": 0.5945,
+      "h_m": -3.66,
+      "zone_id": "chinatown-7",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0068",
+      "u": 0.7303,
+      "v": 0.6365,
+      "h_m": 0,
+      "zone_id": "central-park-5",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0069",
+      "u": 0.5703,
+      "v": 0.5711,
+      "h_m": -16.26,
+      "zone_id": "chinatown-7",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0070",
+      "u": 0.5685,
+      "v": 0.5711,
+      "h_m": -16.26,
+      "zone_id": "chinatown-7",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0071",
+      "u": 0.6246,
+      "v": 0.5543,
+      "h_m": -6.5,
+      "zone_id": "chinatown-7",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0072",
+      "u": 0.6246,
+      "v": 0.5525,
+      "h_m": -6.5,
+      "zone_id": "chinatown-7",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0073",
+      "u": 0.5644,
+      "v": 0.519,
+      "h_m": -16.26,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0074",
+      "u": 0.5662,
+      "v": 0.519,
+      "h_m": -16.26,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0075",
+      "u": 0.5731,
+      "v": 0.519,
+      "h_m": -16.26,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0076",
+      "u": 0.3374,
+      "v": 0.4531,
+      "h_m": -3.66,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0077",
+      "u": 0.279,
+      "v": 0.3951,
+      "h_m": 0,
+      "zone_id": "plaza-8",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0078",
+      "u": 0.2772,
+      "v": 0.3951,
+      "h_m": 0,
+      "zone_id": "plaza-8",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0079",
+      "u": 0.2753,
+      "v": 0.3951,
+      "h_m": 0,
+      "zone_id": "plaza-8",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0080",
+      "u": 0.4286,
+      "v": 0.4803,
+      "h_m": -16.26,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0081",
+      "u": 0.4338,
+      "v": 0.4808,
+      "h_m": -16.26,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0082",
+      "u": 0.4356,
+      "v": 0.4808,
+      "h_m": -16.26,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0083",
+      "u": 0.3787,
+      "v": 0.4453,
+      "h_m": -6.5,
+      "zone_id": "plaza-8",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0084",
+      "u": 0.3806,
+      "v": 0.4453,
+      "h_m": -6.5,
+      "zone_id": "plaza-8",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0085",
+      "u": 0.6637,
+      "v": 0.6726,
+      "h_m": 9.75,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0086",
+      "u": 0.6443,
+      "v": 0.6645,
+      "h_m": 18.49,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0087",
+      "u": 0.6458,
+      "v": 0.6049,
+      "h_m": 9.75,
+      "zone_id": "bell-tower-20"
+    },
+    {
+      "id": "map.crates.0088",
+      "u": 0.6399,
+      "v": 0.6049,
+      "h_m": 9.75,
+      "zone_id": "bell-tower-20"
+    },
+    {
+      "id": "map.crates.0089",
+      "u": 0.625,
+      "v": 0.6473,
+      "h_m": 9.75,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0090",
+      "u": 0.6338,
+      "v": 0.6157,
+      "h_m": 9.77,
+      "zone_id": "bell-tower-20"
+    },
+    {
+      "id": "map.crates.0091",
+      "u": 0.6058,
+      "v": 0.6165,
+      "h_m": 9.86,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0092",
+      "u": 0.6058,
+      "v": 0.6076,
+      "h_m": 9.86,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0093",
+      "u": 0.6756,
+      "v": 0.526,
+      "h_m": 6.5,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0094",
+      "u": 0.6815,
+      "v": 0.5848,
+      "h_m": 6.5,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0095",
+      "u": 0.6875,
+      "v": 0.6399,
+      "h_m": 6.5,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0096",
+      "u": 0.6886,
+      "v": 0.6592,
+      "h_m": 9.75,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0097",
+      "u": 0.718,
+      "v": 0.6615,
+      "h_m": 9.75,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0098",
+      "u": 0.5681,
+      "v": 0.6645,
+      "h_m": 9.75,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0099",
+      "u": 0.5294,
+      "v": 0.6912,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0100",
+      "u": 0.5246,
+      "v": 0.6912,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.crates.0101",
+      "u": 0.5852,
+      "v": 0.6137,
+      "h_m": 19.51,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0102",
+      "u": 0.5665,
+      "v": 0.7101,
+      "h_m": 9.75,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0103",
+      "u": 0.5718,
+      "v": 0.7154,
+      "h_m": 9.75,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0104",
+      "u": 0.6224,
+      "v": 0.7481,
+      "h_m": 13,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0105",
+      "u": 0.6291,
+      "v": 0.7426,
+      "h_m": 13,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0106",
+      "u": 0.5878,
+      "v": 0.7411,
+      "h_m": 13,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0107",
+      "u": 0.5891,
+      "v": 0.6138,
+      "h_m": 19.51,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0108",
+      "u": 0.5618,
+      "v": 0.5766,
+      "h_m": 13,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0109",
+      "u": 0.558,
+      "v": 0.5766,
+      "h_m": 13,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0110",
+      "u": 0.6749,
+      "v": 0.5312,
+      "h_m": 6.5,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0111",
+      "u": 0.6711,
+      "v": 0.5312,
+      "h_m": 6.5,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0112",
+      "u": 0.6406,
+      "v": 0.5677,
+      "h_m": 9.75,
+      "zone_id": "bell-tower-20"
+    },
+    {
+      "id": "map.crates.0113",
+      "u": 0.6466,
+      "v": 0.5677,
+      "h_m": 9.75,
+      "zone_id": "bell-tower-20"
+    },
+    {
+      "id": "map.crates.0114",
+      "u": 0.5841,
+      "v": 0.6265,
+      "h_m": 11.59,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0115",
+      "u": 0.5878,
+      "v": 0.6265,
+      "h_m": 11.6,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0116",
+      "u": 0.4725,
+      "v": 0.5089,
+      "h_m": -2.44,
+      "zone_id": "times-square-4",
+      "group": 2
+    },
+    {
+      "id": "map.crates.0117",
+      "u": 0.4978,
+      "v": 0.5409,
+      "h_m": -16.26,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.crates.0118",
+      "u": 0.5022,
+      "v": 0.5409,
+      "h_m": -16.26,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.crates.0119",
+      "u": 0.556,
+      "v": 0.5774,
+      "h_m": -16.23,
+      "zone_id": "chinatown-7",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0120",
+      "u": 0.558,
+      "v": 0.5774,
+      "h_m": -16.23,
+      "zone_id": "chinatown-7",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0121",
+      "u": 0.4978,
+      "v": 0.5666,
+      "h_m": -16.26,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0122",
+      "u": 0.4996,
+      "v": 0.5669,
+      "h_m": -16.26,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0123",
+      "u": 0.5015,
+      "v": 0.567,
+      "h_m": -16.26,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0124",
+      "u": 0.49,
+      "v": 0.5897,
+      "h_m": -16.26,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0125",
+      "u": 0.4881,
+      "v": 0.5893,
+      "h_m": -16.22,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0126",
+      "u": 0.4859,
+      "v": 0.5897,
+      "h_m": -16.26,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0127",
+      "u": 0.4792,
+      "v": 0.5491,
+      "h_m": -16.26,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0128",
+      "u": 0.5272,
+      "v": 0.4911,
+      "h_m": -2.44,
+      "zone_id": "times-square-4",
+      "group": 2
+    },
+    {
+      "id": "map.crates.0129",
+      "u": 0.4978,
+      "v": 0.4591,
+      "h_m": -16.26,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.crates.0130",
+      "u": 0.5022,
+      "v": 0.4591,
+      "h_m": -16.26,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.crates.0131",
+      "u": 0.4585,
+      "v": 0.4496,
+      "h_m": -16.26,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0132",
+      "u": 0.4567,
+      "v": 0.4496,
+      "h_m": -16.26,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0133",
+      "u": 0.5026,
+      "v": 0.4373,
+      "h_m": -16.26,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0134",
+      "u": 0.5045,
+      "v": 0.4374,
+      "h_m": -16.26,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0135",
+      "u": 0.5063,
+      "v": 0.4377,
+      "h_m": -16.26,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0136",
+      "u": 0.8578,
+      "v": 0.5851,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0137",
+      "u": 0.7354,
+      "v": 0.5811,
+      "h_m": 6.54,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0138",
+      "u": 0.7354,
+      "v": 0.585,
+      "h_m": 6.54,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0139",
+      "u": 0.7603,
+      "v": 0.587,
+      "h_m": 6.54,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0140",
+      "u": 0.785,
+      "v": 0.5547,
+      "h_m": 6.54,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0141",
+      "u": 0.785,
+      "v": 0.5586,
+      "h_m": 6.54,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0142",
+      "u": 0.8787,
+      "v": 0.5952,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0143",
+      "u": 0.8638,
+      "v": 0.6265,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0144",
+      "u": 0.8601,
+      "v": 0.6265,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0145",
+      "u": 0.7344,
+      "v": 0.5975,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0146",
+      "u": 0.7268,
+      "v": 0.5943,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0147",
+      "u": 0.7148,
+      "v": 0.6091,
+      "h_m": 6.5,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0148",
+      "u": 0.7846,
+      "v": 0.5219,
+      "h_m": 3.25,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0149",
+      "u": 0.7389,
+      "v": 0.5637,
+      "h_m": 24.9,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0150",
+      "u": 0.7269,
+      "v": 0.5971,
+      "h_m": 15.85,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0151",
+      "u": 0.7269,
+      "v": 0.591,
+      "h_m": 15.85,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0152",
+      "u": 0.718,
+      "v": 0.6101,
+      "h_m": 23.57,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0153",
+      "u": 0.9077,
+      "v": 0.4606,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0154",
+      "u": 0.9077,
+      "v": 0.4568,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0155",
+      "u": 0.7842,
+      "v": 0.484,
+      "h_m": 3.25,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0156",
+      "u": 0.9129,
+      "v": 0.4382,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0157",
+      "u": 0.9129,
+      "v": 0.4345,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0158",
+      "u": 0.8002,
+      "v": 0.4334,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0159",
+      "u": 0.8002,
+      "v": 0.4371,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0160",
+      "u": 0.8103,
+      "v": 0.3854,
+      "h_m": 13.41,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.crates.0161",
+      "u": 0.8103,
+      "v": 0.3817,
+      "h_m": 13.41,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.crates.0162",
+      "u": 0.7842,
+      "v": 0.3743,
+      "h_m": 6.5,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.crates.0163",
+      "u": 0.7835,
+      "v": 0.3705,
+      "h_m": 6.5,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.crates.0164",
+      "u": 0.7887,
+      "v": 0.4714,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0165",
+      "u": 0.785,
+      "v": 0.4717,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0166",
+      "u": 0.7567,
+      "v": 0.4003,
+      "h_m": 31.5,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0167",
+      "u": 0.7493,
+      "v": 0.4003,
+      "h_m": 31.5,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0168",
+      "u": 0.7651,
+      "v": 0.389,
+      "h_m": 26.01,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0169",
+      "u": 0.7688,
+      "v": 0.389,
+      "h_m": 26.01,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0170",
+      "u": 0.6324,
+      "v": 0.4568,
+      "h_m": -9.75,
+      "zone_id": "theater-9",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0171",
+      "u": 0.6347,
+      "v": 0.4568,
+      "h_m": -9.75,
+      "zone_id": "theater-9",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0172",
+      "u": 0.5818,
+      "v": 0.426,
+      "h_m": -16.15,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0173",
+      "u": 0.5523,
+      "v": 0.4297,
+      "h_m": -16.26,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0174",
+      "u": 0.6198,
+      "v": 0.4345,
+      "h_m": -9.75,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0175",
+      "u": 0.6176,
+      "v": 0.4345,
+      "h_m": -9.75,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0176",
+      "u": 0.5642,
+      "v": 0.3404,
+      "h_m": 0.81,
+      "zone_id": "uptown-15",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0177",
+      "u": 0.5644,
+      "v": 0.3378,
+      "h_m": 0.81,
+      "zone_id": "uptown-15",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0178",
+      "u": 0.4033,
+      "v": 0.5227,
+      "h_m": -6.5,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0179",
+      "u": 0.4327,
+      "v": 0.5188,
+      "h_m": 1.63,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0180",
+      "u": 0.3891,
+      "v": 0.5519,
+      "h_m": -11.33,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0181",
+      "u": 0.3869,
+      "v": 0.5519,
+      "h_m": -11.33,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0182",
+      "u": 0.3317,
+      "v": 0.558,
+      "h_m": -9.72,
+      "zone_id": "haunted-lot-6",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0183",
+      "u": 0.3335,
+      "v": 0.558,
+      "h_m": -9.75,
+      "zone_id": "haunted-lot-6",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0184",
+      "u": 0.3354,
+      "v": 0.5584,
+      "h_m": -9.75,
+      "zone_id": "haunted-lot-6",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0185",
+      "u": 0.3186,
+      "v": 0.5584,
+      "h_m": -3.25,
+      "zone_id": "haunted-lot-6",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0186",
+      "u": 0.3168,
+      "v": 0.5584,
+      "h_m": -3.25,
+      "zone_id": "haunted-lot-6",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0187",
+      "u": 0.3149,
+      "v": 0.558,
+      "h_m": -3.25,
+      "zone_id": "haunted-lot-6",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0188",
+      "u": 0.2266,
+      "v": 0.5647,
+      "h_m": -3.25,
+      "zone_id": "haunted-lot-6",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0189",
+      "u": 0.2266,
+      "v": 0.5666,
+      "h_m": -3.25,
+      "zone_id": "haunted-lot-6",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0190",
+      "u": 0.2266,
+      "v": 0.5685,
+      "h_m": -3.25,
+      "zone_id": "haunted-lot-6",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0191",
+      "u": 0.2159,
+      "v": 0.5878,
+      "h_m": -0.79,
+      "zone_id": "factory-13",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0192",
+      "u": 0.2158,
+      "v": 0.5897,
+      "h_m": -0.81,
+      "zone_id": "factory-13",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0193",
+      "u": 0.2037,
+      "v": 0.6084,
+      "h_m": -0.81,
+      "zone_id": "factory-13",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0194",
+      "u": 0.202,
+      "v": 0.6084,
+      "h_m": -0.81,
+      "zone_id": "factory-13",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0195",
+      "u": 0.4232,
+      "v": 0.5734,
+      "h_m": -11.38,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0196",
+      "u": 0.4246,
+      "v": 0.5748,
+      "h_m": -11.38,
+      "zone_id": "times-square-4",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0197",
+      "u": 0.4155,
+      "v": 0.6596,
+      "h_m": 1.63,
+      "zone_id": "downtown-16",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0198",
+      "u": 0.4153,
+      "v": 0.6615,
+      "h_m": 1.67,
+      "zone_id": "downtown-16",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0199",
+      "u": 0.4152,
+      "v": 0.6633,
+      "h_m": 1.63,
+      "zone_id": "downtown-16",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0200",
+      "u": 0.2958,
+      "v": 0.5117,
+      "h_m": -3.25,
+      "zone_id": "canal-12",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0201",
+      "u": 0.2976,
+      "v": 0.5117,
+      "h_m": -3.25,
+      "zone_id": "canal-12",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0202",
+      "u": 0.2727,
+      "v": 0.5789,
+      "h_m": -1.63,
+      "zone_id": "haunted-lot-6",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0203",
+      "u": 0.2727,
+      "v": 0.577,
+      "h_m": -1.63,
+      "zone_id": "haunted-lot-6",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0204",
+      "u": 0.3729,
+      "v": 0.5791,
+      "h_m": 7,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0205",
+      "u": 0.3728,
+      "v": 0.5744,
+      "h_m": 6.5,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0206",
+      "u": 0.2835,
+      "v": 0.6819,
+      "h_m": 9.75,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0207",
+      "u": 0.3534,
+      "v": 0.6481,
+      "h_m": 9.75,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0208",
+      "u": 0.3557,
+      "v": 0.6213,
+      "h_m": 6.5,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0209",
+      "u": 0.3534,
+      "v": 0.5871,
+      "h_m": 22.71,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0210",
+      "u": 0.2928,
+      "v": 0.5915,
+      "h_m": -3.25,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0211",
+      "u": 0.3237,
+      "v": 0.6038,
+      "h_m": -3.24,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0212",
+      "u": 0.3237,
+      "v": 0.6071,
+      "h_m": -3.24,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0213",
+      "u": 0.2879,
+      "v": 0.5915,
+      "h_m": -3.25,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0214",
+      "u": 0.26,
+      "v": 0.5443,
+      "h_m": 29.06,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0215",
+      "u": 0.26,
+      "v": 0.548,
+      "h_m": 29.06,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0216",
+      "u": 0.308,
+      "v": 0.6287,
+      "h_m": 28.78,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0217",
+      "u": 0.3519,
+      "v": 0.6213,
+      "h_m": 6.5,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0218",
+      "u": 0.2775,
+      "v": 0.532,
+      "h_m": 6.5,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0219",
+      "u": 0.2738,
+      "v": 0.532,
+      "h_m": 6.5,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0220",
+      "u": 0.2539,
+      "v": 0.6529,
+      "h_m": 30.9,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0221",
+      "u": 0.2506,
+      "v": 0.6529,
+      "h_m": 30.9,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0222",
+      "u": 0.2465,
+      "v": 0.6525,
+      "h_m": 30.9,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0223",
+      "u": 0.3534,
+      "v": 0.6142,
+      "h_m": -3.24,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0224",
+      "u": 0.3534,
+      "v": 0.6011,
+      "h_m": -3.24,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0225",
+      "u": 0.3497,
+      "v": 0.6001,
+      "h_m": -3.24,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0226",
+      "u": 0.3495,
+      "v": 0.6142,
+      "h_m": -3.24,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0227",
+      "u": 0.2455,
+      "v": 0.6265,
+      "h_m": 27.64,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0228",
+      "u": 0.2417,
+      "v": 0.6265,
+      "h_m": 27.64,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0229",
+      "u": 0.2329,
+      "v": 0.5949,
+      "h_m": 27.64,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0230",
+      "u": 0.2254,
+      "v": 0.5949,
+      "h_m": 27.64,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0231",
+      "u": 0.3259,
+      "v": 0.5158,
+      "h_m": 6.5,
+      "zone_id": "canal-12"
+    },
+    {
+      "id": "map.crates.0232",
+      "u": 0.326,
+      "v": 0.5215,
+      "h_m": 6.52,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0233",
+      "u": 0.3289,
+      "v": 0.5208,
+      "h_m": 31.7,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0234",
+      "u": 0.3378,
+      "v": 0.5208,
+      "h_m": 31.7,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0235",
+      "u": 0.2902,
+      "v": 0.6752,
+      "h_m": 30.89,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0236",
+      "u": 0.2865,
+      "v": 0.6752,
+      "h_m": 30.89,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0237",
+      "u": 0.2835,
+      "v": 0.6853,
+      "h_m": 9.75,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0238",
+      "u": 0.3248,
+      "v": 0.715,
+      "h_m": 9.75,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0239",
+      "u": 0.3624,
+      "v": 0.7028,
+      "h_m": 9.75,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0240",
+      "u": 0.3624,
+      "v": 0.7068,
+      "h_m": 9.75,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0241",
+      "u": 0.3735,
+      "v": 0.6354,
+      "h_m": 15.04,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0242",
+      "u": 0.1844,
+      "v": 0.6026,
+      "h_m": 13.45,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0243",
+      "u": 0.1844,
+      "v": 0.5989,
+      "h_m": 13.45,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0244",
+      "u": 0.3077,
+      "v": 0.5558,
+      "h_m": -3.21,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0245",
+      "u": 0.3077,
+      "v": 0.5588,
+      "h_m": -3.21,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0246",
+      "u": 0.2939,
+      "v": 0.625,
+      "h_m": 19.51,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0247",
+      "u": 0.2939,
+      "v": 0.6287,
+      "h_m": 19.51,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.crates.0248",
+      "u": 0.7009,
+      "v": 0.474,
+      "h_m": -3.25,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0249",
+      "u": 0.6731,
+      "v": 0.3687,
+      "h_m": 9.78,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0250",
+      "u": 0.7336,
+      "v": 0.4271,
+      "h_m": 6.5,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0251",
+      "u": 0.7374,
+      "v": 0.4271,
+      "h_m": 6.5,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0252",
+      "u": 0.7307,
+      "v": 0.4628,
+      "h_m": 8.13,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0253",
+      "u": 0.7374,
+      "v": 0.4524,
+      "h_m": 23.45,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0254",
+      "u": 0.7072,
+      "v": 0.4085,
+      "h_m": -3.25,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0255",
+      "u": 0.6763,
+      "v": 0.3962,
+      "h_m": -3.24,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0256",
+      "u": 0.6763,
+      "v": 0.3929,
+      "h_m": -3.24,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0257",
+      "u": 0.7121,
+      "v": 0.4085,
+      "h_m": -3.25,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0258",
+      "u": 0.7243,
+      "v": 0.4386,
+      "h_m": 8.14,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0259",
+      "u": 0.6901,
+      "v": 0.3865,
+      "h_m": 19.4,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0260",
+      "u": 0.6968,
+      "v": 0.3865,
+      "h_m": 19.4,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0261",
+      "u": 0.6912,
+      "v": 0.4654,
+      "h_m": 8.13,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0262",
+      "u": 0.7001,
+      "v": 0.4654,
+      "h_m": 8.13,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0263",
+      "u": 0.7053,
+      "v": 0.3157,
+      "h_m": 11.38,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0264",
+      "u": 0.6652,
+      "v": 0.4375,
+      "h_m": -9.72,
+      "zone_id": "theater-9",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0265",
+      "u": 0.6633,
+      "v": 0.4375,
+      "h_m": -9.75,
+      "zone_id": "theater-9",
+      "group": 1
+    },
+    {
+      "id": "map.crates.0266",
+      "u": 0.7623,
+      "v": 0.4109,
+      "h_m": 6.52,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0267",
+      "u": 0.7588,
+      "v": 0.4107,
+      "h_m": 6.52,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0268",
+      "u": 0.654,
+      "v": 0.4271,
+      "h_m": 6.5,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0269",
+      "u": 0.7248,
+      "v": 0.3057,
+      "h_m": 23.98,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0270",
+      "u": 0.7213,
+      "v": 0.3057,
+      "h_m": 23.98,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0271",
+      "u": 0.6864,
+      "v": 0.3409,
+      "h_m": 23.98,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0272",
+      "u": 0.683,
+      "v": 0.3407,
+      "h_m": 23.98,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0273",
+      "u": 0.6135,
+      "v": 0.3125,
+      "h_m": 11.38,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0274",
+      "u": 0.6125,
+      "v": 0.2924,
+      "h_m": 11.38,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0275",
+      "u": 0.6704,
+      "v": 0.3147,
+      "h_m": 11.38,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0276",
+      "u": 0.7384,
+      "v": 0.3504,
+      "h_m": 9.75,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0277",
+      "u": 0.6125,
+      "v": 0.2883,
+      "h_m": 11.38,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0278",
+      "u": 0.6339,
+      "v": 0.3884,
+      "h_m": -3.25,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0279",
+      "u": 0.6466,
+      "v": 0.388,
+      "h_m": -3.24,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0280",
+      "u": 0.6466,
+      "v": 0.4012,
+      "h_m": -3.24,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0281",
+      "u": 0.6503,
+      "v": 0.4018,
+      "h_m": -3.24,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0282",
+      "u": 0.673,
+      "v": 0.4498,
+      "h_m": 32.51,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0283",
+      "u": 0.6767,
+      "v": 0.4498,
+      "h_m": 32.51,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0284",
+      "u": 0.6734,
+      "v": 0.4818,
+      "h_m": 6.5,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0285",
+      "u": 0.7281,
+      "v": 0.4384,
+      "h_m": 8.14,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0286",
+      "u": 0.6434,
+      "v": 0.3406,
+      "h_m": 11.38,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0287",
+      "u": 0.6736,
+      "v": 0.3147,
+      "h_m": 11.38,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0288",
+      "u": 0.6135,
+      "v": 0.3164,
+      "h_m": 11.38,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0289",
+      "u": 0.7072,
+      "v": 0.3155,
+      "h_m": 23.98,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0290",
+      "u": 0.6886,
+      "v": 0.3285,
+      "h_m": 23.98,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0291",
+      "u": 0.3384,
+      "v": 0.378,
+      "h_m": 0,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0292",
+      "u": 0.3384,
+      "v": 0.3839,
+      "h_m": 0.01,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0293",
+      "u": 0.4361,
+      "v": 0.2723,
+      "h_m": 13,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0294",
+      "u": 0.4278,
+      "v": 0.2798,
+      "h_m": 13,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0295",
+      "u": 0.4754,
+      "v": 0.3073,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0296",
+      "u": 0.4706,
+      "v": 0.3073,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.crates.0297",
+      "u": 0.4565,
+      "v": 0.3344,
+      "h_m": 9.75,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0298",
+      "u": 0.3888,
+      "v": 0.3531,
+      "h_m": -0.81,
+      "zone_id": "sunken-plaza-19",
+      "group": 3
+    },
+    {
+      "id": "map.crates.0299",
+      "u": 0.3445,
+      "v": 0.3531,
+      "h_m": -0.81,
+      "zone_id": "sunken-plaza-19",
+      "group": 3
+    },
+    {
+      "id": "map.crates.0300",
+      "u": 0.4431,
+      "v": 0.4226,
+      "h_m": 9.75,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0301",
+      "u": 0.4382,
+      "v": 0.3664,
+      "h_m": 9.75,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0302",
+      "u": 0.4382,
+      "v": 0.3698,
+      "h_m": 9.75,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0303",
+      "u": 0.3155,
+      "v": 0.474,
+      "h_m": 6.52,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0304",
+      "u": 0.2857,
+      "v": 0.3512,
+      "h_m": 9.75,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0305",
+      "u": 0.2894,
+      "v": 0.3512,
+      "h_m": 9.75,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0306",
+      "u": 0.2783,
+      "v": 0.3237,
+      "h_m": 9.79,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0307",
+      "u": 0.4468,
+      "v": 0.4226,
+      "h_m": 9.75,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0308",
+      "u": 0.3451,
+      "v": 0.4085,
+      "h_m": -0.81,
+      "zone_id": "sunken-plaza-19",
+      "group": 3
+    },
+    {
+      "id": "map.crates.0309",
+      "u": 0.369,
+      "v": 0.3531,
+      "h_m": -0.81,
+      "zone_id": "sunken-plaza-19",
+      "group": 3
+    },
+    {
+      "id": "map.crates.0310",
+      "u": 0.3661,
+      "v": 0.4085,
+      "h_m": -0.81,
+      "zone_id": "sunken-plaza-19",
+      "group": 3
+    },
+    {
+      "id": "map.crates.0311",
+      "u": 0.372,
+      "v": 0.4085,
+      "h_m": -0.81,
+      "zone_id": "sunken-plaza-19",
+      "group": 3
+    },
+    {
+      "id": "map.crates.0312",
+      "u": 0.2812,
+      "v": 0.3237,
+      "h_m": 9.79,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0313",
+      "u": 0.4206,
+      "v": 0.3253,
+      "h_m": 9.75,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0314",
+      "u": 0.4206,
+      "v": 0.3179,
+      "h_m": 9.75,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0315",
+      "u": 0.3266,
+      "v": 0.468,
+      "h_m": 6.52,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0316",
+      "u": 0.3229,
+      "v": 0.468,
+      "h_m": 6.52,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0317",
+      "u": 0.2768,
+      "v": 0.4051,
+      "h_m": 6.5,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0318",
+      "u": 0.2835,
+      "v": 0.4051,
+      "h_m": 6.5,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0319",
+      "u": 0.3138,
+      "v": 0.4479,
+      "h_m": 6.5,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0320",
+      "u": 0.3095,
+      "v": 0.4479,
+      "h_m": 6.5,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0321",
+      "u": 0.436,
+      "v": 0.2693,
+      "h_m": 13,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0322",
+      "u": 0.1541,
+      "v": 0.3889,
+      "h_m": 6.5,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.crates.0323",
+      "u": 0.1389,
+      "v": 0.4199,
+      "h_m": 16.31,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.crates.0324",
+      "u": 0.1303,
+      "v": 0.381,
+      "h_m": 6.5,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.crates.0325",
+      "u": 0.1302,
+      "v": 0.3769,
+      "h_m": 6.5,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.crates.0326",
+      "u": 0.1213,
+      "v": 0.3925,
+      "h_m": 6.51,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.crates.0327",
+      "u": 0.1506,
+      "v": 0.4066,
+      "h_m": 7.39,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.crates.0328",
+      "u": 0.0826,
+      "v": 0.3214,
+      "h_m": 16.27,
+      "zone_id": null
+    },
+    {
+      "id": "map.crates.0329",
+      "u": 0.086,
+      "v": 0.3213,
+      "h_m": 16.27,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0330",
+      "u": 0.2719,
+      "v": 0.3065,
+      "h_m": 10.97,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0331",
+      "u": 0.2753,
+      "v": 0.3065,
+      "h_m": 10.97,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0332",
+      "u": 0.119,
+      "v": 0.3467,
+      "h_m": 9.75,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.crates.0333",
+      "u": 0.1194,
+      "v": 0.343,
+      "h_m": 9.75,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.crates.0334",
+      "u": 0.1462,
+      "v": 0.2939,
+      "h_m": 9.75,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0335",
+      "u": 0.1464,
+      "v": 0.2909,
+      "h_m": 9.75,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0336",
+      "u": 0.2053,
+      "v": 0.4428,
+      "h_m": 6.54,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.crates.0337",
+      "u": 0.2053,
+      "v": 0.4394,
+      "h_m": 6.54,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.crates.0338",
+      "u": 0.2656,
+      "v": 0.4157,
+      "h_m": 6.54,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0339",
+      "u": 0.2656,
+      "v": 0.4122,
+      "h_m": 6.54,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0340",
+      "u": 0.2664,
+      "v": 0.4345,
+      "h_m": 6.5,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0341",
+      "u": 0.202,
+      "v": 0.4926,
+      "h_m": 0,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.crates.0342",
+      "u": 0.2719,
+      "v": 0.2072,
+      "h_m": 10.36,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0343",
+      "u": 0.2753,
+      "v": 0.2072,
+      "h_m": 10.36,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0344",
+      "u": 0.3226,
+      "v": 0.247,
+      "h_m": 10.35,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0345",
+      "u": 0.3298,
+      "v": 0.2686,
+      "h_m": 9.99,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0346",
+      "u": 0.4018,
+      "v": 0.2574,
+      "h_m": 11.18,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0347",
+      "u": 0.4018,
+      "v": 0.2545,
+      "h_m": 11.18,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0348",
+      "u": 0.3708,
+      "v": 0.2541,
+      "h_m": 11.23,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0349",
+      "u": 0.2055,
+      "v": 0.4045,
+      "h_m": 6.5,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.crates.0350",
+      "u": 0.2679,
+      "v": 0.4286,
+      "h_m": 23.57,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0351",
+      "u": 0.2533,
+      "v": 0.3448,
+      "h_m": 9.75,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0352",
+      "u": 0.257,
+      "v": 0.3448,
+      "h_m": 9.75,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0353",
+      "u": 0.3253,
+      "v": 0.1668,
+      "h_m": 10.85,
+      "zone_id": "docks-3a"
+    },
+    {
+      "id": "map.crates.0354",
+      "u": 0.2914,
+      "v": 0.2272,
+      "h_m": 11.04,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0355",
+      "u": 0.3194,
+      "v": 0.2439,
+      "h_m": 10.35,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0356",
+      "u": 0.2887,
+      "v": 0.2246,
+      "h_m": 11.04,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0357",
+      "u": 0.0871,
+      "v": 0.5655,
+      "h_m": 6.5,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.crates.0358",
+      "u": 0.0871,
+      "v": 0.5618,
+      "h_m": 6.5,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.crates.0359",
+      "u": 0.0878,
+      "v": 0.5402,
+      "h_m": 7.41,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.crates.0360",
+      "u": 0.0878,
+      "v": 0.5439,
+      "h_m": 7.41,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.crates.0361",
+      "u": 0.2433,
+      "v": 0.753,
+      "h_m": 11.48,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0362",
+      "u": 0.2439,
+      "v": 0.7484,
+      "h_m": 11.4,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0363",
+      "u": 0.2169,
+      "v": 0.625,
+      "h_m": 7.32,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0364",
+      "u": 0.2169,
+      "v": 0.6213,
+      "h_m": 7.32,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0365",
+      "u": 0.1987,
+      "v": 0.7746,
+      "h_m": 13.24,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0366",
+      "u": 0.1986,
+      "v": 0.7709,
+      "h_m": 13.16,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0367",
+      "u": 0.202,
+      "v": 0.5078,
+      "h_m": 0,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.crates.0368",
+      "u": 0.218,
+      "v": 0.6711,
+      "h_m": 9.75,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0369",
+      "u": 0.1488,
+      "v": 0.731,
+      "h_m": 16.09,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0370",
+      "u": 0.1488,
+      "v": 0.7257,
+      "h_m": 15.57,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0371",
+      "u": 0.1067,
+      "v": 0.6745,
+      "h_m": 6.95,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0372",
+      "u": 0.103,
+      "v": 0.6745,
+      "h_m": 6.95,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0373",
+      "u": 0.2183,
+      "v": 0.6957,
+      "h_m": 22.8,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0374",
+      "u": 0.2781,
+      "v": 0.8164,
+      "h_m": 14.62,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0375",
+      "u": 0.2746,
+      "v": 0.8125,
+      "h_m": 14.25,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0376",
+      "u": 0.2403,
+      "v": 0.7712,
+      "h_m": 20.66,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0377",
+      "u": 0.2404,
+      "v": 0.7676,
+      "h_m": 20.66,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0378",
+      "u": 0.1546,
+      "v": 0.6453,
+      "h_m": 6.95,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0379",
+      "u": 0.1507,
+      "v": 0.6449,
+      "h_m": 6.99,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.crates.0380",
+      "u": 0.3676,
+      "v": 0.2578,
+      "h_m": 11.23,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0381",
+      "u": 0.3676,
+      "v": 0.2541,
+      "h_m": 11.23,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.crates.0382",
+      "u": 0.2299,
+      "v": 0.2173,
+      "h_m": 11.2,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0383",
+      "u": 0.2266,
+      "v": 0.2173,
+      "h_m": 11.2,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0384",
+      "u": 0.1648,
+      "v": 0.2634,
+      "h_m": 9.75,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0385",
+      "u": 0.1615,
+      "v": 0.2634,
+      "h_m": 9.75,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0386",
+      "u": 0.3646,
+      "v": 0.2496,
+      "h_m": 26.98,
+      "zone_id": "docks-3a"
+    },
+    {
+      "id": "map.crates.0387",
+      "u": 0.3616,
+      "v": 0.2496,
+      "h_m": 26.98,
+      "zone_id": "docks-3a"
+    },
+    {
+      "id": "map.crates.0388",
+      "u": 0.1462,
+      "v": 0.2972,
+      "h_m": 9.75,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0389",
+      "u": 0.2085,
+      "v": 0.4045,
+      "h_m": 6.5,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.crates.0390",
+      "u": 0.8371,
+      "v": 0.2519,
+      "h_m": 9.75,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.crates.0391",
+      "u": 0.8374,
+      "v": 0.2481,
+      "h_m": 9.75,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.crates.0392",
+      "u": 0.7907,
+      "v": 0.2374,
+      "h_m": 9.75,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.crates.0393",
+      "u": 0.785,
+      "v": 0.2217,
+      "h_m": 9.75,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.crates.0394",
+      "u": 0.785,
+      "v": 0.2158,
+      "h_m": 9.75,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.crates.0395",
+      "u": 0.7016,
+      "v": 0.1822,
+      "h_m": 13,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.crates.0396",
+      "u": 0.7035,
+      "v": 0.1791,
+      "h_m": 13,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.crates.0397",
+      "u": 0.7437,
+      "v": 0.2945,
+      "h_m": 10.67,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.crates.0398",
+      "u": 0.7462,
+      "v": 0.2827,
+      "h_m": 9.75,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.crates.0399",
+      "u": 0.7125,
+      "v": 0.2409,
+      "h_m": 14.66,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.crates.0400",
+      "u": 0.7156,
+      "v": 0.243,
+      "h_m": 14.66,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.crates.0401",
+      "u": 0.7842,
+      "v": 0.3452,
+      "h_m": 9.75,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.crates.0402",
+      "u": 0.6496,
+      "v": 0.2584,
+      "h_m": 26.01,
+      "zone_id": null
+    },
+    {
+      "id": "map.crates.0403",
+      "u": 0.6458,
+      "v": 0.2583,
+      "h_m": 25.98,
+      "zone_id": null
+    },
+    {
+      "id": "map.crates.0404",
+      "u": 0.846,
+      "v": 0.6771,
+      "h_m": 9.55,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.crates.0405",
+      "u": 0.9174,
+      "v": 0.6792,
+      "h_m": 16.27,
+      "zone_id": null
+    },
+    {
+      "id": "map.crates.0406",
+      "u": 0.914,
+      "v": 0.6787,
+      "h_m": 16.27,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.crates.0407",
+      "u": 0.8601,
+      "v": 0.671,
+      "h_m": 16.26,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0408",
+      "u": 0.8638,
+      "v": 0.6714,
+      "h_m": 16.26,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.crates.0409",
+      "u": 0.8237,
+      "v": 0.7251,
+      "h_m": 9.55,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.crates.0410",
+      "u": 0.8199,
+      "v": 0.7251,
+      "h_m": 9.55,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.crates.0411",
+      "u": 0.8882,
+      "v": 0.699,
+      "h_m": 9.55,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.crates.0412",
+      "u": 0.8884,
+      "v": 0.6949,
+      "h_m": 9.55,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.crates.0413",
+      "u": 0.8207,
+      "v": 0.764,
+      "h_m": 9.75,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.crates.0414",
+      "u": 0.8207,
+      "v": 0.7671,
+      "h_m": 9.75,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.crates.0415",
+      "u": 0.7385,
+      "v": 0.7917,
+      "h_m": 16.26,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.crates.0416",
+      "u": 0.7351,
+      "v": 0.7917,
+      "h_m": 16.26,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.crates.0417",
+      "u": 0.6838,
+      "v": 0.7723,
+      "h_m": 13.41,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.crates.0418",
+      "u": 0.6838,
+      "v": 0.7679,
+      "h_m": 13.41,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.crates.0419",
+      "u": 0.6287,
+      "v": 0.7299,
+      "h_m": 26.01,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.crates.0420",
+      "u": 0.8451,
+      "v": 0.683,
+      "h_m": 9.75,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.crates.0421",
+      "u": 0.7328,
+      "v": 0.7692,
+      "h_m": 10.36,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.crates.0422",
+      "u": 0.7351,
+      "v": 0.7716,
+      "h_m": 10.36,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.crates.0423",
+      "u": 0.7046,
+      "v": 0.7708,
+      "h_m": 16.26,
+      "zone_id": "brownstones-17"
+    }
+  ]
+}

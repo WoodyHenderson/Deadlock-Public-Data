@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "private-map-2026-10-06",
+  "current_as_of": "2026-10-06",
+  "evidence_status": "source_verified",
+  "source_id": "private.map-coordinates.2026-10-06",
+  "category": "teleporters",
+  "count": 4,
+  "points": [
+    {
+      "id": "map.teleporters.0001",
+      "u": 0.3185,
+      "v": 0.4167,
+      "h_m": -3.25,
+      "zone_id": "plaza-8",
+      "destination_uvh_m": [
+        0.6667,
+        0.3765,
+        -3.25
+      ]
+    },
+    {
+      "id": "map.teleporters.0002",
+      "u": 0.6815,
+      "v": 0.5833,
+      "h_m": -3.25,
+      "zone_id": "chinatown-7",
+      "destination_uvh_m": [
+        0.3333,
+        0.6235,
+        -3.25
+      ]
+    },
+    {
+      "id": "map.teleporters.0003",
+      "u": 0.3333,
+      "v": 0.6295,
+      "h_m": -2.84,
+      "zone_id": "haunted-lot-6",
+      "destination_uvh_m": [
+        0.6815,
+        0.5774,
+        -3.66
+      ]
+    },
+    {
+      "id": "map.teleporters.0004",
+      "u": 0.6667,
+      "v": 0.3705,
+      "h_m": -2.84,
+      "zone_id": "theater-9",
+      "destination_uvh_m": [
+        0.3185,
+        0.4226,
+        -3.66
+      ]
+    }
+  ]
+}
