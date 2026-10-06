@@ -1,0 +1,416 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "private-map-2026-10-06",
+  "current_as_of": "2026-10-06",
+  "evidence_status": "source_verified",
+  "source_id": "private.map-coordinates.2026-10-06",
+  "category": "camps",
+  "count": 40,
+  "points": [
+    {
+      "id": "map.camps.0001",
+      "u": 0.0699,
+      "v": 0.5,
+      "h_m": 7.34,
+      "zone_id": "docks-3b",
+      "name": "Dock",
+      "tier": "large",
+      "tether": 300
+    },
+    {
+      "id": "map.camps.0002",
+      "u": 0.3457,
+      "v": 0.5586,
+      "h_m": 6.5,
+      "zone_id": "haunted-lot-6",
+      "name": "Slums Garage Down",
+      "tier": "medium",
+      "tether": 220
+    },
+    {
+      "id": "map.camps.0003",
+      "u": 0.1667,
+      "v": 0.5595,
+      "h_m": 6.71,
+      "zone_id": "docks-3b",
+      "name": "Dock Authority",
+      "tier": "small",
+      "tether": 135
+    },
+    {
+      "id": "map.camps.0004",
+      "u": 0.869,
+      "v": 0.6064,
+      "h_m": 6.53,
+      "zone_id": "central-park-5",
+      "name": "Park Chapel",
+      "tier": "medium",
+      "tether": 400
+    },
+    {
+      "id": "map.camps.0005",
+      "u": 0.9271,
+      "v": 0.5,
+      "h_m": 6.5,
+      "zone_id": "central-park-5",
+      "name": "Park Gate",
+      "tier": "large"
+    },
+    {
+      "id": "map.camps.0006",
+      "u": 0.7202,
+      "v": 0.3266,
+      "h_m": 23.98,
+      "zone_id": "theater-9",
+      "name": "Theater Upstairs 2",
+      "tier": "medium",
+      "tether": 290
+    },
+    {
+      "id": "map.camps.0007",
+      "u": 0.7932,
+      "v": 0.4552,
+      "h_m": 6.71,
+      "zone_id": "central-park-5",
+      "name": "Park Club",
+      "tier": "small",
+      "tether": 130
+    },
+    {
+      "id": "map.camps.0008",
+      "u": 0.1299,
+      "v": 0.4051,
+      "h_m": 6.66,
+      "zone_id": "docks-3b",
+      "name": "Construction",
+      "tier": "medium",
+      "tether": 300
+    },
+    {
+      "id": "map.camps.0009",
+      "u": 0.2714,
+      "v": 0.5833,
+      "h_m": 6.71,
+      "zone_id": "haunted-lot-6",
+      "name": "Basketball",
+      "tier": "large",
+      "tether": 550
+    },
+    {
+      "id": "map.camps.0010",
+      "u": 0.2664,
+      "v": 0.5316,
+      "h_m": -3.25,
+      "zone_id": "haunted-lot-6",
+      "name": "Slums Bodega Down",
+      "tier": "medium",
+      "tether": 620
+    },
+    {
+      "id": "map.camps.0011",
+      "u": 0.7113,
+      "v": 0.4137,
+      "h_m": 6.5,
+      "zone_id": "theater-9",
+      "name": "Theater Stage 1",
+      "tier": "large",
+      "tether": 450
+    },
+    {
+      "id": "map.camps.0012",
+      "u": 0.6994,
+      "v": 0.4524,
+      "h_m": -3.25,
+      "zone_id": "theater-9",
+      "name": "Theater Down",
+      "tier": "medium",
+      "tether": 540
+    },
+    {
+      "id": "map.camps.0013",
+      "u": 0.2917,
+      "v": 0.381,
+      "h_m": 6.71,
+      "zone_id": "plaza-8",
+      "name": "HQ 1",
+      "tier": "medium",
+      "tether": 400
+    },
+    {
+      "id": "map.camps.0014",
+      "u": 0.7083,
+      "v": 0.5893,
+      "h_m": 6.71,
+      "zone_id": "chinatown-7",
+      "name": "Nursery Downstairs",
+      "tier": "medium",
+      "tether": 500
+    },
+    {
+      "id": "map.camps.0015",
+      "u": 0.6801,
+      "v": 0.686,
+      "h_m": 9.55,
+      "zone_id": "chinatown-7",
+      "name": "Chinatown Street",
+      "tier": "large",
+      "tether": 650
+    },
+    {
+      "id": "map.camps.0016",
+      "u": 0.3363,
+      "v": 0.7039,
+      "h_m": 9.75,
+      "zone_id": "haunted-lot-6",
+      "name": "Slums Warehouse",
+      "tier": "large",
+      "tether": 540
+    },
+    {
+      "id": "map.camps.0017",
+      "u": 0.5893,
+      "v": 0.6622,
+      "h_m": 10.31,
+      "zone_id": "chinatown-7",
+      "name": "Chinatown Fish",
+      "tier": "medium",
+      "tether": 300
+    },
+    {
+      "id": "map.camps.0018",
+      "u": 0.2917,
+      "v": 0.6786,
+      "h_m": 9.75,
+      "zone_id": "haunted-lot-6",
+      "name": "Slums Storage",
+      "tier": "medium",
+      "tether": 350
+    },
+    {
+      "id": "map.camps.0019",
+      "u": 0.7649,
+      "v": 0.5804,
+      "h_m": 23.98,
+      "zone_id": "central-park-5",
+      "name": "Park Library Roof",
+      "tier": "medium",
+      "tether": 300
+    },
+    {
+      "id": "map.camps.0020",
+      "u": 0.2351,
+      "v": 0.4226,
+      "h_m": 23.77,
+      "zone_id": "stock-exchange-14",
+      "name": "NW Market Upstairs",
+      "tier": "medium",
+      "tether": 175
+    },
+    {
+      "id": "map.camps.0021",
+      "u": 0.6458,
+      "v": 0.6808,
+      "h_m": 18.42,
+      "zone_id": "chinatown-7",
+      "name": "Chinatown Bell 2",
+      "tier": "large",
+      "tether": 300
+    },
+    {
+      "id": "map.camps.0022",
+      "u": 0.244,
+      "v": 0.6711,
+      "h_m": 9.96,
+      "zone_id": "haunted-lot-6",
+      "name": "SW Bodega Upstairs",
+      "tier": "medium",
+      "tether": 400,
+      "first_spawn_s": 120,
+      "respawn_s": 300
+    },
+    {
+      "id": "map.camps.0023",
+      "u": 0.7708,
+      "v": 0.3147,
+      "h_m": 9.75,
+      "zone_id": "theater-9",
+      "name": "NE Theater Upstairs",
+      "tier": "medium",
+      "tether": 290,
+      "first_spawn_s": 120,
+      "respawn_s": 300
+    },
+    {
+      "id": "map.camps.0024",
+      "u": 0.7932,
+      "v": 0.3973,
+      "h_m": 25.4,
+      "zone_id": "campus-18",
+      "name": "Park Mansion Roof",
+      "tier": "medium",
+      "tether": 300
+    },
+    {
+      "id": "map.camps.0025",
+      "u": 0.2292,
+      "v": 0.6116,
+      "h_m": 27.64,
+      "zone_id": "haunted-lot-6",
+      "name": "Slums Roof",
+      "tier": "medium",
+      "tether": 400
+    },
+    {
+      "id": "map.camps.0026",
+      "u": 0.4397,
+      "v": 0.4568,
+      "h_m": 9.75,
+      "zone_id": "times-square-4",
+      "name": "NW Utility South",
+      "tier": "small",
+      "tether": 300
+    },
+    {
+      "id": "map.camps.0027",
+      "u": 0.5655,
+      "v": 0.5461,
+      "h_m": 9.75,
+      "zone_id": "times-square-4",
+      "name": "SE Utility",
+      "tier": "small",
+      "tether": 300
+    },
+    {
+      "id": "map.camps.0028",
+      "u": 0.6756,
+      "v": 0.4137,
+      "h_m": 6.5,
+      "zone_id": "theater-9",
+      "name": "Theater Stage 2",
+      "tier": "medium",
+      "tether": 540
+    },
+    {
+      "id": "map.camps.0029",
+      "u": 0.6112,
+      "v": 0.6298,
+      "h_m": 9.55,
+      "zone_id": "chinatown-7",
+      "name": "Chinatown Alley",
+      "tier": "large",
+      "tether": 600
+    },
+    {
+      "id": "map.camps.0030",
+      "u": 0.314,
+      "v": 0.5789,
+      "h_m": 6.3,
+      "zone_id": "haunted-lot-6",
+      "name": "Slums Alley",
+      "tier": "medium",
+      "tether": 550
+    },
+    {
+      "id": "map.camps.0031",
+      "u": 0.4107,
+      "v": 0.5402,
+      "h_m": 6.5,
+      "zone_id": "times-square-4",
+      "name": "Dept Store",
+      "tier": "medium",
+      "tether": 220
+    },
+    {
+      "id": "map.camps.0032",
+      "u": 0.5908,
+      "v": 0.4613,
+      "h_m": 6.5,
+      "zone_id": "times-square-4",
+      "name": "Oracle",
+      "tier": "medium",
+      "tether": 220
+    },
+    {
+      "id": "map.camps.0033",
+      "u": 0.099,
+      "v": 0.3017,
+      "h_m": 16.46,
+      "zone_id": "stock-exchange-14",
+      "name": "NW Bank",
+      "tier": "medium",
+      "tether": 300
+    },
+    {
+      "id": "map.camps.0034",
+      "u": 0.872,
+      "v": 0.7202,
+      "h_m": 9.55,
+      "zone_id": "brownstones-17",
+      "name": "SE Asylum",
+      "tier": "medium",
+      "tether": 300
+    },
+    {
+      "id": "map.camps.0035",
+      "u": 0.3869,
+      "v": 0.381,
+      "h_m": -1.12,
+      "zone_id": "sunken-plaza-19",
+      "name": "Plaza Rink 2",
+      "tier": "medium",
+      "tether": 600
+    },
+    {
+      "id": "map.camps.0036",
+      "u": 0.3229,
+      "v": 0.3129,
+      "h_m": 9.75,
+      "zone_id": "plaza-8",
+      "name": "Plaza Corner",
+      "tier": "large",
+      "tether": 200
+    },
+    {
+      "id": "map.camps.0037",
+      "u": 0.4613,
+      "v": 0.3185,
+      "h_m": 9.75,
+      "zone_id": "plaza-8",
+      "name": "Plaza Rink 3",
+      "tier": "large",
+      "tether": 600
+    },
+    {
+      "id": "map.camps.0038",
+      "u": 0.3616,
+      "v": 0.381,
+      "h_m": -1.12,
+      "zone_id": "sunken-plaza-19",
+      "name": "Mid Roof W",
+      "tier": "large",
+      "tether": 600,
+      "first_spawn_s": 120,
+      "respawn_s": 300
+    },
+    {
+      "id": "map.camps.0039",
+      "u": 0.6771,
+      "v": 0.3278,
+      "h_m": 11.38,
+      "zone_id": "theater-9",
+      "name": "Theater Lobby",
+      "tier": "medium",
+      "tether": 550
+    },
+    {
+      "id": "map.camps.0040",
+      "u": 0.6548,
+      "v": 0.3274,
+      "h_m": 23.98,
+      "zone_id": "theater-9",
+      "name": "Theater Upstairs 1",
+      "tier": "medium",
+      "tether": 600
+    }
+  ]
+}

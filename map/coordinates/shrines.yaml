@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "private-map-2026-10-06",
+  "current_as_of": "2026-10-06",
+  "evidence_status": "source_verified",
+  "source_id": "private.map-coordinates.2026-10-06",
+  "category": "shrines",
+  "count": 4,
+  "points": [
+    {
+      "id": "map.shrines.0001",
+      "u": 0.5139,
+      "v": 0.8504,
+      "h_m": 24.89,
+      "zone_id": "base-1",
+      "team": "amber",
+      "lane": "Greenwich"
+    },
+    {
+      "id": "map.shrines.0002",
+      "u": 0.631,
+      "v": 0.1496,
+      "h_m": 25.4,
+      "zone_id": "base-2",
+      "team": "sapphire",
+      "lane": "Greenwich"
+    },
+    {
+      "id": "map.shrines.0003",
+      "u": 0.4881,
+      "v": 0.1496,
+      "h_m": 25.4,
+      "zone_id": "base-2",
+      "team": "sapphire",
+      "lane": "York"
+    },
+    {
+      "id": "map.shrines.0004",
+      "u": 0.367,
+      "v": 0.8504,
+      "h_m": 24.89,
+      "zone_id": "base-1",
+      "team": "amber",
+      "lane": "York"
+    }
+  ]
+}

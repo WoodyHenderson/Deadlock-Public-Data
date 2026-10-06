@@ -1,0 +1,536 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "private-map-2026-10-06",
+  "current_as_of": "2026-10-06",
+  "evidence_status": "source_verified",
+  "source_id": "private.map-coordinates.2026-10-06",
+  "category": "tough_crates",
+  "count": 73,
+  "points": [
+    {
+      "id": "map.tough_crates.0001",
+      "u": 0.4698,
+      "v": 0.6826,
+      "h_m": 17.48,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.tough_crates.0002",
+      "u": 0.4129,
+      "v": 0.529,
+      "h_m": 9.75,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.tough_crates.0003",
+      "u": 0.5249,
+      "v": 0.6298,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.tough_crates.0004",
+      "u": 0.5293,
+      "v": 0.3198,
+      "h_m": 16.8,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.tough_crates.0005",
+      "u": 0.4751,
+      "v": 0.3702,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.tough_crates.0006",
+      "u": 0.5945,
+      "v": 0.4725,
+      "h_m": 9.75,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.tough_crates.0007",
+      "u": 0.6287,
+      "v": 0.2552,
+      "h_m": 26.01,
+      "zone_id": null
+    },
+    {
+      "id": "map.tough_crates.0008",
+      "u": 0.3891,
+      "v": 0.744,
+      "h_m": 29.27,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.tough_crates.0009",
+      "u": 0.6745,
+      "v": 0.5703,
+      "h_m": -3.66,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.tough_crates.0010",
+      "u": 0.6376,
+      "v": 0.5625,
+      "h_m": 63.43,
+      "zone_id": "bell-tower-20",
+      "group": 3
+    },
+    {
+      "id": "map.tough_crates.0011",
+      "u": 0.6496,
+      "v": 0.5625,
+      "h_m": 63.58,
+      "zone_id": "bell-tower-20",
+      "group": 3
+    },
+    {
+      "id": "map.tough_crates.0012",
+      "u": 0.6376,
+      "v": 0.6129,
+      "h_m": 63.58,
+      "zone_id": "bell-tower-20",
+      "group": 3
+    },
+    {
+      "id": "map.tough_crates.0013",
+      "u": 0.6496,
+      "v": 0.6129,
+      "h_m": 63.43,
+      "zone_id": "bell-tower-20",
+      "group": 3
+    },
+    {
+      "id": "map.tough_crates.0014",
+      "u": 0.33,
+      "v": 0.4334,
+      "h_m": -3.66,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.tough_crates.0015",
+      "u": 0.6815,
+      "v": 0.5461,
+      "h_m": 30.78,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.tough_crates.0016",
+      "u": 0.7076,
+      "v": 0.6399,
+      "h_m": 6.5,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.tough_crates.0017",
+      "u": 0.6879,
+      "v": 0.715,
+      "h_m": 9.55,
+      "zone_id": "brownstones-17"
+    },
+    {
+      "id": "map.tough_crates.0018",
+      "u": 0.6042,
+      "v": 0.7351,
+      "h_m": 13,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.tough_crates.0019",
+      "u": 0.5774,
+      "v": 0.5893,
+      "h_m": 9.75,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.tough_crates.0020",
+      "u": 0.5276,
+      "v": 0.5143,
+      "h_m": -2.44,
+      "zone_id": "times-square-4",
+      "group": 2
+    },
+    {
+      "id": "map.tough_crates.0021",
+      "u": 0.5126,
+      "v": 0.5326,
+      "h_m": -2.44,
+      "zone_id": "times-square-4",
+      "group": 2
+    },
+    {
+      "id": "map.tough_crates.0022",
+      "u": 0.4725,
+      "v": 0.5164,
+      "h_m": -2.44,
+      "zone_id": "times-square-4",
+      "group": 2
+    },
+    {
+      "id": "map.tough_crates.0023",
+      "u": 0.5238,
+      "v": 0.5409,
+      "h_m": -16.26,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.tough_crates.0024",
+      "u": 0.4723,
+      "v": 0.4857,
+      "h_m": -2.44,
+      "zone_id": "times-square-4",
+      "group": 2
+    },
+    {
+      "id": "map.tough_crates.0025",
+      "u": 0.4874,
+      "v": 0.4679,
+      "h_m": -2.44,
+      "zone_id": "times-square-4",
+      "group": 2
+    },
+    {
+      "id": "map.tough_crates.0026",
+      "u": 0.5275,
+      "v": 0.4836,
+      "h_m": -2.44,
+      "zone_id": "times-square-4",
+      "group": 2
+    },
+    {
+      "id": "map.tough_crates.0027",
+      "u": 0.4762,
+      "v": 0.4591,
+      "h_m": -16.26,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.tough_crates.0028",
+      "u": 0.7693,
+      "v": 0.587,
+      "h_m": 6.54,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.tough_crates.0029",
+      "u": 0.9237,
+      "v": 0.5223,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.tough_crates.0030",
+      "u": 0.9271,
+      "v": 0.4762,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.tough_crates.0031",
+      "u": 0.9085,
+      "v": 0.3958,
+      "h_m": 6.5,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.tough_crates.0032",
+      "u": 0.793,
+      "v": 0.3506,
+      "h_m": 6.5,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.tough_crates.0033",
+      "u": 0.779,
+      "v": 0.4591,
+      "h_m": 6.5,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.tough_crates.0034",
+      "u": 0.7509,
+      "v": 0.3606,
+      "h_m": 6.51,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.tough_crates.0035",
+      "u": 0.3471,
+      "v": 0.5949,
+      "h_m": 6.5,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.tough_crates.0036",
+      "u": 0.285,
+      "v": 0.526,
+      "h_m": -3.25,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.tough_crates.0037",
+      "u": 0.3307,
+      "v": 0.6354,
+      "h_m": 30.9,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.tough_crates.0038",
+      "u": 0.2228,
+      "v": 0.5409,
+      "h_m": 6.5,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.tough_crates.0039",
+      "u": 0.25,
+      "v": 0.5573,
+      "h_m": 29.06,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.tough_crates.0040",
+      "u": 0.262,
+      "v": 0.6749,
+      "h_m": 10.12,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.tough_crates.0041",
+      "u": 0.3635,
+      "v": 0.6138,
+      "h_m": -3.25,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.tough_crates.0042",
+      "u": 0.3817,
+      "v": 0.6992,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.tough_crates.0043",
+      "u": 0.3497,
+      "v": 0.5603,
+      "h_m": 13.77,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.tough_crates.0044",
+      "u": 0.6804,
+      "v": 0.3676,
+      "h_m": 9.78,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.tough_crates.0045",
+      "u": 0.6618,
+      "v": 0.4483,
+      "h_m": 8.13,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.tough_crates.0046",
+      "u": 0.717,
+      "v": 0.3471,
+      "h_m": 25.63,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.tough_crates.0047",
+      "u": 0.7211,
+      "v": 0.316,
+      "h_m": 11.38,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.tough_crates.0048",
+      "u": 0.7405,
+      "v": 0.3684,
+      "h_m": 9.75,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.tough_crates.0049",
+      "u": 0.7396,
+      "v": 0.4252,
+      "h_m": 35.76,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.tough_crates.0050",
+      "u": 0.7033,
+      "v": 0.3159,
+      "h_m": 23.98,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.tough_crates.0051",
+      "u": 0.4263,
+      "v": 0.3322,
+      "h_m": 9.75,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.tough_crates.0052",
+      "u": 0.3222,
+      "v": 0.282,
+      "h_m": 9.75,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.tough_crates.0053",
+      "u": 0.383,
+      "v": 0.4648,
+      "h_m": 9.75,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.tough_crates.0054",
+      "u": 0.3185,
+      "v": 0.4554,
+      "h_m": 30.78,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.tough_crates.0055",
+      "u": 0.2664,
+      "v": 0.3903,
+      "h_m": 6.5,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.tough_crates.0056",
+      "u": 0.3746,
+      "v": 0.3534,
+      "h_m": -0.81,
+      "zone_id": "sunken-plaza-19",
+      "group": 3
+    },
+    {
+      "id": "map.tough_crates.0057",
+      "u": 0.3631,
+      "v": 0.3534,
+      "h_m": -0.81,
+      "zone_id": "sunken-plaza-19",
+      "group": 3
+    },
+    {
+      "id": "map.tough_crates.0058",
+      "u": 0.3579,
+      "v": 0.4085,
+      "h_m": -0.81,
+      "zone_id": "sunken-plaza-19",
+      "group": 3
+    },
+    {
+      "id": "map.tough_crates.0059",
+      "u": 0.3802,
+      "v": 0.4085,
+      "h_m": -0.81,
+      "zone_id": "sunken-plaza-19",
+      "group": 3
+    },
+    {
+      "id": "map.tough_crates.0060",
+      "u": 0.0685,
+      "v": 0.3624,
+      "h_m": 12.59,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.tough_crates.0061",
+      "u": 0.1496,
+      "v": 0.3192,
+      "h_m": 9.75,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.tough_crates.0062",
+      "u": 0.0528,
+      "v": 0.4725,
+      "h_m": 7.32,
+      "zone_id": null
+    },
+    {
+      "id": "map.tough_crates.0063",
+      "u": 0.2345,
+      "v": 0.4118,
+      "h_m": 6.5,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.tough_crates.0064",
+      "u": 0.304,
+      "v": 0.192,
+      "h_m": 10.67,
+      "zone_id": "docks-3a"
+    },
+    {
+      "id": "map.tough_crates.0065",
+      "u": 0.0952,
+      "v": 0.6042,
+      "h_m": 6.5,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.tough_crates.0066",
+      "u": 0.064,
+      "v": 0.526,
+      "h_m": 7.32,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.tough_crates.0067",
+      "u": 0.2194,
+      "v": 0.6637,
+      "h_m": 10.33,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.tough_crates.0068",
+      "u": 0.1655,
+      "v": 0.7627,
+      "h_m": 19.1,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.tough_crates.0069",
+      "u": 0.2961,
+      "v": 0.6964,
+      "h_m": 19.51,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.tough_crates.0070",
+      "u": 0.7494,
+      "v": 0.2969,
+      "h_m": 9.75,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.tough_crates.0071",
+      "u": 0.9168,
+      "v": 0.6448,
+      "h_m": 13.21,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.tough_crates.0072",
+      "u": 0.6581,
+      "v": 0.7262,
+      "h_m": 9.75,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.tough_crates.0073",
+      "u": 0.7589,
+      "v": 0.7775,
+      "h_m": 9.96,
+      "zone_id": "brownstones-17"
+    }
+  ]
+}

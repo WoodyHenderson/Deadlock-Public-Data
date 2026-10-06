@@ -1,0 +1,333 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "private-map-2026-10-06",
+  "current_as_of": "2026-10-06",
+  "evidence_status": "source_verified",
+  "source_id": "private.map-coordinates.2026-10-06",
+  "category": "vents",
+  "count": 46,
+  "points": [
+    {
+      "id": "map.vents.0001",
+      "u": 0.5231,
+      "v": 0.619,
+      "h_m": 9.75,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.vents.0002",
+      "u": 0.2292,
+      "v": 0.5112,
+      "h_m": -0.2,
+      "zone_id": "canal-12"
+    },
+    {
+      "id": "map.vents.0003",
+      "u": 0.2679,
+      "v": 0.6146,
+      "h_m": 6.5,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.vents.0004",
+      "u": 0.622,
+      "v": 0.6053,
+      "h_m": 9.75,
+      "zone_id": "bell-tower-20"
+    },
+    {
+      "id": "map.vents.0005",
+      "u": 0.7649,
+      "v": 0.5655,
+      "h_m": 23.57,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.vents.0006",
+      "u": 0.7723,
+      "v": 0.4888,
+      "h_m": -3.91,
+      "zone_id": "canal-11"
+    },
+    {
+      "id": "map.vents.0007",
+      "u": 0.7946,
+      "v": 0.3423,
+      "h_m": 10.16,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.vents.0008",
+      "u": 0.6198,
+      "v": 0.4315,
+      "h_m": 6.5,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.vents.0009",
+      "u": 0.2641,
+      "v": 0.4115,
+      "h_m": 23.57,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.vents.0010",
+      "u": 0.4769,
+      "v": 0.381,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.vents.0011",
+      "u": 0.4033,
+      "v": 0.5685,
+      "h_m": 6.5,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.vents.0012",
+      "u": 0.747,
+      "v": 0.4338,
+      "h_m": 6.5,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.vents.0013",
+      "u": 0.6823,
+      "v": 0.2865,
+      "h_m": 9.75,
+      "zone_id": "campus-18"
+    },
+    {
+      "id": "map.vents.0014",
+      "u": 0.6202,
+      "v": 0.3542,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.vents.0015",
+      "u": 0.4747,
+      "v": 0.5402,
+      "h_m": -11.38,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.vents.0016",
+      "u": 0.5253,
+      "v": 0.4598,
+      "h_m": -11.38,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.vents.0017",
+      "u": 0.3203,
+      "v": 0.4855,
+      "h_m": -0.15,
+      "zone_id": "canal-12"
+    },
+    {
+      "id": "map.vents.0018",
+      "u": 0.6797,
+      "v": 0.5145,
+      "h_m": -0.15,
+      "zone_id": "canal-11"
+    },
+    {
+      "id": "map.vents.0019",
+      "u": 0.3363,
+      "v": 0.4345,
+      "h_m": -3.66,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.vents.0020",
+      "u": 0.6637,
+      "v": 0.5655,
+      "h_m": -3.66,
+      "zone_id": "bell-tower-20"
+    },
+    {
+      "id": "map.vents.0021",
+      "u": 0.1745,
+      "v": 0.3065,
+      "h_m": 9.75,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.vents.0022",
+      "u": 0.1131,
+      "v": 0.3836,
+      "h_m": 6.05,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.vents.0023",
+      "u": 0.173,
+      "v": 0.6176,
+      "h_m": 6.5,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.vents.0024",
+      "u": 0.2753,
+      "v": 0.6064,
+      "h_m": -3.25,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.vents.0025",
+      "u": 0.6994,
+      "v": 0.3932,
+      "h_m": -3.25,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.vents.0026",
+      "u": 0.5744,
+      "v": 0.6228,
+      "h_m": 9.75,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.vents.0027",
+      "u": 0.6525,
+      "v": 0.6562,
+      "h_m": 31.7,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.vents.0028",
+      "u": 0.2649,
+      "v": 0.3244,
+      "h_m": 9.75,
+      "zone_id": "stock-exchange-14"
+    },
+    {
+      "id": "map.vents.0029",
+      "u": 0.3586,
+      "v": 0.4717,
+      "h_m": 3.25,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.vents.0030",
+      "u": 0.2989,
+      "v": 0.5268,
+      "h_m": -3.25,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.vents.0031",
+      "u": 0.6935,
+      "v": 0.4732,
+      "h_m": -3.25,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.vents.0032",
+      "u": 0.4412,
+      "v": 0.433,
+      "h_m": -16.26,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.vents.0033",
+      "u": 0.4643,
+      "v": 0.5744,
+      "h_m": -16.26,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.vents.0034",
+      "u": 0.6071,
+      "v": 0.4375,
+      "h_m": -9.75,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.vents.0035",
+      "u": 0.256,
+      "v": 0.6205,
+      "h_m": 27.64,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.vents.0036",
+      "u": 0.3177,
+      "v": 0.6749,
+      "h_m": 30.89,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.vents.0037",
+      "u": 0.6354,
+      "v": 0.256,
+      "h_m": 26.01,
+      "zone_id": null
+    },
+    {
+      "id": "map.vents.0038",
+      "u": 0.6055,
+      "v": 0.3795,
+      "h_m": 9.75,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.vents.0039",
+      "u": 0.5369,
+      "v": 0.5277,
+      "h_m": -16.26,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.vents.0040",
+      "u": 0.4636,
+      "v": 0.4729,
+      "h_m": -16.26,
+      "zone_id": "times-square-4"
+    },
+    {
+      "id": "map.vents.0041",
+      "u": 0.099,
+      "v": 0.6607,
+      "h_m": 6.91,
+      "zone_id": "factory-13"
+    },
+    {
+      "id": "map.vents.0042",
+      "u": 0.0871,
+      "v": 0.3596,
+      "h_m": 6.5,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.vents.0043",
+      "u": 0.649,
+      "v": 0.7169,
+      "h_m": 9.75,
+      "zone_id": "chinatown-7"
+    },
+    {
+      "id": "map.vents.0044",
+      "u": 0.5143,
+      "v": 0.7108,
+      "h_m": 13,
+      "zone_id": "downtown-16"
+    },
+    {
+      "id": "map.vents.0045",
+      "u": 0.4823,
+      "v": 0.2915,
+      "h_m": 13,
+      "zone_id": "uptown-15"
+    },
+    {
+      "id": "map.vents.0046",
+      "u": 0.8339,
+      "v": 0.7132,
+      "h_m": 9.55,
+      "zone_id": "brownstones-17"
+    }
+  ]
+}

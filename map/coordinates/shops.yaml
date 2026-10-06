@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "private-map-2026-10-06",
+  "current_as_of": "2026-10-06",
+  "evidence_status": "source_verified",
+  "source_id": "private.map-coordinates.2026-10-06",
+  "category": "shops",
+  "count": 8,
+  "points": [
+    {
+      "id": "map.shops.0001",
+      "u": 0.4577,
+      "v": 0.442,
+      "h_m": 11.18,
+      "zone_id": "times-square-4",
+      "kind": "lane",
+      "team": "sapphire",
+      "lane": "Broadway"
+    },
+    {
+      "id": "map.shops.0002",
+      "u": 0.5476,
+      "v": 0.558,
+      "h_m": 11.18,
+      "zone_id": "times-square-4",
+      "kind": "lane",
+      "team": "amber",
+      "lane": "Broadway"
+    },
+    {
+      "id": "map.shops.0003",
+      "u": 0.9107,
+      "v": 0.4096,
+      "h_m": 7.92,
+      "zone_id": "campus-18",
+      "kind": "lane",
+      "team": "sapphire",
+      "lane": "York"
+    },
+    {
+      "id": "map.shops.0004",
+      "u": 0.2009,
+      "v": 0.4182,
+      "h_m": 7.92,
+      "zone_id": "docks-3b",
+      "kind": "lane",
+      "team": "sapphire",
+      "lane": "Greenwich"
+    },
+    {
+      "id": "map.shops.0005",
+      "u": 0.0893,
+      "v": 0.5904,
+      "h_m": 7.92,
+      "zone_id": "factory-13",
+      "kind": "lane",
+      "team": "amber",
+      "lane": "York"
+    },
+    {
+      "id": "map.shops.0006",
+      "u": 0.7991,
+      "v": 0.5818,
+      "h_m": 7.92,
+      "zone_id": "central-park-5",
+      "kind": "lane",
+      "team": "amber",
+      "lane": "Greenwich"
+    },
+    {
+      "id": "map.shops.0007",
+      "u": 0.6823,
+      "v": 0.5521,
+      "h_m": -2.03,
+      "zone_id": "chinatown-7",
+      "kind": "secret"
+    },
+    {
+      "id": "map.shops.0008",
+      "u": 0.3177,
+      "v": 0.4479,
+      "h_m": -2.03,
+      "zone_id": "plaza-8",
+      "kind": "secret"
+    }
+  ]
+}

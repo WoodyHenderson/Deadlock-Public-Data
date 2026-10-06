@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "private-map-2026-10-06",
+  "current_as_of": "2026-10-06",
+  "evidence_status": "source_verified",
+  "source_id": "private.map-coordinates.2026-10-06",
+  "category": "item_crates",
+  "count": 6,
+  "points": [
+    {
+      "id": "map.item_crates.0001",
+      "u": 0.7932,
+      "v": 0.5045,
+      "h_m": 3.66,
+      "zone_id": "central-park-5"
+    },
+    {
+      "id": "map.item_crates.0002",
+      "u": 0.1938,
+      "v": 0.5,
+      "h_m": 3.66,
+      "zone_id": "docks-3b"
+    },
+    {
+      "id": "map.item_crates.0003",
+      "u": 0.2887,
+      "v": 0.381,
+      "h_m": 16.66,
+      "zone_id": "plaza-8"
+    },
+    {
+      "id": "map.item_crates.0004",
+      "u": 0.3289,
+      "v": 0.6429,
+      "h_m": 9.75,
+      "zone_id": "haunted-lot-6"
+    },
+    {
+      "id": "map.item_crates.0005",
+      "u": 0.7649,
+      "v": 0.4256,
+      "h_m": 6.85,
+      "zone_id": "theater-9"
+    },
+    {
+      "id": "map.item_crates.0006",
+      "u": 0.6994,
+      "v": 0.625,
+      "h_m": 6.89,
+      "zone_id": "chinatown-7"
+    }
+  ]
+}

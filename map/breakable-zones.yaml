@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "snapshot_id": "private-map-2026-10-06",
+  "current_as_of": "2026-10-06",
+  "evidence_status": "derived",
+  "source_id": "private.map-coordinates.2026-10-06",
+  "method": "point_in_source_subarea_polygon; known nested zones take precedence; unassigned never guessed",
+  "totals": {
+    "crates": 423,
+    "tough_crates": 73,
+    "statues": 166
+  },
+  "unassigned": {
+    "crates": 4,
+    "tough_crates": 2,
+    "statues": 1
+  },
+  "zones": [
+    {
+      "zone_id": "base-1",
+      "name": "Base",
+      "parent": "Hidden King",
+      "crates": 0,
+      "tough_crates": 0,
+      "statues": 0
+    },
+    {
+      "zone_id": "base-2",
+      "name": "Base",
+      "parent": "Archmother",
+      "crates": 0,
+      "tough_crates": 0,
+      "statues": 0
+    },
+    {
+      "zone_id": "docks-3a",
+      "name": "Docks",
+      "parent": "York",
+      "crates": 3,
+      "tough_crates": 1,
+      "statues": 2
+    },
+    {
+      "zone_id": "docks-3b",
+      "name": "Docks",
+      "parent": "York",
+      "crates": 17,
+      "tough_crates": 3,
+      "statues": 7
+    },
+    {
+      "zone_id": "times-square-4",
+      "name": "Times Square",
+      "parent": "Broadway",
+      "crates": 52,
+      "tough_crates": 11,
+      "statues": 18
+    },
+    {
+      "zone_id": "central-park-5",
+      "name": "Central Park",
+      "parent": "Greenwich",
+      "crates": 27,
+      "tough_crates": 5,
+      "statues": 10
+    },
+    {
+      "zone_id": "haunted-lot-6",
+      "name": "Haunted Lot",
+      "parent": null,
+      "crates": 51,
+      "tough_crates": 8,
+      "statues": 27
+    },
+    {
+      "zone_id": "chinatown-7",
+      "name": "Chinatown",
+      "parent": null,
+      "crates": 39,
+      "tough_crates": 6,
+      "statues": 20
+    },
+    {
+      "zone_id": "plaza-8",
+      "name": "Plaza",
+      "parent": null,
+      "crates": 36,
+      "tough_crates": 4,
+      "statues": 17
+    },
+    {
+      "zone_id": "theater-9",
+      "name": "Theater",
+      "parent": null,
+      "crates": 49,
+      "tough_crates": 9,
+      "statues": 26
+    },
+    {
+      "zone_id": "canal-11",
+      "name": "Canal",
+      "parent": "Greenwich side",
+      "crates": 0,
+      "tough_crates": 0,
+      "statues": 0
+    },
+    {
+      "zone_id": "canal-12",
+      "name": "Canal",
+      "parent": "York side",
+      "crates": 3,
+      "tough_crates": 0,
+      "statues": 0
+    },
+    {
+      "zone_id": "factory-13",
+      "name": "Factory",
+      "parent": "York",
+      "crates": 25,
+      "tough_crates": 3,
+      "statues": 5
+    },
+    {
+      "zone_id": "stock-exchange-14",
+      "name": "Stock Exchange",
+      "parent": "York",
+      "crates": 24,
+      "tough_crates": 3,
+      "statues": 5
+    },
+    {
+      "zone_id": "uptown-15",
+      "name": "Uptown",
+      "parent": "Broadway",
+      "crates": 26,
+      "tough_crates": 2,
+      "statues": 3
+    },
+    {
+      "zone_id": "downtown-16",
+      "name": "Downtown",
+      "parent": "Broadway",
+      "crates": 23,
+      "tough_crates": 4,
+      "statues": 3
+    },
+    {
+      "zone_id": "brownstones-17",
+      "name": "Brownstones",
+      "parent": "Greenwich",
+      "crates": 16,
+      "tough_crates": 2,
+      "statues": 6
+    },
+    {
+      "zone_id": "campus-18",
+      "name": "Campus",
+      "parent": "Greenwich",
+      "crates": 15,
+      "tough_crates": 2,
+      "statues": 6
+    },
+    {
+      "zone_id": "sunken-plaza-19",
+      "name": "Sunken Plaza",
+      "parent": null,
+      "crates": 6,
+      "tough_crates": 4,
+      "statues": 5
+    },
+    {
+      "zone_id": "bell-tower-20",
+      "name": "Bell Tower",
+      "parent": "Chinatown",
+      "crates": 7,
+      "tough_crates": 4,
+      "statues": 5
+    }
+  ]
+}
