@@ -14,10 +14,12 @@ require independent verification.
 
 ## Intentionally excluded rules
 
-This edition publishes only wiki/API-backed source material. Seven specialized
-interaction tables with private-only or mixed private/public evidence were
-omitted: Spirit interactions, hero interactions, melee interactions, ability
-modifier interactions, ability duration interactions, Reactive Barrier trigger
+The September 3 gameplay baseline and scoped updates publish only public
+source-backed material, including pinned Wiki/API/client data and official Valve
+announcements. Seven specialized interaction tables with private-only or mixed
+private/public evidence were omitted: Spirit interactions, hero interactions,
+melee interactions, ability modifier interactions, ability duration interactions,
+Reactive Barrier trigger
 coverage, and Indomitable trigger coverage.
 
 A private-only item-selling guide and the `spirit_scaling` and

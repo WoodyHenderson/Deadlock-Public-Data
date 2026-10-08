@@ -5,8 +5,8 @@ domain: meta
 topics: [routing, retrieval, navigation, entities]
 aliases: [entity index, keyword index]
 summary: Direct routes to the public snapshot's hero, ability, item, NPC, objective, and mechanics records.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-08"
+snapshot_id: deadlock-data-mixed-2026-10-02
+current_as_of: "2026-10-02"
 evidence_status: derived
 sources: []
 ---
@@ -89,6 +89,7 @@ holds exact fields. Names reflect the pinned roster, not a live-game check.
 | [Paige](heroes/paige/paige.md) | Bookwyrm; Plot Armor; Captivating Read; Rallying Charge |
 | [Paradox](heroes/paradox/paradox.md) | Pulse Grenade; Time Wall; Kinetic Carbine; Paradoxical Swap |
 | [Pocket](heroes/pocket/pocket.md) | Barrage; Flying Cloak; Enchanter's Satchel; Affliction |
+| [Rat King](heroes/rat-king/rat-king.md) | Scrap Grenade; Rat Swarm; Royal Pestments; Rule, Ratannia! |
 | [Rem](heroes/rem/rem.md) | Pillow Toss; Tag Along; Lil Helpers; Naptime |
 | [Seven](heroes/seven/seven.md) | Lightning Ball; Static Charge; Power Surge; Storm Cloud |
 | [Shiv](heroes/shiv/shiv.md) | Serrated Knives; Slice and Dice; Bloodletting; Killing Blow |

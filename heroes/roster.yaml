@@ -1,10 +1,11 @@
 {
   "schema_version": 1,
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-data-mixed-2026-10-02",
+  "current_as_of": "2026-10-02",
   "source": "wiki.data-hero-data.108817",
-  "selection_rule": "IsSelectable=true, IsDisabled=false, InDevelopment=false; transformed states are not separate roster heroes",
-  "hero_count": 38,
+  "source_scope_note": "The 38 preexisting roster entries remain based on the September 3 snapshot; Rat King alone is added from client 6737 after Valve's official release announcement. No other hero record is advanced by this roster update.",
+  "selection_rule": "IsSelectable=true, IsDisabled=false, InDevelopment=false plus date-supported public release; IsSelectable alone does not establish public availability. Transformed states are not separate roster heroes.",
+  "hero_count": 39,
   "heroes": [
     {
       "id": "hero.abrams",
@@ -125,6 +126,14 @@
       "id": "hero.pocket",
       "name": "Pocket",
       "internal_hero_key": "hero_synth"
+    },
+    {
+      "id": "hero.rat-king",
+      "name": "Rat King",
+      "internal_hero_key": "hero_ratking",
+      "availability_as_of": "2026-10-02",
+      "hero_data_source": "github.deadlock-data.hero-data.dc1679b9606e",
+      "release_source": "steam.news.rat-king-release.1845383656387709"
     },
     {
       "id": "hero.rem",

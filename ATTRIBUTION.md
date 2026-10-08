@@ -13,6 +13,8 @@
   <https://github.com/deadlock-wiki/deadlock-data>. Generated datasets, English
   localization, and raw changelogs use immutable commits identified in the
   registry and [patch manifest](patches/manifest.yaml).
+- **Valve / Steam News** — official release announcements may establish public
+  availability dates; they are not used as a substitute for numeric client data.
 
 The separately dated [map-coordinate layer](map/README.md) has a private source
 whose owner requested no public attribution or identification. The project owner

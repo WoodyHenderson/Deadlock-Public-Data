@@ -898,3 +898,93 @@ sources:
     last_modified: "2026-08-18T12:52:50"
     accessed_at: "2026-09-04"
     scope: Sinner's Sacrifice locations, melee-only damage, retaliation, jackpot, Souls, buffs, and respawn
+
+  - id: steam.news.rat-king-release.1845383656387709
+    title: Steam announcement — Listen up, Crumbums! Your King is here.
+    url: "https://store.steampowered.com/news/app/1422450/view/703281025618281704?l=english"
+    news_gid: "1845383656387709"
+    published_at: "2026-10-02T20:59:51Z"
+    accessed_at: "2026-10-08"
+    scope: Official announcement that Rat King is available to play; establishes release date/intent, not numerical mechanics.
+
+  - id: github.deadlock-data.gameplay.0d46cdecfccf
+    title: deadlock-wiki/deadlock-data client 6731 pre-release comparison pin
+    url: "https://github.com/deadlock-wiki/deadlock-data/tree/0d46cdecfccf77adec16aac01af6d30173e0ebb8/data/json"
+    version_url: "https://github.com/deadlock-wiki/deadlock-data/blob/0d46cdecfccf77adec16aac01af6d30173e0ebb8/data/version.txt"
+    commit: 0d46cdecfccf77adec16aac01af6d30173e0ebb8
+    client_version: 6731
+    server_version: 6731
+    source_revision: 11070267
+    version_file_sha256: cacaf4c7b4def9dbde39533a2cf161c4379e6121368e4879f8c1ee0d6ea2be3d
+    hero_data_sha256: 5bfc1e4fe3f35dfaefd49e814f8eb410bb3e42243a2e9233f0f7434d8a5cc2df
+    accessed_at: "2026-10-08"
+    scope: Adjacent pre-release hero-data comparison only; Rat King was already marked selectable but had no bound abilities.
+
+  - id: github.deadlock-data.gameplay.dc1679b9606e
+    title: deadlock-wiki/deadlock-data gameplay datasets for client 6737
+    url: "https://github.com/deadlock-wiki/deadlock-data/tree/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json"
+    version_url: "https://github.com/deadlock-wiki/deadlock-data/blob/dc1679b9606effdc9bec37842ed40d8ca927092e/data/version.txt"
+    commit: dc1679b9606effdc9bec37842ed40d8ca927092e
+    client_version: 6737
+    server_version: 6737
+    source_revision: 11076133
+    version_datetime: "2026-10-02T13:58:30"
+    version_file_sha256: df29482596536ea557dd79c6f20eab5fa16945c68dac6193b848ea829842c5fd
+    hero_data_sha256: 791c09b89b66e7a2b7bc438f86c150b80ee921f75e86bef4c7a129910efcfcdc
+    ability_data_sha256: 8bdc385cc78679bd6975b79baf6a1eee1e8cab8d769cd2fb9f5f46ceed1ea0fc
+    ability_cards_sha256: 24a6b1a72da896652e35aed3846357b281a4a22f6e74b96d7d53f99c6a449bb6
+    english_sha256: 0b92317324ebea77c0b4770bc93c23e0da7489a8dff347582273e7041f5eb292
+    npc_data_sha256: f8ceb65ac16c4378d324ad71c89b43665cadfaaaaa82d7fc8f876bfaea6da45a
+    accessed_at: "2026-10-08"
+    scope: Rat King launch data, four numbered abilities, supporting records, and helper-NPC configuration; generated client fields are not runtime tests.
+
+  - id: github.deadlock-data.hero-data.dc1679b9606e
+    title: Client 6737 hero data
+    url: "https://github.com/deadlock-wiki/deadlock-data/blob/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json/hero-data.json"
+    commit: dc1679b9606effdc9bec37842ed40d8ca927092e
+    client_version: 6737
+    source_revision: 11076133
+    sha256: 791c09b89b66e7a2b7bc438f86c150b80ee921f75e86bef4c7a129910efcfcdc
+    accessed_at: "2026-10-08"
+    scope: Rat King launch identity, stats, weapon, ability bindings, and per-boon scaling.
+
+  - id: github.deadlock-data.ability-data.dc1679b9606e
+    title: Client 6737 ability data
+    url: "https://github.com/deadlock-wiki/deadlock-data/blob/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json/ability-data.json"
+    commit: dc1679b9606effdc9bec37842ed40d8ca927092e
+    client_version: 6737
+    source_revision: 11076133
+    sha256: 8bdc385cc78679bd6975b79baf6a1eee1e8cab8d769cd2fb9f5f46ceed1ea0fc
+    accessed_at: "2026-10-08"
+    scope: Rat King numbered and supporting ability records; configuration presence is not runtime confirmation.
+
+  - id: github.deadlock-data.ability-cards.dc1679b9606e
+    title: Client 6737 ability cards
+    url: "https://github.com/deadlock-wiki/deadlock-data/blob/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json/ability-cards.json"
+    commit: dc1679b9606effdc9bec37842ed40d8ca927092e
+    client_version: 6737
+    source_revision: 11076133
+    sha256: 24a6b1a72da896652e35aed3846357b281a4a22f6e74b96d7d53f99c6a449bb6
+    accessed_at: "2026-10-08"
+    scope: Rat King launch card values, upgrade fields, and description keys.
+
+  - id: github.deadlock-data.english.dc1679b9606e
+    title: Client 6737 English localization
+    url: "https://github.com/deadlock-wiki/deadlock-data/blob/dc1679b9606effdc9bec37842ed40d8ca927092e/data/localizations/english.json"
+    raw_url: "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/dc1679b9606effdc9bec37842ed40d8ca927092e/data/localizations/english.json"
+    commit: dc1679b9606effdc9bec37842ed40d8ca927092e
+    client_version: 6737
+    source_revision: 11076133
+    sha256: 0b92317324ebea77c0b4770bc93c23e0da7489a8dff347582273e7041f5eb292
+    accessed_at: "2026-10-08"
+    scope: Pinned English text for Rat King's hero, weapon, abilities, and upgrades.
+
+  - id: github.deadlock-data.npcs.dc1679b9606e
+    title: Client 6737 NPC data
+    url: "https://github.com/deadlock-wiki/deadlock-data/blob/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json/npc-data.json"
+    commit: dc1679b9606effdc9bec37842ed40d8ca927092e
+    client_version: 6737
+    source_revision: 11076133
+    sha256: f8ceb65ac16c4378d324ad71c89b43665cadfaaaaa82d7fc8f876bfaea6da45a
+    accessed_at: "2026-10-08"
+    scope: Rat King's `npc_ratking_rat` record; not a neutral-camp placement source.

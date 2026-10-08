@@ -40,7 +40,7 @@ def allowed_source(url):
     parsed = urlsplit(url)
     if parsed.scheme != "https":
         return False
-    if parsed.netloc in {"deadlock.wiki", "deadlock-api.com", "api.deadlock-api.com"}:
+    if parsed.netloc in {"deadlock.wiki", "deadlock-api.com", "api.deadlock-api.com", "store.steampowered.com"}:
         return True
     return (parsed.netloc in {"github.com", "raw.githubusercontent.com"}
             and parsed.path.startswith("/deadlock-wiki/deadlock-data/"))
@@ -231,7 +231,7 @@ def main():
                 check(desc["source"] in ids, f"Description source: {ability['name']}")
                 check(all(line in md for line in desc["plain_text"].splitlines()), f"Unrendered description: {ability['name']}")
             check(ability["name"] in index, f"Unindexed ability: {ability['name']}")
-    check(dict(counts) == {"abilities": 152, "card_references": 630, "descriptions": 481}, "Description coverage totals")
+    check(dict(counts) == {"abilities": 156, "card_references": 649, "descriptions": 496}, "Description coverage totals")
     manifest = records["patches/manifest.yaml"]
     expected = set()
     for entry in manifest["files"]:
@@ -252,7 +252,7 @@ def main():
         check(result.returncode == 0, f"Map snapshot consistency: {result.stdout}{result.stderr}")
     if errors:
         raise SystemExit("Validation failed:\n" + "\n".join(errors))
-    print(f"PASS: {len(records)} YAML files; 38 heroes, 173 items, 14 NPCs, 2 objectives; "
+    print(f"PASS: {len(records)} YAML files; 39 heroes, 173 items, 14 NPCs, 2 objectives; "
           f"{counts['abilities']} abilities, {counts['descriptions']} descriptions; "
           f"{len(expected)} hash-verified changelogs; local links, source references, lifesteal consistency, and burst profiles valid.")
 

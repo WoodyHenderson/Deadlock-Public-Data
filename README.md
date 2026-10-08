@@ -20,6 +20,10 @@ information to keep as accurate a snapshot as I can.
 Base snapshot was created from the Sep 3rd patch and then expanded upon from there
 (right before the first major patch in 9 months thanks Yoshi)
 
+The Rat King has a separate, date-scoped launch record pinned to client 6737 and
+Valve's October 2, 2026 availability announcement. This addition does not advance
+the September 3 baseline or incorporate later balance changes.
+
 ## Contents
 
 | Path | Contents |
@@ -42,8 +46,10 @@ The September 3 gameplay baseline uses only **Deadlock Wiki**, **Deadlock API**,
 and the **Deadlock Wiki's `deadlock-wiki/deadlock-data` repository** as published
 data sources. The versioned API is the structured authority for item records; 
 wiki-generated data provides the secondary representation. Hero descriptions and 
-changelogs come from pinned wiki-data commits. Existing material source disagreements 
-stay visible rather than being silently merged.
+changelogs come from pinned wiki-data commits. The Rat King release date is also
+supported by Valve's official Steam announcement; it does not establish numeric
+mechanics. Existing material source disagreements stay visible rather than being
+silently merged.
 
 Gameplay rules that relied on private confirmations or internal documents were excluded
 from the September 3 baseline. They have not been relabelled as wiki/API-verified. See
