@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.vyper",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.vyper.124934",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Vyper",
   "aliases": [],
@@ -25,8 +25,8 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 780,
-    "health_regeneration_per_second": 2,
+    "maximum_health": 780.0,
+    "health_regeneration_per_second": 2.0,
     "light_melee_damage": 50,
     "heavy_melee_damage": 116,
     "move_speed_meters_per_second": 6.9,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 14.7,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.68
     },
     "air_dash": {
-      "speed_meters_per_second": 17,
-      "distance_meters": 8,
+      "speed_meters_per_second": 17.0,
+      "distance_meters": 8.0,
       "duration_seconds": 0.47
     },
     "stamina": {
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": -30,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": -30.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.178,
-    "MaxHealth": 35,
+    "MaxHealth": 35.0,
     "PowerIncreases": 1,
     "TechPower": 1.1,
     "LightMeleeDamage": 1.58,
@@ -76,15 +76,15 @@
     "RoundsPerSecond": 14.286,
     "ClipSize": 24,
     "ReloadTime": 1.6,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
     "FalloffStartRange": 14.99,
     "FalloffEndRange": 33.02,
-    "FalloffStartScale": 1,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
-    "BulletGravityScale": 0,
+    "BulletGravityScale": 0.0,
     "BulletRadius": 0.127,
     "BulletsPerShot": 1,
     "BulletsPerBurst": 1,
@@ -124,7 +124,7 @@
           }
         },
         "AbilityCooldownBetweenCharge": {
-          "Value": 4,
+          "Value": 4.0,
           "Scale": {
             "Value": 1,
             "Type": "charge_cooldown"
@@ -172,8 +172,8 @@
           "Class": "DiminishingSlow",
           "Subclass": "DebuffdaggerDebuff"
         },
-        "SlowPercent": 35,
-        "SlowPercentPerStack": 15,
+        "SlowPercent": 28,
+        "SlowPercentPerStack": 12,
         "StackDuration": {
           "Value": 10,
           "Scale": {
@@ -217,7 +217,7 @@
                 "Title": "On Hit:",
                 "Key": "SlowPercent",
                 "Name": "Move Speed",
-                "Value": 35,
+                "Value": 28,
                 "Type": "slow"
               },
               {
@@ -250,7 +250,7 @@
                 "Title": "On Stack:",
                 "Key": "SlowPercentPerStack",
                 "Name": "Move Speed per Stack",
-                "Value": 15,
+                "Value": 12,
                 "Type": "slow"
               },
               {
@@ -344,7 +344,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": 4,
+          "Value": 4.0,
           "Scale": {
             "Value": 1,
             "Type": "charge_cooldown"
@@ -359,7 +359,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Throw a dagger, dealing {g:citadel_inline_attribute:'SpiritDamage'} and applying {g:citadel_inline_attribute:'Slow'}. <br><br>Every subsequent dagger against the same target stacks in {g:citadel_inline_attribute:'SpiritDamage'} and {g:citadel_inline_attribute:'Slow'}.",
           "plain_text": "Throw a dagger, dealing spirit damage and applying slow.\nEvery subsequent dagger against the same target stacks in spirit damage and slow."
         },
@@ -368,7 +368,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "On Hit: <span class=\"highlight\">-8%</span> Bullet Resist and <span class=\"highlight\">-6%</span> Bullet Resist per Stack",
           "plain_text": "On Hit: -8% Bullet Resist and -6% Bullet Resist per Stack"
         },
@@ -377,7 +377,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+<span class=\"highlight\">2</span> Max Stacks<br><span class=\"highlight\">-2s</span> Charge Delay<br>On Hit: Refund <span class=\"highlight\">55%</span> Charge Cooldown",
           "plain_text": "+2 Max Stacks\n-2s Charge Delay\nOn Hit: Refund 55% Charge Cooldown"
         }
@@ -402,13 +402,13 @@
           ]
         },
         "AbilityCooldown": {
-          "Value": 28,
+          "Value": 28.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "AutoIntrinsicModifiers": [
           {
@@ -425,7 +425,7 @@
         "BuildUpModifier": {
           "Class": "CitadelBaseBuildup",
           "Subclass": "CitadelBaseBuildup",
-          "BuildUpDecayDelay": 2
+          "BuildUpDecayDelay": 2.0
         },
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
@@ -578,7 +578,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 28,
+          "Value": 28.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -587,7 +587,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -598,7 +598,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Inject a target with lethal venom. After a delay the venom triggers, dealing <span class=\"highlight_spirit\">Spirit Damage</span>. The damage is increased by the target's missing health.<br><br><span class=\"diminish\">Lethal Venom will ignore Petrify's damage block.</span>",
           "plain_text": "Inject a target with lethal venom. After a delay the venom triggers, dealing Spirit Damage. The damage is increased by the target's missing health.\nLethal Venom will ignore Petrify's damage block."
         },
@@ -607,7 +607,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-40%</span> Healing Reduction and <span class=\"highlight\">-12s</span> Cooldown",
           "plain_text": "-40% Healing Reduction and -12s Cooldown"
         },
@@ -616,7 +616,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Bullets also build up <span class=\"highlight\">Lethal Venom</span>",
           "plain_text": "Bullets also build up Lethal Venom"
         }
@@ -627,7 +627,7 @@
       "name": "Slither",
       "internal_key": "ability_viper_snakedash",
       "data": {
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "AutoIntrinsicModifiers": [
           {
@@ -653,7 +653,7 @@
         "CombatBarrier": {
           "Value": 0,
           "Scale": {
-            "Value": 0,
+            "Value": 0.0,
             "Type": "spirit"
           }
         },
@@ -669,7 +669,7 @@
             "Stamina": 2
           },
           {
-            "BuffDuration": 5,
+            "BuffDuration": 4,
             "CombatBarrier": {
               "Value": 180,
               "Scale": {
@@ -700,7 +700,7 @@
                 "Name": "Barrier",
                 "Value": 0,
                 "Scale": {
-                  "Value": 0,
+                  "Value": 0.0,
                   "Type": "spirit"
                 }
               }
@@ -717,7 +717,7 @@
             "Stamina": 2
           },
           {
-            "BuffDuration": 5,
+            "BuffDuration": 4,
             "CombatBarrier": {
               "Value": 180,
               "Scale": {
@@ -744,7 +744,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -755,7 +755,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "You have increased Slide Distance, can Slide up hills, and can turn faster while Sliding.</span>",
           "plain_text": "You have increased Slide Distance, can Slide up hills, and can turn faster while Sliding."
         },
@@ -764,9 +764,9 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "On Slide: <span class=\"highlight\">Gain 180</span> barrier for <span class=\"highlight\">5s</span>",
-          "plain_text": "On Slide: Gain 180 barrier for 5s"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "On Slide: <span class=\"highlight\">Gain 180</span> barrier for <span class=\"highlight\">4s</span>",
+          "plain_text": "On Slide: Gain 180 barrier for 4s"
         }
       ]
     },
@@ -777,13 +777,13 @@
       "data": {
         "AbilityCastDelay": 0.1,
         "AbilityCooldown": {
-          "Value": 105,
+          "Value": 115,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
           "BehaviorProjectile",
@@ -794,7 +794,7 @@
         ],
         "ChannelMoveSpeed": -1,
         "Damage": {
-          "Value": 50,
+          "Value": 50.0,
           "Scale": {
             "Value": 0.744,
             "Type": "spirit"
@@ -841,7 +841,7 @@
           "Class": "Base",
           "Subclass": "PetrifybolaSlow"
         },
-        "SlowPercent": 50,
+        "SlowPercent": 40,
         "Upgrades": [
           {
             "PetrifyDamage": 49.5
@@ -850,7 +850,7 @@
             "AbilityCooldown": -20
           },
           {
-            "PetrifyDuration": 1
+            "PetrifyDuration": 1.0
           }
         ]
       },
@@ -874,7 +874,7 @@
               {
                 "Key": "Damage",
                 "Name": "Damage",
-                "Value": 50,
+                "Value": 50.0,
                 "Scale": {
                   "Value": 0.744,
                   "Type": "spirit"
@@ -897,7 +897,7 @@
             {
               "Key": "SlowPercent",
               "Name": "Move Speed",
-              "Value": 50,
+              "Value": 40,
               "Type": "slow"
             },
             {
@@ -920,7 +920,7 @@
             "AbilityCooldown": -20
           },
           {
-            "PetrifyDuration": 1,
+            "PetrifyDuration": 1.0,
             "DescKey": "ability_viper_petrifybola_t3_desc"
           }
         ],
@@ -951,7 +951,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 105,
+          "Value": 115,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -960,7 +960,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "Radius": {
@@ -979,7 +979,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Throw an explosive bola. On exploding, the bola <Panel class=\"AbilityPropertyIcon prop_move_speed\"> <span class=\"highlight\">Slows</span> and <Panel class=\"AbilityPropertyIcon prop_tech_damage\"> <span class=\"highlight_spirit\">Damages</span> all enemies in the area. <br><br>Direct hits deal  <Panel class=\"AbilityPropertyIcon prop_tech_damage\"> <span class=\"highlight_spirit\">Additional Damage</span> and <span class=\"highlight\">Petrify</span> instead. <span class=\"highlight\">Petrified</span> units block all damage, but cannot take actions.",
           "plain_text": "Throw an explosive bola. On exploding, the bola Slows and Damages all enemies in the area.\nDirect hits deal Additional Damage and Petrify instead. Petrified units block all damage, but cannot take actions."
         },
@@ -988,7 +988,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+<span class=\"highlight\">1s</span> Petrify Duration. Petrifies all enemies in the area.</span>",
           "plain_text": "+1s Petrify Duration. Petrifies all enemies in the area."
         }
@@ -1053,5 +1053,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

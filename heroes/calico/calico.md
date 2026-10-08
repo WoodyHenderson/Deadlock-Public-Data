@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Calico is a selectable Assassin hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.calico.125743
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Calico
@@ -54,7 +54,7 @@ Internal key: `ability_nano_clustergrenade`.
 
 - **Tier 2:** Per Bomb Touch : -6% Melee Resist for 6s
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorDontInterruptSlideOnCast`.
@@ -66,12 +66,12 @@ Behavior flags: `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDisplaysDamag
 | Bonus Damage vs Barriers | 0 |
 | Cooldown | 14 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Radius | 3 (+1 per radius) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-3}`
 - Tier 2: `{"MeleeResistReduction":-6,"MeleeResistReductionDuration":6}`
 - Tier 3: `{"GrenadeCount":3}`
-
 ### 2. Leaping Slash
 
 Internal key: `ability_nano_dash`.
@@ -87,7 +87,7 @@ Internal key: `ability_nano_dash`.
 - **Tier 2:** Heros killed within 3s grant +200 souls
 - **Tier 3:** +60 Damage & On Hero Hit: 50% Cooldown Refund
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorDontTriggerPostCastOnCastComplete`, `BehaviorMovement`, `BehaviorTriggerCancelMashProtectionOnCast`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -98,15 +98,14 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorDon
 | Heal Amount | 40 (+1.4 per spirit) |
 | Cooldown Refund | 0 |
 | Bounty Duration | 0 |
-| Cooldown | 13 (+1 per cooldown) |
 | Cast Range | 9 (+1 per range) |
+| Cooldown | 13 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
 - Tier 1: `{"HealAmount":25}`
 - Tier 2: `{"BonusGoldOnKill":200,"BountyDuration":3}`
 - Tier 3: `{"CooldownRefundPercent":50,"ImpactDamage":60}`
-
 ### 3. Ava
 
 Internal key: `ability_nano_catform`.
@@ -122,7 +121,7 @@ Internal key: `ability_nano_catform`.
 - **Tier 2:** +15 Health Regen & +40% Max Move Speed
 - **Tier 3:** Gain Damage Amp over time, up to 18%. Lingers for 6s
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorCannotCancelDuringChannel`, `BehaviorInhibitSoftCameraCollision`, `BehaviorMovement`, `BehaviorPreventBotUsage`, `BehaviorRequireAbilityButtonToCancel`.
@@ -132,6 +131,7 @@ Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorCannotCancelD
 | Min Move Speed | 30 |
 | Max Move Speed | 65 |
 | Buff Duration | 15 (+1 per duration) |
+| SpeedBuildDuration | 4 |
 | Interrupt Cooldown | 6 |
 | Health Regen | 0 |
 | Cooldown | 30 (+1 per cooldown) |
@@ -141,7 +141,6 @@ Upgrade deltas:
 - Tier 1: `{"BuffDuration":15}`
 - Tier 2: `{"MaxBonusMoveSpeedPercent":40,"HealthRegen":15}`
 - Tier 3: `{"OutgoingDamagePercent":18,"DamageAmpDuration":6,"DamageAmpBuildDuration":10}`
-
 ### 4. Return to Shadows
 
 Internal key: `ability_nano_shadow_pulse`.
@@ -157,7 +156,7 @@ Internal key: `ability_nano_shadow_pulse`.
 - **Tier 2:** +75 Damage and +20% Move Speed
 - **Tier 3:** On Completion: Heal for 450 and refund all ability cooldowns
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorCannotCancelDuringChannel`, `BehaviorCastableWhileDodging`, `BehaviorMovement`, `BehaviorDeactivateCrouchToggleOnCast`, `BehaviorInhibitSoftCameraCollision`.
@@ -170,12 +169,12 @@ Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorDisplaysDamag
 | Damage | 0 |
 | Cooldown | 115 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Radius | 7.5 (+1 per range) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-20}`
 - Tier 2: `{"Damage":75,"BonusMoveSpeedPercent":20}`
 - Tier 3: `{"RefundCooldowns":1,"HealAmount":450}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

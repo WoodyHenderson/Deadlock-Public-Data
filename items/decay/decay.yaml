@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.decay",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Decay",
@@ -122,9 +122,9 @@
       "importance": "normal",
       "key": "AbilityDuration",
       "label": "Duration",
-      "value": "10s",
+      "value": "12s",
       "property": {
-        "value": "10",
+        "value": "12",
         "can_set_token_override": true,
         "css_class": "duration",
         "disable_value": "0",
@@ -170,15 +170,15 @@
       "importance": "important",
       "key": "DotHealthPercent",
       "label": "Bleed Damage",
-      "value": "2.6%/sec",
+      "value": "1.95%/sec",
       "property": {
-        "value": "2.6",
+        "value": "1.95",
         "css_class": "tech_damage",
         "scale_function": {
           "class_name": "scale_function_tech_damage",
           "subclass_name": "Damage_scale_function",
           "specific_stat_scale_type": "ETechPower",
-          "stat_scale": 0.004
+          "stat_scale": 0.003
         },
         "label": "Bleed Damage",
         "postfix": "%/sec",
@@ -261,7 +261,7 @@
         },
         {
           "name": "DotHealthPercent",
-          "bonus": ".5"
+          "bonus": ".375"
         },
         {
           "name": "AbilityCooldown",
@@ -299,7 +299,7 @@
         "tooltip_is_important": false
       },
       "AbilityDuration": {
-        "value": "10",
+        "value": "12",
         "can_set_token_override": true,
         "css_class": "duration",
         "disable_value": "0",
@@ -463,13 +463,13 @@
         "value": "1.0"
       },
       "DotHealthPercent": {
-        "value": "2.6",
+        "value": "1.95",
         "css_class": "tech_damage",
         "scale_function": {
           "class_name": "scale_function_tech_damage",
           "subclass_name": "Damage_scale_function",
           "specific_stat_scale_type": "ETechPower",
-          "stat_scale": 0.004
+          "stat_scale": 0.003
         },
         "label": "Bleed Damage",
         "postfix": "%/sec",
@@ -546,7 +546,7 @@
           },
           {
             "name": "DotHealthPercent",
-            "bonus": ".5"
+            "bonus": ".375"
           },
           {
             "name": "AbilityCooldown",
@@ -578,7 +578,7 @@
     "StreetBrawl": false,
     "IsImbue": false,
     "AbilityCooldown": 30.0,
-    "AbilityDuration": 10,
+    "AbilityDuration": 12,
     "AbilityCastRange": {
       "Value": "20m",
       "Scale": {
@@ -595,9 +595,9 @@
     "HealAmpRegenPenaltyPercent": -50,
     "TickRate": 1.0,
     "DotHealthPercent": {
-      "Value": 2.6,
+      "Value": 1.95,
       "Scale": {
-        "Value": 0.004,
+        "Value": 0.003,
         "Type": "spirit"
       }
     },
@@ -607,7 +607,7 @@
       "BonusHealth": 90,
       "HealAmpReceivePenaltyPercent": -20,
       "HealAmpRegenPenaltyPercent": -20,
-      "DotHealthPercent": 0.5,
+      "DotHealthPercent": 0.375,
       "AbilityCooldown": -10
     }
   },
@@ -657,9 +657,9 @@
       "Main": [
         {
           "Key": "DotHealthPercent",
-          "Value": 2.6,
+          "Value": 1.95,
           "Scale": {
-            "Value": 0.004,
+            "Value": 0.003,
             "Type": "spirit"
           },
           "Type": "tech_damage"
@@ -692,7 +692,7 @@
         },
         {
           "Key": "AbilityDuration",
-          "Value": 10,
+          "Value": 12,
           "Type": "duration"
         }
       ]
@@ -702,7 +702,7 @@
       "BonusHealth": 90,
       "HealAmpReceivePenaltyPercent": -20,
       "HealAmpRegenPenaltyPercent": -20,
-      "DotHealthPercent": 0.5,
+      "DotHealthPercent": 0.375,
       "AbilityCooldown": -10
     },
     "Other": {

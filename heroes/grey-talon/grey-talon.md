@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Grey Talon is a selectable Marksman hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.grey-talon.125566
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Grey Talon
@@ -54,7 +54,7 @@ Internal key: `ability_charged_shot`.
 - **Tier 2:** +54 Damage
 - **Tier 3:** Improved damage scaling and -3s Charge Delay
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorChannelled`, `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorDontInterruptSlideOnCast`.
@@ -62,15 +62,14 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorChannelled`, `BehaviorProjectile`, 
 | Card field | Base value |
 | --- | ---: |
 | Damage | 80 (+1 per spirit) |
-| Cooldown | 17 (+1 per cooldown) |
 | Charges | 1 (+1 per max charges) |
+| Cooldown | 17 (+1 per cooldown) |
 | Charge Delay | 4 (+1 per charge cooldown) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCharges":1}`
-- Tier 2: `{"Damage":54}`
-- Tier 3: `{"AbilityCooldownBetweenCharge":-3,"Damage":{"Value":0,"Scale":{"Value":1,"Type":"spirit"}}}`
-
+- Tier 2: `{"Damage":54.0}`
+- Tier 3: `{"AbilityCooldownBetweenCharge":-3,"Damage":{"Value":0,"Scale":{"Value":1.0,"Type":"spirit"}}}`
 ### 2. Rain of Arrows
 
 Internal key: `ability_power_jump`.
@@ -84,10 +83,10 @@ Internal key: `ability_power_jump`.
 
 **Upgrade descriptions** (where supplied by the source):
 
-- **Tier 1:** While airborne, +3 Weapon Damage and weapon damage applies 30% movement slow for 1.5s
+- **Tier 1:** While airborne, +3 Weapon Damage and weapon damage applies 24% movement slow for 1.5s
 - **Tier 3:** While airborne, +30% Bullet Lifesteal, +30% Spirit Lifesteal and +30% Bullet Evasion
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorInputDirectional2d`, `BehaviorNoTarget`, `BehaviorAllowAltCast`, `BehaviorMovement`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -102,14 +101,13 @@ Behavior flags: `BehaviorInputDirectional2d`, `BehaviorNoTarget`, `BehaviorAllow
 | Spirit Lifesteal | 0 |
 | Bullet Evasion | 0 |
 | Cooldown | 25 (+1 per cooldown) |
-| Duration | 4 (+1 per duration) |
 | Charge Delay | -1 |
+| Duration | 4 (+1 per duration) |
 
 Upgrade deltas:
-- Tier 1: `{"WeaponDamageBonus":3,"SlowPercent":30,"SlowDuration":1.5}`
-- Tier 2: `{"AbilityCooldown":-12}`
+- Tier 1: `{"WeaponDamageBonus":3,"SlowPercent":24,"SlowDuration":1.5}`
+- Tier 2: `{"AbilityCooldown":-12.0}`
 - Tier 3: `{"BulletLifestealPercent":30,"TechLifestealPercent":30,"EvasionPercent":30}`
-
 ### 3. Spirit Snare
 
 Internal key: `ability_immobilize_trap`.
@@ -125,7 +123,7 @@ Internal key: `ability_immobilize_trap`.
 - **Tier 2:** Applies -15% Bullet Resist for 10s
 - **Tier 3:** +1s Curse Duration and +1.5m Radius
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorPreventTrainingBotUsage`, `BehaviorCanSetQuickCast`.
@@ -136,18 +134,18 @@ Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorP
 | Damage | 25 |
 | Lifetime | 22 (+1 per duration) |
 | Arm Time | 2 |
-| Move Speed | 30 |
+| Move Speed | 24 |
 | Charged Shot Radius | 30 |
 | Bullet Damage Amp | 0 |
 | Debuff Duration | 0 |
 | Cooldown | 34 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Radius | 6.5 (+1 per range) |
 
 Upgrade deltas:
-- Tier 1: `{"AbilityCooldown":-20}`
+- Tier 1: `{"AbilityCooldown":-20.0}`
 - Tier 2: `{"BulletArmorReduction":-15,"DebuffDuration":10}`
 - Tier 3: `{"TetherDuration":1,"Radius":1.5}`
-
 ### 4. Guided Owl
 
 Internal key: `ability_guided_arrow`.
@@ -162,7 +160,7 @@ Internal key: `ability_guided_arrow`.
 
 - **Tier 3:** After hit, kills enemies that are below 22% Health
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -177,10 +175,9 @@ Behavior flags: `BehaviorChannelled`, `BehaviorProjectile`, `BehaviorNoTarget`, 
 | Charge Delay | -1 |
 
 Upgrade deltas:
-- Tier 1: `{"Damage":85}`
-- Tier 2: `{"AbilityCooldown":-40}`
+- Tier 1: `{"Damage":85.0}`
+- Tier 2: `{"AbilityCooldown":-40.0}`
 - Tier 3: `{"LowHealthEnemyThresholdPct":22}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

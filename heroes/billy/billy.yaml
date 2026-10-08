@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.billy",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.billy.125748",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Billy",
   "aliases": [],
@@ -25,22 +25,22 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 820,
-    "health_regeneration_per_second": 2,
+    "maximum_health": 820.0,
+    "health_regeneration_per_second": 2.0,
     "light_melee_damage": 50,
     "heavy_melee_damage": 116,
-    "move_speed_meters_per_second": 7,
+    "move_speed_meters_per_second": 7.0,
     "crouch_speed_meters_per_second": 4.75,
     "sprint_speed_bonus_meters_per_second": 1.6,
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 14.7,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.68
     },
     "air_dash": {
-      "speed_meters_per_second": 17,
-      "distance_meters": 8,
+      "speed_meters_per_second": 17.0,
+      "distance_meters": 8.0,
       "duration_seconds": 0.47
     },
     "stamina": {
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": -20,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": -20.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.127,
-    "MaxHealth": 53,
+    "MaxHealth": 53.0,
     "PowerIncreases": 1,
     "TechPower": 1.1,
     "LightMeleeDamage": 1.58,
@@ -74,12 +74,12 @@
     "RoundsPerSecond": 11.765,
     "ClipSize": 30,
     "ReloadTime": 2.9,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
     "FalloffStartRange": 13.97,
     "FalloffEndRange": 31.75,
-    "FalloffStartScale": 1,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
     "BulletGravityScale": 0,
@@ -168,7 +168,7 @@
         "GroundAuraModifier": {
           "Class": "PunkgoatSigilAura",
           "Subclass": "SigilAura",
-          "Height": 100,
+          "Height": 100.0,
           "ProvidedByAura": {
             "Class": "Base",
             "Subclass": "SigilModifier"
@@ -215,16 +215,16 @@
             "CountsAsLightMelee": -1,
             "CountsAsHeavyMelee": 1,
             "HeavyMeleeDamage": {
-              "Value": 0,
+              "Value": 0.0,
               "Scale": {
                 "Value": 0.5,
                 "Type": "heavy_melee"
               }
             },
             "MeleeDamage": {
-              "Value": 0,
+              "Value": 0.0,
               "Scale": {
-                "Value": 0,
+                "Value": 0.0,
                 "Type": "melee",
                 "Multiply": true
               }
@@ -233,7 +233,7 @@
           }
         ],
         "WaveEndRadius": {
-          "Value": 8,
+          "Value": 8.0,
           "Scale": {
             "Value": 1,
             "Type": "range"
@@ -326,16 +326,16 @@
             "CountsAsLightMelee": -1,
             "CountsAsHeavyMelee": 1,
             "HeavyMeleeDamage": {
-              "Value": 0,
+              "Value": 0.0,
               "Scale": {
                 "Value": 0.5,
                 "Type": "heavy_melee"
               }
             },
             "MeleeDamage": {
-              "Value": 0,
+              "Value": 0.0,
               "Scale": {
-                "Value": 0,
+                "Value": 0.0,
                 "Type": "melee",
                 "Multiply": true
               }
@@ -369,7 +369,7 @@
           },
           "WaveEndRadius": {
             "Name": null,
-            "Value": 8,
+            "Value": 8.0,
             "Scale": {
               "Value": 1,
               "Type": "range"
@@ -465,7 +465,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Slam your bat into the ground, {g:citadel_inline_attribute:'Pulling'} enemies down and dealing {g:citadel_inline_attribute:'MeleeDamage'}.<br><br>The slam creates a shockwave that deals {g:citadel_inline_attribute:'SpiritDamage'} and applies {g:citadel_inline_attribute:'KnockUp'}.",
           "plain_text": "Slam your bat into the ground, pulling enemies down and dealing melee damage.\nThe slam creates a shockwave that deals spirit damage and applies knockup."
         },
@@ -474,7 +474,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "-10s Cooldown",
           "plain_text": "-10s Cooldown"
         },
@@ -483,7 +483,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+1 Charge and +2m Radius",
           "plain_text": "+1 Charge and +2m Radius"
         },
@@ -492,7 +492,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "-3s Charge Time<br>Now deals <span class=\"highlight\">50% Heavy Melee Damage</span>",
           "plain_text": "-3s Charge Time\nNow deals 50% Heavy Melee Damage"
         }
@@ -511,7 +511,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 0.3,
           "Scale": {
@@ -520,10 +520,10 @@
           }
         },
         "AbilityUnitTargetLimit": 1,
-        "AirControlAccelPercent": 50,
-        "AirControlDashReductionPct": -70,
+        "AirControlAccelPercent": 50.0,
+        "AirControlDashReductionPct": -70.0,
         "AirControlDebuffDuration": 1.5,
-        "AirControlPercent": 50,
+        "AirControlPercent": 50.0,
         "AllowRamMultiple": 1,
         "BehaviourBits": [
           "BehaviorDisplaysDamageImpact",
@@ -547,7 +547,7 @@
         "DealMaxHealthDamagePct": {
           "Value": 0,
           "Scale": {
-            "Value": 0,
+            "Value": 0.0,
             "Type": "spirit"
           }
         },
@@ -654,7 +654,7 @@
             "Name": null,
             "Value": 0,
             "Scale": {
-              "Value": 0,
+              "Value": 0.0,
               "Type": "spirit"
             },
             "Type": "tech_damage"
@@ -667,11 +667,11 @@
           },
           "AirControlAccelPercent": {
             "Name": "Air Acceleration",
-            "Value": 50
+            "Value": 50.0
           },
           "AirControlDashReductionPct": {
             "Name": null,
-            "Value": -70
+            "Value": -70.0
           },
           "AirControlDebuffDuration": {
             "Name": null,
@@ -679,7 +679,7 @@
           },
           "AirControlPercent": {
             "Name": "Air Control",
-            "Value": 50
+            "Value": 50.0
           },
           "AllowRamMultiple": {
             "Name": null,
@@ -758,7 +758,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -778,7 +778,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Charge head-first into an enemy and <span class=\"highlight\">send them into the air along with Billy.<br><br><span class=\"diminish\">Cooldown reduced by 50% on impact.</span></span>",
           "plain_text": "Charge head-first into an enemy and send them into the air along with Billy.\nCooldown reduced by 50% on impact."
         },
@@ -787,7 +787,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "On Impact: +25% {g:citadel_inline_attribute:'WeaponDamage'} for 5s",
           "plain_text": "On Impact: +25% weapon damage for 5s"
         },
@@ -796,7 +796,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "0.4s Charge Duration<br>",
           "plain_text": "0.4s Charge Duration"
         }
@@ -815,9 +815,9 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
-          "Value": 8,
+          "Value": 8.0,
           "Scale": {
             "Value": 1,
             "Type": "duration"
@@ -846,7 +846,7 @@
         },
         "BlastedRateOnBulletPct": 50,
         "BulletDamageAmp": 10,
-        "BulletDamageAmpDuration": 7,
+        "BulletDamageAmpDuration": 7.0,
         "BulletsReloadedPerHeavyMeleePct": 100,
         "BulletsReloadedPerLightMeleePct": 35,
         "ChannelMoveSpeed": -1,
@@ -882,7 +882,7 @@
         "IsDisabled": false,
         "Key": "ability_punkgoat_blasted",
         "LightMeleeScalePct": 40,
-        "MaxDuration": 35,
+        "MaxDuration": 35.0,
         "MaxHealthMelee": {
           "Value": 70,
           "Scale": {
@@ -949,7 +949,7 @@
                 "Title": "While Blasted:",
                 "Key": "BonusMoveSpeed",
                 "Name": "Move Speed",
-                "Value": 0,
+                "Value": 0.0,
                 "Type": "move_speed"
               }
             ]
@@ -991,7 +991,7 @@
         "Duration": {
           "BulletDamageAmpDuration": {
             "Name": null,
-            "Value": 7,
+            "Value": 7.0,
             "Type": "duration"
           },
           "DurationPerHeavyMelee": {
@@ -1043,7 +1043,7 @@
           },
           "MaxDuration": {
             "Name": null,
-            "Value": 35
+            "Value": 35.0
           },
           "NonPlayerResourceScalePct": {
             "Name": null,
@@ -1066,12 +1066,12 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
           "Name": "Duration",
-          "Value": 8,
+          "Value": 8.0,
           "Scale": {
             "Value": 1,
             "Type": "duration"
@@ -1086,7 +1086,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"diminish\">Passive:</span> Melee hits <span class=\"highlight\">restore ammo</span> and inflict <span class=\"highlight_special\">wrecked</span> on the victim for 7s.",
           "plain_text": "Passive: Melee hits restore ammo and inflict wrecked on the victim for 7s."
         },
@@ -1095,7 +1095,7 @@
           "card_paths": [
             "card.Info2.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"diminish\">Active:</span> Bullets are amplified against <span class=\"highlight_special\">wrecked</span> enemies. Using melee boosts {g:citadel_inline_attribute:'MaxHealth'} and extends duration.",
           "plain_text": "Active: Bullets are amplified against wrecked enemies. Using melee boosts max health and extends duration."
         },
@@ -1104,7 +1104,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "While Blasted: <span class=\"highlight\">+2.25m/s</span> {g:citadel_inline_attribute:'BonusMoveSpeed'}",
           "plain_text": "While Blasted: +2.25m/s bonus move speed"
         },
@@ -1113,7 +1113,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+1 Bashdown Charge</span> on use and +7% Wrecked Bullet Amp",
           "plain_text": "+1 Bashdown Charge on use and +7% Wrecked Bullet Amp"
         },
@@ -1122,7 +1122,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+50 Melee Bonus Health and increases spirit scaling",
           "plain_text": "+50 Melee Bonus Health and increases spirit scaling"
         }
@@ -1134,7 +1134,7 @@
       "internal_key": "ability_punkgoat_tether",
       "data": {
         "AbilityCastRange": {
-          "Value": 12,
+          "Value": 12.0,
           "Scale": {
             "Value": 1,
             "Type": "range"
@@ -1147,7 +1147,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 2.8,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
@@ -1178,7 +1178,7 @@
         "DamageIncreasePct": {
           "Value": 0,
           "Scale": {
-            "Value": 0,
+            "Value": 0.0,
             "Type": "spirit"
           }
         },
@@ -1199,8 +1199,8 @@
           "Subclass": "Pull"
         },
         "PullTrackCasterDuration": 0.5,
-        "RopeLength": 2,
-        "RopeSnapDistance": 45,
+        "RopeLength": 2.0,
+        "RopeSnapDistance": 45.0,
         "RopeSnapNoLOSDuration": 0.5,
         "RopeSoftEdgeLength": 4.5,
         "TetheredModifier": {
@@ -1330,12 +1330,12 @@
         "Range": {
           "RopeLength": {
             "Name": null,
-            "Value": 2,
+            "Value": 2.0,
             "Type": "distance"
           },
           "RopeSnapDistance": {
             "Name": null,
-            "Value": 45,
+            "Value": 45.0,
             "Type": "distance"
           },
           "RopeSoftEdgeLength": {
@@ -1370,7 +1370,7 @@
             "Name": null,
             "Value": 0,
             "Scale": {
-              "Value": 0,
+              "Value": 0.0,
               "Type": "spirit"
             },
             "Type": "damage"
@@ -1412,7 +1412,7 @@
         },
         "AbilityCastRange": {
           "Name": "Cast Range",
-          "Value": 12,
+          "Value": 12.0,
           "Scale": {
             "Value": 1,
             "Type": "range"
@@ -1430,7 +1430,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -1446,7 +1446,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Chain nearby enemies to you. Chained enemies <span class=\"highlight\">cannot use movement abilities</span> and receive a heavy {g:citadel_inline_attribute:'Slow'} when they pull on the chain.<br><br>After a delay, <span class=\"highlight\">yank everyone towards Billy</span> and deal {g:citadel_inline_attribute:'SpiritDamage'}.<br><br><span class=\"diminish\">The chain breaks if you lose line of sight for a short while.</span>",
           "plain_text": "Chain nearby enemies to you. Chained enemies cannot use movement abilities and receive a heavy slow when they pull on the chain.\nAfter a delay, yank everyone towards Billy and deal spirit damage.\nThe chain breaks if you lose line of sight for a short while."
         },
@@ -1455,7 +1455,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+40% {g:citadel_inline_attribute:'SpiritResist'} & {g:citadel_inline_attribute:'BulletResist'}",
           "plain_text": "+40% spirit resist & bullet resist"
         },
@@ -1464,7 +1464,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+5m</span> Range <br><span class=\"highlight\">+1.3s</span> of <span class=\"highlight\">Unstoppable</span> Per Hero pulled in",
           "plain_text": "+5m Range\n+1.3s of Unstoppable Per Hero pulled in"
         }
@@ -1527,5 +1527,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

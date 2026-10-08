@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.mina",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.mina.124886",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Mina",
   "aliases": [],
@@ -25,8 +25,8 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 660,
-    "health_regeneration_per_second": 2,
+    "maximum_health": 660.0,
+    "health_regeneration_per_second": 2.0,
     "light_melee_damage": 50,
     "heavy_melee_damage": 116,
     "move_speed_meters_per_second": 6.5,
@@ -35,16 +35,16 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 16.1,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.62
     },
     "air_dash": {
       "speed_meters_per_second": 18.6,
-      "distance_meters": 8,
+      "distance_meters": 8.0,
       "duration_seconds": 0.43
     },
     "stamina": {
-      "charges": 2,
+      "charges": 2.0,
       "cooldown_seconds": 4.2000042000042,
       "regeneration_per_second": 0.238095
     },
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.275,
-    "MaxHealth": 27,
+    "MaxHealth": 27.0,
     "PowerIncreases": 1,
     "TechPower": 1.1,
     "LightMeleeDamage": 1.58,
@@ -69,20 +69,20 @@
   },
   "spirit_scaling": {},
   "weapon": {
-    "BulletSpeed": 762,
+    "BulletSpeed": 762.0,
     "BulletDamage": 7.31,
     "RoundsPerSecond": 3.9683,
     "ClipSize": 12,
     "ReloadTime": 1.7,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
     "FalloffStartRange": 19.99,
-    "FalloffEndRange": 46,
-    "FalloffStartScale": 1,
+    "FalloffEndRange": 46.0,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
-    "BulletGravityScale": 0,
+    "BulletGravityScale": 0.0,
     "BulletRadius": 0.127,
     "BulletsPerShot": 1,
     "BulletsPerBurst": 1,
@@ -121,7 +121,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.4,
         "AbilityUnitTargetLimit": 6,
         "AirDrag": 0.2,
@@ -135,8 +135,8 @@
         "Damage": {
           "Value": 60,
           "Scale": {
-            "Value": 1,
-            "Type": "stats_count"
+            "Value": 1.0,
+            "Type": "spirit"
           }
         },
         "DebuffModifier": {
@@ -151,7 +151,7 @@
         },
         "IsDisabled": false,
         "Key": "ability_vampirebat_steallife",
-        "MaxFloatTime": 4,
+        "MaxFloatTime": 4.0,
         "MiniJumpVelocity": 200,
         "MissingHealthDamagePercentage": 6,
         "Name": "Rake",
@@ -174,7 +174,7 @@
             "AbilityCooldown": -8
           },
           {
-            "MissingHealthDamagePercentage": 7,
+            "MissingHealthDamagePercentage": 7.0,
             "RakeHealPerKill": {
               "Value": 0,
               "Scale": {
@@ -197,8 +197,8 @@
                 "Name": "Damage",
                 "Value": 60,
                 "Scale": {
-                  "Value": 1,
-                  "Type": "stats_count"
+                  "Value": 1.0,
+                  "Type": "spirit"
                 },
                 "Type": "tech_damage"
               },
@@ -242,7 +242,7 @@
             "DescKey": "ability_vampirebat_steallife_t2_desc"
           },
           {
-            "MissingHealthDamagePercentage": 7,
+            "MissingHealthDamagePercentage": 7.0,
             "RakeHealPerKill": {
               "Value": 0,
               "Scale": {
@@ -283,7 +283,7 @@
           },
           "MaxFloatTime": {
             "Name": null,
-            "Value": 4
+            "Value": 4.0
           },
           "MiniJumpVelocity": {
             "Name": null,
@@ -327,7 +327,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -338,7 +338,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"diminish\">Active:</span> Slash with your umbrella, dealing {g:citadel_inline_attribute:'SpiritDamage'}, increasing with their missing health. Receive a {g:citadel_inline_attribute:'Heal'} for every target killed.<br><br><span class=\"diminish\">Passive: </span>Holding {g:citadel_binding:'ADS'} causes you to briefly float.<br><span class=\"diminish\">Rake executes non-heroes below 60 health.</span>",
           "plain_text": "Active: Slash with your umbrella, dealing spirit damage, increasing with their missing health. Receive a heal for every target killed.\nPassive: Holding [ADS] causes you to briefly float.\nRake executes non-heroes below 60 health."
         },
@@ -347,7 +347,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+30</span> Heal per Kill <br><span class=\"highlight\">-8s</span> Cooldown",
           "plain_text": "+30 Heal per Kill\n-8s Cooldown"
         },
@@ -356,7 +356,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+7%</span> Missing health damage and increased Heal per Kill Spirit scaling",
           "plain_text": "+7% Missing health damage and increased Heal per Kill Spirit scaling"
         }
@@ -387,7 +387,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 0.65,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
@@ -566,7 +566,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -582,7 +582,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Briefly disperse, becoming <span class=\"highlight\">untargetable</span> and flying to a target location. <br><br>Can be <span class=\"highlight\">recast</span> within a brief window.",
           "plain_text": "Briefly disperse, becoming untargetable and flying to a target location.\nCan be recast within a brief window."
         },
@@ -591,7 +591,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "On Cast: Gain <span class=\"highlight\">+25%</span> Fire Rate for 8s and add <span class=\"highlight\">8</span> bullets",
           "plain_text": "On Cast: Gain +25% Fire Rate for 8s and add 8 bullets"
         },
@@ -600,7 +600,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+1</span> Recast<br><span class=\"highlight\">+4m</span> Range",
           "plain_text": "+1 Recast\n+4m Range"
         }
@@ -611,7 +611,7 @@
       "name": "Love Bites",
       "internal_key": "ability_vampirebat_lovebites",
       "data": {
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": null,
         "BonusDamage": {
@@ -626,7 +626,7 @@
         "BuildUpModifier": {
           "Class": "CitadelBaseBuildup",
           "Subclass": "LovebitesBuildup",
-          "BuildUpDecayDelay": 3
+          "BuildUpDecayDelay": 3.0
         },
         "BuildUpPerBat": 20,
         "BuildUpPerDagger": 30,
@@ -644,7 +644,7 @@
             "Subclass": "Slowsf"
           }
         },
-        "EffectivenessVolumeScaleMax": 1,
+        "EffectivenessVolumeScaleMax": 1.0,
         "EffectivenessVolumeScaleMin": 0.5,
         "IsDisabled": false,
         "Key": "ability_vampirebat_lovebites",
@@ -666,10 +666,10 @@
         "Upgrades": [
           {
             "SlowDuration": 3,
-            "SlowPercent": 30
+            "SlowPercent": 24
           },
           {
-            "MagicDamagePerBullet": 3,
+            "MagicDamagePerBullet": 3.0,
             "BonusDamage": 45
           },
           {
@@ -741,11 +741,11 @@
         "Upgrades": [
           {
             "SlowDuration": 3,
-            "SlowPercent": 30,
+            "SlowPercent": 24,
             "DescKey": "ability_vampirebat_lovebites_t1_desc"
           },
           {
-            "MagicDamagePerBullet": 3,
+            "MagicDamagePerBullet": 3.0,
             "BonusDamage": 45,
             "DescKey": "ability_vampirebat_lovebites_t2_desc"
           },
@@ -801,7 +801,7 @@
           },
           "EffectivenessVolumeScaleMax": {
             "Name": null,
-            "Value": 1
+            "Value": 1.0
           },
           "EffectivenessVolumeScaleMin": {
             "Name": null,
@@ -810,7 +810,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -821,7 +821,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Your bullets apply additional {g:citadel_inline_attribute:'SpiritDamage'}. Dealing damage your abilities builds up to a vicious <span class=\"highlight\">bite</span>, dealing a burst of {g:citadel_inline_attribute:'BonusSpiritDamage'}. <br><br><span class=\"diminish\">Love Bites has a unique cooldown per target.</span>",
           "plain_text": "Your bullets apply additional spirit damage. Dealing damage your abilities builds up to a vicious bite, dealing a burst of bonus spirit damage.\nLove Bites has a unique cooldown per target."
         },
@@ -830,16 +830,16 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "On Proc: <span class=\"highlight\">+30%</span> Slow for 3s",
-          "plain_text": "On Proc: +30% Slow for 3s"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "On Proc: <span class=\"highlight\">+24%</span> Slow for 3s",
+          "plain_text": "On Proc: +24% Slow for 3s"
         },
         {
           "localization_key": "ability_vampirebat_lovebites_t2_desc",
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+3</span> Spirit Damage per Bullet & <br><span class=\"highlight\">+45</span> Bonus Damage",
           "plain_text": "+3 Spirit Damage per Bullet &\n+45 Bonus Damage"
         },
@@ -848,7 +848,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-5</span> Cooldown <br>On Proc: <span class=\"highlight\">+25%</span> Fire Rate for 5s",
           "plain_text": "-5 Cooldown\nOn Proc: +25% Fire Rate for 5s"
         }
@@ -874,7 +874,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 12,
         "AirDrag": 12,
         "BatCount": 75,
@@ -891,6 +891,7 @@
         ],
         "BonusBatsMax": 50,
         "BonusBatsPerProc": 2,
+        "BossDamageScale": 0.5,
         "ChannelMoveSpeed": -1,
         "CurrentHealthDamageCapToBosses": 20,
         "Damage": {
@@ -1150,7 +1151,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -1161,7 +1162,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"diminish\">Active:</span> Unleash a cloud of bats that seek out targets, each dealing {g:citadel_inline_attribute:'SpiritDamage'} and applying {g:citadel_inline_attribute:'Silence'}.<br><br><span class=\"diminish\">Passive:</span> Triggering Love Bites against heroes permanently increases the <span class=\"highlight\">number of bats</span> released.",
           "plain_text": "Active: Unleash a cloud of bats that seek out targets, each dealing spirit damage and applying Silence.\nPassive: Triggering Love Bites against heroes permanently increases the number of bats released."
         },
@@ -1170,7 +1171,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "On Hit: Deal <span class=\"highlight\">+0.5%</span> Current Health as Damage",
           "plain_text": "On Hit: Deal +0.5% Current Health as Damage"
         }
@@ -1234,5 +1235,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

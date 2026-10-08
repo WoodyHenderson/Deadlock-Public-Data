@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Victor is a selectable Brawler hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.victor.125760
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Victor
@@ -52,10 +52,10 @@ Internal key: `ability_frank_shocktarget2`.
 
 **Upgrade descriptions** (where supplied by the source):
 
-- **Tier 1:** On Hit: Apply 40% Slow for 2s
+- **Tier 1:** On Hit: Apply 32% Slow for 2s
 - **Tier 3:** On Hero Hit: Heal for 15% of your missing health and increased Spirit scaling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorShowCastRangeAsSatSphereWhileCasting`, `BehaviorDontInterruptSlideOnCast`.
@@ -65,15 +65,14 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorSho
 | Damage | 100 (+1.6 per spirit) |
 | Move Speed | 0 |
 | Missing Health as Healing | 0 (+1 per healing) |
-| Cooldown | 2 (+1 per cooldown) |
 | Cast Range | 28 (+1 per range) |
+| Cooldown | 2 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
-- Tier 1: `{"SlowPercent":40,"SlowDuration":"2s"}`
-- Tier 2: `{"Damage":50}`
+- Tier 1: `{"SlowPercent":32,"SlowDuration":"2s"}`
+- Tier 2: `{"Damage":50.0}`
 - Tier 3: `{"MissingHealthPercentHeal":15,"Damage":{"Value":0,"Scale":{"Value":0.6,"Type":"spirit"}}}`
-
 ### 2. Jumpstart
 
 Internal key: `ability_frank_selfzap`.
@@ -88,7 +87,7 @@ Internal key: `ability_frank_selfzap`.
 - **Tier 2:** +70 Total HP Regen and -8s Cooldown
 - **Tier 3:** +1 Charge +50% Debuff Resistance Increases spirit scaling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorCannotCancelDuringChannel`, `BehaviorDontInterruptSlideOnCast`.
@@ -99,16 +98,15 @@ Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorDisplaysDamag
 | Total HP Regen | 100 (+1.2 per spirit) |
 | Move Speed | 3 |
 | Debuff Resist | 0 |
-| Cooldown | 30 (+1 per cooldown) |
-| Duration | 4.5 (+1 per duration) |
 | Charges | 1 (+1 per max charges) |
+| Cooldown | 30 (+1 per cooldown) |
 | Charge Delay | 8 (+1 per charge cooldown) |
+| Duration | 4.5 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"BonusMoveSpeed":3}`
 - Tier 2: `{"TotalHealthRegen":70,"AbilityCooldown":-8}`
 - Tier 3: `{"AbilityCharges":1,"TotalHealthRegen":{"Value":0,"Scale":{"Value":0.9,"Type":"spirit"}},"StatusResistancePercent":50}`
-
 ### 3. Aura of Suffering
 
 Internal key: `ability_frank_painaura`.
@@ -121,11 +119,11 @@ Internal key: `ability_frank_painaura`.
 
 **Upgrade descriptions** (where supplied by the source):
 
-- **Tier 1:** Enemies receive 25% Move and Dash Slow
+- **Tier 1:** Enemies receive 20% Move and Dash Slow
 - **Tier 2:** +6 Min DPS and +34 Max DPS
 - **Tier 3:** +1m Radius Enemies take +15% Damage
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorStartCooldownOnToggleOff`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorDoNotAllowSpamProc`, `BehaviorCanCastOnZipline`.
@@ -140,14 +138,14 @@ Behavior flags: `BehaviorStartCooldownOnToggleOff`, `BehaviorNoTarget`, `Behavio
 | Self Damage | 70 |
 | Debuff Resist | 0 |
 | Cooldown | 2 (+1 per cooldown) |
-| Duration | 8 |
 | Charge Delay | -1 |
+| Duration | 8 |
+| Radius | 8 (+1 per range) |
 
 Upgrade deltas:
-- Tier 1: `{"SlowPercent":25,"EnemyDashSlowPercent":-25,"DebuffDuration":0.5}`
-- Tier 2: `{"MinDps":6,"MaxDPS":34}`
+- Tier 1: `{"SlowPercent":20,"EnemyDashSlowPercent":-22,"DebuffDuration":0.5}`
+- Tier 2: `{"MinDps":6,"MaxDPS":34.0}`
 - Tier 3: `{"IncomingDamagePercent":15,"Radius":1}`
-
 ### 4. Shocking Reanimation
 
 Internal key: `ability_frank_revive`.
@@ -163,7 +161,7 @@ Internal key: `ability_frank_revive`.
 - **Tier 1:** While On Cooldown: Gain +15% Fire Rate and 6 Spirit Damage per Bullet
 - **Tier 3:** +175 Damage +1.5 Stun -95s Cooldown
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorCastEvenIfBusyAndExclusive`, `BehaviorChannelled`, `BehaviorCastableWhileBusy`, `BehaviorNotSilencable`, `BehaviorNoTarget`, `BehaviorCastableWhileCmdRestricted`, `BehaviorDisplaysDamageImpact`, `BehaviorCanCastWhileDead`.
@@ -182,12 +180,12 @@ Behavior flags: `BehaviorCastEvenIfBusyAndExclusive`, `BehaviorChannelled`, `Beh
 | Slow Duration | 3 (+1 per duration) |
 | Cooldown | 240 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Radius | 18 (+1 per range) |
 
 Upgrade deltas:
-- Tier 1: `{"BonusDamagePerBullet":{"Value":6,"Scale":{"Value":0.06,"Type":"spirit"}},"BonusFireRate":15}`
+- Tier 1: `{"BonusDamagePerBullet":{"Value":6.0,"Scale":{"Value":0.06,"Type":"spirit"}},"BonusFireRate":15}`
 - Tier 2: `{"RespawnHealthPercent":50}`
 - Tier 3: `{"Damage":175,"StunDuration":1.5,"AbilityCooldown":-95}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

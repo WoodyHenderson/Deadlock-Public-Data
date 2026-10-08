@@ -19,13 +19,15 @@ aliases:
   - wall jump
   - down dash
 summary: Movement actions available to all heroes and their baseline stamina costs.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
-evidence_status: source_conflict
+snapshot_id: deadlock-wiki-2026-09-17
+current_as_of: "2026-09-17"
+evidence_status: source_conflict_with_approximate_patch_note_tuning
 sources:
   - wiki.movement.78724
   - wiki.mechanics.110139
   - wiki.move-speed.146579
+  - wiki.melee-attack.157734
+  - github.deadlock-data.changelogs.raw.fc4f540f12e0
 ---
 
 # Universal Movement
@@ -107,8 +109,12 @@ hero's descent. Mantling climbs a reachable ledge when the player jumps toward
 it; holding crouch during the mantle creates a mantle glide with an exit speed
 boost.
 
-A melee hit against a hero who is mantling or climbing applies an 80% movement
-slow that tapers to 20% over two seconds.
+The September 17 Melee Attack article reports that a melee hit against a hero
+mantling or climbing applies an 80% movement slow that tapers to 20% over two
+seconds. The September 16 notes separately say movement slows were reduced by
+approximately 20% globally, without an exact value for this special slow. Keep
+the article values as source-reported, but treat the post-patch runtime value as
+unresolved rather than applying an inferred multiplier.
 
 ## Source Limitations
 

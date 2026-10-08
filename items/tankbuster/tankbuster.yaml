@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.tankbuster",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Tankbuster",
@@ -106,9 +106,9 @@
       "importance": "important",
       "key": "CurrentHealthDamage",
       "label": "Current Health Bonus Damage",
-      "value": "8%",
+      "value": "7.5%",
       "property": {
-        "value": "8",
+        "value": "7.5",
         "css_class": "tech_damage",
         "loc_token_override": "MagicShockDamage",
         "label": "Current Health Bonus Damage",
@@ -294,7 +294,7 @@
         "value": "30"
       },
       "CurrentHealthDamage": {
-        "value": "8",
+        "value": "7.5",
         "css_class": "tech_damage",
         "loc_token_override": "MagicShockDamage",
         "label": "Current Health Bonus Damage",
@@ -417,7 +417,7 @@
     "MinimumDamage": 165,
     "ReProcLockoutTime": 5,
     "WatcherMaxDuration": 30,
-    "CurrentHealthDamage": 8,
+    "CurrentHealthDamage": 7.5,
     "Damage": 40,
     "AbilityChargeUpTime": 14,
     "BonusHealth": 50,
@@ -475,7 +475,7 @@
         },
         {
           "Key": "CurrentHealthDamage",
-          "Value": 8,
+          "Value": 7.5,
           "Type": "tech_damage",
           "LocTokenOverride": "MagicShockDamage"
         }

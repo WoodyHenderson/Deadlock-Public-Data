@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.spiritual-overflow",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Spiritual Overflow",
@@ -138,9 +138,9 @@
       "importance": "normal",
       "key": "BuildUpPerShot",
       "label": "Buildup Per Shot",
-      "value": "0.75%",
+      "value": "1.08%",
       "property": {
-        "value": "0.75",
+        "value": "1.08",
         "scale_function": {
           "class_name": "scale_function_single_stat",
           "subclass_name": "buildup_scale_function",
@@ -183,9 +183,9 @@
       "importance": "important",
       "key": "BonusFireRate",
       "label": "Fire Rate",
-      "value": "30%",
+      "value": "25%",
       "property": {
-        "value": "30",
+        "value": "25",
         "provided_property_type": "MODIFIER_VALUE_FIRE_RATE",
         "css_class": "fire_rate",
         "usage_flags": [
@@ -205,9 +205,9 @@
       "importance": "important",
       "key": "BonusSpirit",
       "label": "Spirit Power",
-      "value": "40",
+      "value": "30",
       "property": {
-        "value": "40",
+        "value": "30",
         "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
         "css_class": "tech_damage",
         "usage_flags": [
@@ -465,7 +465,7 @@
         "tooltip_is_important": false
       },
       "BonusFireRate": {
-        "value": "30",
+        "value": "25",
         "provided_property_type": "MODIFIER_VALUE_FIRE_RATE",
         "css_class": "fire_rate",
         "usage_flags": [
@@ -480,7 +480,7 @@
         "tooltip_is_important": true
       },
       "BonusSpirit": {
-        "value": "40",
+        "value": "30",
         "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
         "css_class": "tech_damage",
         "usage_flags": [
@@ -527,7 +527,7 @@
         "tooltip_is_important": false
       },
       "BuildUpPerShot": {
-        "value": "0.75",
+        "value": "1.08",
         "scale_function": {
           "class_name": "scale_function_single_stat",
           "subclass_name": "buildup_scale_function",
@@ -650,11 +650,11 @@
     "AbilityLifestealPercentHero": 13,
     "NonHeroAbilityLifestealTooltipOnly": 3,
     "BonusHealth": 90,
-    "BonusFireRate": 30,
-    "BonusSpirit": 40,
+    "BonusFireRate": 25,
+    "BonusSpirit": 30,
     "BonusSpiritLifesteal": 10,
     "BonusAbilityDurationPercent": 13,
-    "BuildUpPerShot": 0.75,
+    "BuildUpPerShot": 1.08,
     "BuildUpDuration": 5,
     "PropertyUpgrades": {
       "BonusAbilityDurationPercent": 15,
@@ -723,13 +723,13 @@
       "Main": [
         {
           "Key": "BonusFireRate",
-          "Value": 30,
+          "Value": 25,
           "Type": "fire_rate",
           "UsageFlags": "IntrinsicallyProvidedInAbility"
         },
         {
           "Key": "BonusSpirit",
-          "Value": 40,
+          "Value": 30,
           "Type": "tech_damage",
           "UsageFlags": "IntrinsicallyProvidedInAbility"
         },
@@ -743,7 +743,7 @@
       "Alt": [
         {
           "Key": "BuildUpPerShot",
-          "Value": 0.75
+          "Value": 1.08
         },
         {
           "Key": "AbilityDuration",

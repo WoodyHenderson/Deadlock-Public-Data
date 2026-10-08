@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.lifestrike",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Lifestrike",
@@ -139,9 +139,9 @@
       "importance": "important",
       "key": "SlowPercent",
       "label": "Move Speed",
-      "value": "60%",
+      "value": "48%",
       "property": {
-        "value": "60",
+        "value": "48",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -161,14 +161,14 @@
       "importance": "important",
       "key": "LifestealHeal",
       "label": "Heal on Melee Hit",
-      "value": "100",
+      "value": "120",
       "property": {
-        "value": "100",
+        "value": "120",
         "css_class": "healing",
         "scale_function": {
           "class_name": "scale_function_healing_boon_scale",
           "subclass_name": "HealFixedAmount_scale_function",
-          "stat_scale": 1.5
+          "stat_scale": 1.75
         },
         "label": "Heal on Melee Hit",
         "postvalue_label": "Heal on Melee Hit",
@@ -182,9 +182,9 @@
       "importance": "important",
       "key": "LifestealHealPercent",
       "label": "Melee Hit Heal",
-      "value": "30%",
+      "value": "35%",
       "property": {
-        "value": "30",
+        "value": "35",
         "css_class": "healing",
         "scale_function": {
           "class_name": "scale_function_healing_boon_scale",
@@ -371,7 +371,7 @@
         "value": "1.5"
       },
       "SlowPercent": {
-        "value": "60",
+        "value": "48",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -412,12 +412,12 @@
         "tooltip_is_important": false
       },
       "LifestealHeal": {
-        "value": "100",
+        "value": "120",
         "css_class": "healing",
         "scale_function": {
           "class_name": "scale_function_healing_boon_scale",
           "subclass_name": "HealFixedAmount_scale_function",
-          "stat_scale": 1.5
+          "stat_scale": 1.75
         },
         "label": "Heal on Melee Hit",
         "postvalue_label": "Heal on Melee Hit",
@@ -426,7 +426,7 @@
         "tooltip_is_important": true
       },
       "LifestealHealPercent": {
-        "value": "30",
+        "value": "35",
         "css_class": "healing",
         "scale_function": {
           "class_name": "scale_function_healing_boon_scale",
@@ -542,18 +542,18 @@
     "AbilityCooldownBetweenCharge": -1.0,
     "ChannelMoveSpeed": -1,
     "LightMeleeCooldownMult": 1.5,
-    "SlowPercent": 60,
+    "SlowPercent": 48,
     "SlowDuration": 2.5,
     "BonusMeleeDamagePercent": 16,
     "LifestealHeal": {
-      "Value": 100,
+      "Value": 120,
       "Scale": {
-        "Value": 1.5,
+        "Value": 1.75,
         "Type": "power_increase"
       }
     },
     "LifestealHealPercent": {
-      "Value": 30,
+      "Value": 35,
       "Scale": {
         "Value": 0.5,
         "Type": "power_increase"
@@ -617,22 +617,22 @@
       "Main": [
         {
           "Key": "SlowPercent",
-          "Value": 60,
+          "Value": 48,
           "Type": "slow",
           "UsageFlags": "ConditionallyApplied"
         },
         {
           "Key": "LifestealHeal",
-          "Value": 100,
+          "Value": 120,
           "Scale": {
-            "Value": 1.5,
+            "Value": 1.75,
             "Type": "power_increase"
           },
           "Type": "healing"
         },
         {
           "Key": "LifestealHealPercent",
-          "Value": 30,
+          "Value": 35,
           "Scale": {
             "Value": 0.5,
             "Type": "power_increase"

@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.mcginnis",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.mcginnis.125561",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "McGinnis",
   "aliases": [],
@@ -25,7 +25,7 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 780,
+    "maximum_health": 780.0,
     "health_regeneration_per_second": 2,
     "light_melee_damage": 50,
     "heavy_melee_damage": 116,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 14.7,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.68
     },
     "air_dash": {
-      "speed_meters_per_second": 17,
-      "distance_meters": 8,
+      "speed_meters_per_second": 17.0,
+      "distance_meters": 8.0,
       "duration_seconds": 0.47
     },
     "stamina": {
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.171,
-    "MaxHealth": 52,
+    "MaxHealth": 52.0,
     "PowerIncreases": 1,
     "TechResist": 0.35,
     "TechPower": 1.1,
@@ -70,17 +70,17 @@
   },
   "spirit_scaling": {},
   "weapon": {
-    "BulletSpeed": 650,
+    "BulletSpeed": 650.0,
     "BulletDamage": 6.08,
     "RoundsPerSecond": 4.7619,
     "ClipSize": 66,
     "ReloadTime": 3.29,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
     "FalloffStartRange": 19.99,
     "FalloffEndRange": 57.51,
-    "FalloffStartScale": 1,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
     "BulletGravityScale": 0.8,
@@ -126,7 +126,7 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 18,
+          "Value": 18.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -395,7 +395,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 18,
+          "Value": 18.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -419,7 +419,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Deploy a turret that shoots enemies, dealing {g:citadel_inline_attribute:'SpiritDPS'}. The turret expires after a limited lifetime.<br><span class=\"diminish\">Turrets deal reduced damage to troopers and objectives.</span>",
           "plain_text": "Deploy a turret that shoots enemies, dealing spirit damage over time. The turret expires after a limited lifetime.\nTurrets deal reduced damage to troopers and objectives."
         },
@@ -428,7 +428,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+10</span> Turret DPS and <span class=\"highlight\">+10m</span> Attack Range",
           "plain_text": "+10 Turret DPS and +10m Attack Range"
         },
@@ -437,7 +437,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+25%</span> Turret Fire Rate and <span class=\"highlight\">+12s</span> Turret Lifetime",
           "plain_text": "+25% Turret Fire Rate and +12s Turret Lifetime"
         }
@@ -457,13 +457,13 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 50,
+          "Value": 50.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 6.5,
           "Scale": {
@@ -476,7 +476,7 @@
           "Class": "MobileResupplyAura",
           "Subclass": "MobileResupplyAura",
           "AmbientParticleRadiusControlPoint": 1,
-          "ModifierProvidedByAuraDuration": 1,
+          "ModifierProvidedByAuraDuration": 1.0,
           "ProvidedByAura": {
             "Class": "MobileResupply",
             "Subclass": "MobileResupply"
@@ -507,17 +507,17 @@
         "IsDisabled": false,
         "Key": "citadel_ability_mobile_resupply",
         "Name": "Medicinal Specter",
-        "TurretHealMult": 1,
+        "TurretHealMult": 1.0,
         "Upgrades": [
           {
             "AbilityDuration": 1.5
           },
           {
-            "AbilityCooldown": -20,
-            "StaminaCooldownReduction": 100
+            "AbilityCooldown": -20.0,
+            "StaminaCooldownReduction": 100.0
           },
           {
-            "MaxHealthRegenPct": 2,
+            "MaxHealthRegenPct": 2.0,
             "HealRadius": 3,
             "SpiritResist": 40
           }
@@ -580,12 +580,12 @@
             "DescKey": "citadel_ability_mobile_resupply_t1_desc"
           },
           {
-            "AbilityCooldown": -20,
-            "StaminaCooldownReduction": 100,
+            "AbilityCooldown": -20.0,
+            "StaminaCooldownReduction": 100.0,
             "DescKey": "citadel_ability_mobile_resupply_t2_desc"
           },
           {
-            "MaxHealthRegenPct": 2,
+            "MaxHealthRegenPct": 2.0,
             "HealRadius": 3,
             "SpiritResist": 40,
             "DescKey": "citadel_ability_mobile_resupply_t3_desc"
@@ -601,7 +601,7 @@
         "Health": {
           "TurretHealMult": {
             "Name": null,
-            "Value": 1,
+            "Value": 1.0,
             "Type": "healing"
           }
         },
@@ -631,7 +631,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 50,
+          "Value": 50.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -640,7 +640,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -660,7 +660,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Deploy a spirit that provides <span class=\"highlight\">{g:citadel_inline_attribute:'Healing'}</span> to nearby allies.",
           "plain_text": "Deploy a spirit that provides healing to nearby allies."
         },
@@ -669,7 +669,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+1.5s</span> Duration",
           "plain_text": "+1.5s Duration"
         },
@@ -678,7 +678,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-20s</span> Cooldown and provides <span class=\"highlight\">+100%</span> Stamina Recovery",
           "plain_text": "-20s Cooldown and provides +100% Stamina Recovery"
         },
@@ -687,7 +687,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+2%</span> Max HP Regen <br><span class=\"highlight\">+3m</span> Heal Radius <br><span class=\"highlight\">+40%</span> Spirit Resist",
           "plain_text": "+2% Max HP Regen\n+3m Heal Radius\n+40% Spirit Resist"
         }
@@ -706,15 +706,15 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 50,
+          "Value": 50.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
-          "Value": 6,
+          "Value": 6.0,
           "Scale": {
             "Value": 1,
             "Type": "duration"
@@ -751,7 +751,7 @@
           "Class": "SlowBase",
           "Subclass": "Slow"
         },
-        "SlowPercent": 20,
+        "SlowPercent": 16,
         "TimeBetweenSegments": 0.035,
         "TimeToMaxDistance": 1.8,
         "Upgrades": [
@@ -760,13 +760,13 @@
             "DebuffDuration": 7
           },
           {
-            "AbilityCooldown": -20,
+            "AbilityCooldown": -20.0,
             "AbilityDuration": 2
           },
           {
             "CreateTurrets": 2,
             "TurretLifeTime": 8,
-            "SlowPercent": 30
+            "SlowPercent": 24
           }
         ],
         "WallImpactRange": 5,
@@ -811,7 +811,7 @@
               {
                 "Key": "SlowPercent",
                 "Name": "Move Speed",
-                "Value": 20,
+                "Value": 16,
                 "Type": "slow"
               },
               {
@@ -862,14 +862,14 @@
             "DescKey": "citadel_ability_fissure_wall_t1_desc"
           },
           {
-            "AbilityCooldown": -20,
+            "AbilityCooldown": -20.0,
             "AbilityDuration": 2,
             "DescKey": "citadel_ability_fissure_wall_t2_desc"
           },
           {
             "CreateTurrets": 2,
             "TurretLifeTime": 8,
-            "SlowPercent": 30,
+            "SlowPercent": 24,
             "DescKey": "citadel_ability_fissure_wall_t3_desc"
           }
         ],
@@ -917,7 +917,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 50,
+          "Value": 50.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -926,12 +926,12 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
           "Name": "Duration",
-          "Value": 6,
+          "Value": 6.0,
           "Scale": {
             "Value": 1,
             "Type": "duration"
@@ -946,7 +946,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Cast a wall that <span class=\"highlight\">applies slow</span> on enemies it passes through.  Erupt the wall to <span class=\"highlight\">divide the terrain</span> in half and <span class=\"highlight\">damage</span> nearby enemies. <br>After casting, press{g:citadel_binding:'Attack'}or{g:citadel_binding:'Ability3'}to erupt the wall early.  <br><br><span class=\"diminish\">Can be Destroyed with Melee Attacks</span>",
           "plain_text": "Cast a wall that applies slow on enemies it passes through. Erupt the wall to divide the terrain in half and damage nearby enemies.\nAfter casting, press [Attack] or [Ability 3] to erupt the wall early.\nCan be Destroyed with Melee Attacks"
         },
@@ -955,7 +955,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Amplifies McGinnis's damage by <span class=\"highlight\">+20%</span> on hit enemies for 7s",
           "plain_text": "Amplifies McGinnis's damage by +20% on hit enemies for 7s"
         },
@@ -964,7 +964,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-20s Cooldown</span> and <span class=\"highlight\">+2s Duration</span>",
           "plain_text": "-20s Cooldown and +2s Duration"
         },
@@ -973,9 +973,9 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "Deploy <span class=\"highlight\">2 Mini Turrets</span> near the wall for 8s<br><span class=\"highlight\">+30% Slow</span>",
-          "plain_text": "Deploy 2 Mini Turrets near the wall for 8s\n+30% Slow"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "Deploy <span class=\"highlight\">2 Mini Turrets</span> near the wall for 8s<br><span class=\"highlight\">+24% Slow</span>",
+          "plain_text": "Deploy 2 Mini Turrets near the wall for 8s\n+24% Slow"
         }
       ]
     },
@@ -993,13 +993,13 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 200,
+          "Value": 200.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 8,
           "Scale": {
@@ -1028,6 +1028,7 @@
           "BehaviorDontSwitchAwayOnCast",
           "BehaviorDontInterruptSlideOnCast"
         ],
+        "BossDamageScale": 0.5,
         "ChannelMoveSpeed": -1,
         "DamagePerRocket": {
           "Value": 21,
@@ -1064,12 +1065,12 @@
         "TrackingTime": 0.4,
         "Upgrades": [
           {
-            "MoveSlowPercent": 30,
-            "EnemyDashSlowPercent": -18,
+            "MoveSlowPercent": 24,
+            "EnemyDashSlowPercent": -16,
             "MoveSlowDuration": 1
           },
           {
-            "AbilityCooldown": -45,
+            "AbilityCooldown": -45.0,
             "AbilityDuration": 6
           },
           {
@@ -1145,13 +1146,13 @@
         },
         "Upgrades": [
           {
-            "MoveSlowPercent": 30,
-            "EnemyDashSlowPercent": -18,
+            "MoveSlowPercent": 24,
+            "EnemyDashSlowPercent": -16,
             "MoveSlowDuration": 1,
             "DescKey": "citadel_ability_rocket_barrage_t1_desc"
           },
           {
-            "AbilityCooldown": -45,
+            "AbilityCooldown": -45.0,
             "AbilityDuration": 6,
             "DescKey": "citadel_ability_rocket_barrage_t2_desc"
           },
@@ -1239,7 +1240,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 200,
+          "Value": 200.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -1248,7 +1249,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -1268,7 +1269,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Unleashes a volley of rockets that home in on a targeted location. <br><br><span class=\"diminish\">McGinnis is slowed and is still able to use stamina.</span>",
           "plain_text": "Unleashes a volley of rockets that home in on a targeted location.\nMcGinnis is slowed and is still able to use stamina."
         },
@@ -1277,16 +1278,16 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "Applies <span class=\"highlight\">30% movement and dash slow</span> for 1s",
-          "plain_text": "Applies 30% movement and dash slow for 1s"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "Applies <span class=\"highlight\">24% movement and dash slow</span> for 1s",
+          "plain_text": "Applies 24% movement and dash slow for 1s"
         },
         {
           "localization_key": "citadel_ability_rocket_barrage_t2_desc",
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-45s</span> Cooldown and <span class=\"highlight\">+6s</span> Duration",
           "plain_text": "-45s Cooldown and +6s Duration"
         },
@@ -1295,7 +1296,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+2m</span> Radius and <span class=\"highlight\">+15</span> Damage per Rocket with increased spirit scaling",
           "plain_text": "+2m Radius and +15 Damage per Rocket with increased spirit scaling"
         }
@@ -1359,5 +1360,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

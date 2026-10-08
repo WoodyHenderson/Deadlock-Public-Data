@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Kelvin is a selectable Brawler hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.kelvin.125564
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Kelvin
@@ -55,7 +55,7 @@ Internal key: `ability_ice_grenade`.
 - **Tier 2:** -10 Cooldown and debuff now freezes Stamina Regen
 - **Tier 3:** +2m Radius. Damage and Heal Spirit Scaling increased.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorCanHealPlayers`, `BehaviorProjectileFiredAsBullet`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -64,17 +64,17 @@ Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorC
 | --- | ---: |
 | Damage | 60 (+0.6 per spirit) |
 | Heal Amount | 60 (+0.8 per spirit) |
-| Move Speed | 40 |
+| Move Speed | 32 |
 | Slow Duration | 4 (+1 per duration) |
-| Cooldown | 30 (+1 per cooldown) |
 | Charges | 2 (+1 per max charges) |
+| Cooldown | 30 (+1 per cooldown) |
 | Charge Delay | 7 (+1 per charge cooldown) |
+| Radius | 6.5 (+1 per radius) |
 
 Upgrade deltas:
 - Tier 1: `{"Damage":30,"HealAmount":30}`
 - Tier 2: `{"PauseStaminaRegen":1,"AbilityCooldown":-10}`
 - Tier 3: `{"Radius":2,"HealAmount":{"Value":0,"Scale":{"Value":0.9,"Type":"spirit"}},"Damage":{"Value":0,"Scale":{"Value":0.8,"Type":"spirit"}}}`
-
 ### 2. Ice Path
 
 Internal key: `ability_icepath`.
@@ -90,7 +90,7 @@ Internal key: `ability_icepath`.
 - **Tier 1:** +2m Move Speed and +35% Bullet Resist for Kelvin while on Ice Path
 - **Tier 3:** +35% Spirit and +20 Spirit for Kelvin while on Ice Path
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDontInterruptSprint`, `BehaviorCastableWhileBusy`, `BehaviorInterruptMeleeOnCast`, `BehaviorNoTarget`, `BehaviorPreventBotUsage`, `BehaviorMovement`, `BehaviorDeactivateCrouchToggleOnCast`, `BehaviorRequireAbilityButtonToCancel`.
@@ -101,14 +101,13 @@ Behavior flags: `BehaviorDontInterruptSprint`, `BehaviorCastableWhileBusy`, `Beh
 | Sprint Speed | 2 |
 | Ice Trail Duration | 18 |
 | Cooldown | 50 (+1 per cooldown) |
-| Duration | 8 (+1 per duration) |
 | Charge Delay | -1 |
+| Duration | 8 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"MoveSpeedBonus":2,"BulletResist":35}`
-- Tier 2: `{"AbilityCooldown":-25}`
+- Tier 2: `{"AbilityCooldown":-25.0}`
 - Tier 3: `{"BonusSpiritPct":35,"BonusSpirit":20}`
-
 ### 3. Arctic Beam
 
 Internal key: `ability_icebeam`.
@@ -120,11 +119,11 @@ Internal key: `ability_icebeam`.
 
 **Upgrade descriptions** (where supplied by the source):
 
-- **Tier 1:** -25% to Fire Rate and Move Speed
+- **Tier 1:** -20% to Fire Rate and Move Speed
 - **Tier 2:** +20 DPS and increased Spirit Scaling
 - **Tier 3:** -13s Cooldown and Fires 2 additional Arctic Beams within 10m of the last target hit.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorDontAimFacingEnemy`, `BehaviorRequireAbilityButtonToCancel`.
@@ -132,22 +131,21 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorDontAimFacingEnemy`, `BehaviorRequi
 | Card field | Base value |
 | --- | ---: |
 | Damage Per Second | 45 (+0.38 per spirit) |
-| Max Move Speed | 20 |
+| Max Move Speed | 16 |
 | Max Fire Rate | 20 |
 | Time To Max Debuff | 2 |
 | Beam Length | 25 (+1 per range) |
 | Debuff Linger Duration | 2 (+1 per duration) |
 | Extra Beam Range | 0 (+0 per range) |
-| Max Dash Slow | -20 |
+| Max Dash Slow | -18 |
 | Cooldown | 28 (+1 per cooldown) |
-| Duration | 5 (+1 per duration) |
 | Charge Delay | -1 |
+| Duration | 5 (+1 per duration) |
 
 Upgrade deltas:
-- Tier 1: `{"MaxSlowPercent":25,"MaxFireRateSlowPercent":25}`
+- Tier 1: `{"MaxSlowPercent":20,"MaxFireRateSlowPercent":25}`
 - Tier 2: `{"DPS":{"Value":20,"Scale":{"Value":0.6,"Type":"spirit"}}}`
 - Tier 3: `{"BeamSplit":{"Value":10,"Scale":{"Value":0.93,"Type":"range"}},"BeamSplitCount":2,"AbilityCooldown":-13}`
-
 ### 4. Frozen Shelter
 
 Internal key: `ability_ice_dome`.
@@ -160,29 +158,29 @@ Internal key: `ability_ice_dome`.
 
 **Upgrade descriptions** (where supplied by the source):
 
-- **Tier 3:** Purges non-ult debuffs for you and your allies. +65 Health Regen that now scales with Spirit
+- **Tier 3:** Purges non-ult debuffs for you and your allies. +65 Health Regen and increased Spirit Scaling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorCastableWhileBusy`, `BehaviorInterruptMeleeOnCast`, `BehaviorUseInstantCastUnitTargetUi`, `BehaviorDisplaysDamageImpact`, `BehaviorRequireAbilityButtonToCancel`, `BehaviorCanSetQuickCast`, `BehaviorAllowSelfCast`, `BehaviorDontInterruptSlideOnCast`.
 
 | Card field | Base value |
 | --- | ---: |
-| Health Regen | 90 (+0 per spirit) |
+| Health Regen | 90 (+0.2 per spirit) |
 | Fire Rate | 0 |
-| Move Speed | 35 |
+| Move Speed | 28 |
 | Max Health Heal | 0 |
-| Cooldown | 185 (+1 per cooldown) |
-| Duration | 5 (+1 per duration) |
 | Cast Range | 8 (+1 per range) |
+| Cooldown | 185 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Duration | 5 (+1 per duration) |
+| Radius | 10 (+1 per radius) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-20}`
 - Tier 2: `{"AbilityDuration":1.5}`
-- Tier 3: `{"BonusHealthRegen":{"Value":65,"Scale":{"Value":1,"Type":"spirit"}},"PurgeOnCast":1}`
-
+- Tier 3: `{"BonusHealthRegen":{"Value":65,"Scale":{"Value":1.0,"Type":"spirit"}},"PurgeOnCast":1}`
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

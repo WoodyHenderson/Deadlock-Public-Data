@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.apollo",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.apollo.124913",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Apollo",
   "aliases": [],
@@ -25,8 +25,8 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 770,
-    "health_regeneration_per_second": 1,
+    "maximum_health": 770.0,
+    "health_regeneration_per_second": 1.0,
     "light_melee_damage": 63,
     "heavy_melee_damage": 116,
     "move_speed_meters_per_second": 7.2,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 14.7,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.68
     },
     "air_dash": {
-      "speed_meters_per_second": 17,
-      "distance_meters": 8,
+      "speed_meters_per_second": 17.0,
+      "distance_meters": 8.0,
       "duration_seconds": 0.47
     },
     "stamina": {
@@ -54,13 +54,13 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.825,
     "BulletDamageAltFire": 0.5,
-    "MaxHealth": 45,
+    "MaxHealth": 45.0,
     "PowerIncreases": 1,
     "TechPower": 1.1,
     "LightMeleeDamage": 1.58,
@@ -70,18 +70,18 @@
   },
   "spirit_scaling": {},
   "weapon": {
-    "BulletSpeed": 127,
+    "BulletSpeed": 127.0,
     "BulletDamage": 18.5,
     "RoundsPerSecond": 2.6316,
     "ClipSize": 15,
     "ReloadTime": 2.5,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
     "FalloffStartRange": 25.4,
     "FalloffEndRange": 25.4,
-    "FalloffStartScale": 1,
-    "FalloffEndScale": 1,
+    "FalloffStartScale": 1.0,
+    "FalloffEndScale": 1.0,
     "FalloffBias": 0.5,
     "BulletGravityScale": 0,
     "BulletRadius": 0.254,
@@ -115,9 +115,9 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
-        "AirDrag": 2,
+        "AirDrag": 2.0,
         "AirSpeedMax": 70,
         "BehaviourBits": [
           "BehaviorNoTarget",
@@ -167,7 +167,7 @@
             "Type": "duration"
           }
         },
-        "SlowPercent": 30,
+        "SlowPercent": 24,
         "TraceToGroundDistance": 1000,
         "Upgrades": [
           {
@@ -204,7 +204,7 @@
               {
                 "Key": "SlowPercent",
                 "Name": "Move Speed",
-                "Value": 30,
+                "Value": 24,
                 "Type": "slow"
               },
               {
@@ -269,7 +269,7 @@
           },
           "AirDrag": {
             "Name": null,
-            "Value": 2
+            "Value": 2.0
           },
           "AirSpeedMax": {
             "Name": null,
@@ -304,7 +304,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -315,7 +315,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Draw a sigil sphere in front of you and then <span class=\"highlight\">leap backwards</span> as it explodes, <span class=\"highlight\">damaging and slowing</span> enemies caught in it.",
           "plain_text": "Draw a sigil sphere in front of you and then leap backwards as it explodes, damaging and slowing enemies caught in it."
         },
@@ -324,7 +324,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Gain +25% Fire Rate and +25% Bullet Speed for 8s",
           "plain_text": "Gain +25% Fire Rate and +25% Bullet Speed for 8s"
         },
@@ -333,7 +333,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "On Player Hit: +1 stamina restored and resets Air Jump/Dash limit",
           "plain_text": "On Player Hit: +1 stamina restored and resets Air Jump/Dash limit"
         },
@@ -342,7 +342,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Can be Recast within 4s",
           "plain_text": "Can be Recast within 4s"
         }
@@ -367,7 +367,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityLifestealPercentHero": {
           "Value": 50,
           "Scale": {
@@ -414,7 +414,7 @@
         "LiftHeight": 240,
         "MeleeResistReduction": -25,
         "MeleeResistReductionDuration": {
-          "Value": 3,
+          "Value": 3.0,
           "Scale": {
             "Value": 1,
             "Type": "duration"
@@ -505,7 +505,7 @@
             {
               "Key": "MeleeResistReductionDuration",
               "Name": "Melee Resist Reduction Duration",
-              "Value": 3,
+              "Value": 3.0,
               "Scale": {
                 "Value": 1,
                 "Type": "duration"
@@ -655,7 +655,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -666,7 +666,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Prepare to <span class=\"highlight\">deflect</span> the next incoming attack. On a successful deflection, briefly become <span class=\"highlight\">invulnerable</span> and target an enemy hero to dash towards them, <span class=\"highlight\">stunning</span> them and reducing their <span class=\"highlight\">Melee Resist</span>.<br><br><span class=\"diminish\">Press {g:citadel_binding:'Ability2'} to select a target.<br>Does not trigger against trooper or neutral damage.</span>",
           "plain_text": "Prepare to deflect the next incoming attack. On a successful deflection, briefly become invulnerable and target an enemy hero to dash towards them, stunning them and reducing their Melee Resist.\nPress [Ability 2] to select a target.\nDoes not trigger against trooper or neutral damage."
         },
@@ -675,7 +675,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-25%</span> Melee Resist and <span class=\"highlight\">+0.4s</span> Stun Duration",
           "plain_text": "-25% Melee Resist and +0.4s Stun Duration"
         },
@@ -684,7 +684,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Gain <span class=\"highlight\">75%</span> Bullet, Spirit &amp; Melee Lifesteal against the Riposte target for 13s",
           "plain_text": "Gain 75% Bullet, Spirit & Melee Lifesteal against the Riposte target for 13s"
         }
@@ -703,7 +703,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 8,
           "Scale": {
@@ -714,7 +714,7 @@
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
         "AttackDashRange": {
-          "Value": 3,
+          "Value": 3.0,
           "Scale": {
             "Value": 1,
             "Type": "range"
@@ -743,7 +743,7 @@
         },
         "DashRadius": 1.85,
         "DashRange": {
-          "Value": 5,
+          "Value": 5.0,
           "Scale": {
             "Value": 1,
             "Type": "range"
@@ -753,7 +753,7 @@
         "HealFixedHealth": {
           "Value": 0,
           "Scale": {
-            "Value": 0,
+            "Value": 0.0,
             "Type": "spirit"
           }
         },
@@ -833,7 +833,7 @@
                 "Multiply": true
               }
             },
-            "AttackDashRange": 3,
+            "AttackDashRange": 3.0,
             "DashSpeed": 13.97
           }
         ]
@@ -901,7 +901,7 @@
                 "Name": "Heal on hero hit",
                 "Value": 0,
                 "Scale": {
-                  "Value": 0,
+                  "Value": 0.0,
                   "Type": "spirit"
                 },
                 "Type": "healing"
@@ -952,7 +952,7 @@
                 "Multiply": true
               }
             },
-            "AttackDashRange": 3,
+            "AttackDashRange": 3.0,
             "DashSpeed": 13.97,
             "DescKey": "ability_fencer_lunge_t3_desc"
           }
@@ -960,7 +960,7 @@
         "Range": {
           "AttackDashRange": {
             "Name": "Attacking Lunge Distance",
-            "Value": 3,
+            "Value": 3.0,
             "Scale": {
               "Value": 1,
               "Type": "range"
@@ -969,7 +969,7 @@
           },
           "DashRange": {
             "Name": "Time Window",
-            "Value": 5,
+            "Value": 5.0,
             "Scale": {
               "Value": 1,
               "Type": "range"
@@ -1083,7 +1083,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -1103,7 +1103,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Perform a series of lunges in any direction, delivering piercing stabs ahead of you. Hold your ability key to time your attacks, dealing more damage the longer it's held. Releasing your attack during the <span class=\"highlight\">perfect window</span> deals <span class=\"highlight\">maximum damage</span>.<br><br><span class=\"diminish\">Press {g:citadel_binding:'Ability3'} to re-cast.</span>",
           "plain_text": "Perform a series of lunges in any direction, delivering piercing stabs ahead of you. Hold your ability key to time your attacks, dealing more damage the longer it's held. Releasing your attack during the perfect window deals maximum damage.\nPress [Ability 3] to re-cast."
         },
@@ -1112,7 +1112,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Perfect Hit on Hero: Heal 35",
           "plain_text": "Perfect Hit on Hero: Heal 35"
         },
@@ -1121,7 +1121,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "-12s Cooldown. Gain <span class=\"highlight\">+60%</span> Bullet Resist during lunge",
           "plain_text": "-12s Cooldown. Gain +60% Bullet Resist during lunge"
         },
@@ -1130,7 +1130,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+65 Perfect Damage with improved Spirit scaling.<br>Increased lunge speed & distance.",
           "plain_text": "+65 Perfect Damage with improved Spirit scaling.\nIncreased lunge speed & distance."
         }
@@ -1156,7 +1156,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
         "AirSpeedMax": 70,
@@ -1210,7 +1210,7 @@
             "Type": "range"
           }
         },
-        "DashSpeed": 254,
+        "DashSpeed": 254.0,
         "DebuffDuration": 1.8,
         "DelayedDamage": {
           "Value": 200,
@@ -1221,7 +1221,7 @@
         },
         "FallSpeedMax": 1,
         "GapDistanceToWall": 180,
-        "GroundDashReductionPercent": -30,
+        "GroundDashReductionPercent": -26,
         "ImpactDamage": {
           "Value": 70,
           "Scale": {
@@ -1392,7 +1392,7 @@
         "Debuff": {
           "GroundDashReductionPercent": {
             "Name": "Dash Distance",
-            "Value": -30,
+            "Value": -26,
             "Type": "slow"
           }
         },
@@ -1419,7 +1419,7 @@
           },
           "DashSpeed": {
             "Name": "Dash Speed",
-            "Value": 254
+            "Value": 254.0
           },
           "FallSpeedMax": {
             "Name": null,
@@ -1487,7 +1487,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -1498,7 +1498,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Charge up and perform a long range slash. Struck enemies <span class=\"highlight\">cannot take action or heal</span> and are stuck in slow motion. When this effect expires, they suffer <span class=\"highlight\">devastating damage</span>, dealing bonus damage against half-health enemies.<br><br><span class=\"diminish\">While in slow motion, Apollo is invulnerable and enemies take reduced damage.<br><br>Hold {g:citadel_binding:'Ability4'} or {g:citadel_binding:'Attack'} to delay the cast.</span>",
           "plain_text": "Charge up and perform a long range slash. Struck enemies cannot take action or heal and are stuck in slow motion. When this effect expires, they suffer devastating damage, dealing bonus damage against half-health enemies.\nWhile in slow motion, Apollo is invulnerable and enemies take reduced damage.\nHold [Ability 4] or [Attack] to delay the cast."
         },
@@ -1507,7 +1507,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "IGNORED[]% Max Health Damage",
           "plain_text": "IGNORED[]% Max Health Damage",
           "quality_note": "Source contains an unresolved placeholder. Retained verbatim for provenance, not a usable numeric effect; consult the separate upgrade data and review before interpreting this tooltip."
@@ -1572,5 +1572,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

@@ -4,18 +4,18 @@ title: "Cultist Sacrifice"
 domain: items
 topics: [item, weapon, tier-3]
 aliases: ["upgrade_non_player_bonus_sacrifice"]
-summary: "Target an enemy NPC and consume it for 180% Bonus Souls and grants a powerful long lasting buff."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+summary: "Target an enemy NPC and consume it for 170% Bonus Souls and grants a powerful long lasting buff."
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Cultist Sacrifice
 
-Target an enemy NPC and consume it for 180% Bonus Souls and grants a powerful long lasting buff.
+Target an enemy NPC and consume it for 170% Bonus Souls and grants a powerful long lasting buff.
 
 ## Identity and Purchase
 
@@ -26,6 +26,7 @@ Target an enemy NPC and consume it for 180% Bonus Souls and grants a powerful lo
 - **Cost:** 3200 souls
 - **Activation:** press
 - **Active item:** yes
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** WeaponDamage, Durability, Healing
 - **Target types:** TrooperEnemy, Neutral, MinionEnemy

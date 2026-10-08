@@ -5,12 +5,12 @@ domain: items
 topics: [item, weapon, tier-3]
 aliases: ["upgrade_bulletshredimbue"]
 summary: "Imbue an ability with increased range. Dealing damage with that ability grants you increased weapon damage per unique hero hit. Has reduced effect on non-heroes."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Ballistic Enchantment
@@ -26,6 +26,7 @@ Imbue an ability with increased range. Dealing damage with that ability grants y
 - **Cost:** 3200 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** yes
 - **Shop filters:** WeaponDamage
 - **Target types:** AllEnemy
@@ -38,7 +39,7 @@ Imbue an ability with increased range. Dealing damage with that ability grants y
 
 | Section | Effect | Value | Status |
 | --- | --- | ---: | --- |
-| Passive | Duration | 14s | normal |
+| Passive | Duration | 20s | normal |
 | Passive | Non-Hero Weapon Damage | 5% | normal |
 | Passive | Non-Hero Stack Limit | 8 | normal |
 | Passive | Weapon Damage per Stack | 20% | important |

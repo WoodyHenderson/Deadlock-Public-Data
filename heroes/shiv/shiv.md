@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Shiv is a selectable Brawler hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.shiv.125552
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Shiv
@@ -37,6 +37,7 @@ Shiv is a currently selectable **Brawler** hero. Internal key: `hero_shiv`. The 
 - Rounds/s: **1.8141**; magazine: **10**; reload: **2.8s**
 - Projectile speed: **609.6m/s**; falloff: **19.79–41.15m**
 - Source DPS: **52.246**; sustained: **34.647**
+- Alt-fire bullet damage: **4.53**; rounds/s: **0.79365**; magazine: **8**; reload: **2s**
 
 ## Abilities
 
@@ -49,14 +50,14 @@ Internal key: `citadel_ability_shiv_dagger`.
 
 > Throw a knife that bleeds an enemy. Each additional hit adds a stack and refreshes the bleed duration, causing the bleed to increase per stack.
 
-> Ultimate Unlock: While rage is full knives will ricochet to another enemy and apply a slow to enemies they bleed.
+> Ultimate Unlock: While rage is full knives deal 3.5% of the target's current health as damage on impact and apply a slow to enemies they bleed.
 
 **Upgrade descriptions** (where supplied by the source):
 
 - **Tier 2:** +2 Charges
 - **Tier 3:** +12 Bleed DPS with increased Spirit scaling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorCleaveDisabled`, `BehaviorDontInterruptSlideOnCast`.
@@ -66,15 +67,14 @@ Behavior flags: `BehaviorChannelled`, `BehaviorProjectile`, `BehaviorNoTarget`, 
 | Impact Damage | 0 (+0 per spirit) |
 | Bleed DPS Per Knife | 10 (+0.13 per spirit) |
 | Bleed Duration | 5 (+1 per duration) |
-| Cooldown | 16 (+1 per cooldown) |
 | Charges | 2 (+1 per max charges) |
+| Cooldown | 16 (+1 per cooldown) |
 | Charge Delay | 2 (+1 per charge cooldown) |
 
 Upgrade deltas:
 - Tier 1: `{"BleedDuration":2}`
 - Tier 2: `{"AbilityCharges":2}`
 - Tier 3: `{"BleedDPSPerStack":{"Value":12,"Scale":{"Value":0.07,"Type":"spirit"}}}`
-
 ### 2. Slice and Dice
 
 Internal key: `citadel_ability_shiv_dash`.
@@ -91,7 +91,7 @@ Internal key: `citadel_ability_shiv_dash`.
 - **Tier 2:** -4% Spirit Resist +2m Dash Range
 - **Tier 3:** +50 Impact Damage -2s Cooldown per Hero hit.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorDontTriggerPostCastOnCastComplete`, `BehaviorMovement`, `BehaviorTriggerCancelMashProtectionOnCast`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -109,7 +109,6 @@ Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-6}`
 - Tier 2: `{"TechArmorDamageReduction":-4,"DashRange":2}`
 - Tier 3: `{"ImpactDamage":50,"CooldownReductionOnHit":2,"CooldownReductionOnHitNonHero":1,"MaxCooldownReductionsFromHits":8}`
-
 ### 3. Bloodletting
 
 Internal key: `citadel_ability_shiv_defer_damage`.
@@ -121,7 +120,7 @@ Internal key: `citadel_ability_shiv_defer_damage`.
 
 > Ultimate Unlock: While rage is full the amount of damage deferred is increased.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDamageDoesntWakeFromSleep`, `BehaviorDontConsumeAbilityResourceOnCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -137,7 +136,6 @@ Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-15}`
 - Tier 2: `{"DeferClearPct":40}`
 - Tier 3: `{"DamagePctDeferred":15}`
-
 ### 4. Killing Blow
 
 Internal key: `citadel_ability_shiv_killing_blow`.
@@ -158,7 +156,7 @@ Internal key: `citadel_ability_shiv_killing_blow`.
 - **Tier 2:** +16% Full Rage Bonus Damage -25s Cooldown
 - **Tier 3:** +10% Enemy Health Threshold
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorDontTriggerPostCastOnCastComplete`, `BehaviorUseInstantCastUnitTargetUi`, `BehaviorMovement`, `BehaviorCanSetQuickCast`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -167,15 +165,14 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorDontTriggerPostCastOnCa
 | --- | ---: |
 | Damage | 200 |
 | Enemy health threshold | 18 |
-| Cooldown | 145 (+1 per cooldown) |
 | Cast Range | 12 (+1 per range) |
+| Cooldown | 145 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
 - Tier 1: `{"BonusMoveSpeed":2,"AbilityCastRange":6}`
 - Tier 2: `{"BuffDamage":16,"AbilityCooldown":-25}`
 - Tier 3: `{"EnemyHealthPercent":10}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

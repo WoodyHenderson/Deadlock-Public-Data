@@ -14,15 +14,17 @@ aliases:
   - Shrine
   - Patron
 summary: The ordered lane and base objectives, their unlock effects, and structure protection rules.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
-evidence_status: source_verified
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
+evidence_status: source_verified_with_client_6694_economy
 sources:
   - wiki.structures.122019
   - wiki.the-cursed-apple.125757
   - wiki.backdoor-protection.78476
   - wiki.extra-slots.60786
-  - wiki.souls.124122
+  - wiki.souls.157718
+  - github.deadlock-data.gameplay.fc4f540f12e0
+  - github.deadlock-data.changelogs.raw.fc4f540f12e0
 ---
 
 # Objectives and Structures
@@ -66,9 +68,10 @@ records rather than values copied from this overview.
 
 ## Objective Soul Bounties
 
-When a structure is destroyed, 30% of its bounty is split among nearby allied
-heroes and the remaining 70% is distributed across the whole team, including
-those nearby heroes. Current baseline bounties are stored in
+When a structure is destroyed, 25% of its bounty is split among nearby allied
+heroes and the remaining 75% is distributed across the whole team, including
+those nearby heroes. Client 6694 also changes the Guardian and Walker bounty
+values; the exact values and explicit distribution inputs are stored in
 `data/economy.yaml`.
 
 The Patron itself has no Soul bounty; destroying its weakened phase ends the
@@ -108,5 +111,5 @@ Adapted from the pinned Deadlock Wiki revisions for
 [Structures](https://deadlock.wiki/Structures?oldid=122019),
 [The Cursed Apple](https://deadlock.wiki/The_Cursed_Apple?oldid=125757),
 [Backdoor Protection](https://deadlock.wiki/Backdoor_Protection?oldid=78476),
-[Extra Slots](https://deadlock.wiki/Extra_Slots?oldid=60786), and
-[Souls](https://deadlock.wiki/Souls?oldid=124122).
+[Extra Slots](https://deadlock.wiki/Extra_Slots?oldid=60786),
+[Souls](https://deadlock.wiki/Souls?oldid=157718), client 6694 gameplay data, and the September 16 patch notes.

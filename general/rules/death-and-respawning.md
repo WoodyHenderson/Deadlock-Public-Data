@@ -12,12 +12,14 @@ aliases:
   - respawn timer
   - Last Stand
 summary: What happens on death, how respawn time scales, and how Last Stand and Rejuvenator credits modify it.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
-evidence_status: source_verified
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
+evidence_status: source_verified_with_patch_note_behavior_addenda
 sources:
   - wiki.death.95455
-  - wiki.souls.124122
+  - wiki.souls.157718
+  - github.deadlock-data.gameplay.fc4f540f12e0
+  - github.deadlock-data.changelogs.raw.fc4f540f12e0
 ---
 
 # Death and Respawning
@@ -36,12 +38,14 @@ Respawn time increases linearly between the source's listed control points:
 | Match time | Respawn time |
 | --- | --- |
 | 5:00 | 8 seconds |
-| 20:00 | 35 seconds |
+| 20:00 | 38 seconds |
 | 30:00 | 70 seconds |
 | 40:00 | 85 seconds |
 
-The normal timer is capped at 90 seconds. Dying only to a non-player unit, with
-no enemy-hero bounty or assist, adds ten seconds to that death's timer.
+The normal timer is capped at 90 seconds. The client 6694 respawn ramps confirm
+38 seconds at 20 minutes and retain the 70-, 85-, and 90-second later values.
+Dying only to a non-player unit, with no enemy-hero bounty or assist, adds ten
+seconds to that death's timer.
 
 ## Rich-Player Death Penalty
 
@@ -49,6 +53,14 @@ After ten minutes, a hero whose net worth is at least 15% above the killer
 team's average can receive an additional respawn penalty. The pinned wiki gives
 the range as six seconds at the low threshold around ten minutes, scaling up to
 22 seconds for a 30% difference at 25 minutes.
+
+## Reload and Parry Patch Notes
+
+The September 16 notes state that using parry pauses an in-progress reload, and
+that a stun pauses reload progress instead of restarting it. These behavior
+changes are retained as patch-note evidence; they are not derived from the
+unchanged respawn dataset. See `general/combat/weapons-melee-and-parry.md` for
+movement-cycle and dash-parry changes.
 
 ## Last Stand
 
@@ -79,4 +91,4 @@ full securing and drop rules.
 
 Adapted from the pinned Deadlock Wiki revisions for
 [Death](https://deadlock.wiki/Death?oldid=95455) and
-[Souls](https://deadlock.wiki/Souls?oldid=124122).
+[Souls](https://deadlock.wiki/Souls?oldid=157718), client 6694 gameplay data, and the September 16 patch notes.

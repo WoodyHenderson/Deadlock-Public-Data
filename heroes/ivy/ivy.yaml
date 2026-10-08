@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.ivy",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.ivy.124889",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Ivy",
   "aliases": [],
@@ -25,8 +25,8 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 755,
-    "health_regeneration_per_second": 2,
+    "maximum_health": 755.0,
+    "health_regeneration_per_second": 2.0,
     "light_melee_damage": 50,
     "heavy_melee_damage": 116,
     "move_speed_meters_per_second": 7.2,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 16.1,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.62
     },
     "air_dash": {
       "speed_meters_per_second": 18.6,
-      "distance_meters": 8,
+      "distance_meters": 8.0,
       "duration_seconds": 0.43
     },
     "stamina": {
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.08,
-    "MaxHealth": 45,
+    "MaxHealth": 45.0,
     "PowerIncreases": 1,
     "TechPower": 1.2,
     "LightMeleeDamage": 1.58,
@@ -74,12 +74,12 @@
     "RoundsPerSecond": 13.605,
     "ClipSize": 33,
     "ReloadTime": 2.444,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
     "FalloffStartRange": 19.99,
     "FalloffEndRange": 57.51,
-    "FalloffStartScale": 1,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
     "BulletGravityScale": 0.8,
@@ -115,7 +115,7 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 32,
+          "Value": 32.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -174,7 +174,7 @@
             "Type": "radius"
           }
         },
-        "SlowPercent": 35,
+        "SlowPercent": 28,
         "TickRate": 0.25,
         "Upgrades": [
           {
@@ -216,7 +216,7 @@
               {
                 "Key": "SlowPercent",
                 "Name": "Move Speed",
-                "Value": 35,
+                "Value": 28,
                 "Type": "slow"
               }
             ]
@@ -282,7 +282,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 32,
+          "Value": 32.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -324,7 +324,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Summon a patch of choking thorns that <span class=\"highlight\">damage</span> and <span class=\"highlight\">slows</span> enemies in its radius.",
           "plain_text": "Summon a patch of choking thorns that damage and slows enemies in its radius."
         },
@@ -333,7 +333,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+2m</span> Radius and increased DPS Spirit scaling",
           "plain_text": "+2m Radius and increased DPS Spirit scaling"
         },
@@ -342,7 +342,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Enemies caught in thorns for 2s are <span class=\"highlight\">Immobilized</span> for <span class=\"highlight\">+1.6s</span>",
           "plain_text": "Enemies caught in thorns for 2s are Immobilized for +1.6s"
         }
@@ -361,13 +361,13 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 37,
+          "Value": 37.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 12,
           "Scale": {
@@ -407,10 +407,10 @@
         "TetherModifier": {
           "Class": "CitadelModifierTangotetherTether",
           "Subclass": "CitadelModifierTangotetherTether",
-          "MinConnectTime": 2,
-          "DisconnectDistanceBuffer": 100,
-          "TargetAwayDistance": 250,
-          "CandidateCloserDistance": 400,
+          "MinConnectTime": 2.0,
+          "DisconnectDistanceBuffer": 100.0,
+          "TargetAwayDistance": 250.0,
+          "CandidateCloserDistance": 400.0,
           "BuffModifier": {
             "Class": "CitadelModifierTangotetherTetherReceiver",
             "Subclass": "CitadelModifierTangotetherTetherReceiver",
@@ -565,7 +565,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 37,
+          "Value": 37.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -574,7 +574,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -594,7 +594,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Connect with a nearby ally to gain bonuses, <span class=\"highlight\">replicated healing,</span> and ignore the move speed penalty while shooting.<br><span class=\"diminish\"><br>Receive 50% of Bonuses with no connection<br>Connection requires line of sight.</span>",
           "plain_text": "Connect with a nearby ally to gain bonuses, replicated healing, and ignore the move speed penalty while shooting.\nReceive 50% of Bonuses with no connection\nConnection requires line of sight."
         },
@@ -603,7 +603,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+8%</span> Fire Rate and <span class=\"highlight\">+8%</span> Bullet Lifesteal",
           "plain_text": "+8% Fire Rate and +8% Bullet Lifesteal"
         },
@@ -612,7 +612,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Ability is always active",
           "plain_text": "Ability is always active"
         }
@@ -625,13 +625,13 @@
       "data": {
         "AbilityCastDelay": 0.25,
         "AbilityCooldown": {
-          "Value": 40,
+          "Value": 40.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 3,
           "Scale": {
@@ -664,7 +664,7 @@
         "IsDisabled": false,
         "Key": "citadel_ability_tengu_stone_form",
         "LiftHeight": 180,
-        "LiftTime": 1,
+        "LiftTime": 1.0,
         "MaxHealthRegen": {
           "Value": 6,
           "Scale": {
@@ -675,7 +675,7 @@
         "MoveSpeedMax": 8,
         "Name": "Stone Form",
         "Radius": {
-          "Value": 6,
+          "Value": 5.75,
           "Scale": {
             "Value": 1,
             "Type": "range"
@@ -690,7 +690,7 @@
         },
         "Upgrades": [
           {
-            "MaxHealthRegen": 7
+            "MaxHealthRegen": 6.0
           },
           {
             "AbilityCooldown": -25
@@ -752,7 +752,7 @@
         },
         "Upgrades": [
           {
-            "MaxHealthRegen": 7
+            "MaxHealthRegen": 6.0
           },
           {
             "AbilityCooldown": -25
@@ -798,7 +798,7 @@
           },
           "LiftTime": {
             "Name": null,
-            "Value": 1
+            "Value": 1.0
           }
         },
         "AbilityCastDelay": {
@@ -808,7 +808,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 40,
+          "Value": 40.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -817,7 +817,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -831,7 +831,7 @@
         },
         "Radius": {
           "Name": "Radius",
-          "Value": 6,
+          "Value": 5.75,
           "Scale": {
             "Value": 1,
             "Type": "range"
@@ -846,7 +846,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Turn yourself into <span class=\"highlight\">impervious stone</span> and smash into the ground, <span class=\"highlight\">stunning and damaging</span> enemies nearby. Heals you for a percentage of your max health.",
           "plain_text": "Turn yourself into impervious stone and smash into the ground, stunning and damaging enemies nearby. Heals you for a percentage of your max health."
         },
@@ -855,7 +855,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+0.75s</span> Stun Duration and increased Damage spirit scaling",
           "plain_text": "+0.75s Stun Duration and increased Damage spirit scaling"
         }
@@ -875,15 +875,15 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 100,
+          "Value": 100.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
-          "Value": 21,
+          "Value": 21.0,
           "Scale": {
             "Value": 1,
             "Type": "duration"
@@ -927,7 +927,7 @@
           "Subclass": "BarrierModifier"
         },
         "ExplodeDamage": {
-          "Value": 115,
+          "Value": 115.0,
           "Scale": {
             "Value": 0.7,
             "Type": "spirit"
@@ -968,7 +968,7 @@
             "MeleeDisabled",
             "IgnorePortals"
           ],
-          "AllyGrabCancelTime": 1
+          "AllyGrabCancelTime": 1.0
         },
         "InterruptCooldown": 3.5,
         "IsDisabled": false,
@@ -1002,7 +1002,7 @@
             }
           },
           {
-            "SlowPercent": 40,
+            "SlowPercent": 32,
             "DebuffDuration": 3
           },
           {
@@ -1017,7 +1017,7 @@
             "AirDropBulletShield": {
               "Value": 0,
               "Scale": {
-                "Value": 1,
+                "Value": 1.0,
                 "Type": "spirit"
               }
             }
@@ -1034,7 +1034,7 @@
               {
                 "Key": "ExplodeDamage",
                 "Name": "Explode Damage",
-                "Value": 115,
+                "Value": 115.0,
                 "Scale": {
                   "Value": 0.7,
                   "Type": "spirit"
@@ -1125,7 +1125,7 @@
             "DescKey": "citadel_ability_tengu_airlift_t1_desc"
           },
           {
-            "SlowPercent": 40,
+            "SlowPercent": 32,
             "DebuffDuration": 3,
             "DescKey": "citadel_ability_tengu_airlift_t2_desc"
           },
@@ -1141,7 +1141,7 @@
             "AirDropBulletShield": {
               "Value": 0,
               "Scale": {
-                "Value": 1,
+                "Value": 1.0,
                 "Type": "spirit"
               }
             },
@@ -1207,7 +1207,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 100,
+          "Value": 100.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -1216,12 +1216,12 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
           "Name": "Duration",
-          "Value": 21,
+          "Value": 21.0,
           "Scale": {
             "Value": 1,
             "Type": "duration"
@@ -1236,7 +1236,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">Grab an ally</span> and <span class=\"highlight\">take flight</span> with them. Drop your ally to cause an explosion, dealing {g:citadel_inline_attribute:'SpiritDamage'}. You and your ally gain increased Outgoing Damage when flying ends. <span class=\"diminish\"><br><br>Cooldown reduced by 30% when used on allies.<br>Taking damage briefly disables using the ability.<br>While lifted, your ally cannot attack and deals -20% damage.</span>",
           "plain_text": "Grab an ally and take flight with them. Drop your ally to cause an explosion, dealing spirit damage. You and your ally gain increased Outgoing Damage when flying ends.\nCooldown reduced by 30% when used on allies.\nTaking damage briefly disables using the ability.\nWhile lifted, your ally cannot attack and deals -20% damage."
         },
@@ -1245,7 +1245,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "On Fly End : <span class=\"highlight\">300</span> Barrier to Ivy and ally that scales with Spirit",
           "plain_text": "On Fly End : 300 Barrier to Ivy and ally that scales with Spirit"
         },
@@ -1254,16 +1254,16 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "<span class=\"highlight\">+40%</span> Slow for <span class=\"highlight\">3s</span> on enemies hit",
-          "plain_text": "+40% Slow for 3s on enemies hit"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "<span class=\"highlight\">+32%</span> Slow for <span class=\"highlight\">3s</span> on enemies hit",
+          "plain_text": "+32% Slow for 3s on enemies hit"
         },
         {
           "localization_key": "citadel_ability_tengu_airlift_t3_desc",
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">Silence</span> for <span class=\"highlight\">3s</span> on enemies hit.<br>Increases damage and barrier scaling.",
           "plain_text": "Silence for 3s on enemies hit.\nIncreases damage and barrier scaling."
         }
@@ -1327,5 +1327,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

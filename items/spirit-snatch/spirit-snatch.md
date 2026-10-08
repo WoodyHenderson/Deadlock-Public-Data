@@ -5,12 +5,12 @@ domain: items
 topics: [item, spirit, tier-3]
 aliases: ["upgrade_spirit_snatch"]
 summary: "When you perform a Light or Heavy Melee attack against a hero, the attack deals extra spirit damage and steals Spirit Resist and Spirit Power. Effects are reduced by 30% for Light Melee hits."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Spirit Snatch
@@ -26,6 +26,7 @@ When you perform a Light or Heavy Melee attack against a hero, the attack deals 
 - **Cost:** 3200 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** MagicDamage, Melee
 - **Target types:** HeroEnemy

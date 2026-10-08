@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.plated-armor",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Plated Armor",
@@ -455,6 +455,13 @@
     "slot": true,
     "enabled": true
   },
+  "patch_note_addenda": [
+    {
+      "evidence_status": "patch_note_only",
+      "text": "The September 16 patch notes report that on-hit damage prevention now also blocks the on-hit Spirit damage effects from Mercurial Magnum, Vindicta's Flight, Wraith's Full Auto, and Tesla Bullets/Capacitor. This interaction list is patch-note evidence, not an independently exposed structured runtime rule.",
+      "source": "github.deadlock-data.changelogs.raw.fc4f540f12e0"
+    }
+  ],
   "data_boundaries": [
     "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
     "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",

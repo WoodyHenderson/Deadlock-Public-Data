@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.point-blank",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Point Blank",
@@ -152,9 +152,9 @@
       "importance": "important",
       "key": "SlowPercent",
       "label": "Move Speed",
-      "value": "25%",
+      "value": "20%",
       "property": {
-        "value": "25",
+        "value": "20",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -187,7 +187,7 @@
         },
         {
           "name": "SlowPercent",
-          "bonus": "5"
+          "bonus": "4"
         }
       ]
     }
@@ -351,7 +351,7 @@
         "tooltip_is_important": true
       },
       "SlowPercent": {
-        "value": "25",
+        "value": "20",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -466,7 +466,7 @@
           },
           {
             "name": "SlowPercent",
-            "bonus": "5"
+            "bonus": "4"
           }
         ]
       }
@@ -500,7 +500,7 @@
     "AbilityCooldownBetweenCharge": -1.0,
     "ChannelMoveSpeed": -1,
     "CloseRangeBonusWeaponPower": 50,
-    "SlowPercent": 25,
+    "SlowPercent": 20,
     "SlowDuration": 2,
     "CloseRangeBonusDamageRange": "15m",
     "MeleeResistPercent": 30,
@@ -509,7 +509,7 @@
       "CloseRangeBonusWeaponPower": 30,
       "MeleeResistPercent": 30,
       "BonusHealth": 150,
-      "SlowPercent": 5
+      "SlowPercent": 4
     }
   },
   "secondary_deadlock_card_record": {
@@ -565,7 +565,7 @@
         },
         {
           "Key": "SlowPercent",
-          "Value": 25,
+          "Value": 20,
           "Type": "slow",
           "UsageFlags": "ConditionallyApplied"
         }
@@ -587,7 +587,7 @@
       "CloseRangeBonusWeaponPower": 30,
       "MeleeResistPercent": 30,
       "BonusHealth": 150,
-      "SlowPercent": 5
+      "SlowPercent": 4
     },
     "Other": {
       "AbilityUnitTargetLimit": {

@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Abrams is a selectable Brawler hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.abrams.125768
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Abrams
@@ -53,7 +53,7 @@ Internal key: `citadel_ability_bull_heal`.
 
 - **Tier 3:** +2m Radius and +18 DPS with improved Spirit scaling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorCastableWhileBusy`, `BehaviorNoTarget`.
@@ -66,12 +66,12 @@ Behavior flags: `BehaviorCastableWhileBusy`, `BehaviorNoTarget`.
 | Lifesteal vs Non-Heroes | 35 (+1 per healing) |
 | Cooldown | 42 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Radius | 8 (+1 per radius) |
 
 Upgrade deltas:
-- Tier 1: `{"AbilityCooldown":-20}`
+- Tier 1: `{"AbilityCooldown":-20.0}`
 - Tier 2: `{"AbilityDuration":2}`
 - Tier 3: `{"DPS":{"Value":18,"Scale":{"Value":0.12,"Type":"spirit"}},"Radius":2}`
-
 ### 2. Shoulder Charge
 
 Internal key: `citadel_ability_bull_charge`.
@@ -84,11 +84,11 @@ Internal key: `citadel_ability_bull_charge`.
 
 **Upgrade descriptions** (where supplied by the source):
 
-- **Tier 1:** Applies +40% Slow for 3s
+- **Tier 1:** Applies +32% Slow for 3s
 - **Tier 2:** On Wall Hit: +0.8s Stun Duration
 - **Tier 3:** -18s Cooldown On Hero Collide: +1.5 Weapon Damage for 6s
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorDontTriggerPostCastOnCastComplete`, `BehaviorMovement`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -99,14 +99,13 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorDontTriggerPostCastOnCastComplete`,
 | Weapon Damage | 0 |
 | Weapon Damage Duration | 0 |
 | Cooldown | 33 (+1 per cooldown) |
-| Duration | 1.4 (+1 per duration) |
 | Charge Delay | -1 |
+| Duration | 1.4 (+1 per duration) |
 
 Upgrade deltas:
-- Tier 1: `{"SlowPercent":40,"SlowDuration":3}`
+- Tier 1: `{"SlowPercent":32,"SlowDuration":3}`
 - Tier 2: `{"StunDuration":0.8}`
 - Tier 3: `{"AbilityCooldown":-18,"WeaponDamageBonus":1.5,"WeaponPowerIncreaseDuration":6}`
-
 ### 3. Infernal Resilience
 
 Internal key: `citadel_ability_passive_beefy`.
@@ -118,9 +117,9 @@ Internal key: `citadel_ability_passive_beefy`.
 
 **Upgrade descriptions** (where supplied by the source):
 
-- **Tier 3:** +20% Debuff Resist and +8% Damage Regenerated
+- **Tier 3:** +20% Debuff Resist and +9% Damage Regenerated
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 | Card field | Base value |
@@ -148,9 +147,9 @@ Internal key: `citadel_ability_bull_leap`.
 
 **Upgrade descriptions** (where supplied by the source):
 
-- **Tier 3:** On cast, become Unstoppable for 6s and +6m Impact Radius
+- **Tier 3:** On cast, become Unstoppable for 5s and +6m Impact Radius
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorMovement`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -164,10 +163,9 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorMov
 | Charge Delay | -1 |
 
 Upgrade deltas:
-- Tier 1: `{"AbilityCooldown":-30}`
+- Tier 1: `{"AbilityCooldown":-30.0}`
 - Tier 2: `{"StunDuration":0.8}`
-- Tier 3: `{"ImmunityDuration":6,"ImpactRadius":6}`
-
+- Tier 3: `{"ImmunityDuration":5,"ImpactRadius":6}`
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

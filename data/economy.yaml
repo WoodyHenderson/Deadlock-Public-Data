@@ -1,12 +1,14 @@
 schema_version: 1
 id: data.general.economy
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
-evidence_status: source_verified
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
+evidence_status: source_verified_with_unresolved_comeback_formula
 sources:
-  - wiki.souls.124122
+  - wiki.souls.157718
   - wiki.trooper.114174
   - wiki.neutral.125766
+  - github.deadlock-data.gameplay.fc4f540f12e0
+  - github.deadlock-data.changelogs.raw.fc4f540f12e0
 
 starting_souls: 600
 first_blood_bonus: 125
@@ -57,10 +59,10 @@ bounties:
     growth_per_minute: 70
     distribution: courier_and_orb_claimers
   - entity: guardian
-    base: 1250
+    base: 1375
     growth_per_minute: 0
   - entity: walker
-    base: 3500
+    base: 3675
     growth_per_minute: 0
   - entity: base-guardian
     base: 1000
@@ -73,8 +75,8 @@ bounties:
     growth_per_minute: 0
 
 structure_bounty_distribution:
-  nearby_allies_fraction: 0.3
-  teamwide_fraction: 0.7
+  nearby_allies_fraction: 0.25
+  teamwide_fraction: 0.75
   nearby_allies_also_receive_teamwide_share: true
 
 trooper_sharing:
@@ -166,6 +168,45 @@ team_comeback:
     - neutral
     - sinners-sacrifice
     - objective
+  source_note: >-
+    These multiplier and threshold convars match the September 3 build, but the
+    September 16 notes also remove a fixed comeback-bounty component and report
+    a general reduction. They do not specify a replacement formula; do not use
+    the retained constants as a complete hero-kill or Unstable Rift formula.
+  formula_status: partial_source_values_with_patch_note_gap
+
+hero_kill_comeback:
+  maximum_multiplier: 2.268
+  assister_ratio: 1.5
+  killer_fraction: 0.3
+  values_unchanged_from_client_6684: true
+  formula_status: partial_source_values_with_patch_note_gap
+  source_note: >-
+    Client 6694 retains these convars, while the patch notes report removal of a
+    fixed extra hero-kill bounty and a slight general reduction. The exact
+    revised runtime curve is not available in the retained structured fields.
+
+comeback_redirection:
+  eligible_bonus: comeback_souls_earned_while_player_net_worth_exceeds_enemy_team_average
+  redirected_fraction: 0.7
+  recipient_count: 2
+  recipients: lowest_net_worth_teammates
+  split: equal
+  payout_fraction_of_redirected_pool: 1.0
+  payout_channel: tick_gold_each_period
+  separate_from_normal_tick_gold:
+    starts_at_seconds: 480
+    lowest_player_fraction: 0.025
+    second_lowest_player_fraction: 0.015
+  source: github.deadlock-data.gameplay.fc4f540f12e0
+
+reported_economy_changes:
+  - change: fixed_hero_kill_and_unstable_rift_extra_comeback_bounty_removed
+    evidence_status: patch_note_only
+    source: github.deadlock-data.changelogs.raw.fc4f540f12e0
+  - change: stored_golden_goose_egg_souls_count_toward_net_worth
+    evidence_status: patch_note_only
+    source: github.deadlock-data.changelogs.raw.fc4f540f12e0
 
 individual_catch_up:
   starts_at_seconds: 480

@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Sinclair is a selectable Mystic hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.sinclair.124939
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Sinclair
@@ -55,7 +55,7 @@ Internal key: `ability_magician_magicbolt`.
 - **Tier 1:** Bolts apply -25% Fire Rate for 5s.
 - **Tier 3:** +126 Max Damage. +50% Assistant Damage.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorTargetThroughWalls`, `BehaviorCleaveDisabled`, `BehaviorCooldownOnChannelEnd`, `BehaviorDontInterruptSlideOnCast`.
@@ -68,16 +68,16 @@ Behavior flags: `BehaviorChannelled`, `BehaviorProjectile`, `BehaviorNoTarget`, 
 | Time for Max Damage | 2 |
 | Fire Rate | 0 |
 | Debuff Duration | 0 |
-| Cooldown | 24 (+1 per cooldown) |
 | Cast Range | 500 (+1 per range) |
 | Charges | 1 (+1 per max charges) |
+| Cooldown | 24 (+1 per cooldown) |
 | Charge Delay | 3 (+1 per charge cooldown) |
+| Radius | 3.25 (+1 per radius) |
 
 Upgrade deltas:
 - Tier 1: `{"FireRateSlow":25,"DebuffDuration":5}`
 - Tier 2: `{"AbilityCooldown":-13}`
-- Tier 3: `{"MaxDamage":126,"CloneDamagePercentage":50}`
-
+- Tier 3: `{"MaxDamage":126.0,"CloneDamagePercentage":50.0}`
 ### 2. Spectral Assistant
 
 Internal key: `ability_magician_cloneturret`.
@@ -94,7 +94,7 @@ Internal key: `ability_magician_cloneturret`.
 - **Tier 2:** +7s Duration & 5m Range
 - **Tier 3:** +60% Fire Rate and +12.6 Assistant Damage
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorAlwaysPreviewRadius`, `BehaviorPreventBotUsage`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -104,15 +104,14 @@ Behavior flags: `BehaviorAlwaysPreviewRadius`, `BehaviorPreventBotUsage`, `Behav
 | Damage | 15 (+0.36 per spirit) |
 | Duration | 6 (+1 per duration) |
 | Max Swaps | 2 |
-| Cooldown | 40 (+1 per cooldown) |
 | Cast Range | 15 (+1 per range) |
+| Cooldown | 40 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-10}`
 - Tier 2: `{"AbilityDuration":7,"AbilityCastRange":5,"LeashRadius":5}`
 - Tier 3: `{"BonusFireRate":60,"Damage":12.6}`
-
 ### 3. Rabbit Hex
 
 Internal key: `ability_magician_animalhexarea`.
@@ -128,7 +127,7 @@ Internal key: `ability_magician_animalhexarea`.
 
 - **Tier 3:** +7% Damage Amp and +3m Radius
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorAlwaysPreviewRadius`, `BehaviorDisplaysDamageImpact`, `BehaviorProjectilePassThroughWorld`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -140,15 +139,14 @@ Behavior flags: `BehaviorAlwaysPreviewRadius`, `BehaviorDisplaysDamageImpact`, `
 | Damage Amp | 15 (+0.0558 per spirit) |
 | Move Speed bonus | 36 |
 | Radius | 6.5 (+1 per range) |
-| Cooldown | 26 (+1 per cooldown) |
 | Cast Range | 24 (+1 per range) |
+| Cooldown | 26 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-10}`
 - Tier 2: `{"HexDuration":1}`
 - Tier 3: `{"Radius":3,"DamageAmpPercentage":7}`
-
 ### 4. Audience Participation
 
 Internal key: `ability_magician_copyult`.
@@ -166,7 +164,7 @@ Internal key: `ability_magician_copyult`.
 - **Tier 2:** Upgrade the Copy AGAIN!
 - **Tier 3:** Upgrade the Copy ONCE AGAIN!
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorAlwaysPreviewRadius`, `BehaviorDisplaysDamageImpact`, `BehaviorProjectilePassThroughWorld`, `BehaviorUseInstantCastUnitTargetUi`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -175,15 +173,9 @@ Behavior flags: `BehaviorAlwaysPreviewRadius`, `BehaviorDisplaysDamageImpact`, `
 | --- | ---: |
 | Copy Duration | 12 (+1 per duration) |
 | Copied Cooldown | 40 |
-| Cooldown | 85 (+1 per cooldown) |
 | Cast Range | 20 (+1 per range) |
+| Cooldown | 85 (+1 per cooldown) |
 | Charge Delay | -1 |
-
-Upgrade deltas:
-- Tier 1: `{}`
-- Tier 2: `{}`
-- Tier 3: `{}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

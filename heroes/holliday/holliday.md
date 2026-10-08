@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Holliday is a selectable Marksman hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.holliday.125565
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Holliday
@@ -56,7 +56,7 @@ Internal key: `ability_explosive_barrel`.
 
 - **Tier 3:** +40 Impact Damage +13.3333 Burn Damage per Second -5 Charge Time Improved Spirit Scaling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorIgnoreSelectionMashProtection`, `BehaviorDontInterruptSlideOnCast`, `BehaviorAllowAltCast`, `BehaviorCastImmediateOnOtherAbility`.
@@ -68,15 +68,15 @@ Behavior flags: `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDisplaysDamag
 | Duration | 0.4 |
 | Burn Duration | 3 (+1 per duration) |
 | Arm Time | 0.1 |
-| Cooldown | 28 (+1 per cooldown) |
 | Charges | 2 (+1 per max charges) |
+| Cooldown | 28 (+1 per cooldown) |
 | Charge Delay | 7.5 (+1 per charge cooldown) |
+| Radius | 6 (+1 per radius) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-10}`
 - Tier 2: `{"AbilityCharges":1}`
 - Tier 3: `{"ImpactDamage":{"Value":40,"Scale":{"Value":0.25,"Type":"spirit"}},"DPS":{"Value":13.3333,"Scale":{"Value":0.083333,"Type":"spirit"}},"AbilityCooldownBetweenCharge":-5}`
-
 ### 2. Bounce Pad
 
 Internal key: `ability_bounce_pad`.
@@ -94,7 +94,7 @@ Internal key: `ability_bounce_pad`.
 - **Tier 2:** You and allies gain a +4m/s move speed bonus for 4s on landing
 - **Tier 3:** +0.7s Stomp Stun
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorMovement`, `BehaviorDontInterruptSlideOnCast`.
@@ -104,16 +104,16 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorMovement`, `BehaviorDon
 | Stomp Damage | 60 (+0.372 per spirit) |
 | Radius | 9 (+1 per radius) |
 | Air Control | 100 |
-| Cooldown | 41 (+1 per cooldown) |
-| Duration | 22 (+1 per duration) |
+| SpeedOnLandDuration | 0 |
 | Charges | 1 (+1 per max charges) |
+| Cooldown | 41 (+1 per cooldown) |
 | Charge Delay | 3.5 (+1 per charge cooldown) |
+| Duration | 22 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-10}`
 - Tier 2: `{"SpeedOnLand":4,"SpeedOnLandDuration":4}`
 - Tier 3: `{"StompStunDuration":0.7}`
-
 ### 3. Crackshot
 
 Internal key: `ability_crackshot`.
@@ -127,10 +127,11 @@ Internal key: `ability_crackshot`.
 
 **Upgrade descriptions** (where supplied by the source):
 
-- **Tier 1:** -25% Fading Move Speed
+- **Tier 1:** -20% Fading Move Speed
+- **Tier 2:** +49.5 Damage and -6% Bullet Resist for 5s
 - **Tier 3:** -6s Cooldown on Hero Headshots. -3s on NPC Headshots
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`.
@@ -138,16 +139,16 @@ Behavior flags: `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDisplaysDamag
 | Card field | Base value |
 | --- | ---: |
 | Damage | 55 (+1.116 per spirit) |
-| Fading Move Speed | 50 |
+| Fading Move Speed | 40 |
 | Debuff Duration | 2 (+1 per duration) |
+| Bullet Resist | 0 |
 | Cooldown | 20 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
-- Tier 1: `{"FadingSlowPercent":25}`
-- Tier 2: `{"Damage":49.5}`
+- Tier 1: `{"FadingSlowPercent":20}`
+- Tier 2: `{"Damage":49.5,"BulletResistReduction":-6,"BulletResistReductionDuration":5}`
 - Tier 3: `{"AbilityCooldownPerHeadshot":-6,"AbilityCooldownPerHeadshotNPC":-3}`
-
 ### 4. Spirit Lasso
 
 Internal key: `ability_gravity_lasso`.
@@ -158,7 +159,7 @@ Internal key: `ability_gravity_lasso`.
 > Throw out your lasso, dealing spirit damage, pulling, and applying stun.
 > Using a Bounce Pad extends the duration of Spirit Lasso.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorCleaveDisabled`, `BehaviorShowCastRangeAsSatSphereWhileCasting`, `BehaviorDontInterruptSlideOnCast`, `BehaviorInterruptMeleeOnCast`.
@@ -168,6 +169,7 @@ Behavior flags: `BehaviorProjectile`, `BehaviorCleaveDisabled`, `BehaviorShowCas
 | Duration | 2.25 (+1 per duration) |
 | Cast Range | 20 (+1 per range) |
 | Damage | 80 (+0.93 per spirit) |
+| BouncePadExtendDuration | 1.25 |
 | Cooldown | 130 (+1 per cooldown) |
 | Charge Delay | -1 |
 
@@ -175,7 +177,6 @@ Upgrade deltas:
 - Tier 1: `{"Damage":80}`
 - Tier 2: `{"AbilityDuration":0.75}`
 - Tier 3: `{"AbilityCooldown":-40}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

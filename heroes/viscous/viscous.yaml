@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.viscous",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.viscous.124936",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Viscous",
   "aliases": [],
@@ -25,8 +25,8 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 780,
-    "health_regeneration_per_second": 2,
+    "maximum_health": 780.0,
+    "health_regeneration_per_second": 2.0,
     "light_melee_damage": 63,
     "heavy_melee_damage": 116,
     "move_speed_meters_per_second": 7.2,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 14.7,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.68
     },
     "air_dash": {
-      "speed_meters_per_second": 17,
-      "distance_meters": 8,
+      "speed_meters_per_second": 17.0,
+      "distance_meters": 8.0,
       "duration_seconds": 0.47
     },
     "stamina": {
@@ -54,13 +54,13 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.36,
-    "BulletDamageAltFire": 1.6,
-    "MaxHealth": 45,
+    "BulletDamageAltFire": 1.44,
+    "MaxHealth": 45.0,
     "PowerIncreases": 1,
     "TechPower": 1.3,
     "LightMeleeDamage": 1.58,
@@ -70,20 +70,20 @@
   },
   "spirit_scaling": {},
   "weapon": {
-    "BulletSpeed": 254,
+    "BulletSpeed": 254.0,
     "BulletDamage": 10.34,
     "RoundsPerSecond": 4.7619,
     "ClipSize": 20,
     "ReloadTime": 2.5,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
     "FalloffStartRange": 19.99,
     "FalloffEndRange": 57.51,
-    "FalloffStartScale": 1,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
-    "BulletGravityScale": 0,
+    "BulletGravityScale": 0.0,
     "BulletRadius": 0.2032,
     "BulletsPerShot": 1,
     "BulletsPerBurst": 1,
@@ -99,16 +99,16 @@
     "DescKey": "citadel_weapon_hero_viscous_set_desc",
     "AltFire": {
       "BulletSpeed": 38.1,
-      "BulletDamage": 42,
+      "BulletDamage": 42.0,
       "RoundsPerSecond": 0.79365,
       "ClipSize": 10,
       "ReloadTime": 2.1,
-      "ReloadMovespeed": 1,
-      "ReloadDelay": 0,
+      "ReloadMovespeed": 1.0,
+      "ReloadDelay": 0.0,
       "ReloadSingle": false,
       "FalloffStartRange": 19.99,
       "FalloffEndRange": 57.51,
-      "FalloffStartScale": 1,
+      "FalloffStartScale": 1.0,
       "FalloffEndScale": 0.1,
       "FalloffBias": 0.5,
       "BulletGravityScale": 0.2,
@@ -140,13 +140,13 @@
       "data": {
         "AbilityCastDelay": 0.001,
         "AbilityCooldown": {
-          "Value": 26,
+          "Value": 26.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
@@ -162,7 +162,7 @@
             "Type": "spirit"
           }
         },
-        "DetonateCooldown": 0.15,
+        "DetonateCooldown": 0.12,
         "FourthHitDamagePercentage": 0.26,
         "GooGrenadeImpactModifier": {
           "Class": "ViscousGooGrenadeDebuff",
@@ -171,7 +171,7 @@
         "GooGrenadePuddleAuraFriendlyModifier": {
           "Class": "BaseAura",
           "Subclass": "GooGrenadeFriendlyAura",
-          "AuraRadius": -1,
+          "AuraRadius": -1.0,
           "ProvidedByAura": {
             "Class": "Base",
             "Subclass": "GooPuddleSlideModifier"
@@ -184,7 +184,7 @@
             "Class": "SlowBase",
             "Subclass": "PuddleSlow"
           },
-          "AuraRadius": -1
+          "AuraRadius": -1.0
         },
         "IsDisabled": false,
         "Key": "viscous_goo_grenade",
@@ -206,12 +206,12 @@
           }
         },
         "SecondHitDamagePercentage": 0.5,
-        "SlowPercent": 35,
+        "SlowPercent": 28,
         "ThirdHitDamagePercentage": 0.38,
         "Upgrades": [
           {
             "Damage": 36,
-            "Radius": 2
+            "Radius": 1.5
           },
           {
             "AbilityCooldown": -14
@@ -267,7 +267,7 @@
               {
                 "Key": "SlowPercent",
                 "Name": "Move Speed",
-                "Value": 35,
+                "Value": 28,
                 "Type": "slow"
               },
               {
@@ -288,7 +288,7 @@
         "Upgrades": [
           {
             "Damage": 36,
-            "Radius": 2,
+            "Radius": 1.5,
             "DescKey": "viscous_goo_grenade_t1_desc"
           },
           {
@@ -324,7 +324,7 @@
           },
           "DetonateCooldown": {
             "Name": null,
-            "Value": 0.15
+            "Value": 0.12
           },
           "FourthHitDamagePercentage": {
             "Name": null,
@@ -350,7 +350,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 26,
+          "Value": 26.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -359,7 +359,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "Radius": {
@@ -379,7 +379,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Throw a ball of goo that <span class=\"highlight\">deals damage</span> and leaves puddles of goo behind that apply <span class=\"highlight\">movement slow</span> to enemies in the radius.",
           "plain_text": "Throw a ball of goo that deals damage and leaves puddles of goo behind that apply movement slow to enemies in the radius."
         },
@@ -388,7 +388,7 @@
           "card_paths": [
             "card.Info2.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Multiple hits to the same target deal less damage.",
           "plain_text": "Multiple hits to the same target deal less damage."
         },
@@ -397,7 +397,7 @@
           "card_paths": [
             "card.Info3.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Goo puddles linger on the ground and apply a <span class=\"highlight\">movement slow</span> to enemies walking on them. <br><br><span class=\"diminish\">You and your allies slide faster on goo puddles.</span>",
           "plain_text": "Goo puddles linger on the ground and apply a movement slow to enemies walking on them.\nYou and your allies slide faster on goo puddles."
         },
@@ -406,16 +406,16 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "+36 Damage and +2m Radius",
-          "plain_text": "+36 Damage and +2m Radius"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "+36 Damage and +1.5m Radius",
+          "plain_text": "+36 Damage and +1.5m Radius"
         },
         {
           "localization_key": "viscous_goo_grenade_t3_desc",
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Bounces 1 times and improves Spirit Scaling",
           "plain_text": "Bounces 1 times and improves Spirit Scaling"
         }
@@ -428,20 +428,20 @@
       "data": {
         "AbilityCastDelay": 0.1,
         "AbilityCastRange": {
-          "Value": 26,
+          "Value": 20,
           "Scale": {
             "Value": 1,
             "Type": "range"
           }
         },
         "AbilityCooldown": {
-          "Value": 42,
+          "Value": 42.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 3,
           "Scale": {
@@ -488,7 +488,7 @@
         "RestorativeGooModifier": {
           "Class": "RestorativeGoo",
           "Subclass": "RestorativeGoo",
-          "DistanceCameraOffset": 450,
+          "DistanceCameraOffset": 450.0,
           "DistanceCameraOffsetLerpTime": 0.5,
           "DistanceCameraOffsetBias": 0.75,
           "BreakoutProgressBarModifier": {
@@ -519,7 +519,7 @@
             "AbilityDuration": 1
           },
           {
-            "AbilityCooldown": -20,
+            "AbilityCooldown": -20.0,
             "PurgeDebuffs": 1
           }
         ]
@@ -597,7 +597,7 @@
             "DescKey": "viscous_restorative_goo_t2_desc"
           },
           {
-            "AbilityCooldown": -20,
+            "AbilityCooldown": -20.0,
             "PurgeDebuffs": 1,
             "DescKey": "viscous_restorative_goo_t3_desc"
           }
@@ -658,7 +658,7 @@
         },
         "AbilityCastRange": {
           "Name": "Cast Range",
-          "Value": 26,
+          "Value": 20,
           "Scale": {
             "Value": 1,
             "Type": "range"
@@ -667,7 +667,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 42,
+          "Value": 42.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -676,7 +676,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -696,7 +696,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Encase the target in a cube of restorative goo that <span class=\"highlight\">protects from damage, and increases health regen</span>. Target is <span class=\"highlight\">unable to take any new actions</span> while cubed. Can be used on self. Press <span class=\"highlight\">{g:citadel_binding:'Mantle'}</span> to escape early.",
           "plain_text": "Encase the target in a cube of restorative goo that protects from damage, and increases health regen. Target is unable to take any new actions while cubed. Can be used on self. Press [Mantle] to escape early."
         },
@@ -705,7 +705,7 @@
           "card_paths": [
             "card.Info2.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "After exiting the cube, the target has increased <span class=\"highlight\">move speed and stamina recovery</span> for a short duration.",
           "plain_text": "After exiting the cube, the target has increased move speed and stamina recovery for a short duration."
         },
@@ -714,7 +714,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Increases Move Speed and Stamina Recovery",
           "plain_text": "Increases Move Speed and Stamina Recovery"
         },
@@ -723,7 +723,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+25 Health Regen and +1s Duration",
           "plain_text": "+25 Health Regen and +1s Duration"
         },
@@ -732,7 +732,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">Removes all non-ult Debuffs</span> and <span class=\"highlight\">-20s</span> Cooldown",
           "plain_text": "Removes all non-ult Debuffs and -20s Cooldown"
         }
@@ -758,7 +758,7 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 21,
+          "Value": 24.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -779,7 +779,7 @@
         ],
         "ChannelMoveSpeed": -1,
         "Damage": {
-          "Value": 20,
+          "Value": 20.0,
           "Scale": {
             "Value": 0.6,
             "Type": "melee"
@@ -813,7 +813,7 @@
         "Name": "Puddle Punch",
         "PunchFriendlyAirControl": 30,
         "PunchHalfHeight": 5.5,
-        "PunchRollSlow": -40,
+        "PunchRollSlow": -36,
         "PunchRollSlowDuration": 1,
         "PunchRollSlowModifier": {
           "Class": "Base",
@@ -826,7 +826,7 @@
             "Type": "range"
           }
         },
-        "SlowPercent": 30,
+        "SlowPercent": 24,
         "TossDuration": 0.6,
         "TossGroundSideRatio": 0.7,
         "TossSpeed": 625,
@@ -854,7 +854,7 @@
             "Damage": {
               "Value": -40,
               "Scale": {
-                "Value": 0,
+                "Value": 0.0,
                 "Type": "melee",
                 "Multiply": true
               }
@@ -872,7 +872,7 @@
               {
                 "Key": "Damage",
                 "Name": "Damage",
-                "Value": 20,
+                "Value": 20.0,
                 "Scale": {
                   "Value": 0.6,
                   "Type": "melee"
@@ -892,7 +892,7 @@
               {
                 "Key": "SlowPercent",
                 "Name": "Move Speed",
-                "Value": 30,
+                "Value": 24,
                 "Type": "slow"
               },
               {
@@ -945,7 +945,7 @@
             "Damage": {
               "Value": -40,
               "Scale": {
-                "Value": 0,
+                "Value": 0.0,
                 "Type": "melee",
                 "Multiply": true
               }
@@ -979,7 +979,7 @@
           },
           "PunchRollSlow": {
             "Name": null,
-            "Value": -40
+            "Value": -36
           },
           "PunchRollSlowDuration": {
             "Name": null,
@@ -1022,7 +1022,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 21,
+          "Value": 24.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -1055,7 +1055,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Materialize a fist in the world that punches everyone in the area, applying {g:citadel_inline_attribute:'KnockUp'}. <br><br>Punching an enemy deals {g:citadel_inline_attribute:'MeleeDamage'} and applies {g:citadel_inline_attribute:'Slow'}.<br><br><span class=\"diminish\">You and your allies have increased Air Control.</span>",
           "plain_text": "Materialize a fist in the world that punches everyone in the area, applying knockup.\nPunching an enemy deals melee damage and applies slow.\nYou and your allies have increased Air Control."
         },
@@ -1064,7 +1064,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+1 Charge and +20 Damage",
           "plain_text": "+1 Charge and +20 Damage"
         },
@@ -1073,7 +1073,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+1.5m Radius and +60% Lifesteal",
           "plain_text": "+1.5m Radius and +60% Lifesteal"
         },
@@ -1082,7 +1082,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "-14s Cooldown and now deals <span class=\"highlight\">Heavy Melee Damage</span>",
           "plain_text": "-14s Cooldown and now deals Heavy Melee Damage"
         }
@@ -1101,7 +1101,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 11,
           "Scale": {
@@ -1183,7 +1183,14 @@
           },
           {
             "AbilityDuration": 7,
-            "StunDuration": 0.3
+            "StunDuration": 0.3,
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.2,
+                "Type": "spirit"
+              }
+            }
           }
         ]
       },
@@ -1252,6 +1259,13 @@
           {
             "AbilityDuration": 7,
             "StunDuration": 0.3,
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.2,
+                "Type": "spirit"
+              }
+            },
             "DescKey": "viscous_goo_bowling_ball_t3_desc"
           }
         ],
@@ -1340,7 +1354,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -1360,7 +1374,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Morph into a large goo ball that <span class=\"highlight\">deals damage</span> and <span class=\"highlight\">stuns</span> enemies on impact. The ball grants large amounts of <span class=\"highlight\">Bullet</span> and <span class=\"highlight\">Spirit</span> resist, bounces off walls and can <span class=\"highlight\">double jump</span>.",
           "plain_text": "Morph into a large goo ball that deals damage and stuns enemies on impact. The ball grants large amounts of Bullet and Spirit resist, bounces off walls and can double jump."
         },
@@ -1369,7 +1383,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+70 Damage and +20% Resists",
           "plain_text": "+70 Damage and +20% Resists"
         },
@@ -1378,9 +1392,9 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "+7s Duration and +0.3s\t Stun Duration",
-          "plain_text": "+7s Duration and +0.3s Stun Duration"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "+7s Duration, +0.3s Stun Duration, and +0.2 Spirit Scaling",
+          "plain_text": "+7s Duration, +0.3s Stun Duration, and +0.2 Spirit Scaling"
         }
       ]
     }
@@ -1442,5 +1456,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Apollo is a selectable Assassin hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.apollo.124913
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Apollo
@@ -55,7 +55,7 @@ Internal key: `ability_fencer_throwblade`.
 - **Tier 2:** On Player Hit: +1 stamina restored and resets Air Jump/Dash limit
 - **Tier 3:** Can be Recast within 4s
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorShowCastRangeAsSatSphereWhileCasting`, `BehaviorMovement`.
@@ -63,7 +63,7 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorSho
 | Card field | Base value |
 | --- | ---: |
 | Damage | 85 (+1.3 per spirit) |
-| Move Speed | 30 |
+| Move Speed | 24 |
 | Fire Rate | 0 |
 | Slow Duration | 4 (+1 per duration) |
 | Radius | 6.5 (+1 per range) |
@@ -74,7 +74,6 @@ Upgrade deltas:
 - Tier 1: `{"BonusFireRate":25,"BonusBulletSpeedPercent":25,"BuffDuration":8}`
 - Tier 2: `{"StaminaToRestore":1,"ResetsAirLimit":1}`
 - Tier 3: `{"RecastTime":4}`
-
 ### 2. Riposte
 
 Internal key: `ability_fencer_riposte`.
@@ -91,7 +90,7 @@ Internal key: `ability_fencer_riposte`.
 - **Tier 2:** -25% Melee Resist and +0.4s Stun Duration
 - **Tier 3:** Gain 75% Bullet, Spirit & Melee Lifesteal against the Riposte target for 13s
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`.
@@ -106,7 +105,6 @@ Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-8}`
 - Tier 2: `{"MeleeResistReduction":-25,"StunDuration":0.4}`
 - Tier 3: `{"TargetLifesteal":75,"TargetLifestealDuration":13}`
-
 ### 3. Flawless Advance
 
 Internal key: `ability_fencer_lunge`.
@@ -123,7 +121,7 @@ Internal key: `ability_fencer_lunge`.
 - **Tier 2:** -12s Cooldown. Gain +60% Bullet Resist during lunge
 - **Tier 3:** +65 Perfect Damage with improved Spirit scaling. Increased lunge speed & distance.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorDontTriggerPostCastOnCastComplete`, `BehaviorMovement`, `BehaviorTriggerCancelMashProtectionOnCast`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -135,14 +133,13 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorDontTriggerPostCastOnCa
 | Max Lunges | 3 |
 | Bullet Resist | 0 |
 | Cooldown | 26 (+1 per cooldown) |
-| Duration | 8 (+1 per duration) |
 | Charge Delay | -1 |
+| Duration | 8 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"HealFixedHealth":{"Value":35,"Scale":{"Value":1.3,"Type":"spirit"}}}`
 - Tier 2: `{"AbilityCooldown":-12,"BulletResist":60,"DashBuffDuration":1.5}`
-- Tier 3: `{"BaseDamage":{"Value":30,"Scale":{"Value":1.15,"Type":"spirit","Multiply":true}},"MaxDamageBeforePerfect":{"Value":45,"Scale":{"Value":1.15,"Type":"spirit","Multiply":true}},"PerfectDamage":{"Value":65,"Scale":{"Value":1.15,"Type":"spirit","Multiply":true}},"AttackDashRange":3,"DashSpeed":13.97}`
-
+- Tier 3: `{"BaseDamage":{"Value":30,"Scale":{"Value":1.15,"Type":"spirit","Multiply":true}},"MaxDamageBeforePerfect":{"Value":45,"Scale":{"Value":1.15,"Type":"spirit","Multiply":true}},"PerfectDamage":{"Value":65,"Scale":{"Value":1.15,"Type":"spirit","Multiply":true}},"AttackDashRange":3.0,"DashSpeed":13.97}`
 ### 4. Itani Lo Sahn
 
 Internal key: `ability_fencer_ultimate`.
@@ -160,7 +157,7 @@ Internal key: `ability_fencer_ultimate`.
 
 **Source warning** (`ability_fencer_ultimate_t3_desc`): Source contains an unresolved placeholder. Retained verbatim for provenance, not a usable numeric effect; consult the separate upgrade data and review before interpreting this tooltip.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorDontTriggerPostCastOnCastComplete`, `BehaviorMovement`, `BehaviorNoTarget`, `BehaviorTriggerCancelMashProtectionOnCast`, `BehaviorDeactivateCrouchToggleOnCast`, `BehaviorCannotCancelDuringChannel`, `BehaviorCooldownOnChannelEnd`, `BehaviorShowCastRangeAsSatSphereWhileCasting`, `BehaviorDisplaysDamageImpact`.
@@ -179,7 +176,6 @@ Upgrade deltas:
 - Tier 1: `{"DashRange":8}`
 - Tier 2: `{"AbilityCooldown":-35}`
 - Tier 3: `{"BonusDamagePercent":50}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

@@ -1,15 +1,16 @@
 {
   "schema_version": 2,
   "id": "hero.venator",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.venator.124906",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "patch_notes": "github.deadlock-data.changelogs.raw.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Venator",
   "aliases": [],
@@ -25,22 +26,22 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 820,
-    "health_regeneration_per_second": 2,
+    "maximum_health": 820.0,
+    "health_regeneration_per_second": 2.0,
     "light_melee_damage": 50,
-    "heavy_melee_damage": 125,
+    "heavy_melee_damage": 125.0,
     "move_speed_meters_per_second": 6.4,
     "crouch_speed_meters_per_second": 4.75,
-    "sprint_speed_bonus_meters_per_second": 1,
+    "sprint_speed_bonus_meters_per_second": 1.0,
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 13.9,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.72
     },
     "air_dash": {
       "speed_meters_per_second": 15.7,
-      "distance_meters": 8,
+      "distance_meters": 8.0,
       "duration_seconds": 0.51
     },
     "stamina": {
@@ -54,12 +55,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.27,
-    "MaxHealth": 43,
+    "MaxHealth": 43.0,
     "PowerIncreases": 1,
     "TechPower": 1.1,
     "LightMeleeDamage": 1.7,
@@ -72,17 +73,17 @@
     "BulletResist": 0.12178
   },
   "weapon": {
-    "BulletSpeed": 1588,
-    "BulletDamage": 8,
+    "BulletSpeed": 1588.0,
+    "BulletDamage": 8.0,
     "RoundsPerSecond": 7.9365,
     "ClipSize": 33,
     "ReloadTime": 2.8,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
-    "FalloffStartRange": 18,
-    "FalloffEndRange": 47,
-    "FalloffStartScale": 1,
+    "FalloffStartRange": 18.0,
+    "FalloffEndRange": 47.0,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
     "BulletGravityScale": 0,
@@ -159,7 +160,7 @@
         "Damage": {
           "Value": 35,
           "Scale": {
-            "Value": 1,
+            "Value": 1.0,
             "Type": "weapon_damage_increase"
           }
         },
@@ -167,7 +168,7 @@
           "Class": "PriestFlashbangburnaura",
           "Subclass": "Burnaura",
           "FlashFadeOutTime": 0.1,
-          "AuraRadius": 0,
+          "AuraRadius": 0.0,
           "ProvidedByAura": {
             "Class": "PriestFlashbangburn",
             "Subclass": "Burn"
@@ -194,7 +195,7 @@
           {
             "Radius": 1.5,
             "BurnRadius": 1.5,
-            "BurnDuration": 1
+            "BurnDuration": 1.0
           },
           {
             "HealAmpReceivePenaltyPercent": -20,
@@ -216,7 +217,7 @@
                 "Name": "Damage",
                 "Value": 35,
                 "Scale": {
-                  "Value": 1,
+                  "Value": 1.0,
                   "Type": "weapon_damage_increase"
                 },
                 "Type": "bullet_damage"
@@ -295,7 +296,7 @@
           {
             "Radius": 1.5,
             "BurnRadius": 1.5,
-            "BurnDuration": 1,
+            "BurnDuration": 1.0,
             "DescKey": "ability_priest_flashbang_t2_desc"
           },
           {
@@ -385,7 +386,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Fire a grenade that bounces before exploding, dealing {g:citadel_inline_attribute:'WeaponDamage'} and setting enemies on fire. <br><br>Burning targets deal <span class=\"highlight\">{g:citadel_inline_attribute:'PureDamage'}</span> to enemies in the area and suffer from <span class=\"highlight\">reduced healing</span>.",
           "plain_text": "Fire a grenade that bounces before exploding, dealing weapon damage and setting enemies on fire.\nBurning targets deal pure damage to enemies in the area and suffer from reduced healing."
         },
@@ -394,7 +395,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+1.5m</span> Radius & <span class=\"highlight\">+1s</span> Burn Duration",
           "plain_text": "+1.5m Radius & +1s Burn Duration"
         },
@@ -403,7 +404,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-20%</span> Healing Reduction and allow Charges",
           "plain_text": "-20% Healing Reduction and allow Charges"
         }
@@ -429,7 +430,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 99,
         "BehaviourBits": [
           "BehaviorNoTarget",
@@ -649,7 +650,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -660,7 +661,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Fire a blast with your shotgun, dealing {g:citadel_inline_attribute:'WeaponDamage'} and pushing enemies back. Enemies near a wall receive {g:citadel_inline_attribute:'Stun'} and take {g:citadel_inline_attribute:'BonusWeaponDamage'}.",
           "plain_text": "Fire a blast with your shotgun, dealing weapon damage and pushing enemies back. Enemies near a wall receive stun and take bonus weapon damage."
         },
@@ -669,7 +670,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-10s</span> Ability Cooldown and <span class=\"highlight\">+0.4s</span> Stun Duration",
           "plain_text": "-10s Ability Cooldown and +0.4s Stun Duration"
         },
@@ -678,7 +679,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "On Wall Stun: Your next heavy melee is <span class=\"highlight\">blessed</span>",
           "plain_text": "On Wall Stun: Your next heavy melee is blessed"
         }
@@ -784,7 +785,7 @@
             "AbilityCooldown": -11
           },
           {
-            "ImmobilizeDuration": 1
+            "ImmobilizeDuration": 1.0
           },
           {
             "IncomingDamagePercentFromCaster": 30,
@@ -857,7 +858,7 @@
             "AbilityCooldown": -11
           },
           {
-            "ImmobilizeDuration": 1
+            "ImmobilizeDuration": 1.0
           },
           {
             "IncomingDamagePercentFromCaster": 30,
@@ -954,7 +955,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Kick a trap that arms after a brief delay. <br><br>The trap springs on the first enemy it touches, dealing {g:citadel_inline_attribute:'SpiritDamage'}, applying {g:citadel_inline_attribute:'Immobilize'}, and <span class=\"highlight\">revealing</span> enemies for a duration afterwards.",
           "plain_text": "Kick a trap that arms after a brief delay.\nThe trap springs on the first enemy it touches, dealing spirit damage, applying immobilize, and revealing enemies for a duration afterwards."
         },
@@ -963,7 +964,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+1</span> Charge<br>Deal <span class=\"highlight\">+30%</span> damage against revealed targets",
           "plain_text": "+1 Charge\nDeal +30% damage against revealed targets"
         }
@@ -982,7 +983,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 15,
           "Scale": {
@@ -1003,7 +1004,7 @@
           "Value": 115,
           "Scale": [
             {
-              "Value": 3,
+              "Value": 3.0,
               "Type": "power_increase"
             },
             {
@@ -1077,7 +1078,7 @@
                 "Value": 115,
                 "Scale": [
                   {
-                    "Value": 3,
+                    "Value": 3.0,
                     "Type": "power_increase"
                   },
                   {
@@ -1175,7 +1176,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -1195,7 +1196,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Load your crossbow with <span class=\"highlight\">3 stakes</span>, dealing massively increased {g:citadel_inline_attribute:'WeaponDamage'}.<br><br>The final stake is <span class=\"highlight\">blessed</span>, dealing bonus {g:citadel_inline_attribute:'PureDamage'} and <span class=\"highlight\">executing</span> low-health enemies.",
           "plain_text": "Load your crossbow with 3 stakes, dealing massively increased weapon damage.\nThe final stake is blessed, dealing bonus pure damage and executing low-health enemies."
         },
@@ -1204,7 +1205,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "While Active: Gain <span class=\"highlight\">1.2 m/s</span> Move Speed",
           "plain_text": "While Active: Gain 1.2 m/s Move Speed"
         },
@@ -1213,7 +1214,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-15s</span> Ability Cooldown and <span class=\"highlight\">+65</span> Bonus Damage",
           "plain_text": "-15s Ability Cooldown and +65 Bonus Damage"
         },
@@ -1222,9 +1223,16 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "All Stakes are Blessed",
           "plain_text": "All Stakes are Blessed"
+        }
+      ],
+      "patch_note_addenda": [
+        {
+          "evidence_status": "patch_note_only",
+          "text": "The September 16 notes state Ira Domini now works with Ricochet (all shots bounce) and can split-shot, releasing one extra bolt on each side for three total.",
+          "source": "github.deadlock-data.changelogs.raw.fc4f540f12e0"
         }
       ]
     }
@@ -1288,5 +1296,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.paige",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.paige.125555",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Paige",
   "aliases": [],
@@ -25,22 +25,22 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 680,
-    "health_regeneration_per_second": 2,
-    "light_melee_damage": 42,
-    "heavy_melee_damage": 120,
+    "maximum_health": 680.0,
+    "health_regeneration_per_second": 2.0,
+    "light_melee_damage": 42.0,
+    "heavy_melee_damage": 120.0,
     "move_speed_meters_per_second": 6.9,
     "crouch_speed_meters_per_second": 4.75,
     "sprint_speed_bonus_meters_per_second": 3.5,
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 13.9,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.72
     },
     "air_dash": {
       "speed_meters_per_second": 15.7,
-      "distance_meters": 8,
+      "distance_meters": 8.0,
       "duration_seconds": 0.51
     },
     "stamina": {
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.52,
-    "MaxHealth": 31,
+    "MaxHealth": 31.0,
     "PowerIncreases": 1,
     "TechPower": 1.1,
     "LightMeleeDamage": 1.2,
@@ -68,20 +68,20 @@
     "SustainedDPS": 0.76632
   },
   "spirit_scaling": {
-    "HeavyMeleeDamage": 0.3
+    "HeavyMeleeDamage": 0.45
   },
   "weapon": {
     "BulletSpeed": 43.43,
-    "BulletDamage": 35,
-    "RoundsPerSecond": 2,
+    "BulletDamage": 35.0,
+    "RoundsPerSecond": 2.0,
     "ClipSize": 14,
     "ReloadTime": 2.5,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
     "FalloffStartRange": 19.99,
     "FalloffEndRange": 57.51,
-    "FalloffStartScale": 1,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
     "BulletGravityScale": 0,
@@ -94,8 +94,8 @@
     "CanCrit": false,
     "AmmoConsumedPerShot": 1,
     "ExplosionRadius": 0.635,
-    "ExplosionDamageScaleAtMaxRadius": 1,
-    "DPS": 70,
+    "ExplosionDamageScaleAtMaxRadius": 1.0,
+    "DPS": 70.0,
     "SustainedDPS": 51.579,
     "NameKey": "citadel_weapon_hero_bookworm_set",
     "DescKey": "citadel_weapon_hero_bookworm_set_desc",
@@ -193,7 +193,7 @@
           }
         },
         "GroundFlameDuration": {
-          "Value": 3,
+          "Value": 3.0,
           "Scale": {
             "Value": 1,
             "Type": "duration"
@@ -222,7 +222,7 @@
           },
           {
             "Damage": 100,
-            "DPS": 30,
+            "DPS": 30.0,
             "DragonTravelRange": 12
           }
         ]
@@ -257,7 +257,7 @@
               {
                 "Key": "GroundFlameDuration",
                 "Name": "Trail Duration",
-                "Value": 3,
+                "Value": 3.0,
                 "Scale": {
                   "Value": 1,
                   "Type": "duration"
@@ -293,7 +293,7 @@
           },
           {
             "Damage": 100,
-            "DPS": 30,
+            "DPS": 30.0,
             "DragonTravelRange": 12,
             "DescKey": "ability_bookworm_dragonfire_t3_desc"
           }
@@ -416,7 +416,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Conjure a dragon that appears at the target location before flying forward, dealing {g:citadel_inline_attribute:'SpiritDamage'} and leaving a burning path in its trail.",
           "plain_text": "Conjure a dragon that appears at the target location before flying forward, dealing spirit damage and leaving a burning path in its trail."
         },
@@ -425,7 +425,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-12s</span> Cooldown",
           "plain_text": "-12s Cooldown"
         },
@@ -434,7 +434,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+1</span> Charge<br><span class=\"highlight\">+2s</span> Trail Duration <br><span class=\"highlight\">+1m</span> Radius<br>",
           "plain_text": "+1 Charge\n+2s Trail Duration\n+1m Radius"
         },
@@ -443,7 +443,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+12m</span> Travel Range<br><span class=\"highlight\">+100</span> Damage <br><span class=\"highlight\">+30</span> DPS",
           "plain_text": "+12m Travel Range\n+100 Damage\n+30 DPS"
         }
@@ -463,7 +463,7 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 28,
+          "Value": 28.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -514,7 +514,7 @@
         "BonusFireRate": {
           "Value": 0,
           "Scale": {
-            "Value": 0,
+            "Value": 0.0,
             "Type": "spirit"
           }
         },
@@ -592,7 +592,7 @@
                 "Name": "Fire Rate",
                 "Value": 0,
                 "Scale": {
-                  "Value": 0,
+                  "Value": 0.0,
                   "Type": "spirit"
                 },
                 "Type": "fire_rate"
@@ -689,7 +689,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 28,
+          "Value": 28.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -713,7 +713,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Grant an ally a {g:citadel_inline_attribute:'CombatBarrier'}. While the barrier holds, they gain {g:citadel_inline_attribute:'BonusWeaponDamage'}.",
           "plain_text": "Grant an ally a barrier. While the barrier holds, they gain bonus weapon damage."
         },
@@ -722,7 +722,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "On Barrier: <span class=\"highlight\">+14%</span> Fire Rate",
           "plain_text": "On Barrier: +14% Fire Rate"
         },
@@ -731,7 +731,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+100</span> Barrier and <span class=\"highlight\">+2s</span> Duration",
           "plain_text": "+100 Barrier and +2s Duration"
         },
@@ -740,7 +740,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Affects up to <span class=\"highlight\">2</span> additional allies.<br>Increases barrier scaling.",
           "plain_text": "Affects up to 2 additional allies.\nIncreases barrier scaling."
         }
@@ -766,7 +766,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "AreaModifier": {
           "Class": "BookwormAoemagicAreamodifier",
@@ -802,7 +802,7 @@
         "DetonationDelay": 1.25,
         "Height": 8,
         "ImmobilizeDuration": {
-          "Value": 1,
+          "Value": 1.0,
           "Scale": {
             "Value": 1,
             "Type": "duration"
@@ -825,10 +825,10 @@
             "Type": "duration"
           }
         },
-        "SlowPercent": 45,
+        "SlowPercent": 36,
         "Upgrades": [
           {
-            "AbilityCooldown": -11
+            "AbilityCooldown": -14
           },
           {
             "ImmobilizeDuration": 1
@@ -836,7 +836,7 @@
           {
             "TechArmorDamageReduction": -18,
             "DebuffDuration": 6,
-            "Radius": 1
+            "Radius": 2
           }
         ]
       },
@@ -863,7 +863,7 @@
                 "Key": "ImmobilizeDuration",
                 "Name": "Immobilize Duration",
                 "StatusEffect": "Immobilize",
-                "Value": 1,
+                "Value": 1.0,
                 "Scale": {
                   "Value": 1,
                   "Type": "duration"
@@ -882,7 +882,7 @@
             {
               "Key": "SlowPercent",
               "Name": "Move Speed",
-              "Value": 45,
+              "Value": 36,
               "Type": "slow"
             },
             {
@@ -900,7 +900,7 @@
         },
         "Upgrades": [
           {
-            "AbilityCooldown": -11
+            "AbilityCooldown": -14
           },
           {
             "ImmobilizeDuration": 1
@@ -908,7 +908,7 @@
           {
             "TechArmorDamageReduction": -18,
             "DebuffDuration": 6,
-            "Radius": 1,
+            "Radius": 2,
             "DescKey": "ability_bookworm_aoemagic_t3_desc"
           }
         ],
@@ -958,7 +958,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "Radius": {
@@ -977,7 +977,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Target an area with latent magic, applying {g:citadel_inline_attribute:'Slow'}. <br><br>The magic detonates after a delay, dealing {g:citadel_inline_attribute:'SpiritDamage'} and applying {g:citadel_inline_attribute:'Immobilize'}.",
           "plain_text": "Target an area with latent magic, applying slow.\nThe magic detonates after a delay, dealing spirit damage and applying immobilize."
         },
@@ -986,9 +986,9 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "<span class=\"highlight\">+1m</span> Radius<br>On Hit: Reduce Spirit Resist by <span class=\"highlight\">-18%</span> for <span class=\"highlight\">6s</span>",
-          "plain_text": "+1m Radius\nOn Hit: Reduce Spirit Resist by -18% for 6s"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "<span class=\"highlight\">+2m</span> Radius<br>On Hit: Reduce Spirit Resist by <span class=\"highlight\">-18%</span> for <span class=\"highlight\">6s</span>",
+          "plain_text": "+2m Radius\nOn Hit: Reduce Spirit Resist by -18% for 6s"
         }
       ]
     },
@@ -1006,7 +1006,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 13,
           "Scale": {
@@ -1043,7 +1043,7 @@
         "Damage": {
           "Value": 125,
           "Scale": {
-            "Value": 1,
+            "Value": 1.0,
             "Type": "spirit"
           }
         },
@@ -1084,7 +1084,7 @@
         "MaxAmpDistance": 250,
         "Name": "Rallying Charge",
         "StunDuration": {
-          "Value": 1,
+          "Value": 1.0,
           "Scale": {
             "Value": 1,
             "Type": "duration"
@@ -1103,7 +1103,7 @@
             "AbilityCooldown": -45
           },
           {
-            "Damage": 160,
+            "Damage": 160.0,
             "StunDuration": 0.5,
             "MaxAmp": 70
           }
@@ -1131,7 +1131,7 @@
                 "Name": "Damage",
                 "Value": 125,
                 "Scale": {
-                  "Value": 1,
+                  "Value": 1.0,
                   "Type": "spirit"
                 },
                 "Type": "tech_damage"
@@ -1141,7 +1141,7 @@
                 "Key": "StunDuration",
                 "Name": "Stun Duration",
                 "StatusEffect": "Stun",
-                "Value": 1,
+                "Value": 1.0,
                 "Scale": {
                   "Value": 1,
                   "Type": "duration"
@@ -1198,7 +1198,7 @@
             "DescKey": "ability_bookworm_knightcharge_t2_desc"
           },
           {
-            "Damage": 160,
+            "Damage": 160.0,
             "StunDuration": 0.5,
             "MaxAmp": 70,
             "DescKey": "ability_bookworm_knightcharge_t3_desc"
@@ -1361,7 +1361,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -1381,7 +1381,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Release a wave of spectral knights and steeds that charge across the <span class=\"highlight\">entire city</span>, {g:citadel_inline_attribute:'Healing'} allies and dealing {g:citadel_inline_attribute:'SpiritDamage'} to enemies. <br><br>The strength of the {g:citadel_inline_attribute:'Heal'} and {g:citadel_inline_attribute:'SpiritDamage'} is amplified as the knights travel further.",
           "plain_text": "Release a wave of spectral knights and steeds that charge across the entire city, healing allies and dealing spirit damage to enemies.\nThe strength of the heal and spirit damage is amplified as the knights travel further."
         },
@@ -1390,7 +1390,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Increase width by <span class=\"highlight\">+4 Steeds</span><br><span class=\"highlight\">-45</span> Cooldown",
           "plain_text": "Increase width by +4 Steeds\n-45 Cooldown"
         },
@@ -1399,7 +1399,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+160</span> Damage <br><span class=\"highlight\">+0.5s</span> Stun Duration<br><span class=\"highlight\">+70%</span> Max Amp",
           "plain_text": "+160 Damage\n+0.5s Stun Duration\n+70% Max Amp"
         }
@@ -1464,5 +1464,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.vindicta",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.vindicta.124937",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Vindicta",
   "aliases": [],
@@ -25,8 +25,8 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 755,
-    "health_regeneration_per_second": 2,
+    "maximum_health": 755.0,
+    "health_regeneration_per_second": 2.0,
     "light_melee_damage": 50,
     "heavy_melee_damage": 116,
     "move_speed_meters_per_second": 7.9,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 14.7,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.68
     },
     "air_dash": {
-      "speed_meters_per_second": 17,
-      "distance_meters": 8,
+      "speed_meters_per_second": 17.0,
+      "distance_meters": 8.0,
       "duration_seconds": 0.47
     },
     "stamina": {
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.495,
-    "MaxHealth": 28,
+    "MaxHealth": 28.0,
     "PowerIncreases": 1,
     "TechPower": 1.1,
     "LightMeleeDamage": 1.58,
@@ -73,17 +73,17 @@
     "SustainedDPS": 0.057237
   },
   "weapon": {
-    "BulletSpeed": 660,
+    "BulletSpeed": 660.0,
     "BulletDamage": 12.33,
     "RoundsPerSecond": 4.329,
     "ClipSize": 19,
     "ReloadTime": 2.914,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
     "FalloffStartRange": 19.99,
-    "FalloffEndRange": 64,
-    "FalloffStartScale": 1,
+    "FalloffEndRange": 64.0,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
     "BulletGravityScale": 0.8,
@@ -112,13 +112,13 @@
       "data": {
         "AbilityCastDelay": 0.2,
         "AbilityCooldown": {
-          "Value": 40,
+          "Value": 40.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
           "BehaviorProjectile",
@@ -168,7 +168,7 @@
             "Damage": 45
           },
           {
-            "AbilityCooldown": -22
+            "AbilityCooldown": -22.0
           },
           {
             "ChainDuration": 0.75,
@@ -236,7 +236,7 @@
             "Damage": 45
           },
           {
-            "AbilityCooldown": -22
+            "AbilityCooldown": -22.0
           },
           {
             "ChainDuration": 0.75,
@@ -268,7 +268,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 40,
+          "Value": 40.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -277,7 +277,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -288,7 +288,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Throw a stake that <span class=\"highlight\">tethers enemies</span> to the location where the stake lands. Enemy movement is restricted to the length of the tether.",
           "plain_text": "Throw a stake that tethers enemies to the location where the stake lands. Enemy movement is restricted to the length of the tether."
         },
@@ -297,7 +297,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+0.75s</span> Tether Duration and <span class=\"highlight\">+2m</span> Capture Radius",
           "plain_text": "+0.75s Tether Duration and +2m Capture Radius"
         }
@@ -310,13 +310,13 @@
       "data": {
         "AbilityChannelTime": 0.2,
         "AbilityCooldown": {
-          "Value": 42,
+          "Value": 42.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 13,
           "Scale": {
@@ -340,7 +340,7 @@
         "KillCheckModifier": {
           "Class": "Base",
           "Subclass": "KillcheckModifier",
-          "Duration": 1
+          "Duration": 1.0
         },
         "LeapModifier": {
           "Class": "HornetLeap",
@@ -361,7 +361,7 @@
           }
         },
         "MaxFlyHeight": 1720,
-        "MinVelocityZ": -20,
+        "MinVelocityZ": -20.0,
         "Name": "Flight",
         "Upgrades": [
           {
@@ -450,7 +450,7 @@
           },
           "MinVelocityZ": {
             "Name": null,
-            "Value": -20
+            "Value": -20.0
           },
           "WeaponRecoilReduction": {
             "Name": "Recoil Reduction",
@@ -464,7 +464,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 42,
+          "Value": 42.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -473,7 +473,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -493,7 +493,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Leap into the air and <span class=\"highlight\">fly</span>. While in flight your weapon deals <span class=\"highlight\">bonus spirit damage</span> and your items have increased <span class=\"highlight\">range.</span>",
           "plain_text": "Leap into the air and fly. While in flight your weapon deals bonus spirit damage and your items have increased range."
         },
@@ -502,7 +502,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+50%</span> base Ammo while flying",
           "plain_text": "+50% base Ammo while flying"
         },
@@ -511,7 +511,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Hero Kills <span class=\"highlight\">Refresh</span> Duration. <br><span class=\"highlight\">+10</span> Spirit Damage with increased Spirit scaling",
           "plain_text": "Hero Kills Refresh Duration.\n+10 Spirit Damage with increased Spirit scaling"
         }
@@ -523,13 +523,13 @@
       "internal_key": "citadel_ability_hornet_sting",
       "data": {
         "AbilityCooldown": {
-          "Value": 32,
+          "Value": 32.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
@@ -564,14 +564,14 @@
         "Key": "citadel_ability_hornet_sting",
         "Name": "Crow Familiar",
         "TechArmorDamageReduction": -6,
-        "TickRate": 1,
+        "TickRate": 1.0,
         "Upgrades": [
           {
             "HealAmpReceivePenaltyPercent": -35,
             "HealAmpRegenPenaltyPercent": -35
           },
           {
-            "AbilityCooldown": -16,
+            "AbilityCooldown": -16.0,
             "DotHealthPercent": 0.5
           },
           {
@@ -644,7 +644,7 @@
             "DescKey": "citadel_ability_hornet_sting_t1_desc"
           },
           {
-            "AbilityCooldown": -16,
+            "AbilityCooldown": -16.0,
             "DotHealthPercent": 0.5,
             "DescKey": "citadel_ability_hornet_sting_t2_desc"
           },
@@ -673,7 +673,7 @@
           },
           "TickRate": {
             "Name": null,
-            "Value": 1
+            "Value": 1.0
           },
           "VisualSplashRadius": {
             "Name": null,
@@ -682,7 +682,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 32,
+          "Value": 32.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -691,7 +691,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -702,7 +702,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Your crow familiar deals <span class=\"highlight\">impact damage</span>, reduces their bullet resist and applies a <span class=\"highlight\">bleed</span> that deals damage based on the <span class=\"highlight\">target's current health</span>.",
           "plain_text": "Your crow familiar deals impact damage, reduces their bullet resist and applies a bleed that deals damage based on the target's current health."
         },
@@ -711,7 +711,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Applies <span class=\"highlight\">-35%</span> Healing Reduction",
           "plain_text": "Applies -35% Healing Reduction"
         },
@@ -720,7 +720,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+0.5%</span> Bleed Damage <br><span class=\"highlight\">-16s</span> Cooldown",
           "plain_text": "+0.5% Bleed Damage\n-16s Cooldown"
         },
@@ -729,7 +729,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+2s</span> Duration <br><span class=\"highlight\">-8% Bullet Resist</span> <br><span class=\"highlight\">-8% Spirit Resist</span>",
           "plain_text": "+2s Duration\n-8% Bullet Resist\n-8% Spirit Resist"
         }
@@ -748,7 +748,7 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 55,
+          "Value": 55.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -802,15 +802,15 @@
         "MoveSpeed": 4,
         "Name": "Assassinate",
         "Range": 1000,
-        "ShotRadius": 4,
+        "ShotRadius": 4.0,
         "SnipeModifier": {
           "Class": "CitadelHornetSnipe",
           "Subclass": "CitadelHornetSnipe"
         },
-        "TimeToFullCharge": 1,
+        "TimeToFullCharge": 1.0,
         "Upgrades": [
           {
-            "AbilityCooldown": -15
+            "AbilityCooldown": -15.0
           },
           {
             "LowHealthEnemyDamageBonus": 80
@@ -861,7 +861,7 @@
             {
               "Key": "TimeToFullCharge",
               "Name": "Full Charge Time",
-              "Value": 1,
+              "Value": 1.0,
               "Type": "duration"
             },
             {
@@ -880,7 +880,7 @@
         },
         "Upgrades": [
           {
-            "AbilityCooldown": -15
+            "AbilityCooldown": -15.0
           },
           {
             "LowHealthEnemyDamageBonus": 80
@@ -926,7 +926,7 @@
           },
           "ShotRadius": {
             "Name": null,
-            "Value": 4
+            "Value": 4.0
           },
           "ViewPunch": {
             "Name": null,
@@ -944,7 +944,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 55,
+          "Value": 55.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -968,7 +968,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Use your scoped rifle to fire a powerful shot over long distances. Deal only partial damage until fully charged after 1s of being scoped. Does <span class=\"highlight\">bonus damage</span> to enemies with <span class=\"highlight\">less than 50% health</span> remaining. Landing a killing blow on a player with Assassinate <span class=\"highlight\">grants you bonus weapon damage</span>.",
           "plain_text": "Use your scoped rifle to fire a powerful shot over long distances. Deal only partial damage until fully charged after 1s of being scoped. Does bonus damage to enemies with less than 50% health remaining. Landing a killing blow on a player with Assassinate grants you bonus weapon damage."
         }
@@ -1035,5 +1035,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

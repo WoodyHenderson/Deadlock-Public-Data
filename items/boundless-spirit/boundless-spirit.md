@@ -5,12 +5,12 @@ domain: items
 topics: [item, spirit, tier-4]
 aliases: ["upgrade_boundless_spirit"]
 summary: "Boundless Spirit is a currently purchasable Deadlock item whose displayed effects include Spirit Power, Bonus Health, Out of Combat Regen."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Boundless Spirit
@@ -26,6 +26,7 @@ Boundless Spirit is a currently purchasable Deadlock item whose displayed effect
 - **Cost:** 6400 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** MagicDamage, Movement, Healing
 - **Target types:** none listed

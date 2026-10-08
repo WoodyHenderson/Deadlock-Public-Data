@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Celeste is a selectable Marksman hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.celeste.125568
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Celeste
@@ -52,27 +52,26 @@ Internal key: `ability_unicorn_radiantblast`.
 **Upgrade descriptions** (where supplied by the source):
 
 - **Tier 2:** -10s Cooldown and +3m Cast Range
-- **Tier 3:** +25 Damage and Increased Spirit Scaling
+- **Tier 3:** +22 Damage and Increased Spirit Scaling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorShowCastRangeAsSatSphereWhileCasting`, `BehaviorUseLagCompensationForUnitTargeting`, `BehaviorDontInterruptSlideOnCast`, `BehaviorDontInterruptSlideOnCast`.
 
 | Card field | Base value |
 | --- | ---: |
-| Spirit Lifesteal | 20 (+1 per healing) |
+| Spirit Lifesteal | 18 (+1 per healing) |
 | Flare Damage | 40 (+0.47 per spirit) |
-| Duration | 8 |
-| Cooldown | 20 (+1 per cooldown) |
+| Duration | 8 (+0.05 per spirit, +1 per duration) |
 | Cast Range | 10 (+1 per range) |
+| Cooldown | 20 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityLifestealPercentHero":15}`
 - Tier 2: `{"AbilityCastRange":3,"AbilityCooldown":-10}`
-- Tier 3: `{"Damage":{"Value":25,"Scale":{"Value":0.2,"Type":"spirit"}}}`
-
+- Tier 3: `{"Damage":{"Value":22,"Scale":{"Value":0.2,"Type":"spirit"}}}`
 ### 2. Dazzling Trick
 
 Internal key: `ability_unicorn_prismaticguard`.
@@ -87,7 +86,7 @@ Internal key: `ability_unicorn_prismaticguard`.
 - **Tier 2:** +70 Barrier and Increased Barrier Spirit Scaling
 - **Tier 3:** +1.25 Silence Duration and -20s Cooldown. Allows Shining Wonder Bounce.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorProjectilePassThroughWorld`.
@@ -97,14 +96,13 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorPro
 | Barrier | 100 (+0.8 per spirit) |
 | Move Speed | 0 |
 | Buff Duration | 4 (+1 per duration) |
-| Cooldown | 34 (+1 per cooldown) |
+| Cooldown | 38 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
 - Tier 1: `{"BonusMoveSpeed":3.5}`
 - Tier 2: `{"CombatBarrier":{"Value":70,"Scale":{"Value":0.76,"Type":"spirit"}}}`
 - Tier 3: `{"DebuffDuration":1.25,"AbilityCooldown":-20}`
-
 ### 3. Radiant Daggers
 
 Internal key: `ability_unicorn_luminousstrike`.
@@ -117,9 +115,9 @@ Internal key: `ability_unicorn_luminousstrike`.
 
 **Upgrade descriptions** (where supplied by the source):
 
-- **Tier 2:** -22s Cooldown and +80 Impact Damage
+- **Tier 2:** -22s Cooldown and +70 Impact Damage
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorAlwaysPreviewRadius`, `BehaviorDisplaysDamageImpact`, `BehaviorProjectilePassThroughWorld`, `BehaviorCanSetQuickCast`.
@@ -130,17 +128,18 @@ Behavior flags: `BehaviorAlwaysPreviewRadius`, `BehaviorDisplaysDamageImpact`, `
 | Spirit Amp per Stack | 7 |
 | Fire Rate per Stack | 0 |
 | Explosion Radius | 8 (+1 per range) |
+| PreExplosionDuration | 1.4 |
+| BuffMaxStacks | 6 |
 | Buff Duration | 30 (+1 per duration) |
-| Cooldown | 33 (+1 per cooldown) |
 | Cast Range | 30 (+1 per range) |
 | Charges | 1 (+1 per max charges) |
+| Cooldown | 33 (+1 per cooldown) |
 | Charge Delay | 2 (+1 per charge cooldown) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCharges":2}`
-- Tier 2: `{"ImpactDamage":80,"AbilityCooldown":-22}`
+- Tier 2: `{"ImpactDamage":70,"AbilityCooldown":-22}`
 - Tier 3: `{"MagicIncreasePerStack":4,"FireRatePerStack":9}`
-
 ### 4. Shining Wonder
 
 Internal key: `ability_unicorn_dazzlingorb`.
@@ -153,11 +152,11 @@ Internal key: `ability_unicorn_dazzlingorb`.
 
 **Upgrade descriptions** (where supplied by the source):
 
-- **Tier 1:** -20% Move Speed and -15% Dash Distance
+- **Tier 1:** -16% Move Speed and -14% Dash Distance
 - **Tier 2:** +90 Damage and Increased Spirit Scaling
-- **Tier 3:** +8 Max Bounces and -30s Cooldown
+- **Tier 3:** +6 Max Bounces and -30s Cooldown
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorCannotCancelDuringChannel`, `BehaviorCooldownOnChannelEnd`.
@@ -165,19 +164,19 @@ Behavior flags: `BehaviorChannelled`, `BehaviorProjectile`, `BehaviorNoTarget`, 
 | Card field | Base value |
 | --- | ---: |
 | Damage | 140 (+0.6 per spirit) |
-| Move Speed | 40 |
+| Move Speed | 32 |
 | Bounces | 8 |
-| Dash Distance | -25 |
+| Dash Distance | -22 |
 | Slow Duration | 1.5 (+1 per duration) |
-| Bounce Range | 16.5 (+1 per range) |
+| Bounce Range | 15.5 (+1 per range) |
+| BounceGrace | 3.25 |
 | Cooldown | 160 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
-- Tier 1: `{"GroundDashReductionPercent":-15,"SlowPercent":20}`
+- Tier 1: `{"GroundDashReductionPercent":-14,"SlowPercent":16}`
 - Tier 2: `{"Damage":{"Value":90,"Scale":{"Value":0.45,"Type":"spirit"}}}`
-- Tier 3: `{"MaxBounces":8,"AbilityCooldown":-30}`
-
+- Tier 3: `{"MaxBounces":6,"AbilityCooldown":-30}`
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

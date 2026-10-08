@@ -5,15 +5,16 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Venator is a selectable Marksman hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
+  - github.deadlock-data.changelogs.raw.fc4f540f12e0
   - wiki.venator.124906
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Venator
@@ -55,7 +56,7 @@ Internal key: `ability_priest_flashbang`.
 - **Tier 2:** +1.5m Radius & +1s Burn Duration
 - **Tier 3:** -20% Healing Reduction and allow Charges
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorDontInterruptSlideOnCast`.
@@ -64,19 +65,19 @@ Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorD
 | --- | ---: |
 | Damage | 35 (+1 per weapon damage increase) |
 | Healing Reduction | -30 |
-| Damage Per Second | 10 |
+| Damage Per Second | 10 (+1.6 per power increase, +1 per weapon damage) |
 | Max Health as Damage | 0 |
 | Move Speed | 0 |
 | Fire Rate | 0 |
 | Burn Duration | 3.5 (+1 per duration) |
 | Burn Radius | 4.5 (+1 per range) |
 | Cooldown | 25 (+1 per cooldown) |
+| Radius | 4.5 (+1 per radius) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-5}`
-- Tier 2: `{"Radius":1.5,"BurnRadius":1.5,"BurnDuration":1}`
+- Tier 2: `{"Radius":1.5,"BurnRadius":1.5,"BurnDuration":1.0}`
 - Tier 3: `{"HealAmpReceivePenaltyPercent":-20,"HealAmpRegenPenaltyPercent":-20,"AbilityCharges":1,"AbilityCooldownBetweenCharge":3}`
-
 ### 2. Gutshot
 
 Internal key: `ability_priest_knockback`.
@@ -91,7 +92,7 @@ Internal key: `ability_priest_knockback`.
 - **Tier 2:** -10s Ability Cooldown and +0.4s Stun Duration
 - **Tier 3:** On Wall Stun: Your next heavy melee is blessed
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorDontInterruptSlideOnCast`.
@@ -103,15 +104,14 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorDon
 | Stun Duration | 0.6 (+1 per duration) |
 | Debuff Duration | 0 |
 | Wall Stun Range | 7 (+1 per range) |
-| Cooldown | 23 (+1 per cooldown) |
 | Cast Range | 10 (+1 per range) |
+| Cooldown | 23 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
 - Tier 1: `{"Damage":25}`
 - Tier 2: `{"AbilityCooldown":-10,"StunDuration":0.4}`
 - Tier 3: `{"BuffDuration":5}`
-
 ### 3. Hex-Lined Snap Trap
 
 Internal key: `ability_priest_beartrap`.
@@ -126,7 +126,7 @@ Internal key: `ability_priest_beartrap`.
 
 - **Tier 3:** +1 Charge Deal +30% damage against revealed targets
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorPreventTrainingBotUsage`, `BehaviorDontInterruptSlideOnCast`.
@@ -138,15 +138,15 @@ Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorP
 | Damage Taken | 0 |
 | Reveal Duration | 6 (+1 per duration) |
 | Lifetime | 30 (+1 per duration) |
-| Cooldown | 28 (+1 per cooldown) |
 | Charges | 2 (+1 per max charges) |
+| Cooldown | 28 (+1 per cooldown) |
 | Charge Delay | 8 (+1 per charge cooldown) |
+| Radius | 2 (+1 per range) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-11}`
-- Tier 2: `{"ImmobilizeDuration":1}`
+- Tier 2: `{"ImmobilizeDuration":1.0}`
 - Tier 3: `{"IncomingDamagePercentFromCaster":30,"AbilityCharges":1}`
-
 ### 4. Ira Domini
 
 Internal key: `ability_priest_weaponswap`.
@@ -163,7 +163,7 @@ Internal key: `ability_priest_weaponswap`.
 - **Tier 2:** -15s Ability Cooldown and +65 Bonus Damage
 - **Tier 3:** All Stakes are Blessed
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorCannotCancelDuringChannel`, `BehaviorDontInterruptSlideOnCast`, `BehaviorRefundHalfCooldownOnChannelInterrupt`.
@@ -171,19 +171,20 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorCan
 | Card field | Base value |
 | --- | ---: |
 | Damage | 120 (+1.5 per weapon damage increase) |
-| Bonus Damage | 115 |
+| Bonus Damage | 115 (+3 per power increase, +1 per weapon damage) |
 | Execute Threshold | 8 |
 | Move Speed | 0 |
 | Slow Duration | 0 |
 | Cooldown | 160 (+1 per cooldown) |
-| Duration | 15 (+1 per duration) |
 | Charge Delay | -1 |
+| Duration | 15 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"BonusMoveSpeed":1.2}`
 - Tier 2: `{"BonusDamage":65,"AbilityCooldown":-15}`
 - Tier 3: `{"AllStakesBlessed":1}`
 
+**patch_note_only:** The September 16 notes state Ira Domini now works with Ricochet (all shots bounce) and can split-shot, releasing one extra bolt on each side for three total. Source: `github.deadlock-data.changelogs.raw.fc4f540f12e0`.
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

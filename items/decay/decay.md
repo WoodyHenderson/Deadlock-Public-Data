@@ -5,12 +5,12 @@ domain: items
 topics: [item, spirit, tier-3]
 aliases: ["upgrade_rupture"]
 summary: "Inflict damage over time to a target, dealing damage based on their current health. Decay's damage is non-lethal and does not apply item procs."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Decay
@@ -26,6 +26,7 @@ Inflict damage over time to a target, dealing damage based on their current heal
 - **Cost:** 3200 souls
 - **Activation:** press
 - **Active item:** yes
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** MagicDamage, Disruption
 - **Target types:** HeroEnemy
@@ -41,9 +42,9 @@ No component item is listed.
 | Innate | Spirit Power | 8 | normal |
 | Innate | Bonus Health | 65 | normal |
 | Active | Cast Range | 20m | normal |
-| Active | Duration | 10s | normal |
+| Active | Duration | 12s | normal |
 | Active | Cooldown | 30.0s | normal |
-| Active | Bleed Damage | 2.6%/sec | important |
+| Active | Bleed Damage | 1.95%/sec | important |
 | Active | Healing Reduction | -50% | important |
 | Active | Cast Range | 20m | important |
 
@@ -55,5 +56,5 @@ No component item is listed.
 - `BonusHealth`: 90
 - `HealAmpReceivePenaltyPercent`: -20
 - `HealAmpRegenPenaltyPercent`: -20
-- `DotHealthPercent`: .5
+- `DotHealthPercent`: .375
 - `AbilityCooldown`: -10

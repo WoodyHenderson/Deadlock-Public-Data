@@ -5,12 +5,12 @@ domain: items
 topics: [item, vitality, tier-5]
 aliases: ["upgrade_celestial_guidance"]
 summary: "Applies an extremely powerful cleanse that replenishes your allies globally."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Celestial Blessing
@@ -26,6 +26,7 @@ Applies an extremely powerful cleanse that replenishes your allies globally.
 - **Cost:** 9999 souls
 - **Activation:** instant_cast
 - **Active item:** yes
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** none listed
 - **Target types:** HeroFriendly, TrooperFriendly, MinionFriendly

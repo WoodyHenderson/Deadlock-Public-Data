@@ -5,12 +5,12 @@ domain: items
 topics: [item, vitality, tier-5]
 aliases: ["upgrade_cloak_of_opportunity"]
 summary: "Block the next debuff that would apply movement lock, Stun, Chained, Immobilize, or Sleep and become Unstoppable. Also gain a Barrier and bonus move speed"
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Cloak of Opportunity
@@ -26,6 +26,7 @@ Block the next debuff that would apply movement lock, Stun, Chained, Immobilize,
 - **Cost:** 9999 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** none listed
 - **Target types:** AllFriendly

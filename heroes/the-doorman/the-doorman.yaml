@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.the-doorman",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.the-doorman.125570",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "The Doorman",
   "aliases": [],
@@ -25,8 +25,8 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 755,
-    "health_regeneration_per_second": 1,
+    "maximum_health": 755.0,
+    "health_regeneration_per_second": 1.0,
     "light_melee_damage": 50,
     "heavy_melee_damage": 116,
     "move_speed_meters_per_second": 7.9,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 16.1,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.62
     },
     "air_dash": {
       "speed_meters_per_second": 18.6,
-      "distance_meters": 8,
+      "distance_meters": 8.0,
       "duration_seconds": 0.43
     },
     "stamina": {
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": -30,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": -30.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 1.25,
-    "MaxHealth": 42,
+    "MaxHealth": 42.0,
     "PowerIncreases": 1,
     "TechPower": 1.1,
     "LightMeleeDamage": 1.58,
@@ -74,15 +74,15 @@
     "RoundsPerSecond": 1.5873,
     "ClipSize": 8,
     "ReloadTime": 2.4,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
     "FalloffStartRange": 19.99,
     "FalloffEndRange": 57.51,
-    "FalloffStartScale": 1,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
-    "BulletGravityScale": 0,
+    "BulletGravityScale": 0.0,
     "BulletRadius": 0.254,
     "BulletsPerShot": 1,
     "BulletsPerBurst": 1,
@@ -114,7 +114,7 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 18,
+          "Value": 18.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -189,7 +189,7 @@
             "Type": "radius"
           }
         },
-        "SlowPercent": 35,
+        "SlowPercent": 28,
         "Upgrades": [
           {
             "AbilityCharges": 1
@@ -266,7 +266,7 @@
                 "Title": "Explosion",
                 "Key": "SlowPercent",
                 "Name": "Move Speed",
-                "Value": 35,
+                "Value": 28,
                 "Type": "slow"
               }
             ]
@@ -363,7 +363,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 18,
+          "Value": 18.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -405,7 +405,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Throw out a call bell that deals {g:citadel_inline_attribute:'SpiritDamage'} on impact. After a short delay it explodes, dealing additional {g:citadel_inline_attribute:'SpiritDamage'} and causing affected enemies to suffer reduced weapon accuracy and movement {g:citadel_inline_attribute:'Slow'}.<br><br><span class=\"diminish\">Can be shot to detonate early.</span>",
           "plain_text": "Throw out a call bell that deals spirit damage on impact. After a short delay it explodes, dealing additional spirit damage and causing affected enemies to suffer reduced weapon accuracy and movement slow.\nCan be shot to detonate early."
         },
@@ -414,7 +414,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+1 Charge",
           "plain_text": "+1 Charge"
         },
@@ -423,7 +423,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+30 Impact Damage<br>+40 Explosion Damage",
           "plain_text": "+30 Impact Damage\n+40 Explosion Damage"
         },
@@ -432,7 +432,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+4.5m Radius<br>+26s Bell Lifetime<br>Improved Scaling",
           "plain_text": "+4.5m Radius\n+26s Bell Lifetime\nImproved Scaling"
         }
@@ -457,7 +457,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 15,
           "Scale": {
@@ -476,7 +476,7 @@
         "CombatBarrier": {
           "Value": 0,
           "Scale": {
-            "Value": 0,
+            "Value": 0.0,
             "Type": "spirit"
           }
         },
@@ -485,7 +485,7 @@
           "Value": 65,
           "Scale": [
             {
-              "Value": 0,
+              "Value": 0.0,
               "Type": "spirit"
             },
             {
@@ -544,7 +544,7 @@
                 "Value": 65,
                 "Scale": [
                   {
-                    "Value": 0,
+                    "Value": 0.0,
                     "Type": "spirit"
                   },
                   {
@@ -560,7 +560,7 @@
                 "Name": "Barrier",
                 "Value": 0,
                 "Scale": {
-                  "Value": 0,
+                  "Value": 0.0,
                   "Type": "spirit"
                 },
                 "Type": "bullet_armor_up"
@@ -641,7 +641,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -661,7 +661,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Place two connected doors in the world. Players and most projectiles entering one door will exit out through the other. The doors will close at the end of the duration.<br><br><span class=\"diminish\">The two doors must be placed within the doorway distance of each other.</span>",
           "plain_text": "Place two connected doors in the world. Players and most projectiles entering one door will exit out through the other. The doors will close at the end of the duration.\nThe two doors must be placed within the doorway distance of each other."
         },
@@ -670,7 +670,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Grants a Barrier first time traveling through doors",
           "plain_text": "Grants a Barrier first time traveling through doors"
         },
@@ -679,7 +679,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+30m Cast Range. +40m Doorway Distance<br> and scales with Spirit Power.",
           "plain_text": "+30m Cast Range. +40m Doorway Distance\nand scales with Spirit Power."
         }
@@ -705,7 +705,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 6,
           "Scale": {
@@ -883,7 +883,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -903,7 +903,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Send out a luggage Cart that deals {g:citadel_inline_attribute:'SpiritDamage'} and {g:citadel_inline_attribute:'Pulls'} enemy heroes along its path. <br><br>Can be alt cast with {g:citadel_binding:'AltCast'} to target friendly heroes instead.",
           "plain_text": "Send out a luggage Cart that deals spirit damage and pulls enemy heroes along its path.\nCan be alt cast with [Alt Cast] to target friendly heroes instead."
         },
@@ -912,7 +912,7 @@
           "card_paths": [
             "card.Info2.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "If the cart collides with a wall while dragging an enemy, it will deal bonus damage to the targets.",
           "plain_text": "If the cart collides with a wall while dragging an enemy, it will deal bonus damage to the targets."
         },
@@ -921,7 +921,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+25m Cast Range<br>+75 Damage on wall impact",
           "plain_text": "+25m Cast Range\n+75 Damage on wall impact"
         },
@@ -930,7 +930,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "-15s Cooldown and 1.25s {g:citadel_inline_attribute:'Stun'} on wall impact",
           "plain_text": "-15s Cooldown and 1.25s stun on wall impact"
         }
@@ -962,7 +962,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 6.5,
         "AbilityPostCastDuration": 0.7,
         "AbilityUnitTargetLimit": 1,
@@ -976,7 +976,7 @@
         "Damage": {
           "Value": 75,
           "Scale": {
-            "Value": 1,
+            "Value": 1.0,
             "Type": "spirit"
           }
         },
@@ -1033,7 +1033,7 @@
           "Class": "DoormanHotelTeleportFx",
           "Subclass": "TeleportFx"
         },
-        "TimeSlowDuration": 1,
+        "TimeSlowDuration": 1.0,
         "TimeSlowPercentage": 100,
         "TimeslowModifier": {
           "Class": "DoormanDiminishingTimestop",
@@ -1089,7 +1089,7 @@
                 "Name": "Damage",
                 "Value": 75,
                 "Scale": {
-                  "Value": 1,
+                  "Value": 1.0,
                   "Type": "spirit"
                 },
                 "Type": "tech_damage"
@@ -1167,7 +1167,7 @@
           },
           "TimeSlowDuration": {
             "Name": null,
-            "Value": 1
+            "Value": 1.0
           },
           "TimeSlowPercentage": {
             "Name": null,
@@ -1203,7 +1203,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -1219,7 +1219,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Send the target's physical body to be a guest at the Baroness Hotel. The guest is to promptly make their way to the exit elevator, where they'll be sent back to their original position. <br><br>A stay at the Baroness Hotel is paid for in {g:citadel_inline_attribute:'SpiritDamage'}. Failure to check-out on time costs additional {g:citadel_inline_attribute:'SpiritDamage'}.",
           "plain_text": "Send the target's physical body to be a guest at the Baroness Hotel. The guest is to promptly make their way to the exit elevator, where they'll be sent back to their original position.\nA stay at the Baroness Hotel is paid for in spirit damage. Failure to check-out on time costs additional spirit damage."
         },
@@ -1228,7 +1228,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "1 Stamina Drain and -20 Cooldown",
           "plain_text": "1 Stamina Drain and -20 Cooldown"
         },
@@ -1237,7 +1237,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+150 Damage<br>+1.5s Stun on Failure to Check Out",
           "plain_text": "+150 Damage\n+1.5s Stun on Failure to Check Out"
         },
@@ -1246,7 +1246,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Unstoppable while the Baroness is occupied.<br>15s Cooldown on Failure to Check Out.",
           "plain_text": "Unstoppable while the Baroness is occupied.\n15s Cooldown on Failure to Check Out."
         }
@@ -1309,5 +1309,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

@@ -5,12 +5,12 @@ domain: items
 topics: [item, weapon, tier-2]
 aliases: ["upgrade_weapon_backstabber"]
 summary: "Dealing weapon damage at close range opens a wound and grants you bonus move speed. Wounded enemies take spirit damage over time, have reduced bullet resist, and are revealed through walls."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Stalker
@@ -26,6 +26,7 @@ Dealing weapon damage at close range opens a wound and grants you bonus move spe
 - **Cost:** 1600 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** WeaponDamage
 - **Target types:** none listed

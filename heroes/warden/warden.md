@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Warden is a selectable Brawler hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.warden.124932
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Warden
@@ -55,7 +55,7 @@ Internal key: `ability_warden_crowd_control`.
 - **Tier 2:** +35 Damage and -25% Weapon Damage
 - **Tier 3:** -7s Cooldown and +2m Radius Applies -30% Fire Rate
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorDontInterruptSlideOnCast`.
@@ -63,19 +63,19 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorDontInterruptSlideOnCas
 | Card field | Base value |
 | --- | ---: |
 | Damage | 60 (+0.63 per spirit) |
-| Move Speed | 20 |
+| Move Speed | 16 |
 | Weapon Damage | -25 |
 | Slow Duration | 3 (+1 per duration) |
 | Debuff Duration | 7 (+1 per duration) |
 | Stamina Reduction | 0 |
 | Cooldown | 12 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Radius | 5.5 (+1 per radius) |
 
 Upgrade deltas:
 - Tier 1: `{"StaminaReduction":1}`
 - Tier 2: `{"Damage":35,"WeaponPowerDebuff":-25}`
 - Tier 3: `{"FireRateSlow":30,"AbilityCooldown":-7,"Radius":2}`
-
 ### 2. Willpower
 
 Internal key: `ability_warden_high_alert`.
@@ -88,9 +88,9 @@ Internal key: `ability_warden_high_alert`.
 **Upgrade descriptions** (where supplied by the source):
 
 - **Tier 2:** -24s Cooldown and +2s Duration
-- **Tier 3:** +40% Debuff Resistance and improved Barrier scaling
+- **Tier 3:** +30% Debuff Resistance and improved Barrier scaling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 | Card field | Base value |
@@ -122,25 +122,24 @@ Internal key: `ability_warden_lock_down`.
 - **Tier 2:** +0.75s Duration
 - **Tier 3:** -14s Cooldown Silences enemies until they escape or are immobilized
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorUseInstantCastUnitTargetUi`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
 
 | Card field | Base value |
 | --- | ---: |
-| Damage | 110 (+2.43734 per spirit) |
+| Damage | 110 (+2.437344 per spirit) |
 | Immobilize Duration | 1.75 (+1 per duration) |
 | Escape Time | 2.8 |
 | Escape Range | 20 (+1 per range) |
-| Cooldown | 34 (+1 per cooldown) |
 | Cast Range | 15 (+1 per range) |
+| Cooldown | 34 (+1 per cooldown) |
 
 Upgrade deltas:
 - Tier 1: `{"BulletArmorReduction":20,"BulletArmorReductionDuration":5}`
 - Tier 2: `{"ImmobilizeDuration":0.75}`
 - Tier 3: `{"AbilityCooldown":-14,"SilenceDebuff":1}`
-
 ### 4. Last Stand
 
 Internal key: `ability_warden_riot_protocol`.
@@ -156,7 +155,7 @@ Internal key: `ability_warden_riot_protocol`.
 - **Tier 2:** +40.5 DPS -30s Cooldown
 - **Tier 3:** +4s Duration Unstoppable and +30% Resists while channeling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorExclusiveUse`, `BehaviorDisplaysDamageImpact`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -171,14 +170,14 @@ Behavior flags: `BehaviorExclusiveUse`, `BehaviorDisplaysDamageImpact`, `Behavio
 | Bullet Resist | 50 |
 | Spirit Resist | 50 |
 | Cooldown | 180 (+1 per cooldown) |
-| Duration | 6 (+1 per duration) |
 | Charge Delay | -1 |
+| Duration | 6 (+1 per duration) |
+| Radius | 12 (+1 per radius) |
 
 Upgrade deltas:
 - Tier 1: `{"Radius":4}`
-- Tier 2: `{"PulseDPS":40.5,"AbilityCooldown":-30}`
+- Tier 2: `{"PulseDPS":40.5,"AbilityCooldown":-30.0}`
 - Tier 3: `{"AbilityDuration":4,"UnstoppableCastDelay":1,"BulletResist":30,"TechResist":30}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Ivy is a selectable Marksman hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.ivy.124889
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Ivy
@@ -54,7 +54,7 @@ Internal key: `citadel_ability_tengu_urn`.
 - **Tier 2:** +2m Radius and increased DPS Spirit scaling
 - **Tier 3:** Enemies caught in thorns for 2s are Immobilized for +1.6s
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorProjectileFiredAsBullet`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -62,17 +62,17 @@ Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorP
 | Card field | Base value |
 | --- | ---: |
 | Damage Per Second | 40 (+0.55 per spirit) |
-| Move Speed | 35 |
-| Cooldown | 32 (+1 per cooldown) |
-| Duration | 4 (+1 per duration) |
+| Move Speed | 28 |
 | Charges | 1 (+1 per max charges) |
+| Cooldown | 32 (+1 per cooldown) |
 | Charge Delay | 5 (+1 per charge cooldown) |
+| Duration | 4 (+1 per duration) |
+| Radius | 6 (+1 per radius) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCharges":1}`
 - Tier 2: `{"Radius":2,"DPS":{"Value":0,"Scale":{"Value":0.5,"Type":"spirit"}}}`
 - Tier 3: `{"TimeToEntangle":2,"EntangleDuration":1.6}`
-
 ### 2. Kudzu Connection
 
 Internal key: `citadel_ability_tangotether`.
@@ -89,7 +89,7 @@ Internal key: `citadel_ability_tangotether`.
 - **Tier 2:** +8% Fire Rate and +8% Bullet Lifesteal
 - **Tier 3:** Ability is always active
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`.
@@ -101,16 +101,15 @@ Behavior flags: `BehaviorDisplaysDamageImpact`.
 | Replicated Healing | 35 (+0.85 per power increase) |
 | Move Speed | 0 |
 | Tether Count | 1 |
-| Cooldown | 37 (+1 per cooldown) |
-| Duration | 12 (+1 per duration) |
 | Cast Range | 16 (+1 per range) |
+| Cooldown | 37 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Duration | 12 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"MoveSpeedBonus":2}`
 - Tier 2: `{"BonusFireRate":8,"BulletLifestealPercent":8}`
 - Tier 3: `{"AbilityDuration":-13,"AbilityCooldown":-37}`
-
 ### 3. Stone Form
 
 Internal key: `citadel_ability_tengu_stone_form`.
@@ -124,7 +123,7 @@ Internal key: `citadel_ability_tengu_stone_form`.
 
 - **Tier 3:** +0.75s Stun Duration and increased Damage spirit scaling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorCastableWhileBusy`, `BehaviorInterruptMeleeOnCast`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -135,14 +134,14 @@ Behavior flags: `BehaviorCastableWhileBusy`, `BehaviorInterruptMeleeOnCast`, `Be
 | Stun Duration | 0.75 (+1 per duration) |
 | Max Health Heal | 6 (+1 per healing) |
 | Cooldown | 40 (+1 per cooldown) |
-| Duration | 3 (+1 per duration) |
 | Charge Delay | -1 |
+| Duration | 3 (+1 per duration) |
+| Radius | 5.75 (+1 per range) |
 
 Upgrade deltas:
-- Tier 1: `{"MaxHealthRegen":7}`
+- Tier 1: `{"MaxHealthRegen":6.0}`
 - Tier 2: `{"AbilityCooldown":-25}`
 - Tier 3: `{"StunDuration":0.75,"Damage":{"Value":0,"Scale":{"Value":1.5,"Type":"spirit"}}}`
-
 ### 4. Air Drop
 
 Internal key: `citadel_ability_tengu_airlift`.
@@ -158,10 +157,10 @@ Internal key: `citadel_ability_tengu_airlift`.
 **Upgrade descriptions** (where supplied by the source):
 
 - **Tier 1:** On Fly End : 300 Barrier to Ivy and ally that scales with Spirit
-- **Tier 2:** +40% Slow for 3s on enemies hit
+- **Tier 2:** +32% Slow for 3s on enemies hit
 - **Tier 3:** Silence for 3s on enemies hit. Increases damage and barrier scaling.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorAllowSelfCast`, `BehaviorUseInstantCastUnitTargetUi`, `BehaviorMovement`, `BehaviorRequireAbilityButtonToCancel`, `BehaviorCanSetQuickCast`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -178,16 +177,15 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorAllowSelfCast`, `Behavi
 | Bullet Resist | 0 |
 | Duration | 0 |
 | Silence Duration | 0 |
-| Cooldown | 100 (+1 per cooldown) |
-| Duration | 21 (+1 per duration) |
 | Cast Range | 22 (+1 per range) |
+| Cooldown | 100 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Duration | 21 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"AirDropBulletShield":{"Value":300,"Scale":{"Value":0.7,"Type":"spirit"}}}`
-- Tier 2: `{"SlowPercent":40,"DebuffDuration":3}`
-- Tier 3: `{"SilenceDuration":3,"ExplodeDamage":{"Value":0,"Scale":{"Value":1.5,"Type":"spirit"}},"AirDropBulletShield":{"Value":0,"Scale":{"Value":1,"Type":"spirit"}}}`
-
+- Tier 2: `{"SlowPercent":32,"DebuffDuration":3}`
+- Tier 3: `{"SilenceDuration":3,"ExplodeDamage":{"Value":0,"Scale":{"Value":1.5,"Type":"spirit"}},"AirDropBulletShield":{"Value":0,"Scale":{"Value":1.0,"Type":"spirit"}}}`
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

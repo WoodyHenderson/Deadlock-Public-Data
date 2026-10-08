@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.celeste",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.celeste.125568",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Celeste",
   "aliases": [],
@@ -25,7 +25,7 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 690,
+    "maximum_health": 690.0,
     "health_regeneration_per_second": 1,
     "light_melee_damage": 50,
     "heavy_melee_damage": 116,
@@ -35,18 +35,18 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 16.1,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.62
     },
     "air_dash": {
       "speed_meters_per_second": 18.6,
-      "distance_meters": 8,
+      "distance_meters": 8.0,
       "duration_seconds": 0.43
     },
     "stamina": {
       "charges": 4,
-      "cooldown_seconds": 5,
-      "regeneration_per_second": 0.2
+      "cooldown_seconds": 5.300259712725923,
+      "regeneration_per_second": 0.18867
     },
     "ability_resource": {
       "maximum": 0,
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": -25,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": -25.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.82,
-    "MaxHealth": 33,
+    "MaxHealth": 33.0,
     "PowerIncreases": 1,
     "TechPower": 1.1,
     "LightMeleeDamage": 1.58,
@@ -69,17 +69,17 @@
   },
   "spirit_scaling": {},
   "weapon": {
-    "BulletSpeed": 50,
+    "BulletSpeed": 50.0,
     "BulletDamage": 18,
     "RoundsPerSecond": 1.7241,
     "ClipSize": 8,
-    "ReloadTime": 2,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadTime": 2.0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
-    "FalloffStartRange": 22,
-    "FalloffEndRange": 60,
-    "FalloffStartScale": 1,
+    "FalloffStartRange": 22.0,
+    "FalloffEndRange": 60.0,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
     "BulletGravityScale": 0.2,
@@ -91,7 +91,7 @@
     "HitOnceAcrossAllBullets": false,
     "CanCrit": true,
     "AmmoConsumedPerShot": 1,
-    "ExplosionRadius": 0,
+    "ExplosionRadius": 0.0,
     "DPS": 31.034,
     "SustainedDPS": 21.686,
     "NameKey": "citadel_weapon_hero_unicorn_set",
@@ -123,7 +123,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 8,
           "Scale": [
@@ -138,7 +138,7 @@
           ]
         },
         "AbilityLifestealPercentHero": {
-          "Value": 20,
+          "Value": 18,
           "Scale": {
             "Value": 1,
             "Type": "healing"
@@ -188,7 +188,7 @@
           },
           {
             "Damage": {
-              "Value": 25,
+              "Value": 22,
               "Scale": {
                 "Value": 0.2,
                 "Type": "spirit"
@@ -207,7 +207,7 @@
               {
                 "Key": "AbilityLifestealPercentHero",
                 "Name": "Spirit Lifesteal",
-                "Value": 20,
+                "Value": 18,
                 "Scale": {
                   "Value": 1,
                   "Type": "healing"
@@ -275,7 +275,7 @@
           },
           {
             "Damage": {
-              "Value": 25,
+              "Value": 22,
               "Scale": {
                 "Value": 0.2,
                 "Type": "spirit"
@@ -334,7 +334,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -360,7 +360,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Blast enemies in a cone in front of you with a flare of light.  Blasted enemies take {g:citadel_inline_attribute:'SpiritDamage'} when attacked by Celeste and provides her <span class=\"highlight\">spirit lifesteal</span>.",
           "plain_text": "Blast enemies in a cone in front of you with a flare of light. Blasted enemies take spirit damage when attacked by Celeste and provides her spirit lifesteal."
         },
@@ -369,7 +369,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "-10s Cooldown and +3m Cast Range",
           "plain_text": "-10s Cooldown and +3m Cast Range"
         },
@@ -378,9 +378,9 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "+25 Damage and Increased Spirit Scaling",
-          "plain_text": "+25 Damage and Increased Spirit Scaling"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "+22 Damage and Increased Spirit Scaling",
+          "plain_text": "+22 Damage and Increased Spirit Scaling"
         }
       ]
     },
@@ -390,13 +390,13 @@
       "internal_key": "ability_unicorn_prismaticguard",
       "data": {
         "AbilityCooldown": {
-          "Value": 34,
+          "Value": 38,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BarrierDamagePercentage": 50,
         "BehaviourBits": [
@@ -582,7 +582,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 34,
+          "Value": 38,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -591,7 +591,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -602,7 +602,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Surround yourself in a protective prism. If the barrier is destroyed, it silences nearby enemies and deals a portion of the barrier as damage.",
           "plain_text": "Surround yourself in a protective prism. If the barrier is destroyed, it silences nearby enemies and deals a portion of the barrier as damage."
         },
@@ -611,7 +611,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+70 Barrier and Increased Barrier Spirit Scaling",
           "plain_text": "+70 Barrier and Increased Barrier Spirit Scaling"
         },
@@ -620,7 +620,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+1.25 Silence Duration and -20s Cooldown. Allows Shining Wonder Bounce.",
           "plain_text": "+1.25 Silence Duration and -20s Cooldown. Allows Shining Wonder Bounce."
         }
@@ -681,7 +681,7 @@
           "Subclass": "LuminousStrikeBuff"
         },
         "ChannelMoveSpeed": -1,
-        "ClimbHeight": 50,
+        "ClimbHeight": 50.0,
         "ExplosionInterval": 0.7,
         "ExplosionRadius": {
           "Value": 8,
@@ -709,7 +709,7 @@
             "AbilityCharges": 2
           },
           {
-            "ImpactDamage": 80,
+            "ImpactDamage": 70,
             "AbilityCooldown": -22
           },
           {
@@ -788,7 +788,7 @@
             "AbilityCharges": 2
           },
           {
-            "ImpactDamage": 80,
+            "ImpactDamage": 70,
             "AbilityCooldown": -22,
             "DescKey": "ability_unicorn_luminousstrike_t2_desc"
           },
@@ -815,7 +815,7 @@
           },
           "ClimbHeight": {
             "Name": null,
-            "Value": 50
+            "Value": 50.0
           },
           "ExplosionInterval": {
             "Name": "Beam Interval",
@@ -879,7 +879,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Call down a beam of light from the sky. After a short duration, the beam will fully form, causing an explosion that deals {g:citadel_inline_attribute:'SpiritDamage'} to all targets in the area.<br><br> Celeste will receive a stacking buff that increases her spirit damage anytime this hits an enemy hero.",
           "plain_text": "Call down a beam of light from the sky. After a short duration, the beam will fully form, causing an explosion that deals spirit damage to all targets in the area.\nCeleste will receive a stacking buff that increases her spirit damage anytime this hits an enemy hero."
         },
@@ -888,9 +888,9 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "-22s Cooldown and +80 Impact Damage",
-          "plain_text": "-22s Cooldown and +80 Impact Damage"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "-22s Cooldown and +70 Impact Damage",
+          "plain_text": "-22s Cooldown and +70 Impact Damage"
         }
       ]
     },
@@ -914,7 +914,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
           "BehaviorChannelled",
@@ -926,7 +926,7 @@
         ],
         "BounceGrace": 3.25,
         "BounceRadius": {
-          "Value": 16.5,
+          "Value": 15.5,
           "Scale": {
             "Value": 1,
             "Type": "range"
@@ -940,7 +940,7 @@
             "Type": "spirit"
           }
         },
-        "GroundDashReductionPercent": -25,
+        "GroundDashReductionPercent": -22,
         "IsDisabled": false,
         "Key": "ability_unicorn_dazzlingorb",
         "MaxBounces": 8,
@@ -978,11 +978,11 @@
             "Type": "duration"
           }
         },
-        "SlowPercent": 40,
+        "SlowPercent": 32,
         "Upgrades": [
           {
-            "GroundDashReductionPercent": -15,
-            "SlowPercent": 20
+            "GroundDashReductionPercent": -14,
+            "SlowPercent": 16
           },
           {
             "Damage": {
@@ -994,7 +994,7 @@
             }
           },
           {
-            "MaxBounces": 8,
+            "MaxBounces": 6,
             "AbilityCooldown": -30
           }
         ]
@@ -1019,7 +1019,7 @@
               {
                 "Key": "SlowPercent",
                 "Name": "Move Speed",
-                "Value": 40,
+                "Value": 32,
                 "Type": "slow"
               },
               {
@@ -1033,7 +1033,7 @@
             {
               "Key": "GroundDashReductionPercent",
               "Name": "Dash Distance",
-              "Value": -25,
+              "Value": -22,
               "Type": "slow"
             },
             {
@@ -1049,7 +1049,7 @@
             {
               "Key": "BounceRadius",
               "Name": "Bounce Range",
-              "Value": 16.5,
+              "Value": 15.5,
               "Scale": {
                 "Value": 1,
                 "Type": "range"
@@ -1065,8 +1065,8 @@
         },
         "Upgrades": [
           {
-            "GroundDashReductionPercent": -15,
-            "SlowPercent": 20,
+            "GroundDashReductionPercent": -14,
+            "SlowPercent": 16,
             "DescKey": "ability_unicorn_dazzlingorb_t1_desc"
           },
           {
@@ -1080,7 +1080,7 @@
             "DescKey": "ability_unicorn_dazzlingorb_t2_desc"
           },
           {
-            "MaxBounces": 8,
+            "MaxBounces": 6,
             "AbilityCooldown": -30,
             "DescKey": "ability_unicorn_dazzlingorb_t3_desc"
           }
@@ -1131,7 +1131,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -1142,7 +1142,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Launch a deadly orb of light that deals {g:citadel_inline_attribute:'SpiritDamage'} and applies {g:citadel_inline_attribute:'Slow'} and reduces <span class=\"highlight\">Dash Distance</span> on impact. The orb then bounces to the enemies within range. If no target is found, the orb will linger for a short duration while continuing to look for targets.<br><br><span class=\"diminish\">Prioritizes enemy heroes when picking targets.",
           "plain_text": "Launch a deadly orb of light that deals spirit damage and applies slow and reduces Dash Distance on impact. The orb then bounces to the enemies within range. If no target is found, the orb will linger for a short duration while continuing to look for targets.\nPrioritizes enemy heroes when picking targets."
         },
@@ -1151,16 +1151,16 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "-20% Move Speed and -15% Dash Distance",
-          "plain_text": "-20% Move Speed and -15% Dash Distance"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "-16% Move Speed and -14% Dash Distance",
+          "plain_text": "-16% Move Speed and -14% Dash Distance"
         },
         {
           "localization_key": "ability_unicorn_dazzlingorb_t2_desc",
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+90 Damage and Increased Spirit Scaling",
           "plain_text": "+90 Damage and Increased Spirit Scaling"
         },
@@ -1169,9 +1169,9 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "+8 Max Bounces and -30s Cooldown",
-          "plain_text": "+8 Max Bounces and -30s Cooldown"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "+6 Max Bounces and -30s Cooldown",
+          "plain_text": "+6 Max Bounces and -30s Cooldown"
         }
       ]
     }
@@ -1235,5 +1235,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

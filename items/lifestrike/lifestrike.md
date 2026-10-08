@@ -5,12 +5,12 @@ domain: items
 topics: [item, vitality, tier-3]
 aliases: ["upgrade_boxing_glove"]
 summary: "Your Melee Attack applies Movement Slow and heals you for a percentage of the Melee Damage dealt plus a fixed amount. This heal is 40% effective vs non-heroes. Cooldown is 1.5x as long for Light Melee hits."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Lifestrike
@@ -26,6 +26,7 @@ Your Melee Attack applies Movement Slow and heals you for a percentage of the Me
 - **Cost:** 3200 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** Durability, Melee, Healing
 - **Target types:** AllEnemy
@@ -42,9 +43,9 @@ Your Melee Attack applies Movement Slow and heals you for a percentage of the Me
 | Innate | Melee Damage | 16% | elevated |
 | Passive | Slow Duration | 2.5s | normal |
 | Passive | Cooldown | 4.0s | normal |
-| Passive | Move Speed | 60% | important |
-| Passive | Heal on Melee Hit | 100 | important |
-| Passive | Melee Hit Heal | 30% | important |
+| Passive | Move Speed | 48% | important |
+| Passive | Heal on Melee Hit | 120 | important |
+| Passive | Melee Hit Heal | 35% | important |
 
 ## Source Property-Upgrade Fields
 

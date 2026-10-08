@@ -5,14 +5,17 @@ domain: meta
 topics: [routing, retrieval, navigation, entities]
 aliases: [entity index, keyword index]
 summary: Direct routes to the public snapshot's hero, ability, item, NPC, objective, and mechanics records.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-08"
+snapshot_id: deadlock-data-mixed-through-2026-10-06
+current_as_of: "2026-10-06"
 evidence_status: derived
 sources: []
 ---
 
 # Deadlock Data Keyword Index
 
+This index routes to records with different dated scopes: all 38 hero and 173
+item records use client 6694 (September 16), while the separate map-coordinate
+layer is dated October 6. The September 3 root baseline is not advanced globally.
 This index is navigation derived from local records, not gameplay evidence.
 Follow the destination's citations and uncertainty flags. Match full names with
 context: “Pocket build” identifies a hero; “seven seconds” does not. Normalize

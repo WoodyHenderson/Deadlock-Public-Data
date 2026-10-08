@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.kelvin",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.kelvin.125564",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Kelvin",
   "aliases": [],
@@ -25,8 +25,8 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 880,
-    "health_regeneration_per_second": 1,
+    "maximum_health": 880.0,
+    "health_regeneration_per_second": 1.0,
     "light_melee_damage": 50,
     "heavy_melee_damage": 116,
     "move_speed_meters_per_second": 6.7,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 13.9,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.72
     },
     "air_dash": {
       "speed_meters_per_second": 15.7,
-      "distance_meters": 8,
+      "distance_meters": 8.0,
       "duration_seconds": 0.51
     },
     "stamina": {
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": -25,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": -25.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.418,
-    "MaxHealth": 60,
+    "MaxHealth": 60.0,
     "PowerIncreases": 1,
     "TechResist": 0.625,
     "TechPower": 1.3,
@@ -70,17 +70,17 @@
   },
   "spirit_scaling": {},
   "weapon": {
-    "BulletSpeed": 160,
+    "BulletSpeed": 160.0,
     "BulletDamage": 18.6,
     "RoundsPerSecond": 3.8095,
     "ClipSize": 14,
     "ReloadTime": 2.585,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
     "FalloffStartRange": 19.99,
     "FalloffEndRange": 57.51,
-    "FalloffStartScale": 1,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
     "BulletGravityScale": 0.3,
@@ -117,7 +117,7 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 30,
+          "Value": 30.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -175,7 +175,7 @@
             "Type": "duration"
           }
         },
-        "SlowPercent": 40,
+        "SlowPercent": 32,
         "Upgrades": [
           {
             "Damage": 30,
@@ -234,7 +234,7 @@
               {
                 "Key": "SlowPercent",
                 "Name": "Move Speed",
-                "Value": 40,
+                "Value": 32,
                 "Type": "slow"
               }
             ]
@@ -312,7 +312,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 30,
+          "Value": 30.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -345,7 +345,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Throw a grenade that explodes in a cloud of freezing ice that {g:citadel_inline_attribute:'Heals'} allies and applies {g:citadel_inline_attribute:'SpiritDamage'} and <span class=\"highlight\">move speed reduction</span> to enemies.",
           "plain_text": "Throw a grenade that explodes in a cloud of freezing ice that heals allies and applies spirit damage and move speed reduction to enemies."
         },
@@ -354,7 +354,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+30</span> Damage and <span class=\"highlight\">+30</span> Heal Amount",
           "plain_text": "+30 Damage and +30 Heal Amount"
         },
@@ -363,7 +363,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-10</span> Cooldown and debuff now <span class=\"highlight\">freezes Stamina Regen</span>",
           "plain_text": "-10 Cooldown and debuff now freezes Stamina Regen"
         },
@@ -372,7 +372,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+2m</span> Radius. Damage and Heal Spirit Scaling increased.",
           "plain_text": "+2m Radius. Damage and Heal Spirit Scaling increased."
         }
@@ -385,13 +385,13 @@
       "data": {
         "AbilityCastDelay": 0.2,
         "AbilityCooldown": {
-          "Value": 50,
+          "Value": 50.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 8,
           "Scale": {
@@ -454,7 +454,7 @@
             "BulletResist": 35
           },
           {
-            "AbilityCooldown": -25
+            "AbilityCooldown": -25.0
           },
           {
             "BonusSpiritPct": 35,
@@ -500,7 +500,7 @@
             "DescKey": "ability_icepath_t1_desc"
           },
           {
-            "AbilityCooldown": -25
+            "AbilityCooldown": -25.0
           },
           {
             "BonusSpiritPct": 35,
@@ -584,7 +584,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 50,
+          "Value": 50.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -593,7 +593,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -613,7 +613,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Kelvin creates a <span class=\"highlight\">floating trail</span> of ice and snow that gives movement bonuses to him and his allies. Kelvin gains 60% slow resistance for the duration. Enemies can also walk on the floating trail. <br>Press {g:citadel_binding:'Roll'} / {g:citadel_binding:'Crouch'} to travel up or down while in Ice Path.",
           "plain_text": "Kelvin creates a floating trail of ice and snow that gives movement bonuses to him and his allies. Kelvin gains 60% slow resistance for the duration. Enemies can also walk on the floating trail.\nPress [Roll] / [Crouch] to travel up or down while in Ice Path."
         },
@@ -622,7 +622,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+2m</span> Move Speed and <span class=\"highlight\">+35%</span> Bullet Resist for Kelvin while on Ice Path",
           "plain_text": "+2m Move Speed and +35% Bullet Resist for Kelvin while on Ice Path"
         },
@@ -631,7 +631,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+35%</span> Spirit and <span class=\"highlight\">+20</span> Spirit for Kelvin while on Ice Path",
           "plain_text": "+35% Spirit and +20 Spirit for Kelvin while on Ice Path"
         }
@@ -643,15 +643,15 @@
       "internal_key": "ability_icebeam",
       "data": {
         "AbilityCooldown": {
-          "Value": 28,
+          "Value": 28.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
-          "Value": 5,
+          "Value": 5.0,
           "Scale": {
             "Value": 1,
             "Type": "duration"
@@ -661,7 +661,7 @@
         "BeamSplit": {
           "Value": 0,
           "Scale": {
-            "Value": 0,
+            "Value": 0.0,
             "Type": "range"
           }
         },
@@ -683,7 +683,7 @@
         "ChannelMoveSpeed": -1,
         "ChannelSlowPercent": 8,
         "DPS": {
-          "Value": 45,
+          "Value": 45.0,
           "Scale": {
             "Value": 0.38,
             "Type": "spirit"
@@ -703,10 +703,10 @@
         "IsDisabled": false,
         "Key": "ability_icebeam",
         "MaxFireRateSlowPercent": 20,
-        "MaxGroundDashReductionPercent": -20,
-        "MaxSlowPercent": 20,
-        "MaxSlowTime": 2,
-        "MinSlowPercent": 30,
+        "MaxGroundDashReductionPercent": -18,
+        "MaxSlowPercent": 16,
+        "MaxSlowTime": 2.0,
+        "MinSlowPercent": 24,
         "Name": "Arctic Beam",
         "PathLength": {
           "Value": 25,
@@ -726,7 +726,7 @@
         "TickRate": 0.1,
         "Upgrades": [
           {
-            "MaxSlowPercent": 25,
+            "MaxSlowPercent": 20,
             "MaxFireRateSlowPercent": 25
           },
           {
@@ -761,7 +761,7 @@
               {
                 "Key": "DPS",
                 "Name": "Damage Per Second",
-                "Value": 45,
+                "Value": 45.0,
                 "Scale": {
                   "Value": 0.38,
                   "Type": "spirit"
@@ -771,7 +771,7 @@
               {
                 "Key": "MaxSlowPercent",
                 "Name": "Max Move Speed",
-                "Value": 20,
+                "Value": 16,
                 "Type": "slow"
               },
               {
@@ -786,7 +786,7 @@
             {
               "Key": "MaxSlowTime",
               "Name": "Time To Max Debuff",
-              "Value": 2,
+              "Value": 2.0,
               "Type": "duration"
             },
             {
@@ -814,7 +814,7 @@
               "Name": "Extra Beam Range",
               "Value": 0,
               "Scale": {
-                "Value": 0,
+                "Value": 0.0,
                 "Type": "range"
               },
               "Type": "radius"
@@ -822,14 +822,14 @@
             {
               "Key": "MaxGroundDashReductionPercent",
               "Name": "Max Dash Slow",
-              "Value": -20
+              "Value": -18
             }
           ],
           "DescKey": "ability_icebeam_desc"
         },
         "Upgrades": [
           {
-            "MaxSlowPercent": 25,
+            "MaxSlowPercent": 20,
             "MaxFireRateSlowPercent": 25,
             "DescKey": "ability_icebeam_t1_desc"
           },
@@ -892,7 +892,7 @@
           },
           "MinSlowPercent": {
             "Name": null,
-            "Value": 30
+            "Value": 24
           },
           "PathWidth": {
             "Name": null,
@@ -905,7 +905,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 28,
+          "Value": 28.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -914,12 +914,12 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
           "Name": "Duration",
-          "Value": 5,
+          "Value": 5.0,
           "Scale": {
             "Value": 1,
             "Type": "duration"
@@ -934,7 +934,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Shoot freezing cold energy out in front of you, <span class=\"highlight\">damaging targets</span> and progressively reducing their <span class=\"highlight\">movement and fire rate</span> the longer you sustain the beam on them. You have reduced move speed while using Arctic Beam. The beam may also claim Souls.",
           "plain_text": "Shoot freezing cold energy out in front of you, damaging targets and progressively reducing their movement and fire rate the longer you sustain the beam on them. You have reduced move speed while using Arctic Beam. The beam may also claim Souls."
         },
@@ -943,16 +943,16 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "<span class=\"highlight\">-25%</span> to Fire Rate and Move Speed",
-          "plain_text": "-25% to Fire Rate and Move Speed"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "<span class=\"highlight\">-20%</span> to Fire Rate and Move Speed",
+          "plain_text": "-20% to Fire Rate and Move Speed"
         },
         {
           "localization_key": "ability_icebeam_t2_desc",
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+20</span> DPS and increased Spirit Scaling",
           "plain_text": "+20 DPS and increased Spirit Scaling"
         },
@@ -961,7 +961,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-13s</span> Cooldown and Fires <span class=\"highlight\">2 additional Arctic Beams</span> within 10m of the last target hit.",
           "plain_text": "-13s Cooldown and Fires 2 additional Arctic Beams within 10m of the last target hit."
         }
@@ -987,7 +987,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 5,
           "Scale": {
@@ -1010,7 +1010,7 @@
         "BonusHealthRegen": {
           "Value": 90,
           "Scale": {
-            "Value": 0,
+            "Value": 0.2,
             "Type": "spirit"
           }
         },
@@ -1055,7 +1055,7 @@
             "Type": "radius"
           }
         },
-        "SlowPercent": 35,
+        "SlowPercent": 28,
         "Upgrades": [
           {
             "AbilityCooldown": -20
@@ -1067,7 +1067,7 @@
             "BonusHealthRegen": {
               "Value": 65,
               "Scale": {
-                "Value": 1,
+                "Value": 1.0,
                 "Type": "spirit"
               }
             },
@@ -1087,7 +1087,7 @@
                 "Name": "Health Regen",
                 "Value": 90,
                 "Scale": {
-                  "Value": 0,
+                  "Value": 0.2,
                   "Type": "spirit"
                 },
                 "Type": "healing"
@@ -1104,7 +1104,7 @@
             {
               "Key": "SlowPercent",
               "Name": "Move Speed",
-              "Value": 35,
+              "Value": 28,
               "Type": "slow"
             },
             {
@@ -1127,7 +1127,7 @@
             "BonusHealthRegen": {
               "Value": 65,
               "Scale": {
-                "Value": 1,
+                "Value": 1.0,
                 "Type": "spirit"
               }
             },
@@ -1185,7 +1185,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -1214,7 +1214,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Target yourself or a Hero to freeze the air and create an <span class=\"highlight\">impenetrable dome</span> around them. While in the dome, allies gain rapid {g:citadel_inline_attribute:'Regen'} and enemies are <span class=\"highlight\">slowed</span>. <br><br><span class=\"diminish\">Objectives becomes Invulnerable and Frozen under Frozen Shelter</span>",
           "plain_text": "Target yourself or a Hero to freeze the air and create an impenetrable dome around them. While in the dome, allies gain rapid regeneration and enemies are slowed.\nObjectives becomes Invulnerable and Frozen under Frozen Shelter"
         },
@@ -1223,9 +1223,9 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "<span class=\"highlight\">Purges</span> non-ult debuffs for you and your allies. <br><span class=\"highlight\">+65</span> Health Regen that now scales with Spirit",
-          "plain_text": "Purges non-ult debuffs for you and your allies.\n+65 Health Regen that now scales with Spirit"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "<span class=\"highlight\">Purges</span> non-ult debuffs for you and your allies. <br><span class=\"highlight\">+65</span> Health Regen and increased Spirit Scaling",
+          "plain_text": "Purges non-ult debuffs for you and your allies.\n+65 Health Regen and increased Spirit Scaling"
         }
       ]
     }
@@ -1287,5 +1287,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

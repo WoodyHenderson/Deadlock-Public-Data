@@ -14,12 +14,14 @@ aliases:
   - immobilize
   - debuff resistance
 summary: Universal terminology for buffs, debuffs, crowd control, reductions, and immunities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
-evidence_status: source_verified
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
+evidence_status: source_verified_with_approximate_patch_note_tuning
 sources:
   - wiki.status-effects.114074
   - wiki.crowd-control.110151
+  - github.deadlock-data.gameplay.fc4f540f12e0
+  - github.deadlock-data.changelogs.raw.fc4f540f12e0
 ---
 
 # Status Effects and Crowd Control
@@ -72,6 +74,18 @@ Slow Resistance reduces the strength of a movement slow:
 `modified speed = base speed * (1 - slow * (1 - slow resistance))`
 
 For example, 50% Slow Resistance turns a 30% slow into an effective 15% slow.
+
+## September 16 Slow Tuning
+
+The patch notes report that movement-slow values were reduced by approximately
+20% globally and ground-dash slows by approximately 10%; those are approximate
+summary changes, not exact multipliers for every ability, item, or special slow.
+Individual hero/item card values are pinned to client 6694 and updated from that
+source. Do not multiply unreviewed fields by a universal 0.8 or 0.9.
+
+Client 6694 also enables slow-related air drag by default. Its convars expose a
+0.35 air-drag penalty scale based on slow value. This is a separate movement
+effect; it does not change the Slow Resistance formula above.
 
 ## Debuff Counters
 

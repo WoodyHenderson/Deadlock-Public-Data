@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
-  "source": "wiki.data-hero-data.108817",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
+  "source": "github.deadlock-data.hero-data.fc4f540f12e0",
   "selection_rule": "IsSelectable=true, IsDisabled=false, InDevelopment=false; transformed states are not separate roster heroes",
   "hero_count": 38,
   "heroes": [
@@ -228,5 +228,8 @@
       "internal_hero_key": "hero_werewolf_transformed",
       "reason": "transformed state, not a separately selectable hero"
     }
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995
 }

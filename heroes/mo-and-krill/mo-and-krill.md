@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Mo & Krill is a selectable Brawler hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.mo-and-krill.125559
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Mo & Krill
@@ -54,7 +54,7 @@ Internal key: `ability_intimidate`.
 - **Tier 2:** -5s Cooldown +1m Radius
 - **Tier 3:** Adds a debuff to enemies that lets Mo & Krill deal +15% Damage to them. Stacks and lasts 16s.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorCastableWhileBusy`, `BehaviorDisplaysDamageImpact`, `BehaviorDontInterruptSlideOnCast`.
@@ -66,12 +66,12 @@ Behavior flags: `BehaviorCastableWhileBusy`, `BehaviorDisplaysDamageImpact`, `Be
 | Damage to Heal | 0.35 (+1 per healing) |
 | Cooldown | 13 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Radius | 9 (+1 per range) |
 
 Upgrade deltas:
 - Tier 1: `{"Damage":35}`
 - Tier 2: `{"AbilityCooldown":-5,"Radius":1}`
 - Tier 3: `{"DamageBonus":15,"DebuffDuration":16}`
-
 ### 2. Burrow
 
 Internal key: `ability_burrow`.
@@ -88,7 +88,7 @@ Internal key: `ability_burrow`.
 - **Tier 2:** +4s Burrow time and +2 radius
 - **Tier 3:** -20 Cooldown and +4m/s Move Speed
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -103,12 +103,12 @@ Behavior flags: `BehaviorChannelled`, `BehaviorDeactivateCrouchToggleOnCast`.
 | Spirit Resist | 30 |
 | Cooldown | 40 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Radius | 5 (+1 per radius) |
 
 Upgrade deltas:
 - Tier 1: `{"DPS":50}`
 - Tier 2: `{"AbilityChannelTime":4,"Radius":2}`
-- Tier 3: `{"AbilityCooldown":-20,"BonusMoveSpeed":4}`
-
+- Tier 3: `{"AbilityCooldown":-20.0,"BonusMoveSpeed":4}`
 ### 3. Sand Blast
 
 Internal key: `ability_throw_sand`.
@@ -121,10 +121,10 @@ Internal key: `ability_throw_sand`.
 **Upgrade descriptions** (where supplied by the source):
 
 - **Tier 1:** +50 Damage and +5m Range
-- **Tier 2:** Slow targets by -30% and reduces dash distances by -30%
+- **Tier 2:** Slow targets by -24% and reduces dash distances by -26%
 - **Tier 3:** +1.5s Duration and -25 Cooldown
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorShowCastRangeAsSatSphereWhileCasting`, `BehaviorDontInterruptSlideOnCast`.
@@ -134,15 +134,14 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorSho
 | Duration | 2.5 (+1 per duration) |
 | Damage | 40 |
 | Move Speed | 0 |
-| Cooldown | 40 (+1 per cooldown) |
 | Cast Range | 25 (+1 per range) |
+| Cooldown | 40 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
 - Tier 1: `{"Damage":50,"AbilityCastRange":5}`
-- Tier 2: `{"SlowPercent":30,"GroundDashReductionPercent":-30}`
-- Tier 3: `{"AbilityCooldown":-25,"AbilityDuration":1.5}`
-
+- Tier 2: `{"SlowPercent":24,"GroundDashReductionPercent":-26}`
+- Tier 3: `{"AbilityCooldown":-25.0,"AbilityDuration":1.5}`
 ### 4. Combo
 
 Internal key: `ability_ult_combo`.
@@ -158,7 +157,7 @@ Internal key: `ability_ult_combo`.
 - **Tier 2:** -30s Cooldown and +50% Bullet Resist
 - **Tier 3:** +0.7s Duration and +40 Damage Per Second and increased scaling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorDisplaysDamageImpact`, `BehaviorUseInstantCastUnitTargetUi`, `BehaviorCanSetQuickCast`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -168,15 +167,14 @@ Behavior flags: `BehaviorChannelled`, `BehaviorDisplaysDamageImpact`, `BehaviorU
 | Damage Per Second | 40 (+0.6 per spirit) |
 | Unknown(LifeStealPercentOnHit) | 0 |
 | Bonus Max Health Per Kill | 40 (+2 per power increase) |
-| Cooldown | 150 (+1 per cooldown) |
 | Cast Range | 4 (+1 per range) |
+| Cooldown | 150 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
 - Tier 1: `{"LifeStealPercentOnHit":100}`
 - Tier 2: `{"AbilityCooldown":-30,"BulletResist":50}`
 - Tier 3: `{"AbilityChannelTime":0.7,"DPS":{"Value":40,"Scale":{"Value":0.4,"Type":"spirit"}}}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

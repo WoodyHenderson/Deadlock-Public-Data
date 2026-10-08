@@ -5,12 +5,12 @@ domain: items
 topics: [item, weapon, tier-3]
 aliases: ["upgrade_reinforcing_casings"]
 summary: "Grants Bullet Resist when your bullets hit an enemy hero. Each shot can only grant one stack."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Escalating Resilience
@@ -26,6 +26,7 @@ Grants Bullet Resist when your bullets hit an enemy hero. Each shot can only gra
 - **Cost:** 3200 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** WeaponDamage, Durability, FireRate
 - **Target types:** none listed

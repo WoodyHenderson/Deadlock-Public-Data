@@ -5,12 +5,12 @@ domain: items
 topics: [item, spirit, tier-2]
 aliases: ["upgrade_containment"]
 summary: "Slows movement of enemy target. Also Silences their movement-based items and abilities. Increases the target's gravity. Does not affect target's stamina usage."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Slowing Hex
@@ -26,6 +26,7 @@ Slows movement of enemy target. Also Silences their movement-based items and abi
 - **Cost:** 1600 souls
 - **Activation:** press
 - **Active item:** yes
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** Movement, Disruption, MagicDamage
 - **Target types:** HeroEnemy
@@ -41,14 +42,14 @@ No component item is listed.
 | Innate | Sprint Speed | 0.5m | normal |
 | Active | Cast Range | 25m | normal |
 | Active | Duration | 3.5s | normal |
-| Active | Cooldown | 27s | normal |
-| Active | Move Speed | 20% | important |
-| Active | Dash Distance | -30% | important |
+| Active | Cooldown | 29s | normal |
+| Active | Move Speed | 16% | important |
+| Active | Dash Distance | -26% | important |
 
 ## Source Property-Upgrade Fields
 
 ### Property-upgrade block 1
 
-- `SlowPercent`: 10
+- `SlowPercent`: 8
 - `AbilityCooldown`: -18
 - `GroundDashReductionPercent`: -6

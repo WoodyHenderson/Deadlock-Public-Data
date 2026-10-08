@@ -5,15 +5,16 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Wraith is a selectable Marksman hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
+  - github.deadlock-data.changelogs.raw.fc4f540f12e0
   - wiki.wraith.124931
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Wraith
@@ -57,7 +58,7 @@ Internal key: `citadel_ability_card_toss`.
 - **Tier 2:** +40 Damage and increased Spirit Scaling
 - **Tier 3:** All suits are improved and higher chance for Jokers
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorUseInstantCastUnitTargetUi`, `BehaviorAllowAltCast`, `BehaviorAllowAltCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -65,16 +66,16 @@ Behavior flags: `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDisplaysDamag
 | Card field | Base value |
 | --- | ---: |
 | Damage | 45 (+0.55 per spirit) |
-| Cooldown | 0.6 (+0 per cooldown) |
 | Cast Range | 500 (+0 per range) |
 | Charges | 2 (+1 per max charges) |
+| Cooldown | 0.6 (+0 per cooldown) |
 | Charge Delay | -1 |
+| Radius | 4 (+1 per radius) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCharges":2}`
 - Tier 2: `{"Damage":{"Value":40,"Scale":{"Value":0.4,"Type":"spirit"}}}`
-- Tier 3: `{"ImprovedJokerChance":1,"SpadeDamageBonus":40,"DiamondResistShred":-5,"HeartHeal":{"Value":75,"Scale":{"Value":0.5,"Type":"spirit"}},"ClubSlowPercent":20}`
-
+- Tier 3: `{"ImprovedJokerChance":1,"SpadeDamageBonus":40,"DiamondResistShred":-4,"HeartHeal":{"Value":75,"Scale":{"Value":0.5,"Type":"spirit"}},"ClubSlowPercent":12}`
 ### 2. Project Mind
 
 Internal key: `citadel_ability_projectmind`.
@@ -88,22 +89,23 @@ Internal key: `citadel_ability_projectmind`.
 
 - **Tier 2:** 300 Barrier for 5s. Barrier scales with Spirit Power.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorPreventBotUsage`, `BehaviorMovement`, `BehaviorCanSetQuickCast`.
 
 | Card field | Base value |
 | --- | ---: |
-| Cooldown | 46 (+1 per cooldown) |
 | Cast Range | 25 (+1 per range) |
+| Cooldown | 46 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCastRange":15}`
 - Tier 2: `{"CombatBarrier":{"Value":300,"Scale":{"Value":1.7,"Type":"spirit"}},"BarrierDuration":5}`
-- Tier 3: `{"AbilityCooldown":-32}`
+- Tier 3: `{"AbilityCooldown":-32.0}`
 
+**patch_note_only:** The September 16 notes report a fix for Project Mind getting caught on edges or corners when aimed past them. Source: `github.deadlock-data.changelogs.raw.fc4f540f12e0`.
 ### 3. Full Auto
 
 Internal key: `citadel_ability_wraith_rapidfire`.
@@ -118,7 +120,7 @@ Internal key: `citadel_ability_wraith_rapidfire`.
 - **Tier 2:** +10% Fire Rate and +3s Duration
 - **Tier 3:** Unlimited Ammo and Increased Scaling on Spirit Damage Per Bullet
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 | Card field | Base value |
@@ -151,7 +153,7 @@ Internal key: `citadel_ability_psychic_lift`.
 
 - **Tier 3:** +1.5s Debuff Duration and +6m Throw and Cast Range
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorProjectilePassThroughWorld`, `BehaviorUseInstantCastUnitTargetUi`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -161,16 +163,15 @@ Behavior flags: `BehaviorChannelled`, `BehaviorProjectilePassThroughWorld`, `Beh
 | Damage | 100 (+1 per spirit) |
 | Throw Range | 13 (+1 per range) |
 | Channel Duration | 0.65 (+1 per duration) |
-| Cooldown | 150 (+1 per cooldown) |
-| Duration | 2.25 (+1 per duration) |
 | Cast Range | 10 (+1 per range) |
+| Cooldown | 150 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Duration | 2.25 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"Damage":100}`
 - Tier 2: `{"AbilityCooldown":-45}`
 - Tier 3: `{"AbilityDuration":1.5,"TossDistance":6,"AbilityCastRange":6}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

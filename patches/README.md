@@ -10,6 +10,7 @@ current_as_of: "2026-09-17"
 evidence_status: source_verified
 sources:
   - github.deadlock-data.changelogs.raw.afc8e9c
+  - github.deadlock-data.changelogs.raw.fc4f540f12e0
 ---
 
 # Historical Patch Changelogs
@@ -17,14 +18,17 @@ sources:
 This section contains **136 dated raw changelogs** from 2024-05-03 through
 2026-09-16, imported from the latest `deadlock-wiki/deadlock-data` commit.
 See [`manifest.yaml`](manifest.yaml) for the per-file hashes and source paths.
+The separate [client-6694 review](2026-09-16-client-6694-review.md) documents
+which structured records were refreshed and keeps patch-note-only claims distinct.
 
 ## Retrieval policy
 
-Patch data is historical evidence only. It must **not influence the current
-knowledgebase's hero, item, ability, mechanic, or calculation records** and must
-not override current structured data. Normal current-patch retrieval should not
-search this section unless the user asks about a historical change, an old value,
-when a mechanic changed, or patch-note context.
+The raw archive is historical evidence and does not by itself update current
+hero, item, ability, or mechanic records. A separately reviewed, dated delta may
+cite patch-note intent alongside pinned structured data, but must label
+patch-note-only behavior and must not treat notes as runtime verification or
+silently override structured values. Normal retrieval should search this archive
+only for explicit historical changes, old values, or patch-note context.
 
 When used, cite the dated raw changelog and distinguish:
 

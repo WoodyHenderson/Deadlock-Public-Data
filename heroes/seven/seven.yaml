@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.seven",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.seven.124882",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Seven",
   "aliases": [],
@@ -25,8 +25,8 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 730,
-    "health_regeneration_per_second": 1,
+    "maximum_health": 730.0,
+    "health_regeneration_per_second": 1.0,
     "light_melee_damage": 50,
     "heavy_melee_damage": 116,
     "move_speed_meters_per_second": 6.7,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 14.7,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.68
     },
     "air_dash": {
-      "speed_meters_per_second": 17,
-      "distance_meters": 8,
+      "speed_meters_per_second": 17.0,
+      "distance_meters": 8.0,
       "duration_seconds": 0.47
     },
     "stamina": {
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 55
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 55.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.24,
-    "MaxHealth": 41,
+    "MaxHealth": 41.0,
     "PowerIncreases": 1,
     "TechPower": 1.1,
     "LightMeleeDamage": 1.58,
@@ -69,17 +69,17 @@
   },
   "spirit_scaling": {},
   "weapon": {
-    "BulletSpeed": 635,
+    "BulletSpeed": 635.0,
     "BulletDamage": 10.8,
     "RoundsPerSecond": 5.8309,
     "ClipSize": 29,
     "ReloadTime": 2.35,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
     "FalloffStartRange": 19.99,
     "FalloffEndRange": 57.51,
-    "FalloffStartScale": 1,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
     "BulletGravityScale": 0.8,
@@ -115,7 +115,7 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 26,
+          "Value": 26.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -170,7 +170,7 @@
             "AbilityCharges": 1
           },
           {
-            "SlowPercent": 35,
+            "SlowPercent": 28,
             "MaxLifetime": 1
           },
           {
@@ -237,7 +237,7 @@
             "AbilityCharges": 1
           },
           {
-            "SlowPercent": 35,
+            "SlowPercent": 28,
             "MaxLifetime": 1,
             "DescKey": "citadel_ability_lightning_ball_t2_desc"
           },
@@ -284,7 +284,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 26,
+          "Value": 26.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -308,7 +308,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Shoot a ball of lightning that travels in a straight line. Does <span class=\"highlight\">damage to all targets in its radius</span>. Slows down when damaging enemies and stops if it hits the world.",
           "plain_text": "Shoot a ball of lightning that travels in a straight line. Does damage to all targets in its radius. Slows down when damaging enemies and stops if it hits the world."
         },
@@ -317,16 +317,16 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "<span class=\"highlight\">-35%</span> move speed on hit targets and <span class=\"highlight\">+1s</span> Lifetime",
-          "plain_text": "-35% move speed on hit targets and +1s Lifetime"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "<span class=\"highlight\">-28%</span> move speed on hit targets and <span class=\"highlight\">+1s</span> Lifetime",
+          "plain_text": "-28% move speed on hit targets and +1s Lifetime"
         },
         {
           "localization_key": "citadel_ability_lightning_ball_t3_desc",
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+58.5 DPS and +1.75m radius",
           "plain_text": "+58.5 DPS and +1.75m radius"
         }
@@ -346,13 +346,13 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 42,
+          "Value": 42.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
           "BehaviorAlwaysPreviewRadius",
@@ -393,7 +393,7 @@
         },
         "Upgrades": [
           {
-            "AbilityCooldown": -20
+            "AbilityCooldown": -20.0
           },
           {
             "ShockRadius": 7,
@@ -457,7 +457,7 @@
         },
         "Upgrades": [
           {
-            "AbilityCooldown": -20
+            "AbilityCooldown": -20.0
           },
           {
             "ShockRadius": 7,
@@ -499,7 +499,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 42,
+          "Value": 42.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -508,7 +508,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -519,7 +519,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Apply a charge to a target enemy hero. After a short duration, the static charge <span class=\"highlight\">stuns and damages</span> enemies within the radius.",
           "plain_text": "Apply a charge to a target enemy hero. After a short duration, the static charge stuns and damages enemies within the radius."
         },
@@ -528,7 +528,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+7m</span> Radius <br><span class=\"highlight\">+5m</span> Cast range",
           "plain_text": "+7m Radius\n+5m Cast range"
         },
@@ -537,7 +537,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+0.9s</span> Stun Duration <br><span class=\"highlight\">+160</span> Damage",
           "plain_text": "+0.9s Stun Duration\n+160 Damage"
         }
@@ -550,13 +550,13 @@
       "data": {
         "AbilityCastDelay": 0.2,
         "AbilityCooldown": {
-          "Value": 50,
+          "Value": 50.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 10,
           "Scale": {
@@ -609,7 +609,7 @@
         "Name": "Power Surge",
         "Upgrades": [
           {
-            "AbilityCooldown": -18
+            "AbilityCooldown": -18.0
           },
           {
             "BonusMoveSpeed": 3,
@@ -675,7 +675,7 @@
         },
         "Upgrades": [
           {
-            "AbilityCooldown": -18
+            "AbilityCooldown": -18.0
           },
           {
             "BonusMoveSpeed": 3,
@@ -733,7 +733,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 50,
+          "Value": 50.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -742,7 +742,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -762,7 +762,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Power up your weapon with a shock effect, making <span class=\"highlight\">your bullets proc shock damage on your target</span>. This shock damage <span class=\"highlight\">bounces to enemies</span> near your target. Occurs once per burst shot.",
           "plain_text": "Power up your weapon with a shock effect, making your bullets proc shock damage on your target. This shock damage bounces to enemies near your target. Occurs once per burst shot."
         },
@@ -771,7 +771,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+3m</span> Move Speed <br><span class=\"highlight\">+8</span> Damage and increased scaling",
           "plain_text": "+3m Move Speed\n+8 Damage and increased scaling"
         },
@@ -780,7 +780,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+10s Duration<br>Applies <span class=\"highlight\">-15%</span> Spirit Resist",
           "plain_text": "+10s Duration\nApplies -15% Spirit Resist"
         }
@@ -799,13 +799,13 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 205,
+          "Value": 205.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
           "BehaviorChannelled",
@@ -814,6 +814,7 @@
           "BehaviorDisplaysDamageImpact",
           "BehaviorDeactivateCrouchToggleOnCast"
         ],
+        "BossDamageScale": 0.5,
         "CameraDistance": 600,
         "CloudHeight": 120,
         "DPS": {
@@ -841,7 +842,7 @@
           "Subclass": "LightningStrike"
         },
         "LightningStrikeDamage": {
-          "Value": 75,
+          "Value": 75.0,
           "Scale": {
             "Value": 0.5,
             "Type": "spirit"
@@ -879,7 +880,7 @@
             "AbilityChannelTime": 7
           },
           {
-            "DPS": 65,
+            "DPS": 65.0,
             "FlightControlEnabled": 4
           }
         ]
@@ -936,7 +937,7 @@
             {
               "Key": "LightningStrikeDamage",
               "Name": "Strike Damage",
-              "Value": 75,
+              "Value": 75.0,
               "Scale": {
                 "Value": 0.5,
                 "Type": "spirit"
@@ -968,7 +969,7 @@
             "DescKey": "citadel_ability_storm_cloud_t2_desc"
           },
           {
-            "DPS": 65,
+            "DPS": 65.0,
             "FlightControlEnabled": 4,
             "DescKey": "citadel_ability_storm_cloud_t3_desc"
           }
@@ -1025,7 +1026,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 205,
+          "Value": 205.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -1034,7 +1035,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "Radius": {
@@ -1054,7 +1055,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Channel an expanding storm cloud around you that <span class=\"highlight\">damages all enemies</span> within its radius. Enemies do not take damage when they are out of line-of-sight.",
           "plain_text": "Channel an expanding storm cloud around you that damages all enemies within its radius. Enemies do not take damage when they are out of line-of-sight."
         },
@@ -1063,7 +1064,7 @@
           "card_paths": [
             "card.Info2.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "While channeling, press{g:citadel_binding:'Attack'}to mark the targeted area to be struck with a powerful lightning bolt that <span class=\"highlight\">knocks enemies away</span> after a 0.25s delay. One use per cast.",
           "plain_text": "While channeling, press [Attack] to mark the targeted area to be struck with a powerful lightning bolt that knocks enemies away after a 0.25s delay. One use per cast."
         },
@@ -1072,7 +1073,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+55% Bullet Resist</span> while channeling Storm Cloud",
           "plain_text": "+55% Bullet Resist while channeling Storm Cloud"
         },
@@ -1081,7 +1082,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+7s</span> Channel Time <br><span class=\"highlight\">+10m</span> Final Radius<br><span class=\"highlight\">+5m</span> Initial Radius",
           "plain_text": "+7s Channel Time\n+10m Final Radius\n+5m Initial Radius"
         },
@@ -1090,7 +1091,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+65</span> DPS<br><span class=\"highlight\">+4m</span> Flight Speed",
           "plain_text": "+65 DPS\n+4m Flight Speed"
         }
@@ -1153,5 +1154,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

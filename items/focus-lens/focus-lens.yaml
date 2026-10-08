@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.focus-lens",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Focus Lens",
@@ -74,9 +74,9 @@
       "importance": "normal",
       "key": "AbilityCastRange",
       "label": "Cast Range",
-      "value": "20m",
+      "value": "25m",
       "property": {
-        "value": "20m",
+        "value": "25m",
         "can_set_token_override": true,
         "css_class": "range",
         "display_units": "EDisplayUnit_Meters",
@@ -166,9 +166,9 @@
       "importance": "important",
       "key": "PercentDamage",
       "label": "Damage On Expire",
-      "value": "30%",
+      "value": "35%",
       "property": {
-        "value": "30",
+        "value": "35",
         "css_class": "damage",
         "label": "Damage On Expire",
         "postfix": "%",
@@ -293,7 +293,7 @@
         "tooltip_is_important": true
       },
       "AbilityCastRange": {
-        "value": "20m",
+        "value": "25m",
         "can_set_token_override": true,
         "css_class": "range",
         "display_units": "EDisplayUnit_Meters",
@@ -402,7 +402,7 @@
         "postvalue_label": "Weapon Damage"
       },
       "PercentDamage": {
-        "value": "30",
+        "value": "35",
         "css_class": "damage",
         "label": "Damage On Expire",
         "postfix": "%",
@@ -553,12 +553,12 @@
     "IsImbue": false,
     "AbilityCooldown": 45,
     "AbilityDuration": 4.5,
-    "AbilityCastRange": "20m",
+    "AbilityCastRange": "25m",
     "AbilityUnitTargetLimit": 1,
     "AbilityCastDelay": 0.1,
     "AbilityCooldownBetweenCharge": -1.0,
     "ChannelMoveSpeed": -1,
-    "PercentDamage": 30,
+    "PercentDamage": 35,
     "BonusFireRate": 10,
     "MagicResistReduction": -9,
     "TechPowerReduction": -30,
@@ -619,7 +619,7 @@
         },
         {
           "Key": "PercentDamage",
-          "Value": 30,
+          "Value": 35,
           "Type": "damage"
         },
         {
@@ -636,7 +636,7 @@
       "Alt": [
         {
           "Key": "AbilityCastRange",
-          "Value": "20m",
+          "Value": "25m",
           "Type": "range"
         },
         {

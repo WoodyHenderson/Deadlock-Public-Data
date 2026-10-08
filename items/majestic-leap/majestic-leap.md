@@ -5,12 +5,12 @@ domain: items
 topics: [item, vitality, tier-3]
 aliases: ["upgrade_rocket_booster"]
 summary: "Launch yourself high into the air and grant yourself a Barrier. While in the air, you can use the active again to drop down faster. Cannot be used for 5s if attacked by enemy Hero."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Majestic Leap
@@ -26,6 +26,7 @@ Launch yourself high into the air and grant yourself a Barrier. While in the air
 - **Cost:** 3200 souls
 - **Activation:** instant_cast
 - **Active item:** yes
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** Movement
 - **Target types:** AllEnemy

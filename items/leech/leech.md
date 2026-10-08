@@ -5,12 +5,12 @@ domain: items
 topics: [item, vitality, tier-4]
 aliases: ["upgrade_damage_recycler"]
 summary: "Reduces the effect of enemy applied healing reduction."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Leech
@@ -26,6 +26,7 @@ Reduces the effect of enemy applied healing reduction.
 - **Cost:** 6400 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** MagicDamage, Healing
 - **Target types:** AllEnemy
@@ -42,8 +43,8 @@ Reduces the effect of enemy applied healing reduction.
 | Innate | Bonus Health | 180 | normal |
 | Innate | Weapon Damage | 12% | normal |
 | Innate | Spirit Power | 12 | normal |
-| Innate | Spirit Lifesteal | 25% | elevated |
-| Innate | Bullet Lifesteal | 25% | elevated |
+| Innate | Spirit Lifesteal | 28% | elevated |
+| Innate | Bullet Lifesteal | 28% | elevated |
 
 ## Source Property-Upgrade Fields
 

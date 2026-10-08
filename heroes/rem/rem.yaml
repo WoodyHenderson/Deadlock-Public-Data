@@ -1,15 +1,16 @@
 {
   "schema_version": 2,
   "id": "hero.rem",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.rem.124942",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "patch_notes": "github.deadlock-data.changelogs.raw.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Rem",
   "aliases": [],
@@ -25,26 +26,26 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 680,
-    "health_regeneration_per_second": 2,
+    "maximum_health": 680.0,
+    "health_regeneration_per_second": 2.0,
     "light_melee_damage": 58,
     "heavy_melee_damage": 116,
     "move_speed_meters_per_second": 7.2,
     "crouch_speed_meters_per_second": 4.75,
-    "sprint_speed_bonus_meters_per_second": 4,
+    "sprint_speed_bonus_meters_per_second": 4.0,
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 13.9,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.72
     },
     "air_dash": {
       "speed_meters_per_second": 15.7,
-      "distance_meters": 8,
+      "distance_meters": 8.0,
       "duration_seconds": 0.51
     },
     "stamina": {
-      "charges": 3,
+      "charges": 3.0,
       "cooldown_seconds": 4.5000045000045,
       "regeneration_per_second": 0.222222
     },
@@ -54,12 +55,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": -20,
-    "critical_damage_received_percent": 10
+    "critical_damage_bonus_percent": -20.0,
+    "critical_damage_received_percent": 10.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.34,
-    "MaxHealth": 28,
+    "MaxHealth": 28.0,
     "PowerIncreases": 1,
     "TechPower": 1.1,
     "LightMeleeDamage": 1.58,
@@ -69,17 +70,17 @@
   },
   "spirit_scaling": {},
   "weapon": {
-    "BulletSpeed": 160,
+    "BulletSpeed": 160.0,
     "BulletDamage": 16,
     "RoundsPerSecond": 3.8462,
     "ClipSize": 13,
-    "ReloadTime": 2,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadTime": 2.0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
     "FalloffStartRange": 19.99,
     "FalloffEndRange": 57.51,
-    "FalloffStartScale": 1,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
     "BulletGravityScale": 0.8,
@@ -122,7 +123,7 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 25,
+          "Value": 25.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -156,7 +157,7 @@
           }
         },
         "EffectDuration": {
-          "Value": 3,
+          "Value": 3.0,
           "Scale": {
             "Value": 1,
             "Type": "duration"
@@ -166,7 +167,7 @@
           "Class": "DiminishingSlow",
           "Subclass": "Slow"
         },
-        "FadingSlowPercent": 45,
+        "FadingSlowPercent": 36,
         "IsDisabled": false,
         "Key": "ability_familiar_ability02",
         "Name": "Pillow Toss",
@@ -214,7 +215,7 @@
               {
                 "Key": "FadingSlowPercent",
                 "Name": "Fading Move Speed",
-                "Value": 45,
+                "Value": 36,
                 "Type": "slow"
               },
               {
@@ -230,7 +231,7 @@
             {
               "Key": "EffectDuration",
               "Name": "Debuff Duration",
-              "Value": 3,
+              "Value": 3.0,
               "Scale": {
                 "Value": 1,
                 "Type": "duration"
@@ -309,7 +310,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 25,
+          "Value": 25.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -342,7 +343,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Throw your trusty pillow inflicting {g:citadel_inline_attribute:'SpiritDamage'} and heavy {g:citadel_inline_attribute:'KnockBack'}.<br><br>Landing hits reduces the cooldown of your other abilities.",
           "plain_text": "Throw your trusty pillow inflicting spirit damage and heavy knockback.\nLanding hits reduces the cooldown of your other abilities."
         },
@@ -351,7 +352,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+2m Radius and applies -35% Fire Rate",
           "plain_text": "+2m Radius and applies -35% Fire Rate"
         },
@@ -360,7 +361,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+100 Damage and +1 Charge",
           "plain_text": "+100 Damage and +1 Charge"
         }
@@ -386,7 +387,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 5.5,
           "Scale": {
@@ -418,7 +419,7 @@
             "Class": "Base",
             "Subclass": "Attachending"
           },
-          "EndingWarningDuration": 5
+          "EndingWarningDuration": 5.0
         },
         "AutoCastDelayModifier": {
           "Class": "Base",
@@ -674,7 +675,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -694,7 +695,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Jump to an ally and nap alongside them. Both you and the ally receive a burst {g:citadel_inline_attribute:'Heal'} based on missing health followed by lingering {g:citadel_inline_attribute:'Regen'}.<br><br>Hop between allies with {g:citadel_binding:'Ability2'} to apply the heal, once per ally.<br><br><span class=\"diminish\">You are knocked off if stunned by an ultimate ability.<br>You can use items and all self-casts target your ally instead.</span>",
           "plain_text": "Jump to an ally and nap alongside them. Both you and the ally receive a burst heal based on missing health followed by lingering regeneration.\nHop between allies with [Ability 2] to apply the heal, once per ally.\nYou are knocked off if stunned by an ultimate ability.\nYou can use items and all self-casts target your ally instead."
         },
@@ -703,7 +704,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "35% Bonus Item Range, Duration, and Barrier Effectiveness while napping",
           "plain_text": "35% Bonus Item Range, Duration, and Barrier Effectiveness while napping"
         },
@@ -712,7 +713,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+15% Spirit Power and +35 Spirit Power while napping and for 10s after napping<br>Improved Spirit Scaling",
           "plain_text": "+15% Spirit Power and +35 Spirit Power while napping and for 10s after napping\nImproved Spirit Scaling"
         }
@@ -735,11 +736,11 @@
         "AbilityCastRange": {
           "Value": 45,
           "Scale": {
-            "Value": 0,
+            "Value": 0.0,
             "Type": "range"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "ArmTime": 0.1,
         "AuraAttackHeight": 10,
@@ -764,9 +765,10 @@
           "BehaviorDamageDoesntWakeFromSleep",
           "BehaviorDisplaysDamageImpact",
           "BehaviorDoNotAllowSpamProc",
-          "BehaviorDontInterruptSlideOnCast"
+          "BehaviorDontInterruptSlideOnCast",
+          "BehaviorUseInstantCastUnitTargetUi"
         ],
-        "BonusMoveSpeed": 3,
+        "BonusMoveSpeed": 3.0,
         "ChannelMoveSpeed": -1,
         "DPSPerSprite": 1,
         "Damage": 20,
@@ -795,7 +797,7 @@
             "Type": "spirit"
           }
         },
-        "InfestHealInterval": 2,
+        "InfestHealInterval": 2.0,
         "InfestModifier": {
           "Class": "CitadelModifierFamiliarInfested",
           "Subclass": "Infest"
@@ -865,7 +867,7 @@
                 "Title": "Following Hero:",
                 "Key": "BonusMoveSpeed",
                 "Name": "Move Speed",
-                "Value": 3,
+                "Value": 3.0,
                 "Type": "move_speed"
               },
               {
@@ -955,7 +957,7 @@
           },
           "InfestHealInterval": {
             "Name": null,
-            "Value": 2,
+            "Value": 2.0,
             "Type": "duration"
           },
           "PatrolDamageCooldown": {
@@ -1039,14 +1041,14 @@
           "Name": "Cast Range",
           "Value": 45,
           "Scale": {
-            "Value": 0,
+            "Value": 0.0,
             "Type": "range"
           },
           "Type": "range"
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -1057,7 +1059,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Signal a Helper to lend a hand. They can collect boxes, do Sinner's Sacrifices, or be sent to support allies and troopers.<br><br><span class=\"diminish\">Follow a hero:</span> Provides a short burst of {g:citadel_inline_attribute:'SpiritResist'} and fading {g:citadel_inline_attribute:'MoveSpeed'}.<br><br><span class=\"diminish\">Follow a trooper:</span> Provides <span class=\"highlight\">healing, damage, resists, and allows tagging along.</span> When no hero is around, souls from trooper kills are split amongst the team.<br><br><span class=\"diminish\">Can be cast during Tag Along. Helpers will take a nap for 15.1s after following someone.</span>",
           "plain_text": "Signal a Helper to lend a hand. They can collect boxes, do Sinner's Sacrifices, or be sent to support allies and troopers.\nFollow a hero: Provides a short burst of spirit resist and fading move speed.\nFollow a trooper: Provides healing, damage, resists, and allows tagging along. When no hero is around, souls from trooper kills are split amongst the team.\nCan be cast during Tag Along. Helpers will take a nap for 15.1s after following someone."
         },
@@ -1066,7 +1068,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+1 Helper<br>+1.5m/s Move Speed",
           "plain_text": "+1 Helper\n+1.5m/s Move Speed"
         },
@@ -1075,7 +1077,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+1 Helper<br>+15% Trooper Damage and Resist",
           "plain_text": "+1 Helper\n+15% Trooper Damage and Resist"
         },
@@ -1084,7 +1086,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+1 Helper<br>+15% Spirit Resist",
           "plain_text": "+1 Helper\n+15% Spirit Resist"
         }
@@ -1106,18 +1108,18 @@
         "AbilityChannelTime": {
           "Value": 1.9,
           "Scale": {
-            "Value": 0,
+            "Value": 0.0,
             "Type": "duration"
           }
         },
         "AbilityCooldown": {
-          "Value": 200,
+          "Value": 200.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "AutoChannelModifier": {
           "Class": "Base",
@@ -1147,10 +1149,10 @@
         "IsDisabled": false,
         "Key": "ability_familiar_ability01",
         "MinSleepTime": 0.5,
-        "MoveSpeedAndDashSlowPct": 25,
+        "MoveSpeedAndDashSlowPct": 20,
         "Name": "Naptime",
         "Radius": {
-          "Value": 19,
+          "Value": 19.0,
           "Scale": {
             "Value": 1,
             "Type": "range"
@@ -1164,7 +1166,7 @@
           }
         },
         "SleepDuration": {
-          "Value": 4,
+          "Value": 4.0,
           "Scale": {
             "Value": 1,
             "Type": "duration"
@@ -1242,7 +1244,7 @@
               {
                 "Key": "MoveSpeedAndDashSlowPct",
                 "Name": "Move/Dash Slow",
-                "Value": 25,
+                "Value": 20,
                 "Type": "slow"
               }
             ]
@@ -1251,7 +1253,7 @@
             {
               "Key": "Radius",
               "Name": "Radius",
-              "Value": 19,
+              "Value": 19.0,
               "Scale": {
                 "Value": 1,
                 "Type": "range"
@@ -1261,7 +1263,7 @@
             {
               "Key": "SleepDuration",
               "Name": "Sleep Duration",
-              "Value": 4,
+              "Value": 4.0,
               "Scale": {
                 "Value": 1,
                 "Type": "duration"
@@ -1338,14 +1340,14 @@
           "Name": "Channel Duration",
           "Value": 1.9,
           "Scale": {
-            "Value": 0,
+            "Value": 0.0,
             "Type": "duration"
           },
           "Type": "cast"
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 200,
+          "Value": 200.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -1354,12 +1356,12 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "Radius": {
           "Name": "Radius",
-          "Value": 19,
+          "Value": 19.0,
           "Scale": {
             "Value": 1,
             "Type": "range"
@@ -1374,7 +1376,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Cast your gaze forward, piercing walls and floors. Enemies in the gaze are <span class=\"highlight\">slowed, have reduced dash distance, and cannot use movement abilities.</span><br><br>When the channel ends <span class=\"highlight\">they fall asleep</span> before waking up to a splitting headache that deals heavy {g:citadel_inline_attribute:'SpiritDamage'}.",
           "plain_text": "Cast your gaze forward, piercing walls and floors. Enemies in the gaze are slowed, have reduced dash distance, and cannot use movement abilities.\nWhen the channel ends they fall asleep before waking up to a splitting headache that deals heavy spirit damage."
         },
@@ -1383,7 +1385,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "-1 Stamina On Wake and no Stamina Regen while sleeping",
           "plain_text": "-1 Stamina On Wake and no Stamina Regen while sleeping"
         },
@@ -1392,7 +1394,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+3m Radius and +0.75s Sleep Duration",
           "plain_text": "+3m Radius and +0.75s Sleep Duration"
         },
@@ -1401,7 +1403,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "-55s cooldown <br>Reduced damage and unstoppable while channeling",
           "plain_text": "-55s cooldown\nReduced damage and unstoppable while channeling"
         }
@@ -1465,5 +1467,15 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": [
+    {
+      "evidence_status": "patch_note_only",
+      "text": "The September 16 notes report a fix for multiple Lil Helpers being sent to follow a single player, where the extra helpers had no effect, and add target UI when instant-cast mode is selected.",
+      "source": "github.deadlock-data.changelogs.raw.fc4f540f12e0"
+    }
   ]
 }

@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Graves is a selectable Marksman hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.graves.124944
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Graves
@@ -54,10 +54,10 @@ Internal key: `ability_necro_hauntingskull`.
 **Upgrade descriptions** (where supplied by the source):
 
 - **Tier 1:** Collecting death heals 5 health per pickup
-- **Tier 2:** On Hit: Apply 30% Slow for 1s
+- **Tier 2:** On Hit: Apply 24% Slow for 1s
 - **Tier 3:** +2 Deadheads +4s Deadhead Lifetime
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorProjectileFiredAsBullet`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -66,6 +66,7 @@ Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorP
 | --- | ---: |
 | Deadheads | 4 |
 | Damage | 16 (+0.25 per spirit) |
+| HealOnHit | 0 |
 | Search Range | 7 (+1 per range) |
 | Dash Range | 15 (+1 per range) |
 | Move Speed | 0 |
@@ -76,9 +77,8 @@ Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorP
 
 Upgrade deltas:
 - Tier 1: `{"HealPerPickup":{"Value":5,"Scale":{"Value":0.16,"Type":"spirit"}}}`
-- Tier 2: `{"SlowPercent":30,"SlowDuration":1}`
+- Tier 2: `{"SlowPercent":24,"SlowDuration":1}`
 - Tier 3: `{"SkullCount":2,"SkullLifetime":4}`
-
 ### 2. Grasping Hands
 
 Internal key: `ability_necro_zombiewall`.
@@ -94,7 +94,7 @@ Internal key: `ability_necro_zombiewall`.
 - **Tier 2:** +90 Damage and +10m Wall Length
 - **Tier 3:** +1 Ghouls Raised -14s Cooldown +0.75s Immobilize Duration
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorAllowAltCast`, `BehaviorCanSetQuickCast`, `BehaviorSuppressAltCastOnceSelected`.
@@ -105,16 +105,15 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorAll
 | Damage | 90 (+1.6 per spirit) |
 | Max Health Damage | 0 |
 | Immobilize Duration | 1 (+1 per duration) |
-| Cooldown | 34 (+1 per cooldown) |
-| Duration | 5 (+1 per duration) |
 | Cast Range | 24 (+1 per range) |
+| Cooldown | 34 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Duration | 5 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityDuration":2}`
 - Tier 2: `{"Damage":90,"ZombieWallLength":10}`
 - Tier 3: `{"ImmobilizeDuration":0.75,"SummonCount":1,"AbilityCooldown":-14}`
-
 ### 3. Essence Theft
 
 Internal key: `ability_necro_fear`.
@@ -128,7 +127,7 @@ Internal key: `ability_necro_fear`.
 
 - **Tier 3:** +1 Max Steal Targets All Summons now apply Essence Theft
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 | Card field | Base value |
@@ -163,22 +162,21 @@ Internal key: `ability_necro_gravestone`.
 - **Tier 2:** +10s Duration -0.3s Time To Spawn
 - **Tier 3:** On Death: Deal +5% Current Health as Damage
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorCannotCancelDuringChannel`, `BehaviorCooldownOnChannelEnd`, `BehaviorCanSetQuickCast`, `BehaviorRefundFullCooldownOnChannelInterrupt`, `BehaviorDontInterruptSlideOnCast`.
 
 | Card field | Base value |
 | --- | ---: |
-| Cooldown | 140 (+1 per cooldown) |
-| Duration | 16 |
 | Cast Range | 20 (+1 per range) |
+| Cooldown | 140 (+1 per cooldown) |
+| Duration | 16 (+0.04 per spirit, +1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-15,"MoveSpeedPercent":25}`
 - Tier 2: `{"AbilityDuration":10,"SummonFrequency":-0.3}`
 - Tier 3: `{"CurrentHealthDamagePercentage":5}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

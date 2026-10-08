@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.drifter",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.drifter.125577",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Drifter",
   "aliases": [],
@@ -25,7 +25,7 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 755,
+    "maximum_health": 755.0,
     "health_regeneration_per_second": 3.5,
     "light_melee_damage": 51.5,
     "heavy_melee_damage": 120,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 14.7,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.68
     },
     "air_dash": {
-      "speed_meters_per_second": 17,
-      "distance_meters": 8,
+      "speed_meters_per_second": 17.0,
+      "distance_meters": 8.0,
       "duration_seconds": 0.47
     },
     "stamina": {
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": -45,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": -45.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.49,
-    "MaxHealth": 41,
+    "MaxHealth": 41.0,
     "PowerIncreases": 1,
     "TechPower": 1.1,
     "LightMeleeDamage": 1.58,
@@ -69,20 +69,20 @@
   },
   "spirit_scaling": {},
   "weapon": {
-    "BulletSpeed": 508,
+    "BulletSpeed": 508.0,
     "BulletDamage": 19.5,
     "RoundsPerSecond": 2.2676,
     "ClipSize": 12,
     "ReloadTime": 2.444,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
-    "FalloffStartRange": 22,
-    "FalloffEndRange": 27,
-    "FalloffStartScale": 1,
+    "FalloffStartRange": 22.0,
+    "FalloffEndRange": 27.0,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.6,
     "FalloffBias": 0.5,
-    "BulletGravityScale": 0,
+    "BulletGravityScale": 0.0,
     "BulletRadius": 0.1524,
     "BulletsPerShot": 3,
     "BulletsPerBurst": 1,
@@ -115,13 +115,13 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 16,
+          "Value": 16.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.4,
         "AbilityUnitTargetLimit": 30,
         "AirSpeedMax": 70,
@@ -132,7 +132,7 @@
           "BehaviorDontInterruptSlideOnCast"
         ],
         "BonusDamage": {
-          "Value": 40,
+          "Value": 40.0,
           "Scale": {
             "Value": 1.4,
             "Type": "spirit"
@@ -140,7 +140,7 @@
         },
         "ChannelMoveSpeed": 1.3,
         "Damage": {
-          "Value": 0,
+          "Value": 0.0,
           "Scale": {
             "Value": 1.2,
             "Type": "melee"
@@ -181,7 +181,7 @@
             "BonusDamage": 40
           },
           {
-            "AbilityCooldown": -8
+            "AbilityCooldown": -8.0
           },
           {
             "DebuffDuration": 2,
@@ -196,7 +196,7 @@
             "Damage": {
               "Value": 0,
               "Scale": {
-                "Value": 0,
+                "Value": 0.0,
                 "Type": "melee",
                 "Multiply": true
               }
@@ -214,7 +214,7 @@
               {
                 "Key": "BonusDamage",
                 "Name": "Bonus Damage",
-                "Value": 40,
+                "Value": 40.0,
                 "Scale": {
                   "Value": 1.4,
                   "Type": "spirit"
@@ -225,7 +225,7 @@
                 "Title": "On Close Range",
                 "Key": "Damage",
                 "Name": "Damage",
-                "Value": 0,
+                "Value": 0.0,
                 "Scale": {
                   "Value": 1.2,
                   "Type": "melee"
@@ -285,7 +285,7 @@
             "BonusDamage": 40
           },
           {
-            "AbilityCooldown": -8,
+            "AbilityCooldown": -8.0,
             "DescKey": "drifter_blood_blast_t2_desc"
           },
           {
@@ -301,7 +301,7 @@
             "Damage": {
               "Value": 0,
               "Scale": {
-                "Value": 0,
+                "Value": 0.0,
                 "Type": "melee",
                 "Multiply": true
               }
@@ -369,7 +369,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 16,
+          "Value": 16.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -378,7 +378,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -389,7 +389,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Swipe at enemies in a cone ahead of you, dealing {g:citadel_inline_attribute:'SpiritDamage'}. If the enemy is in <span class=\"highlight\">close range</span>, deal bonus {g:citadel_inline_attribute:'MeleeDamage'}.",
           "plain_text": "Swipe at enemies in a cone ahead of you, dealing spirit damage. If the enemy is in close range, deal bonus melee damage."
         },
@@ -398,7 +398,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "-8s Cooldown",
           "plain_text": "-8s Cooldown"
         },
@@ -407,7 +407,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Deals 55% Heavy Melee Damage<br>Silences enemies for 2s if close range",
           "plain_text": "Deals 55% Heavy Melee Damage\nSilences enemies for 2s if close range"
         }
@@ -426,7 +426,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 5,
           "Scale": {
@@ -449,7 +449,7 @@
         },
         "ChannelMoveSpeed": -1,
         "DotHealthPercent": {
-          "Value": 2,
+          "Value": 2.0,
           "Scale": {
             "Value": 0.015,
             "Type": "spirit"
@@ -506,7 +506,7 @@
               {
                 "Key": "DotHealthPercent",
                 "Name": "Bleed Damage",
-                "Value": 2,
+                "Value": 2.0,
                 "Scale": {
                   "Value": 0.015,
                   "Type": "spirit"
@@ -546,7 +546,7 @@
             {
               "Key": "AbilityCooldownBetweenCharge",
               "Name": "Charge Delay",
-              "Value": -1,
+              "Value": -1.0,
               "Type": "charge_cooldown"
             }
           ],
@@ -643,7 +643,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -663,7 +663,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Send out a mark that bleeds the first target it hits, dealing {g:citadel_inline_attribute:'SpiritDPS'}.<br><br>While the enemy is bleeding you can re-activate Stalker's Mark to instantly <span class=\"highlight\">appear behind their back.</span>",
           "plain_text": "Send out a mark that bleeds the first target it hits, dealing spirit damage over time.\nWhile the enemy is bleeding you can re-activate Stalker's Mark to instantly appear behind their back."
         },
@@ -672,7 +672,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-8% Bullet Resist",
           "plain_text": "-8% Bullet Resist"
         },
@@ -681,7 +681,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-10s Cooldown and +3s</span> Duration",
           "plain_text": "-10s Cooldown and +3s Duration"
         },
@@ -690,7 +690,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+1.5% Bleed</span> and <span class=\"highlight\">-40% Healing Reduction</span>",
           "plain_text": "+1.5% Bleed and -40% Healing Reduction"
         }
@@ -708,7 +708,7 @@
             "Type": "range"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "AmpDamagePercent": 15,
         "BehaviourBits": null,
@@ -721,14 +721,14 @@
         "HealOnKillPct": {
           "Value": 0,
           "Scale": {
-            "Value": 0,
+            "Value": 0.0,
             "Type": "spirit"
           }
         },
         "InvisDuration": {
           "Value": 0,
           "Scale": {
-            "Value": 0,
+            "Value": 0.0,
             "Type": "spirit"
           }
         },
@@ -770,7 +770,7 @@
             "StaminaToRestore": 2
           },
           {
-            "AmpDamagePercent": 11
+            "AmpDamagePercent": 11.0
           }
         ],
         "WeaponDmgPerIsolationKill": 3
@@ -822,7 +822,7 @@
                 "Name": "Missing Health as Healing",
                 "Value": 0,
                 "Scale": {
-                  "Value": 0,
+                  "Value": 0.0,
                   "Type": "spirit"
                 },
                 "Type": "healing"
@@ -842,7 +842,7 @@
             "DescKey": "ability_drifter_hunger_t2_desc"
           },
           {
-            "AmpDamagePercent": 11
+            "AmpDamagePercent": 11.0
           }
         ],
         "Duration": {
@@ -850,7 +850,7 @@
             "Name": "Invisibility Duration",
             "Value": 0,
             "Scale": {
-              "Value": 0,
+              "Value": 0.0,
               "Type": "spirit"
             },
             "Type": "duration"
@@ -937,7 +937,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -947,7 +947,7 @@
           "card_paths": [
             "card.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "When enemy heroes are <span class=\"highlight\">low on health</span> you deal <span class=\"highlight\">amplified damage</span> against them. These enemies leave a <span class=\"highlight\">lingering blood trail</span> as they move.",
           "plain_text": "When enemy heroes are low on health you deal amplified damage against them. These enemies leave a lingering blood trail as they move."
         },
@@ -956,7 +956,7 @@
           "card_paths": [
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">Isolated</span> heroes leave a trail as they move, and emit their heartbeat from afar. <br><br>You deal <span class=\"highlight\">amplified damage</span> against <span class=\"highlight\">isolated</span> heroes, and when isolated heroes die nearby you gain permanent {g:citadel_inline_attribute:'WeaponDamage'}.",
           "plain_text": "Isolated heroes leave a trail as they move, and emit their heartbeat from afar.\nYou deal amplified damage against isolated heroes, and when isolated heroes die nearby you gain permanent weapon damage."
         },
@@ -965,7 +965,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+3m/s Move Speed when around an isolated enemy hero",
           "plain_text": "+3m/s Move Speed when around an isolated enemy hero"
         },
@@ -974,7 +974,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "On isolated hero death: Heal 24% of your missing health and restores 2 Stamina",
           "plain_text": "On isolated hero death: Heal 24% of your missing health and restores 2 Stamina"
         }
@@ -985,7 +985,7 @@
       "name": "Eternal Night",
       "internal_key": "drifter_darkness",
       "data": {
-        "AbilityCastDelay": 1,
+        "AbilityCastDelay": 1.0,
         "AbilityCastRange": {
           "Value": 100,
           "Scale": {
@@ -994,13 +994,13 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 145,
+          "Value": 145.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 6.5,
           "Scale": {
@@ -1031,7 +1031,7 @@
           ]
         },
         "ChannelMoveSpeed": 1.3,
-        "DarkFactor": 1,
+        "DarkFactor": 1.0,
         "DistanceForMaxProjSpeed": 200,
         "DrifterNearbyRangeCheck": 40,
         "IsDisabled": false,
@@ -1041,7 +1041,7 @@
         "MinProjectileSpeed": 3000,
         "Name": "Eternal Night",
         "PostProcessFadeInTime": 0.2,
-        "PostProcessFadeOutTime": 1,
+        "PostProcessFadeOutTime": 1.0,
         "RevealDuration": {
           "Value": 3,
           "Scale": {
@@ -1173,7 +1173,7 @@
           },
           "DarkFactor": {
             "Name": null,
-            "Value": 1
+            "Value": 1.0
           },
           "DistanceForMaxProjSpeed": {
             "Name": null,
@@ -1193,12 +1193,12 @@
           },
           "PostProcessFadeOutTime": {
             "Name": null,
-            "Value": 1
+            "Value": 1.0
           }
         },
         "AbilityCastDelay": {
           "Name": "Cast Delay",
-          "Value": 1,
+          "Value": 1.0,
           "Type": "cast"
         },
         "AbilityCastRange": {
@@ -1212,7 +1212,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 145,
+          "Value": 145.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -1221,7 +1221,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -1241,7 +1241,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Surround nearby enemy heroes in darkness, <span class=\"highlight\">severely limiting their vision of other units</span>. Affected enemies are briefly revealed to you and are considered <span class=\"highlight\">isolated</span> for the duration.<br><br>You gain {g:citadel_inline_attribute:'BonusSprintSpeed'}.",
           "plain_text": "Surround nearby enemy heroes in darkness, severely limiting their vision of other units. Affected enemies are briefly revealed to you and are considered isolated for the duration.\nYou gain bonus sprint speed."
         },
@@ -1250,7 +1250,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+2.5s Duration and +1 Max Targets.",
           "plain_text": "+2.5s Duration and +1 Max Targets."
         }
@@ -1313,5 +1313,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

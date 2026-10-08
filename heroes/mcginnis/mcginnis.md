@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: McGinnis is a selectable Mystic hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.mcginnis.125561
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # McGinnis
@@ -55,7 +55,7 @@ Internal key: `citadel_ability_shieldedsentry`.
 - **Tier 1:** +10 Turret DPS and +10m Attack Range
 - **Tier 3:** +25% Turret Fire Rate and +12s Turret Lifetime
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorPreventTrainingBotUsage`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -66,16 +66,15 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorPreventTrainingBotUsage
 | Turret Health | 100 (+9 per power increase) |
 | Attack Range | 30 (+1 per range) |
 | Lifetime | 35 (+1 per duration) |
-| Cooldown | 18 (+1 per cooldown) |
 | Cast Range | 20 (+1 per range) |
 | Charges | 1 (+1 per max charges) |
+| Cooldown | 18 (+1 per cooldown) |
 | Charge Delay | 3 (+1 per charge cooldown) |
 
 Upgrade deltas:
 - Tier 1: `{"TurretAttackRange":10,"TurretDPS":10}`
 - Tier 2: `{"AbilityCharges":2}`
 - Tier 3: `{"AttackSpeedMult":25,"TurretLifetime":12}`
-
 ### 2. Medicinal Specter
 
 Internal key: `citadel_ability_mobile_resupply`.
@@ -91,7 +90,7 @@ Internal key: `citadel_ability_mobile_resupply`.
 - **Tier 2:** -20s Cooldown and provides +100% Stamina Recovery
 - **Tier 3:** +2% Max HP Regen +3m Heal Radius +40% Spirit Resist
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorCanHealPlayers`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -103,16 +102,15 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorCanHealPlayers`, `Behav
 | Unknown(AuraFireRateBonus) | 0 |
 | Stamina Recovery | 0 |
 | Max Health Regen | 0 |
-| Cooldown | 50 (+1 per cooldown) |
-| Duration | 6.5 (+1 per duration) |
 | Cast Range | 15 (+1 per range) |
+| Cooldown | 50 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Duration | 6.5 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityDuration":1.5}`
-- Tier 2: `{"AbilityCooldown":-20,"StaminaCooldownReduction":100}`
-- Tier 3: `{"MaxHealthRegenPct":2,"HealRadius":3,"SpiritResist":40}`
-
+- Tier 2: `{"AbilityCooldown":-20.0,"StaminaCooldownReduction":100.0}`
+- Tier 3: `{"MaxHealthRegenPct":2.0,"HealRadius":3,"SpiritResist":40}`
 ### 3. Spectral Wall
 
 Internal key: `citadel_ability_fissure_wall`.
@@ -128,9 +126,9 @@ Internal key: `citadel_ability_fissure_wall`.
 
 - **Tier 1:** Amplifies McGinnis's damage by +20% on hit enemies for 7s
 - **Tier 2:** -20s Cooldown and +2s Duration
-- **Tier 3:** Deploy 2 Mini Turrets near the wall for 8s +30% Slow
+- **Tier 3:** Deploy 2 Mini Turrets near the wall for 8s +24% Slow
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorPreventBotUsage`.
@@ -138,22 +136,21 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorPreventBotUsage`.
 | Card field | Base value |
 | --- | ---: |
 | Damage | 60 (+0.731203 per spirit) |
-| Move Speed | 20 |
+| Move Speed | 16 |
 | Stun Duration | 0 |
 | Minimum Range | 5 |
 | Impact Range | 5 |
 | Slow Duration | 2.5 (+1 per duration) |
 | Debuff Duration | 0 |
-| Cooldown | 50 (+1 per cooldown) |
-| Duration | 6 (+1 per duration) |
 | Cast Range | 50 (+1 per range) |
+| Cooldown | 50 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Duration | 6 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"BonusDamagePercent":20,"DebuffDuration":7}`
-- Tier 2: `{"AbilityCooldown":-20,"AbilityDuration":2}`
-- Tier 3: `{"CreateTurrets":2,"TurretLifeTime":8,"SlowPercent":30}`
-
+- Tier 2: `{"AbilityCooldown":-20.0,"AbilityDuration":2}`
+- Tier 3: `{"CreateTurrets":2,"TurretLifeTime":8,"SlowPercent":24}`
 ### 4. Heavy Barrage
 
 Internal key: `citadel_ability_rocket_barrage`.
@@ -166,11 +163,11 @@ Internal key: `citadel_ability_rocket_barrage`.
 
 **Upgrade descriptions** (where supplied by the source):
 
-- **Tier 1:** Applies 30% movement and dash slow for 1s
+- **Tier 1:** Applies 24% movement and dash slow for 1s
 - **Tier 2:** -45s Cooldown and +6s Duration
 - **Tier 3:** +2m Radius and +15 Damage per Rocket with increased spirit scaling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorExclusiveUse`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorCleaveDisabled`, `BehaviorDeactivateCrouchToggleOnCast`, `BehaviorCanSetQuickCast`, `BehaviorRequireAbilityButtonToCancel`, `BehaviorDontSwitchAwayOnCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -182,15 +179,15 @@ Behavior flags: `BehaviorExclusiveUse`, `BehaviorNoTarget`, `BehaviorDisplaysDam
 | Explosion Radius | 4.5 (+1 per radius) |
 | Min Range | 8.5 |
 | Duration | 8 (+1 per duration) |
-| Cooldown | 200 (+1 per cooldown) |
+| MoveSlowDuration | 0 |
 | Cast Range | 36 (+1 per range) |
+| Cooldown | 200 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
-- Tier 1: `{"MoveSlowPercent":30,"EnemyDashSlowPercent":-18,"MoveSlowDuration":1}`
-- Tier 2: `{"AbilityCooldown":-45,"AbilityDuration":6}`
+- Tier 1: `{"MoveSlowPercent":24,"EnemyDashSlowPercent":-16,"MoveSlowDuration":1}`
+- Tier 2: `{"AbilityCooldown":-45.0,"AbilityDuration":6}`
 - Tier 3: `{"DamagePerRocket":{"Value":15,"Scale":{"Value":0.16,"Type":"spirit"}},"ExplosionRadius":2}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

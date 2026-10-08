@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.hollow-point",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Hollow Point",
@@ -135,9 +135,9 @@
       "importance": "important",
       "key": "BulletArmorReduction",
       "label": "Bullet Resist",
-      "value": "-9%",
+      "value": "-10%",
       "property": {
-        "value": "-9",
+        "value": "-10",
         "provided_property_type": "MODIFIER_VALUE_BULLET_AND_MELEE_RESIST_REDUCTION",
         "css_class": "bullet_armor_down",
         "usage_flags": [
@@ -360,7 +360,7 @@
         "tooltip_is_important": false
       },
       "BulletArmorReduction": {
-        "value": "-9",
+        "value": "-10",
         "provided_property_type": "MODIFIER_VALUE_BULLET_AND_MELEE_RESIST_REDUCTION",
         "css_class": "bullet_armor_down",
         "usage_flags": [
@@ -468,7 +468,7 @@
     "BaseAttackDamagePercent": 35,
     "OutOfCombatHealthRegen": 4.5,
     "BonusHealth": 125,
-    "BulletArmorReduction": -9,
+    "BulletArmorReduction": -10,
     "DebuffDuration": 8,
     "PropertyUpgrades": {
       "BulletArmorReduction": -12,
@@ -528,7 +528,7 @@
         },
         {
           "Key": "BulletArmorReduction",
-          "Value": -9,
+          "Value": -10,
           "Type": "bullet_armor_down",
           "UsageFlags": "ConditionallyApplied"
         }

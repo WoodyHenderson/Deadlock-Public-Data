@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.diviner-s-kevlar",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Diviner's Kevlar",
@@ -62,6 +62,25 @@
         "label": "Ability Duration",
         "postfix": "%",
         "postvalue_label": "Ability Duration",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
+      }
+    },
+    {
+      "section": "innate",
+      "importance": "normal",
+      "key": "UltimateCooldownReduction",
+      "label": "Ultimate Cooldown Reduction",
+      "value": "10%",
+      "property": {
+        "value": "10",
+        "provided_property_type": "MODIFIER_VALUE_ULTIMATE_COOLDOWN_REDUCTION_PERCENTAGE",
+        "css_class": "cooldown",
+        "prefix": "{s:sign}",
+        "label": "Ultimate Cooldown Reduction",
+        "postfix": "%",
+        "postvalue_label": "Ultimate Cooldown Reduction",
         "tooltip_section": "innate",
         "tooltip_is_elevated": false,
         "tooltip_is_important": false
@@ -381,6 +400,18 @@
         "tooltip_section": "innate",
         "tooltip_is_elevated": false,
         "tooltip_is_important": false
+      },
+      "UltimateCooldownReduction": {
+        "value": "10",
+        "provided_property_type": "MODIFIER_VALUE_ULTIMATE_COOLDOWN_REDUCTION_PERCENTAGE",
+        "css_class": "cooldown",
+        "prefix": "{s:sign}",
+        "label": "Ultimate Cooldown Reduction",
+        "postfix": "%",
+        "postvalue_label": "Ultimate Cooldown Reduction",
+        "tooltip_section": "innate",
+        "tooltip_is_elevated": false,
+        "tooltip_is_important": false
       }
     },
     "description": {
@@ -393,7 +424,8 @@
         "section_attributes": [
           {
             "properties": [
-              "BonusAbilityDurationPercent"
+              "BonusAbilityDurationPercent",
+              "UltimateCooldownReduction"
             ]
           }
         ]
@@ -466,6 +498,7 @@
     "CombatBarrier": 1000,
     "BuffDuration": 20,
     "BonusAbilityDurationPercent": 15,
+    "UltimateCooldownReduction": 10,
     "PropertyUpgrades": {
       "BonusAbilityDurationPercent": 15,
       "TechPower": 55,
@@ -502,6 +535,11 @@
           "Key": "BonusAbilityDurationPercent",
           "Value": 15,
           "Type": "duration"
+        },
+        {
+          "Key": "UltimateCooldownReduction",
+          "Value": 10,
+          "Type": "cooldown"
         }
       ]
     },

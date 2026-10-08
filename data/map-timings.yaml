@@ -1,12 +1,14 @@
 schema_version: 1
 id: data.general.map-timings
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
-evidence_status: source_verified
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
+evidence_status: source_verified_with_one_mapped_breakable_group
 sources:
   - wiki.the-cursed-apple.125757
   - wiki.neutral.125766
   - wiki.trooper.114174
+  - github.deadlock-data.gameplay.fc4f540f12e0
+  - github.deadlock-data.changelogs.raw.fc4f540f12e0
 
 units:
   time: seconds
@@ -35,6 +37,22 @@ events:
     starts_at: 180
     respawn_after_destroyed: 180
     central_room_starts_at: 600
+
+  - id: breakables.underground-tunnels
+    starts_at: 300
+    respawn_after_destroyed: 300
+    evidence_status: source_verified_via_patch_note_category_mapping
+    source_group_index: 2
+    note: >-
+      Client 6694 generic data exposes a 5m initial/5m respawn group; the
+      September 16 notes identify underground-tunnel breakables as the group
+      changed to those values. Do not apply this timing to all breakable types.
+
+  - id: breakables.mid-boxes
+    starts_at: 600
+    respawn_after_destroyed: 180
+    evidence_status: source_verified
+    source_group_index: 3
 
   - id: golden-statues.tier-1
     starts_at: 180
@@ -85,6 +103,16 @@ events:
     contest_delay: null
     evidence_status: source_conflict
     review_id: review.unstable-rift-contest-delay
+    comeback_resistance_maximum:
+      starts_at_match_minute: 0
+      starting_percent: 10
+      increase_percentage_points_per_minute: 1
+      cap_percent: 40
+      reaches_cap_at_match_minute: 30
+      source: github.deadlock-data.gameplay.fc4f540f12e0
+    fixed_comeback_bounty:
+      status: removed_from_client_6694_data
+      source: github.deadlock-data.gameplay.fc4f540f12e0
 
   - id: guardian.minimum-timed-resistance
     starts_at: 720

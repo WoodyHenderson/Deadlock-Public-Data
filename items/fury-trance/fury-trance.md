@@ -5,12 +5,12 @@ domain: items
 topics: [item, vitality, tier-3]
 aliases: ["upgrade_fury_trance"]
 summary: "Fury Trance is a currently purchasable Deadlock item whose displayed effects include Bullet Lifesteal, Bonus Health, Weapon Damage, Cooldown, Duration, Fire Rate."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Fury Trance
@@ -26,6 +26,7 @@ Fury Trance is a currently purchasable Deadlock item whose displayed effects inc
 - **Cost:** 3200 souls
 - **Activation:** instant_cast
 - **Active item:** yes
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** FireRate, WeaponDamage, Movement, Healing
 - **Target types:** HeroFriendly

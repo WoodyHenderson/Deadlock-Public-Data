@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.cultist-sacrifice",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Cultist Sacrifice",
@@ -52,7 +52,7 @@
       "upgrade_non_player_bonus"
     ]
   },
-  "description_plain": "Target an enemy NPC and consume it for 180% Bonus Souls and grants a powerful long lasting buff.",
+  "description_plain": "Target an enemy NPC and consume it for 170% Bonus Souls and grants a powerful long lasting buff.",
   "displayed_effects": [
     {
       "section": "innate",
@@ -472,7 +472,7 @@
         "tooltip_is_important": false
       },
       "BonusSoulsPct": {
-        "value": "180",
+        "value": "170",
         "prefix": "+",
         "label": "Bonus Souls",
         "postfix": "%",
@@ -560,7 +560,7 @@
       }
     },
     "description": {
-      "desc": "Target an enemy NPC and consume it for <span class=\"highlight\">180% Bonus Souls</span> and grants a powerful long lasting buff."
+      "desc": "Target an enemy NPC and consume it for <span class=\"highlight\">170% Bonus Souls</span> and grants a powerful long lasting buff."
     },
     "activation": "press",
     "component_items": [
@@ -584,7 +584,7 @@
         "section_type": "active",
         "section_attributes": [
           {
-            "loc_string": "Target an enemy NPC and consume it for <span class=\"highlight\">180% Bonus Souls</span> and grants a powerful long lasting buff.",
+            "loc_string": "Target an enemy NPC and consume it for <span class=\"highlight\">170% Bonus Souls</span> and grants a powerful long lasting buff.",
             "properties": [
               "AbilityCooldown",
               "AbilityDuration"
@@ -634,7 +634,7 @@
   },
   "secondary_deadlock_data_record": {
     "Name": "Cultist Sacrifice",
-    "Description": "Target an enemy NPC and consume it for <span class=\"highlight\">180% Bonus Souls</span> and grants a powerful long lasting buff.",
+    "Description": "Target an enemy NPC and consume it for <span class=\"highlight\">170% Bonus Souls</span> and grants a powerful long lasting buff.",
     "Cost": 3200,
     "Tier": 3,
     "Activation": "Press",
@@ -664,7 +664,7 @@
     "NonPlayerBonusWeaponPower": 30,
     "OutOfCombatHealthRegen": 2,
     "NonPlayerBulletResist": 30,
-    "BonusSoulsPct": 180,
+    "BonusSoulsPct": 170,
     "BonusHealth": {
       "Value": 50,
       "Scale": {
@@ -694,7 +694,7 @@
   "secondary_deadlock_card_record": {
     "Key": "upgrade_non_player_bonus_sacrifice",
     "Name": "Cultist Sacrifice",
-    "Description": "Target an enemy NPC and consume it for <span class=\"highlight\">180% Bonus Souls</span> and grants a powerful long lasting buff.",
+    "Description": "Target an enemy NPC and consume it for <span class=\"highlight\">170% Bonus Souls</span> and grants a powerful long lasting buff.",
     "Cost": 3200,
     "Tier": 3,
     "Slot": "Weapon",
@@ -812,7 +812,7 @@
       },
       "BonusSoulsPct": {
         "Key": "BonusSoulsPct",
-        "Value": 180
+        "Value": 170
       },
       "BonusAbilityCharges": {
         "Key": "BonusAbilityCharges",

@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.haunting-shot",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Haunting Shot",
@@ -112,9 +112,9 @@
       "importance": "normal",
       "key": "MovementSpeedSlow",
       "label": "Move Speed",
-      "value": "40%",
+      "value": "32%",
       "property": {
-        "value": "40",
+        "value": "32",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -133,9 +133,9 @@
       "importance": "normal",
       "key": "GroundDashReductionPercent",
       "label": "Dash Distance",
-      "value": "-40%",
+      "value": "-36%",
       "property": {
-        "value": "-40",
+        "value": "-36",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_GROUND_DASH_REDUCTION_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -211,7 +211,7 @@
       "property_upgrades": [
         {
           "name": "GroundDashReductionPercent",
-          "bonus": "-10"
+          "bonus": "-9"
         },
         {
           "name": "HealthPctDamage",
@@ -219,7 +219,7 @@
         },
         {
           "name": "MovementSpeedSlow",
-          "bonus": "10"
+          "bonus": "8"
         },
         {
           "name": "HealAmpReceivePenaltyPercent",
@@ -481,7 +481,7 @@
         "postvalue_label": "Healing Reduction"
       },
       "MovementSpeedSlow": {
-        "value": "40",
+        "value": "32",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -495,7 +495,7 @@
         "tooltip_is_important": false
       },
       "GroundDashReductionPercent": {
-        "value": "-40",
+        "value": "-36",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_GROUND_DASH_REDUCTION_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -538,7 +538,7 @@
         "property_upgrades": [
           {
             "name": "GroundDashReductionPercent",
-            "bonus": "-10"
+            "bonus": "-9"
           },
           {
             "name": "HealthPctDamage",
@@ -546,7 +546,7 @@
           },
           {
             "name": "MovementSpeedSlow",
-            "bonus": "10"
+            "bonus": "8"
           },
           {
             "name": "HealAmpReceivePenaltyPercent",
@@ -602,12 +602,12 @@
     "OutgoingDamagePenaltyPercent": -40,
     "HealAmpReceivePenaltyPercent": -40,
     "HealAmpRegenPenaltyPercent": -40,
-    "MovementSpeedSlow": 40,
-    "GroundDashReductionPercent": -40,
+    "MovementSpeedSlow": 32,
+    "GroundDashReductionPercent": -36,
     "PropertyUpgrades": {
-      "GroundDashReductionPercent": -10,
+      "GroundDashReductionPercent": -9,
       "HealthPctDamage": 5,
-      "MovementSpeedSlow": 10,
+      "MovementSpeedSlow": 8,
       "HealAmpReceivePenaltyPercent": -15,
       "HealAmpRegenPenaltyPercent": -15,
       "OutgoingDamagePenaltyPercent": -15,
@@ -669,22 +669,22 @@
         },
         {
           "Key": "MovementSpeedSlow",
-          "Value": 40,
+          "Value": 32,
           "Type": "slow",
           "UsageFlags": "ConditionallyApplied"
         },
         {
           "Key": "GroundDashReductionPercent",
-          "Value": -40,
+          "Value": -36,
           "Type": "slow",
           "UsageFlags": "ConditionallyApplied"
         }
       ]
     },
     "Upgrades": {
-      "GroundDashReductionPercent": -10,
+      "GroundDashReductionPercent": -9,
       "HealthPctDamage": 5,
-      "MovementSpeedSlow": 10,
+      "MovementSpeedSlow": 8,
       "HealAmpReceivePenaltyPercent": -15,
       "HealAmpRegenPenaltyPercent": -15,
       "OutgoingDamagePenaltyPercent": -15,

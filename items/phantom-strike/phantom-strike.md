@@ -5,12 +5,12 @@ domain: items
 topics: [item, vitality, tier-4]
 aliases: ["upgrade_phantom_strike"]
 summary: "Teleport to an enemy target and pull them to the ground. Dealing damage, Move speed reduction and Disarm."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Phantom Strike
@@ -26,6 +26,7 @@ Teleport to an enemy target and pull them to the ground. Dealing damage, Move sp
 - **Cost:** 6400 souls
 - **Activation:** press
 - **Active item:** yes
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** WeaponDamage, Durability, Movement, Disruption
 - **Target types:** HeroEnemy
@@ -44,7 +45,7 @@ No component item is listed.
 | Active | Cooldown | 35.0s | normal |
 | Active | Debuff Duration | 3s | normal |
 | Active | Status Effect Disarmed | Unknown | important |
-| Active | Move Speed | 50% | important |
+| Active | Move Speed | 40% | important |
 | Active | Impact Damage | 75 | important |
 
 ## Source Property-Upgrade Fields

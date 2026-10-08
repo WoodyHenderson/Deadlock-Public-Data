@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Paige is a selectable Mystic hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.paige.125555
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Paige
@@ -55,7 +55,7 @@ Internal key: `ability_bookworm_dragonfire`.
 - **Tier 2:** +1 Charge +2s Trail Duration +1m Radius
 - **Tier 3:** +12m Travel Range +100 Damage +30 DPS
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorProjectilePassThroughWorld`, `BehaviorDisplaysDamageImpact`, `BehaviorProjectileFiredAsBullet`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -66,16 +66,16 @@ Behavior flags: `BehaviorProjectile`, `BehaviorProjectilePassThroughWorld`, `Beh
 | Damage Per Second | 30 (+0.3 per spirit) |
 | Trail Duration | 3 (+1 per duration) |
 | Dragon Travel Range | 20 (+1 per range) |
-| Cooldown | 33 (+1 per cooldown) |
-| Duration | 5 (+1 per duration) |
 | Charges | 1 (+1 per max charges) |
+| Cooldown | 33 (+1 per cooldown) |
 | Charge Delay | 7 (+1 per charge cooldown) |
+| Duration | 5 (+1 per duration) |
+| Radius | 4 (+1 per range) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-12}`
 - Tier 2: `{"GroundFlameDuration":2,"Radius":1,"AbilityCharges":1}`
-- Tier 3: `{"Damage":100,"DPS":30,"DragonTravelRange":12}`
-
+- Tier 3: `{"Damage":100,"DPS":30.0,"DragonTravelRange":12}`
 ### 2. Plot Armor
 
 Internal key: `ability_bookworm_knightbarrier`.
@@ -91,7 +91,7 @@ Internal key: `ability_bookworm_knightbarrier`.
 - **Tier 2:** +100 Barrier and +2s Duration
 - **Tier 3:** Affects up to 2 additional allies. Increases barrier scaling.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorProjectilePassThroughWorld`, `BehaviorAllowSelfCast`, `BehaviorCannotCancelDuringChannel`, `BehaviorAllowAltCast`, `BehaviorUseInstantCastUnitTargetUi`, `BehaviorTriggerCancelMashProtectionOnCast`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -101,15 +101,14 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorProjectilePassThroughWo
 | Barrier | 125 (+1.5 per spirit) |
 | Weapon Damage | 25 (+0.3 per spirit) |
 | Fire Rate | 0 (+0 per spirit) |
+| Cast Range | 35 (+1 per range) |
 | Cooldown | 28 (+1 per cooldown) |
 | Duration | 5 (+1 per duration) |
-| Cast Range | 35 (+1 per range) |
 
 Upgrade deltas:
 - Tier 1: `{"BonusFireRate":{"Value":14,"Scale":{"Value":0.16,"Type":"spirit"}}}`
 - Tier 2: `{"CombatBarrier":100,"AbilityDuration":2}`
 - Tier 3: `{"CombatBarrier":{"Value":0,"Scale":{"Value":0.5,"Type":"spirit"}},"BonusTargets":2,"BonusTargetsBarrierPercentage":100}`
-
 ### 3. Captivating Read
 
 Internal key: `ability_bookworm_aoemagic`.
@@ -122,9 +121,9 @@ Internal key: `ability_bookworm_aoemagic`.
 
 **Upgrade descriptions** (where supplied by the source):
 
-- **Tier 3:** +1m Radius On Hit: Reduce Spirit Resist by -18% for 6s
+- **Tier 3:** +2m Radius On Hit: Reduce Spirit Resist by -18% for 6s
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorAlwaysPreviewRadius`, `BehaviorDisplaysDamageImpact`, `BehaviorProjectilePassThroughWorld`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -134,17 +133,17 @@ Behavior flags: `BehaviorAlwaysPreviewRadius`, `BehaviorDisplaysDamageImpact`, `
 | Damage | 90 (+1.3 per spirit) |
 | Immobilize Duration | 1 (+1 per duration) |
 | Spirit Resist | 0 |
-| Move Speed | 45 |
+| Move Speed | 36 |
 | Slow Duration | 0.5 (+1 per duration) |
-| Cooldown | 30 (+1 per cooldown) |
 | Cast Range | 30 (+1 per range) |
+| Cooldown | 30 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Radius | 7.5 (+1 per range) |
 
 Upgrade deltas:
-- Tier 1: `{"AbilityCooldown":-11}`
+- Tier 1: `{"AbilityCooldown":-14}`
 - Tier 2: `{"ImmobilizeDuration":1}`
-- Tier 3: `{"TechArmorDamageReduction":-18,"DebuffDuration":6,"Radius":1}`
-
+- Tier 3: `{"TechArmorDamageReduction":-18,"DebuffDuration":6,"Radius":2}`
 ### 4. Rallying Charge
 
 Internal key: `ability_bookworm_knightcharge`.
@@ -160,23 +159,22 @@ Internal key: `ability_bookworm_knightcharge`.
 - **Tier 2:** Increase width by +4 Steeds -45 Cooldown
 - **Tier 3:** +160 Damage +0.5s Stun Duration +70% Max Amp
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorProjectilePassThroughWorld`, `BehaviorCannotCancelDuringChannel`, `BehaviorRefundHalfCooldownOnChannelInterrupt`.
 
 | Card field | Base value |
 | --- | ---: |
-| Cooldown | 210 (+1 per cooldown) |
-| Duration | 13 (+1 per duration) |
 | Cast Range | 600 |
+| Cooldown | 210 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Duration | 13 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"HealAmount":150}`
 - Tier 2: `{"KnightCount":4,"KnightCountInFirstWave":4,"AbilityCooldown":-45}`
-- Tier 3: `{"Damage":160,"StunDuration":0.5,"MaxAmp":70}`
-
+- Tier 3: `{"Damage":160.0,"StunDuration":0.5,"MaxAmp":70}`
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.
