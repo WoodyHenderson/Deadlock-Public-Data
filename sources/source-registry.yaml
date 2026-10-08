@@ -15,6 +15,16 @@ sources:
     permission_scope: Project owner reports permission to publicly redistribute the derived coordinate layer without attribution, provided the use is non-commercial; not a general license for raw exports, source code, images or commercial use.
     source_quality_note: Upstream identity, URL and access details are intentionally kept outside this repository at the source owner's request. This layer is pinned to its local snapshot and date, not a game client version; independent public verification is unavailable. The assumption that unmentioned map features persisted since the major update is not patch-time proof.
 
+  - id: wiki.update.2026-09-09.145819
+    title: September 9, 2026 undocumented update note
+    url: "https://deadlock.wiki/Update:September_9,_2026?oldid=145819"
+    revision_url: "https://deadlock.wiki/Update:September_9,_2026?oldid=145819"
+    revision_id: 145819
+    last_modified: "2026-09-09T18:29:09Z"
+    accessed_at: "2026-10-08"
+    scope: Reported server-crash exploit fix and 10-second text-chat/ping rate limit.
+    source_quality_note: Community wiki marks the update undocumented and links a client-tracking change; records the reported behavior, not independent runtime verification or unspecified rate-limit thresholds.
+
   - id: wiki.soul-urn.114949
     title: Soul Urn
     url: "https://deadlock.wiki/Soul_Urn"
