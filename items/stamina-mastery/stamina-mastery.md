@@ -5,12 +5,12 @@ domain: items
 topics: [item, vitality, tier-3]
 aliases: ["upgrade_superior_stamina"]
 summary: "Stamina Mastery is a currently purchasable Deadlock item whose displayed effects include Stamina, Stamina Recovery, Air Jump/Dash Distance."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Stamina Mastery
@@ -26,6 +26,7 @@ Stamina Mastery is a currently purchasable Deadlock item whose displayed effects
 - **Cost:** 3200 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** MagicDamage, Movement, FireRate
 - **Target types:** none listed

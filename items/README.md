@@ -1,11 +1,11 @@
 # Item Knowledgebase
 
-This directory covers all **173 items currently purchasable** in Deadlock client 6684, source revision 10933105.
+This directory covers all **173 items currently purchasable** in Deadlock client 6694, source revision 11005995.
 
 ## Source policy
 
-1. The versioned [Deadlock API](https://api.deadlock-api.com/v1/assets/items?language=english&client_version=6684) is the primary structured authority because it is generated from current game data for community use.
-2. [`deadlock-wiki/deadlock-data`](https://github.com/deadlock-wiki/deadlock-data/tree/311b2e8d895eec837441ff3e29b7d7581a61768c/data) at commit `311b2e8d895eec837441ff3e29b7d7581a61768c` is the secondary source and cross-check.
+1. The versioned [Deadlock API](https://api.deadlock-api.com/v1/assets/items?language=english&client_version=6694) is the primary structured authority because it is generated from current game data for community use.
+2. [`deadlock-wiki/deadlock-data`](https://github.com/deadlock-wiki/deadlock-data/tree/fc4f540f12e019a6a2a422e0818917a4eedaf881/data) at commit `fc4f540f12e019a6a2a422e0818917a4eedaf881` is the secondary source and cross-check.
 3. A disagreement is retained and queued for review; the secondary source never silently replaces the primary value.
 
 Both sources identify the same client and source revision. [`roster.yaml`](roster.yaml) records the exact inclusion rule, source hashes, counts, and item identifiers.
@@ -20,7 +20,8 @@ Each item has retrieval-oriented Markdown and canonical YAML. The YAML preserves
 - card-visible innate, passive, and active effects in presentation order;
 - every primary API property, scaling function, tooltip section, activation field, and upgrade block;
 - complete matching secondary `item-data.json` and `item-cards.json` records;
-- target types, conditional-use flags, hidden source fields, source priority, patch identity, and evidence boundaries.
+- target types, conditional-use flags, hidden source fields, source priority, patch identity, and evidence boundaries;
+- separate patch-note addenda for behavior not exposed by structured item data, with an explicit evidence status and source citation.
 
 Generated source-shaped fields are evidence inputs, not executable mechanics. Calculations require separately reviewed rules that define units, conditions, stacking, ordering, and applicability.
 

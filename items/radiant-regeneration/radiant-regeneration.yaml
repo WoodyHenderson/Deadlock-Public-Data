@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.radiant-regeneration",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Radiant Regeneration",
@@ -169,7 +169,7 @@
         "scale_function": {
           "class_name": "scale_function_healing_boon_scale",
           "subclass_name": "HealPercentAmount_scale_function",
-          "stat_scale": 2.0
+          "stat_scale": 1.7
         },
         "label": "Healing on Ability Cast",
         "postvalue_label": "Healing on Ability Cast",
@@ -377,7 +377,7 @@
         "scale_function": {
           "class_name": "scale_function_healing_boon_scale",
           "subclass_name": "HealPercentAmount_scale_function",
-          "stat_scale": 2.0
+          "stat_scale": 1.7
         },
         "label": "Healing on Ability Cast",
         "postvalue_label": "Healing on Ability Cast",
@@ -540,7 +540,7 @@
     "HealingPerCast": {
       "Value": 65,
       "Scale": {
-        "Value": 2.0,
+        "Value": 1.7,
         "Type": "power_increase"
       }
     },
@@ -629,7 +629,7 @@
           "Key": "HealingPerCast",
           "Value": 65,
           "Scale": {
-            "Value": 2.0,
+            "Value": 1.7,
             "Type": "power_increase"
           },
           "Type": "healing"

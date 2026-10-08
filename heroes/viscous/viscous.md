@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Viscous is a selectable Mystic hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.viscous.124936
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Viscous
@@ -37,6 +37,7 @@ Viscous is a currently selectable **Mystic** hero. Internal key: `hero_viscous`.
 - Rounds/s: **4.7619**; magazine: **20**; reload: **2.5s**
 - Projectile speed: **254m/s**; falloff: **19.99–57.51m**
 - Source DPS: **49.238**; sustained: **30.866**
+- Alt-fire bullet damage: **42**; rounds/s: **0.79365**; magazine: **10**; reload: **2.1s**
 
 ## Abilities
 
@@ -56,10 +57,10 @@ Internal key: `viscous_goo_grenade`.
 
 **Upgrade descriptions** (where supplied by the source):
 
-- **Tier 1:** +36 Damage and +2m Radius
+- **Tier 1:** +36 Damage and +1.5m Radius
 - **Tier 3:** Bounces 1 times and improves Spirit Scaling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorDontInterruptSlideOnCast`.
@@ -70,12 +71,12 @@ Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorD
 | Bounces | 2 |
 | Cooldown | 26 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Radius | 5 (+1 per range) |
 
 Upgrade deltas:
-- Tier 1: `{"Damage":36,"Radius":2}`
+- Tier 1: `{"Damage":36,"Radius":1.5}`
 - Tier 2: `{"AbilityCooldown":-14}`
 - Tier 3: `{"MaxBounces":1,"Damage":{"Value":0,"Scale":{"Value":0.9,"Type":"spirit"}}}`
-
 ### 2. The Cube
 
 Internal key: `viscous_restorative_goo`.
@@ -93,7 +94,7 @@ Internal key: `viscous_restorative_goo`.
 - **Tier 2:** +25 Health Regen and +1s Duration
 - **Tier 3:** Removes all non-ult Debuffs and -20s Cooldown
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorEqualUnitTargetPriority`, `BehaviorAllowSelfCast`, `BehaviorCanHealPlayers`, `BehaviorUseInstantCastUnitTargetUi`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -102,15 +103,14 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorEqualUnitTargetPriority
 | --- | ---: |
 | Health Regen | 40 (+0.3 per spirit) |
 | Duration | 3 (+1 per duration) |
+| Cast Range | 20 (+1 per range) |
 | Cooldown | 42 (+1 per cooldown) |
-| Cast Range | 26 (+1 per range) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
 - Tier 1: `{"BonusMoveSpeed":2.5,"StaminaCooldownReduction":30,"PostCubeBuff":1}`
 - Tier 2: `{"BonusHealthRegen":25,"AbilityDuration":1}`
-- Tier 3: `{"AbilityCooldown":-20,"PurgeDebuffs":1}`
-
+- Tier 3: `{"AbilityCooldown":-20.0,"PurgeDebuffs":1}`
 ### 3. Puddle Punch
 
 Internal key: `viscous_telepunch`.
@@ -128,7 +128,7 @@ Internal key: `viscous_telepunch`.
 - **Tier 2:** +1.5m Radius and +60% Lifesteal
 - **Tier 3:** -14s Cooldown and now deals Heavy Melee Damage
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -137,19 +137,20 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorCanSetQuickCast`, `Beha
 | --- | ---: |
 | Damage | 20 (+0.6 per melee) |
 | Damage | 0 (+0 per heavy melee) |
-| Move Speed | 30 |
+| Move Speed | 24 |
 | Duration | 0.6 |
 | Slow Duration | 3 (+1 per duration) |
-| Cooldown | 21 (+1 per cooldown) |
+| LifeStealPercentOnHit | 0 |
 | Cast Range | 40 (+1 per range) |
 | Charges | 1 (+1 per max charges) |
+| Cooldown | 24 (+1 per cooldown) |
 | Charge Delay | 1.7 (+1 per charge cooldown) |
+| Radius | 4 (+1 per range) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCharges":1,"Damage":20}`
 - Tier 2: `{"Radius":1.5,"LifeStealPercentOnHit":60}`
-- Tier 3: `{"AbilityCooldown":-14,"UseHeavyMelee":1,"DamageHeavyMelee":{"Value":40,"Scale":{"Value":0.6,"Type":"heavy_melee"}},"Damage":{"Value":-40,"Scale":{"Value":0,"Type":"melee","Multiply":true}}}`
-
+- Tier 3: `{"AbilityCooldown":-14,"UseHeavyMelee":1,"DamageHeavyMelee":{"Value":40,"Scale":{"Value":0.6,"Type":"heavy_melee"}},"Damage":{"Value":-40,"Scale":{"Value":0.0,"Type":"melee","Multiply":true}}}`
 ### 4. Goo Ball
 
 Internal key: `viscous_goo_bowling_ball`.
@@ -162,9 +163,9 @@ Internal key: `viscous_goo_bowling_ball`.
 **Upgrade descriptions** (where supplied by the source):
 
 - **Tier 2:** +70 Damage and +20% Resists
-- **Tier 3:** +7s Duration and +0.3s Stun Duration
+- **Tier 3:** +7s Duration, +0.3s Stun Duration, and +0.2 Spirit Scaling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorCannotCancelDuringChannel`, `BehaviorTriggerCancelMashProtectionOnCast`, `BehaviorDeactivateCrouchToggleOnCast`, `BehaviorRequireAbilityButtonToCancel`, `BehaviorInhibitSoftCameraCollision`.
@@ -177,14 +178,13 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorCannotCancelDuringChann
 | Spirit Resist | 35 |
 | Bullet Resist | 35 |
 | Cooldown | 150 (+1 per cooldown) |
-| Duration | 11 (+1 per duration) |
 | Charge Delay | -1 |
+| Duration | 11 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-25}`
 - Tier 2: `{"Damage":70,"BulletResist":20,"TechResist":20}`
-- Tier 3: `{"AbilityDuration":7,"StunDuration":0.3}`
-
+- Tier 3: `{"AbilityDuration":7,"StunDuration":0.3,"Damage":{"Value":0,"Scale":{"Value":0.2,"Type":"spirit"}}}`
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.veil-walker",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Veil Walker",
@@ -43,50 +43,10 @@
   },
   "purchase": {
     "cost_souls": 3200,
-    "component_internal_keys": [
-      "upgrade_sprint_booster"
-    ]
+    "component_internal_keys": []
   },
   "description_plain": "Walking through a cosmic veil grants you Stealth, Heal and increased Move Speed.",
   "displayed_effects": [
-    {
-      "section": "innate",
-      "importance": "normal",
-      "key": "BonusSprintSpeed",
-      "label": "Sprint Speed",
-      "value": "2.0m",
-      "property": {
-        "value": "2.0m",
-        "provided_property_type": "MODIFIER_VALUE_SPRINT_SPEED_BONUS",
-        "css_class": "move_speed",
-        "prefix": "{s:sign}",
-        "label": "Sprint Speed",
-        "postfix": "m",
-        "postvalue_label": "Sprint Speed",
-        "tooltip_section": "innate",
-        "tooltip_is_elevated": false,
-        "tooltip_is_important": false
-      }
-    },
-    {
-      "section": "innate",
-      "importance": "normal",
-      "key": "OutOfCombatHealthRegen",
-      "label": "Out of Combat Regen",
-      "value": "2",
-      "property": {
-        "value": "2",
-        "provided_property_type": "MODIFIER_VALUE_OUT_OF_COMBAT_HEALTH_REGEN",
-        "css_class": "healing",
-        "prefix": "{s:sign}",
-        "label": "Out of Combat Regen",
-        "postfix": "",
-        "postvalue_label": "Out of Combat Regen",
-        "tooltip_section": "innate",
-        "tooltip_is_elevated": false,
-        "tooltip_is_important": false
-      }
-    },
     {
       "section": "innate",
       "importance": "normal",
@@ -110,9 +70,9 @@
       "importance": "normal",
       "key": "SpiritPower",
       "label": "Spirit Power",
-      "value": "10",
+      "value": "6",
       "property": {
-        "value": "10",
+        "value": "6",
         "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
         "css_class": "tech_damage",
         "prefix": "+",
@@ -446,28 +406,22 @@
         "css_class": "duration"
       },
       "BonusSprintSpeed": {
-        "value": "2.0m",
+        "value": "0m",
         "provided_property_type": "MODIFIER_VALUE_SPRINT_SPEED_BONUS",
         "css_class": "move_speed",
         "prefix": "{s:sign}",
         "label": "Sprint Speed",
         "postfix": "m",
-        "postvalue_label": "Sprint Speed",
-        "tooltip_section": "innate",
-        "tooltip_is_elevated": false,
-        "tooltip_is_important": false
+        "postvalue_label": "Sprint Speed"
       },
       "OutOfCombatHealthRegen": {
-        "value": "2",
+        "value": "0",
         "provided_property_type": "MODIFIER_VALUE_OUT_OF_COMBAT_HEALTH_REGEN",
         "css_class": "healing",
         "prefix": "{s:sign}",
         "label": "Out of Combat Regen",
         "postfix": "",
-        "postvalue_label": "Out of Combat Regen",
-        "tooltip_section": "innate",
-        "tooltip_is_elevated": false,
-        "tooltip_is_important": false
+        "postvalue_label": "Out of Combat Regen"
       },
       "BonusHealth": {
         "value": "125",
@@ -481,7 +435,7 @@
         "tooltip_is_important": false
       },
       "SpiritPower": {
-        "value": "10",
+        "value": "6",
         "provided_property_type": "MODIFIER_VALUE_TECH_POWER",
         "css_class": "tech_damage",
         "prefix": "+",
@@ -548,17 +502,12 @@
       "desc": "Walking through a <span class=\"highlight\">cosmic veil</span> grants you <span class=\"highlight\">Stealth</span>, <span class=\"highlight\">Heal</span> and increased <span class=\"highlight\">Move Speed</span>."
     },
     "activation": "passive",
-    "component_items": [
-      "upgrade_sprint_booster"
-    ],
     "tooltip_sections": [
       {
         "section_type": "innate",
         "section_attributes": [
           {
             "properties": [
-              "BonusSprintSpeed",
-              "OutOfCombatHealthRegen",
               "BonusHealth",
               "SpiritPower"
             ],
@@ -639,9 +588,7 @@
     "Tier": 3,
     "Activation": "Passive",
     "Slot": "Armor",
-    "Components": [
-      "upgrade_sprint_booster"
-    ],
+    "Components": null,
     "TargetTypes": null,
     "ShopFilters": [
       "Durability",
@@ -660,10 +607,9 @@
     "SpottedRadius": "20m",
     "RevealOnDamageDuration": 0.5,
     "RevealOnSpottedDuration": 1.25,
-    "BonusSprintSpeed": "2.0m",
-    "OutOfCombatHealthRegen": 2,
+    "BonusSprintSpeed": "0m",
     "BonusHealth": 125,
-    "SpiritPower": 10,
+    "SpiritPower": 6,
     "InvisDuration": 8,
     "BonusMoveSpeed": "3.5m",
     "HealOnVeil": {
@@ -692,9 +638,7 @@
     "Tier": 3,
     "Slot": "Armor",
     "Activation": "Passive",
-    "Components": [
-      "upgrade_sprint_booster"
-    ],
+    "Components": null,
     "TargetTypes": null,
     "ShopFilters": [
       "Durability",
@@ -711,23 +655,13 @@
       "Main": [],
       "Alt": [
         {
-          "Key": "BonusSprintSpeed",
-          "Value": "2.0m",
-          "Type": "move_speed"
-        },
-        {
-          "Key": "OutOfCombatHealthRegen",
-          "Value": 2,
-          "Type": "healing"
-        },
-        {
           "Key": "BonusHealth",
           "Value": 125,
           "Type": "health"
         },
         {
           "Key": "SpiritPower",
-          "Value": 10,
+          "Value": 6,
           "Type": "tech_damage"
         }
       ]
@@ -820,6 +754,11 @@
         "Key": "RevealOnSpottedDuration",
         "Value": 1.25,
         "Type": "duration"
+      },
+      "BonusSprintSpeed": {
+        "Key": "BonusSprintSpeed",
+        "Value": "0m",
+        "Type": "move_speed"
       }
     }
   },

@@ -1,8 +1,8 @@
 schema_version: 1
 id: data.general.universal-rules
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
-evidence_status: source_verified
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
+evidence_status: source_verified_with_patch_note_behavior_addenda
 sources:
   - wiki.movement.78724
   - wiki.melee-attack.114941
@@ -19,6 +19,10 @@ sources:
   - wiki.data-ability-cards.114010
   - github.deadlock-data.english.311b2e8d895e
   - deadlock-api.items.client-6684.source-10933105
+  - wiki.melee-attack.157734
+  - github.deadlock-data.gameplay.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.changelogs.raw.fc4f540f12e0
 
 movement:
   no_fall_damage: true
@@ -74,6 +78,10 @@ movement:
     starts_percent: 80
     tapers_to_percent: 20
     duration_seconds: 2
+    evidence_status: source_reported_with_approximate_patch_note_conflict
+    current_runtime_value_status: unresolved_after_global_slow_tuning
+    source: wiki.melee-attack.157734
+    patch_note_source: github.deadlock-data.changelogs.raw.fc4f540f12e0
 
 fire_rate:
   source: wiki.fire-rate.110395
@@ -123,6 +131,11 @@ melee:
 
 parry:
   animation_seconds: 1
+  regular_dash_attempt_cancels_dash_and_momentum: true
+  parry_pauses_weapon_reload: true
+  stun_pauses_reload_instead_of_restarting: true
+  dash_cancel_and_reload_pause_evidence_status: patch_note_only
+  dash_cancel_and_reload_pause_source: github.deadlock-data.changelogs.raw.fc4f540f12e0
   active_window_seconds: 0.75
   failed_cooldown_seconds: 4.5
   successful_recovery_seconds: 0.3
@@ -202,10 +215,10 @@ healing:
         record: heroes/lash/lash.yaml
         source_fields: [HealPctVsHeroes, HealPctVsNonHeroes]
         value_kind: absolute_damage_to_heal_fraction
-        hero: 0.50
+        hero: 0.40
         non_hero: 0.16
-        tier_3_additive_fraction_deltas: {hero: 0.20, non_hero: 0.06}
-        source: wiki.data-ability-data.114011
+        tier_3_additive_fraction_deltas: {hero: 0.15, non_hero: 0.06}
+        source: github.deadlock-data.ability-data.fc4f540f12e0
       - id: mo-and-krill.scorn
         record: heroes/mo-and-krill/mo-and-krill.yaml
         source_fields: [DamageHealMult, DamageHealMultNonHero]
@@ -285,13 +298,21 @@ crowd_control:
       - chain
       - silence
   slow_resistance_formula: base_speed * (1 - slow * (1 - slow_resistance))
+  slow_air_drag:
+    enabled_by_default: true
+    penalty_scale: 0.35
+    convars:
+      enabled: citadel_enable_slows_affect_air_drag
+      scale: citadel_slow_air_drag_penalty_scale
+    evidence_status: source_verified
+    source: github.deadlock-data.gameplay.fc4f540f12e0
 
 respawn:
   interpolation: linear_between_control_points
   cap_seconds: 90
   control_points:
     - { match_time_seconds: 300, respawn_seconds: 8 }
-    - { match_time_seconds: 1200, respawn_seconds: 35 }
+    - { match_time_seconds: 1200, respawn_seconds: 38 }
     - { match_time_seconds: 1800, respawn_seconds: 70 }
     - { match_time_seconds: 2400, respawn_seconds: 85 }
   unassisted_non_player_death_additional_seconds: 10

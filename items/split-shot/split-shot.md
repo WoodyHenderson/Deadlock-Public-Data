@@ -5,12 +5,12 @@ domain: items
 topics: [item, weapon, tier-2]
 aliases: ["upgrade_split_shot"]
 summary: "Make your weapon fire multishot. Hitting more than one Hero per attack will grant a stacking weapon damage bonus. Targets can only be hit once per multishot."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Split Shot
@@ -26,6 +26,7 @@ Make your weapon fire multishot. Hitting more than one Hero per attack will gran
 - **Cost:** 1600 souls
 - **Activation:** instant_cast
 - **Active item:** yes
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** WeaponDamage
 - **Target types:** none listed

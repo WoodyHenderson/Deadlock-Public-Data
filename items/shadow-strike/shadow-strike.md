@@ -2,20 +2,18 @@
 id: item.shadow-strike
 title: "Shadow Strike"
 domain: items
-topics: [item, vitality, tier-5, street-brawl]
+topics: [item, vitality, tier-5]
 aliases: ["upgrade_shadow_strike"]
 summary: "Go Invisible on Stamina use with no detection range. Doing a melee attack while invisible will cause you to steal bullet and spirit resistance from them and deal damage over time."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Shadow Strike
-
-**Shadow Strike is a Street Brawl-only item and is not available in standard matches.**
 
 Go Invisible on Stamina use with no detection range. Doing a melee attack while invisible will cause you to steal bullet and spirit resistance from them and deal damage over time.
 
@@ -28,7 +26,7 @@ Go Invisible on Stamina use with no detection range. Doing a melee attack while 
 - **Cost:** 9999 souls
 - **Activation:** passive
 - **Active item:** no
-- **Game mode:** Street Brawl only
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** none listed
 - **Target types:** AllEnemy

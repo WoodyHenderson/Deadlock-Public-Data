@@ -5,12 +5,12 @@ domain: items
 topics: [item, spirit, tier-4]
 aliases: ["upgrade_spirit_burn"]
 summary: "Dealing significant spirit damage to an enemy within 5s causes an explosion dealing damage and a burn to that enemy. While burning, enemies take damage over time and receive reduced healing. The cooldown is per enemy, so each target can only be burned once per cooldown. Deals half-damage on non-heroes."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Spirit Burn
@@ -26,6 +26,7 @@ Dealing significant spirit damage to an enemy within 5s causes an explosion deal
 - **Cost:** 6400 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** MagicDamage, Durability
 - **Target types:** AllEnemy

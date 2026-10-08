@@ -20,6 +20,10 @@ information to keep as accurate a snapshot as I can.
 Base snapshot was created from the Sep 3rd patch and then expanded upon from there
 (right before the first major patch in 9 months thanks Yoshi)
 
+The September 3 root baseline remains in place. The 38 hero and 173 item records,
+plus selected economy and mechanics records, have a separately dated refresh from
+client 6694 (September 16, source revision 11005995). See the [client-6694 review](patches/2026-09-16-client-6694-review.md) for its scope and limits.
+
 ## Contents
 
 | Path | Contents |
@@ -41,9 +45,10 @@ Base snapshot was created from the Sep 3rd patch and then expanded upon from the
 The September 3 gameplay baseline uses only **Deadlock Wiki**, **Deadlock API**,
 and the **Deadlock Wiki's `deadlock-wiki/deadlock-data` repository** as published
 data sources. The versioned API is the structured authority for item records; 
-wiki-generated data provides the secondary representation. Hero descriptions and 
-changelogs come from pinned wiki-data commits. Existing material source disagreements 
-stay visible rather than being silently merged.
+wiki-generated data provides the secondary representation. Hero descriptions and
+changelogs come from pinned wiki-data commits. Structured client snapshots can
+advance specific records without advancing the root baseline. Existing material
+source disagreements stay visible rather than being silently merged.
 
 Gameplay rules that relied on private confirmations or internal documents were excluded
 from the September 3 baseline. They have not been relabelled as wiki/API-verified. See
@@ -51,8 +56,9 @@ from the September 3 baseline. They have not been relabelled as wiki/API-verifie
 
 ### Historical archive boundary
 
-The changelogs are useful for explicit historical or patch-note questions only.
-They do **not** update, override, or supply missing facts in current records. If
+The raw changelog archive is useful for explicit historical or patch-note
+questions. It does not by itself update or override current records; curated
+dated reviews keep patch-note intent separate from pinned structured data. If
 you are implementing search I suggest you exclude `patches/` by default. Use it
 for more simple questions regarding older values such as "What was the highest 
 max weapon damage intensifying mag ever provided" or something along those lines.

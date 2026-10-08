@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Infernus is a selectable Marksman hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.infernus.124880
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Infernus
@@ -54,7 +54,7 @@ Internal key: `ability_incendiary_projectile`.
 - **Tier 2:** Napalm Effect: +15% Lifesteal
 - **Tier 3:** Napalm Effect: +17% Damage Taken and -33% Healing
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorShowCastRangeAsSatSphereWhileCasting`, `BehaviorDontInterruptSlideOnCast`.
@@ -62,18 +62,17 @@ Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorS
 | Card field | Base value |
 | --- | ---: |
 | Damage | 40 (+0.6 per spirit) |
-| Move Speed | 35 |
+| Move Speed | 28 |
 | Slow Duration | 4 (+1 per duration) |
-| Cooldown | 25 (+1 per cooldown) |
 | Cast Range | 20 (+1 per range) |
 | Charges | 1 (+1 per max charges) |
+| Cooldown | 25 (+1 per cooldown) |
 | Charge Delay | 6 (+1 per charge cooldown) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCharges":1}`
 - Tier 2: `{"LifestealPercentHero":15}`
 - Tier 3: `{"IncomingDamagePercentFromCaster":17,"HealAmpReceivePenaltyPercent":-33,"HealAmpRegenPenaltyPercent":-33}`
-
 ### 2. Flame Dash
 
 Internal key: `ability_flame_dash`.
@@ -89,7 +88,7 @@ Internal key: `ability_flame_dash`.
 - **Tier 2:** +1s Trail Duration and +20 DPS
 - **Tier 3:** Enable 2 Ability Charges with 14s Recharge time
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorPreventBotUsage`, `BehaviorMovement`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -106,10 +105,9 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorPre
 | Duration | 3 (+1 per duration) |
 
 Upgrade deltas:
-- Tier 1: `{"AbilityCooldown":-12}`
-- Tier 2: `{"DPS":20,"GroundFlameDuration":1}`
+- Tier 1: `{"AbilityCooldown":-12.0}`
+- Tier 2: `{"DPS":20.0,"GroundFlameDuration":1}`
 - Tier 3: `{"AbilityCharges":2,"AbilityCooldownBetweenCharge":14}`
-
 ### 3. Afterburn
 
 Internal key: `ability_afterburn`.
@@ -125,7 +123,7 @@ Internal key: `ability_afterburn`.
 - **Tier 2:** Burn Effect: -35% Spirit Damage
 - **Tier 3:** +3s Max Burn Duration
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorCleaveDisabled`, `BehaviorDisplaysDamageImpact`.
@@ -138,6 +136,7 @@ Behavior flags: `BehaviorCleaveDisabled`, `BehaviorDisplaysDamageImpact`.
 | Spirit Damage | 0 |
 | Buildup Per Bullet | 8.1 |
 | Buildup Per Headshot | 15.4 |
+| RefillDuration | 0.5 |
 | Extend Per Headshot | 1 |
 | Charge Delay | -1 |
 
@@ -145,7 +144,6 @@ Upgrade deltas:
 - Tier 1: `{"DPS":16}`
 - Tier 2: `{"OutgoingTechDamagePercent":-35}`
 - Tier 3: `{"BurnDuration":3}`
-
 ### 4. Concussive Combustion
 
 Internal key: `ability_fire_bomb`.
@@ -161,7 +159,7 @@ Internal key: `ability_fire_bomb`.
 - **Tier 2:** -65s Cooldown and +100% Explosion Lifesteal
 - **Tier 3:** +0.9s Stun Duration and +10m Radius
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorCastableWhileBusy`, `BehaviorDisplaysDamageImpact`.
@@ -177,9 +175,8 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorCastableWhileBusy`, `BehaviorDispla
 
 Upgrade deltas:
 - Tier 1: `{"Damage":100}`
-- Tier 2: `{"AbilityCooldown":-65,"LifeStealPercentOnHit":100}`
+- Tier 2: `{"AbilityCooldown":-65.0,"LifeStealPercentOnHit":100}`
 - Tier 3: `{"StunDuration":0.9,"Radius":10}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

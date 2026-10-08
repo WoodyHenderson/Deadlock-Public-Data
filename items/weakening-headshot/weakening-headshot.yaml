@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.weakening-headshot",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Weakening Headshot",
@@ -123,9 +123,9 @@
       "importance": "important",
       "key": "BulletResistReduction",
       "label": "Bullet Resist",
-      "value": "-13%",
+      "value": "-12%",
       "property": {
-        "value": "-13",
+        "value": "-12",
         "provided_property_type": "MODIFIER_VALUE_BULLET_AND_MELEE_RESIST_REDUCTION",
         "css_class": "bullet_armor_down",
         "usage_flags": [
@@ -303,7 +303,7 @@
         "postvalue_label": "Weapon Damage"
       },
       "BulletResistReduction": {
-        "value": "-13",
+        "value": "-12",
         "provided_property_type": "MODIFIER_VALUE_BULLET_AND_MELEE_RESIST_REDUCTION",
         "css_class": "bullet_armor_down",
         "usage_flags": [
@@ -455,7 +455,7 @@
     "AbilityUnitTargetLimit": 1,
     "AbilityCooldownBetweenCharge": -1.0,
     "ChannelMoveSpeed": -1,
-    "BulletResistReduction": -13,
+    "BulletResistReduction": -12,
     "DebuffDuration": 12,
     "DiminishingMultiplier": 0.5,
     "BonusHealth": 60,
@@ -503,7 +503,7 @@
       "Main": [
         {
           "Key": "BulletResistReduction",
-          "Value": -13,
+          "Value": -12,
           "Type": "bullet_armor_down",
           "UsageFlags": "ConditionallyApplied"
         }

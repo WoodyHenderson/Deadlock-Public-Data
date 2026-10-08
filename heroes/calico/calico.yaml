@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.calico",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.calico.125743",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Calico",
   "aliases": [],
@@ -25,8 +25,8 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 730,
-    "health_regeneration_per_second": 2,
+    "maximum_health": 730.0,
+    "health_regeneration_per_second": 2.0,
     "light_melee_damage": 63,
     "heavy_melee_damage": 116,
     "move_speed_meters_per_second": 6.8,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 16.1,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.62
     },
     "air_dash": {
       "speed_meters_per_second": 18.6,
-      "distance_meters": 8,
+      "distance_meters": 8.0,
       "duration_seconds": 0.43
     },
     "stamina": {
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.043,
-    "MaxHealth": 37,
+    "MaxHealth": 37.0,
     "PowerIncreases": 1,
     "TechPower": 1.1,
     "LightMeleeDamage": 1.58,
@@ -74,15 +74,15 @@
     "RoundsPerSecond": 4.7619,
     "ClipSize": 12,
     "ReloadTime": 2.6,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
     "FalloffStartRange": 19.99,
     "FalloffEndRange": 57.51,
-    "FalloffStartScale": 1,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
-    "BulletGravityScale": 0,
+    "BulletGravityScale": 0.0,
     "BulletRadius": 0.0762,
     "BulletsPerShot": 9,
     "BulletsPerBurst": 1,
@@ -114,7 +114,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
           "BehaviorProjectile",
@@ -146,7 +146,7 @@
         "MultiHitPenaltyPercentage": 65,
         "Name": "Gloom Bombs",
         "Radius": {
-          "Value": 3,
+          "Value": 3.0,
           "Scale": {
             "Value": 1,
             "Type": "radius"
@@ -263,12 +263,12 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "Radius": {
           "Name": "Radius",
-          "Value": 3,
+          "Value": 3.0,
           "Scale": {
             "Value": 1,
             "Type": "radius"
@@ -283,7 +283,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Throw a cluster of bombs that detonate after a delay, dealing {g:citadel_inline_attribute:'SpiritDamage'}.<br><br><span class=\"diminish\">Enemies hit by multiple bombs take 65% damage.</span>",
           "plain_text": "Throw a cluster of bombs that detonate after a delay, dealing spirit damage.\nEnemies hit by multiple bombs take 65% damage."
         },
@@ -292,7 +292,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Per Bomb Touch : <span class=\"highlight\">-6%</span> Melee Resist for 6s</span>",
           "plain_text": "Per Bomb Touch : -6% Melee Resist for 6s"
         }
@@ -318,7 +318,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
           "BehaviorNoTarget",
@@ -339,7 +339,7 @@
           "Class": "CitadelShivDash",
           "Subclass": "CitadelShivDash"
         },
-        "DashRadius": 2,
+        "DashRadius": 2.0,
         "DashSpeed": 60.96,
         "HealAmount": {
           "Value": 40,
@@ -349,7 +349,7 @@
           }
         },
         "ImpactDamage": {
-          "Value": 10,
+          "Value": 10.0,
           "Scale": {
             "Value": 0.8,
             "Type": "melee"
@@ -394,7 +394,7 @@
               {
                 "Key": "ImpactDamage",
                 "Name": "Impact Damage",
-                "Value": 10,
+                "Value": 10.0,
                 "Scale": {
                   "Value": 0.8,
                   "Type": "melee"
@@ -478,7 +478,7 @@
           },
           "DashRadius": {
             "Name": "Radius",
-            "Value": 2
+            "Value": 2.0
           },
           "DashSpeed": {
             "Name": "Dash Speed",
@@ -530,7 +530,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -541,7 +541,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Dash forward before slashing all enemies in a circle, dealing {g:citadel_inline_attribute:'MeleeDamage'}. <br><br>If the ability hits at least one hero, {g:citadel_inline_attribute:'Heal'} a small amount of health.",
           "plain_text": "Dash forward before slashing all enemies in a circle, dealing melee damage.\nIf the ability hits at least one hero, heal a small amount of health."
         },
@@ -550,7 +550,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Heros killed within 3s grant <span class=\"highlight\">+200</span> souls",
           "plain_text": "Heros killed within 3s grant +200 souls"
         },
@@ -559,7 +559,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+60</span> Damage & On Hero Hit: <span class=\"highlight\">50%</span> Cooldown Refund",
           "plain_text": "+60 Damage & On Hero Hit: 50% Cooldown Refund"
         }
@@ -577,7 +577,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
           "BehaviorChannelled",
@@ -601,7 +601,7 @@
           "EnabledStateMask": [
             "IsTinyCharacter"
           ],
-          "ModelScale": 1
+          "ModelScale": 1.0
         },
         "CatFormDamageDealtReduction": -100,
         "ChannelMoveSpeed": -1,
@@ -732,7 +732,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -743,7 +743,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Turn to shadows and possess Ava. You gain {g:citadel_inline_attribute:'BonusMoveSpeed'} that increases over time, and become <Panel class=\"AbilityPropertyIcon prop_invisible\"> <span class=\"highlight\">hidden on the minimap</span>. <br><br><span class=\"diminish\">Taking damage from an enemy hero resets your bonus move speed and puts Ava on a brief cooldown.</span>",
           "plain_text": "Turn to shadows and possess Ava. You gain bonus move speed that increases over time, and become hidden on the minimap.\nTaking damage from an enemy hero resets your bonus move speed and puts Ava on a brief cooldown."
         },
@@ -752,7 +752,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+15</span> Health Regen & <span class=\"highlight\">+40%</span> Max Move Speed",
           "plain_text": "+15 Health Regen & +40% Max Move Speed"
         },
@@ -761,7 +761,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Gain Damage Amp over time, up to <span class=\"highlight\">18%</span>. Lingers for 6s",
           "plain_text": "Gain Damage Amp over time, up to 18%. Lingers for 6s"
         }
@@ -786,7 +786,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "AirDrag": 4,
         "AirSpeedMax": 100,
@@ -810,7 +810,7 @@
         "BonusMoveSpeedPercent": 20,
         "ChannelMoveSpeed": -1,
         "Damage": {
-          "Value": 150,
+          "Value": 150.0,
           "Scale": {
             "Value": 0.609336,
             "Type": "spirit"
@@ -856,7 +856,7 @@
               {
                 "Key": "Damage",
                 "Name": "Damage",
-                "Value": 150,
+                "Value": 150.0,
                 "Scale": {
                   "Value": 0.609336,
                   "Type": "spirit"
@@ -955,7 +955,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "Radius": {
@@ -975,7 +975,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Instantly turn to shadows, becoming <span class=\"highlight\">untargetable</span>, gaining {g:citadel_inline_attribute:'BonusMoveSpeed'}, and dealing {g:citadel_inline_attribute:'SpiritDamage'}.<br><br> After a delay, return from the shadows, dealing {g:citadel_inline_attribute:'SpiritDamage'} again.",
           "plain_text": "Instantly turn to shadows, becoming untargetable, gaining bonus move speed, and dealing spirit damage.\nAfter a delay, return from the shadows, dealing spirit damage again."
         },
@@ -984,7 +984,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+75</span> Damage and <span class=\"highlight\">+20%</span> Move Speed",
           "plain_text": "+75 Damage and +20% Move Speed"
         },
@@ -993,7 +993,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "On Completion: Heal for <span class=\"highlight\">450</span> and <span class=\"highlight\">refund</span> all ability cooldowns",
           "plain_text": "On Completion: Heal for 450 and refund all ability cooldowns"
         }
@@ -1056,5 +1056,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

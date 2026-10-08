@@ -16,13 +16,15 @@ aliases:
   - denies
   - confirms
 summary: How Souls are earned, shared, secured, denied, dropped, and adjusted by catch-up systems.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
-evidence_status: source_verified
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
+evidence_status: source_verified_with_unresolved_comeback_formula
 sources:
-  - wiki.souls.124122
+  - wiki.souls.157718
   - wiki.trooper.114174
   - wiki.neutral.125766
+  - github.deadlock-data.gameplay.fc4f540f12e0
+  - github.deadlock-data.changelogs.raw.fc4f540f12e0
 ---
 
 # Souls and Bounties
@@ -44,7 +46,10 @@ The current baseline values and growth rates are stored in
 - hero kills start at a base bounty of 200, grow by 50 per match minute, and cap
   at 2,200 at 40 minutes;
 - standard Troopers are worth 100 plus 2 per match minute;
-- objective bounties do not grow with time in the pinned source.
+- Guardian bounty is 1,375 Souls and Walker bounty is 3,675 Souls; both are
+  fixed in the pinned data. For structure bounties, 25% goes to nearby allies
+  and the remaining 75% is split among all six team members, including nearby
+  allies.
 
 ## Floating and Ground Soul Orbs
 
@@ -101,21 +106,29 @@ the equivalent progress toward the next one.
 
 ## Comeback and Individual Catch-Up
 
-The lower-net-worth team can receive up to 26% more Souls from Troopers,
-neutrals, Sinner's Sacrifice machines, and objectives. The adjustment ignores
-the first 3,000 Souls of team difference and reaches its maximum at a 20% net
-worth difference.
+The pinned multiplier fields retain a maximum 26% additional bounty for the
+trailing team from Troopers, neutrals, Sinner's Sacrifice machines, and
+objectives. The curve ignores the first 3,000 Souls of team difference and
+reaches that maximum at a 20% net-worth difference. However, the September 16
+notes also report removal of a fixed extra comeback bounty and a general
+reduction. Those changes are not fully represented by the unchanged multiplier
+convars, so they do not establish a complete current hero-kill or Rift-bounty
+formula.
 
-Hero kills can pay substantially more when the killed hero is richer than the
-killer team's average. After eight minutes, the two lowest-net-worth players on
-each team also receive passive Soul catch-up equal to 2.5% and 1.5%,
-respectively, of the Souls their team gathered during the measured second.
+A player above the enemy team's average net worth has 70% of eligible comeback
+Souls redirected to a tick-gold pool for the two lowest-net-worth teammates;
+the pool is split equally and fully paid each period. This is separate from the
+existing passive catch-up after eight minutes, which remains 2.5% and 1.5% of
+the team's Souls gathered per second for the two lowest players.
 
+The September 16 notes also state that Golden Goose Egg stored Souls now count
+toward net worth for comeback calculations. This is recorded as patch-note-only
+behavior because the structured item data does not expose that net-worth rule.
 The Soul Urn has its own trailing-team reward adjustment.
 
 ## Source Notes
 
 Adapted from the pinned Deadlock Wiki revisions for
-[Souls](https://deadlock.wiki/Souls?oldid=124122),
+[Souls](https://deadlock.wiki/Souls?oldid=157718),
 [Trooper](https://deadlock.wiki/Trooper?oldid=114174), and
-[Neutral](https://deadlock.wiki/Neutral?oldid=125766).
+[Neutral](https://deadlock.wiki/Neutral?oldid=125766), client 6694 generated gameplay data, and the September 16 patch notes. The complete comeback formula remains unresolved where the notes do not give exact values.

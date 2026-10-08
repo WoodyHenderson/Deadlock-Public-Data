@@ -5,15 +5,17 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Silver is a selectable Marksman hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
-  - wiki.silver.124941
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
+  - github.deadlock-data.changelogs.raw.fc4f540f12e0
+  - github.deadlock-data.gameplay.fc4f540f12e0
+  - wiki.silver.157646
 ---
 
 # Silver
@@ -27,7 +29,7 @@ Silver is a currently selectable **Marksman** hero. Internal key: `hero_werewolf
 | Maximum health | 830 |
 | Health regeneration | 2.5/s |
 | Move speed | 6.7m/s |
-| Sprint bonus | 1.5m/s |
+| Sprint bonus | 2.5m/s |
 | Stamina | 2 |
 | Light / heavy melee | 50 / 116 |
 
@@ -54,7 +56,7 @@ Internal key: `ability_werewolf_unloadgun`.
 
 - **Tier 3:** If you hit all shots, deal +7% current health as damage
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorProjectileFiredAsBullet`, `BehaviorDontInterruptSlideOnCast`.
@@ -68,16 +70,15 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorPro
 | Weapon Damage | 0 |
 | Bonus Current Health as Damage | 0 |
 | Weapon Damage vs. NPCs | 100 |
-| Cooldown | 25 (+1 per cooldown) |
-| Duration | 5 (+1 per duration) |
 | Cast Range | 0.0254 (+0 per range) |
+| Cooldown | 25 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Duration | 5 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"BaseAttackDamagePercent":15}`
 - Tier 2: `{"AbilityCooldown":-10}`
 - Tier 3: `{"StackDuration":3,"MaxStacks":3,"BonusCurrentHealthDamagePercentage":7}`
-
 ### 2. Boot Kick
 
 Internal key: `ability_werewolf_kickflip`.
@@ -94,7 +95,7 @@ Internal key: `ability_werewolf_kickflip`.
 - **Tier 2:** On Hero Hit: Restore 2 Stamina
 - **Tier 3:** +80 Bonus Damage and kicked enemies deal -35% Damage for 5s
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorDisplaysDamageImpact`, `BehaviorCannotCancelDuringChannel`, `BehaviorDontTriggerPostCastOnCastComplete`, `BehaviorMovement`, `BehaviorTriggerCancelMashProtectionOnCast`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -104,8 +105,8 @@ Behavior flags: `BehaviorChannelled`, `BehaviorDisplaysDamageImpact`, `BehaviorC
 | Damage | 0 (+0.9 per melee) |
 | Disarm Duration | 0 |
 | Debuff Duration | 0 |
-| Cooldown | 21 (+1 per cooldown) |
 | Cast Range | 10.6 (+1 per range) |
+| Cooldown | 21 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
@@ -113,6 +114,7 @@ Upgrade deltas:
 - Tier 2: `{"StaminaRestore":2}`
 - Tier 3: `{"OutgoingDamagePercent":-35,"DebuffDuration":5,"BonusDamage":80}`
 
+**patch_note_only:** The September 16 notes limit Boot Kick's valid targets to heroes and objectives; this target filter is not exposed in the structured ability record. Source: `github.deadlock-data.changelogs.raw.fc4f540f12e0`.
 ### 3. Entangling Bola
 
 Internal key: `ability_werewolf_netshot`.
@@ -126,7 +128,7 @@ Internal key: `ability_werewolf_netshot`.
 
 - **Tier 3:** +0.75s Debuff Duration. Bola ricochets to 2 additional targets
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorProjectileFiredAsBullet`, `BehaviorDontInterruptSlideOnCast`.
@@ -134,16 +136,20 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorPro
 | Card field | Base value |
 | --- | ---: |
 | Damage | 40 (+1.6 per spirit) |
-| Move Speed | 20 |
+| Move Speed | 16 |
 | Debuff Duration | 1.5 (+1 per duration) |
+| Gravity Scale | 100 |
 | Cooldown | 23 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
-- Tier 1: `{"SlowPercent":25}`
+- Tier 1: `{"SlowPercent":20}`
 - Tier 2: `{"AbilityCooldown":-8}`
 - Tier 3: `{"RicochetCount":2,"RicochetRange":15,"DebuffDuration":0.75}`
 
+**patch_note_only:** The September 16 notes limit Entangling Bola's valid targets to heroes; the target filter is not exposed in the structured ability record. Source: `github.deadlock-data.changelogs.raw.fc4f540f12e0`.
+
+**source_verified_with_patch_note_semantics:** Client 6694 data adds GravityScale=100 and PulldownToGround to the Bola debuff. The patch notes describe this as increased gravity during the debuff that interrupts flying abilities, using the same rules as Phantom Strike. Source: `github.deadlock-data.gameplay.fc4f540f12e0; github.deadlock-data.changelogs.raw.fc4f540f12e0`.
 ### 4. Lycan Curse
 
 Internal key: `ability_werewolf_transformation`.
@@ -160,7 +166,7 @@ Internal key: `ability_werewolf_transformation`.
 - **Tier 2:** +4 m/s Move Speed and 200 Bonus Health
 - **Tier 3:** On Hero Kill: Refresh abilities and duration
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`.
@@ -178,17 +184,14 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`.
 | Heal Amount | 0 (+1 per power increase) |
 | Stamina | 0 |
 | Cooldown | 60 (+1 per cooldown) |
-| Duration | 15 (+1 per duration) |
 | Charge Delay | -1 |
+| Duration | 15 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"BulletResist":15,"TechResist":15}`
 - Tier 2: `{"BonusMoveSpeed":4,"BonusHealth":200}`
 - Tier 3: `{"KillDurationBonus":15,"KillCreditWindow":1.5}`
-
 ## Lycan Curse: Transformed Form
-
-While **Lycan Curse** is active, Silver replaces her weapon and abilities with the ferocious versions below. This is a transformed state, not a separately selectable hero. The structured YAML stores this under `forms[0]`; the replacement abilities are not counted as additional selectable-hero abilities.
 
 ### Transformed weapon: Loose Muzzle
 
@@ -225,9 +228,9 @@ Leap forward and maul the first enemy hit for melee damage. The target suffers r
 
 Smash nearby enemies for Spirit damage, Disarm, and a brief movement slow.
 
-- Base: 45 + 1.5× Spirit Power; 2s Disarm; −30% Move Speed; 18s cooldown.
+- Base: 45 + 1.5× Spirit Power; 2s Disarm; −24% Move Speed; 18s cooldown.
 - Tier 1: +25 Damage.
-- Tier 2: −40% Move Speed.
+- Tier 2: −32% Move Speed.
 - Tier 3: +1.5s Debuff Duration.
 - The effect can be dispelled, and its crowd-control effects are suppressed by Unstoppable.
 
@@ -239,4 +242,4 @@ Values above are retrieval highlights. Use the adjacent YAML for calculations. I
 
 ## Source Notes
 
-Adapted from the pinned [Silver](https://deadlock.wiki/Silver?oldid=124941) article, transformed-form material in [revision 145833](https://deadlock.wiki/Silver?oldid=145833), and generated data revisions. No wiki media is included.
+Adapted from the pinned [Silver](https://deadlock.wiki/Silver?oldid=157646) article and generated client 6694 data. No wiki media is included.

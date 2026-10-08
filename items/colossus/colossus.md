@@ -5,12 +5,12 @@ domain: items
 topics: [item, vitality, tier-4]
 aliases: ["upgrade_colossus"]
 summary: "Grow larger in size, gaining bullet resist, spirit resist, and melee damage. Nearby enemies suffer from slow and have reduced dash speed."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Colossus
@@ -26,6 +26,7 @@ Grow larger in size, gaining bullet resist, spirit resist, and melee damage. Nea
 - **Cost:** 6400 souls
 - **Activation:** instant_cast
 - **Active item:** yes
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** Durability
 - **Target types:** none listed
@@ -47,7 +48,7 @@ Grow larger in size, gaining bullet resist, spirit resist, and melee damage. Nea
 | Active | Bullet Resist | 35% | important |
 | Active | Spirit Resist | 35% | important |
 | Active | Melee Damage | 30% | important |
-| Active | Move Speed | 30% | important |
+| Active | Move Speed | 24% | important |
 
 ## Source Property-Upgrade Fields
 

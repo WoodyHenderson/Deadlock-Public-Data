@@ -14,14 +14,16 @@ aliases:
   - denizens
   - map events
 summary: Neutral camps, recurring map events, their initial availability, and their general rewards.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_conflict
 sources:
   - wiki.the-cursed-apple.125757
   - wiki.mechanics.110139
   - wiki.neutral.125766
-  - wiki.souls.124122
+  - wiki.souls.157718
+  - github.deadlock-data.gameplay.fc4f540f12e0
+  - github.deadlock-data.changelogs.raw.fc4f540f12e0
 ---
 
 # Timed Events and Neutral Objectives
@@ -36,9 +38,9 @@ times are stored in `data/map-timings.yaml`.
 | 0:00 | Mid-Boss is present in the central underground area. |
 | 2:00 | Small neutral camps spawn. |
 | 3:00 | Base Soul Wells activate; regular crates and Tier 1 Golden Statues spawn. |
-| 5:00 | Medium neutral camps and temporary powerups spawn. |
+| 5:00 | Underground-tunnel breakables spawn; their respawn interval is 5 minutes. Medium neutral camps and temporary powerups also spawn. |
 | 8:00 | Large neutral camps and Sinner's Sacrifice locations spawn. |
-| 10:00 | Soul Urn cycle begins; Tier 2 Golden Statues and central breakables spawn. |
+| 10:00 | Soul Urn cycle begins; Tier 2 Golden Statues and mid-boxes spawn. Mid-boxes respawn after 3 minutes. |
 | about 11:00 | First Unstable Rift appears, subject to a random timing window and contest setup. |
 | 12:00 | Lane Guardians reach their minimum timed damage resistance. |
 | 18:00 | Walkers reach their minimum timed damage resistance. |
@@ -108,10 +110,16 @@ an Unstable Rift's visual spawn, announcement, and contest opening. The baseline
 therefore records the first spawn window and recurrence as provisional but does
 not expose a trusted contest-start formula. See [known limitations](../../LIMITATIONS.md#unresolved-source-conflicts).
 
+Client 6694 independently verifies the Unstable Rift comeback-resistance
+maximums: 10% at match start, +1 percentage point per minute, capped at 40% by
+30 minutes. The same data revision no longer contains the previous fixed Rift
+comeback-bounty field. This does not resolve the Rift's disputed visual/contest
+timing or the complete comeback-reward formula.
+
 ## Source Notes
 
 Adapted from the pinned Deadlock Wiki revisions for
 [The Cursed Apple](https://deadlock.wiki/The_Cursed_Apple?oldid=125757),
 [Mechanics](https://deadlock.wiki/Mechanics?oldid=110139),
 [Neutral](https://deadlock.wiki/Neutral?oldid=125766), and
-[Souls](https://deadlock.wiki/Souls?oldid=124122).
+[Souls](https://deadlock.wiki/Souls?oldid=157718), and the September 16 client gameplay data and changelog.

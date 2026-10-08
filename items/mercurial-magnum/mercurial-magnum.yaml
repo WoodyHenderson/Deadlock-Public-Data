@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.mercurial-magnum",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Mercurial Magnum",
@@ -128,15 +128,15 @@
       "importance": "important",
       "key": "BulletsBonusMagicDamage",
       "label": "Base Bullet Damage",
-      "value": "25%",
+      "value": "20%",
       "property": {
-        "value": "25",
+        "value": "20",
         "css_class": "tech_damage",
         "scale_function": {
           "class_name": "scale_function_tech_damage",
           "subclass_name": "BonusDamage_scale_function",
           "specific_stat_scale_type": "ETechPower",
-          "stat_scale": 0.49
+          "stat_scale": 0.38
         },
         "prefix": "+",
         "label": "Base Bullet Damage",
@@ -417,13 +417,13 @@
         "tooltip_is_important": false
       },
       "BulletsBonusMagicDamage": {
-        "value": "25",
+        "value": "20",
         "css_class": "tech_damage",
         "scale_function": {
           "class_name": "scale_function_tech_damage",
           "subclass_name": "BonusDamage_scale_function",
           "specific_stat_scale_type": "ETechPower",
-          "stat_scale": 0.49
+          "stat_scale": 0.38
         },
         "prefix": "+",
         "label": "Base Bullet Damage",
@@ -550,9 +550,9 @@
     "AmmoReloadPercent": 100,
     "AbilityChargeUpTime": 14,
     "BulletsBonusMagicDamage": {
-      "Value": 25,
+      "Value": 20,
       "Scale": {
-        "Value": 0.49,
+        "Value": 0.38,
         "Type": "spirit"
       }
     },
@@ -611,9 +611,9 @@
       "Main": [
         {
           "Key": "BulletsBonusMagicDamage",
-          "Value": 25.0,
+          "Value": 20.0,
           "Scale": {
-            "Value": 0.49,
+            "Value": 0.38,
             "Type": "spirit"
           },
           "Type": "tech_damage"

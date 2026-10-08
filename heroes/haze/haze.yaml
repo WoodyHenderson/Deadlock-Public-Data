@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.haze",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.haze.124874",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Haze",
   "aliases": [],
@@ -25,8 +25,8 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 730,
-    "health_regeneration_per_second": 2,
+    "maximum_health": 730.0,
+    "health_regeneration_per_second": 2.0,
     "light_melee_damage": 50,
     "heavy_melee_damage": 116,
     "move_speed_meters_per_second": 8.2,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 16.1,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.62
     },
     "air_dash": {
       "speed_meters_per_second": 18.6,
-      "distance_meters": 8,
+      "distance_meters": 8.0,
       "duration_seconds": 0.43
     },
     "stamina": {
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.143,
-    "MaxHealth": 33,
+    "MaxHealth": 33.0,
     "PowerIncreases": 1,
     "TechPower": 0.5,
     "LightMeleeDamage": 1.58,
@@ -72,17 +72,17 @@
     "SustainedDPS": 0.2471
   },
   "weapon": {
-    "BulletSpeed": 762,
+    "BulletSpeed": 762.0,
     "BulletDamage": 5.26,
     "RoundsPerSecond": 9.5238,
     "ClipSize": 25,
     "ReloadTime": 2.35,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
     "FalloffStartRange": 19.99,
-    "FalloffEndRange": 46,
-    "FalloffStartScale": 1,
+    "FalloffEndRange": 46.0,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
     "BulletGravityScale": 1.5,
@@ -111,13 +111,13 @@
       "data": {
         "AbilityCastDelay": 0.2,
         "AbilityCooldown": {
-          "Value": 30,
+          "Value": 30.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
           "BehaviorProjectile",
@@ -178,7 +178,7 @@
         },
         "Upgrades": [
           {
-            "BulletResistReduction": -10,
+            "BulletResistReduction": -10.0,
             "BulletResistReductionDuration": 6
           },
           {
@@ -186,9 +186,9 @@
             "FixationStacks": 15
           },
           {
-            "AbilityCooldown": -17,
-            "SlowPercent": 50,
-            "GroundDashReductionPercent": -50,
+            "AbilityCooldown": -17.0,
+            "SlowPercent": 40,
+            "GroundDashReductionPercent": -45,
             "DebuffDuration": 3
           }
         ]
@@ -261,7 +261,7 @@
         },
         "Upgrades": [
           {
-            "BulletResistReduction": -10,
+            "BulletResistReduction": -10.0,
             "BulletResistReductionDuration": 6,
             "DescKey": "ability_sleep_dagger_t1_desc"
           },
@@ -271,9 +271,9 @@
             "DescKey": "ability_sleep_dagger_t2_desc"
           },
           {
-            "AbilityCooldown": -17,
-            "SlowPercent": 50,
-            "GroundDashReductionPercent": -50,
+            "AbilityCooldown": -17.0,
+            "SlowPercent": 40,
+            "GroundDashReductionPercent": -45,
             "DebuffDuration": 3,
             "DescKey": "ability_sleep_dagger_t3_desc"
           }
@@ -302,7 +302,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 30,
+          "Value": 30.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -311,7 +311,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -322,7 +322,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Throw a dagger that <span class=\"highlight\">damages</span> and <span class=\"highlight\">sleeps</span> the target. Sleeping targets wake up shortly after being damaged. Throwing a Dagger does not break your invisibility. Sleep Dagger does not interrupt enemies' channeling abilities.",
           "plain_text": "Throw a dagger that damages and sleeps the target. Sleeping targets wake up shortly after being damaged. Throwing a Dagger does not break your invisibility. Sleep Dagger does not interrupt enemies' channeling abilities."
         },
@@ -331,7 +331,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-10%</span> Bullet Resist Reduction for 6s on wake-up",
           "plain_text": "-10% Bullet Resist Reduction for 6s on wake-up"
         },
@@ -340,7 +340,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+1s</span> Sleep Duration<br>Applies <span class=\"highlight\">15</span> Fixation Stacks",
           "plain_text": "+1s Sleep Duration\nApplies 15 Fixation Stacks"
         },
@@ -349,9 +349,15 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "<span class=\"highlight\">-17s</span> Cooldown <br><span class=\"highlight\">-50%</span> Move and Dash Speed for <span class=\"highlight\">3s</span> on wake-up",
-          "plain_text": "-17s Cooldown\n-50% Move and Dash Speed for 3s on wake-up"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "<span class=\"highlight\">-17s</span> Cooldown <br><span class=\"highlight\">-40%</span> Move and Dash Speed for <span class=\"highlight\">3s</span> on wake-up",
+          "plain_text": "-17s Cooldown\n-40% Move and Dash Speed for 3s on wake-up"
+        }
+      ],
+      "notes": [
+        {
+          "text": "Sleep Dagger uses two separate sleep timings. If the sleeping target takes no damage, the normal Sleep Duration applies. Once the target takes damage, the Spirit-scaled Wake Up Delay begins counting down; the first damage instance does not immediately end the sleep.",
+          "source": "wiki.haze.124874"
         }
       ]
     },
@@ -361,7 +367,7 @@
       "internal_key": "ability_smoke_bomb",
       "data": {
         "AbilityCooldown": {
-          "Value": 33,
+          "Value": 33.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -521,7 +527,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 33,
+          "Value": 33.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -551,7 +557,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Fade out of sight, becoming <span class=\"highlight\">invisible</span> and gaining <span class=\"highlight\">sprint speed</span>. Attacking removes invisibility, but using items does not. Close enemies can see through your invisibility.",
           "plain_text": "Fade out of sight, becoming invisible and gaining sprint speed. Attacking removes invisibility, but using items does not. Close enemies can see through your invisibility."
         },
@@ -560,7 +566,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Enable <span class=\"highlight\">2</span> Ability Charges",
           "plain_text": "Enable 2 Ability Charges"
         },
@@ -569,7 +575,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Dispels non-ult debuffs<br>Grants <span class=\"highlight\">+50% Bullet Lifesteal</span> for 5s",
           "plain_text": "Dispels non-ult debuffs\nGrants +50% Bullet Lifesteal for 5s"
         }
@@ -580,7 +586,7 @@
       "name": "Fixation",
       "internal_key": "ability_stacking_damage",
       "data": {
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 6,
           "Scale": {
@@ -590,14 +596,16 @@
         },
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": null,
+        "BossDamageScale": 0.2,
         "ChannelMoveSpeed": -1,
         "DamageBonusFixedPerStack": {
           "Value": 0.2,
           "Scale": {
-            "Value": 0,
+            "Value": 0.0,
             "Type": "weapon_damage_increase"
           }
         },
+        "HeadshotStacks": 3,
         "IsDisabled": false,
         "Key": "ability_stacking_damage",
         "MaxStacks": 40,
@@ -605,7 +613,7 @@
         "ProcDamage": {
           "Value": 0,
           "Scale": {
-            "Value": 0,
+            "Value": 0.0,
             "Type": "spirit"
           }
         },
@@ -627,7 +635,7 @@
               }
             },
             "ProcDamageStackCount": 20,
-            "SlowPercent": 15,
+            "SlowPercent": 12,
             "SlowDuration": 2
           },
           {
@@ -638,7 +646,7 @@
             "DamageBonusFixedPerStack": {
               "Value": 0.11,
               "Scale": {
-                "Value": 0.0003,
+                "Value": 0.00035,
                 "Type": "weapon_damage_increase"
               }
             }
@@ -657,7 +665,7 @@
                 "Name": "Weapon Damage",
                 "Value": 0.2,
                 "Scale": {
-                  "Value": 0,
+                  "Value": 0.0,
                   "Type": "weapon_damage_increase"
                 },
                 "Type": "bullet_damage"
@@ -672,7 +680,7 @@
                 "Name": "Spirit Damage",
                 "Value": 0,
                 "Scale": {
-                  "Value": 0,
+                  "Value": 0.0,
                   "Type": "spirit"
                 },
                 "Type": "tech_damage"
@@ -692,7 +700,7 @@
               }
             },
             "ProcDamageStackCount": 20,
-            "SlowPercent": 15,
+            "SlowPercent": 12,
             "SlowDuration": 2,
             "DescKey": "ability_stacking_damage_t1_desc"
           },
@@ -705,7 +713,7 @@
             "DamageBonusFixedPerStack": {
               "Value": 0.11,
               "Scale": {
-                "Value": 0.0003,
+                "Value": 0.00035,
                 "Type": "weapon_damage_increase"
               }
             },
@@ -723,11 +731,15 @@
           "AbilityUnitTargetLimit": {
             "Name": null,
             "Value": 1
+          },
+          "HeadshotStacks": {
+            "Name": null,
+            "Value": 3
           }
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -747,25 +759,25 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "Shooting a target <span class=\"highlight\">increases your bullet damage on that target</span>. Gain one <span class=\"highlight\">stack</span> per bullet hit, two if the hit is a headshot.",
-          "plain_text": "Shooting a target increases your bullet damage on that target. Gain one stack per bullet hit, two if the hit is a headshot."
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "Shooting a target <span class=\"highlight\">increases your bullet damage on that target</span>. Gain one <span class=\"highlight\">stack</span> per bullet hit, three if the hit is a headshot.",
+          "plain_text": "Shooting a target increases your bullet damage on that target. Gain one stack per bullet hit, three if the hit is a headshot."
         },
         {
           "localization_key": "ability_stacking_damage_t1_desc",
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "<span class=\"highlight\">40</span> Spirit damage and <span class=\"highlight\">15%</span> slow for 2s to target every <span class=\"highlight\">20</span> stacks",
-          "plain_text": "40 Spirit damage and 15% slow for 2s to target every 20 stacks"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "<span class=\"highlight\">40</span> Spirit damage and <span class=\"highlight\">12%</span> slow for 2s to target every <span class=\"highlight\">20</span> stacks",
+          "plain_text": "40 Spirit damage and 12% slow for 2s to target every 20 stacks"
         },
         {
           "localization_key": "ability_stacking_damage_t2_desc",
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+40</span> Max Stacks and <span class=\"highlight\">+5s</span> Duration",
           "plain_text": "+40 Max Stacks and +5s Duration"
         },
@@ -774,7 +786,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+0.11</span>/ per Stack<br>Scales with Weapon Damage",
           "plain_text": "+0.11/ per Stack\nScales with Weapon Damage"
         }
@@ -787,13 +799,13 @@
       "data": {
         "AbilityCastDelay": 0.4,
         "AbilityCooldown": {
-          "Value": 165,
+          "Value": 165.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 3.5,
           "Scale": [
@@ -853,7 +865,7 @@
             "ChannelMoveSpeed": 3
           },
           {
-            "EvasionPercent": 40,
+            "EvasionPercent": 40.0,
             "AbilityCooldown": -65
           }
         ],
@@ -911,7 +923,7 @@
             "DescKey": "ability_bullet_flurry_t2_desc"
           },
           {
-            "EvasionPercent": 40,
+            "EvasionPercent": 40.0,
             "AbilityCooldown": -65,
             "DescKey": "ability_bullet_flurry_t3_desc"
           }
@@ -944,7 +956,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 165,
+          "Value": 165.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -953,7 +965,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -988,7 +1000,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Enter a flurry, <span class=\"highlight\">firing your weapon</span> at nearby enemies with <span class=\"highlight\">perfect accuracy</span> and added <span class=\"highlight\">Bullet Damage.</span>",
           "plain_text": "Enter a flurry, firing your weapon at nearby enemies with perfect accuracy and added Bullet Damage."
         },
@@ -997,7 +1009,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+10%</span> Fire Rate <br><span class=\"highlight\">+3m</span> Movespeed",
           "plain_text": "+10% Fire Rate\n+3m Movespeed"
         },
@@ -1006,7 +1018,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+40%</span> Evasion <br><span class=\"highlight\">-65s</span> Cooldown",
           "plain_text": "+40% Evasion\n-65s Cooldown"
         }
@@ -1072,5 +1084,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

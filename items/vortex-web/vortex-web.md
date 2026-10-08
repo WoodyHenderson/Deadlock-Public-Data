@@ -5,12 +5,12 @@ domain: items
 topics: [item, spirit, tier-4]
 aliases: ["upgrade_aoe_root"]
 summary: "Vortex Web is a currently purchasable Deadlock item whose displayed effects include Ability Range, Sprint Speed, Duration, Cooldown, Dash Distance, Capture Radius."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Vortex Web
@@ -26,6 +26,7 @@ Vortex Web is a currently purchasable Deadlock item whose displayed effects incl
 - **Cost:** 6400 souls
 - **Activation:** press
 - **Active item:** yes
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** none listed
 - **Target types:** AllEnemy
@@ -42,9 +43,9 @@ Vortex Web is a currently purchasable Deadlock item whose displayed effects incl
 | Innate | Sprint Speed | 0.75m | normal |
 | Active | Duration | 4.0s | normal |
 | Active | Cooldown | 42.0s | normal |
-| Active | Dash Distance | -40% | normal |
+| Active | Dash Distance | -36% | normal |
 | Active | Capture Radius | 12m | important |
-| Active | Move Speed | 35% | important |
+| Active | Move Speed | 28% | important |
 
 ## Source Property-Upgrade Fields
 
@@ -54,4 +55,4 @@ Vortex Web is a currently purchasable Deadlock item whose displayed effects incl
 - `AbilityCooldown`: -22
 - `TechRadiusMultiplier`: 10
 - `TechRangeMultiplier`: 10
-- `SlowPercent`: 15
+- `SlowPercent`: 12

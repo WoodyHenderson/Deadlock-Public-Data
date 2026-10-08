@@ -5,15 +5,16 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Rem is a selectable hero whose generated hero-type field is currently unset; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
+  - github.deadlock-data.changelogs.raw.fc4f540f12e0
   - wiki.rem.124942
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Rem
@@ -55,7 +56,7 @@ Internal key: `ability_familiar_ability02`.
 - **Tier 2:** +2m Radius and applies -35% Fire Rate
 - **Tier 3:** +100 Damage and +1 Charge
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorProjectile`, `BehaviorDontInterruptSlideOnCast`.
@@ -63,19 +64,20 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorProjectile`, `BehaviorD
 | Card field | Base value |
 | --- | ---: |
 | Damage | 75 (+1.6 per spirit) |
-| Fading Move Speed | 45 |
+| Fading Move Speed | 36 |
 | Duration | 0.4 |
 | Debuff Duration | 3 (+1 per duration) |
-| Cooldown | 25 (+1 per cooldown) |
+| CDReduceOnPillowHit | 5 |
 | Cast Range | 40 (+1 per range) |
 | Charges | 1 (+1 per max charges) |
+| Cooldown | 25 (+1 per cooldown) |
 | Charge Delay | 8 (+1 per charge cooldown) |
+| Radius | 5 (+1 per range) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-7}`
 - Tier 2: `{"FireRateSlow":35,"Radius":2}`
 - Tier 3: `{"Damage":100,"AbilityCharges":1}`
-
 ### 2. Tag Along
 
 Internal key: `ability_familiar_attach`.
@@ -93,7 +95,7 @@ Internal key: `ability_familiar_attach`.
 - **Tier 2:** 35% Bonus Item Range, Duration, and Barrier Effectiveness while napping
 - **Tier 3:** +15% Spirit Power and +35 Spirit Power while napping and for 10s after napping Improved Spirit Scaling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDontBreakInvisibility`, `BehaviorDisplaysDamageImpact`, `BehaviorCannotCancelDuringChannel`, `BehaviorCooldownOnChannelEnd`, `BehaviorUseInstantCastUnitTargetUi`, `BehaviorMovement`, `BehaviorCanSetQuickCast`, `BehaviorDoNotAllowSpamProc`.
@@ -108,16 +110,15 @@ Behavior flags: `BehaviorDontBreakInvisibility`, `BehaviorDisplaysDamageImpact`,
 | Spirit Power | 0 |
 | Buff Duration | 0 |
 | Bonus Spirit Power | 0 |
-| Cooldown | 40 (+1 per cooldown) |
-| Duration | 5.5 (+1 per duration) |
 | Cast Range | 23 (+1 per range) |
+| Cooldown | 40 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Duration | 5.5 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-8}`
 - Tier 2: `{"BonusBarrierAmpPercent":35,"BonusItemDurationPercent":35,"BonusItemRangePercent":35}`
 - Tier 3: `{"TechPowerPercent":15,"BonusSpiritPower":35,"HopOffEffecDuration":10,"MissingHealthBurstPct":{"Value":0,"Scale":{"Value":0.016,"Type":"spirit"}},"HealingPerSecond":{"Value":0,"Scale":{"Value":0.34,"Type":"spirit"}}}`
-
 ### 3. Lil Helpers
 
 Internal key: `ability_familiar_helpinghands`.
@@ -136,10 +137,10 @@ Internal key: `ability_familiar_helpinghands`.
 - **Tier 2:** +1 Helper +15% Trooper Damage and Resist
 - **Tier 3:** +1 Helper +15% Spirit Resist
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
-Behavior flags: `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSprint`, `BehaviorAllowSelfCast`, `BehaviorDamageDoesntWakeFromSleep`, `BehaviorDisplaysDamageImpact`, `BehaviorDoNotAllowSpamProc`, `BehaviorDontInterruptSlideOnCast`.
+Behavior flags: `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSprint`, `BehaviorAllowSelfCast`, `BehaviorDamageDoesntWakeFromSleep`, `BehaviorDisplaysDamageImpact`, `BehaviorDoNotAllowSpamProc`, `BehaviorDontInterruptSlideOnCast`, `BehaviorUseInstantCastUnitTargetUi`.
 
 | Card field | Base value |
 | --- | ---: |
@@ -150,7 +151,6 @@ Upgrade deltas:
 - Tier 1: `{"HelperCount":1,"BonusMoveSpeed":1.5}`
 - Tier 2: `{"HelperCount":1,"InfestDamageTakenPercent":15}`
 - Tier 3: `{"HelperCount":1,"TechArmorGain":15}`
-
 ### 4. Naptime
 
 Internal key: `ability_familiar_ability01`.
@@ -167,7 +167,7 @@ Internal key: `ability_familiar_ability01`.
 - **Tier 2:** +3m Radius and +0.75s Sleep Duration
 - **Tier 3:** -55s cooldown Reduced damage and unstoppable while channeling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorCannotCancelDuringChannel`, `BehaviorDisplaysDamageImpact`, `BehaviorCooldownOnChannelEnd`, `BehaviorRefundHalfCooldownOnChannelInterrupt`.
@@ -176,17 +176,24 @@ Behavior flags: `BehaviorChannelled`, `BehaviorCannotCancelDuringChannel`, `Beha
 | --- | ---: |
 | Wake Damage | 120 (+1.6 per spirit) |
 | Sleep Damage Threshold | 100 (+3.1 per power increase) |
-| Move/Dash Slow | 25 |
+| Move/Dash Slow | 20 |
 | Radius | 19 (+1 per range) |
 | Sleep Duration | 4 (+1 per duration) |
-| Cooldown | 200 (+1 per cooldown) |
+| MinSleepTime | 0.5 |
+| DamageResistPctWhileChanneling | 30 |
 | Cast Range | 24 (+1 per range) |
+| Cooldown | 200 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
 - Tier 1: `{"ConsumeStaminaOnWake":1,"NoStaminaRegenDuringSleep":1}`
 - Tier 2: `{"SleepDuration":0.75,"Radius":3}`
 - Tier 3: `{"DamageResistPctWhileChanneling":50,"UnstoppableWhileChanneling":1,"AbilityCooldown":-55}`
+<!-- patch-note-addenda:start -->
+## September 16 Patch-Note Addenda
+
+- **patch_note_only:** The September 16 notes report a fix for multiple Lil Helpers being sent to follow a single player, where the extra helpers had no effect, and add target UI when instant-cast mode is selected. Source: `github.deadlock-data.changelogs.raw.fc4f540f12e0`.
+<!-- patch-note-addenda:end -->
 
 ## Data Boundaries
 

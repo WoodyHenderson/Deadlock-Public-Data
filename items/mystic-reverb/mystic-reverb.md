@@ -5,12 +5,12 @@ domain: items
 topics: [item, spirit, tier-4]
 aliases: ["upgrade_mystic_reverb"]
 summary: "Mystic Reverb is a currently purchasable Deadlock item whose displayed effects include Spirit Lifesteal, Radius, Delay Duration, Cooldown, Damage, Imbued Lifesteal."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Mystic Reverb
@@ -26,6 +26,7 @@ Mystic Reverb is a currently purchasable Deadlock item whose displayed effects i
 - **Cost:** 6400 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** yes
 - **Shop filters:** MagicDamage, Healing
 - **Target types:** AllEnemy
@@ -44,7 +45,7 @@ No component item is listed.
 | Passive | Cooldown | 6.25s | normal |
 | Passive | Damage | 50% | important |
 | Passive | Imbued Lifesteal | 22% | important |
-| Passive | Move Speed | 40% | important |
+| Passive | Move Speed | 32% | important |
 
 ## Source Property-Upgrade Fields
 

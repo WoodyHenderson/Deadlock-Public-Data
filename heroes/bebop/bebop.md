@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Bebop is a selectable Brawler hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.bebop.124925
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Bebop
@@ -56,7 +56,7 @@ Internal key: `citadel_ability_uppercut`.
 - **Tier 2:** On Hero Hit: Gain fast spin-up time, 2x weapon range and +30% weapon damage for 9s
 - **Tier 3:** On Hero Hit: Set Grapple Arm cooldown to 0 and restores +18% of your missing health
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -73,7 +73,6 @@ Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-11}`
 - Tier 2: `{"UppercutBuffOnHit":9,"BuffBaseWeaponPct":30}`
 - Tier 3: `{"RestoreHookCooldown":1,"MissingHPHeal":18}`
-
 ### 2. Sticky Bomb
 
 Internal key: `citadel_ability_sticky_bomb`.
@@ -89,7 +88,7 @@ Internal key: `citadel_ability_sticky_bomb`.
 
 - **Tier 3:** On Cast: +5m Move Speed and +25% Debuff Resistance for 6s
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorAllowSelfCast`, `BehaviorDisplaysDamageImpact`, `BehaviorUseInstantCastUnitTargetUi`, `BehaviorCanSetQuickCast`.
@@ -98,16 +97,16 @@ Behavior flags: `BehaviorAllowSelfCast`, `BehaviorDisplaysDamageImpact`, `Behavi
 | --- | ---: |
 | Fuse Time | 3.5 |
 | Damage | 85 (+1.5 per spirit) |
-| Cooldown | 18 (+1 per cooldown) |
-| Duration | 3.5 (+1 per duration) |
 | Cast Range | 6 (+1 per range) |
+| Cooldown | 18 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Duration | 3.5 (+1 per duration) |
+| Radius | 8 (+1 per radius) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-8}`
 - Tier 2: `{"Damage":85}`
 - Tier 3: `{"MovementSpeedBonus":5,"StatusResistancePercent":25,"MovementSpeedBonusDuration":6}`
-
 ### 3. Grapple Arm
 
 Internal key: `citadel_ability_hook`.
@@ -122,7 +121,7 @@ Internal key: `citadel_ability_hook`.
 
 - **Tier 1:** +20% weapon damage against victims for 6s
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorPreventBotUsage`, `BehaviorDontInterruptSlideOnCast`.
@@ -138,7 +137,6 @@ Upgrade deltas:
 - Tier 1: `{"BulletAmp":20,"BulletAmpDuration":6}`
 - Tier 2: `{"AbilityCastRange":30}`
 - Tier 3: `{"AbilityCooldown":-11.5}`
-
 ### 4. Hyper Beam
 
 Internal key: `citadel_ability_bebop_laser_beam`.
@@ -152,7 +150,7 @@ Internal key: `citadel_ability_bebop_laser_beam`.
 
 - **Tier 3:** Hyper Beam heals Bebop for 65% of its damage on Heroes. 20% on non-hero
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -160,17 +158,16 @@ Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorDisplaysDamag
 | Card field | Base value |
 | --- | ---: |
 | Damage Per Second | 160 (+2.511 per spirit) |
-| Move Speed | 25 |
+| Move Speed | 20 |
 | Beam Length | 70 (+1 per range) |
 | Beam Width | 2.9 |
 | Cooldown | 120 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
-- Tier 1: `{"AbilityCooldown":-20}`
-- Tier 2: `{"DPS":108}`
+- Tier 1: `{"AbilityCooldown":-20.0}`
+- Tier 2: `{"DPS":108.0}`
 - Tier 3: `{"BeamLifesteal":65,"BeamLifestealNonHeroPercent":20}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

@@ -898,3 +898,126 @@ sources:
     last_modified: "2026-08-18T12:52:50"
     accessed_at: "2026-09-04"
     scope: Sinner's Sacrifice locations, melee-only damage, retaliation, jackpot, Souls, buffs, and respawn
+
+  - id: deadlock-api.items.client-6694.source-11005995
+    title: Deadlock API English item assets for client 6694
+    url: https://api.deadlock-api.com/v1/assets/items?language=english&client_version=6694
+    client_version: 6694
+    server_version: 6694
+    source_revision: 11005995
+    accessed_at: '2026-10-08'
+    sha256: 70156e5ebfa42da91b501ef7b224ecc5e66df5f64cfa1f7bb223567b3ec8fbb6
+    scope: Primary structured authority for all enabled purchasable item identities, availability, purchase
+      data, properties, descriptions, tooltip sections, activations, components, upgrades, and targeting
+      fields in the September 16 snapshot
+    source_quality_note: Historical request is pinned by client_version. The matching client and source
+      revision are independently verified in data/version.txt at deadlock-data commit fc4f540f12e019a6a2a422e0818917a4eedaf881;
+      the current steam-info endpoint is not used as evidence for this old build.
+  - id: github.deadlock-data.ability-cards.fc4f540f12e0
+    title: deadlock-wiki/deadlock-data ability-card dataset for client 6694
+    url: https://github.com/deadlock-wiki/deadlock-data/blob/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/json/ability-cards.json
+    commit: fc4f540f12e019a6a2a422e0818917a4eedaf881
+    client_version: 6694
+    server_version: 6694
+    source_revision: 11005995
+    accessed_at: '2026-10-08'
+    sha256: f1eee76a4454f64f090d12e752eaa24af7c833642eb162ec6e789ab2e5491f08
+    scope: Structured ability cards, UI-visible effects, upgrade descriptions and levels for the September
+      16 client snapshot
+  - id: github.deadlock-data.ability-data.fc4f540f12e0
+    title: deadlock-wiki/deadlock-data ability datasets for client 6694
+    url: https://github.com/deadlock-wiki/deadlock-data/blob/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/json/ability-data.json
+    commit: fc4f540f12e019a6a2a422e0818917a4eedaf881
+    client_version: 6694
+    server_version: 6694
+    source_revision: 11005995
+    accessed_at: '2026-10-08'
+    sha256: c94dffb3c23369c895ae945c175e0113717b9fbc58ecd69c752988b437bc010c
+    scope: Source-shaped ability behavior flags, values, modifiers, and upgrade data for the September 16
+      client snapshot
+  - id: github.deadlock-data.english.fc4f540f12e0
+    title: deadlock-wiki/deadlock-data English game localization for client 6694
+    url: https://github.com/deadlock-wiki/deadlock-data/blob/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json
+    raw_url: https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json
+    commit: fc4f540f12e019a6a2a422e0818917a4eedaf881
+    client_version: 6694
+    source_revision: 11005995
+    accessed_at: '2026-10-08'
+    sha256: 54e1c12ee483b26a8ae08b8e0383e3961162fe41024ca2b9d34c0e1cc3de7c0c
+    scope: English ability/card descriptions, resolved for 152 selectable-hero abilities; immutable source
+      text is retained with localization keys and card paths and supplements rather than overrides numerical
+      data
+  - id: github.deadlock-data.gameplay.fc4f540f12e0
+    title: deadlock-wiki/deadlock-data generic, miscellaneous, and convar datasets for client 6694
+    url: https://github.com/deadlock-wiki/deadlock-data/tree/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/json
+    generic_data_url: https://github.com/deadlock-wiki/deadlock-data/blob/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/json/generic-data.json
+    misc_data_url: https://github.com/deadlock-wiki/deadlock-data/blob/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/json/misc-data.json
+    convars_url: https://github.com/deadlock-wiki/deadlock-data/blob/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/json/convars.json
+    version_url: https://github.com/deadlock-wiki/deadlock-data/blob/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/version.txt
+    commit: fc4f540f12e019a6a2a422e0818917a4eedaf881
+    client_version: 6694
+    server_version: 6694
+    source_revision: 11005995
+    accessed_at: '2026-10-08'
+    generic_data_sha256: 54b17cf93a12d31d65c87ac7e40ffc85c07bca1ab18380f5652b5098dccec6c4
+    misc_data_sha256: 2d86334788497c0cc7fb7f3a66e89cebc940b97a9620db8a10b37718ecb64de2
+    convars_sha256: 50116ea1437177531ac6d5b6dc67101a246e5845558f29472f81523303d82b51
+    version_file_sha256: 1a8fda231ad531680d2d78db67614cdefec70261bfe045bf0895997f10e0994b
+    scope: Immutable generated gameplay and economy values including generic rewards, misc entities, breakables,
+      capture objectives, convars, and the exact client/source revision identity
+    source_quality_note: The pinned dataset is compared with client 6684 to isolate this dated delta; changelog
+      language remains historical intent and does not establish omitted mechanics.
+  - id: github.deadlock-data.hero-data.fc4f540f12e0
+    title: deadlock-wiki/deadlock-data selectable hero dataset for client 6694
+    url: https://github.com/deadlock-wiki/deadlock-data/blob/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/json/hero-data.json
+    commit: fc4f540f12e019a6a2a422e0818917a4eedaf881
+    client_version: 6694
+    server_version: 6694
+    source_revision: 11005995
+    accessed_at: '2026-10-08'
+    sha256: 3250e064f54fbcaf2acc8f193b2aa37450826300f8cd4c5d0fba7d1262c49b73
+    scope: Source-shaped selectable-hero identity, base statistics, weapon data, per-boon growth, and spirit-scaling
+      fields for the September 16 client snapshot
+  - id: github.deadlock-data.items.fc4f540f12e0
+    title: deadlock-wiki/deadlock-data item datasets for client 6694
+    url: https://github.com/deadlock-wiki/deadlock-data/tree/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/json
+    item_data_url: https://github.com/deadlock-wiki/deadlock-data/blob/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/json/item-data.json
+    item_cards_url: https://github.com/deadlock-wiki/deadlock-data/blob/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/json/item-cards.json
+    commit: fc4f540f12e019a6a2a422e0818917a4eedaf881
+    client_version: 6694
+    server_version: 6694
+    source_revision: 11005995
+    accessed_at: '2026-10-08'
+    item_data_sha256: fee5c627a64b318cf1b75e4a271dbcc98d41055128bfdeb0e70e19e030970518
+    item_cards_sha256: a89fd2a1ceea1d12ac66103411d5e7026ae67e9b586756930ad09a9a485385a1
+    scope: Secondary structured item source and card-oriented cross-check for item values, hidden fields,
+      targets, conditions, components, and presentation grouping
+    source_quality_note: Immutable commit generated for the same client and SourceRevision as the primary
+      API; used as a secondary source and never allowed to silently replace conflicting API values.
+  - id: wiki.melee-attack.157734
+    title: Melee Attack
+    url: https://deadlock.wiki/Melee_Attack
+    revision_url: https://deadlock.wiki/Melee_Attack?oldid=157734
+    revision_id: 157734
+    last_modified: '2026-09-17T00:02:07Z'
+    accessed_at: '2026-10-08'
+    scope: Updated light/heavy melee reload interactions after September 16; patch-note-only parry/stun
+      reload rules are not inferred from this page
+  - id: wiki.silver.157646
+    title: Silver
+    url: https://deadlock.wiki/Silver
+    revision_url: https://deadlock.wiki/Silver?oldid=157646
+    revision_id: 157646
+    last_modified: '2026-09-16T15:39:43Z'
+    accessed_at: '2026-10-08'
+    scope: Silver human and transformed-form article context checked after the September 16 patch; structured
+      game-data values remain primary for numeric fields
+  - id: wiki.souls.157718
+    title: Souls
+    url: https://deadlock.wiki/Souls
+    revision_url: https://deadlock.wiki/Souls?oldid=157718
+    revision_id: 157718
+    last_modified: '2026-09-16T23:10:29Z'
+    accessed_at: '2026-10-08'
+    scope: Comeback and catch-up mechanics including 70% redirection to the two lowest-net-worth teammates;
+      incomplete patch-note formulas remain explicitly unresolved

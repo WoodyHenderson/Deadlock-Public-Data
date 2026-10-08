@@ -5,12 +5,12 @@ domain: items
 topics: [item, weapon, tier-3]
 aliases: ["upgrade_close_quarter_combat"]
 summary: "When in close range to your target, gain Weapon Damage and your bullets apply a Movement Slow."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Point Blank
@@ -26,6 +26,7 @@ When in close range to your target, gain Weapon Damage and your bullets apply a 
 - **Cost:** 3200 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** WeaponDamage, Durability, Disruption
 - **Target types:** HeroEnemy
@@ -43,7 +44,7 @@ When in close range to your target, gain Weapon Damage and your bullets apply a 
 | Passive | Slow Duration | 2s | normal |
 | Passive | Close Range | 15m | normal |
 | Passive | Weapon Damage | 50% | important |
-| Passive | Move Speed | 25% | important |
+| Passive | Move Speed | 20% | important |
 
 ## Source Property-Upgrade Fields
 
@@ -52,4 +53,4 @@ When in close range to your target, gain Weapon Damage and your bullets apply a 
 - `CloseRangeBonusWeaponPower`: 30
 - `MeleeResistPercent`: 30
 - `BonusHealth`: 150
-- `SlowPercent`: 5
+- `SlowPercent`: 4

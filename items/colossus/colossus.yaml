@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.colossus",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Colossus",
@@ -240,9 +240,9 @@
       "importance": "important",
       "key": "SlowPercent",
       "label": "Move Speed",
-      "value": "30%",
+      "value": "24%",
       "property": {
-        "value": "30",
+        "value": "24",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -503,7 +503,7 @@
         "tooltip_is_important": true
       },
       "SlowPercent": {
-        "value": "30",
+        "value": "24",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -518,7 +518,7 @@
         "tooltip_is_important": true
       },
       "GroundDashReductionPercent": {
-        "value": "-25",
+        "value": "-22",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_GROUND_DASH_REDUCTION_PERCENT",
         "usage_flags": [
           "ConditionallyApplied"
@@ -669,8 +669,8 @@
     "BaseAttackDamagePercent": 15,
     "BuffBulletResist": 35,
     "BuffTechResist": 35,
-    "SlowPercent": 30,
-    "GroundDashReductionPercent": -25,
+    "SlowPercent": 24,
+    "GroundDashReductionPercent": -22,
     "Radius": "14m",
     "ModelScaleGrowth": 1.2,
     "ModelScaleGrowthTooltip": 20,
@@ -746,7 +746,7 @@
         },
         {
           "Key": "SlowPercent",
-          "Value": 30,
+          "Value": 24,
           "Type": "slow",
           "UsageFlags": "ConditionallyApplied"
         }
@@ -793,7 +793,7 @@
       },
       "GroundDashReductionPercent": {
         "Key": "GroundDashReductionPercent",
-        "Value": -25,
+        "Value": -22,
         "UsageFlags": "ConditionallyApplied"
       },
       "ModelScaleGrowth": {

@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.lightning-scroll",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Lightning Scroll",
@@ -56,9 +56,9 @@
       "importance": "normal",
       "key": "MovementSpeedSlow",
       "label": "Move Speed on Spirit Damage",
-      "value": "30%",
+      "value": "24%",
       "property": {
-        "value": "30",
+        "value": "24",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -360,7 +360,7 @@
         "tooltip_is_important": true
       },
       "SlowPercent": {
-        "value": "80",
+        "value": "64",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
         "css_class": "slow",
         "prefix": "-",
@@ -416,7 +416,7 @@
         "tooltip_is_important": false
       },
       "MovementSpeedSlow": {
-        "value": "30",
+        "value": "24",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -432,7 +432,7 @@
         "tooltip_is_important": false
       },
       "GroundDashReductionPercent": {
-        "value": "-12",
+        "value": "-10",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_GROUND_DASH_REDUCTION_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -550,13 +550,13 @@
     "AbilityCooldownBetweenCharge": -1.0,
     "ChannelMoveSpeed": -1,
     "Damage": 150,
-    "SlowPercent": 80,
+    "SlowPercent": 64,
     "BonusHealth": 50,
     "StunDuration": 0.75,
     "DelayBeforeStun": 3,
     "BonusSprintSpeed": "0.75m",
-    "MovementSpeedSlow": 30,
-    "GroundDashReductionPercent": -12,
+    "MovementSpeedSlow": 24,
+    "GroundDashReductionPercent": -10,
     "PropertyUpgrades": {
       "BonusHealth": 100,
       "Damage": 100,
@@ -594,7 +594,7 @@
       "Alt": [
         {
           "Key": "MovementSpeedSlow",
-          "Value": 30,
+          "Value": 24,
           "Type": "slow",
           "UsageFlags": "ConditionallyApplied",
           "LocTokenOverride": "LightningScrollMysticSlow"
@@ -684,12 +684,12 @@
       },
       "SlowPercent": {
         "Key": "SlowPercent",
-        "Value": 80,
+        "Value": 64,
         "Type": "slow"
       },
       "GroundDashReductionPercent": {
         "Key": "GroundDashReductionPercent",
-        "Value": -12,
+        "Value": -10,
         "Type": "slow",
         "UsageFlags": "ConditionallyApplied"
       }

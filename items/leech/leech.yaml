@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.leech",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Leech",
@@ -116,9 +116,9 @@
       "importance": "elevated",
       "key": "AbilityLifestealPercentHero",
       "label": "Spirit Lifesteal",
-      "value": "25%",
+      "value": "28%",
       "property": {
-        "value": "25",
+        "value": "28",
         "provided_property_type": "MODIFIER_VALUE_TECH_LIFESTEAL",
         "css_class": "healing",
         "scale_function": {
@@ -140,9 +140,9 @@
       "importance": "elevated",
       "key": "BulletLifestealPercent",
       "label": "Bullet Lifesteal",
-      "value": "25%",
+      "value": "28%",
       "property": {
-        "value": "25",
+        "value": "28",
         "provided_property_type": "MODIFIER_VALUE_BULLET_LIFESTEAL",
         "css_class": "healing",
         "scale_function": {
@@ -336,7 +336,7 @@
         "postvalue_label": "Weapon Damage"
       },
       "AbilityLifestealPercentHero": {
-        "value": "25",
+        "value": "28",
         "provided_property_type": "MODIFIER_VALUE_TECH_LIFESTEAL",
         "css_class": "healing",
         "scale_function": {
@@ -353,7 +353,7 @@
         "tooltip_is_important": false
       },
       "BulletLifestealPercent": {
-        "value": "25",
+        "value": "28",
         "provided_property_type": "MODIFIER_VALUE_BULLET_LIFESTEAL",
         "css_class": "healing",
         "scale_function": {
@@ -485,8 +485,8 @@
     "AbilityCooldownBetweenCharge": -1.0,
     "ChannelMoveSpeed": -1,
     "TechPower": 12,
-    "AbilityLifestealPercentHero": 25,
-    "BulletLifestealPercent": 25,
+    "AbilityLifestealPercentHero": 28,
+    "BulletLifestealPercent": 28,
     "BaseAttackDamagePercent": 12,
     "BonusHealth": 180,
     "PropertyUpgrades": {
@@ -527,12 +527,12 @@
       "Main": [
         {
           "Key": "AbilityLifestealPercentHero",
-          "Value": 25,
+          "Value": 28,
           "Type": "healing"
         },
         {
           "Key": "BulletLifestealPercent",
-          "Value": 25,
+          "Value": 28,
           "Type": "healing"
         }
       ],

@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.bebop",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.bebop.124925",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Bebop",
   "aliases": [],
@@ -25,22 +25,22 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 880,
+    "maximum_health": 880.0,
     "health_regeneration_per_second": 2.5,
     "light_melee_damage": 63,
     "heavy_melee_damage": 116,
     "move_speed_meters_per_second": 6.45,
     "crouch_speed_meters_per_second": 4.75,
-    "sprint_speed_bonus_meters_per_second": 4,
+    "sprint_speed_bonus_meters_per_second": 4.0,
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 13.9,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.72
     },
     "air_dash": {
       "speed_meters_per_second": 15.7,
-      "distance_meters": 8,
+      "distance_meters": 8.0,
       "duration_seconds": 0.51
     },
     "stamina": {
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.115,
-    "MaxHealth": 52,
+    "MaxHealth": 52.0,
     "BonusAttackRange": 1.5,
     "PowerIncreases": 1,
     "BulletResist": 0.3,
@@ -71,17 +71,17 @@
   },
   "spirit_scaling": {},
   "weapon": {
-    "BulletSpeed": 508,
+    "BulletSpeed": 508.0,
     "BulletDamage": 4.98,
     "RoundsPerSecond": 11.905,
     "ClipSize": 66,
     "ReloadTime": 2.35,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
     "FalloffStartRange": 19.99,
     "FalloffEndRange": 50.8,
-    "FalloffStartScale": 1,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
     "BulletGravityScale": 0.8,
@@ -109,13 +109,13 @@
       "internal_key": "citadel_ability_uppercut",
       "data": {
         "AbilityCooldown": {
-          "Value": 22,
+          "Value": 22.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
           "BehaviorDisplaysDamageImpact",
@@ -189,7 +189,7 @@
         "UppercutDamage": {
           "Value": 0.01,
           "Scale": {
-            "Value": 1,
+            "Value": 1.0,
             "Type": "melee"
           }
         },
@@ -219,7 +219,7 @@
                 "Name": "Uppercut Damage",
                 "Value": 0.01,
                 "Scale": {
-                  "Value": 1,
+                  "Value": 1.0,
                   "Type": "melee"
                 },
                 "Type": "melee_damage"
@@ -358,7 +358,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 22,
+          "Value": 22.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -367,7 +367,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -378,7 +378,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Deal {g:citadel_inline_attribute:'MeleeDamage'} to nearby enemies and apply {g:citadel_inline_attribute:'KnockBack'}. <br><br>When they land, they deal {g:citadel_inline_attribute:'SpiritDamage'} and apply {g:citadel_inline_attribute:'ReducedFireRate'} to other nearby enemies. <br><br><span class=\"diminish\">Exploding Uppercut can be used on allies.</br>",
           "plain_text": "Deal melee damage to nearby enemies and apply knockback.\nWhen they land, they deal spirit damage and apply reduced fire rate to other nearby enemies.\nExploding Uppercut can be used on allies."
         },
@@ -387,7 +387,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "On Hero Hit: Gain <span class=\"highlight\">fast spin-up time, 2x weapon range and +30% weapon damage</span> for 9s",
           "plain_text": "On Hero Hit: Gain fast spin-up time, 2x weapon range and +30% weapon damage for 9s"
         },
@@ -396,7 +396,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "On Hero Hit: Set <span class=\"highlight\">Grapple Arm cooldown to 0</span> and restores <span class=\"highlight\">+18%</span> of your missing health",
           "plain_text": "On Hero Hit: Set Grapple Arm cooldown to 0 and restores +18% of your missing health"
         }
@@ -415,13 +415,13 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 18,
+          "Value": 18.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 3.5,
           "Scale": {
@@ -449,7 +449,7 @@
           }
         },
         "BonusDamagePctPerPlayerHit": {
-          "Value": 1,
+          "Value": 1.0,
           "Scale": {
             "Value": 0.0015,
             "Type": "spirit"
@@ -477,7 +477,7 @@
           "Class": "Base",
           "Subclass": "KillcheckModifier"
         },
-        "KillCheckWindow": 10,
+        "KillCheckWindow": 10.0,
         "Name": "Sticky Bomb",
         "OnHitDiminish": 60,
         "OnKillDiminish": 7,
@@ -557,7 +557,7 @@
                 "Title": "On Hero Hit:",
                 "Key": "BonusDamagePctPerPlayerHit",
                 "Name": "Sticky Bomb Damage",
-                "Value": 1,
+                "Value": 1.0,
                 "Scale": {
                   "Value": 0.0015,
                   "Type": "spirit"
@@ -596,7 +596,7 @@
         "Duration": {
           "KillCheckWindow": {
             "Name": null,
-            "Value": 10,
+            "Value": 10.0,
             "Type": "duration"
           }
         },
@@ -636,7 +636,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 18,
+          "Value": 18.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -645,7 +645,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -674,7 +674,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Attach a bomb that explodes after a delay, dealing {g:citadel_inline_attribute:'SpiritDamage'} to nearby enemies. <br><br>If the bomb hits or kills a hero, you gain <span class=\"highlight\">permanent bonus damage</span> on Sticky Bomb. <br><br><span class=\"diminish\">Stacks diminish by half after 60 hits and 7 kills",
           "plain_text": "Attach a bomb that explodes after a delay, dealing spirit damage to nearby enemies.\nIf the bomb hits or kills a hero, you gain permanent bonus damage on Sticky Bomb.\nStacks diminish by half after 60 hits and 7 kills"
         },
@@ -683,7 +683,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "On Cast: <span class=\"highlight\">+5m</span> Move Speed and <span class=\"highlight\">+25%</span> Debuff Resistance for <span class=\"highlight\">6s</span>",
           "plain_text": "On Cast: +5m Move Speed and +25% Debuff Resistance for 6s"
         }
@@ -703,13 +703,13 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 23,
+          "Value": 23.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
@@ -744,7 +744,7 @@
             "CastingHook"
           ]
         },
-        "SlowPercent": 90,
+        "SlowPercent": 72,
         "TargetModifier": {
           "Class": "CitadelHooktarget",
           "Subclass": "CitadelHooktarget",
@@ -758,13 +758,13 @@
               "Slowed"
             ]
           },
-          "TossUpSpeed": 0,
-          "ReturnSpeed": 2000,
-          "ReturnPositionForwardOffset": 100,
-          "CloseEnoughDistance": 30,
-          "FailSafeDurationMult": 2,
-          "FailSafeMinTime": 1,
-          "ReturnSpeedFail": 100,
+          "TossUpSpeed": 0.0,
+          "ReturnSpeed": 2000.0,
+          "ReturnPositionForwardOffset": 100.0,
+          "CloseEnoughDistance": 30.0,
+          "FailSafeDurationMult": 2.0,
+          "FailSafeMinTime": 1.0,
+          "ReturnSpeedFail": 100.0,
           "ReturnStuckTime": 0.2
         },
         "Upgrades": [
@@ -866,7 +866,7 @@
           },
           "SlowPercent": {
             "Name": "Move Speed",
-            "Value": 90
+            "Value": 72
           }
         },
         "AbilityCastDelay": {
@@ -885,7 +885,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 23,
+          "Value": 23.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -894,7 +894,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -905,7 +905,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Launch out a mechanical hand that {g:citadel_inline_attribute:'Pulls'} the first character it hits, reeling them in. <br><br><span class=\"diminish\">Grapple Arm can be used on allies.</br>",
           "plain_text": "Launch out a mechanical hand that pulls the first character it hits, reeling them in.\nGrapple Arm can be used on allies."
         },
@@ -914,7 +914,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+20% weapon damage</span> against victims for 6s",
           "plain_text": "+20% weapon damage against victims for 6s"
         }
@@ -925,7 +925,7 @@
       "name": "Hyper Beam",
       "internal_key": "citadel_ability_bebop_laser_beam",
       "data": {
-        "AbilityCastDelay": 1,
+        "AbilityCastDelay": 1.0,
         "AbilityChannelTime": {
           "Value": 11,
           "Scale": {
@@ -934,25 +934,25 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 120,
+          "Value": 120.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "AirSpeedMax": 70,
         "BeamCloseDamagePercent": 75,
         "BeamCloseRadius": {
-          "Value": 5,
+          "Value": 5.0,
           "Scale": {
             "Value": 1,
             "Type": "range"
           }
         },
         "BeamEndRadius": {
-          "Value": 4,
+          "Value": 4.0,
           "Scale": {
             "Value": 1,
             "Type": "range"
@@ -972,6 +972,7 @@
           "BehaviorDisplaysDamageImpact",
           "BehaviorDeactivateCrouchToggleOnCast"
         ],
+        "BossDamageScale": 0.5,
         "ChannelMoveSpeed": 1.8,
         "DPS": {
           "Value": 160,
@@ -981,7 +982,7 @@
           }
         },
         "FallSpeedMax": 1,
-        "GroundDashReductionPercent": -40,
+        "GroundDashReductionPercent": -36,
         "Interval": 0.1,
         "IsDisabled": false,
         "Key": "citadel_ability_bebop_laser_beam",
@@ -990,15 +991,15 @@
           "Class": "SlowBase",
           "Subclass": "BebopLaserSlow"
         },
-        "SlowPercent": 25,
+        "SlowPercent": 20,
         "SlowTargetDuration": 0.5,
         "TrackingSpeed": 55,
         "Upgrades": [
           {
-            "AbilityCooldown": -20
+            "AbilityCooldown": -20.0
           },
           {
-            "DPS": 108
+            "DPS": 108.0
           },
           {
             "BeamLifesteal": 65,
@@ -1029,7 +1030,7 @@
                 "Title": "On Hit:",
                 "Key": "SlowPercent",
                 "Name": "Move Speed",
-                "Value": 25,
+                "Value": 20,
                 "Type": "slow"
               }
             ]
@@ -1055,10 +1056,10 @@
         },
         "Upgrades": [
           {
-            "AbilityCooldown": -20
+            "AbilityCooldown": -20.0
           },
           {
-            "DPS": 108
+            "DPS": 108.0
           },
           {
             "BeamLifesteal": 65,
@@ -1095,7 +1096,7 @@
           },
           "BeamCloseRadius": {
             "Name": null,
-            "Value": 5,
+            "Value": 5.0,
             "Scale": {
               "Value": 1,
               "Type": "range"
@@ -1103,7 +1104,7 @@
           },
           "BeamEndRadius": {
             "Name": null,
-            "Value": 4,
+            "Value": 4.0,
             "Scale": {
               "Value": 1,
               "Type": "range"
@@ -1115,7 +1116,7 @@
           },
           "GroundDashReductionPercent": {
             "Name": "Dash Distance",
-            "Value": -40
+            "Value": -36
           },
           "Interval": {
             "Name": null,
@@ -1136,7 +1137,7 @@
         },
         "AbilityCastDelay": {
           "Name": "Cast Delay",
-          "Value": 1,
+          "Value": 1.0,
           "Type": "cast"
         },
         "AbilityChannelTime": {
@@ -1150,7 +1151,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 120,
+          "Value": 120.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -1159,7 +1160,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -1170,7 +1171,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Channel a powerful torrent of energy that deals {g:citadel_inline_attribute:'SpiritDamage'} and applies {g:citadel_inline_attribute:'Slow'}.",
           "plain_text": "Channel a powerful torrent of energy that deals spirit damage and applies slow."
         },
@@ -1179,7 +1180,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Hyper Beam heals Bebop for <span class=\"highlight\">65%</span> of its damage on Heroes. 20% on non-hero",
           "plain_text": "Hyper Beam heals Bebop for 65% of its damage on Heroes. 20% on non-hero"
         }
@@ -1244,5 +1245,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

@@ -5,12 +5,12 @@ domain: items
 topics: [item, vitality, tier-1]
 aliases: ["upgrade_health_stimpak"]
 summary: "Grant Regen and Sprint Speed to the target. Gets dispelled if you take damage from enemy players or objectives. Can be self-cast."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Healing Rite
@@ -26,6 +26,7 @@ Grant Regen and Sprint Speed to the target. Gets dispelled if you take damage fr
 - **Cost:** 800 souls
 - **Activation:** press
 - **Active item:** yes
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** Healing
 - **Target types:** HeroFriendly

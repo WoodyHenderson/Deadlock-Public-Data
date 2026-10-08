@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.lady-geist",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.lady-geist.124875",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Lady Geist",
   "aliases": [],
@@ -25,8 +25,8 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 880,
-    "health_regeneration_per_second": 1,
+    "maximum_health": 880.0,
+    "health_regeneration_per_second": 1.0,
     "light_melee_damage": 50,
     "heavy_melee_damage": 116,
     "move_speed_meters_per_second": 6.3,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 13.9,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.72
     },
     "air_dash": {
       "speed_meters_per_second": 15.7,
-      "distance_meters": 8,
+      "distance_meters": 8.0,
       "duration_seconds": 0.51
     },
     "stamina": {
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
-    "BulletDamage": 1,
-    "MaxHealth": 51,
+    "BulletDamage": 1.0,
+    "MaxHealth": 51.0,
     "PowerIncreases": 1,
     "TechPower": 1.1,
     "LightMeleeDamage": 1.58,
@@ -69,17 +69,17 @@
   },
   "spirit_scaling": {},
   "weapon": {
-    "BulletSpeed": 828,
+    "BulletSpeed": 828.0,
     "BulletDamage": 20.7,
     "RoundsPerSecond": 2.1164,
     "ClipSize": 9,
     "ReloadTime": 2.585,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
-    "FalloffStartRange": 17,
-    "FalloffEndRange": 48,
-    "FalloffStartScale": 1,
+    "FalloffStartRange": 17.0,
+    "FalloffEndRange": 48.0,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
     "BulletGravityScale": 0.8,
@@ -107,13 +107,13 @@
       "internal_key": "ability_blood_bomb",
       "data": {
         "AbilityCooldown": {
-          "Value": 14,
+          "Value": 14.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "ArmingDuration": 0.65,
         "BeepSoundBuildupCount": 4,
@@ -147,7 +147,7 @@
           "Class": "SpilledBloodThinker",
           "Subclass": "SpilledBloodThinker",
           "TickRate": 0.5,
-          "Height": 80
+          "Height": 80.0
         },
         "Upgrades": [
           {
@@ -158,7 +158,7 @@
             "Radius": 2
           },
           {
-            "BloodSpillDPSPercent": 26,
+            "BloodSpillDPSPercent": 30,
             "BloodSpillDuration": 6
           }
         ]
@@ -222,7 +222,7 @@
             "DescKey": "ability_blood_bomb_t2_desc"
           },
           {
-            "BloodSpillDPSPercent": 26,
+            "BloodSpillDPSPercent": 30,
             "BloodSpillDuration": 6,
             "DescKey": "ability_blood_bomb_t3_desc"
           }
@@ -254,7 +254,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 14,
+          "Value": 14.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -263,7 +263,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "Radius": {
@@ -283,7 +283,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">Sacrifice some of your health</span> to launch a bomb that <span class=\"highlight\">deals damage</span> after a brief arm time.<br>Self damage type is Spirit and can be mitigated.",
           "plain_text": "Sacrifice some of your health to launch a bomb that deals damage after a brief arm time.\nSelf damage type is Spirit and can be mitigated."
         },
@@ -293,16 +293,16 @@
             "card.Info2.DescKey",
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "Bombs leave a toxic mess on the ground, dealing <span class=\"highlight\">26%</span> of the original <span class=\"highlight\">damage per second</span>, for <span class=\"highlight\">6s</span>.",
-          "plain_text": "Bombs leave a toxic mess on the ground, dealing 26% of the original damage per second, for 6s."
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "Bombs leave a toxic mess on the ground, dealing <span class=\"highlight\">30%</span> of the original <span class=\"highlight\">damage per second</span>, for <span class=\"highlight\">6s</span>.",
+          "plain_text": "Bombs leave a toxic mess on the ground, dealing 30% of the original damage per second, for 6s."
         },
         {
           "localization_key": "ability_blood_bomb_t2_desc",
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+<span class=\"highlight\">2m</span> Radius and +<span class=\"highlight\">50</span> Damage.",
           "plain_text": "+2m Radius and +50 Damage."
         }
@@ -322,7 +322,7 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 34,
+          "Value": 34.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -385,7 +385,7 @@
             "Type": "range"
           }
         },
-        "MoveSpeedReduction": 40,
+        "MoveSpeedReduction": 32,
         "Name": "Life Drain",
         "TickRate": 0.1,
         "Upgrades": [
@@ -401,7 +401,7 @@
             "LifeDrainPerSecond": {
               "Value": 0,
               "Scale": {
-                "Value": 0.3,
+                "Value": 0.45,
                 "Type": "spirit"
               }
             }
@@ -464,7 +464,7 @@
             "LifeDrainPerSecond": {
               "Value": 0,
               "Scale": {
-                "Value": 0.3,
+                "Value": 0.45,
                 "Type": "spirit"
               }
             },
@@ -481,7 +481,7 @@
         "Debuff": {
           "MoveSpeedReduction": {
             "Name": null,
-            "Value": 40,
+            "Value": 32,
             "Type": "slow"
           }
         },
@@ -511,7 +511,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 34,
+          "Value": 34.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -535,7 +535,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Create a tether that <span class=\"highlight\">drains enemy health over time</span> and <span class=\"highlight\">heals you</span>. Target must be in line of sight and within max range to drain. You can shoot and use other abilities during the drain, but your move speed is reduced. <br><span class=\"highlight\">{g:citadel_binding:'AltCast'} to give health to friendly Heroes</span>.",
           "plain_text": "Create a tether that drains enemy health over time and heals you. Target must be in line of sight and within max range to drain. You can shoot and use other abilities during the drain, but your move speed is reduced.\n[Alt Cast] to give health to friendly Heroes."
         },
@@ -544,7 +544,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Enables and Grants <span class=\"highlight\">+2</span> Charges. Increases spirit scaling.",
           "plain_text": "Enables and Grants +2 Charges. Increases spirit scaling."
         }
@@ -563,7 +563,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.3,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
@@ -585,7 +585,7 @@
           "Subclass": "BloodShardDebuff"
         },
         "HealthToDamage": {
-          "Value": 23,
+          "Value": 23.0,
           "Scale": {
             "Value": 0.558,
             "Type": "spirit"
@@ -594,7 +594,7 @@
         "IsDisabled": false,
         "Key": "ability_blood_shards",
         "MaxStacks": 5,
-        "MoveSpeedPenaltyPerStack": 15,
+        "MoveSpeedPenaltyPerStack": 12,
         "Name": "Malice",
         "NumBloodShards": 3,
         "SelfDamagePct": 9,
@@ -631,7 +631,7 @@
               {
                 "Key": "HealthToDamage",
                 "Name": "Damage",
-                "Value": 23,
+                "Value": 23.0,
                 "Scale": {
                   "Value": 0.558,
                   "Type": "spirit"
@@ -674,7 +674,7 @@
                 "Title": "Effect Per Stack:",
                 "Key": "MoveSpeedPenaltyPerStack",
                 "Name": "Movement Slow",
-                "Value": 15,
+                "Value": 12,
                 "Type": "slow"
               }
             ]
@@ -754,7 +754,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -765,7 +765,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">Sacrifice some of your health</span> to launch blood shards that apply a stack of Malice. Each stack <span class=\"highlight\">slows</span> the victim and <span class=\"highlight\">increases the damage</span> they take from you. The slow effect decreases over time.",
           "plain_text": "Sacrifice some of your health to launch blood shards that apply a stack of Malice. Each stack slows the victim and increases the damage they take from you. The slow effect decreases over time."
         },
@@ -774,7 +774,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+25.2</span> Damage and +4 Blood Shards",
           "plain_text": "+25.2 Damage and +4 Blood Shards"
         },
@@ -783,7 +783,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+8%</span> Damage Amp",
           "plain_text": "+8% Damage Amp"
         }
@@ -803,13 +803,13 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 220,
+          "Value": 220.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 0.25,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
@@ -824,7 +824,7 @@
         },
         "ChannelMoveSpeed": 2,
         "EnemyMinHealthPct": 30,
-        "EnemySlowPct": 70,
+        "EnemySlowPct": 56,
         "InitialUpSpeed": 150,
         "IsDisabled": false,
         "Key": "ability_health_swap",
@@ -846,7 +846,7 @@
         },
         "Upgrades": [
           {
-            "AbilityCooldown": -50
+            "AbilityCooldown": -50.0
           },
           {
             "SilenceDuration": 3,
@@ -904,7 +904,7 @@
         },
         "Upgrades": [
           {
-            "AbilityCooldown": -50
+            "AbilityCooldown": -50.0
           },
           {
             "SilenceDuration": 3,
@@ -933,7 +933,7 @@
           },
           "EnemySlowPct": {
             "Name": "Enemy Move Speed",
-            "Value": 70
+            "Value": 56
           },
           "InitialUpSpeed": {
             "Name": null,
@@ -964,7 +964,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 220,
+          "Value": 220.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -973,7 +973,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -989,7 +989,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">Swaps health levels</span> with an enemy target. There is a minimum health percentage that enemies can be brought down to and a minimum amount of health received based on victims current health.",
           "plain_text": "Swaps health levels with an enemy target. There is a minimum health percentage that enemies can be brought down to and a minimum amount of health received based on victims current health."
         },
@@ -998,7 +998,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">Silence</span> enemies within 25m for 3s",
           "plain_text": "Silence enemies within 25m for 3s"
         },
@@ -1007,7 +1007,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "On cast, <span class=\"highlight\">+60</span> Spirit Power, +40%</span> Fire Rate and +50%</span> Spirit Resistance for 8s.",
           "plain_text": "On cast, +60 Spirit Power, +40% Fire Rate and +50% Spirit Resistance for 8s."
         }
@@ -1070,5 +1070,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

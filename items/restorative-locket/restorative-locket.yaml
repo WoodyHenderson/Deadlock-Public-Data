@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.restorative-locket",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Restorative Locket",
@@ -134,7 +134,7 @@
         "scale_function": {
           "class_name": "scale_function_healing_boon_scale",
           "subclass_name": "TotalHealthRegen_scale_function",
-          "stat_scale": 0.5
+          "stat_scale": 0.45
         },
         "label": "Heal Per Stack",
         "postvalue_label": "Heal Per Stack",
@@ -214,7 +214,7 @@
         "postvalue_label": "Duration"
       },
       "AbilityCastRange": {
-        "value": "35m",
+        "value": "32m",
         "can_set_token_override": true,
         "css_class": "range",
         "display_units": "EDisplayUnit_Meters",
@@ -320,7 +320,7 @@
         "postvalue_label": "Weapon Damage"
       },
       "Radius": {
-        "value": "35m",
+        "value": "32m",
         "css_class": "distance",
         "label": "Radius",
         "postfix": "m",
@@ -359,7 +359,7 @@
         "scale_function": {
           "class_name": "scale_function_healing_boon_scale",
           "subclass_name": "TotalHealthRegen_scale_function",
-          "stat_scale": 0.5
+          "stat_scale": 0.45
         },
         "label": "Heal Per Stack",
         "postvalue_label": "Heal Per Stack",
@@ -390,7 +390,7 @@
       }
     },
     "description": {
-      "active": "When an enemy uses an ability within 35mm range from you, store one <span class=\"highlight\">Restoration Stack</span>. <br><br>Consume all stacks to <span class=\"highlight\">heal yourself</span> and replenish <span class=\"highlight\">up to 3 stamina</span> based on how many stacks you have."
+      "active": "When an enemy uses an ability within 32mm range from you, store one <span class=\"highlight\">Restoration Stack</span>. <br><br>Consume all stacks to <span class=\"highlight\">heal yourself</span> and replenish <span class=\"highlight\">up to 3 stamina</span> based on how many stacks you have."
     },
     "activation": "instant_cast",
     "tooltip_sections": [
@@ -408,7 +408,7 @@
         "section_type": "active",
         "section_attributes": [
           {
-            "loc_string": "When an enemy uses an ability within 35mm range from you, store one <span class=\"highlight\">Restoration Stack</span>. <br><br>Consume all stacks to <span class=\"highlight\">heal yourself</span> and replenish <span class=\"highlight\">up to 3 stamina</span> based on how many stacks you have.",
+            "loc_string": "When an enemy uses an ability within 32mm range from you, store one <span class=\"highlight\">Restoration Stack</span>. <br><br>Consume all stacks to <span class=\"highlight\">heal yourself</span> and replenish <span class=\"highlight\">up to 3 stamina</span> based on how many stacks you have.",
             "properties": [
               "AbilityCooldown",
               "MaxStacks",
@@ -470,17 +470,17 @@
     "StreetBrawl": false,
     "IsImbue": false,
     "AbilityCooldown": 20.0,
-    "AbilityCastRange": "35m",
+    "AbilityCastRange": "32m",
     "AbilityUnitTargetLimit": 1,
     "AbilityCastDelay": 0.1,
     "AbilityCooldownBetweenCharge": -1.0,
     "ChannelMoveSpeed": -1,
-    "Radius": "35m",
+    "Radius": "32m",
     "TechResist": 8,
     "HealPerStack": {
       "Value": 16,
       "Scale": {
-        "Value": 0.5,
+        "Value": 0.45,
         "Type": "power_increase"
       }
     },
@@ -537,7 +537,7 @@
           "Key": "HealPerStack",
           "Value": 16,
           "Scale": {
-            "Value": 0.5,
+            "Value": 0.45,
             "Type": "power_increase"
           },
           "Type": "healing"
@@ -564,7 +564,7 @@
     "Other": {
       "AbilityCastRange": {
         "Key": "AbilityCastRange",
-        "Value": "35m",
+        "Value": "32m",
         "Type": "range"
       },
       "AbilityUnitTargetLimit": {
@@ -588,7 +588,7 @@
       },
       "Radius": {
         "Key": "Radius",
-        "Value": "35m",
+        "Value": "32m",
         "Type": "distance"
       }
     }

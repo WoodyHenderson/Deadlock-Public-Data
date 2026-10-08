@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Pocket is a selectable Assassin hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.pocket.125557
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Pocket
@@ -55,7 +55,7 @@ Internal key: `synth_barrage`.
 
 - **Tier 3:** +4% Amp Per Stack and 3m Radius
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorChannelled`, `BehaviorDisplaysDamageImpact`, `BehaviorDontInterruptSlideOnCast`.
@@ -64,18 +64,18 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorChannelled`, `BehaviorDisplaysDamag
 | --- | ---: |
 | Amp Per Stack | 6 |
 | Damage Per Projectile | 32 (+0.465 per spirit) |
-| Movement Slow | 30 |
+| Movement Slow | 24 |
 | Projectile Amount | 4 |
 | Slow Duration | 1.5 (+1 per duration) |
 | Amp Duration | 15 (+1 per duration) |
 | Cooldown | 32 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Radius | 4.5 (+1 per range) |
 
 Upgrade deltas:
 - Tier 1: `{"DamagePerProjectile":16}`
-- Tier 2: `{"AbilityCooldown":-16}`
+- Tier 2: `{"AbilityCooldown":-16.0}`
 - Tier 3: `{"AmpPercentPerStack":4,"Radius":3}`
-
 ### 2. Flying Cloak
 
 Internal key: `synth_plasma_flux`.
@@ -90,7 +90,7 @@ Internal key: `synth_plasma_flux`.
 - **Tier 2:** +5 Weapon Damage for 6s
 - **Tier 3:** +1.6s Lifetime and -10s Cooldown.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorTriggerCancelMashProtectionOnCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -101,12 +101,12 @@ Behavior flags: `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDisplaysDamag
 | Lifetime | 3.8 (+1 per duration) |
 | Cooldown | 25 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Radius | 5 (+1 per radius) |
 
 Upgrade deltas:
 - Tier 1: `{"Damage":70}`
 - Tier 2: `{"WeaponDamageBonus":5,"WeaponDamageBonusDuration":6}`
 - Tier 3: `{"MaxLifetime":1.6,"AbilityCooldown":-10}`
-
 ### 3. Enchanter's Satchel
 
 Internal key: `synth_pulse`.
@@ -118,9 +118,9 @@ Internal key: `synth_pulse`.
 
 **Upgrade descriptions** (where supplied by the source):
 
-- **Tier 3:** +1.5s Duration +4m Radius -40% Move Speed and Fire Rate for 4s
+- **Tier 3:** +1.5s Duration +4m Radius -32% Move Speed and Fire Rate for 4s
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -134,12 +134,12 @@ Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorDisplaysDamag
 | Debuff Duration | 0 |
 | Cooldown | 17 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Radius | 12 (+1 per range) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-5}`
 - Tier 2: `{"Damage":90}`
-- Tier 3: `{"FireRateSlow":40,"MoveSlowPercent":40,"DebuffDuration":4,"AbilityChannelTime":1.5,"Radius":4}`
-
+- Tier 3: `{"FireRateSlow":40,"MoveSlowPercent":32,"DebuffDuration":4.0,"AbilityChannelTime":1.5,"Radius":4}`
 ### 4. Affliction
 
 Internal key: `synth_affliction`.
@@ -155,7 +155,7 @@ Internal key: `synth_affliction`.
 - **Tier 2:** +3s Duration and +4m Radius
 - **Tier 3:** Prevents all healing +13 DPS with increase Spirit scaling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`.
@@ -168,12 +168,12 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`.
 | Healing Reduction | 0 |
 | Cooldown | 170 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Radius | 9 (+1 per range) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-35}`
 - Tier 2: `{"DebuffDuration":3,"Radius":4}`
 - Tier 3: `{"DPS":{"Value":13,"Scale":{"Value":0.1,"Type":"spirit"}},"DisableHealing":1}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

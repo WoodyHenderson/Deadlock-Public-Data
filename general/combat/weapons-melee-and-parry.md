@@ -13,13 +13,15 @@ aliases:
   - gun
   - punch
 summary: Universal ranged attacks, light and heavy melee, and the defensive parry mechanic.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
-evidence_status: source_verified
+snapshot_id: deadlock-wiki-2026-09-17
+current_as_of: "2026-09-17"
+evidence_status: source_verified_with_patch_note_behavior_addenda
 sources:
   - wiki.mechanics.110139
   - wiki.melee-attack.114941
+  - wiki.melee-attack.157734
   - wiki.melee-damage.104072
+  - github.deadlock-data.changelogs.raw.fc4f540f12e0
 ---
 
 # Weapons, Melee, and Parry
@@ -59,8 +61,11 @@ floating Soul Orbs. Melee is also the required interaction for Sinner's
 Sacrifice machines; each hit causes 80 retaliation damage to the attacker.
 
 Melee attacks pause an in-progress reload and the reload resumes after the
-animation. Melee damage gains 50% of the effect of general Weapon Damage bonuses,
-in addition to melee-specific modifiers.
+animation. The September 16 notes separately state that parrying pauses reload,
+stun pauses reload progress rather than restarting it, and dashes/light melee no
+longer pause weapon-cycle time. These are patch-note claims; weapon-cycle time
+and reload timing are distinct. Melee damage gains 50% of the effect of general
+Weapon Damage bonuses, in addition to melee-specific modifiers.
 
 ## Parry
 
@@ -82,8 +87,10 @@ An unsuccessful parry has a 4.5-second cooldown. Trooper melee can be parried,
 but doing so neither refunds the cooldown nor ends the parry early. Guardian
 melee can also be parried; Walkers cannot normally be parried.
 
-Parrying preserves current movement momentum, so it can be performed while
-jumping or dashing.
+Parry can be performed while jumping or dashing, but the September 16 notes say
+that attempting a parry during a regular dash cancels the dash and its momentum
+before parry. The notes do not specify every other movement state. This is
+patch-note evidence, not an independent runtime test.
 
 ## Source Notes
 

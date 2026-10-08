@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.abrams",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.abrams.125768",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Abrams",
   "aliases": [],
@@ -25,7 +25,7 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 800,
+    "maximum_health": 800.0,
     "health_regeneration_per_second": 1.5,
     "light_melee_damage": 50,
     "heavy_melee_damage": 116,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 13.9,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.72
     },
     "air_dash": {
       "speed_meters_per_second": 15.7,
-      "distance_meters": 8,
+      "distance_meters": 8.0,
       "duration_seconds": 0.51
     },
     "stamina": {
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.1,
-    "MaxHealth": 49,
+    "MaxHealth": 49.0,
     "PowerIncreases": 1,
     "TechPower": 1.1,
     "LightMeleeDamage": 1.738,
@@ -74,12 +74,12 @@
     "RoundsPerSecond": 1.5873,
     "ClipSize": 9,
     "ReloadTime": 0.3525,
-    "ReloadMovespeed": 1,
+    "ReloadMovespeed": 1.0,
     "ReloadDelay": 0.705,
     "ReloadSingle": true,
-    "FalloffStartRange": 17,
-    "FalloffEndRange": 40,
-    "FalloffStartScale": 1,
+    "FalloffStartRange": 17.0,
+    "FalloffEndRange": 40.0,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
     "BulletGravityScale": 0.8,
@@ -107,13 +107,13 @@
       "internal_key": "citadel_ability_bull_heal",
       "data": {
         "AbilityCooldown": {
-          "Value": 42,
+          "Value": 42.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 4,
           "Scale": {
@@ -129,7 +129,7 @@
             "Class": "BullHealTarget",
             "Subclass": "BullHealTarget"
           },
-          "AuraRadius": 0
+          "AuraRadius": 0.0
         },
         "BehaviourBits": [
           "BehaviorCastableWhileBusy",
@@ -170,7 +170,7 @@
         "TickRate": 0.25,
         "Upgrades": [
           {
-            "AbilityCooldown": -20
+            "AbilityCooldown": -20.0
           },
           {
             "AbilityDuration": 2
@@ -243,7 +243,7 @@
         },
         "Upgrades": [
           {
-            "AbilityCooldown": -20
+            "AbilityCooldown": -20.0
           },
           {
             "AbilityDuration": 2
@@ -279,7 +279,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 42,
+          "Value": 42.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -288,7 +288,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -317,7 +317,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Drain health from nearby enemies, dealing {g:citadel_inline_attribute:'SpiritDPS'} and {g:citadel_inline_attribute:'Healing'} for a portion of the damage dealt.",
           "plain_text": "Drain health from nearby enemies, dealing spirit damage over time and healing for a portion of the damage dealt."
         },
@@ -326,7 +326,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+2m</span> Radius and <span class=\"highlight\">+18</span> DPS with improved Spirit scaling</span>",
           "plain_text": "+2m Radius and +18 DPS with improved Spirit scaling"
         }
@@ -338,13 +338,13 @@
       "internal_key": "citadel_ability_bull_charge",
       "data": {
         "AbilityCooldown": {
-          "Value": 33,
+          "Value": 33.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 1.4,
           "Scale": {
@@ -399,7 +399,7 @@
         "ModifierTossAirControlLockout": {
           "Class": "Base",
           "Subclass": "AirControlLockout",
-          "Duration": 1,
+          "Duration": 1.0,
           "EnabledStateMask": [
             "MovementAbilityRestricted"
           ]
@@ -426,7 +426,7 @@
         "TurnRateMax": 140,
         "Upgrades": [
           {
-            "SlowPercent": 40,
+            "SlowPercent": 32,
             "SlowDuration": 3
           },
           {
@@ -504,7 +504,7 @@
         },
         "Upgrades": [
           {
-            "SlowPercent": 40,
+            "SlowPercent": 32,
             "SlowDuration": 3,
             "DescKey": "citadel_ability_bull_charge_t1_desc"
           },
@@ -570,7 +570,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 33,
+          "Value": 33.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -579,7 +579,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -599,7 +599,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Charge forward, {g:citadel_inline_attribute:'Pulling'} enemies you hit. Pushing a hero into a wall applies {g:citadel_inline_attribute:'Stun'}.<br><span class=\"diminish\">If you collide with a hero you move faster during your charge.</span>",
           "plain_text": "Charge forward, pulling enemies you hit. Pushing a hero into a wall applies stun.\nIf you collide with a hero you move faster during your charge."
         },
@@ -608,16 +608,16 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "Applies <span class=\"highlight\">+40%</span> Slow for <span class=\"highlight\">3s</span>",
-          "plain_text": "Applies +40% Slow for 3s"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "Applies <span class=\"highlight\">+32%</span> Slow for <span class=\"highlight\">3s</span>",
+          "plain_text": "Applies +32% Slow for 3s"
         },
         {
           "localization_key": "citadel_ability_bull_charge_t2_desc",
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "On Wall Hit: <span class=\"highlight\">+0.8s</span> Stun Duration",
           "plain_text": "On Wall Hit: +0.8s Stun Duration"
         },
@@ -626,7 +626,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-18s</span> Cooldown <br>On Hero Collide: <span class=\"highlight\">+1.5</span> Weapon Damage for <span class=\"highlight\">6</span>s",
           "plain_text": "-18s Cooldown\nOn Hero Collide: +1.5 Weapon Damage for 6s"
         }
@@ -637,7 +637,7 @@
       "name": "Infernal Resilience",
       "internal_key": "citadel_ability_passive_beefy",
       "data": {
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "AutoIntrinsicModifiers": [
           {
@@ -656,7 +656,7 @@
         "Key": "citadel_ability_passive_beefy",
         "Name": "Infernal Resilience",
         "NonHeroHealPct": 40,
-        "RegenDamageInterval": 1,
+        "RegenDamageInterval": 1.0,
         "RegenIncomingDamageDuration": 20,
         "RegenIncomingDamagePercent": {
           "Value": 13,
@@ -673,7 +673,7 @@
             "MeleeLifesteal": 18
           },
           {
-            "RegenIncomingDamagePercent": 8,
+            "RegenIncomingDamagePercent": 9,
             "StatusResistancePercent": 20
           }
         ]
@@ -735,7 +735,7 @@
             "MeleeLifesteal": 18
           },
           {
-            "RegenIncomingDamagePercent": 8,
+            "RegenIncomingDamagePercent": 9,
             "StatusResistancePercent": 20,
             "DescKey": "citadel_ability_passive_beefy_t3_desc"
           }
@@ -758,12 +758,12 @@
           },
           "RegenDamageInterval": {
             "Name": null,
-            "Value": 1
+            "Value": 1.0
           }
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -774,7 +774,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Gain bonus defensive attributes. Taking damage grants temporary {g:citadel_inline_attribute:'Regen'} for a portion of the damage taken.",
           "plain_text": "Gain bonus defensive attributes. Taking damage grants temporary regeneration for a portion of the damage taken."
         },
@@ -783,9 +783,9 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "<span class=\"highlight\">+20%</span> Debuff Resist and <span class=\"highlight\">+8%</span> Damage Regenerated",
-          "plain_text": "+20% Debuff Resist and +8% Damage Regenerated"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "<span class=\"highlight\">+20%</span> Debuff Resist and <span class=\"highlight\">+9%</span> Damage Regenerated",
+          "plain_text": "+20% Debuff Resist and +9% Damage Regenerated"
         }
       ]
     },
@@ -795,13 +795,13 @@
       "internal_key": "citadel_ability_bull_leap",
       "data": {
         "AbilityCooldown": {
-          "Value": 215,
+          "Value": 215.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "ActiveModifier": {
           "Class": "Base",
@@ -887,13 +887,13 @@
         "TossSpeed": 450,
         "Upgrades": [
           {
-            "AbilityCooldown": -30
+            "AbilityCooldown": -30.0
           },
           {
             "StunDuration": 0.8
           },
           {
-            "ImmunityDuration": 6,
+            "ImmunityDuration": 5,
             "ImpactRadius": 6
           }
         ]
@@ -969,13 +969,13 @@
         },
         "Upgrades": [
           {
-            "AbilityCooldown": -30
+            "AbilityCooldown": -30.0
           },
           {
             "StunDuration": 0.8
           },
           {
-            "ImmunityDuration": 6,
+            "ImmunityDuration": 5,
             "ImpactRadius": 6,
             "DescKey": "citadel_ability_bull_leap_t3_desc"
           }
@@ -1018,7 +1018,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 215,
+          "Value": 215.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -1027,7 +1027,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -1038,7 +1038,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Leap high into the air before crashing into the ground, dealing {g:citadel_inline_attribute:'SpiritDamage'} and applying {g:citadel_inline_attribute:'Stun'}.",
           "plain_text": "Leap high into the air before crashing into the ground, dealing spirit damage and applying stun."
         },
@@ -1047,9 +1047,9 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "On cast, become <span class=\"highlight\">Unstoppable</span> for 6s and <span class=\"highlight\">+6m</span> Impact Radius",
-          "plain_text": "On cast, become Unstoppable for 6s and +6m Impact Radius"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "On cast, become <span class=\"highlight\">Unstoppable</span> for 5s and <span class=\"highlight\">+6m</span> Impact Radius",
+          "plain_text": "On cast, become Unstoppable for 5s and +6m Impact Radius"
         }
       ]
     }
@@ -1110,5 +1110,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

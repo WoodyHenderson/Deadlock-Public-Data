@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.golden-goose-egg",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Golden Goose Egg",
@@ -89,9 +89,9 @@
       "importance": "elevated",
       "key": "OutgoingDamagePenaltyPercent",
       "label": "Damage Penalty",
-      "value": "-10%",
+      "value": "-15%",
       "property": {
-        "value": "-10",
+        "value": "-15",
         "provided_property_type": "MODIFIER_VALUE_ALL_DAMAGE_MULTIPLIER",
         "negative_attribute": true,
         "label": "Damage Penalty",
@@ -107,9 +107,9 @@
       "importance": "important",
       "key": "BonusGoldPerMinute",
       "label": "Soul Value per Minute",
-      "value": "90",
+      "value": "80",
       "property": {
-        "value": "90",
+        "value": "80",
         "css_class": "souls",
         "label": "Soul Value per Minute",
         "postvalue_label": "Soul Value per Minute",
@@ -294,7 +294,7 @@
         "postvalue_label": "Souls per Minute"
       },
       "BonusGoldPerMinute": {
-        "value": "90",
+        "value": "80",
         "css_class": "souls",
         "label": "Soul Value per Minute",
         "postvalue_label": "Soul Value per Minute",
@@ -303,7 +303,7 @@
         "tooltip_is_important": true
       },
       "OutgoingDamagePenaltyPercent": {
-        "value": "-10",
+        "value": "-15",
         "provided_property_type": "MODIFIER_VALUE_ALL_DAMAGE_MULTIPLIER",
         "negative_attribute": true,
         "label": "Damage Penalty",
@@ -424,8 +424,8 @@
     "AbilityChannelTime": 2,
     "AbilityCooldownBetweenCharge": -1.0,
     "ChannelMoveSpeed": -1,
-    "BonusGoldPerMinute": 90,
-    "OutgoingDamagePenaltyPercent": -10,
+    "BonusGoldPerMinute": 80,
+    "OutgoingDamagePenaltyPercent": -15,
     "ThinkRate": 3,
     "BonusSprintSpeed": "1m",
     "OutOfCombatHealthRegen": 1,
@@ -462,7 +462,7 @@
       "Main": [
         {
           "Key": "OutgoingDamagePenaltyPercent",
-          "Value": -10
+          "Value": -15
         }
       ],
       "Alt": [
@@ -486,7 +486,7 @@
       "Main": [
         {
           "Key": "BonusGoldPerMinute",
-          "Value": 90,
+          "Value": 80,
           "Type": "souls"
         }
       ],
@@ -539,6 +539,13 @@
     "slot": true,
     "enabled": true
   },
+  "patch_note_addenda": [
+    {
+      "evidence_status": "patch_note_only",
+      "text": "The September 16 patch notes state stored Souls on Golden Goose Egg now count toward net worth for comeback calculations. The structured item datasets do not expose an independent field for this behavior.",
+      "source": "github.deadlock-data.changelogs.raw.fc4f540f12e0"
+    }
+  ],
   "data_boundaries": [
     "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
     "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",

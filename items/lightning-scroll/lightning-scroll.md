@@ -5,12 +5,12 @@ domain: items
 topics: [item, spirit, tier-4]
 aliases: ["upgrade_ultimate_burst"]
 summary: "Damage from your ultimate applies a stun and deals bonus spirit damage after a short delay."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Lightning Scroll
@@ -26,6 +26,7 @@ Damage from your ultimate applies a stun and deals bonus spirit damage after a s
 - **Cost:** 6400 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** MagicDamage, Disruption
 - **Target types:** AllEnemy
@@ -38,7 +39,7 @@ Damage from your ultimate applies a stun and deals bonus spirit damage after a s
 
 | Section | Effect | Value | Status |
 | --- | --- | ---: | --- |
-| Innate | Move Speed on Spirit Damage | 30% | normal |
+| Innate | Move Speed on Spirit Damage | 24% | normal |
 | Innate | Bonus Health | 50 | normal |
 | Innate | Sprint Speed | 0.75m | normal |
 | Passive | Delay Before Effect | 3s | normal |

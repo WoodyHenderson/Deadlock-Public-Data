@@ -5,12 +5,12 @@ domain: items
 topics: [item, weapon, tier-3]
 aliases: ["upgrade_bullet_armor_reduction_aura"]
 summary: "Reduces nearby enemies' Bullet Resist and Fire Rate. If there is only one enemy hero nearby, this effect is doubled."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Hunter's Aura
@@ -26,6 +26,7 @@ Reduces nearby enemies' Bullet Resist and Fire Rate. If there is only one enemy 
 - **Cost:** 3200 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** WeaponDamage, Disruption, ClipSize
 - **Target types:** HeroEnemy, CreepEnemy, MinionEnemy

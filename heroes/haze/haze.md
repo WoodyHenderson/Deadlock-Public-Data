@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Haze is a selectable Assassin hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.haze.124874
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Haze
@@ -53,9 +53,9 @@ Internal key: `ability_sleep_dagger`.
 
 - **Tier 1:** -10% Bullet Resist Reduction for 6s on wake-up
 - **Tier 2:** +1s Sleep Duration Applies 15 Fixation Stacks
-- **Tier 3:** -17s Cooldown -50% Move and Dash Speed for 3s on wake-up
+- **Tier 3:** -17s Cooldown -40% Move and Dash Speed for 3s on wake-up
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDamageDoesntWakeFromSleep`, `BehaviorDisplaysDamageImpact`, `BehaviorDontInterruptSlideOnCast`.
@@ -67,20 +67,16 @@ Behavior flags: `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDamageDoesntW
 | Min Sleep Time | 0.2 |
 | Wake Up Delay | 0.1 (+0.002 per spirit, +1 per duration) |
 | Sleep Movespeed | 1.5 |
-
-Sleep Dagger uses two separate sleep timings. If the sleeping target takes no
- damage, the normal Sleep Duration applies. Once the target takes damage, the
- Spirit-scaled Wake Up Delay begins counting down; the first damage instance does
- not immediately end the sleep.
 | Ricochet Range | 0 |
 | Cooldown | 30 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
-- Tier 1: `{"BulletResistReduction":-10,"BulletResistReductionDuration":6}`
+- Tier 1: `{"BulletResistReduction":-10.0,"BulletResistReductionDuration":6}`
 - Tier 2: `{"SleepDuration":1,"FixationStacks":15}`
-- Tier 3: `{"AbilityCooldown":-17,"SlowPercent":50,"GroundDashReductionPercent":-50,"DebuffDuration":3}`
+- Tier 3: `{"AbilityCooldown":-17.0,"SlowPercent":40,"GroundDashReductionPercent":-45,"DebuffDuration":3}`
 
+**Note:** Sleep Dagger uses two separate sleep timings. If the sleeping target takes no damage, the normal Sleep Duration applies. Once the target takes damage, the Spirit-scaled Wake Up Delay begins counting down; the first damage instance does not immediately end the sleep.
 ### 2. Smoke Bomb
 
 Internal key: `ability_smoke_bomb`.
@@ -95,7 +91,7 @@ Internal key: `ability_smoke_bomb`.
 - **Tier 2:** Enable 2 Ability Charges
 - **Tier 3:** Dispels non-ult debuffs Grants +50% Bullet Lifesteal for 5s
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDamageDoesntWakeFromSleep`, `BehaviorNoTarget`, `BehaviorDontInterruptSprint`, `BehaviorCleaveDisabled`, `BehaviorCanCastOnZipline`.
@@ -105,15 +101,15 @@ Behavior flags: `BehaviorDamageDoesntWakeFromSleep`, `BehaviorNoTarget`, `Behavi
 | Fade Time | 1.5 |
 | Spot Radius | 18 |
 | Invis Sprint Speed | 0 |
+| PostInvisBuffDuration | 0 |
 | Invincible Duration | 0 |
 | Cooldown | 33 (+1 per cooldown) |
-| Duration | 8 |
+| Duration | 8 (+0.1 per spirit, +1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"InvisMoveSpeedMod":7}`
 - Tier 2: `{"AbilityCharges":2,"AbilityCooldownBetweenCharge":7}`
 - Tier 3: `{"BulletLifesteal":50,"PostInvisBuffDuration":5,"DispelOnUse":1}`
-
 ### 3. Fixation
 
 Internal key: `ability_stacking_damage`.
@@ -121,15 +117,15 @@ Internal key: `ability_stacking_damage`.
 <!-- ability-descriptions:start -->
 **Description** (pinned English game text):
 
-> Shooting a target increases your bullet damage on that target. Gain one stack per bullet hit, two if the hit is a headshot.
+> Shooting a target increases your bullet damage on that target. Gain one stack per bullet hit, three if the hit is a headshot.
 
 **Upgrade descriptions** (where supplied by the source):
 
-- **Tier 1:** 40 Spirit damage and 15% slow for 2s to target every 20 stacks
+- **Tier 1:** 40 Spirit damage and 12% slow for 2s to target every 20 stacks
 - **Tier 2:** +40 Max Stacks and +5s Duration
 - **Tier 3:** +0.11/ per Stack Scales with Weapon Damage
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 | Card field | Base value |
@@ -159,7 +155,7 @@ Internal key: `ability_bullet_flurry`.
 - **Tier 2:** +10% Fire Rate +3m Movespeed
 - **Tier 3:** +40% Evasion -65s Cooldown
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorExclusiveUse`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorCleaveDisabled`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -172,14 +168,14 @@ Behavior flags: `BehaviorExclusiveUse`, `BehaviorNoTarget`, `BehaviorDisplaysDam
 | Bullet Evasion | 30 |
 | Channel Move Speed | 4 |
 | Cooldown | 165 (+1 per cooldown) |
-| Duration | 3.5 |
 | Charge Delay | -1 |
+| Duration | 3.5 (+0.03 per spirit, +1 per duration) |
+| Radius | 16 (+1 per radius) |
 
 Upgrade deltas:
 - Tier 1: `{"WeaponDamageBonus":7}`
 - Tier 2: `{"BonusFireRate":10,"ChannelMoveSpeed":3}`
-- Tier 3: `{"EvasionPercent":40,"AbilityCooldown":-65}`
-
+- Tier 3: `{"EvasionPercent":40.0,"AbilityCooldown":-65}`
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

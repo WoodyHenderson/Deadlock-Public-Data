@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.holliday",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.holliday.125565",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Holliday",
   "aliases": [],
@@ -25,8 +25,8 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 780,
-    "health_regeneration_per_second": 2,
+    "maximum_health": 780.0,
+    "health_regeneration_per_second": 2.0,
     "light_melee_damage": 50,
     "heavy_melee_damage": 116,
     "move_speed_meters_per_second": 8.2,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 16.1,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.62
     },
     "air_dash": {
       "speed_meters_per_second": 18.6,
-      "distance_meters": 8,
+      "distance_meters": 8.0,
       "duration_seconds": 0.43
     },
     "stamina": {
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 1.144,
-    "MaxHealth": 41,
+    "MaxHealth": 43.0,
     "PowerIncreases": 1,
     "TechPower": 1.1,
     "LightMeleeDamage": 1.58,
@@ -69,20 +69,20 @@
   },
   "spirit_scaling": {},
   "weapon": {
-    "BulletSpeed": 1156,
+    "BulletSpeed": 1156.0,
     "BulletDamage": 19.7,
     "RoundsPerSecond": 2.1164,
     "ClipSize": 10,
     "ReloadTime": 2.75,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
     "FalloffStartRange": 19.99,
     "FalloffEndRange": 57.51,
-    "FalloffStartScale": 1,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
-    "BulletGravityScale": 0,
+    "BulletGravityScale": 0.0,
     "BulletRadius": 0.127,
     "BulletsPerShot": 1,
     "BulletsPerBurst": 1,
@@ -115,7 +115,7 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 28,
+          "Value": 28.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -380,7 +380,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 28,
+          "Value": 28.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -413,7 +413,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Throw a barrel that explodes after a delay, dealing {g:citadel_inline_attribute:'SpiritDamage'}, <span class=\"highlight\">setting enemies on fire</span> and applying {g:citadel_inline_attribute:'KnockUp'}. <br><br> The barrel can be detonated early by being <span class=\"highlight\">shot</span>, <span class=\"highlight\">melee'd</span>, or <span class=\"highlight\">detonated</span> by another barrel.  <br><br><span class=\"diminish\">The burn stacks, so overlapping barrels burn for their combined damage.<br>Can be Alt-Cast to place the barrel infront of Holliday.</span>",
           "plain_text": "Throw a barrel that explodes after a delay, dealing spirit damage, setting enemies on fire and applying knockup.\nThe barrel can be detonated early by being shot, melee'd, or detonated by another barrel.\nThe burn stacks, so overlapping barrels burn for their combined damage.\nCan be Alt-Cast to place the barrel infront of Holliday."
         },
@@ -422,7 +422,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+40</span> Impact Damage<br><span class=\"highlight\">+13.3333</span> Burn Damage per Second<br><span class=\"highlight\">-5</span> Charge Time<br><span class=\"highlight\">Improved Spirit Scaling</span>",
           "plain_text": "+40 Impact Damage\n+13.3333 Burn Damage per Second\n-5 Charge Time\nImproved Spirit Scaling"
         }
@@ -696,7 +696,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Drop a bounce pad in the world that <span class=\"highlight\">launches any hero</span>. <br><br>You <span class=\"highlight\">explode</span> on landing, dealing <Panel class=\"AbilityPropertyIcon prop_tech_damage\"> <span class=\"highlight_spirit\">Damage</span> to any nearby enemies. <br><br><span class=\"diminish\">The explosion can only occur once per person per Bounce Pad.</span>",
           "plain_text": "Drop a bounce pad in the world that launches any hero.\nYou explode on landing, dealing Damage to any nearby enemies.\nThe explosion can only occur once per person per Bounce Pad."
         },
@@ -705,7 +705,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-10s</span> Cooldown",
           "plain_text": "-10s Cooldown"
         },
@@ -714,7 +714,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "You and allies gain a +4m/s move speed bonus for 4s on landing",
           "plain_text": "You and allies gain a +4m/s move speed bonus for 4s on landing"
         },
@@ -723,7 +723,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+0.7s</span> Stomp Stun",
           "plain_text": "+0.7s Stomp Stun"
         }
@@ -742,13 +742,17 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
           "BehaviorProjectile",
           "BehaviorNoTarget",
           "BehaviorDisplaysDamageImpact"
         ],
+        "BulletResistModifier": {
+          "Class": "Base",
+          "Subclass": "BulletResistReduction"
+        },
         "CrackshotNPCCDReduction": 50,
         "Damage": {
           "Value": 55,
@@ -775,16 +779,18 @@
             "Type": "range"
           }
         },
-        "FadingSlowPercent": 50,
+        "FadingSlowPercent": 40,
         "IsDisabled": false,
         "Key": "ability_crackshot",
         "Name": "Crackshot",
         "Upgrades": [
           {
-            "FadingSlowPercent": 25
+            "FadingSlowPercent": 20
           },
           {
-            "Damage": 49.5
+            "Damage": 49.5,
+            "BulletResistReduction": -6,
+            "BulletResistReductionDuration": 5
           },
           {
             "AbilityCooldownPerHeadshot": -6,
@@ -812,7 +818,7 @@
               {
                 "Key": "FadingSlowPercent",
                 "Name": "Fading Move Speed",
-                "Value": 50,
+                "Value": 40,
                 "Type": "slow"
               },
               {
@@ -824,6 +830,12 @@
                   "Type": "duration"
                 },
                 "Type": "duration"
+              },
+              {
+                "Key": "BulletResistReduction",
+                "Name": "Bullet Resist",
+                "Value": 0,
+                "Type": "bullet_armor_down"
               }
             ]
           },
@@ -832,11 +844,14 @@
         },
         "Upgrades": [
           {
-            "FadingSlowPercent": 25,
+            "FadingSlowPercent": 20,
             "DescKey": "ability_crackshot_t1_desc"
           },
           {
-            "Damage": 49.5
+            "Damage": 49.5,
+            "BulletResistReduction": -6,
+            "BulletResistReductionDuration": 5,
+            "DescKey": "ability_crackshot_t2_desc"
           },
           {
             "AbilityCooldownPerHeadshot": -6,
@@ -881,7 +896,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -892,7 +907,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Headshots deal bonus <Panel class=\"AbilityPropertyIcon prop_bullet_damage\"> <span class=\"highlight_courage\">Damage</span> and applies a <Panel class=\"AbilityPropertyIcon prop_slow\"> <span class=\"highlight\">Fading Move Speed penalty</span>. This effect can only occur when off cooldown. <br><br>Cooldown is reduced by 50% on NPC hits. <br><span class=\"diminish\">Crackshot ignores range damage fall-off and does not apply to objectives.</span>",
           "plain_text": "Headshots deal bonus Damage and applies a Fading Move Speed penalty. This effect can only occur when off cooldown.\nCooldown is reduced by 50% on NPC hits.\nCrackshot ignores range damage fall-off and does not apply to objectives."
         },
@@ -901,16 +916,25 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "<span class=\"highlight\">-25%</span> Fading Move Speed",
-          "plain_text": "-25% Fading Move Speed"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "<span class=\"highlight\">-20%</span> Fading Move Speed",
+          "plain_text": "-20% Fading Move Speed"
+        },
+        {
+          "localization_key": "ability_crackshot_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "<span class=\"highlight\">+49.5</span> Damage and <span class=\"highlight\">-6%</span> Bullet Resist for <span class=\"highlight\">5s</span>",
+          "plain_text": "+49.5 Damage and -6% Bullet Resist for 5s"
         },
         {
           "localization_key": "ability_crackshot_t3_desc",
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-6s</span> Cooldown on Hero Headshots. -3s on NPC Headshots",
           "plain_text": "-6s Cooldown on Hero Headshots. -3s on NPC Headshots"
         }
@@ -936,7 +960,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 2.25,
           "Scale": {
@@ -952,7 +976,7 @@
           "BehaviorDontInterruptSlideOnCast",
           "BehaviorInterruptMeleeOnCast"
         ],
-        "BouncePadExtendDuration": 1,
+        "BouncePadExtendDuration": 1.25,
         "CameraPreviewDistance": 200,
         "CameraPreviewOffset": 25,
         "CameraPreviewSpeed": 0.6,
@@ -1033,7 +1057,7 @@
           "Alt": [
             {
               "Key": "BouncePadExtendDuration",
-              "Value": 1
+              "Value": 1.25
             }
           ],
           "DescKey": "ability_gravity_lasso_desc"
@@ -1143,7 +1167,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -1163,7 +1187,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Throw out your lasso, dealing {g:citadel_inline_attribute:'SpiritDamage'}, {g:citadel_inline_attribute:'Pulling'}, and applying {g:citadel_inline_attribute:'Stun'}.<br>Using a Bounce Pad extends the duration of Spirit Lasso.",
           "plain_text": "Throw out your lasso, dealing spirit damage, pulling, and applying stun.\nUsing a Bounce Pad extends the duration of Spirit Lasso."
         }
@@ -1226,5 +1250,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

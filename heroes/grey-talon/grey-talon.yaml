@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.grey-talon",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.grey-talon.125566",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Grey Talon",
   "aliases": [],
@@ -25,7 +25,7 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 780,
+    "maximum_health": 780.0,
     "health_regeneration_per_second": 1.5,
     "light_melee_damage": 50,
     "heavy_melee_damage": 116,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 16.1,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.62
     },
     "air_dash": {
       "speed_meters_per_second": 18.6,
-      "distance_meters": 8,
+      "distance_meters": 8.0,
       "duration_seconds": 0.43
     },
     "stamina": {
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.85,
-    "MaxHealth": 38,
+    "MaxHealth": 38.0,
     "PowerIncreases": 1,
     "TechPower": 1.6,
     "LightMeleeDamage": 1.58,
@@ -79,12 +79,12 @@
     "RoundsPerSecond": 1.6667,
     "ClipSize": 17,
     "ReloadTime": 2.35,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
-    "FalloffStartRange": 18,
-    "FalloffEndRange": 54,
-    "FalloffStartScale": 1,
+    "FalloffStartRange": 18.0,
+    "FalloffEndRange": 54.0,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
     "BulletGravityScale": 0.8,
@@ -122,7 +122,7 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 17,
+          "Value": 17.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -154,7 +154,7 @@
         "Damage": {
           "Value": 80,
           "Scale": {
-            "Value": 1,
+            "Value": 1.0,
             "Type": "spirit"
           }
         },
@@ -168,14 +168,14 @@
             "AbilityCharges": 1
           },
           {
-            "Damage": 54
+            "Damage": 54.0
           },
           {
             "AbilityCooldownBetweenCharge": -3,
             "Damage": {
               "Value": 0,
               "Scale": {
-                "Value": 1,
+                "Value": 1.0,
                 "Type": "spirit"
               }
             }
@@ -194,7 +194,7 @@
                 "Name": "Damage",
                 "Value": 80,
                 "Scale": {
-                  "Value": 1,
+                  "Value": 1.0,
                   "Type": "spirit"
                 },
                 "Type": "tech_damage"
@@ -209,7 +209,7 @@
             "AbilityCharges": 1
           },
           {
-            "Damage": 54,
+            "Damage": 54.0,
             "DescKey": "ability_charged_shot_t2_desc"
           },
           {
@@ -217,7 +217,7 @@
             "Damage": {
               "Value": 0,
               "Scale": {
-                "Value": 1,
+                "Value": 1.0,
                 "Type": "spirit"
               }
             },
@@ -278,7 +278,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 17,
+          "Value": 17.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -302,7 +302,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">Charge up a powerful shot</span> that pierces through enemies. Hold {g:citadel_binding:'Ability1'} or {g:citadel_binding:'Attack'} to hold the shot.",
           "plain_text": "Charge up a powerful shot that pierces through enemies. Hold [Ability 1] or [Attack] to hold the shot."
         },
@@ -311,7 +311,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+54 Damage</span>",
           "plain_text": "+54 Damage"
         },
@@ -320,7 +320,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">Improved damage scaling</span> and <span class=\"highlight\">-3s</span> Charge Delay",
           "plain_text": "Improved damage scaling and -3s Charge Delay"
         }
@@ -333,13 +333,13 @@
       "data": {
         "AbilityCastDelay": 0.2,
         "AbilityCooldown": {
-          "Value": 25,
+          "Value": 25.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 4,
           "Scale": {
@@ -381,8 +381,8 @@
         "PowerJumpModifier": {
           "Class": "PowerJump",
           "Subclass": "PowerJump",
-          "AirDrag": 2,
-          "VerticalCameraOffset": 20,
+          "AirDrag": 2.0,
+          "VerticalCameraOffset": 20.0,
           "VerticalCameraOffsetLerpTime": 0.4,
           "EnabledStateMask": [
             "AbilityMovement",
@@ -393,11 +393,11 @@
         "Upgrades": [
           {
             "WeaponDamageBonus": 3,
-            "SlowPercent": 30,
+            "SlowPercent": 24,
             "SlowDuration": 1.5
           },
           {
-            "AbilityCooldown": -12
+            "AbilityCooldown": -12.0
           },
           {
             "BulletLifestealPercent": 30,
@@ -464,12 +464,12 @@
         "Upgrades": [
           {
             "WeaponDamageBonus": 3,
-            "SlowPercent": 30,
+            "SlowPercent": 24,
             "SlowDuration": 1.5,
             "DescKey": "ability_power_jump_t1_desc"
           },
           {
-            "AbilityCooldown": -12
+            "AbilityCooldown": -12.0
           },
           {
             "BulletLifestealPercent": 30,
@@ -519,7 +519,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 25,
+          "Value": 25.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -528,7 +528,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -548,7 +548,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Launches you high in the air, allowing you to glide slowly. While airborne, you gain <span class=\"highlight\">Weapon Damage</span> and <span class=\"highlight\">multishot on your weapon</span>. <br>{g:citadel_binding:'AltCast'}for reduced jump height.  <br>Press{g:citadel_binding:'Mantle'}to cancel the glide.",
           "plain_text": "Launches you high in the air, allowing you to glide slowly. While airborne, you gain Weapon Damage and multishot on your weapon.\n[Alt Cast] for reduced jump height.\nPress [Mantle] to cancel the glide."
         },
@@ -557,16 +557,16 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "While airborne, <span class=\"highlight\">+3</span> Weapon Damage and weapon damage applies <span class=\"highlight\">30%</span> movement slow for 1.5s",
-          "plain_text": "While airborne, +3 Weapon Damage and weapon damage applies 30% movement slow for 1.5s"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "While airborne, <span class=\"highlight\">+3</span> Weapon Damage and weapon damage applies <span class=\"highlight\">24%</span> movement slow for 1.5s",
+          "plain_text": "While airborne, +3 Weapon Damage and weapon damage applies 24% movement slow for 1.5s"
         },
         {
           "localization_key": "ability_power_jump_t3_desc",
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "While airborne, <span class=\"highlight\">+30%</span> Bullet Lifesteal, <span class=\"highlight\">+30%</span> Spirit Lifesteal and <span class=\"highlight\">+30%</span> Bullet Evasion",
           "plain_text": "While airborne, +30% Bullet Lifesteal, +30% Spirit Lifesteal and +30% Bullet Evasion"
         }
@@ -584,9 +584,9 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
-        "ArmTime": 2,
+        "ArmTime": 2.0,
         "BehaviourBits": [
           "BehaviorProjectile",
           "BehaviorDisplaysDamageImpact",
@@ -628,7 +628,7 @@
           }
         },
         "SkipFrames": 6,
-        "SlowPercent": 30,
+        "SlowPercent": 24,
         "TetherDuration": {
           "Value": 2.25,
           "Scale": {
@@ -643,7 +643,7 @@
         "TripUpSpeed": 6.35,
         "Upgrades": [
           {
-            "AbilityCooldown": -20
+            "AbilityCooldown": -20.0
           },
           {
             "BulletArmorReduction": -15,
@@ -694,13 +694,13 @@
             {
               "Key": "ArmTime",
               "Name": "Arm Time",
-              "Value": 2,
+              "Value": 2.0,
               "Type": "duration"
             },
             {
               "Key": "SlowPercent",
               "Name": "Move Speed",
-              "Value": 30,
+              "Value": 24,
               "Type": "slow"
             },
             {
@@ -726,7 +726,7 @@
         },
         "Upgrades": [
           {
-            "AbilityCooldown": -20
+            "AbilityCooldown": -20.0
           },
           {
             "BulletArmorReduction": -15,
@@ -793,7 +793,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "Radius": {
@@ -813,7 +813,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">Throw out a trap</span> that begins to arm itself. Once armed, the trap will trigger when an enemy enters its radius, applying <span class=\"highlight\">Curse and Movement Slow</span> that <span class=\"highlight\">interrupts, Silences, Disarms</span>, and <span class=\"highlight\">prevents item usage</span>.<br>Hit the trap with a Charged Shot to detonate early with increased radius.",
           "plain_text": "Throw out a trap that begins to arm itself. Once armed, the trap will trigger when an enemy enters its radius, applying Curse and Movement Slow that interrupts, Silences, Disarms, and prevents item usage.\nHit the trap with a Charged Shot to detonate early with increased radius."
         },
@@ -822,7 +822,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Applies <span class=\"highlight\">-15%</span> Bullet Resist for 10s",
           "plain_text": "Applies -15% Bullet Resist for 10s"
         },
@@ -831,7 +831,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+1s</span> Curse Duration and <span class=\"highlight\">+1.5m</span> Radius",
           "plain_text": "+1s Curse Duration and +1.5m Radius"
         }
@@ -851,13 +851,13 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 125,
+          "Value": 125.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
           "BehaviorChannelled",
@@ -868,7 +868,7 @@
         ],
         "BonusTechPowerPerKill": 8,
         "Damage": {
-          "Value": 230,
+          "Value": 230.0,
           "Scale": {
             "Value": 0.93744,
             "Type": "spirit"
@@ -910,10 +910,10 @@
         },
         "Upgrades": [
           {
-            "Damage": 85
+            "Damage": 85.0
           },
           {
-            "AbilityCooldown": -40
+            "AbilityCooldown": -40.0
           },
           {
             "LowHealthEnemyThresholdPct": 22
@@ -930,7 +930,7 @@
               {
                 "Key": "Damage",
                 "Name": "Damage",
-                "Value": 230,
+                "Value": 230.0,
                 "Scale": {
                   "Value": 0.93744,
                   "Type": "spirit"
@@ -971,10 +971,10 @@
         },
         "Upgrades": [
           {
-            "Damage": 85
+            "Damage": 85.0
           },
           {
-            "AbilityCooldown": -40
+            "AbilityCooldown": -40.0
           },
           {
             "LowHealthEnemyThresholdPct": 22,
@@ -1003,7 +1003,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 125,
+          "Value": 125.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -1012,7 +1012,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -1023,7 +1023,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "After 1.5s cast time, <span class=\"highlight\">launch a spirit owl that you control</span> and which explodes on impact, <span class=\"highlight\">damaging and stunning</span> enemies. Hold{g:citadel_binding:'MoveForward'}to accelerate the owl.<br>Press{g:citadel_binding:'Mantle'}to release control. Gain <span class=\"highlight\">permanent Spirit Power</span> for each enemy hero killed with Guided Owl.",
           "plain_text": "After 1.5s cast time, launch a spirit owl that you control and which explodes on impact, damaging and stunning enemies. Hold [Move Forward] to accelerate the owl.\nPress [Mantle] to release control. Gain permanent Spirit Power for each enemy hero killed with Guided Owl."
         },
@@ -1032,7 +1032,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "After hit, kills enemies that are below <span class=\"highlight\">22% Health</span>",
           "plain_text": "After hit, kills enemies that are below 22% Health"
         }
@@ -1100,5 +1100,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

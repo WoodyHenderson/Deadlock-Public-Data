@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Lady Geist is a selectable Mystic hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.lady-geist.124875
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Lady Geist
@@ -50,14 +50,14 @@ Internal key: `ability_blood_bomb`.
 > Sacrifice some of your health to launch a bomb that deals damage after a brief arm time.
 > Self damage type is Spirit and can be mitigated.
 
-> Bombs leave a toxic mess on the ground, dealing 26% of the original damage per second, for 6s.
+> Bombs leave a toxic mess on the ground, dealing 30% of the original damage per second, for 6s.
 
 **Upgrade descriptions** (where supplied by the source):
 
 - **Tier 2:** +2m Radius and +50 Damage.
-- **Tier 3:** Bombs leave a toxic mess on the ground, dealing 26% of the original damage per second, for 6s.
+- **Tier 3:** Bombs leave a toxic mess on the ground, dealing 30% of the original damage per second, for 6s.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorCanSetQuickCast`.
@@ -69,12 +69,12 @@ Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorC
 | Arming Duration | 0.65 |
 | Cooldown | 14 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Radius | 7 (+1 per radius) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-5}`
 - Tier 2: `{"Damage":50,"Radius":2}`
-- Tier 3: `{"BloodSpillDPSPercent":26,"BloodSpillDuration":6}`
-
+- Tier 3: `{"BloodSpillDPSPercent":30,"BloodSpillDuration":6}`
 ### 2. Life Drain
 
 Internal key: `ability_life_drain`.
@@ -89,7 +89,7 @@ Internal key: `ability_life_drain`.
 
 - **Tier 3:** Enables and Grants +2 Charges. Increases spirit scaling.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorAlwaysPreviewRadius`, `BehaviorDisplaysDamageImpact`, `BehaviorCannotCancelDuringChannel`, `BehaviorAllowAltCast`, `BehaviorUseInstantCastUnitTargetUi`, `BehaviorTriggerCancelMashProtectionOnCast`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -99,15 +99,14 @@ Behavior flags: `BehaviorAlwaysPreviewRadius`, `BehaviorDisplaysDamageImpact`, `
 | Damage Per Second | 24 (+0.3225 per spirit) |
 | Damage to Heal | 100 (+1 per healing) |
 | Max Tether Range | 28 (+1 per range) |
+| Cast Range | 18 (+1 per range) |
 | Cooldown | 34 (+1 per cooldown) |
 | Duration | 2.5 (+1 per duration) |
-| Cast Range | 18 (+1 per range) |
 
 Upgrade deltas:
 - Tier 1: `{"LifeDrainPerSecond":13}`
 - Tier 2: `{"AbilityDuration":2.5}`
-- Tier 3: `{"AbilityCharges":3,"AbilityCooldownBetweenCharge":0.1,"LifeDrainPerSecond":{"Value":0,"Scale":{"Value":0.3,"Type":"spirit"}}}`
-
+- Tier 3: `{"AbilityCharges":3,"AbilityCooldownBetweenCharge":0.1,"LifeDrainPerSecond":{"Value":0,"Scale":{"Value":0.45,"Type":"spirit"}}}`
 ### 3. Malice
 
 Internal key: `ability_blood_shards`.
@@ -122,7 +121,7 @@ Internal key: `ability_blood_shards`.
 - **Tier 2:** +25.2 Damage and +4 Blood Shards
 - **Tier 3:** +8% Damage Amp
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorDontInterruptSlideOnCast`.
@@ -140,7 +139,6 @@ Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-3}`
 - Tier 2: `{"HealthToDamage":25.2,"NumBloodShards":4,"SpreadAngleDegrees":22}`
 - Tier 3: `{"VulnerabilityPerStack":8}`
-
 ### 4. Soul Exchange
 
 Internal key: `ability_health_swap`.
@@ -155,7 +153,7 @@ Internal key: `ability_health_swap`.
 - **Tier 2:** Silence enemies within 25m for 3s
 - **Tier 3:** On cast, +60 Spirit Power, +40% Fire Rate and +50% Spirit Resistance for 8s.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorCleaveDisabled`, `BehaviorUseInstantCastUnitTargetUi`, `BehaviorCanSetQuickCast`.
@@ -164,18 +162,18 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorCleaveDisabled`, `Behav
 | --- | ---: |
 | Enemy Min Health | 30 |
 | Min Health Received | 30 |
+| SelfBuffDuration | 0 |
 | Silence Duration | 0 |
 | Silence Radius | 0 |
-| Cooldown | 220 (+1 per cooldown) |
-| Duration | 0.25 |
 | Cast Range | 5.5 (+1 per range) |
+| Cooldown | 220 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Duration | 0.25 |
 
 Upgrade deltas:
-- Tier 1: `{"AbilityCooldown":-50}`
+- Tier 1: `{"AbilityCooldown":-50.0}`
 - Tier 2: `{"SilenceDuration":3,"SilenceRadius":25}`
 - Tier 3: `{"SelfBuffDuration":8,"TechResist":50,"BonusFireRate":40,"BonusSpirit":60}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

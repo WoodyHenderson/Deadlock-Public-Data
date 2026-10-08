@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.sinclair",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.sinclair.124939",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Sinclair",
   "aliases": [],
@@ -25,8 +25,8 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 730,
-    "health_regeneration_per_second": 2,
+    "maximum_health": 730.0,
+    "health_regeneration_per_second": 2.0,
     "light_melee_damage": 50,
     "heavy_melee_damage": 116,
     "move_speed_meters_per_second": 7.2,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 14.7,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.68
     },
     "air_dash": {
-      "speed_meters_per_second": 17,
-      "distance_meters": 8,
+      "speed_meters_per_second": 17.0,
+      "distance_meters": 8.0,
       "duration_seconds": 0.47
     },
     "stamina": {
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.55,
-    "MaxHealth": 38,
+    "MaxHealth": 38.0,
     "PowerIncreases": 1,
     "TechPower": 1.3,
     "LightMeleeDamage": 1.58,
@@ -71,17 +71,17 @@
     "MaxMoveSpeed": 0.0138
   },
   "weapon": {
-    "BulletSpeed": 300,
+    "BulletSpeed": 300.0,
     "BulletDamage": 17.76,
     "RoundsPerSecond": 2.7211,
     "ClipSize": 16,
     "ReloadTime": 2.5,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
     "FalloffStartRange": 25.4,
     "FalloffEndRange": 60.96,
-    "FalloffStartScale": 1,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.3,
     "FalloffBias": 0.5,
     "BulletGravityScale": 0,
@@ -152,7 +152,7 @@
         ],
         "ChannelMoveSpeed": -1,
         "CloneBoltDelay": 0.1,
-        "CloneDamagePercentage": 50,
+        "CloneDamagePercentage": 50.0,
         "InitialProjectileVelocity": 800,
         "IsDisabled": false,
         "Key": "ability_magician_magicbolt",
@@ -201,8 +201,8 @@
             "AbilityCooldown": -13
           },
           {
-            "MaxDamage": 126,
-            "CloneDamagePercentage": 50
+            "MaxDamage": 126.0,
+            "CloneDamagePercentage": 50.0
           }
         ]
       },
@@ -236,7 +236,7 @@
               {
                 "Key": "CloneDamagePercentage",
                 "Name": "Assistant Damage",
-                "Value": 50,
+                "Value": 50.0,
                 "Type": "tech_damage"
               }
             ]
@@ -273,8 +273,8 @@
             "AbilityCooldown": -13
           },
           {
-            "MaxDamage": 126,
-            "CloneDamagePercentage": 50,
+            "MaxDamage": 126.0,
+            "CloneDamagePercentage": 50.0,
             "DescKey": "ability_magician_magicbolt_t3_desc"
           }
         ],
@@ -377,7 +377,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Fire a bolt of magic that deals <Panel class=\"AbilityPropertyIcon prop_tech_damage\"> <span class=\"highlight_spirit\">Damage</span>, <span class=\"highlight\">increasing as it travels</span>. If you have an <span class=\"highlight\">Assistant</span>, they also cast Vexing Bolt at reduced damage. <br><br>Press <span class=\"highlight\">{g:citadel_binding:'Ability1'}</span> to <span class=\"highlight\">redirect</span> the bolt towards your crosshairs.",
           "plain_text": "Fire a bolt of magic that deals Damage, increasing as it travels. If you have an Assistant, they also cast Vexing Bolt at reduced damage.\nPress [Ability 1] to redirect the bolt towards your crosshairs."
         },
@@ -386,7 +386,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Bolts apply <span class=\"highlight\">-25%</span> Fire Rate for <span class=\"highlight\">5</span>s.",
           "plain_text": "Bolts apply -25% Fire Rate for 5s."
         },
@@ -395,7 +395,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+126</span> Max Damage. +<span class=\"highlight\">50%</span> Assistant Damage.",
           "plain_text": "+126 Max Damage. +50% Assistant Damage."
         }
@@ -421,7 +421,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 6,
           "Scale": {
@@ -439,7 +439,7 @@
         "BuffModifier": {
           "Class": "Base",
           "Subclass": "CloneturretBuffModifier",
-          "Duration": -1
+          "Duration": -1.0
         },
         "ChannelMoveSpeed": -1,
         "Damage": {
@@ -593,7 +593,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -613,7 +613,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Summon an <span class=\"highlight\">Assistant</span> at the targeted location. The <span class=\"highlight\">Assistant</span> attacks whenever you fire your weapon, dealing <Panel class=\"AbilityPropertyIcon prop_tech_damage\"> <span class=\"highlight_spirit\">Damage</span>. <br><br>While the <span class=\"highlight\">Assistant</span> is out, you can press <span class=\"highlight\">{g:citadel_binding:'Ability2'}</span> to swap positions with your <span class=\"highlight\">Assistant</span>. <br><br><span class=\"diminish\">Casting Spectral Assistant also reloads your weapon.</span>",
           "plain_text": "Summon an Assistant at the targeted location. The Assistant attacks whenever you fire your weapon, dealing Damage.\nWhile the Assistant is out, you can press [Ability 2] to swap positions with your Assistant.\nCasting Spectral Assistant also reloads your weapon."
         },
@@ -622,7 +622,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+7s Duration</span> & <span class=\"highlight\">5m Range</span>",
           "plain_text": "+7s Duration & 5m Range"
         },
@@ -631,7 +631,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+60% Fire Rate</span> and +<span class=\"highlight\">12.6 Assistant Damage</span>",
           "plain_text": "+60% Fire Rate and +12.6 Assistant Damage"
         }
@@ -657,7 +657,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "AirDampingDuration": 1,
         "BehaviourBits": [
@@ -840,7 +840,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "Radius": {
@@ -860,7 +860,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Hex a target area and transforming all enemies into a <span class=\"highlight\">Rabbit</span> for a limited duration.<br><br> Rabbits are small and <Panel class=\"AbilityPropertyIcon prop_move_speed\"> <span class=\"highlight\">move faster</span>, but take increased <Panel class=\"AbilityPropertyIcon prop_damage\"><span class=\"highlight\">Damage</span> and are <Panel class=\"AbilityPropertyIcon prop_cast\"><span class=\"highlight\">unable to perform most actions</span>.<br><span class=\"diminish\">Hex does not interrupt abilities.</span>",
           "plain_text": "Hex a target area and transforming all enemies into a Rabbit for a limited duration.\nRabbits are small and move faster, but take increased Damage and are unable to perform most actions.\nHex does not interrupt abilities."
         },
@@ -869,7 +869,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+7%</span> Damage Amp and <span class=\"highlight\">+3m</span> Radius",
           "plain_text": "+7% Damage Amp and +3m Radius"
         }
@@ -895,7 +895,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
           "BehaviorAlwaysPreviewRadius",
@@ -1024,7 +1024,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -1035,7 +1035,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">Copy the Ultimate</span> of an enemy hero for a limited time. Reactivating the ability will use the <span class=\"highlight\">Copied Ultimate</span> instead.<br><br><span class=\"diminish\">Copies will inherit this ability's upgrade points.<br>Audience Participation will also copy the cooldown.",
           "plain_text": "Copy the Ultimate of an enemy hero for a limited time. Reactivating the ability will use the Copied Ultimate instead.\nCopies will inherit this ability's upgrade points.\nAudience Participation will also copy the cooldown."
         },
@@ -1044,7 +1044,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">Upgrade</span> the Copy.",
           "plain_text": "Upgrade the Copy."
         },
@@ -1053,7 +1053,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">Upgrade</span> the Copy AGAIN!",
           "plain_text": "Upgrade the Copy AGAIN!"
         },
@@ -1062,7 +1062,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">Upgrade</span> the Copy ONCE AGAIN!",
           "plain_text": "Upgrade the Copy ONCE AGAIN!"
         }
@@ -1127,5 +1127,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

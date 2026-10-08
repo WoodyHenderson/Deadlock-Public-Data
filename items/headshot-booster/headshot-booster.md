@@ -5,12 +5,12 @@ domain: items
 topics: [item, weapon, tier-1]
 aliases: ["upgrade_headshot_booster"]
 summary: "Your next headshot against an enemy Hero deals bonus weapon damage."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Headshot Booster
@@ -26,6 +26,7 @@ Your next headshot against an enemy Hero deals bonus weapon damage.
 - **Cost:** 800 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** Durability, FireRate
 - **Target types:** none listed

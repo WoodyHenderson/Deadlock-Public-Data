@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "selection_rule": "Deadlock API shopable=true and disabled is not true; exact roster must match enabled named/costed deadlock-data item records",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "item_count": 173,
   "counts_by_slot": {
@@ -23,12 +23,12 @@
     "5": 17
   },
   "source_artifacts": {
-    "primary_items_url": "https://api.deadlock-api.com/v1/assets/items?language=english&client_version=6684",
-    "primary_items_sha256": "75ee1c872303fd753327e56d3daa037171168567f42c7ca55f39d7fe45202474",
-    "primary_steam_info_sha256": "1b16718b1dad48e09d4a75cb0ad25a195ff83e10f3dd5b5f3ada950ac5ed11ba",
-    "secondary_repository_commit": "311b2e8d895eec837441ff3e29b7d7581a61768c",
-    "secondary_item_data_sha256": "88cd1b33e60e531d72dfb900d1ca34aa8c54b5ac51dc2f6307804526b045a9b1",
-    "secondary_item_cards_sha256": "07c00222dfc7b08eaaf1524dc60085d07d8c20ec537f4c0731119ae148088363"
+    "primary_items_url": "https://api.deadlock-api.com/v1/assets/items?language=english&client_version=6694",
+    "primary_items_sha256": "70156e5ebfa42da91b501ef7b224ecc5e66df5f64cfa1f7bb223567b3ec8fbb6",
+    "secondary_repository_commit": "fc4f540f12e019a6a2a422e0818917a4eedaf881",
+    "secondary_version_file_sha256": "1a8fda231ad531680d2d78db67614cdefec70261bfe045bf0895997f10e0994b",
+    "secondary_item_data_sha256": "fee5c627a64b318cf1b75e4a271dbcc98d41055128bfdeb0e70e19e030970518",
+    "secondary_item_cards_sha256": "a89fd2a1ceea1d12ac66103411d5e7026ae67e9b586756930ad09a9a485385a1"
   },
   "items": [
     {
@@ -1776,7 +1776,9 @@
       "activation": "instant_cast",
       "is_active_item": true,
       "is_imbue": false,
-      "components": []
+      "components": [
+        "upgrade_sprint_booster"
+      ]
     },
     {
       "id": "item.sharpshooter",
@@ -2318,9 +2320,7 @@
       "activation": "passive",
       "is_active_item": false,
       "is_imbue": false,
-      "components": [
-        "upgrade_sprint_booster"
-      ]
+      "components": []
     },
     {
       "id": "item.vortex-web",

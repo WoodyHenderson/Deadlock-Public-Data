@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.slowing-hex",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Slowing Hex",
@@ -122,9 +122,9 @@
       "importance": "normal",
       "key": "AbilityCooldown",
       "label": "Cooldown",
-      "value": "27s",
+      "value": "29s",
       "property": {
-        "value": "27",
+        "value": "29",
         "can_set_token_override": true,
         "css_class": "cooldown",
         "disable_value": "0",
@@ -146,9 +146,9 @@
       "importance": "important",
       "key": "SlowPercent",
       "label": "Move Speed",
-      "value": "20%",
+      "value": "16%",
       "property": {
-        "value": "20",
+        "value": "16",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -168,9 +168,9 @@
       "importance": "important",
       "key": "GroundDashReductionPercent",
       "label": "Dash Distance",
-      "value": "-30%",
+      "value": "-26%",
       "property": {
-        "value": "-30",
+        "value": "-26",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_GROUND_DASH_REDUCTION_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -190,7 +190,7 @@
       "property_upgrades": [
         {
           "name": "SlowPercent",
-          "bonus": "10"
+          "bonus": "8"
         },
         {
           "name": "AbilityCooldown",
@@ -215,7 +215,7 @@
     "item_tier": 2,
     "properties": {
       "AbilityCooldown": {
-        "value": "27",
+        "value": "29",
         "can_set_token_override": true,
         "css_class": "cooldown",
         "disable_value": "0",
@@ -358,7 +358,7 @@
         "postvalue_label": "Weapon Damage"
       },
       "SlowPercent": {
-        "value": "20",
+        "value": "16",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -373,7 +373,7 @@
         "tooltip_is_important": true
       },
       "GroundDashReductionPercent": {
-        "value": "-30",
+        "value": "-26",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_GROUND_DASH_REDUCTION_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -437,7 +437,7 @@
         "property_upgrades": [
           {
             "name": "SlowPercent",
-            "bonus": "10"
+            "bonus": "8"
           },
           {
             "name": "AbilityCooldown",
@@ -473,18 +473,18 @@
     "IsDisabled": false,
     "StreetBrawl": false,
     "IsImbue": false,
-    "AbilityCooldown": 27,
+    "AbilityCooldown": 29,
     "AbilityDuration": 3.5,
     "AbilityCastRange": "25m",
     "AbilityUnitTargetLimit": 1,
     "AbilityCastDelay": 0.1,
     "AbilityCooldownBetweenCharge": -1.0,
     "ChannelMoveSpeed": -1,
-    "SlowPercent": 20,
-    "GroundDashReductionPercent": -30,
+    "SlowPercent": 16,
+    "GroundDashReductionPercent": -26,
     "BonusSprintSpeed": "0.5m",
     "PropertyUpgrades": {
-      "SlowPercent": 10,
+      "SlowPercent": 8,
       "AbilityCooldown": -18,
       "GroundDashReductionPercent": -6
     }
@@ -526,18 +526,18 @@
     "Info2": {
       "Type": "Active",
       "DescKey": "#upgrade_containment_desc",
-      "Cooldown": 27,
+      "Cooldown": 29,
       "ChargeUp": null,
       "Main": [
         {
           "Key": "SlowPercent",
-          "Value": 20,
+          "Value": 16,
           "Type": "slow",
           "UsageFlags": "ConditionallyApplied"
         },
         {
           "Key": "GroundDashReductionPercent",
-          "Value": -30,
+          "Value": -26,
           "Type": "slow",
           "UsageFlags": "ConditionallyApplied"
         }
@@ -556,7 +556,7 @@
       ]
     },
     "Upgrades": {
-      "SlowPercent": 10,
+      "SlowPercent": 8,
       "AbilityCooldown": -18,
       "GroundDashReductionPercent": -6
     },

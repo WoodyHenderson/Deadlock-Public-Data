@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.shadow-weave",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Shadow Weave",
@@ -44,7 +44,9 @@
   },
   "purchase": {
     "cost_souls": 3200,
-    "component_internal_keys": []
+    "component_internal_keys": [
+      "upgrade_sprint_booster"
+    ]
   },
   "description_plain": "Become Stealthed. Whenever you take damage while Stealthed you get briefly revealed.",
   "displayed_effects": [
@@ -72,9 +74,9 @@
       "importance": "normal",
       "key": "BonusSprintSpeed",
       "label": "Sprint Speed",
-      "value": "1.5m",
+      "value": "2m",
       "property": {
-        "value": "1.5m",
+        "value": "2m",
         "provided_property_type": "MODIFIER_VALUE_SPRINT_SPEED_BONUS",
         "css_class": "move_speed",
         "prefix": "{s:sign}",
@@ -278,7 +280,7 @@
     "item_tier": 3,
     "properties": {
       "AbilityCooldown": {
-        "value": 45.0,
+        "value": 37.0,
         "can_set_token_override": true,
         "css_class": "cooldown",
         "disable_value": "0",
@@ -530,7 +532,7 @@
         "tooltip_is_important": false
       },
       "BonusSprintSpeed": {
-        "value": "1.5m",
+        "value": "2m",
         "provided_property_type": "MODIFIER_VALUE_SPRINT_SPEED_BONUS",
         "css_class": "move_speed",
         "prefix": "{s:sign}",
@@ -547,6 +549,9 @@
       "active": "<br>Attacking or using an ability will end your stealth and start an <span class=\"highlight\">ambush</span>, temporarily granting you bonus <span class=\"highlight\">Fire Rate</span>, <span class=\"highlight\">Spirit Power</span> and <span class=\"highlight\">Melee Damage</span>."
     },
     "activation": "instant_cast",
+    "component_items": [
+      "upgrade_sprint_booster"
+    ],
     "tooltip_sections": [
       {
         "section_type": "innate",
@@ -630,7 +635,9 @@
     "Tier": 3,
     "Activation": "InstantCast",
     "Slot": "Weapon",
-    "Components": null,
+    "Components": [
+      "upgrade_sprint_booster"
+    ],
     "TargetTypes": null,
     "ShopFilters": [
       "MagicDamage",
@@ -640,7 +647,7 @@
     "IsDisabled": false,
     "StreetBrawl": false,
     "IsImbue": false,
-    "AbilityCooldown": 45.0,
+    "AbilityCooldown": 37.0,
     "AbilityDuration": 13,
     "AbilityUnitTargetLimit": 1,
     "AbilityCooldownBetweenCharge": -1.0,
@@ -658,7 +665,7 @@
     "AmbushBonusTechPower": 25,
     "AmbushBonusMeleeDamage": 25,
     "OutOfCombatHealthRegen": 5,
-    "BonusSprintSpeed": "1.5m",
+    "BonusSprintSpeed": "2m",
     "PropertyUpgrades": {
       "OutOfCombatHealthRegen": 20,
       "AmbushBonusFireRate": 35,
@@ -675,7 +682,9 @@
     "Tier": 3,
     "Slot": "Weapon",
     "Activation": "InstantCast",
-    "Components": null,
+    "Components": [
+      "upgrade_sprint_booster"
+    ],
     "TargetTypes": null,
     "ShopFilters": [
       "MagicDamage",
@@ -699,7 +708,7 @@
         },
         {
           "Key": "BonusSprintSpeed",
-          "Value": "1.5m",
+          "Value": "2m",
           "Type": "move_speed"
         }
       ]
@@ -707,7 +716,7 @@
     "Info2": {
       "Type": "Active",
       "DescKey": "#upgrade_cloaking_device_active_desc",
-      "Cooldown": 45.0,
+      "Cooldown": 37.0,
       "ChargeUp": null,
       "Main": [
         {

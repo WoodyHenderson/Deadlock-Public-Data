@@ -5,12 +5,12 @@ domain: items
 topics: [item, spirit, tier-2]
 aliases: ["upgrade_quick_silver"]
 summary: "Your imbued ability charges up over time with bonus spirit damage, bonus fire rate, and reloads bullets on use."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Quicksilver Reload
@@ -26,6 +26,7 @@ Your imbued ability charges up over time with bonus spirit damage, bonus fire ra
 - **Cost:** 1600 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** yes
 - **Shop filters:** MagicDamage, FireRate
 - **Target types:** AllEnemy

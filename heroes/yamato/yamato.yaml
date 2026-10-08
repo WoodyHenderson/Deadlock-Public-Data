@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.yamato",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.yamato.124895",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Yamato",
   "aliases": [],
@@ -25,8 +25,8 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 730,
-    "health_regeneration_per_second": 1,
+    "maximum_health": 730.0,
+    "health_regeneration_per_second": 1.0,
     "light_melee_damage": 55,
     "heavy_melee_damage": 128,
     "move_speed_meters_per_second": 8.2,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 14.7,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.68
     },
     "air_dash": {
-      "speed_meters_per_second": 17,
-      "distance_meters": 8,
+      "speed_meters_per_second": 17.0,
+      "distance_meters": 8.0,
       "duration_seconds": 0.47
     },
     "stamina": {
@@ -54,13 +54,13 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.154,
     "BulletDamageAltFire": 0.7,
-    "MaxHealth": 45,
+    "MaxHealth": 45.0,
     "PowerIncreases": 1,
     "TechPower": 1.1,
     "LightMeleeDamage": 1.58,
@@ -73,20 +73,20 @@
     "SustainedDPS": 0.17233
   },
   "weapon": {
-    "BulletSpeed": 254,
+    "BulletSpeed": 254.0,
     "BulletDamage": 5.31,
     "RoundsPerSecond": 2.381,
     "ClipSize": 12,
     "ReloadTime": 2.444,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
     "FalloffStartRange": 19.99,
     "FalloffEndRange": 45.72,
-    "FalloffStartScale": 1,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
-    "BulletGravityScale": 0,
+    "BulletGravityScale": 0.0,
     "BulletRadius": 0.0762,
     "BulletsPerShot": 5,
     "BulletsPerBurst": 1,
@@ -105,15 +105,15 @@
       "RoundsPerSecond": 0.95238,
       "ClipSize": 9,
       "ReloadTime": 2.1,
-      "ReloadMovespeed": 1,
-      "ReloadDelay": 0,
+      "ReloadMovespeed": 1.0,
+      "ReloadDelay": 0.0,
       "ReloadSingle": false,
       "FalloffStartRange": 19.99,
       "FalloffEndRange": 57.51,
-      "FalloffStartScale": 1,
+      "FalloffStartScale": 1.0,
       "FalloffEndScale": 0.1,
       "FalloffBias": 0.5,
-      "BulletGravityScale": 1,
+      "BulletGravityScale": 1.0,
       "BulletRadius": 0.3302,
       "BulletsPerShot": 1,
       "BulletsPerBurst": 1,
@@ -147,7 +147,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
@@ -208,7 +208,7 @@
         "Upgrades": [
           {
             "SlowDuration": 3,
-            "SlowPercent": 40
+            "SlowPercent": 32
           },
           {
             "AbilityCooldown": -4
@@ -279,7 +279,7 @@
         "Upgrades": [
           {
             "SlowDuration": 3,
-            "SlowPercent": 40,
+            "SlowPercent": 32,
             "DescKey": "citadel_ability_power_slash_t1_desc"
           },
           {
@@ -360,7 +360,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -371,7 +371,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Channel to increase damage over 1.4 seconds, then release a <span class=\"highlight\">fully-charged sword strike</span>.<br>Press{g:citadel_binding:'Ability1'}or{g:citadel_binding:'Attack'}to trigger the strike early, dealing partial damage.",
           "plain_text": "Channel to increase damage over 1.4 seconds, then release a fully-charged sword strike.\nPress [Ability 1] or [Attack] to trigger the strike early, dealing partial damage."
         },
@@ -380,16 +380,16 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "<span class=\"highlight\">+40%</span> Movement Slow for <span class=\"highlight\">3s</span>",
-          "plain_text": "+40% Movement Slow for 3s"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "<span class=\"highlight\">+32%</span> Movement Slow for <span class=\"highlight\">3s</span>",
+          "plain_text": "+32% Movement Slow for 3s"
         },
         {
           "localization_key": "citadel_ability_power_slash_t2_desc",
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-4s</span> Ability Cooldown",
           "plain_text": "-4s Ability Cooldown"
         },
@@ -398,7 +398,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+8m</span> Cast Range <br>+150 Damage and Increases Spirit Power scaling",
           "plain_text": "+8m Cast Range\n+150 Damage and Increases Spirit Power scaling"
         }
@@ -417,7 +417,7 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 36,
+          "Value": 36.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -442,7 +442,7 @@
         "Damage": {
           "Value": 0,
           "Scale": {
-            "Value": 1,
+            "Value": 1.2,
             "Type": "melee"
           }
         },
@@ -464,7 +464,7 @@
           "Class": "SlowBase",
           "Subclass": "Slow"
         },
-        "SlowPercent": 50,
+        "SlowPercent": 40,
         "Upgrades": [
           {
             "AbilityCooldown": -18
@@ -493,7 +493,7 @@
                 "Name": "Damage",
                 "Value": 0,
                 "Scale": {
-                  "Value": 1,
+                  "Value": 1.2,
                   "Type": "melee"
                 },
                 "Type": "melee_damage"
@@ -501,7 +501,7 @@
               {
                 "Key": "SlowPercent",
                 "Name": "Move Speed",
-                "Value": 50,
+                "Value": 40,
                 "Type": "slow"
               }
             ]
@@ -527,7 +527,7 @@
                 "Title": "Upon reaching target:",
                 "Key": "SpiritBonus",
                 "Name": "Bonus Spirit",
-                "Value": 0,
+                "Value": 0.0,
                 "Type": "tech_damage"
               },
               {
@@ -587,7 +587,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 36,
+          "Value": 36.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -602,7 +602,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Throw a grappling hook to <span class=\"highlight\">reel yourself towards an enemy, dealing Light {g:citadel_inline_attribute:'MeleeDamage'} and slowing the target</span> when you arrive.",
           "plain_text": "Throw a grappling hook to reel yourself towards an enemy, dealing Light melee damage and slowing the target when you arrive."
         },
@@ -611,7 +611,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Gain <span class=\"highlight\">+35</span> Spirit Power for <span class=\"highlight\">6s</span>",
           "plain_text": "Gain +35 Spirit Power for 6s"
         },
@@ -620,7 +620,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Alt-Cast to Grapple allies<br><span class=\"highlight\">+15m</span> Cast Range<br>Gains <span class=\"highlight\">1 extra charge</span>",
           "plain_text": "Alt-Cast to Grapple allies\n+15m Cast Range\nGains 1 extra charge"
         }
@@ -639,7 +639,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.4,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
@@ -650,7 +650,7 @@
         "BuffDuration": {
           "Value": 0,
           "Scale": {
-            "Value": 1,
+            "Value": 1.0,
             "Type": "duration"
           }
         },
@@ -708,6 +708,13 @@
               "Value": 0,
               "Scale": {
                 "Value": 0.6,
+                "Type": "spirit"
+              }
+            },
+            "HealFixedHealth": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.4,
                 "Type": "spirit"
               }
             }
@@ -782,6 +789,13 @@
                 "Type": "spirit"
               }
             },
+            "HealFixedHealth": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.4,
+                "Type": "spirit"
+              }
+            },
             "DescKey": "citadel_ability_healing_slash_t3_desc"
           }
         ],
@@ -790,7 +804,7 @@
             "Name": "Buff Duration",
             "Value": 0,
             "Scale": {
-              "Value": 1,
+              "Value": 1.0,
               "Type": "duration"
             },
             "Type": "duration"
@@ -822,7 +836,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "Radius": {
@@ -842,7 +856,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Slash enemies in front of you, <span class=\"highlight\">damaging them and slowing their fire rate</span>. If any enemy heroes are hit, you <span class=\"highlight\">heal</span>.",
           "plain_text": "Slash enemies in front of you, damaging them and slowing their fire rate. If any enemy heroes are hit, you heal."
         },
@@ -851,7 +865,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "On Hit : <span class=\"highlight\">+30%</span> Melee Damage for 4s",
           "plain_text": "On Hit : +30% Melee Damage for 4s"
         },
@@ -860,7 +874,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "On Hero Hit : <span class=\"highlight\">+6%</span> Max Health Heal",
           "plain_text": "On Hero Hit : +6% Max Health Heal"
         },
@@ -869,7 +883,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-10s</span> Cooldown and increases scaling",
           "plain_text": "-10s Cooldown and increases scaling"
         }
@@ -882,13 +896,13 @@
       "data": {
         "AbilityChannelTime": 1.5,
         "AbilityCooldown": {
-          "Value": 150,
+          "Value": 150.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 5,
           "Scale": {
@@ -960,7 +974,7 @@
         },
         "Name": "Shadow Transformation",
         "ShadowFormDurationOnKill": {
-          "Value": 2,
+          "Value": 2.0,
           "Scale": {
             "Value": 1,
             "Type": "duration"
@@ -976,7 +990,7 @@
             "AbilityCooldown": -20
           },
           {
-            "AbilityDuration": 3,
+            "AbilityDuration": 3.0,
             "BulletResist": 30,
             "TechResist": 30
           }
@@ -1033,7 +1047,7 @@
             {
               "Key": "ShadowFormDurationOnKill",
               "Name": "Duration On Kill",
-              "Value": 2,
+              "Value": 2.0,
               "Scale": {
                 "Value": 1,
                 "Type": "duration"
@@ -1058,7 +1072,7 @@
             "DescKey": "citadel_ability_infinity_slash_t2_desc"
           },
           {
-            "AbilityDuration": 3,
+            "AbilityDuration": 3.0,
             "BulletResist": 30,
             "TechResist": 30,
             "DescKey": "citadel_ability_infinity_slash_t3_desc"
@@ -1077,7 +1091,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 150,
+          "Value": 150.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -1086,7 +1100,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -1106,7 +1120,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Become infused with Yamato's shadow soul. After an initial <span class=\"highlight\">invincible</span> transformation your <span class=\"highlight\">abilities are refreshed and are 60% faster</span>. You gain <span class=\"highlight\">immunity to negative status effects</span> and have greatly increased <span class=\"highlight\">bullet and spirit resist</span>.<br>When you get a hero kill, you <span class=\"highlight\">heal</span> and the <span class=\"highlight\">duration</span> is extended.",
           "plain_text": "Become infused with Yamato's shadow soul. After an initial invincible transformation your abilities are refreshed and are 60% faster. You gain immunity to negative status effects and have greatly increased bullet and spirit resist.\nWhen you get a hero kill, you heal and the duration is extended."
         },
@@ -1115,7 +1129,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+4m Move Speed and -20 Cooldown",
           "plain_text": "+4m Move Speed and -20 Cooldown"
         },
@@ -1124,7 +1138,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+3s Duration<br>+30% Bullet Resist<br>+30% Spirit Resist",
           "plain_text": "+3s Duration\n+30% Bullet Resist\n+30% Spirit Resist"
         }
@@ -1191,5 +1205,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

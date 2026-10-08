@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.infernus",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.infernus.124880",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Infernus",
   "aliases": [],
@@ -25,8 +25,8 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 830,
-    "health_regeneration_per_second": 2,
+    "maximum_health": 830.0,
+    "health_regeneration_per_second": 2.0,
     "light_melee_damage": 50,
     "heavy_melee_damage": 116,
     "move_speed_meters_per_second": 6.7,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 14.7,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.68
     },
     "air_dash": {
-      "speed_meters_per_second": 17,
-      "distance_meters": 8,
+      "speed_meters_per_second": 17.0,
+      "distance_meters": 8.0,
       "duration_seconds": 0.47
     },
     "stamina": {
@@ -54,12 +54,12 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.088,
-    "MaxHealth": 39,
+    "MaxHealth": 39.0,
     "PowerIncreases": 1,
     "TechPower": 1.1,
     "LightMeleeDamage": 1.58,
@@ -74,12 +74,12 @@
     "RoundsPerSecond": 9.5238,
     "ClipSize": 27,
     "ReloadTime": 2.25,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
-    "FalloffStartRange": 18,
-    "FalloffEndRange": 55,
-    "FalloffStartScale": 1,
+    "FalloffStartRange": 18.0,
+    "FalloffEndRange": 55.0,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
     "BulletGravityScale": 0.8,
@@ -122,7 +122,7 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 25,
+          "Value": 25.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -144,7 +144,7 @@
         ],
         "ChannelMoveSpeed": 18,
         "Damage": {
-          "Value": 40,
+          "Value": 40.0,
           "Scale": {
             "Value": 0.6,
             "Type": "spirit"
@@ -181,7 +181,7 @@
           "Class": "SlowBase",
           "Subclass": "Slow"
         },
-        "SlowPercent": 35,
+        "SlowPercent": 28,
         "TickRate": 0.5,
         "Upgrades": [
           {
@@ -207,7 +207,7 @@
               {
                 "Key": "Damage",
                 "Name": "Damage",
-                "Value": 40,
+                "Value": 40.0,
                 "Scale": {
                   "Value": 0.6,
                   "Type": "spirit"
@@ -218,7 +218,7 @@
                 "Title": "On Hit:",
                 "Key": "SlowPercent",
                 "Name": "Move Speed",
-                "Value": 35,
+                "Value": 28,
                 "Type": "slow"
               },
               {
@@ -349,7 +349,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 25,
+          "Value": 25.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -373,7 +373,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Spew an incendiary mixture, dealing {g:citadel_inline_attribute:'SpiritDamage'}, applying {g:citadel_inline_attribute:'Slow'}, and coating targets in <span class=\"highlight\">napalm</span>.",
           "plain_text": "Spew an incendiary mixture, dealing spirit damage, applying slow, and coating targets in napalm."
         },
@@ -382,7 +382,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Napalm Effect: +<span class=\"highlight\">15% Lifesteal</span>",
           "plain_text": "Napalm Effect: +15% Lifesteal"
         },
@@ -391,7 +391,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Napalm Effect: <span class=\"highlight\">+17%</span> Damage Taken and <span class=\"highlight\">-33%</span> Healing",
           "plain_text": "Napalm Effect: +17% Damage Taken and -33% Healing"
         }
@@ -404,21 +404,21 @@
       "data": {
         "AbilityCastDelay": 0.2,
         "AbilityCooldown": {
-          "Value": 38,
+          "Value": 38.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
         "AbilityDuration": {
-          "Value": 3,
+          "Value": 3.0,
           "Scale": {
             "Value": 1,
             "Type": "duration"
           }
         },
         "AbilityUnitTargetLimit": 1,
-        "AuraLingerDuration": 1,
+        "AuraLingerDuration": 1.0,
         "BehaviourBits": [
           "BehaviorNoTarget",
           "BehaviorDisplaysDamageImpact",
@@ -426,6 +426,7 @@
           "BehaviorMovement",
           "BehaviorDeactivateCrouchToggleOnCast"
         ],
+        "BossDamageScale": 0.5,
         "ChannelMoveSpeed": 18,
         "DPS": {
           "Value": 30,
@@ -457,7 +458,7 @@
           "GroundAuraModifier": {
             "Class": "FlamedashGroundAura",
             "Subclass": "FlamedashGroundAura",
-            "Height": 80,
+            "Height": 80.0,
             "ProvidedByAura": {
               "Class": "FlamedashBurn",
               "Subclass": "FlamedashBurn",
@@ -489,10 +490,10 @@
         "TickRate": 0.5,
         "Upgrades": [
           {
-            "AbilityCooldown": -12
+            "AbilityCooldown": -12.0
           },
           {
-            "DPS": 20,
+            "DPS": 20.0,
             "GroundFlameDuration": 1
           },
           {
@@ -565,10 +566,10 @@
         },
         "Upgrades": [
           {
-            "AbilityCooldown": -12
+            "AbilityCooldown": -12.0
           },
           {
-            "DPS": 20,
+            "DPS": 20.0,
             "GroundFlameDuration": 1,
             "DescKey": "ability_flame_dash_t2_desc"
           },
@@ -602,7 +603,7 @@
           },
           "AuraLingerDuration": {
             "Name": null,
-            "Value": 1
+            "Value": 1.0
           },
           "FlameDashJumpBonus": {
             "Name": null,
@@ -628,7 +629,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 38,
+          "Value": 38.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -637,7 +638,7 @@
         },
         "AbilityDuration": {
           "Name": "Duration",
-          "Value": 3,
+          "Value": 3.0,
           "Scale": {
             "Value": 1,
             "Type": "duration"
@@ -652,7 +653,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Dash forward, gaining {g:citadel_inline_attribute:'SlowResistance'} while leaving a flaming trail that deals {g:citadel_inline_attribute:'SpiritDPS'}. <br><br><span class=\"diminish\">Hold{g:citadel_binding:'MoveForward'}while active to dash farther.",
           "plain_text": "Dash forward, gaining slow resistance while leaving a flaming trail that deals spirit damage over time.\nHold [Move Forward] while active to dash farther."
         },
@@ -661,7 +662,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+1s</span> Trail Duration and <span class=\"highlight\">+20 DPS</span>",
           "plain_text": "+1s Trail Duration and +20 DPS"
         },
@@ -670,7 +671,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Enable <span class=\"highlight\">2 Ability Charges</span> with <span class=\"highlight\">14s</span> Recharge time",
           "plain_text": "Enable 2 Ability Charges with 14s Recharge time"
         }
@@ -681,7 +682,7 @@
       "name": "Afterburn",
       "internal_key": "ability_afterburn",
       "data": {
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "AutoIntrinsicModifiers": [
           {
@@ -690,7 +691,7 @@
             "LightMeleeBuildUp": 20,
             "HeavyMeleeBuildUp": 35,
             "LightMeleeRefresh": 1.5,
-            "HeavyMeleeRefresh": 3,
+            "HeavyMeleeRefresh": 3.0,
             "AfterburnDotModifier": {
               "Class": "AfterburnDot",
               "Subclass": "AfterburnDot",
@@ -728,7 +729,7 @@
         "ChannelMoveSpeed": -1,
         "CritBuildup": 15.4,
         "DPS": {
-          "Value": 14,
+          "Value": 14.0,
           "Scale": {
             "Value": 0.66,
             "Type": "spirit"
@@ -738,7 +739,7 @@
         "Key": "ability_afterburn",
         "Name": "Afterburn",
         "RefillDuration": 0.5,
-        "RefillDurationCrit": 1,
+        "RefillDurationCrit": 1.0,
         "TickRate": 0.5,
         "Upgrades": [
           {
@@ -763,7 +764,7 @@
                 "Title": "Burn Effect:",
                 "Key": "DPS",
                 "Name": "Damage Per Second",
-                "Value": 14,
+                "Value": 14.0,
                 "Scale": {
                   "Value": 0.66,
                   "Type": "spirit"
@@ -818,7 +819,7 @@
             {
               "Key": "RefillDurationCrit",
               "Name": "Extend Per Headshot",
-              "Value": 1,
+              "Value": 1.0,
               "Type": "duration"
             }
           ],
@@ -867,7 +868,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         }
       },
@@ -878,7 +879,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Weapon hits build up a burning effect, dealing {g:citadel_inline_attribute:'SpiritDPS'}. <br><br><span class=\"diminish\">Abilities refresh to the base burn duration and weapon hits extend it.",
           "plain_text": "Weapon hits build up a burning effect, dealing spirit damage over time.\nAbilities refresh to the base burn duration and weapon hits extend it."
         },
@@ -887,7 +888,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Burn Effect: <span class=\"highlight\">-35%</span> Spirit Damage",
           "plain_text": "Burn Effect: -35% Spirit Damage"
         },
@@ -896,7 +897,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+3s</span> Max Burn Duration",
           "plain_text": "+3s Max Burn Duration"
         }
@@ -908,13 +909,13 @@
       "internal_key": "ability_fire_bomb",
       "data": {
         "AbilityCooldown": {
-          "Value": 190,
+          "Value": 190.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
           "BehaviorNoTarget",
@@ -969,7 +970,7 @@
             "Damage": 100
           },
           {
-            "AbilityCooldown": -65,
+            "AbilityCooldown": -65.0,
             "LifeStealPercentOnHit": 100
           },
           {
@@ -1055,7 +1056,7 @@
             "Damage": 100
           },
           {
-            "AbilityCooldown": -65,
+            "AbilityCooldown": -65.0,
             "LifeStealPercentOnHit": 100,
             "DescKey": "ability_fire_bomb_t2_desc"
           },
@@ -1080,7 +1081,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 190,
+          "Value": 190.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -1089,7 +1090,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "Radius": {
@@ -1109,7 +1110,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Become a living bomb, dealing {g:citadel_inline_attribute:'SpiritDamage'} and applying {g:citadel_inline_attribute:'Stun'} to all nearby enemies after a delay.<br><br><span class=\"diminish\">Once cast, Concussive Combustion cannot be interrupted.</span>",
           "plain_text": "Become a living bomb, dealing spirit damage and applying stun to all nearby enemies after a delay.\nOnce cast, Concussive Combustion cannot be interrupted."
         },
@@ -1118,7 +1119,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-65s</span> Cooldown and <span class=\"highlight\">+100%</span> Explosion Lifesteal",
           "plain_text": "-65s Cooldown and +100% Explosion Lifesteal"
         },
@@ -1127,7 +1128,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+0.9s</span> Stun Duration and <span class=\"highlight\">+10m</span> Radius",
           "plain_text": "+0.9s Stun Duration and +10m Radius"
         }
@@ -1190,5 +1191,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

@@ -117,6 +117,60 @@ def validate_lifesteal(records, source_ids):
         check(effects.get(name, {}).get("game_mode") == mode, f"Lifesteal mode isolation: {name}")
 
 
+def validate_client_6694_snapshot(records):
+    """Ensure the scoped September 16 refresh remains consistently pinned."""
+    hero_roster = records["heroes/roster.yaml"]
+    item_roster = records["items/roster.yaml"]
+    check(hero_roster.get("snapshot_id") == "deadlock-wiki-2026-09-16",
+          "Hero roster snapshot must identify September 16")
+    check(hero_roster.get("source") == "github.deadlock-data.hero-data.fc4f540f12e0",
+          "Hero roster source must identify client 6694")
+    check(item_roster.get("snapshot_id") == "deadlock-wiki-2026-09-16",
+          "Item roster snapshot must identify September 16")
+    check((item_roster.get("client_version"), item_roster.get("source_revision")) == (6694, 11005995),
+          "Item roster client pin must be 6694 / 11005995")
+    for path, hero in records.items():
+        if not path.startswith("heroes/") or not path.endswith(".yaml") or path == "heroes/roster.yaml":
+            continue
+        check(hero.get("snapshot_id") == "deadlock-wiki-2026-09-16",
+              f"Hero snapshot date: {path}")
+        sources = hero.get("sources", {})
+        check(sources.get("hero_data") == "github.deadlock-data.hero-data.fc4f540f12e0",
+              f"Hero data pin: {path}")
+        check(sources.get("ability_data") == "github.deadlock-data.ability-data.fc4f540f12e0",
+              f"Ability data pin: {path}")
+        check(sources.get("ability_cards") == "github.deadlock-data.ability-cards.fc4f540f12e0",
+              f"Ability-card pin: {path}")
+        md_path = ROOT / path.replace(".yaml", ".md")
+        md = md_path.read_text()
+        if md.startswith("---\n"):
+            frontmatter = yaml.safe_load(md.split("---", 2)[1])
+            check(frontmatter.get("snapshot_id") == hero.get("snapshot_id"),
+                  f"Hero Markdown/YAML snapshot mismatch: {path}")
+            check(frontmatter.get("current_as_of") == hero.get("current_as_of"),
+                  f"Hero Markdown/YAML date mismatch: {path}")
+    for path, item in records.items():
+        if not path.startswith("items/") or not path.endswith(".yaml") or path == "items/roster.yaml":
+            continue
+        check(item.get("snapshot_id") == "deadlock-wiki-2026-09-16",
+              f"Item snapshot date: {path}")
+        check((item.get("client_version"), item.get("server_version"), item.get("source_revision"))
+              == (6694, 6694, 11005995), f"Item client pin: {path}")
+        sources = item.get("sources", {})
+        check(sources.get("primary") == "deadlock-api.items.client-6694.source-11005995",
+              f"Primary item API pin: {path}")
+        check(sources.get("secondary") == "github.deadlock-data.items.fc4f540f12e0",
+              f"Secondary item data pin: {path}")
+        md_path = ROOT / path.replace(".yaml", ".md")
+        md = md_path.read_text()
+        if md.startswith("---\n"):
+            frontmatter = yaml.safe_load(md.split("---", 2)[1])
+            check(frontmatter.get("snapshot_id") == item.get("snapshot_id"),
+                  f"Item Markdown/YAML snapshot mismatch: {path}")
+            check(frontmatter.get("current_as_of") == item.get("current_as_of"),
+                  f"Item Markdown/YAML date mismatch: {path}")
+
+
 def validate_burst_profiles(records):
     """Cross-check baseline curation; do not validate hypothetical runtime models."""
     profiles = records["data/burst-weapons.yaml"]["weapons"]
@@ -194,6 +248,7 @@ def main():
             for value in walk(record):
                 if re.fullmatch(r"(?:wiki\.|deadlock-api\.|github\.deadlock-data\.)[\w.-]+", value):
                     check(value in ids, f"Missing source ID: {relative}: {value}")
+    validate_client_6694_snapshot(records)
     validate_lifesteal(records, ids)
     validate_burst_profiles(records)
     index = (ROOT / "INDEX.md").read_text()
@@ -231,7 +286,7 @@ def main():
                 check(desc["source"] in ids, f"Description source: {ability['name']}")
                 check(all(line in md for line in desc["plain_text"].splitlines()), f"Unrendered description: {ability['name']}")
             check(ability["name"] in index, f"Unindexed ability: {ability['name']}")
-    check(dict(counts) == {"abilities": 152, "card_references": 630, "descriptions": 481}, "Description coverage totals")
+    check(dict(counts) == {"abilities": 152, "card_references": 631, "descriptions": 482}, "Description coverage totals")
     manifest = records["patches/manifest.yaml"]
     expected = set()
     for entry in manifest["files"]:

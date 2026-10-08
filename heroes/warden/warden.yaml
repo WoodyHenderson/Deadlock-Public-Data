@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
   "id": "hero.warden",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "sources": {
     "article": "wiki.warden.124932",
-    "hero_data": "wiki.data-hero-data.108817",
-    "ability_data": "wiki.data-ability-data.114011",
-    "ability_cards": "wiki.data-ability-cards.114010",
-    "ability_localization": "github.deadlock-data.english.311b2e8d895e"
+    "hero_data": "github.deadlock-data.hero-data.fc4f540f12e0",
+    "ability_data": "github.deadlock-data.ability-data.fc4f540f12e0",
+    "ability_cards": "github.deadlock-data.ability-cards.fc4f540f12e0",
+    "ability_localization": "github.deadlock-data.english.fc4f540f12e0"
   },
   "name": "Warden",
   "aliases": [],
@@ -25,8 +25,8 @@
     "in_hero_labs": false
   },
   "base_stats": {
-    "maximum_health": 805,
-    "health_regeneration_per_second": 2,
+    "maximum_health": 805.0,
+    "health_regeneration_per_second": 2.0,
     "light_melee_damage": 50,
     "heavy_melee_damage": 116,
     "move_speed_meters_per_second": 6.3,
@@ -35,12 +35,12 @@
     "move_acceleration_source_units": 4,
     "ground_dash": {
       "speed_meters_per_second": 14.7,
-      "distance_meters": 10,
+      "distance_meters": 10.0,
       "duration_seconds": 0.68
     },
     "air_dash": {
-      "speed_meters_per_second": 17,
-      "distance_meters": 8,
+      "speed_meters_per_second": 17.0,
+      "distance_meters": 8.0,
       "duration_seconds": 0.47
     },
     "stamina": {
@@ -54,37 +54,37 @@
     },
     "spirit_duration_bonus_percent": 0,
     "spirit_range_bonus_percent": 0,
-    "critical_damage_bonus_percent": 0,
-    "critical_damage_received_percent": 0
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0
   },
   "per_boon_growth": {
-    "BulletDamage": 0.28,
-    "MaxHealth": 60,
+    "BulletDamage": 0.25,
+    "MaxHealth": 60.0,
     "PowerIncreases": 1,
     "TechPower": 1.1,
     "LightMeleeDamage": 1.58,
     "HeavyMeleeDamage": 3.6656,
-    "DPS": 1.0667,
-    "SustainedDPS": 0.64529
+    "DPS": 0.95238,
+    "SustainedDPS": 0.57615
   },
   "spirit_scaling": {
-    "RoundsPerSecond": 0.01,
-    "FireRate": 0.25,
-    "DPS": 0.1734,
-    "SustainedDPS": 0.063395
+    "RoundsPerSecond": 0.008,
+    "FireRate": 0.21,
+    "DPS": 0.13872,
+    "SustainedDPS": 0.050727
   },
   "weapon": {
-    "BulletSpeed": 290,
+    "BulletSpeed": 290.0,
     "BulletDamage": 17.34,
     "RoundsPerSecond": 3.8095,
     "ClipSize": 17,
     "ReloadTime": 2.914,
-    "ReloadMovespeed": 1,
-    "ReloadDelay": 0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
     "ReloadSingle": false,
-    "FalloffStartRange": 18,
-    "FalloffEndRange": 47,
-    "FalloffStartScale": 1,
+    "FalloffStartRange": 18.0,
+    "FalloffEndRange": 47.0,
+    "FalloffStartScale": 1.0,
     "FalloffEndScale": 0.1,
     "FalloffBias": 0.5,
     "BulletGravityScale": 0.25,
@@ -113,13 +113,13 @@
       "data": {
         "AbilityCastDelay": 0.1,
         "AbilityCooldown": {
-          "Value": 12,
+          "Value": 12.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
           "BehaviorDisplaysDamageImpact",
@@ -150,7 +150,7 @@
         "ForwardVelocity": 800,
         "IsDisabled": false,
         "Key": "ability_warden_crowd_control",
-        "MoveSpeedSlowPct": 20,
+        "MoveSpeedSlowPct": 16,
         "Name": "Alchemical Flask",
         "ProjectileLifetime": 60,
         "Radius": {
@@ -207,7 +207,7 @@
               {
                 "Key": "MoveSpeedSlowPct",
                 "Name": "Move Speed",
-                "Value": 20,
+                "Value": 16,
                 "Type": "slow"
               },
               {
@@ -292,7 +292,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 12,
+          "Value": 12.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -301,7 +301,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "Radius": {
@@ -321,7 +321,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Throw a flask that <span class=\"highlight\">damages</span> and reduces the <span class=\"highlight\">weapon damage and move speed</span> of enemies it hits.",
           "plain_text": "Throw a flask that damages and reduces the weapon damage and move speed of enemies it hits."
         },
@@ -330,7 +330,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Hit enemies lose <span class=\"highlight\">1 Stamina</span>",
           "plain_text": "Hit enemies lose 1 Stamina"
         },
@@ -339,7 +339,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">+35 Damage</span> and <span class=\"highlight\">-25% Weapon Damage</span>",
           "plain_text": "+35 Damage and -25% Weapon Damage"
         },
@@ -348,7 +348,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "<span class=\"highlight\">-7s</span> Cooldown and <span class=\"highlight\">+2m</span> Radius<br> Applies <span class=\"highlight\">-30%</span> Fire Rate",
           "plain_text": "-7s Cooldown and +2m Radius\nApplies -30% Fire Rate"
         }
@@ -366,7 +366,7 @@
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 5,
           "Scale": {
@@ -402,11 +402,11 @@
             "AbilityDuration": 2
           },
           {
-            "StatusResistancePercent": 40,
+            "StatusResistancePercent": 30,
             "CombatBarrier": {
               "Value": 0,
               "Scale": {
-                "Value": 2.7,
+                "Value": 2.1,
                 "Type": "spirit"
               }
             }
@@ -457,11 +457,11 @@
             "DescKey": "ability_warden_high_alert_t2_desc"
           },
           {
-            "StatusResistancePercent": 40,
+            "StatusResistancePercent": 30,
             "CombatBarrier": {
               "Value": 0,
               "Scale": {
-                "Value": 2.7,
+                "Value": 2.1,
                 "Type": "spirit"
               }
             },
@@ -492,7 +492,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -512,7 +512,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Gain a <span class=\"highlight\">Barrier</span> and <span class=\"highlight\">bonus move speed</span>.",
           "plain_text": "Gain a Barrier and bonus move speed."
         },
@@ -521,7 +521,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "-24s Cooldown and +2s Duration",
           "plain_text": "-24s Cooldown and +2s Duration"
         },
@@ -530,9 +530,9 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
-          "raw_text": "<span class=\"highlight\">+40%</span> Debuff Resistance and improved Barrier scaling",
-          "plain_text": "+40% Debuff Resistance and improved Barrier scaling"
+          "source": "github.deadlock-data.english.fc4f540f12e0",
+          "raw_text": "<span class=\"highlight\">+30%</span> Debuff Resistance and improved Barrier scaling",
+          "plain_text": "+30% Debuff Resistance and improved Barrier scaling"
         }
       ]
     },
@@ -733,7 +733,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Curse an enemy hero. If they don't move away from their initial position within the <span class=\"highlight\">escape time</span>, they will be <span class=\"highlight\">damaged</span> and <span class=\"highlight\">immobilized</span>.",
           "plain_text": "Curse an enemy hero. If they don't move away from their initial position within the escape time, they will be damaged and immobilized."
         },
@@ -742,7 +742,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "Warden deals <span class=\"highlight\">+20% more Bullet Damage</span> to trapped Heroes for <span class=\"highlight\">5s</span>",
           "plain_text": "Warden deals +20% more Bullet Damage to trapped Heroes for 5s"
         },
@@ -751,7 +751,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+0.75s Duration",
           "plain_text": "+0.75s Duration"
         },
@@ -760,7 +760,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "-14s Cooldown <br>Silences enemies until they escape or are immobilized",
           "plain_text": "-14s Cooldown\nSilences enemies until they escape or are immobilized"
         }
@@ -773,13 +773,13 @@
       "data": {
         "AbilityCastDelay": 2,
         "AbilityCooldown": {
-          "Value": 180,
+          "Value": 180.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
           }
         },
-        "AbilityCooldownBetweenCharge": -1,
+        "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
           "Value": 6,
           "Scale": {
@@ -818,6 +818,7 @@
           "BehaviorDisplaysDamageImpact",
           "BehaviorDeactivateCrouchToggleOnCast"
         ],
+        "BossDamageScale": 0.5,
         "BulletResist": 50,
         "ConeAngle": 115,
         "HealthStealPct": {
@@ -859,7 +860,7 @@
           },
           {
             "PulseDPS": 40.5,
-            "AbilityCooldown": -30
+            "AbilityCooldown": -30.0
           },
           {
             "AbilityDuration": 4,
@@ -954,7 +955,7 @@
           },
           {
             "PulseDPS": 40.5,
-            "AbilityCooldown": -30,
+            "AbilityCooldown": -30.0,
             "DescKey": "ability_warden_riot_protocol_t2_desc"
           },
           {
@@ -982,7 +983,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 180,
+          "Value": 180.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -991,7 +992,7 @@
         },
         "AbilityCooldownBetweenCharge": {
           "Name": "Charge Delay",
-          "Value": -1,
+          "Value": -1.0,
           "Type": "charge_cooldown"
         },
         "AbilityDuration": {
@@ -1020,7 +1021,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "After charging for 2s, <span class=\"highlight\">release pulses that damage enemies and heal you</span> based on the damage done. <br>While channeling Last Stand you have greatly increased <span class=\"highlight\">bullet and spirit resist</span>.",
           "plain_text": "After charging for 2s, release pulses that damage enemies and heal you based on the damage done.\nWhile channeling Last Stand you have greatly increased bullet and spirit resist."
         },
@@ -1029,7 +1030,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+40.5 DPS<br>-30s Cooldown",
           "plain_text": "+40.5 DPS\n-30s Cooldown"
         },
@@ -1038,7 +1039,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.311b2e8d895e",
+          "source": "github.deadlock-data.english.fc4f540f12e0",
           "raw_text": "+4s Duration<br>Unstoppable and +30%  Resists while channeling",
           "plain_text": "+4s Duration\nUnstoppable and +30% Resists while channeling"
         }
@@ -1106,5 +1107,9 @@
     "Generated source field names and raw precision are retained; undocumented units are not inferred.",
     "Localization keys are retained where generated datasets omit localized prose.",
     "Mode-specific overrides are excluded unless exposed by the pinned generated data."
-  ]
+  ],
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "patch_note_addenda": []
 }

@@ -5,12 +5,12 @@ domain: items
 topics: [item, vitality, tier-3]
 aliases: ["upgrade_veil_walker"]
 summary: "Walking through a cosmic veil grants you Stealth, Heal and increased Move Speed."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Veil Walker
@@ -26,22 +26,21 @@ Walking through a cosmic veil grants you Stealth, Heal and increased Move Speed.
 - **Cost:** 3200 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** Durability, ClipSize
 - **Target types:** none listed
 
 ## Components
 
-- `upgrade_sprint_booster`
+No component item is listed.
 
 ## Displayed Effects
 
 | Section | Effect | Value | Status |
 | --- | --- | ---: | --- |
-| Innate | Sprint Speed | 2.0m | normal |
-| Innate | Out of Combat Regen | 2 | normal |
 | Innate | Bonus Health | 125 | normal |
-| Innate | Spirit Power | 10 | normal |
+| Innate | Spirit Power | 6 | normal |
 | Passive | Invisibility Duration | 8s | normal |
 | Passive | Cooldown | 15.0s | normal |
 | Passive | Status Effect Invisible | Unknown | important |

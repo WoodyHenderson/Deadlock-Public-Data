@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Paradox is a selectable Marksman hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.paradox.125556
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Paradox
@@ -54,7 +54,7 @@ Internal key: `citadel_ability_chrono_pulse_grenade`.
 - **Tier 2:** +20 Pulse Damage and increased Spirit scaling
 - **Tier 3:** +4% Damage Amp and +1.6s Duration
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorProjectileFiredAsBullet`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -69,14 +69,14 @@ Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorP
 | Move Speed | 20 |
 | Slow Duration | 0.2 (+1 per duration) |
 | Cooldown | 32 (+1 per cooldown) |
-| Duration | 3.2 (+1 per duration) |
 | Charge Delay | -1 |
+| Duration | 3.2 (+1 per duration) |
+| Radius | 5.5 (+1 per radius) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-12}`
 - Tier 2: `{"PulseDamage":{"Value":20,"Scale":{"Value":0.5,"Type":"spirit"}}}`
 - Tier 3: `{"DamageAmplificationPerStack":4,"AbilityDuration":1.6}`
-
 ### 2. Time Wall
 
 Internal key: `citadel_ability_chrono_time_wall`.
@@ -93,7 +93,7 @@ Internal key: `citadel_ability_chrono_time_wall`.
 - **Tier 2:** 2.3s Silence Duration +35% Weapon Damage
 - **Tier 3:** +2 Ability Charges
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorCanCancelDuringCastDelay`, `BehaviorCanSetQuickCast`.
@@ -101,21 +101,20 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorCanCancelDuringCastDela
 | Card field | Base value |
 | --- | ---: |
 | Debuff Duration | 0 |
-| Movement Slow | 80 |
+| Movement Slow | 64 |
 | Time Stop Duration | 0.5 |
 | Ally Weapon Damage | 30 |
 | Wall Width | 8 (+1 per range) |
 | Wall Height | 4 (+1 per range) |
 | Ally Bullet Speed | 2 |
+| Cast Range | 5.08 (+1 per range) |
 | Cooldown | 25 (+1 per cooldown) |
 | Duration | 5.5 (+1 per duration) |
-| Cast Range | 5.08 (+1 per range) |
 
 Upgrade deltas:
 - Tier 1: `{"TimeWallWidth":3,"TimeWallHeight":1,"AbilityDuration":3.5}`
 - Tier 2: `{"FriendlyBulletDamageBonus":35,"DebuffDuration":2.3}`
 - Tier 3: `{"AbilityCharges":3,"AbilityCooldownBetweenCharge":2}`
-
 ### 3. Kinetic Carbine
 
 Internal key: `citadel_ability_chrono_kinetic_carbine`.
@@ -131,7 +130,7 @@ Internal key: `citadel_ability_chrono_kinetic_carbine`.
 - **Tier 2:** -12s Cooldown Increases Speed Scaling
 - **Tier 3:** +2s Charge Hold Duration and +55% Damage Scaling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDontBreakInvisibility`, `BehaviorDontInterruptSprint`, `BehaviorCastableWhileBusy`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`.
@@ -141,7 +140,7 @@ Behavior flags: `BehaviorDontBreakInvisibility`, `BehaviorDontInterruptSprint`, 
 | Max Damage | 5 (+125 per weapon power) |
 | Max Time-Stop | 0.4 (+1 per duration) |
 | Bonus Speed | 25 (+0.13 per spirit) |
-| Min Damage | 5 (+25 per weapon power) |
+| Min Damage | 5 (+10 per weapon power) |
 | Charge Hold Duration | 3.5 (+1 per duration) |
 | Headshot Damage | 14 |
 | Cooldown | 28 (+1 per cooldown) |
@@ -150,8 +149,7 @@ Behavior flags: `BehaviorDontBreakInvisibility`, `BehaviorDontInterruptSprint`, 
 Upgrade deltas:
 - Tier 1: `{"MaxSlowDuration":0.4}`
 - Tier 2: `{"AbilityCooldown":-12,"SpeedChange":{"Value":0,"Scale":{"Value":0.06,"Type":"spirit"}}}`
-- Tier 3: `{"SpeedBoostDuration":2,"MinBonusBulletDamage":{"Value":0,"Scale":{"Value":55,"Type":"weapon_power"}},"MaxBonusBulletDamage":{"Value":0,"Scale":{"Value":55,"Type":"weapon_power"}}}`
-
+- Tier 3: `{"SpeedBoostDuration":2,"MaxBonusBulletDamage":{"Value":0,"Scale":{"Value":55,"Type":"weapon_power"}}}`
 ### 4. Paradoxical Swap
 
 Internal key: `citadel_ability_chrono_swap`.
@@ -167,7 +165,7 @@ Internal key: `citadel_ability_chrono_swap`.
 - **Tier 2:** -30s Cooldown and +13m Cast Range
 - **Tier 3:** Swaps all enemies within 7m of hit target and +10% Max Health Damage
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorCleaveDisabled`, `BehaviorShowCastRangeAsSatSphereWhileCasting`, `BehaviorAllowAltCast`.
@@ -179,15 +177,14 @@ Behavior flags: `BehaviorProjectile`, `BehaviorCleaveDisabled`, `BehaviorShowCas
 | Barrier | 0 (+0 per spirit) |
 | Barrier Duration | 0 |
 | Multi Target Radius | 0 |
-| Cooldown | 110 (+1 per cooldown) |
 | Cast Range | 25 (+1 per range) |
+| Cooldown | 110 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
 - Tier 1: `{"CombatBarrier":{"Value":200,"Scale":{"Value":1.5,"Type":"spirit"}},"BarrierDuration":8}`
 - Tier 2: `{"AbilityCastRange":13,"AbilityCooldown":-30}`
 - Tier 3: `{"MultiSwap":7,"MaxHealthDamage":10}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

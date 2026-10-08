@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Seven is a selectable Mystic hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.seven.124882
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Seven
@@ -51,10 +51,10 @@ Internal key: `citadel_ability_lightning_ball`.
 
 **Upgrade descriptions** (where supplied by the source):
 
-- **Tier 2:** -35% move speed on hit targets and +1s Lifetime
+- **Tier 2:** -28% move speed on hit targets and +1s Lifetime
 - **Tier 3:** +58.5 DPS and +1.75m radius
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDontInterruptSlideOnCast`.
@@ -65,15 +65,14 @@ Behavior flags: `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDontInterrupt
 | Radius | 4.25 (+1 per radius) |
 | Move Speed | 0 |
 | Lifetime | 5 (+1 per duration) |
-| Cooldown | 26 (+1 per cooldown) |
 | Charges | 1 (+1 per max charges) |
+| Cooldown | 26 (+1 per cooldown) |
 | Charge Delay | 6 (+1 per charge cooldown) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCharges":1}`
-- Tier 2: `{"SlowPercent":35,"MaxLifetime":1}`
+- Tier 2: `{"SlowPercent":28,"MaxLifetime":1}`
 - Tier 3: `{"DPS":58.5,"ShockRadius":1.75}`
-
 ### 2. Static Charge
 
 Internal key: `citadel_ability_static_charge`.
@@ -88,7 +87,7 @@ Internal key: `citadel_ability_static_charge`.
 - **Tier 2:** +7m Radius +5m Cast range
 - **Tier 3:** +0.9s Stun Duration +160 Damage
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorAlwaysPreviewRadius`, `BehaviorDisplaysDamageImpact`, `BehaviorUseInstantCastUnitTargetUi`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -99,15 +98,14 @@ Behavior flags: `BehaviorAlwaysPreviewRadius`, `BehaviorDisplaysDamageImpact`, `
 | Delay Before Stun | 3.5 |
 | Damage | 35 (+0.792137 per spirit) |
 | Radius | 5 (+1 per radius) |
-| Cooldown | 42 (+1 per cooldown) |
 | Cast Range | 15 (+1 per range) |
+| Cooldown | 42 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
-- Tier 1: `{"AbilityCooldown":-20}`
+- Tier 1: `{"AbilityCooldown":-20.0}`
 - Tier 2: `{"ShockRadius":7,"AbilityCastRange":5}`
 - Tier 3: `{"StunDuration":0.9,"Damage":160}`
-
 ### 3. Power Surge
 
 Internal key: `ability_power_surge`.
@@ -122,7 +120,7 @@ Internal key: `ability_power_surge`.
 - **Tier 2:** +3m Move Speed +8 Damage and increased scaling
 - **Tier 3:** +10s Duration Applies -15% Spirit Resist
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDontInterruptSlideOnCast`.
@@ -133,14 +131,13 @@ Behavior flags: `BehaviorDontInterruptSlideOnCast`.
 | Max Jumps | 4 |
 | Jump Radius | 10 (+1 per radius) |
 | Cooldown | 50 (+1 per cooldown) |
-| Duration | 10 (+1 per duration) |
 | Charge Delay | -1 |
+| Duration | 10 (+1 per duration) |
 
 Upgrade deltas:
-- Tier 1: `{"AbilityCooldown":-18}`
+- Tier 1: `{"AbilityCooldown":-18.0}`
 - Tier 2: `{"BonusMoveSpeed":3,"BonusPerChain":{"Value":8,"Scale":{"Value":0.23,"Type":"spirit"}},"DamagePerChain":{"Value":8,"Scale":{"Value":0.23,"Type":"spirit"}}}`
-- Tier 3: `{"TechResistDebuff":-15,"DebuffDuration":10,"AbilityDuration":10}`
-
+- Tier 3: `{"TechResistDebuff":-15,"AbilityDuration":10}`
 ### 4. Storm Cloud
 
 Internal key: `citadel_ability_storm_cloud`.
@@ -158,7 +155,7 @@ Internal key: `citadel_ability_storm_cloud`.
 - **Tier 2:** +7s Channel Time +10m Final Radius +5m Initial Radius
 - **Tier 3:** +65 DPS +4m Flight Speed
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorExclusiveUse`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -171,12 +168,12 @@ Behavior flags: `BehaviorChannelled`, `BehaviorExclusiveUse`, `BehaviorNoTarget`
 | Bullet Resist | 0 |
 | Cooldown | 205 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Radius | 30 (+1 per radius) |
 
 Upgrade deltas:
 - Tier 1: `{"BulletResistOnActive":55}`
 - Tier 2: `{"Radius":10,"InitialRadius":5,"AbilityChannelTime":7}`
-- Tier 3: `{"DPS":65,"FlightControlEnabled":4}`
-
+- Tier 3: `{"DPS":65.0,"FlightControlEnabled":4}`
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

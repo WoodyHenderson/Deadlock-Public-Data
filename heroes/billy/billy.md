@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Billy is a selectable Brawler hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.billy.125748
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Billy
@@ -56,7 +56,7 @@ Internal key: `ability_punkgoat_ult`.
 - **Tier 2:** +1 Charge and +2m Radius
 - **Tier 3:** -3s Charge Time Now deals 50% Heavy Melee Damage
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorSilentCastFailureFeedback`, `BehaviorChannelled`, `BehaviorExclusiveUse`, `BehaviorDisplaysDamageImpact`, `BehaviorCannotCancelDuringChannel`, `BehaviorCooldownOnChannelEnd`, `BehaviorTriggerCancelMashProtectionOnCast`, `BehaviorHoldsAtMaxChannel`.
@@ -70,16 +70,15 @@ Behavior flags: `BehaviorSilentCastFailureFeedback`, `BehaviorChannelled`, `Beha
 | Move Speed | 0 |
 | Duration | 0 |
 | Fire Rate | 0 |
-| Cooldown | 35 (+1 per cooldown) |
 | Cast Range | 4 (+1 per range) |
 | Charges | 1 (+1 per max charges) |
+| Cooldown | 35 (+1 per cooldown) |
 | Charge Delay | 8 (+1 per charge cooldown) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-10}`
 - Tier 2: `{"AbilityCastRange":2,"AbilityCharges":1}`
-- Tier 3: `{"CountsAsLightMelee":-1,"CountsAsHeavyMelee":1,"HeavyMeleeDamage":{"Value":0,"Scale":{"Value":0.5,"Type":"heavy_melee"}},"MeleeDamage":{"Value":0,"Scale":{"Value":0,"Type":"melee","Multiply":true}},"AbilityCooldownBetweenCharge":-3}`
-
+- Tier 3: `{"CountsAsLightMelee":-1,"CountsAsHeavyMelee":1,"HeavyMeleeDamage":{"Value":0.0,"Scale":{"Value":0.5,"Type":"heavy_melee"}},"MeleeDamage":{"Value":0.0,"Scale":{"Value":0.0,"Type":"melee","Multiply":true}},"AbilityCooldownBetweenCharge":-3}`
 ### 2. Rising Ram
 
 Internal key: `ability_punkgoat_goatflip`.
@@ -95,7 +94,7 @@ Internal key: `ability_punkgoat_goatflip`.
 - **Tier 1:** On Impact: +25% weapon damage for 5s
 - **Tier 2:** 0.4s Charge Duration
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorDontTriggerPostCastOnCastComplete`, `BehaviorMovement`, `BehaviorTriggerCancelMashProtectionOnCast`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -104,15 +103,16 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorDontTriggerPostCastOnCa
 | --- | ---: |
 | Damage | 40 (+1.9 per spirit) |
 | Max Health | 0 |
+| WeaponDamageBurst | 0 |
+| WeaponDamageBurstDuration | 0 |
 | Cooldown | 32 (+1 per cooldown) |
-| Duration | 0.3 (+1 per duration) |
 | Charge Delay | -1 |
+| Duration | 0.3 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"WeaponDamageBurst":25,"WeaponDamageBurstDuration":5}`
 - Tier 2: `{"AbilityDuration":0.4}`
 - Tier 3: `{"MaxHealthBuffPct":10,"MaxHealthBuffDuration":16,"AbilityCooldown":-13}`
-
 ### 3. Blasted
 
 Internal key: `ability_punkgoat_blasted`.
@@ -130,7 +130,7 @@ Internal key: `ability_punkgoat_blasted`.
 - **Tier 2:** +1 Bashdown Charge on use and +7% Wrecked Bullet Amp
 - **Tier 3:** +50 Melee Bonus Health and increases spirit scaling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorCooldownOnChannelEnd`, `BehaviorAllowGunFireAfterCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -138,14 +138,13 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorCooldownOnChannelEnd`, `BehaviorAll
 | Card field | Base value |
 | --- | ---: |
 | Cooldown | 27 (+1 per cooldown) |
-| Duration | 8 (+1 per duration) |
 | Charge Delay | -1 |
+| Duration | 8 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"BonusMoveSpeed":2.25}`
 - Tier 2: `{"GainSlamOnUse":1,"BulletDamageAmp":7}`
 - Tier 3: `{"MaxHealthMelee":{"Value":50,"Scale":{"Value":0.6,"Type":"spirit"}}}`
-
 ### 4. Chain Gang
 
 Internal key: `ability_punkgoat_tether`.
@@ -162,7 +161,7 @@ Internal key: `ability_punkgoat_tether`.
 - **Tier 1:** +40% spirit resist & bullet resist
 - **Tier 3:** +5m Range +1.3s of Unstoppable Per Hero pulled in
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorSilentCastFailureFeedback`, `BehaviorAlwaysPreviewRadius`, `BehaviorDisplaysDamageImpact`, `BehaviorProjectilePassThroughWorld`, `BehaviorShowCastRangeAsSatSphereWhileCasting`, `BehaviorCanSetQuickCast`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -172,19 +171,19 @@ Behavior flags: `BehaviorSilentCastFailureFeedback`, `BehaviorAlwaysPreviewRadiu
 | Per Hero | 0 |
 | Damage | 120 (+0.7 per spirit) |
 | Duration | 2.8 |
+| MoveSpeedSlowMaxPct | 35 |
 | Bullet Resist | 0 |
 | Spirit Resist | 0 |
 | Fire Rate | 0 |
 | Duration | 0 |
-| Cooldown | 175 (+1 per cooldown) |
 | Cast Range | 12 (+1 per range) |
+| Cooldown | 175 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
 - Tier 1: `{"BulletResist":40,"TechResist":40}`
 - Tier 2: `{"AbilityCooldown":-40}`
 - Tier 3: `{"UnstoppablePerHero":1.3,"AbilityCastRange":5}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

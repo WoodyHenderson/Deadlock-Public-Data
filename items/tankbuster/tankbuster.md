@@ -5,12 +5,12 @@ domain: items
 topics: [item, spirit, tier-3]
 aliases: ["upgrade_magic_shock"]
 summary: "Charges up over time with bonus spirit damage, causing abilities dealing more than 165 damage to deal additional damage. Ignores Spirit Resistance."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Tankbuster
@@ -26,6 +26,7 @@ Charges up over time with bonus spirit damage, causing abilities dealing more th
 - **Cost:** 3200 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** MagicDamage, Disruption
 - **Target types:** AllEnemy
@@ -41,7 +42,7 @@ Charges up over time with bonus spirit damage, causing abilities dealing more th
 | Innate | Bonus Health | 50 | normal |
 | Passive | Charge-Up Time | 14s | normal |
 | Passive | Damage | 40 | important |
-| Passive | Current Health Bonus Damage | 8% | important |
+| Passive | Current Health Bonus Damage | 7.5% | important |
 
 ## Source Property-Upgrade Fields
 

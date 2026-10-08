@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Drifter is a selectable Assassin hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.drifter.125577
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Drifter
@@ -54,7 +54,7 @@ Internal key: `drifter_blood_blast`.
 - **Tier 2:** -8s Cooldown
 - **Tier 3:** Deals 55% Heavy Melee Damage Silences enemies for 2s if close range
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorNoTarget`, `BehaviorShowCastRangeAsSatSphereWhileCasting`, `BehaviorDontInterruptSlideOnCast`.
@@ -68,15 +68,14 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorNoTarget`, `BehaviorSho
 | Debuff Duration | 0 |
 | Close Range | 8 (+1 per range) |
 | Lifesteal Duration | 0 |
-| Cooldown | 16 (+1 per cooldown) |
 | Cast Range | 16 (+1 per range) |
+| Cooldown | 16 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
 - Tier 1: `{"BonusDamage":40}`
-- Tier 2: `{"AbilityCooldown":-8}`
-- Tier 3: `{"DebuffDuration":2,"UseHeavyMelee":1,"DamageHeavyMelee":{"Value":0,"Scale":{"Value":0.55,"Type":"heavy_melee"}},"Damage":{"Value":0,"Scale":{"Value":0,"Type":"melee","Multiply":true}}}`
-
+- Tier 2: `{"AbilityCooldown":-8.0}`
+- Tier 3: `{"DebuffDuration":2,"UseHeavyMelee":1,"DamageHeavyMelee":{"Value":0,"Scale":{"Value":0.55,"Type":"heavy_melee"}},"Damage":{"Value":0,"Scale":{"Value":0.0,"Type":"melee","Multiply":true}}}`
 ### 2. Stalker's Mark
 
 Internal key: `drifter_shadow_mark`.
@@ -93,7 +92,7 @@ Internal key: `drifter_shadow_mark`.
 - **Tier 2:** -10s Cooldown and +3s Duration
 - **Tier 3:** +1.5% Bleed and -40% Healing Reduction
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorCleaveDisabled`, `BehaviorDontInterruptSlideOnCast`.
@@ -112,7 +111,6 @@ Upgrade deltas:
 - Tier 1: `{"BulletResistReduction":-8}`
 - Tier 2: `{"AbilityDuration":3,"AbilityCooldown":-10}`
 - Tier 3: `{"DotHealthPercent":1.5,"HealAmpReceivePenaltyPercent":-40,"HealAmpRegenPenaltyPercent":-40}`
-
 ### 3. Bloodscent
 
 Internal key: `ability_drifter_hunger`.
@@ -130,7 +128,7 @@ Internal key: `ability_drifter_hunger`.
 - **Tier 1:** +3m/s Move Speed when around an isolated enemy hero
 - **Tier 2:** On isolated hero death: Heal 24% of your missing health and restores 2 Stamina
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 | Card field | Base value |
@@ -160,7 +158,7 @@ Internal key: `drifter_darkness`.
 
 - **Tier 3:** +2.5s Duration and +1 Max Targets.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectilePassThroughWorld`, `BehaviorDisplaysDamageImpact`.
@@ -170,16 +168,15 @@ Behavior flags: `BehaviorProjectilePassThroughWorld`, `BehaviorDisplaysDamageImp
 | Reduced Vision | 15 |
 | Sprint Speed | 2 |
 | Max Targets | 2 |
-| Cooldown | 145 (+1 per cooldown) |
-| Duration | 6.5 (+1 per duration) |
 | Cast Range | 100 (+1 per range) |
+| Cooldown | 145 (+1 per cooldown) |
 | Charge Delay | -1 |
+| Duration | 6.5 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"BonusSprintSpeed":10}`
 - Tier 2: `{"AbilityCooldown":-40}`
 - Tier 3: `{"AbilityDuration":2.5,"MaxTargets":1}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

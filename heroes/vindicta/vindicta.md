@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Vindicta is a selectable Marksman hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.vindicta.124937
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Vindicta
@@ -53,7 +53,7 @@ Internal key: `citadel_ability_hornet_chain`.
 
 - **Tier 3:** +0.75s Tether Duration and +2m Capture Radius
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorProjectileFiredAsBullet`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -70,9 +70,8 @@ Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorP
 
 Upgrade deltas:
 - Tier 1: `{"Damage":45}`
-- Tier 2: `{"AbilityCooldown":-22}`
+- Tier 2: `{"AbilityCooldown":-22.0}`
 - Tier 3: `{"ChainDuration":0.75,"CaptureRadius":2}`
-
 ### 2. Flight
 
 Internal key: `citadel_ability_hornet_leap`.
@@ -87,7 +86,7 @@ Internal key: `citadel_ability_hornet_leap`.
 - **Tier 1:** +50% base Ammo while flying
 - **Tier 3:** Hero Kills Refresh Duration. +10 Spirit Damage with increased Spirit scaling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorMovement`, `BehaviorRequireAbilityButtonToCancel`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -97,14 +96,13 @@ Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorMovement`, `B
 | Spirit Damage Per Bullet | 10 (+0.18 per spirit) |
 | Item Range | 50 |
 | Cooldown | 42 (+1 per cooldown) |
-| Duration | 13 (+1 per duration) |
 | Charge Delay | -1 |
+| Duration | 13 (+1 per duration) |
 
 Upgrade deltas:
 - Tier 1: `{"BonusClipSizePercent":50}`
 - Tier 2: `{"AbilityDuration":10}`
 - Tier 3: `{"MagicDamagePerBullet":{"Value":10,"Scale":{"Value":0.1,"Type":"spirit"}},"RefreshOnKill":1}`
-
 ### 3. Crow Familiar
 
 Internal key: `citadel_ability_hornet_sting`.
@@ -120,7 +118,7 @@ Internal key: `citadel_ability_hornet_sting`.
 - **Tier 2:** +0.5% Bleed Damage -16s Cooldown
 - **Tier 3:** +2s Duration -8% Bullet Resist -8% Spirit Resist
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorCleaveDisabled`, `BehaviorProjectile`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorDontInterruptSlideOnCast`.
@@ -132,14 +130,14 @@ Behavior flags: `BehaviorCleaveDisabled`, `BehaviorProjectile`, `BehaviorNoTarge
 | Debuff Duration | 5 (+1 per duration) |
 | Healing Reduction | 0 |
 | Bullet Resist | -6 |
+| TechArmorDamageReduction | -6 |
 | Cooldown | 32 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
 - Tier 1: `{"HealAmpReceivePenaltyPercent":-35,"HealAmpRegenPenaltyPercent":-35}`
-- Tier 2: `{"AbilityCooldown":-16,"DotHealthPercent":0.5}`
+- Tier 2: `{"AbilityCooldown":-16.0,"DotHealthPercent":0.5}`
 - Tier 3: `{"BulletResistReduction":-8,"TechArmorDamageReduction":-8,"DebuffDuration":2}`
-
 ### 4. Assassinate
 
 Internal key: `citadel_ability_hornet_snipe`.
@@ -149,7 +147,7 @@ Internal key: `citadel_ability_hornet_snipe`.
 
 > Use your scoped rifle to fire a powerful shot over long distances. Deal only partial damage until fully charged after 1s of being scoped. Does bonus damage to enemies with less than 50% health remaining. Landing a killing blow on a player with Assassinate grants you bonus weapon damage.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`.
@@ -162,15 +160,14 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`.
 | Full Charge Time | 1 |
 | No Charge Damage | 50 |
 | Headshot Damage | 20 |
-| Cooldown | 55 (+1 per cooldown) |
 | Charges | 2 (+1 per max charges) |
+| Cooldown | 55 (+1 per cooldown) |
 | Charge Delay | 2.5 (+1 per charge cooldown) |
 
 Upgrade deltas:
-- Tier 1: `{"AbilityCooldown":-15}`
+- Tier 1: `{"AbilityCooldown":-15.0}`
 - Tier 2: `{"LowHealthEnemyDamageBonus":80}`
 - Tier 3: `{"WeaponDamageBonusPerKill":4}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

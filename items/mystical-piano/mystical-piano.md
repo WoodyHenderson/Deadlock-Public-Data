@@ -5,12 +5,12 @@ domain: items
 topics: [item, spirit, tier-5]
 aliases: ["upgrade_mystical_piano"]
 summary: "After a short delay, enemies in the target area will be stunned and have their stamina depleted. After the stun they will be temporarily dazed."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Mystical Piano
@@ -26,6 +26,7 @@ After a short delay, enemies in the target area will be stunned and have their s
 - **Cost:** 9999 souls
 - **Activation:** press
 - **Active item:** yes
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** none listed
 - **Target types:** AllEnemy

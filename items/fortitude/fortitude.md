@@ -5,12 +5,12 @@ domain: items
 topics: [item, vitality, tier-3]
 aliases: ["upgrade_chonky"]
 summary: "After not taking damage for a period, gain health regen."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Fortitude
@@ -26,6 +26,7 @@ After not taking damage for a period, gain health regen.
 - **Cost:** 3200 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** WeaponDamage, Durability, Healing, Movement
 - **Target types:** none listed
@@ -40,7 +41,7 @@ After not taking damage for a period, gain health regen.
 | --- | --- | ---: | --- |
 | Innate | Bonus Health | 375 | elevated |
 | Passive | Restore Delay | 10 s | important |
-| Passive | Max Health Regen | 2 % | important |
+| Passive | Max Health Regen | 2.25 % | important |
 | Passive | Move Speed | 1.5m | important |
 
 ## Source Property-Upgrade Fields

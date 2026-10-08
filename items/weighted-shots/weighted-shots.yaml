@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.weighted-shots",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Weighted Shots",
@@ -133,9 +133,9 @@
       "importance": "normal",
       "key": "GroundDashReductionPercent",
       "label": "Dash Distance",
-      "value": "-22%",
+      "value": "-20%",
       "property": {
-        "value": "-22",
+        "value": "-20",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_GROUND_DASH_REDUCTION_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -196,9 +196,9 @@
       "importance": "important",
       "key": "SlowPercent",
       "label": "Move Speed",
-      "value": "30%",
+      "value": "24%",
       "property": {
-        "value": "30",
+        "value": "24",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -227,11 +227,11 @@
         },
         {
           "name": "SlowPercent",
-          "bonus": "20"
+          "bonus": "16"
         },
         {
           "name": "GroundDashReductionPercent",
-          "bonus": "-10"
+          "bonus": "-8"
         }
       ]
     }
@@ -438,7 +438,7 @@
         "tooltip_is_important": false
       },
       "SlowPercent": {
-        "value": "30",
+        "value": "24",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -453,7 +453,7 @@
         "tooltip_is_important": true
       },
       "GroundDashReductionPercent": {
-        "value": "-22",
+        "value": "-20",
         "provided_property_type": "MODIFIER_VALUE_MOVEMENT_GROUND_DASH_REDUCTION_PERCENT",
         "css_class": "slow",
         "usage_flags": [
@@ -568,11 +568,11 @@
           },
           {
             "name": "SlowPercent",
-            "bonus": "20"
+            "bonus": "16"
           },
           {
             "name": "GroundDashReductionPercent",
-            "bonus": "-10"
+            "bonus": "-8"
           }
         ]
       }
@@ -606,8 +606,8 @@
     "BaseAttackDamagePercent": 30,
     "StatusResistancePercent": 22,
     "StaminaCooldownReduction": -14,
-    "SlowPercent": 30,
-    "GroundDashReductionPercent": -22,
+    "SlowPercent": 24,
+    "GroundDashReductionPercent": -20,
     "SlowDuration": 3.5,
     "BonusMoveSpeed": "-0.5m",
     "BuildUpDuration": 5,
@@ -615,8 +615,8 @@
     "PropertyUpgrades": {
       "StatusResistancePercent": 10,
       "BaseAttackDamagePercent": 35,
-      "SlowPercent": 20,
-      "GroundDashReductionPercent": -10
+      "SlowPercent": 16,
+      "GroundDashReductionPercent": -8
     }
   },
   "secondary_deadlock_card_record": {
@@ -676,7 +676,7 @@
       "Main": [
         {
           "Key": "SlowPercent",
-          "Value": 30,
+          "Value": 24,
           "Type": "slow",
           "UsageFlags": "ConditionallyApplied"
         }
@@ -684,7 +684,7 @@
       "Alt": [
         {
           "Key": "GroundDashReductionPercent",
-          "Value": -22,
+          "Value": -20,
           "Type": "slow",
           "UsageFlags": "ConditionallyApplied"
         },
@@ -702,8 +702,8 @@
     "Upgrades": {
       "StatusResistancePercent": 10,
       "BaseAttackDamagePercent": 35,
-      "SlowPercent": 20,
-      "GroundDashReductionPercent": -10
+      "SlowPercent": 16,
+      "GroundDashReductionPercent": -8
     },
     "Other": {
       "AbilityUnitTargetLimit": {

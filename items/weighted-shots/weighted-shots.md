@@ -5,12 +5,12 @@ domain: items
 topics: [item, weapon, tier-3]
 aliases: ["upgrade_weighted_shots"]
 summary: "Your bullets build up a Movement Slow on enemies."
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - deadlock-api.items.client-6684.source-10933105
-  - github.deadlock-data.items.311b2e8d895e
+  - deadlock-api.items.client-6694.source-11005995
+  - github.deadlock-data.items.fc4f540f12e0
 ---
 
 # Weighted Shots
@@ -26,6 +26,7 @@ Your bullets build up a Movement Slow on enemies.
 - **Cost:** 3200 souls
 - **Activation:** passive
 - **Active item:** no
+- **Game mode:** standard
 - **Imbued item:** no
 - **Shop filters:** WeaponDamage
 - **Target types:** HeroEnemy
@@ -42,10 +43,10 @@ Your bullets build up a Movement Slow on enemies.
 | Innate | Stamina Recovery | -14% | normal |
 | Innate | Move Speed | -0.5m | normal |
 | Innate | Weapon Damage | 30% | elevated |
-| Passive | Dash Distance | -22% | normal |
+| Passive | Dash Distance | -20% | normal |
 | Passive | Slow Duration | 3.5s | normal |
 | Passive | Buildup Per Shot | 0.7% | normal |
-| Passive | Move Speed | 30% | important |
+| Passive | Move Speed | 24% | important |
 
 ## Source Property-Upgrade Fields
 
@@ -53,5 +54,5 @@ Your bullets build up a Movement Slow on enemies.
 
 - `StatusResistancePercent`: 10
 - `BaseAttackDamagePercent`: 35
-- `SlowPercent`: 20
-- `GroundDashReductionPercent`: -10
+- `SlowPercent`: 16
+- `GroundDashReductionPercent`: -8

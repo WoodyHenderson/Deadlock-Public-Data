@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Mina is a selectable Marksman hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.mina.124886
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Mina
@@ -56,24 +56,23 @@ Internal key: `ability_vampirebat_steallife`.
 - **Tier 2:** +30 Heal per Kill -8s Cooldown
 - **Tier 3:** +7% Missing health damage and increased Heal per Kill Spirit scaling
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorDontInterruptSlideOnCast`, `BehaviorUseLagCompensationForUnitTargeting`.
 
 | Card field | Base value |
 | --- | ---: |
-| Damage | 60 (+1 per stats count) |
+| Damage | 60 (+1 per spirit) |
 | Missing Health Damage | 6 |
-| Cooldown | 16 (+1 per cooldown) |
 | Cast Range | 10 (+1 per range) |
+| Cooldown | 16 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
 - Tier 1: `{"Damage":60}`
 - Tier 2: `{"RakeHealPerKill":30,"AbilityCooldown":-8}`
-- Tier 3: `{"MissingHealthDamagePercentage":7,"RakeHealPerKill":{"Value":0,"Scale":{"Value":1.2,"Type":"spirit"}}}`
-
+- Tier 3: `{"MissingHealthDamagePercentage":7.0,"RakeHealPerKill":{"Value":0,"Scale":{"Value":1.2,"Type":"spirit"}}}`
 ### 2. Sanguine Retreat
 
 Internal key: `ability_vampirebat_batblink`.
@@ -89,24 +88,23 @@ Internal key: `ability_vampirebat_batblink`.
 - **Tier 1:** On Cast: Gain +25% Fire Rate for 8s and add 8 bullets
 - **Tier 3:** +1 Recast +4m Range
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorDisplaysDamageImpact`, `BehaviorPreventBotUsage`, `BehaviorCannotCancelDuringChannel`, `BehaviorAllowAltCast`, `BehaviorMovement`, `BehaviorCanSetQuickCast`, `BehaviorDeactivateCrouchToggleOnCast`.
 
 | Card field | Base value |
 | --- | ---: |
-| Cast Range | 9 |
+| Cast Range | 9 (+0.02 per spirit, +1 per range) |
 | Recast Window | 4 (+1 per duration) |
 | Cooldown | 32 (+1 per cooldown) |
-| Duration | 0.65 |
 | Charge Delay | -1 |
+| Duration | 0.65 |
 
 Upgrade deltas:
 - Tier 1: `{"BonusFireRate":25,"BuffDuration":8,"BonusBullets":8}`
 - Tier 2: `{"AbilityCooldown":-10}`
 - Tier 3: `{"MaxRecasts":1,"AbilityCastRange":4}`
-
 ### 3. Love Bites
 
 Internal key: `ability_vampirebat_lovebites`.
@@ -119,11 +117,11 @@ Internal key: `ability_vampirebat_lovebites`.
 
 **Upgrade descriptions** (where supplied by the source):
 
-- **Tier 1:** On Proc: +30% Slow for 3s
+- **Tier 1:** On Proc: +24% Slow for 3s
 - **Tier 2:** +3 Spirit Damage per Bullet & +45 Bonus Damage
 - **Tier 3:** -5 Cooldown On Proc: +25% Fire Rate for 5s
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 | Card field | Base value |
@@ -155,7 +153,7 @@ Internal key: `ability_vampirebat_batswarm`.
 
 - **Tier 3:** On Hit: Deal +0.5% Current Health as Damage
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`.
@@ -168,15 +166,14 @@ Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorDisplaysDamag
 | Current Health | 0 |
 | Additional Bats Per Love Bite | 2 |
 | Total Bats Released | 75 |
-| Cooldown | 150 (+1 per cooldown) |
 | Cast Range | 40 (+1 per range) |
+| Cooldown | 150 (+1 per cooldown) |
 | Charge Delay | -1 |
 
 Upgrade deltas:
 - Tier 1: `{"Damage":1.9}`
 - Tier 2: `{"AbilityCooldown":-45}`
 - Tier 3: `{"CurrentHealthPercent":0.5}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

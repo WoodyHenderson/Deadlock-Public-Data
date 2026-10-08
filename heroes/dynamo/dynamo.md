@@ -5,15 +5,15 @@ domain: heroes
 topics: [hero]
 aliases: []
 summary: Dynamo is a selectable Mystic hero; this record covers base stats, weapon data, and abilities.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-16
+current_as_of: "2026-09-16"
 evidence_status: source_verified
 sources:
-  - github.deadlock-data.english.311b2e8d895e
+  - github.deadlock-data.hero-data.fc4f540f12e0
+  - github.deadlock-data.ability-data.fc4f540f12e0
+  - github.deadlock-data.ability-cards.fc4f540f12e0
+  - github.deadlock-data.english.fc4f540f12e0
   - wiki.dynamo.124881
-  - wiki.data-hero-data.108817
-  - wiki.data-ability-data.114011
-  - wiki.data-ability-cards.114010
 ---
 
 # Dynamo
@@ -52,10 +52,10 @@ Internal key: `citadel_ability_stomp`.
 **Upgrade descriptions** (where supplied by the source):
 
 - **Tier 1:** +1 Charge
-- **Tier 2:** On Hit: -15% Bullet Resist and -30% Move Speed for 4s
+- **Tier 2:** On Hit: -15% Bullet Resist and -24% Move Speed for 4s
 - **Tier 3:** +135 Damage and +20m Cast Range
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorProjectilePassThroughWorld`, `BehaviorShowCastRangeAsSatSphereWhileCasting`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -66,15 +66,14 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorProjectilePassThroughWo
 | Duration | 1 |
 | Pulse Range | 16 (+1 per range) |
 | Pulse Width | 5.5 |
-| Cooldown | 26 (+1 per cooldown) |
 | Charges | 1 (+1 per max charges) |
+| Cooldown | 26 (+1 per cooldown) |
 | Charge Delay | 5 (+1 per charge cooldown) |
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCharges":1}`
-- Tier 2: `{"BulletResistReduction":-15,"SlowPercent":30,"SlowDuration":4}`
+- Tier 2: `{"BulletResistReduction":-15,"SlowPercent":24,"SlowDuration":4}`
 - Tier 3: `{"Damage":135,"StompRange":20}`
-
 ### 2. Quantum Entanglement
 
 Internal key: `citadel_ability_void_sphere`.
@@ -89,7 +88,7 @@ Internal key: `citadel_ability_void_sphere`.
 
 - **Tier 3:** Reduces non-ult debuffs by 50% Replenishes 1 Charge
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorPreventBotUsage`, `BehaviorAllowAltCast`, `BehaviorMovement`, `BehaviorCanSetQuickCast`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -107,7 +106,6 @@ Upgrade deltas:
 - Tier 1: `{"AbilityCastRange":6}`
 - Tier 2: `{"AbilityCooldown":-6}`
 - Tier 3: `{"ReduceDebuffs":50,"ChargeReplenish":1}`
-
 ### 3. Rejuvenating Aurora
 
 Internal key: `citadel_ability_nikuman`.
@@ -124,7 +122,7 @@ Internal key: `citadel_ability_nikuman`.
 - **Tier 2:** -20 Cooldown and +1s Duration
 - **Tier 3:** Full move and ability use and additionally heals +2.5% of Max Health per second
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorCanHealPlayers`, `BehaviorDisplaysDamageImpact`, `BehaviorRequireAbilityButtonToCancel`, `BehaviorDontInterruptSlideOnCast`.
@@ -139,9 +137,8 @@ Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorCanHealPlayer
 
 Upgrade deltas:
 - Tier 1: `{"MovementSpeedBonus":4,"MovementSpeedBonusDuration":8}`
-- Tier 2: `{"AbilityCooldown":-20,"AbilityChannelTime":1}`
+- Tier 2: `{"AbilityCooldown":-20.0,"AbilityChannelTime":1.0}`
 - Tier 3: `{"NoChannel":1,"HealMaxHealthPercent":2.5}`
-
 ### 4. Singularity
 
 Internal key: `citadel_ability_self_vacuum`.
@@ -151,7 +148,7 @@ Internal key: `citadel_ability_self_vacuum`.
 
 > Create a singularity in your hands, dealing spirit damage over time, applying stun, and pulling in nearby enemies.
 
-Description source: [`github.deadlock-data.english.311b2e8d895e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/311b2e8d895eec837441ff3e29b7d7581a61768c/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.fc4f540f12e0`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/fc4f540f12e019a6a2a422e0818917a4eedaf881/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorExclusiveUse`, `BehaviorCastableWhileBusy`, `BehaviorInterruptMeleeOnCast`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorDeactivateCrouchToggleOnCast`.
@@ -169,7 +166,6 @@ Upgrade deltas:
 - Tier 1: `{"VacuumRadius":2}`
 - Tier 2: `{"AbilityChannelTime":0.75}`
 - Tier 3: `{"DPSPercentHealth":6}`
-
 ## Data Boundaries
 
 Values above are retrieval highlights. Use the adjacent YAML for calculations. It retains raw generated fields without inventing units. Ability descriptions are resolved from pinned English localization data; numeric tables remain separate and are not overwritten by tooltip prose.

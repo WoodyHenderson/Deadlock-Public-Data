@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
   "id": "item.trophy-collector",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "client_version": 6684,
-  "server_version": 6684,
-  "source_revision": 10933105,
-  "current_as_of": "2026-09-03",
+  "snapshot_id": "deadlock-wiki-2026-09-16",
+  "client_version": 6694,
+  "server_version": 6694,
+  "source_revision": 11005995,
+  "current_as_of": "2026-09-16",
   "evidence_status": "source_verified",
   "source_priority": [
-    "deadlock-api.items.client-6684.source-10933105",
-    "github.deadlock-data.items.311b2e8d895e"
+    "deadlock-api.items.client-6694.source-11005995",
+    "github.deadlock-data.items.fc4f540f12e0"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6684.source-10933105",
-    "secondary": "github.deadlock-data.items.311b2e8d895e"
+    "primary": "deadlock-api.items.client-6694.source-11005995",
+    "secondary": "github.deadlock-data.items.fc4f540f12e0"
   },
   "identity": {
     "name": "Trophy Collector",
@@ -170,9 +170,9 @@
       "importance": "important",
       "key": "StackingGoldPerMinute",
       "label": "Souls per Minute",
-      "value": "18",
+      "value": "16",
       "property": {
-        "value": "18",
+        "value": "16",
         "css_class": "souls",
         "label": "Souls per Minute",
         "postvalue_label": "Souls per Minute",
@@ -414,7 +414,7 @@
         "css_class": "distance"
       },
       "StackingGoldPerMinute": {
-        "value": "18",
+        "value": "16",
         "css_class": "souls",
         "label": "Souls per Minute",
         "postvalue_label": "Souls per Minute",
@@ -547,7 +547,7 @@
     "StackingBonusSprintSpeed": "0.15m",
     "StackingTechRangeMultiplier": 0.75,
     "StackingTechRadiusMultiplier": 0.75,
-    "StackingGoldPerMinute": 18,
+    "StackingGoldPerMinute": 16,
     "ThinkRate": 3,
     "MaxStacks": 16,
     "NonPlayerBonusWeaponPower": -15,
@@ -624,7 +624,7 @@
         },
         {
           "Key": "StackingGoldPerMinute",
-          "Value": 18,
+          "Value": 16,
           "Type": "souls"
         }
       ],
