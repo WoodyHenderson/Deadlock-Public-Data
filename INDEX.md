@@ -48,7 +48,7 @@ historical values as current facts.
 | Zipline, lanes, traversal | [Map layout](general/map/map-layout-and-traversal.md); [separate map-coordinate guide](map/README.md) for positions only |
 | Ordinary crates, Tough Crates, Buff Containers: where are potential locations concentrated? | [Map area counts](map/breakable-zones.yaml) via [map guide](map/README.md); coordinates by [point category](map/coordinates/README.md). October 6 private-source snapshot, not currently available loot or a September 3 gameplay update. |
 | Haunt camp, Sinner machine, snack, vent or shop locations | [Map point catalog](map/coordinates/README.md); use separately versioned gameplay records for mechanics. Sinner markers count individual machines, not sites. |
-| Minimap, detection, visibility | [Visibility](general/map/minimap-and-visibility.md); named ability |
+| Minimap, detection, visibility, pings, text-chat cooldown | [Visibility](general/map/minimap-and-visibility.md); named ability |
 | Death, respawn, revive | [Death](general/rules/death-and-respawning.md); [Rejuvenator](objectives/rejuvenator/rejuvenator.md) |
 | Guardian, Walker, Shrine, Patron, Extra Slots, backdoor | [Structures](general/map/objectives-and-structures.md); specific NPC below |
 | Trooper waves, Super Troopers | [Troopers](general/map/troopers-and-lane-pressure.md); troop NPC below |

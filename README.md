@@ -21,7 +21,9 @@ documents, evaluation answers, or private source notes.
 
 A curation/access date is not a claim that the data matches today's game. An old
 article revision does not itself pin separately transcluded data; generated
-source records have their own references.
+source records have their own references. The Minimap and Visibility topic also
+contains a dated September 9 chat/ping-rate-limit update note; this does not
+advance the overall September 3 gameplay snapshot.
 
 ## Contents
 

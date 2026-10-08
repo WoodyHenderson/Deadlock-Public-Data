@@ -11,14 +11,19 @@ aliases:
   - map vision
   - enemy reveal
   - missing ping
+  - chat cooldown
+  - text chat cooldown
+  - ping cooldown
+  - ping rate limit
 summary: What the minimap displays and the general actions that reveal a hero to the enemy team.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
+snapshot_id: deadlock-wiki-2026-09-09
+current_as_of: "2026-09-09"
 evidence_status: needs_primary_verification
 sources:
   - wiki.minimap.89774
   - wiki.the-cursed-apple.125757
   - wiki.mechanics.110139
+  - wiki.update.2026-09-09.145819
 ---
 
 # Minimap and Visibility
@@ -70,6 +75,14 @@ reveal each other through the normal line-of-sight rule.
 Players can mark that an enemy is missing by opening the scoreboard and
 middle-clicking the enemy portrait. Lane and location pings communicate movement
 and areas requiring attention.
+
+### Chat and ping rate limit (September 9, 2026)
+
+The September 9 update note reports that sending multiple text messages or pings
+in a row disables both text chat and pings for **10 seconds**. The note says this
+was added after an exploit that could crash the game server. It does not specify
+the exact message-count/window threshold or other timer behavior. This is a dated
+update-note report, not an independently verified runtime test.
 
 ## Evidence Limitation
 
