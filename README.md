@@ -1,8 +1,8 @@
 # Deadlock Data Reference
 
-A community-maintained Deadlock data snapshot in Markdown and YAML. It includes
-**38 heroes, 152 abilities, 173 items, 14 NPC records, two claimable objectives,
-and 136 historical changelogs**, plus a separately dated map-coordinate layer.
+A maybe-maintained Deadlock data snapshot used for training data as a fun side project. 
+It includes all the data I could get my hands on from a variety of sources including
+far too much manual interaction testing and information gathering.
 
 Start with the [keyword index](INDEX.md) to find a hero, ability, item, or mechanic.
 Use Markdown for readable explanations and adjacent YAML for structured fields.
@@ -11,19 +11,14 @@ documents, evaluation answers, or private source notes.
 
 ## Snapshot, not a live feed
 
-- Base snapshot: `deadlock-wiki-2026-09-03`
-- Game-data client: `6684`; source revision: `10933105`
-- Source access dates, wiki revisions, commits, and hashes are recorded separately.
-- Ability descriptions resolve all 630 card references into 481 distinct entries:
-  170 base/secondary descriptions and 311 upgrade descriptions.
-- Historical changelogs cover **2024-05-03 through 2026-09-16**, including separate
-  same-date and Hero Lab files.
+This does not update live, if it is staying updated it's me manually maintaining it,
+Deadlock patch notes are nowhere near all-encompassing, they leave significant amounts
+of information out of the patch notes intentional or not so I will try my best to
+use my own knowledge of the game, community available information and Valve published
+information to keep as accurate a snapshot as I can. 
 
-A curation/access date is not a claim that the data matches today's game. An old
-article revision does not itself pin separately transcluded data; generated
-source records have their own references. The Minimap and Visibility topic also
-contains a dated September 9 chat/ping-rate-limit update note; this does not
-advance the overall September 3 gameplay snapshot.
+Base snapshot was created from the Sep 3rd patch and then expanded upon from there
+(right before the first major patch in 9 months thanks Yoshi)
 
 ## Contents
 
@@ -45,25 +40,22 @@ advance the overall September 3 gameplay snapshot.
 
 The September 3 gameplay baseline uses only **Deadlock Wiki**, **Deadlock API**,
 and the **Deadlock Wiki's `deadlock-wiki/deadlock-data` repository** as published
-data sources. The separately dated map layer uses a private, authorized source
-whose derived coordinates may be redistributed non-commercially without attribution;
-see [map permissions and limitations](map/README.md).
-The versioned API is the structured authority for item records; wiki-generated
-data provides the secondary representation. Hero descriptions and changelogs
-come from pinned wiki-data commits. Existing material source disagreements stay
-visible rather than being silently merged.
+data sources. The versioned API is the structured authority for item records; 
+wiki-generated data provides the secondary representation. Hero descriptions and 
+changelogs come from pinned wiki-data commits. Existing material source disagreements 
+stay visible rather than being silently merged.
 
 Gameplay rules that relied on private confirmations or internal documents were excluded
-from the September 3 baseline. They have not been relabeled as wiki/API-verified. See
+from the September 3 baseline. They have not been relabelled as wiki/API-verified. See
 [limitations](LIMITATIONS.md) for the resulting coverage boundary.
 
 ### Historical archive boundary
 
 The changelogs are useful for explicit historical or patch-note questions only.
-They do **not** update, override, or supply missing facts in current entity
-records. Consumers implementing search should exclude `patches/` by default.
-Historical notes describe changes, not complete historical game states or proof
-of observed runtime behavior.
+They do **not** update, override, or supply missing facts in current records. If
+you are implementing search I suggest you exclude `patches/` by default. Use it
+for more simple questions regarding older values such as "What was the highest 
+max weapon damage intensifying mag ever provided" or something along those lines.
 
 ### Record format
 
@@ -104,6 +96,5 @@ behavior. Validation runs without network access and makes no changes. This expo
 automated data updater. Future updates should pin sources, retain prior evidence,
 review changes, and regenerate the affected records and index together.
 
-Read [attribution and licensing](ATTRIBUTION.md) before redistributing or reusing
-the material. Public availability is not a blanket unrestricted-use license.
-This project is not affiliated with or endorsed by Valve.
+Again, this is just a sister project for something personal, it is not affiliated 
+with Valve and is not used for any form of commercial or monetary gain.
