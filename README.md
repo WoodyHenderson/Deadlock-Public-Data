@@ -98,9 +98,11 @@ source references, allowed source origins, historical file hashes, and lifesteal
 rule consistency with canonical records (including upgrade gates and mode
 isolation), and baseline burst profiles against canonical weapon fields and
 API-derived averages. These checks validate local data consistency, not in-game
-behavior. Validation runs without network access and makes no changes. This export does not include an
-automated data updater. Future updates should pin sources, retain prior evidence,
-review changes, and regenerate the affected records and index together.
+behavior. Validation runs without network access and makes no changes. The
+map-coordinate importer only normalizes authorized local inputs; it does not
+fetch map data. This repository has no general upstream data updater. Future
+updates should pin sources, retain prior evidence, review changes, and regenerate
+affected records and the index together.
 
 Again, this is just a sister project for something personal, it is not affiliated 
 with Valve and is not used for any form of commercial or monetary gain.
