@@ -1,0 +1,282 @@
+[
+  {
+    "client": 6737,
+    "commit": "dc1679b9606effdc9bec37842ed40d8ca927092e",
+    "path": "data/version.txt",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/dc1679b9606effdc9bec37842ed40d8ca927092e/data/version.txt",
+    "sha256": "df29482596536ea557dd79c6f20eab5fa16945c68dac6193b848ea829842c5fd"
+  },
+  {
+    "client": 6737,
+    "commit": "dc1679b9606effdc9bec37842ed40d8ca927092e",
+    "path": "data/json/hero-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json/hero-data.json",
+    "sha256": "791c09b89b66e7a2b7bc438f86c150b80ee921f75e86bef4c7a129910efcfcdc"
+  },
+  {
+    "client": 6737,
+    "commit": "dc1679b9606effdc9bec37842ed40d8ca927092e",
+    "path": "data/json/ability-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json/ability-data.json",
+    "sha256": "8bdc385cc78679bd6975b79baf6a1eee1e8cab8d769cd2fb9f5f46ceed1ea0fc"
+  },
+  {
+    "client": 6737,
+    "commit": "dc1679b9606effdc9bec37842ed40d8ca927092e",
+    "path": "data/json/ability-cards.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json/ability-cards.json",
+    "sha256": "24a6b1a72da896652e35aed3846357b281a4a22f6e74b96d7d53f99c6a449bb6"
+  },
+  {
+    "client": 6737,
+    "commit": "dc1679b9606effdc9bec37842ed40d8ca927092e",
+    "path": "data/json/npc-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json/npc-data.json",
+    "sha256": "f8ceb65ac16c4378d324ad71c89b43665cadfaaaaa82d7fc8f876bfaea6da45a"
+  },
+  {
+    "client": 6737,
+    "commit": "dc1679b9606effdc9bec37842ed40d8ca927092e",
+    "path": "data/json/street-brawl-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json/street-brawl-data.json",
+    "sha256": "bafa0006897246b0f7a4d2f5c2850aeaa866fb966993689ac043433e026acc0d"
+  },
+  {
+    "client": 6737,
+    "commit": "dc1679b9606effdc9bec37842ed40d8ca927092e",
+    "path": "data/json/convars.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json/convars.json",
+    "sha256": "9c9b3e93b59bbbc26bc48d538ad35d7e952fe32407c40eed68409effd0c2ed2a"
+  },
+  {
+    "client": 6737,
+    "commit": "dc1679b9606effdc9bec37842ed40d8ca927092e",
+    "path": "data/json/item-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json/item-data.json",
+    "sha256": "992743a93afb8a671d76b460da5ca65acd2c48e889598f0d37aa8012819b8bfc"
+  },
+  {
+    "client": 6737,
+    "commit": "dc1679b9606effdc9bec37842ed40d8ca927092e",
+    "path": "data/json/generic-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json/generic-data.json",
+    "sha256": "f8c4601602ee89217ba45f7404230b2278abfa5b5f54ba30109a2cfa77805e29"
+  },
+  {
+    "client": 6737,
+    "commit": "dc1679b9606effdc9bec37842ed40d8ca927092e",
+    "path": "data/json/misc-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json/misc-data.json",
+    "sha256": "39c408611afad028564204b735d733883b5a88475b434bbee3c9d96001a511c1"
+  },
+  {
+    "client": 6737,
+    "commit": "dc1679b9606effdc9bec37842ed40d8ca927092e",
+    "path": "data/localizations/english.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/dc1679b9606effdc9bec37842ed40d8ca927092e/data/localizations/english.json",
+    "sha256": "0b92317324ebea77c0b4770bc93c23e0da7489a8dff347582273e7041f5eb292"
+  },
+  {
+    "client": 6746,
+    "commit": "46c3fd0cfbf2108f48123e1dddd59e416db1b7ee",
+    "path": "data/version.txt",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/46c3fd0cfbf2108f48123e1dddd59e416db1b7ee/data/version.txt",
+    "sha256": "59906220588406bb6b4fc55b9988d3e3854cd67cf2ea848f7b78b7792b159e9f"
+  },
+  {
+    "client": 6746,
+    "commit": "46c3fd0cfbf2108f48123e1dddd59e416db1b7ee",
+    "path": "data/json/hero-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/46c3fd0cfbf2108f48123e1dddd59e416db1b7ee/data/json/hero-data.json",
+    "sha256": "791c09b89b66e7a2b7bc438f86c150b80ee921f75e86bef4c7a129910efcfcdc"
+  },
+  {
+    "client": 6746,
+    "commit": "46c3fd0cfbf2108f48123e1dddd59e416db1b7ee",
+    "path": "data/json/ability-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/46c3fd0cfbf2108f48123e1dddd59e416db1b7ee/data/json/ability-data.json",
+    "sha256": "04cca8015594f6227f875d6a33ce55794ab33ef040abd3c35615472877293a38"
+  },
+  {
+    "client": 6746,
+    "commit": "46c3fd0cfbf2108f48123e1dddd59e416db1b7ee",
+    "path": "data/json/ability-cards.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/46c3fd0cfbf2108f48123e1dddd59e416db1b7ee/data/json/ability-cards.json",
+    "sha256": "24a6b1a72da896652e35aed3846357b281a4a22f6e74b96d7d53f99c6a449bb6"
+  },
+  {
+    "client": 6746,
+    "commit": "46c3fd0cfbf2108f48123e1dddd59e416db1b7ee",
+    "path": "data/json/npc-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/46c3fd0cfbf2108f48123e1dddd59e416db1b7ee/data/json/npc-data.json",
+    "sha256": "2483bcfbcee4e7cf7720c03f29946f24b9444de3cb51d116fda535044854f480"
+  },
+  {
+    "client": 6746,
+    "commit": "46c3fd0cfbf2108f48123e1dddd59e416db1b7ee",
+    "path": "data/json/street-brawl-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/46c3fd0cfbf2108f48123e1dddd59e416db1b7ee/data/json/street-brawl-data.json",
+    "sha256": "bafa0006897246b0f7a4d2f5c2850aeaa866fb966993689ac043433e026acc0d"
+  },
+  {
+    "client": 6746,
+    "commit": "46c3fd0cfbf2108f48123e1dddd59e416db1b7ee",
+    "path": "data/json/convars.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/46c3fd0cfbf2108f48123e1dddd59e416db1b7ee/data/json/convars.json",
+    "sha256": "9c9b3e93b59bbbc26bc48d538ad35d7e952fe32407c40eed68409effd0c2ed2a"
+  },
+  {
+    "client": 6746,
+    "commit": "46c3fd0cfbf2108f48123e1dddd59e416db1b7ee",
+    "path": "data/json/item-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/46c3fd0cfbf2108f48123e1dddd59e416db1b7ee/data/json/item-data.json",
+    "sha256": "992743a93afb8a671d76b460da5ca65acd2c48e889598f0d37aa8012819b8bfc"
+  },
+  {
+    "client": 6746,
+    "commit": "46c3fd0cfbf2108f48123e1dddd59e416db1b7ee",
+    "path": "data/json/generic-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/46c3fd0cfbf2108f48123e1dddd59e416db1b7ee/data/json/generic-data.json",
+    "sha256": "a4b1c765b300ae3009ce086193bbe3a557543a663f7253c50307e0c2d0ca974d"
+  },
+  {
+    "client": 6746,
+    "commit": "46c3fd0cfbf2108f48123e1dddd59e416db1b7ee",
+    "path": "data/json/misc-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/46c3fd0cfbf2108f48123e1dddd59e416db1b7ee/data/json/misc-data.json",
+    "sha256": "39c408611afad028564204b735d733883b5a88475b434bbee3c9d96001a511c1"
+  },
+  {
+    "client": 6746,
+    "commit": "46c3fd0cfbf2108f48123e1dddd59e416db1b7ee",
+    "path": "data/localizations/english.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/46c3fd0cfbf2108f48123e1dddd59e416db1b7ee/data/localizations/english.json",
+    "sha256": "0b92317324ebea77c0b4770bc93c23e0da7489a8dff347582273e7041f5eb292"
+  },
+  {
+    "client": 6753,
+    "commit": "edb16660368ef3b693a4ac6d525697f5570a4dce",
+    "path": "data/version.txt",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/version.txt",
+    "sha256": "3d23c7905a7ef122100cf00b818aaedd2d0d54df85fae68241237745066a6496"
+  },
+  {
+    "client": 6753,
+    "commit": "edb16660368ef3b693a4ac6d525697f5570a4dce",
+    "path": "data/json/hero-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/json/hero-data.json",
+    "sha256": "72c7ea8cef4c1220454a3a67541e19d9b797c64f94bd6b13f04b6470e05eb042"
+  },
+  {
+    "client": 6753,
+    "commit": "edb16660368ef3b693a4ac6d525697f5570a4dce",
+    "path": "data/json/ability-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/json/ability-data.json",
+    "sha256": "ef3873b5b4c1bf9caa0d7923cb4627d527e49fc13fb12c01f14c00675f2829b8"
+  },
+  {
+    "client": 6753,
+    "commit": "edb16660368ef3b693a4ac6d525697f5570a4dce",
+    "path": "data/json/ability-cards.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/json/ability-cards.json",
+    "sha256": "8bec57093abeeb1607844f58addc5a7c96a393cd0a1007fec81d463dc565ab9a"
+  },
+  {
+    "client": 6753,
+    "commit": "edb16660368ef3b693a4ac6d525697f5570a4dce",
+    "path": "data/json/npc-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/json/npc-data.json",
+    "sha256": "94b6485b54a144794c5b3cdab718871f5af57a69f880308aee1d630f5a3b5949"
+  },
+  {
+    "client": 6753,
+    "commit": "edb16660368ef3b693a4ac6d525697f5570a4dce",
+    "path": "data/json/street-brawl-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/json/street-brawl-data.json",
+    "sha256": "bafa0006897246b0f7a4d2f5c2850aeaa866fb966993689ac043433e026acc0d"
+  },
+  {
+    "client": 6753,
+    "commit": "edb16660368ef3b693a4ac6d525697f5570a4dce",
+    "path": "data/json/convars.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/json/convars.json",
+    "sha256": "0a39594c67cc32746d2daa89fd1a10aa5cff95c5aa3b847b6861f4f52775b2fb"
+  },
+  {
+    "client": 6753,
+    "commit": "edb16660368ef3b693a4ac6d525697f5570a4dce",
+    "path": "data/json/item-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/json/item-data.json",
+    "sha256": "992743a93afb8a671d76b460da5ca65acd2c48e889598f0d37aa8012819b8bfc"
+  },
+  {
+    "client": 6753,
+    "commit": "edb16660368ef3b693a4ac6d525697f5570a4dce",
+    "path": "data/json/generic-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/json/generic-data.json",
+    "sha256": "4ffdd3004363f670839217305c9b1e01e092ccdc6ea1d6e01c095e3b7dfbb1fc"
+  },
+  {
+    "client": 6753,
+    "commit": "edb16660368ef3b693a4ac6d525697f5570a4dce",
+    "path": "data/json/misc-data.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/json/misc-data.json",
+    "sha256": "72301530c76f0cfaaee7c001b5fb0521c334da3825887b742ccac6752320e817"
+  },
+  {
+    "client": 6753,
+    "commit": "edb16660368ef3b693a4ac6d525697f5570a4dce",
+    "path": "data/localizations/english.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/localizations/english.json",
+    "sha256": "e334efe2c46a048f1ef50056dbb78fc32ff11db22bfdb355c7474352831307be"
+  },
+  {
+    "client": 6753,
+    "commit": "edb16660368ef3b693a4ac6d525697f5570a4dce",
+    "path": "data/changelogs/raw/2026-10-05.txt",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/changelogs/raw/2026-10-05.txt",
+    "sha256": "97f051205a4a48b58ace49ef0aa71dd84da047ccbcdd96fa32c964df44d3a304"
+  },
+  {
+    "client": 6737,
+    "commit": "dc1679b9606effdc9bec37842ed40d8ca927092e",
+    "path": "data/json/item-cards.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json/item-cards.json",
+    "sha256": "7ff34ae9364064d23ceff40ac646c3298cd381920964c59bae6cccbd15f9c2d2"
+  },
+  {
+    "client": 6737,
+    "commit": "dc1679b9606effdc9bec37842ed40d8ca927092e",
+    "path": "data/json/hero-meaningful-stats.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json/hero-meaningful-stats.json",
+    "sha256": "75429c0ca0e9d00732496c0e25564d8ba61f571cb5ed3d44c4b3d11bb56f4e6f"
+  },
+  {
+    "client": 6746,
+    "commit": "46c3fd0cfbf2108f48123e1dddd59e416db1b7ee",
+    "path": "data/json/item-cards.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/46c3fd0cfbf2108f48123e1dddd59e416db1b7ee/data/json/item-cards.json",
+    "sha256": "7ff34ae9364064d23ceff40ac646c3298cd381920964c59bae6cccbd15f9c2d2"
+  },
+  {
+    "client": 6746,
+    "commit": "46c3fd0cfbf2108f48123e1dddd59e416db1b7ee",
+    "path": "data/json/hero-meaningful-stats.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/46c3fd0cfbf2108f48123e1dddd59e416db1b7ee/data/json/hero-meaningful-stats.json",
+    "sha256": "75429c0ca0e9d00732496c0e25564d8ba61f571cb5ed3d44c4b3d11bb56f4e6f"
+  },
+  {
+    "client": 6753,
+    "commit": "edb16660368ef3b693a4ac6d525697f5570a4dce",
+    "path": "data/json/item-cards.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/json/item-cards.json",
+    "sha256": "7ff34ae9364064d23ceff40ac646c3298cd381920964c59bae6cccbd15f9c2d2"
+  },
+  {
+    "client": 6753,
+    "commit": "edb16660368ef3b693a4ac6d525697f5570a4dce",
+    "path": "data/json/hero-meaningful-stats.json",
+    "url": "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/json/hero-meaningful-stats.json",
+    "sha256": "75429c0ca0e9d00732496c0e25564d8ba61f571cb5ed3d44c4b3d11bb56f4e6f"
+  }
+]

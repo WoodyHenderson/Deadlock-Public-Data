@@ -8,6 +8,68 @@ snapshot:
   excludes_media: true
 
 sources:
+  - id: github.deadlock-data.gameplay.46c3fd0cfbf2
+    title: October 4 client 6746 research checkpoint
+    url: "https://github.com/deadlock-wiki/deadlock-data/tree/46c3fd0cfbf2108f48123e1dddd59e416db1b7ee/data"
+    commit: 46c3fd0cfbf2108f48123e1dddd59e416db1b7ee
+    client_version: 6746
+    source_revision: 11080740
+    accessed_at: "2026-10-09"
+    input_manifest: patches/research/2026-10-05/input-manifest.json
+    input_manifest_sha256: 09124eb1df5cf48be4799da37bc72aeee5b30a9b8dd206b3013345c3b463bc11
+    scope: Research-only intermediate snapshot; individual input URLs and byte hashes are in the manifest. No canonical update implied.
+
+  - id: github.deadlock-data.gameplay.edb16660368e
+    title: October 5 client 6753 balance research checkpoint
+    url: "https://github.com/deadlock-wiki/deadlock-data/tree/edb16660368ef3b693a4ac6d525697f5570a4dce/data"
+    commit: edb16660368ef3b693a4ac6d525697f5570a4dce
+    client_version: 6753
+    source_revision: 11087340
+    accessed_at: "2026-10-09"
+    input_manifest: patches/research/2026-10-05/input-manifest.json
+    input_manifest_sha256: 09124eb1df5cf48be4799da37bc72aeee5b30a9b8dd206b3013345c3b463bc11
+    field_delta_ledger: patches/research/2026-10-05/field-deltas.txt
+    field_delta_sha256: 5409422215b9c387c8f5920be2eeb3759f30ee4b0c9d999f3a82f9673aef1e17
+    scope: Research-only balance/configuration comparison, not a canonical hero or global baseline advance.
+
+  - id: github.deadlock-data.changelog.2026-10-05.edb16660368e
+    title: October 5 raw patch notes in pinned upstream archive
+    url: "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/changelogs/raw/2026-10-05.txt"
+    commit: edb16660368ef3b693a4ac6d525697f5570a4dce
+    sha256: 97f051205a4a48b58ace49ef0aa71dd84da047ccbcdd96fa32c964df44d3a304
+    accessed_at: "2026-10-09"
+    scope: Historical patch intent, cross-checked against the official announcement; not yet imported into the local raw archive.
+
+  - id: steam.news.balance.1845383656394833
+    title: Minor Update - 10-05-2026
+    url: "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656394833"
+    news_gid: "1845383656394833"
+    published_at: "2026-10-05T23:05:32Z"
+    accessed_at: "2026-10-09"
+    contents_sha256: be200138d80e244d57f2c22b81e839e9cd34989faa6895ab1ace75de523a3d08
+    hash_scope: UTF-8 contents field returned by the Steam news API, not the rendered HTML page.
+    scope: Official balance and bug-fix announcement; behavior intent, not independent runtime testing.
+
+  - id: wiki.update.2026-10-04.181723
+    title: October 4 update — later undocumented-change transcription
+    url: "https://deadlock.wiki/Update:October_4,_2026"
+    revision_url: "https://deadlock.wiki/Update:October_4,_2026?oldid=181723"
+    revision_id: 181723
+    last_modified: "2026-10-05T23:10:10Z"
+    accessed_at: "2026-10-09"
+    wikitext_sha256: 9b2a54273fdc1e7302e180d9ca48c123d3e9d2929da5d36d11e5c5400fe2bcd1
+    scope: Undocumented report of corrupted-item removal from Street Brawl; keep separate from official October 5 notes.
+
+  - id: wiki.update.2026-10-05.184305
+    title: October 5 update — later balance-note transcription
+    url: "https://deadlock.wiki/Update:October_5,_2026"
+    revision_url: "https://deadlock.wiki/Update:October_5,_2026?oldid=184305"
+    revision_id: 184305
+    last_modified: "2026-10-07T00:09:07Z"
+    accessed_at: "2026-10-09"
+    wikitext_sha256: 7bf571018fbc5901f408112371228944c84340787fe288116710e81b4e215358
+    scope: Separately dated transcription cross-checked with official October 5 notes and client differences.
+
   - id: wiki.steam-vent.177398
     title: Steam Vent — pre-release interactions
     url: "https://deadlock.wiki/Steam_Vent"

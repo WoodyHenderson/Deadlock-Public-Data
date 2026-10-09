@@ -1,0 +1,85 @@
+6746→6753 hero-data.hero_baba.LevelScaling.HeavyMeleeDamage: 2.552 → 1.624
+6746→6753 hero-data.hero_baba.LevelScaling.LightMeleeDamage: 1.1 → 0.7
+6746→6753 hero-data.hero_magician.BaseHealthRegen: 2.0 → 1.0
+6746→6753 hero-data.hero_magician.Weapon.BulletDamage: 17.76 → 16.5
+6746→6753 hero-data.hero_magician.Weapon.DPS: 48.327 → 44.898
+6746→6753 hero-data.hero_magician.Weapon.FalloffEndRange: 60.96 → 60.0
+6746→6753 hero-data.hero_magician.Weapon.FalloffStartRange: 25.4 → 20.0
+6746→6753 hero-data.hero_magician.Weapon.SustainedDPS: 33.909 → 31.504
+6737→6746 ability-data.ability_digger_entertunnel.AbilityChannelTime: {"Value": 1.0, "Scale": {"Value": 1, "Type": "duration"}} → 1.0
+6737→6746 ability-data.ability_ratking_entertunnel.AbilityChannelTime: {"Value": 1.7, "Scale": {"Value": 1, "Type": "duration"}} → 1.7
+6746→6753 ability-data.ability_magician_animalhexarea.Radius.Value: 6.5 → 6
+6746→6753 ability-data.ability_magician_animalhexarea.Upgrades[2].Radius: 3 → 2
+6746→6753 ability-data.ability_magician_copyult.CopiedUltWindow.Value: 12 → 9
+6746→6753 ability-data.ability_magician_copyult.CopyCooldownPercentage: 40 → 60
+6746→6753 ability-data.ability_magician_magicbolt.BossDamageScale: "<absent>" → 0.5
+6746→6753 ability-data.ability_ratking_ratnibble.AbilityCooldown.Value: 28 → 24
+6746→6753 ability-data.ability_ratking_scrap_grenade.DamagePerShrapnel.Value: 65 → 70
+6746→6753 ability-data.ability_ratking_scrap_grenade.Upgrades[1].DamagePerShrapnel: 65 → 70
+6746→6753 ability-data.ability_ratking_standard_bearer.AbilityCooldown.Value: 130 → 160
+6746→6753 ability-data.ability_ratking_standard_bearer.AbilityDuration.Value: 12 → 10
+6746→6753 ability-data.ability_ratking_standard_bearer.AllyDamageReduction: 20 → 15
+6746→6753 ability-data.ability_ratking_standard_bearer.BonusMoveSpeed: {"Value": 3, "Scale": {"Value": 0.05, "Type": "spirit"}} → 3
+6746→6753 ability-data.ability_ratking_standard_bearer.Radius.Value: 24 → 20
+6746→6753 ability-data.ability_ratking_standard_bearer.Upgrades[0].AbilityCooldown: -20 → "<absent>"
+6746→6753 ability-data.ability_ratking_standard_bearer.Upgrades[0].BonusMoveSpeed: 1 → 2
+6746→6753 ability-data.ability_ratking_standard_bearer.Upgrades[1].AbilityDuration: 8 → "<absent>"
+6746→6753 ability-data.ability_ratking_standard_bearer.Upgrades[1].FlagDuration: 8 → 5
+6746→6753 ability-data.ability_ratking_standard_bearer.Upgrades[2].AllyDamageReduction: 15 → 10
+6746→6753 ability-cards.hero_magician.3.Info1.Alt[1].Value: 6.5 → 6
+6746→6753 ability-cards.hero_magician.3.Radius.Value: 6.5 → 6
+6746→6753 ability-cards.hero_magician.3.Upgrades[2].Radius: 3 → 2
+6746→6753 ability-cards.hero_magician.4.Info1.Main.Props[0].Value: 12 → 9
+6746→6753 ability-cards.hero_magician.4.Info1.Main.Props[1].Value: 40 → 60
+6746→6753 ability-cards.hero_ratking.1.Info1.Main.Props[0].Value: 65 → 70
+6746→6753 ability-cards.hero_ratking.1.Upgrades[1].DamagePerShrapnel: 65 → 70
+6746→6753 ability-cards.hero_ratking.2.AbilityCooldown.Value: 28 → 24
+6746→6753 ability-cards.hero_ratking.4.AbilityCooldown.Value: 130 → 160
+6746→6753 ability-cards.hero_ratking.4.AbilityDuration.Value: 12 → 10
+6746→6753 ability-cards.hero_ratking.4.Info1.Alt[0].Value: 24 → 20
+6746→6753 ability-cards.hero_ratking.4.Info1.Main.Props[0].Scale: {"Value": 0.05, "Type": "spirit"} → "<absent>"
+6746→6753 ability-cards.hero_ratking.4.Info1.Main.Props[1].Value: 20 → 15
+6746→6753 ability-cards.hero_ratking.4.Info2.Alt[1].Value: 24 → 20
+6746→6753 ability-cards.hero_ratking.4.Radius.Value: 24 → 20
+6746→6753 ability-cards.hero_ratking.4.Upgrades[0].AbilityCooldown: -20 → "<absent>"
+6746→6753 ability-cards.hero_ratking.4.Upgrades[0].BonusMoveSpeed: 1 → 2
+6746→6753 ability-cards.hero_ratking.4.Upgrades[1].AbilityDuration: 8 → "<absent>"
+6746→6753 ability-cards.hero_ratking.4.Upgrades[1].FlagDuration: 8 → 5
+6746→6753 ability-cards.hero_ratking.4.Upgrades[2].AllyDamageReduction: 15 → 10
+6737→6746 npc-data.trooper_base.Acceleration: 200 → 1000
+6737→6746 npc-data.trooper_base.StrafeSpeed: 0 → 3.81
+6737→6746 npc-data.trooper_medic.Acceleration: 200 → 1000
+6737→6746 npc-data.trooper_medic.StrafeSpeed: 0 → 3.81
+6737→6746 npc-data.trooper_melee.Acceleration: 200 → 1000
+6737→6746 npc-data.trooper_melee.StrafeSpeed: 0 → 3.81
+6737→6746 npc-data.trooper_normal.Acceleration: 200 → 1000
+6737→6746 npc-data.trooper_normal.StrafeSpeed: 0 → 3.81
+6737→6746 npc-data.trooper_zipline_container.Acceleration: 200 → 1000
+6737→6746 npc-data.trooper_zipline_container.StrafeSpeed: 0 → 3.81
+6746→6753 npc-data.trooper_base.Acceleration: 1000 → 200
+6746→6753 npc-data.trooper_medic.Acceleration: 1000 → 200
+6746→6753 npc-data.trooper_melee.Acceleration: 1000 → 200
+6746→6753 npc-data.trooper_normal.Acceleration: 1000 → 200
+6746→6753 npc-data.trooper_zipline_container.Acceleration: 1000 → 200
+6746→6753 convars.citadel_crosshair_pip_gap_collapse: "<absent>" → false
+6746→6753 convars.citadel_damage_report_ignore_neutral_subclass: {"value": 1, "description": "Treat all neutral damage as one attacker class bucket"} → "<absent>"
+6746→6753 convars.citadel_damage_report_ignore_trooper_subclass: {"value": 0, "description": "Treat all trooper damage as one attacker class bucket"} → "<absent>"
+6746→6753 convars.citadel_minimap_use_effects: false → "<absent>"
+6746→6753 convars.citadel_observer_max_dolly_level: 8 → {"value": 16, "description": "Number of increments along the zoom dolly"}
+6746→6753 convars.citadel_player_cam_toggle: "<absent>" → {"value": false, "description": "Player Cam buttons toggle the teammate view instead of showing it while held"}
+6746→6753 convars.citadel_subtitles_ally_abilities: "<absent>" → {"value": true, "description": "Show subtitles for ability and item voice lines from your hero and allies."}
+6746→6753 convars.citadel_subtitles_ally_conversations: "<absent>" → {"value": true, "description": "Show subtitles for conversations between your hero and allies."}
+6746→6753 convars.citadel_subtitles_ally_kills: "<absent>" → {"value": true, "description": "Show subtitles for kill, reaction, and match voice lines from your hero and allies."}
+6746→6753 convars.citadel_subtitles_ally_pings: "<absent>" → {"value": true, "description": "Show subtitles for ping and chat wheel voice lines from your hero and allies."}
+6746→6753 convars.citadel_subtitles_enemy_abilities: "<absent>" → {"value": true, "description": "Show subtitles for ability and item voice lines from enemies."}
+6746→6753 convars.citadel_subtitles_enemy_kills: "<absent>" → {"value": true, "description": "Show subtitles for kill, reaction, and match voice lines from enemies."}
+6746→6753 convars.citadel_subtitles_newscaster: "<absent>" → {"value": true, "description": "Show subtitles for the Newscaster."}
+6746→6753 convars.citadel_subtitles_patrons: "<absent>" → {"value": true, "description": "Show subtitles for the Patrons."}
+6746→6753 convars.citadel_subtitles_shopkeeper: "<absent>" → {"value": true, "description": "Show subtitles for the Shopkeeper and the Broker."}
+6746→6753 convars.citadel_subtitles_soul_urn: "<absent>" → {"value": true, "description": "Show subtitles for the Soul Urn."}
+6746→6753 convars.citadel_subtitles_speaker_names: "<absent>" → {"value": 0, "description": "How the HUD subtitles show who is speaking: 0 icon and name, 1 icon only, 2 name only. Speakers without an icon always get their name."}
+6746→6753 convars.citadel_unit_status_release_delay_time: "<absent>" → {"value": 5, "description": "Delay releasing unit status overlays back to the pool until after they've been hidden this long (seconds). <= 0 disables."}
+6737→6746 generic-data.StreetBrawl.m_iCorruptItemRound: 5 → 0
+6746→6753 generic-data.ResourceTypes.ResourceType_Blood: "<absent>" → {"CantCastOutOfResourceToken": "", "HUDSnippetName": "blood"}
+6746→6753 misc-data.citadel_breakable_prop_tough_crate.BreakDebrisSpeed: "<absent>" → 150.0
+6746→6753 misc-data.citadel_breakable_prop_wooden_crate.BreakDebrisSpeed: "<absent>" → 75.0

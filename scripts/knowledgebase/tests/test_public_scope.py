@@ -16,7 +16,7 @@ class PublicScopeTests(unittest.TestCase):
         registry = yaml.safe_load((ROOT / "sources/source-registry.yaml").read_text())
         official = [s for s in registry["sources"]
                     if s["id"].startswith(("valve.", "steam.news."))]
-        self.assertEqual(len(official), 3)
+        self.assertEqual(len(official), 4)
         for source in official:
             for key, value in source.items():
                 if key == "url" or key.endswith("_url"):
@@ -28,6 +28,7 @@ class PublicScopeTests(unittest.TestCase):
             "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=999",
             "https://github.com/SteamDatabase/GameTracking-Deadlock/",
             "https://github.com/unreviewed/source/",
+            "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/unreviewed",
             "https://store.steampowered.com/news/app/1422450/view/unreviewed?l=english",
             "https://store.steampowered.com.evil.example/news/app/1422450/view/703281025618281704?l=english",
         ):

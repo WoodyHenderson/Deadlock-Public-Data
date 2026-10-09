@@ -44,6 +44,7 @@ def allowed_source(url):
     if url in {
         "https://www.playdeadlock.com/cityneversleeps",
         "https://store.steampowered.com/news/app/1422450/view/703281025618281704?l=english",
+        "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656394833",
         "https://www.playdeadlock.com/public/javascript/react/414.js?contenthash=272d1d6072d261c17d87",
         "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1422450&count=100&maxlength=0",
     }:
