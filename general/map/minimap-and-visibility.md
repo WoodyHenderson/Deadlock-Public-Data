@@ -15,15 +15,18 @@ aliases:
   - text chat cooldown
   - ping cooldown
   - ping rate limit
-summary: What the minimap displays and the general actions that reveal a hero to the enemy team.
-snapshot_id: deadlock-wiki-2026-09-09
-current_as_of: "2026-09-09"
+summary: Minimap display, hero reveal rules, pings, and the evidence-limited Steam Vent concealment effect.
+snapshot_id: deadlock-data-mixed-2026-10-06
+current_as_of: "2026-10-06"
 evidence_status: needs_primary_verification
 sources:
   - wiki.minimap.89774
   - wiki.the-cursed-apple.125757
   - wiki.mechanics.110139
   - wiki.update.2026-09-09.145819
+  - valve.city-never-sleeps.2026-09-29
+  - wiki.update.2026-09-29.181123
+  - wiki.steam-vent.181310
 ---
 
 # Minimap and Visibility
@@ -83,6 +86,16 @@ in a row disables both text chat and pings for **10 seconds**. The note says thi
 was added after an exploit that could crash the game server. It does not specify
 the exact message-count/window threshold or other timer behavior. This is a dated
 update-note report, not an independently verified runtime test.
+
+## Steam Vents
+
+The September 29 wiki transcription reports the update note that standing on
+a Steam Vent provides invisibility and regeneration. A later wiki article
+additionally claims
+protection from hero-targeted abilities/items and gives specific regeneration
+values, but that article was marked Stub/Construction. Treat the exact numbers,
+targeting exceptions, reveal triggers, and interaction with tunnel vents as
+unverified; do not transfer those details to other invisibility effects.
 
 ## Evidence Limitation
 

@@ -1,13 +1,16 @@
 {
   "schema_version": 1,
   "id": "npc.sinners-sacrifice",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-04",
-  "evidence_status": "source_verified",
+  "snapshot_id": "deadlock-data-pre-rat-king-2026-10-01",
+  "current_as_of": "2026-10-01",
+  "evidence_status": "source_conflict",
   "sources": [
     "deadlock-api.npc-units.client-6684.source-10933105",
     "github.deadlock-data.npcs.311b2e8d895e",
-    "wiki.sinners-sacrifice.110087"
+    "wiki.sinners-sacrifice.110087",
+    "github.deadlock-data.gameplay.9830c72afd4e",
+    "github.deadlock-data.gameplay.0d46cdecfccf",
+    "wiki.update.2026-09-29.181123"
   ],
   "identity": {
     "name": "Sinner's Sacrifice",
@@ -31,6 +34,8 @@
   "field_sources": {
     "numeric_id": "deadlock-api.npc-units.client-6684.source-10933105:neutral_sinners_sacrifice.id",
     "gameplay_values": "github.deadlock-data.npcs.311b2e8d895e:neutral_sinners_sacrifice",
+    "post_update_config": "github.deadlock-data.gameplay.9830c72afd4e:neutral_sinners_sacrifice",
+    "patch_note_intent": "wiki.update.2026-09-29.181123",
     "behavior_context": "wiki.sinners-sacrifice.110087"
   },
   "classification_detail": "breakable_object",
@@ -51,11 +56,21 @@
     "respawn_after_clear": 300
   },
   "jackpot": {
-    "cycle_duration": 3.0,
-    "success_window": 1.3,
+    "timing_model": "variable (September 29 patch-note statement)",
+    "configured_minigame_fast_chance": 0.4,
+    "configured_minigame_fast_speed": 0.04191,
+    "exact_timing_distribution": "unknown",
+    "legacy_reference": {
+      "cycle_duration_seconds": 3.0,
+      "success_window_seconds": 1.3,
+      "source": "wiki.sinners-sacrifice.110087",
+      "status": "pre-update interpretation; do not assume current after the variable-timing note"
+    },
     "light_melee_permanent_buffs": 1,
     "heavy_melee_permanent_buffs": 4
   },
+  "post_update_evidence_note": "Client 6722 retains MaxHealth 500, GoldReward 155, and adds MiniGameFastChance 0.4 and MiniGameFastSpeed 0.04191. Do not equate the NPC GoldReward field with the existing 310-Soul internal base without a supported conversion.",
+  "placement_count_status": "source_conflict; client NPC records do not enumerate map sites or machines",
   "reward": {
     "internal_base_souls": 310,
     "growth_percent_of_base_per_minute": 1.08,

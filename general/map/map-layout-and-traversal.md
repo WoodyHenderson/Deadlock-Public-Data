@@ -13,14 +13,17 @@ aliases:
   - Midtown
   - dl_midtown
   - jungle
-summary: The standard map's major regions, lane organization, bases, and traversal systems.
-snapshot_id: deadlock-wiki-2026-09-03
-current_as_of: "2026-09-03"
-evidence_status: source_verified
+summary: The standard map's three lanes, off-lane districts, bases, and traversal systems.
+snapshot_id: deadlock-data-pre-rat-king-2026-10-01
+current_as_of: "2026-10-06"
+evidence_status: needs_primary_verification
 sources:
   - wiki.the-cursed-apple.125757
   - wiki.mechanics.110139
   - wiki.movement.78724
+  - valve.city-never-sleeps.2026-09-29
+  - github.deadlock-data.gameplay.9830c72afd4e
+  - wiki.map.181766
 ---
 
 # Map Layout and Traversal
@@ -53,10 +56,17 @@ per second. Four room turrets target enemies who enter.
 
 ## Off-Lane Areas
 
+The post-update map identifies four named off-lane districts—Theater,
+Chinatown, Haunted Lot, and Plaza—without changing the three-lane model. See
+[Off-Lane Districts and Landmarks](districts-and-landmarks.md) for the
+source-dated location guide and its geography/runtime caveats.
+
 Tunnels, alleys, buildings, and rooftops connect the lanes. The areas outside
-the lanes are commonly called the jungle and contain neutral camps. Breakable
-crates and Golden Statues are distributed throughout the map and can provide
-Souls or permanent stat bonuses.
+the lanes are commonly called the jungle and contain neutral camps, now
+player-facingly called Haunts. Ordinary crates, Tough Crates, and Buff
+Containers are distinct breakables distributed throughout the map; potential
+coordinate markers do not establish live availability. Buff Containers were
+formerly called Golden Statues and can provide permanent stat bonuses.
 
 Juke Rooms are marked dead-end spaces with a shadowed Cosmic Veil doorway. They
 provide concealment and cornering opportunities, but have only one entrance.
@@ -88,5 +98,9 @@ outside the current general-mechanics scope.
 Adapted from the pinned Deadlock Wiki revisions for
 [The Cursed Apple](https://deadlock.wiki/The_Cursed_Apple?oldid=125757),
 [Mechanics](https://deadlock.wiki/Mechanics?oldid=110139), and
-[Movement](https://deadlock.wiki/Movement?oldid=78724). The Movement page was
-marked under construction when curated.
+[Movement](https://deadlock.wiki/Movement?oldid=78724). District/building
+labels come from client 6722; the side/lane layout is described in the later
+[map article revision 181766](https://deadlock.wiki/The_Cursed_Apple?oldid=181766),
+which was marked under construction when checked. See the linked district guide
+for the date and runtime caveats. The Movement page was marked under
+construction when originally curated.

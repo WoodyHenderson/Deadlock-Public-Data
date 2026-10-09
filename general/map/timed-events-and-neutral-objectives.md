@@ -12,18 +12,29 @@ topics:
 aliases:
   - jungle camps
   - denizens
+  - Haunts
+  - Buff Containers
+  - Tough Crates
+  - Healing Snacks
+  - The Broker
   - map events
-summary: Neutral camps, recurring map events, their initial availability, and their general rewards.
-snapshot_id: deadlock-wiki-2026-09-16
-current_as_of: "2026-09-16"
+summary: Neutral Haunt camps, recurring map events, breakable types, and unresolved date/mode-specific mechanics.
+snapshot_id: deadlock-data-pre-rat-king-2026-10-01
+current_as_of: "2026-10-01"
 evidence_status: source_conflict
 sources:
   - wiki.the-cursed-apple.125757
   - wiki.mechanics.110139
   - wiki.neutral.125766
   - wiki.souls.157718
+  - wiki.update.2026-09-29.181123
+  - valve.city-never-sleeps.2026-09-29
   - github.deadlock-data.gameplay.fc4f540f12e0
   - github.deadlock-data.changelogs.raw.fc4f540f12e0
+  - github.deadlock-data.gameplay.9830c72afd4e
+  - github.deadlock-data.gameplay.527f1326b455
+  - github.deadlock-data.gameplay.3d26c988891f
+  - github.deadlock-data.gameplay.0d46cdecfccf
 ---
 
 # Timed Events and Neutral Objectives
@@ -36,42 +47,54 @@ times are stored in `data/map-timings.yaml`.
 | Time | Event |
 | --- | --- |
 | 0:00 | Mid-Boss is present in the central underground area. |
-| 2:00 | Small neutral camps spawn. |
-| 3:00 | Base Soul Wells activate; regular crates and Tier 1 Golden Statues spawn. |
-| 5:00 | Underground-tunnel breakables spawn; their respawn interval is 5 minutes. Medium neutral camps and temporary powerups also spawn. |
-| 8:00 | Large neutral camps and Sinner's Sacrifice locations spawn. |
-| 10:00 | Soul Urn cycle begins; Tier 2 Golden Statues and mid-boxes spawn. Mid-boxes respawn after 3 minutes. |
+| 2:00 | Small Haunt camps spawn. |
+| 3:00 | Base Soul Wells activate; regular crates, Tough Crates, Healing Snacks, and Tier 1 Buff Containers have a configured initial spawn/delay of 180 seconds. |
+| 5:00 | Medium Haunt camps and temporary powerups spawn. Client 6731's second breakable schedule descriptor is 300/300 seconds; its tunnel mapping is carried forward from the September 16 patch-note comparison but remains a candidate after the client-6722 discrepancy. |
+| 8:00 | Large Haunt camps and Sinner's Sacrifice locations spawn. |
+| 10:00 | Soul Urn cycle begins; Tier 2 Buff Containers and mid-boxes spawn. Mid-boxes respawn after 3 minutes. |
 | about 11:00 | First Unstable Rift appears, subject to a random timing window and contest setup. |
 | 12:00 | Lane Guardians reach their minimum timed damage resistance. |
 | 18:00 | Walkers reach their minimum timed damage resistance. |
 | 20:00 | Trooper wave interval changes from 30 seconds to 25 seconds. |
-| 30:00 | Golden Statues upgrade to Tier 3. |
+| 30:00 | Buff Containers use their Tier 3 configured reward pool. |
 | 35:00 | Trooper wave interval changes to 20 seconds and Troopers gain 50% maximum health. |
 
-## Neutral Camps
+## Haunt Camps
 
-Neutral units belong to neither team and attack when provoked. A neutral's Soul
+The September 29 update uses **Haunts** as the player-facing name for neutral
+camps. Client datasets retain `neutral_*` internal keys; that naming does not
+prove every key is placed in a match. Valve's announcement names Specimen,
+Gutter Ghoul, Barrel Mimic, Past Dues, Stage Hands, Crabbage Pot, Festival
+Spirit, Shrooms, and Underhands. Exact family-to-camp composition and placement
+are not derived from the unit-key inventory.
+
+Haunt units belong to neither team and attack when provoked. A unit's Soul
 bounty is shared equally among allied players who damaged it, and the reward is
-Unsecured Souls. Neutrals do not release Soul Orbs.
+Unsecured Souls. Haunts do not release Soul Orbs.
 
-| Camp | First spawn | Respawn after full clear | Minimap mark |
+| Camp tier | First spawn | Respawn after full clear | Minimap mark |
 | --- | --- | --- | --- |
 | Small | 2:00 | 1:25 | Triangle with no line |
 | Medium | 5:00 | 4:50 | Triangle with one line |
 | Large | 8:00 | 5:35 | Triangle with two lines |
 
-The respawn timer starts when the last unit in the camp is killed. Neutral
+The respawn timer starts when the last unit in the camp is killed. Haunt
 health increases by 2.1% per minute and damage by 0.5% per minute. Larger
-neutrals have higher base bounties. Large neutrals take 20% less melee damage,
-but the wiki notes that this behavior conflicts with the wording of the patch
-that introduced it and should receive primary verification.
+Haunts have higher base bounties. Large neutrals take 20% less melee damage in
+an older wiki interpretation, but that behavior conflicts with the wording of
+the earlier patch that introduced it. The strong neutral tier's
+`MELEE_RESIST_REDUCTION` field is absent from client 6722; field removal alone
+does not prove the runtime rule was removed. Keep the melee interaction
+unresolved pending direct verification.
 
 ## Mid-Boss and Rejuvenator
 
-The Mid-Boss is a durable central neutral with a continuously regenerating
-shield. It generally requires coordinated damage from multiple heroes. Its
-initial respawn delay is seven minutes after defeat, then six minutes after the
-next defeat, and five minutes after subsequent defeats.
+The Mid-Boss is a durable central neutral with a shield. Its initial respawn
+delay is seven minutes after defeat, then six minutes after the next defeat,
+and five minutes after subsequent defeats. Shield-absorption fields are absent
+from the client-6722 NPC record, then present in clients 6726 and 6731 at 35
+absorption per second plus 5 per game minute. This is structured-data history,
+not independent runtime verification.
 
 Defeating it drops the Rejuvenator crystal. The crystal must be claimed with
 three heavy melee hits. Each successful claim hit grants the team a revive
@@ -91,10 +114,50 @@ Stamina, +10% Dash Distance, +25% Stamina Regen, and 100% Slow Resistance. A
 trailing-team courier can also receive conditional Bullet, Spirit, and Debuff
 Resistance and Sprint Speed bonuses based on the team's Soul deficit.
 
-Depositing it releases Soul Orbs and grants four random permanent Golden Statue
-buffs. Opponents can deny the released orbs, while teammates can confirm them to
-share the bounty. Exact carrying bonuses and Golden Statue buff tiers are
-canonical in `objectives/soul-urn/soul-urn.yaml`.
+Depositing it releases Soul Orbs and grants four random permanent buffs.
+Opponents can deny the released orbs, while teammates can confirm them to share
+the bounty. The September 29 update renames Golden Statues to **Buff
+Containers** and adds Bullet Resist, Spirit Resist, Ability Range, and Move
+Speed categories. Client 6722 records those values in three match-time tiers;
+Ability Range's Tier 1 record also contains a radius modifier, while Tiers 2
+and 3 do not. Raw values and relative loot weights are in
+`data/map-timings.yaml`; their selection/normalization semantics remain
+unresolved, so do not treat them as unconditional independent drop odds.
+
+## Sinner's Sacrifice timing
+
+The September 29 wiki transcription reports the update note that the Sinner
+bonus timing is now variable. Client 6722 adds `MiniGameFastChance: 0.4` and
+`MiniGameFastSpeed: 0.04191`, but those configuration fields do not specify the
+new timing distribution or a changed Souls reward. The older fixed timing
+interpretation is retained only as a pre-update reference in
+`npcs/sinners-sacrifice/sinners-sacrifice.yaml`. Machine/site counts and whether
+Haunts must also be cleared remain unresolved.
+
+## New Breakables and The Broker
+
+Client 6722 configures **Tough Crates** for one heavy-melee hit, with a 180
+second initial spawn/respawn and a guaranteed configured `big_gold_pickup` drop.
+The pickup record exposes `GoldAmount: 46` and `GoldPerMinuteAmount: 4`; those
+fields are preserved separately, without an inferred reward formula. **Healing
+Snacks** have a configured 180 second spawn delay/respawn, 4 second regen
+duration, and a 10% maximum-health regen field. The final heal amount and live
+location availability remain unverified. These object types are distinct from
+ordinary crates and Buff Containers.
+
+Clients 6722 and 6731 configure the Broker shop as enabled, with a one-item
+stock, an 1800 second base opening time with 120 seconds of variance, and a 900
+second restock interval; the bonus and penalty variance fields are 15%.
+Configuration alone does not establish live shop availability by mode/date,
+prices, or exact opening/exit conditions. October 2 and later changes are
+outside this snapshot. The September 29 wiki transcription reports the update
+note that Street Brawl grants one corrupted item after the Round 5 draft. Client 6726
+adds `CorruptedUpgrades` fields to 95 item records plus 11 penalty definitions;
+see `data/corrupted-items.yaml`. Client 6726 also sets Street Brawl's buy-time
+vector to `[50, 50, 50, 50, 65]` seconds, with the configured corrupted-item
+round at Round 5. The Round 5 buy time was 50 seconds in client 6722. Item
+variant data, penalty rolls, shop availability, and mode eligibility remain
+separate questions.
 
 ## Powerups
 
@@ -122,4 +185,8 @@ Adapted from the pinned Deadlock Wiki revisions for
 [The Cursed Apple](https://deadlock.wiki/The_Cursed_Apple?oldid=125757),
 [Mechanics](https://deadlock.wiki/Mechanics?oldid=110139),
 [Neutral](https://deadlock.wiki/Neutral?oldid=125766), and
-[Souls](https://deadlock.wiki/Souls?oldid=157718), and the September 16 client gameplay data and changelog.
+[Souls](https://deadlock.wiki/Souls?oldid=157718), the September 29 Valve
+announcement and update transcription, and client data through 6731. No raw
+September 29 or September 30 changelog is present in the pinned archive. The
+September 30 wiki update is labeled UI/settings-only; client-data differences
+are separately classified in the chronological review.

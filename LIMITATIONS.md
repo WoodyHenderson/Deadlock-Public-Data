@@ -47,6 +47,26 @@ These identifiers name unresolved issues documented here, not an external or
 missing review database. Other field-level uncertainty labels must also be
 preserved by consumers.
 
+## City Never Sleeps boundary
+
+The scoped September 29–October 1 refresh stops at client 6731, before the
+October 2 Rat King release. It does not advance hero/item rosters or the root
+September 3 baseline. Client fields are configuration, official announcements
+are patch intent, and later wiki geography is labeled interpretation.
+
+Still unresolved: Haunt family-to-camp composition and placements; Sinner
+machine/site counts, reward conversion, hybrid-camp clear rules and variable
+jackpot timing distribution; anonymous breakable-group mapping; Healing Snack
+heal amount; Buff Container selection/stacking semantics; exact Steam Vent
+interactions; and Broker availability, prices and eligibility by date/mode.
+The corrupted-item sidecar is not a list of currently purchasable variants.
+No October 2 Broker disablement or later release/mode changes are included.
+
+The separate October 6 coordinate snapshot is unchanged. It is not used to
+assert exact September 29 placements. No raw September 29/30 changelog was
+available in the pinned archive; the [pre-release review](patches/2026-09-29-city-never-sleeps-pre-rat-king-review.md)
+is a curated summary, not a fabricated raw patch file.
+
 ## Burst timing boundary
 
 [Baseline burst profiles](general/combat/burst-weapons.md) reproduce the versioned
