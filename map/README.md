@@ -28,6 +28,11 @@ not supplied by the inspected sources; **the placements and difficulty tiers
 are available**, not broadly unresolved. October 6 wiki differences are dated
 separately, and the original coordinate snapshot is unchanged.
 
+See [map interactions and the remaining placement audit](../general/map/map-interactions-and-open-questions.md)
+for sourced object behavior and what evidence is still needed to update individual
+Theater/basketball-area markers. The coordinate payload was validated, not
+refreshed from a newer export in this pass.
+
 ## Find what you need
 
 - [Breakable counts by named area](breakable-zones.yaml): best first read for “where are the most Tough Crates?” Counts are **potential map markers**, not currently available loot. `crates` means ordinary wooden crates; `tough_crates` require heavy melee; `statues` means Buff Containers (old name Golden Statues).

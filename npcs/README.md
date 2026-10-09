@@ -4,6 +4,18 @@ This directory contains normalized, calculation-ready records for gameplay NPCs
 and NPC-backed structures in standard mode. `roster.yaml` is the authoritative
 inclusion and exclusion manifest.
 
+## Scoped map refresh
+
+The small/medium/large neutral records are shared Haunt tier baselines, not
+per-family or per-camp rosters. Their core fields and Mid-Boss combat fields are
+cross-checked to client 6731; API identity, explicitly legacy values and some
+wiki behavior retain older pins. Sinner composition/reward context is separately
+pinned. Read each field's source and uncertainty status; missing weakpoint or
+melee-resistance fields do not establish runtime removal. See the
+[map-interaction review](../general/map/map-interactions-and-open-questions.md)
+and [composition guide](../general/map/haunt-camps-and-sinner-sites.md).
+Unrelated NPCs and the root baseline have not advanced.
+
 ## Record contract
 
 Each record provides:

@@ -8,6 +8,96 @@ snapshot:
   excludes_media: true
 
 sources:
+  - id: wiki.steam-vent.177398
+    title: Steam Vent — pre-release interactions
+    url: "https://deadlock.wiki/Steam_Vent"
+    revision_url: "https://deadlock.wiki/Steam_Vent?oldid=177398"
+    revision_id: 177398
+    last_modified: "2026-10-01T14:37:47Z"
+    accessed_at: "2026-10-08"
+    wikitext_sha256: a4d63bf04bafcfdadbcd47bc04abc37a93a993d3802398cab910c409c4222c28
+    scope: Concealment, reveal conditions, targeted-item restrictions and displayed regeneration notation; marked Stub/Construction, not independently runtime-tested.
+
+  - id: wiki.healing-snack.177162
+    title: Healing Snack — pre-release timing and healing
+    url: "https://deadlock.wiki/Healing_Snack"
+    revision_url: "https://deadlock.wiki/Healing_Snack?oldid=177162"
+    revision_id: 177162
+    last_modified: "2026-09-30T23:44:03Z"
+    accessed_at: "2026-10-08"
+    wikitext_sha256: ab6a5c175bf5fa5d2eadea89ffd7a932ee4bfec252b5cb6c585168906dec82bc
+    scope: Explicit three-minute spawn/respawn, proximity pickup and ten-percent max-health healing over four seconds; agrees with pinned pre-release configuration.
+
+  - id: wiki.healing-snack.181344
+    title: Healing Snack — later timing comparison
+    url: "https://deadlock.wiki/Healing_Snack"
+    revision_url: "https://deadlock.wiki/Healing_Snack?oldid=181344"
+    revision_id: 181344
+    last_modified: "2026-10-04T22:34:31Z"
+    accessed_at: "2026-10-08"
+    wikitext_sha256: 3eec89903a350bf87ccee0d42f3e5a120532cd6ebb8636429d2adac4d55a698c
+    scope: Later prose says 2m30 initial spawn and 20 percent healing in Street Brawl; not backdated or evidence of when a runtime change occurred.
+
+  - id: wiki.crate.177311
+    title: Crate — pre-release ordinary and Tough Crate interactions
+    url: "https://deadlock.wiki/Crate"
+    revision_url: "https://deadlock.wiki/Crate?oldid=177311"
+    revision_id: 177311
+    last_modified: "2026-10-01T07:26:06Z"
+    accessed_at: "2026-10-08"
+    wikitext_sha256: 00b5a0a649dd5e61289282a9a5e2c103a8632d065c6b5819705398d1ba2bd0be
+    scope: Break methods, uncollected reward respawn delay, Tough Crate exception and explicit descriptor-to-area template bindings. The page's 518-crate count does not override the separately scoped map-marker inventory.
+
+  - id: wiki.buff-container.177257
+    title: Buff Container — pre-release drop and pickup behavior
+    url: "https://deadlock.wiki/Buff_Container"
+    revision_url: "https://deadlock.wiki/Buff_Container?oldid=177257"
+    revision_id: 177257
+    last_modified: "2026-10-01T04:40:41Z"
+    accessed_at: "2026-10-08"
+    wikitext_sha256: b1058050b1906c529bc0b238a299c6d1515cf6f02f5d5dadcac0259335e21382
+    scope: Fifty-percent drop chance, permanent pickup, uncollected-buff respawn delay and generated-buff accounting; no independently verified random-selection algorithm.
+
+  - id: wiki.permanent-buff.161283
+    title: Permanent Buff — duration, tiers and sources
+    url: "https://deadlock.wiki/Permanent_Buff"
+    revision_url: "https://deadlock.wiki/Permanent_Buff?oldid=161283"
+    revision_id: 161283
+    last_modified: "2026-09-30T16:59:44Z"
+    accessed_at: "2026-10-08"
+    wikitext_sha256: 641d1702d6b9769b3ad93f95b5c67c12265a6b938553cd6416c11fec1df01961
+    scope: Buffs persist through death; 0/10/30-minute levels and stated pickup sources. Live-transcluded item data is not imported.
+
+  - id: wiki.permanent-buffs.161111
+    title: Permanent buffs template — selection interpretation
+    url: "https://deadlock.wiki/Template:Permanent_buffs"
+    revision_url: "https://deadlock.wiki/Template:Permanent_buffs?oldid=161111"
+    revision_id: 161111
+    last_modified: "2026-09-30T16:06:55Z"
+    accessed_at: "2026-10-08"
+    wikitext_sha256: cb2b5040f0be84d5e8459de0d400eb143bef53c4360747c99f0a251c0d2eb966
+    scope: Pseudo-random/all-source accounting prose, movement-unit conversion and template bindings only; numeric values come from pinned client data, not live transclusion.
+
+  - id: wiki.souls-value-table.177401
+    title: SoulsValueTable — pre-release breakable reward model
+    url: "https://deadlock.wiki/Template:SoulsValueTable"
+    revision_url: "https://deadlock.wiki/Template:SoulsValueTable?oldid=177401"
+    revision_id: 177401
+    last_modified: "2026-10-01T14:40:31Z"
+    accessed_at: "2026-10-08"
+    wikitext_sha256: 438c268380bf1d50f1fa63a4ea31a6ff4016469b427350d315eb3c980a3ae2d8
+    scope: Literal ordinary-crate 23/+2 and Tough Crate 46/+4 per-minute fields with floor display rounding and 60/100-percent drops; Sinner GoldReward-times-two binding. Table presentation is not an engine rounding test.
+
+  - id: wiki.broker.177584
+    title: The Broker — pre-release shop and corruption descriptions
+    url: "https://deadlock.wiki/The_Broker"
+    revision_url: "https://deadlock.wiki/The_Broker?oldid=177584"
+    revision_id: 177584
+    last_modified: "2026-10-01T22:17:17Z"
+    accessed_at: "2026-10-08"
+    wikitext_sha256: 1620ad591d5bc159899dc0d6a128edcbf16b42e25df419773bb6eb2e866eddd8
+    scope: Temporary vendor near each Blue-lane Walker, approximate opening cadence and wiki roll restrictions. Scheduled departure is not evidence of actual October 2 disablement; shop prices and exact mode gating remain unresolved.
+
   - id: wiki.haunt.177431
     title: Haunt — pre-Rat King camp composition and family tiers
     url: "https://deadlock.wiki/Haunt"
@@ -36,7 +126,7 @@ sources:
     last_modified: "2026-10-01T21:58:24Z"
     accessed_at: "2026-10-08"
     wikitext_sha256: 4cba6e5eb4fde866c4f5c3b6b28f9d77ba86d88be374b0255cd2833e71133b85
-    scope: Explicit 15 machines/11 sites, four composition patterns and the hybrid clear rule; does not supply a named-location family roster. Only composition/clear prose imported, not unrelated reward/jackpot claims or live template values.
+    scope: Explicit 15 machines/11 sites, four composition patterns and the hybrid clear rule; does not supply a named-location family roster. Composition/clear prose, reward conversion/payout interpretation and pre-release jackpot description reviewed; contradictions are retained. Numeric template bindings are paired with pinned client fields, not live values.
 
   - id: valve.city-never-sleeps.2026-09-29
     title: Valve City Never Sleeps official announcement
@@ -86,7 +176,7 @@ sources:
     last_modified: "2026-10-06T05:46:50Z"
     accessed_at: "2026-10-08"
     wikitext_sha256: 935b3ad7eacccda444ad0b7d77556c8dc82de484d00189bcb077c771bbec3abd
-    scope: Later named-landmark context for Bell Tower and Sunken Plaza; agrees with the October 1 Sinner counts and configuration patterns. Does not give a complete per-location Haunt family/unit roster; unrelated jackpot/reward changes are not imported.
+    scope: Later named-landmark context for Bell Tower and Sunken Plaza; agrees with the October 1 Sinner counts and configuration patterns. Does not give a complete per-location Haunt family/unit roster. The later two-speed jackpot description is recorded separately from pre-release evidence; exact timing and hit-count contradictions are not silently resolved.
 
   - id: wiki.steam-vent.181310
     title: Steam Vent

@@ -27,6 +27,7 @@ sources:
   - valve.city-never-sleeps.2026-09-29
   - wiki.update.2026-09-29.181123
   - wiki.steam-vent.181310
+  - wiki.steam-vent.177398
 ---
 
 # Minimap and Visibility
@@ -89,13 +90,16 @@ update-note report, not an independently verified runtime test.
 
 ## Steam Vents
 
-The September 29 wiki transcription reports the update note that standing on
-a Steam Vent provides invisibility and regeneration. A later wiki article
-additionally claims
-protection from hero-targeted abilities/items and gives specific regeneration
-values, but that article was marked Stub/Construction. Treat the exact numbers,
-targeting exceptions, reveal triggers, and interaction with tunnel vents as
-unverified; do not transfer those details to other invisibility effects.
+The September 29 update note reports concealment and regeneration in Steam
+Vents. The pinned October 1 article describes protection from hero-targeted
+abilities/items (not untargeted damage), visibility to allies, and reveal on
+receiving damage/effects, applying damage/effects to an enemy hero, or an enemy
+entering the vent. These are usable wiki-described rules, not independent
+runtime tests; the article is marked Stub/Construction.
+
+See [map interactions](map-interactions-and-open-questions.md#steam-vents) for
+the regeneration notation and remaining scaling uncertainty. Do not transfer
+Steam Vent rules to tunnel entrances or other invisibility effects.
 
 ## Evidence Limitation
 

@@ -60,12 +60,21 @@ adds pinned October 1 wiki family tiers, ordinary-camp patterns, 15 machines at
 11 sites, four Sinner configurations, and the hybrid clear rule. Machine-name
 groups are derived from the map, not independent runtime camp membership.
 
-Still unresolved: exact family/unit assignments at each named Haunt/hybrid
-camp and the wiki's six unenumerated medium-camp combinations; Sinner reward
-conversion and variable jackpot timing distribution; anonymous breakable-group
-mapping; Healing Snack
-heal amount; Buff Container selection/stacking semantics; exact Steam Vent
-interactions; and Broker availability, prices and eligibility by date/mode.
+The [map-interaction review](general/map/map-interactions-and-open-questions.md)
+now adds source-dated Haunt attacks, Steam Vent concealment/reveal rules, 10%
+max-health snack healing over four seconds, explicit crate reward models,
+permanent-buff selection descriptions, and the Sinner GoldReward-times-two
+conversion. October 1 wiki bindings support breakable categories 1–3. Canonical
+neutral tier and Mid-Boss combat fields are cross-checked to client 6731; absent
+weakpoint/melee-resistance fields are not treated as proof of runtime removal.
+
+Still unresolved: exact family/unit assignments at each named Haunt/hybrid camp;
+the six medium combinations; engine vent scaling; Sinner cycle lengths,
+final-hit handling and exact payout rounding; descriptor 4 and the intermediate
+tunnel schedule discrepancy; exact buff-selection/stacking; and Broker prices,
+mode gating and eligibility implementation. The later snack timing's effective
+date is not established. A fresh authorized marker export or verified before/after
+coordinates is still needed for the Theater/basketball-area placement re-audit.
 The corrupted-item sidecar is not a list of currently purchasable variants.
 No October 2 Broker disablement or later release/mode changes are included.
 

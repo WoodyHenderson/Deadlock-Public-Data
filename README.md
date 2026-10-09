@@ -37,6 +37,12 @@ pinned pre-release wiki family tiers, camp patterns, and Sinner configurations
 (15 machines/11 sites), tied to the existing map-marker inventory. Later wiki
 differences are explicit; exact family/unit assignments at every named camp
 remain incomplete rather than being inferred.
+The [map-interaction pass](general/map/map-interactions-and-open-questions.md)
+adds source-dated family attacks, vent rules, snack healing, breakable rewards,
+buff selection and Sinner reward/jackpot interpretations. Three neutral tier
+baselines and Mid-Boss combat fields are cross-checked to client 6731 without
+advancing unrelated NPCs or the root baseline. Remaining conflicts and the
+uncompleted placement re-audit are listed in that guide.
 
 ## Contents
 
@@ -135,6 +141,17 @@ python scripts/knowledgebase/sync_corrupted_items.py \
 ```
 
 Remove `--check` only to regenerate that sidecar from the same pinned inputs.
+To reproduce the read-only NPC, breakable, snack and ten-category buff cross-check,
+provide the three client-6731 files (hashes are verified against the registry):
+
+```sh
+python scripts/knowledgebase/check_map_client.py \
+  --npc-data /path/to/client-6731/npc-data.json \
+  --misc-data /path/to/client-6731/misc-data.json \
+  --generic-data /path/to/client-6731/generic-data.json
+```
+
+This checks configured values, not independent runtime behavior or wiki claims.
 Future updates should pin sources, retain prior evidence, review changes, and
 regenerate the affected records and index together.
 

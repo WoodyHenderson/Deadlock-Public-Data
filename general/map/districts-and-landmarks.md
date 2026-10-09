@@ -55,9 +55,11 @@ It distinguishes known map markers from missing per-location family/unit assignm
 - Valve identifies the Theater and Haunted Lot basketball court as update
   features. Entrances, roof access, and exact court composition come from the
   later map article, not the announcement.
-- Steam Vents are described in the update notes as granting invisibility and
-  regeneration while standing on them. Exact regeneration, targetability edge
-  cases, and placements are not established here.
+- Steam Vents are described in the update notes as granting concealment and
+  regeneration. The [map-interaction guide](map-interactions-and-open-questions.md)
+  adds pinned wiki targeting/reveal rules and explains the remaining regeneration
+  scaling uncertainty; the [coordinate layer](../../map/coordinates/vents.yaml)
+  already supplies separately dated vent placements.
 
 ## Source notes
 

@@ -61,6 +61,7 @@ historical values as current facts.
 | Trooper waves, Super Troopers | [Troopers](general/map/troopers-and-lane-pressure.md); troop NPC below |
 | Spawn times, Haunts, camps, Mid-Boss, Urn, powerups, Rift, Tough Crates, Healing Snacks, Buff Containers, The Broker | [Timed events](general/map/timed-events-and-neutral-objectives.md); [timings](data/map-timings.yaml); entity below |
 | Camp composition, Haunt families, Barrel Mimic, Past Dues, Festival Spirit, Slum Shroom, Crabbage Pot, Stage Hand, Specimen, Gutter Ghoul, Underhand, Sinner sites, hybrid camps | [Camp compositions and Sinner sites](general/map/haunt-camps-and-sinner-sites.md); [structured patterns and marker groups](data/haunt-camp-compositions.yaml) |
+| Haunt attacks, parry, Steam Vent reveal, Healing Snack heal amount, Tough Crate reward, Buff Container drop selection, Sinner jackpot | [Map interactions and open questions](general/map/map-interactions-and-open-questions.md); [structured behavior](data/map-interactions.yaml) |
 | Corrupted item variant fields | [Dated variant data](data/corrupted-items.yaml); configured fields do not establish mode/date availability |
 | Sources, citations, versions | [Source registry](sources/source-registry.yaml); [attribution](ATTRIBUTION.md) |
 | Explicit request for patch notes or change history | [Archive policy](patches/README.md); [manifest](patches/manifest.yaml) |

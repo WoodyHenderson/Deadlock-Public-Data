@@ -8,6 +8,9 @@ sources:
   - wiki.neutral.125766
   - wiki.trooper.114174
   - wiki.sinners-sacrifice.177553
+  - wiki.healing-snack.177162
+  - wiki.crate.177311
+  - wiki.souls-value-table.177401
   - github.deadlock-data.gameplay.fc4f540f12e0
   - github.deadlock-data.changelogs.raw.fc4f540f12e0
   - valve.city-never-sleeps.2026-09-29
@@ -56,9 +59,10 @@ events:
     evidence_status: source_verified_configuration_not_runtime_tested
     source: github.deadlock-data.gameplay.9830c72afd4e
     note: >-
-      These are separate from ordinary crates and Buff Containers. The two gold
-      pickup fields are preserved verbatim and are not combined into a derived
-      per-match reward formula.
+      Separate from ordinary crates and Buff Containers. The pinned October 1
+      Souls table explicitly supports a 46-base plus 4-per-match-minute reward
+      model; see data/map-interactions.yaml for provenance and table-vs-engine
+      rounding limits. Raw client fields remain preserved beside that model.
 
   - id: breakables.healing-snack
     spawn_delay: 180
@@ -66,17 +70,21 @@ events:
     linked_pickup: citadel_pickup_health_float_in_world
     configured_regen_duration: 4
     configured_regen_max_health_percent: 10
-    amount_formula: unresolved
-    evidence_status: source_verified_configuration_not_runtime_tested
+    amount_formula: ten_percent_max_health_total_over_four_seconds
+    behavior_source: wiki.healing-snack.177162
+    evidence_status: pre_release_wiki_and_client_agree
     source: github.deadlock-data.gameplay.9830c72afd4e
     note: >-
-      The pickup configuration does not justify deriving an exact heal amount,
-      per-second rate, or live availability at a particular map location.
+      The September 30 wiki explicitly reports 10 percent max health over 4
+      seconds and 180-second spawn/respawn, agreeing with the pre-release fields.
+      Later wiki 150-second initial spawn is a separately dated comparison in
+      data/map-interactions.yaml, not an October 1 replacement or a live-location claim.
 
   - id: breakables.underground-tunnels
     starts_at: 300
     respawn_after_destroyed: 300
-    evidence_status: source_verified_value_with_intermediate_group_discrepancy
+    evidence_status: source_verified_wiki_mapping_with_intermediate_value_discrepancy
+    mapping_source: wiki.crate.177311
     source_group_index: 2
     observations:
       - client: 6722
@@ -92,11 +100,11 @@ events:
         respawn_interval: 300
         source: github.deadlock-data.gameplay.0d46cdecfccf
     note: >-
-      The September 16 notes map the second descriptor to underground-tunnel
-      breakables. Client 6722 changes that descriptor to 180/180; client 6723
-      restores 300/300, which remains through client 6731. The later field value
-      is direct, but the client data does not name the group; retain the older
-      mapping as a candidate and do not generalize it to other breakables.
+      The September 16 notes and October 1 wiki template bindings map the second
+      descriptor to underground-tunnel breakables. Client 6722 changes that
+      descriptor to 180/180; client 6723 restores 300/300 through client 6731.
+      The wiki mapping supports the category, not the cause of the intermediate
+      discrepancy, every coordinate marker's group number, or other breakables.
 
   - id: breakables.unmapped-group-4
     starts_at: 300
@@ -272,6 +280,8 @@ neutral_scaling:
   sharing: equal_among_allied_damagers
 
 # Legacy data key retained; the September 29 player-facing name is Buff Container.
+# starts_at is container availability, not the earliest buff level from all sources.
+golden_statue_buffs_source: github.deadlock-data.gameplay.0d46cdecfccf
 golden_statue_buffs:
   - tier: 1
     starts_at: 180
@@ -333,6 +343,7 @@ buff_container_additional_buffs:
     loot_pool:
       deck_size: 3
       exact_selection_semantics: unresolved
+      wiki_selection_description_record: data/map-interactions.yaml
       weights_by_match_minute:
         0:
           spirit_permanent_pickup: 1.0

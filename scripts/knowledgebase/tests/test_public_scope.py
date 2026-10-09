@@ -53,7 +53,10 @@ class PublicScopeTests(unittest.TestCase):
         self.assertEqual(jackpot["legacy_reference"]["cycle_duration_seconds"], 3.0)
         self.assertNotIn("cycle_duration", jackpot)
         self.assertEqual(sinner["reward"]["internal_base_souls"], 310)
-        self.assertIn("Do not equate", sinner["post_update_evidence_note"])
+        reward = sinner["reward"]
+        self.assertEqual(reward["raw_client_gold_reward"] * reward["wiki_conversion_multiplier"], 310)
+        self.assertEqual(reward["conversion_source"], "wiki.sinners-sacrifice.177553")
+        self.assertIn("not established as the success window", sinner["post_update_evidence_note"])
 
 
 if __name__ == "__main__":

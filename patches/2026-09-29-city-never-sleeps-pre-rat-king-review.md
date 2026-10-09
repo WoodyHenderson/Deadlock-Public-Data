@@ -56,15 +56,16 @@ named conditions.
 | --- | --- | --- |
 | Sep 25 client 6701 → Sep 29 client 6712/6722 | District/building labels; 42 new `neutral_*` family/tier keys and `citadel_basketball`; 11 prior NPC/helper keys removed; Tough Crate and Healing Snack records; ten Buff Container categories with 0/10/30-minute tiers; Sinner mini-game fields; Broker/convar configuration and corruption penalties. | Retain direct fields with their pins. NPC keys do not enumerate placed camps. Distinguish ordinary crates, Tough Crates, and Buff Containers. Do not treat a zero-filled price table as a shop price or a config as live availability. |
 | Sep 29 client 6712 → 6722 | `MapDistrictLocalization` grows from 18 to 20 entries; other reviewed gameplay datasets match. | Additional labels only; no lane, route, or placement inference. |
-| Sep 30 client 6723 | The four-entry breakable schedule's second descriptor changes from 180/180 to 300/300 seconds. Many NPC `WeaponInfos` → `Weapon` and hero/weapon/DPS fields appear together; one Venator trap field (`UntargetableModifier`, `IgnoredByNpcTargeting`) appears. | Record the schedule sequence, but keep the descriptor-to-breakable mapping provisional. Broad schema/export additions are not evidence that all hero/NPC stats changed at once. The trap field is direct configuration, not a player-targetability or runtime test. The trap field is not used to infer broader targeting mechanics. |
+| Sep 30 client 6723 | The four-entry breakable schedule's second descriptor changes from 180/180 to 300/300 seconds. Many NPC `WeaponInfos` → `Weapon` and hero/weapon/DPS fields appear together; one Venator trap field (`UntargetableModifier`, `IgnoredByNpcTargeting`) appears. | Record the schedule sequence; the October 1 wiki bindings identify descriptors 1–3, while descriptor 4 and the intermediate timing's explanation remain unresolved. Broad schema/export additions are not evidence that all hero/NPC stats changed at once. The trap field is direct configuration, not a player-targetability or runtime test. The trap field is not used to infer broader targeting mechanics. |
 | Sep 30 client 6726 | `CorruptedUpgrades` appears on 95 item records and 11 penalty definitions are present; FireRate penalty tiers change from -20/-25 to -25/-30; Street Brawl Round 5 buy time changes from 50 to 65 seconds; Mid-Boss `ShieldLogic` is present at base absorption 35/second plus 5 per game minute; four tier-2 boss variants gain `SpawnOnGround: true`; internal `ability_digger_entertunnel` gains `BehaviorCannotCancelDuringChannel`. | The item-specific variant fields and penalty definitions are stored separately in `data/corrupted-items.yaml`. Do not infer availability by mode/date or combine variant bonuses with penalty rolls. Treat NPC spawn flags as configured fields, not proof of a changed live spawn. The internal tunnel ability is not assigned to the released roster. |
-| Oct 1 clients 6728, 6730, 6731 | Client 6728 changes boss range-ring alpha, health/name-bar layout settings, photo-mode/ping/subtitle settings, text corrections, and a stat metadata field. Clients 6730 and 6731 change damage-indicator decay (0.5→0.3 seconds) and reporter polling interval (15→5), respectively. | Presentation, settings, copy, and telemetry; no reviewed standard-match gameplay balance delta. The 6726 Mid-Boss shield configuration remains through 6731. |
+| Oct 1 clients 6728, 6730, 6731 | Client 6728 changes boss range-ring alpha, health/name-bar layout settings, photo-mode/ping/subtitle settings, text corrections, and a stat metadata field. Clients 6730 and 6731 change damage-indicator decay (0.5→0.3 seconds) and reporter polling interval (15→5), respectively. | Presentation, settings, copy, and telemetry; no reviewed standard-match gameplay balance delta. The 6726 Mid-Boss ShieldLogic block remains through 6731; client 6722 already retained the same 35/+5 values in an intrinsic modifier, so no runtime shield removal/restoration is inferred. |
 
 The second breakable descriptor therefore reads 300/300 in client 6701,
 180/180 in 6722, and 300/300 from 6723 through 6731. The 6722 list also adds a
 fourth 300/180 descriptor. The client does not label the new descriptor's map
-class. Preserve the known September 16 tunnel mapping as a candidate; do not
-silently remap either anonymous group.
+class. The September 16 notes and October 1 wiki template bindings support the
+tunnel mapping of descriptor 2; they do not explain the intermediate change or
+identify descriptor 4 or every coordinate marker's group numbering.
 
 ## Rat King data boundary
 
@@ -91,8 +92,10 @@ The launch review must compare the October 1 and October 2 client snapshots.
 - The October 6 coordinate layer is not an independently verified September 29
   placement snapshot; using it for that date retains the documented continuity
   assumption. Derived machine-name groups are not proof of hybrid membership.
-- Sinner's `MiniGameFastChance`/`MiniGameFastSpeed` fields do not define the
-  variable timing distribution or replace the separate Souls reward model.
+- Sinner's raw timing fields do not define exact fast/slow cycle lengths. The
+  pinned wiki explicitly supports the GoldReward-times-two reward conversion;
+  final-hit handling, per-hit rounding and later speed-indicator details remain
+  qualified in the map-interaction review.
 - Broker standard/ranked availability, exact first opening/exit conditions,
   prices, and eligibility are not established for each date. Street Brawl's
   configured Round 5 item is mode-specific.
@@ -100,6 +103,19 @@ The launch review must compare the October 1 and October 2 client snapshots.
   runtime rebalance, data extraction change, or category update.
 - UI/settings-only and telemetry changes were classified but not copied into
   current gameplay rules.
+
+## Map-interaction completion pass
+
+The [map-interaction guide](../general/map/map-interactions-and-open-questions.md)
+and [structured rules](../data/map-interactions.yaml) add wiki-described family
+attacks, Steam Vent reveal/targeting, Healing Snack pickup/healing, breakable
+rewards, permanent-buff selection and Sinner reward/jackpot interpretation.
+Pre-release snack spawn is reconciled at 180 seconds; later wiki 150-second
+spawn remains separate. Three neutral tier bases and Mid-Boss combat fields
+are cross-checked to client 6731 without advancing unrelated NPC records.
+Old weakpoint data and large-tier melee resistance are retained as legacy,
+not unqualified current values. Geometry remains unchanged pending evidence for
+the placement re-audit; the guide lists all remaining blockers.
 
 ## Published records and limits
 

@@ -29,6 +29,9 @@ sources:
   - wiki.souls.157718
   - wiki.haunt.177431
   - wiki.sinners-sacrifice.177553
+  - wiki.healing-snack.177162
+  - wiki.crate.177311
+  - wiki.souls-value-table.177401
   - wiki.update.2026-09-29.181123
   - valve.city-never-sleeps.2026-09-29
   - github.deadlock-data.gameplay.fc4f540f12e0
@@ -42,7 +45,9 @@ sources:
 # Timed Events and Neutral Objectives
 
 The map adds resources and objectives as match time advances. Exact canonical
-times are stored in `data/map-timings.yaml`.
+times are stored in `data/map-timings.yaml`. See [map interactions](map-interactions-and-open-questions.md)
+for family attacks, Steam Vent reveal rules, snack healing, crate rewards, buff
+selection and Sinner jackpot/reward interpretations with dated sources.
 
 ## Baseline Schedule
 
@@ -51,7 +56,7 @@ times are stored in `data/map-timings.yaml`.
 | 0:00 | Mid-Boss is present in the central underground area. |
 | 2:00 | Small Haunt camps spawn. |
 | 3:00 | Base Soul Wells activate; regular crates, Tough Crates, Healing Snacks, and Tier 1 Buff Containers have a configured initial spawn/delay of 180 seconds. |
-| 5:00 | Medium Haunt camps and temporary powerups spawn. Client 6731's second breakable schedule descriptor is 300/300 seconds; its tunnel mapping is carried forward from the September 16 patch-note comparison but remains a candidate after the client-6722 discrepancy. |
+| 5:00 | Medium Haunt camps and temporary powerups spawn. Client 6731's second breakable schedule descriptor is 300/300 seconds; the September 16 notes and October 1 wiki template bindings identify it with tunnels. The client-6722 intermediate value remains a separate discrepancy. |
 | 8:00 | Large Haunt camps and Sinner's Sacrifice locations spawn. |
 | 10:00 | Soul Urn cycle begins; Tier 2 Buff Containers and mid-boxes spawn. Mid-boxes respawn after 3 minutes. |
 | about 11:00 | First Unstable Rift appears, subject to a random timing window and contest setup. |
@@ -95,10 +100,13 @@ unresolved pending direct verification.
 
 The Mid-Boss is a durable central neutral with a shield. Its initial respawn
 delay is seven minutes after defeat, then six minutes after the next defeat,
-and five minutes after subsequent defeats. Shield-absorption fields are absent
-from the client-6722 NPC record, then present in clients 6726 and 6731 at 35
-absorption per second plus 5 per game minute. This is structured-data history,
-not independent runtime verification.
+and five minutes after subsequent defeats. The named `ShieldLogic` block is
+absent in client 6722, but its intrinsic modifier still contains
+`DamageResistancePerSecond: 35` and `DamageResistanceBonusPerGameMinute: 5`.
+Clients 6726 and 6731 expose both that modifier and the 35/+5 `ShieldLogic`
+block. This is a representation difference, not evidence that the shield was
+removed and restored. The canonical Mid-Boss record now pins the client-6731
+combat fields; runtime shielding is not independently tested.
 
 Defeating it drops the Rejuvenator crystal. The crystal must be claimed with
 three heavy melee hits. Each successful claim hit grants the team a revive
@@ -147,11 +155,14 @@ unassigned, and the rule is wiki-sourced rather than independently runtime-teste
 Client 6722 configures **Tough Crates** for one heavy-melee hit, with a 180
 second initial spawn/respawn and a guaranteed configured `big_gold_pickup` drop.
 The pickup record exposes `GoldAmount: 46` and `GoldPerMinuteAmount: 4`; those
-fields are preserved separately, without an inferred reward formula. **Healing
-Snacks** have a configured 180 second spawn delay/respawn, 4 second regen
-duration, and a 10% maximum-health regen field. The final heal amount and live
-location availability remain unverified. These object types are distinct from
-ordinary crates and Buff Containers.
+fields are preserved separately. The pinned October 1 Souls table explicitly
+supports 46 base Souls plus 4 per match minute, with floor display rounding.
+**Healing Snacks** restore 10% maximum health over 4 seconds according to the
+September 30 article, agreeing with the client fields; it also agrees on 180
+second initial spawn/respawn. The later 150-second initial-spawn claim remains
+separate. See [interactions and open questions](map-interactions-and-open-questions.md)
+for reward rounding, pickup behavior and evidence boundaries. These types are
+distinct from ordinary crates and Buff Containers.
 
 Clients 6722 and 6731 configure the Broker shop as enabled, with a one-item
 stock, an 1800 second base opening time with 120 seconds of variance, and a 900

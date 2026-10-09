@@ -36,8 +36,9 @@ class CityNeverSleepsTests(unittest.TestCase):
             ("6722", "180", "180"), ("6723", "300", "300"),
             ("6731", "300", "300"),
         ])
-        self.assertIn("retain the older", tunnel)
-        self.assertIn("mapping as a candidate", tunnel)
+        self.assertIn("mapping_source: wiki.crate.177311", tunnel)
+        self.assertIn("wiki template bindings", tunnel)
+        self.assertIn("discrepancy", tunnel)
         self.assertIn("id: breakables.unmapped-group-4", timings)
         self.assertIn("source_verified_value_category_unresolved", timings)
 
