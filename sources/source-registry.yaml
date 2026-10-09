@@ -354,7 +354,117 @@ sources:
     attribute_data_sha256: 413abf9da66f9e63df0abdc5321e511f7f41beeb61e09c10c87428ca4a10e587
     hero_data_sha256: 5bfc1e4fe3f35dfaefd49e814f8eb410bb3e42243a2e9233f0f7434d8a5cc2df
     english_sha256: f9097ca418abdab2c5df24e4b44ab5f12361f83f986ae21744b041134b1d3808
+    hero_meaningful_stats_sha256: 7d531f05b17111ef799a82ad87788ef0bfb0bd04de1618bb57a936f70ea1520b
     scope: Final pre-Rat King checkpoint; changes versus client 6730 are limited to a telemetry polling convar, while relevant gameplay data remains unchanged
+
+  - id: steam.news.rat-king-release.1845383656387709
+    title: Steam announcement — Listen up, Crumbums! Your King is here.
+    url: "https://store.steampowered.com/news/app/1422450/view/703281025618281704?l=english"
+    news_gid: "1845383656387709"
+    published_at: "2026-10-02T20:59:51Z"
+    accessed_at: "2026-10-08"
+    scope: Official release announcement stating Rat King is available to play; establishes release intent/date, not numeric hero mechanics
+
+  - id: wiki.update.2026-10-02.181191
+    title: "Update: October 2, 2026 (wiki transcription)"
+    url: "https://deadlock.wiki/Update:October_2,_2026"
+    revision_url: "https://deadlock.wiki/Update:October_2,_2026?oldid=181191"
+    revision_id: 181191
+    last_modified: "2026-10-04T17:44:36Z"
+    accessed_at: "2026-10-09"
+    wikitext_sha256: 2345e68ffcd45b7e409ffdd6581d069cdfef56313389ef9bd37dc1859858f1e2
+    scope: Later transcription of the October 2 release notes. Its separate Undocumented Changes section says the Broker is no longer accessible in standard/ranked; this is wiki interpretation, not official patch-note intent.
+
+  - id: wiki.rat-king.180124
+    title: Rat King
+    url: "https://deadlock.wiki/Rat_King"
+    revision_url: "https://deadlock.wiki/Rat_King?oldid=180124"
+    revision_id: 180124
+    last_modified: "2026-10-03T03:40:48Z"
+    accessed_at: "2026-10-09"
+    wikitext_sha256: cf901e4856496bffe49103ba38a1c578f873f827a3414b607a65a8f21a5690aa
+    scope: Early post-release article revision, marked Construction; describes crouch-based tunnel entry/exit, no entry in combat, and Spellbreaker not proccing on Royal Pestments barrier damage. Separately dated wiki interpretation, not an Oct 2 runtime test; live-transcluded values and later balance changes are excluded.
+
+  - id: github.deadlock-data.hero-data.dc1679b9606e
+    title: deadlock-wiki/deadlock-data hero-data.json for client 6737
+    url: "https://github.com/deadlock-wiki/deadlock-data/blob/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json/hero-data.json"
+    commit: dc1679b9606effdc9bec37842ed40d8ca927092e
+    client_version: 6737
+    server_version: 6737
+    source_revision: 11076133
+    accessed_at: "2026-10-08"
+    sha256: 791c09b89b66e7a2b7bc438f86c150b80ee921f75e86bef4c7a129910efcfcdc
+    scope: Rat King launch identity, selectable flag, base stats, weapon, ability bindings, and per-boon scaling; pre-release values are not treated as launch values
+
+  - id: github.deadlock-data.ability-data.dc1679b9606e
+    title: deadlock-wiki/deadlock-data ability-data.json for client 6737
+    url: "https://github.com/deadlock-wiki/deadlock-data/blob/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json/ability-data.json"
+    commit: dc1679b9606effdc9bec37842ed40d8ca927092e
+    client_version: 6737
+    server_version: 6737
+    source_revision: 11076133
+    accessed_at: "2026-10-08"
+    sha256: 8bdc385cc78679bd6975b79baf6a1eee1e8cab8d769cd2fb9f5f46ceed1ea0fc
+    scope: Rat King numbered abilities and supporting client ability records at the release snapshot; raw configuration is not independent runtime verification
+
+  - id: github.deadlock-data.ability-cards.dc1679b9606e
+    title: deadlock-wiki/deadlock-data ability-cards.json for client 6737
+    url: "https://github.com/deadlock-wiki/deadlock-data/blob/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json/ability-cards.json"
+    commit: dc1679b9606effdc9bec37842ed40d8ca927092e
+    client_version: 6737
+    server_version: 6737
+    source_revision: 11076133
+    accessed_at: "2026-10-08"
+    sha256: 24a6b1a72da896652e35aed3846357b281a4a22f6e74b96d7d53f99c6a449bb6
+    scope: Rat King launch card values, descriptions keys, and upgrade data; card presentation supplements rather than overrides structured ability values
+
+  - id: github.deadlock-data.english.dc1679b9606e
+    title: deadlock-wiki/deadlock-data English localization for client 6737
+    url: "https://github.com/deadlock-wiki/deadlock-data/blob/dc1679b9606effdc9bec37842ed40d8ca927092e/data/localizations/english.json"
+    raw_url: "https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/dc1679b9606effdc9bec37842ed40d8ca927092e/data/localizations/english.json"
+    commit: dc1679b9606effdc9bec37842ed40d8ca927092e
+    client_version: 6737
+    source_revision: 11076133
+    accessed_at: "2026-10-08"
+    sha256: 0b92317324ebea77c0b4770bc93c23e0da7489a8dff347582273e7041f5eb292
+    scope: Rat King hero, weapon, ability, and upgrade English localization at release; game text does not independently verify runtime behavior
+
+  - id: github.deadlock-data.npcs.dc1679b9606e
+    title: deadlock-wiki/deadlock-data npc-data.json for client 6737
+    url: "https://github.com/deadlock-wiki/deadlock-data/blob/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json/npc-data.json"
+    commit: dc1679b9606effdc9bec37842ed40d8ca927092e
+    client_version: 6737
+    server_version: 6737
+    source_revision: 11076133
+    accessed_at: "2026-10-08"
+    sha256: f8ceb65ac16c4378d324ad71c89b43665cadfaaaaa82d7fc8f876bfaea6da45a
+    scope: "`npc_ratking_rat` record plus separately changed neutral-bug NPC configuration; no placement or live-match availability inferred"
+
+  - id: github.deadlock-data.gameplay.dc1679b9606e
+    title: deadlock-wiki/deadlock-data gameplay datasets for client 6737
+    url: "https://github.com/deadlock-wiki/deadlock-data/tree/dc1679b9606effdc9bec37842ed40d8ca927092e/data/json"
+    version_url: "https://github.com/deadlock-wiki/deadlock-data/blob/dc1679b9606effdc9bec37842ed40d8ca927092e/data/version.txt"
+    commit: dc1679b9606effdc9bec37842ed40d8ca927092e
+    client_version: 6737
+    server_version: 6737
+    source_revision: 11076133
+    version_datetime: "2026-10-02T13:58:30"
+    accessed_at: "2026-10-08"
+    version_file_sha256: df29482596536ea557dd79c6f20eab5fa16945c68dac6193b848ea829842c5fd
+    generic_data_sha256: f8c4601602ee89217ba45f7404230b2278abfa5b5f54ba30109a2cfa77805e29
+    misc_data_sha256: 39c408611afad028564204b735d733883b5a88475b434bbee3c9d96001a511c1
+    convars_sha256: 9c9b3e93b59bbbc26bc48d538ad35d7e952fe32407c40eed68409effd0c2ed2a
+    hero_data_sha256: 791c09b89b66e7a2b7bc438f86c150b80ee921f75e86bef4c7a129910efcfcdc
+    hero_meaningful_stats_sha256: 75429c0ca0e9d00732496c0e25564d8ba61f571cb5ed3d44c4b3d11bb56f4e6f
+    ability_data_sha256: 8bdc385cc78679bd6975b79baf6a1eee1e8cab8d769cd2fb9f5f46ceed1ea0fc
+    item_data_sha256: 992743a93afb8a671d76b460da5ca65acd2c48e889598f0d37aa8012819b8bfc
+    item_cards_sha256: 7ff34ae9364064d23ceff40ac646c3298cd381920964c59bae6cccbd15f9c2d2
+    ability_cards_sha256: 24a6b1a72da896652e35aed3846357b281a4a22f6e74b96d7d53f99c6a449bb6
+    npc_data_sha256: f8ceb65ac16c4378d324ad71c89b43665cadfaaaaa82d7fc8f876bfaea6da45a
+    street_brawl_data_sha256: bafa0006897246b0f7a4d2f5c2850aeaa866fb966993689ac043433e026acc0d
+    english_sha256: 0b92317324ebea77c0b4770bc93c23e0da7489a8dff347582273e7041f5eb292
+    scope: October 2 Rat King release snapshot; checked adjacent client 6731 and 6737 for hero, NPC, Broker, ping-prompt, and schema changes. Convar changes are the Broker toggle, a heal-ping prompt range, two settings-menu defaults, and removal of r_particle_explicit_fetch. The meaningful-stats export adds lifesteal display flags; no unrelated behavior is inferred.
+    source_quality_note: Client data is generated configuration. The Steam announcement establishes public availability; IsSelectable alone does not, as the pre-release client already marked Rat King selectable. No October 2 raw changelog was present in the pinned archive.
 
   - id: private.map-coordinates.2026-10-06
     title: Private owner-authorized map coordinate snapshot

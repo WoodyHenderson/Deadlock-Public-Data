@@ -16,7 +16,7 @@ class PublicScopeTests(unittest.TestCase):
         registry = yaml.safe_load((ROOT / "sources/source-registry.yaml").read_text())
         official = [s for s in registry["sources"]
                     if s["id"].startswith(("valve.", "steam.news."))]
-        self.assertEqual(len(official), 2)
+        self.assertEqual(len(official), 3)
         for source in official:
             for key, value in source.items():
                 if key == "url" or key.endswith("_url"):

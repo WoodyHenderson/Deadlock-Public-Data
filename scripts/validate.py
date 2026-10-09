@@ -43,6 +43,7 @@ def allowed_source(url):
     # Narrow official-announcement exception, not a blanket Valve/Steam host allowlist.
     if url in {
         "https://www.playdeadlock.com/cityneversleeps",
+        "https://store.steampowered.com/news/app/1422450/view/703281025618281704?l=english",
         "https://www.playdeadlock.com/public/javascript/react/414.js?contenthash=272d1d6072d261c17d87",
         "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1422450&count=100&maxlength=0",
     }:
