@@ -20,7 +20,7 @@ information to keep as accurate a snapshot as I can.
 Base snapshot was created from the Sep 3rd patch and then expanded upon from there
 (right before the first major patch in 9 months thanks Yoshi)
 
-The September 3 root baseline remains in place. The 38 hero and 173 item records,
+The September 3 root baseline remains in place. The original 38 hero and 173 item records,
 plus selected economy and mechanics records, have a separately dated refresh from
 client 6694 (September 16, source revision 11005995). See the [client-6694 review](patches/2026-09-16-client-6694-review.md) for its scope and limits.
 
@@ -43,6 +43,15 @@ buff selection and Sinner reward/jackpot interpretations. Three neutral tier
 baselines and Mid-Boss combat fields are cross-checked to client 6731 without
 advancing unrelated NPCs or the root baseline. Remaining conflicts and the
 uncompleted placement re-audit are listed in that guide.
+
+A separate **October 2/client-6737 Rat King launch import** adds the 39th hero,
+including weapon/stats, four abilities, cards/upgrades and pinned English text.
+The other 38 heroes keep their previous pins. It also records the Broker toggle
+and healing-ping configuration; October 3 wiki tunnel/barrier behavior is
+explicitly later evidence. See the [launch record](heroes/rat-king/rat-king.md),
+[release review](patches/2026-10-02-rat-king-release-review.md) and
+[release boundaries](LIMITATIONS.md#rat-king-release-boundary). October 4/5
+mode/balance changes are not applied.
 
 ## Contents
 
@@ -72,6 +81,8 @@ source disagreements stay visible rather than being silently merged.
 The City Never Sleeps refresh additionally cites Valve's official announcement
 and its Steam news entry for dated feature intent, not runtime verification;
 the exact official URLs and source pins are recorded in the registry.
+Rat King's availability is separately confirmed by the pinned October 2 Valve
+Steam announcement, not by the pre-release selectable flag alone.
 
 Gameplay rules that relied on private confirmations or internal documents were excluded
 from the September 3 baseline. They have not been relabelled as wiki/API-verified. See
@@ -85,6 +96,29 @@ dated reviews keep patch-note intent separate from pinned structured data. If
 you are implementing search I suggest you exclude `patches/` by default. Use it
 for more simple questions regarding older values such as "What was the highest 
 max weapon damage intensifying mag ever provided" or something along those lines.
+
+### Reproduce the Rat King launch import
+
+Provide the pinned client-6737 `version.txt`, `hero-data.json`, `ability-data.json`,
+`ability-cards.json`, `english.json` and `npc-data.json`, plus the client-6731
+hero file. The importer verifies hashes and only targets Rat King's two files:
+
+```sh
+python scripts/knowledgebase/sync_rat_king_from_launch.py \
+  --data-dir /path/to/client-6737 \
+  --pre-release-hero-data /path/to/client-6731/hero-data.json --check
+```
+
+The adjacent release checker takes the eleven JSON datasets named in its
+`EXPECTED_CHANGES` inventory from each client and checks all 22 hashes:
+
+```sh
+python scripts/knowledgebase/check_rat_king_release.py \
+  --pre-release-dir /path/to/client-6731 --launch-dir /path/to/client-6737
+```
+
+These are offline source/configuration checks, not runtime tests. Rendering
+helpers have no network access or corpus-wide write operation.
 
 ### Record format
 

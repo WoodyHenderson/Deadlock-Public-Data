@@ -168,8 +168,11 @@ Clients 6722 and 6731 configure the Broker shop as enabled, with a one-item
 stock, an 1800 second base opening time with 120 seconds of variance, and a 900
 second restock interval; the bonus and penalty variance fields are 15%.
 Configuration alone does not establish live shop availability by mode/date,
-prices, or exact opening/exit conditions. October 2 and later changes are
-outside this snapshot. The September 29 wiki transcription reports the update
+prices, or exact opening/exit conditions. **By client 6737 (October 2), the
+shop-enabled convar is false.** The later wiki transcription reports no Broker
+access in standard/ranked; Street Brawl eligibility is unresolved at this cutoff.
+See the [release review](../../patches/2026-10-02-rat-king-release-review.md).
+The September 29 wiki transcription reports the update
 note that Street Brawl grants one corrupted item after the Round 5 draft. Client 6726
 adds `CorruptedUpgrades` fields to 95 item records plus 11 penalty definitions;
 see `data/corrupted-items.yaml`. Client 6726 also sets Street Brawl's buy-time

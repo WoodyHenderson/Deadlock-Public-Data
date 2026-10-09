@@ -6,18 +6,20 @@ topics: [routing, retrieval, navigation, entities]
 aliases: [entity index, keyword index]
 summary: Direct routes to the public snapshot's hero, ability, item, NPC, objective, and mechanics records.
 snapshot_id: deadlock-data-mixed-through-2026-10-06
-current_as_of: "2026-10-08"
+current_as_of: "2026-10-09"
 evidence_status: derived
 sources: []
 ---
 
 # Deadlock Data Keyword Index
 
-This index routes to records with different dated scopes: all 38 hero and 173
-item records use client 6694 (September 16), while the separate map-coordinate
-layer is dated October 6. Scoped City Never Sleeps map/timing and corrupted-item
-records are reviewed through October 1/client 6731, before Rat King's release;
-later wiki geography is labeled separately. The September 3 root baseline is
+This index routes to records with different dated scopes: the original 38 hero
+and 173 item records use client 6694 (September 16); Rat King alone uses the
+October 2/client-6737 launch pin. The separate map-coordinate layer is dated
+October 6. City Never Sleeps map/corrupted-item research retains its pre-release
+cutoff, with the October 2 Broker toggle and healing-ping configuration added
+separately in the [release review](patches/2026-10-02-rat-king-release-review.md).
+Later wiki geography and hero behavior are labeled separately. The September 3 root baseline is
 not advanced globally.
 This index is navigation derived from local records, not gameplay evidence.
 Follow the destination's citations and uncertainty flags. Match full names with

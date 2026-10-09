@@ -24,8 +24,13 @@ which structured records were refreshed and keeps patch-note-only claims distinc
 The [City Never Sleeps pre-Rat King review](2026-09-29-city-never-sleeps-pre-rat-king-review.md)
 covers September 29 through October 1/client 6731. It is curated evidence, not
 a raw changelog; no September 29/30 raw file was present in the pinned archive.
-The raw archive and its manifest are unchanged. October 2 and later releases
-remain separate imports.
+The raw archive and its manifest are unchanged.
+
+The [October 2 Rat King release review](2026-10-02-rat-king-release-review.md)
+separately covers Rat King's client-6737 launch, the Broker toggle, and
+healing-ping configuration. No raw October 2 changelog is fabricated. Later
+wiki descriptions are dated; October 4 mode changes and October 5 balance
+changes remain excluded.
 
 ## Retrieval policy
 
