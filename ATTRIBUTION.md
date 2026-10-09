@@ -14,6 +14,11 @@
   localization, and raw changelogs use immutable commits identified in the
   registry and [patch manifest](patches/manifest.yaml).
 
+- **Valve's official City Never Sleeps announcement and Steam news entry** —
+  <https://www.playdeadlock.com/cityneversleeps>. The registry records the
+  versioned announcement text hash and dated Steam news GID. These support
+  September 29 feature intent, not independently verified gameplay behavior.
+
 The separately dated [map-coordinate layer](map/README.md) has a private source
 whose owner requested no public attribution or identification. The project owner
 reports permission to publicly redistribute this derived layer for **non-commercial

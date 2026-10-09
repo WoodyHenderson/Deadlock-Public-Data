@@ -47,6 +47,42 @@ These identifiers name unresolved issues documented here, not an external or
 missing review database. Other field-level uncertainty labels must also be
 preserved by consumers.
 
+## City Never Sleeps boundary
+
+The scoped September 29–October 1 refresh stops at client 6731, before the
+October 2 Rat King release. It does not advance hero/item rosters or the root
+September 3 baseline. Client fields are configuration, official announcements
+are patch intent, and later wiki geography is labeled interpretation.
+
+Available: 40 named camp markers with difficulty tiers and 15 Sinner machine
+markers in the existing coordinate layer. The [composition guide](general/map/haunt-camps-and-sinner-sites.md)
+adds pinned October 1 wiki family tiers, ordinary-camp patterns, 15 machines at
+11 sites, four Sinner configurations, and the hybrid clear rule. Machine-name
+groups are derived from the map, not independent runtime camp membership.
+
+The [map-interaction review](general/map/map-interactions-and-open-questions.md)
+now adds source-dated Haunt attacks, Steam Vent concealment/reveal rules, 10%
+max-health snack healing over four seconds, explicit crate reward models,
+permanent-buff selection descriptions, and the Sinner GoldReward-times-two
+conversion. October 1 wiki bindings support breakable categories 1–3. Canonical
+neutral tier and Mid-Boss combat fields are cross-checked to client 6731; absent
+weakpoint/melee-resistance fields are not treated as proof of runtime removal.
+
+Still unresolved: exact family/unit assignments at each named Haunt/hybrid camp;
+the six medium combinations; engine vent scaling; Sinner cycle lengths,
+final-hit handling and exact payout rounding; descriptor 4 and the intermediate
+tunnel schedule discrepancy; exact buff-selection/stacking; and Broker prices,
+mode gating and eligibility implementation. The later snack timing's effective
+date is not established. A fresh authorized marker export or verified before/after
+coordinates is still needed for the Theater/basketball-area placement re-audit.
+The corrupted-item sidecar is not a list of currently purchasable variants.
+No October 2 Broker disablement or later release/mode changes are included.
+
+The separate October 6 coordinate snapshot is unchanged. It is not used to
+assert exact September 29 placements. No raw September 29/30 changelog was
+available in the pinned archive; the [pre-release review](patches/2026-09-29-city-never-sleeps-pre-rat-king-review.md)
+is a curated summary, not a fabricated raw patch file.
+
 ## Burst timing boundary
 
 [Baseline burst profiles](general/combat/burst-weapons.md) reproduce the versioned

@@ -1,13 +1,19 @@
 {
   "schema_version": 1,
   "id": "npc.sinners-sacrifice",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-04",
-  "evidence_status": "source_verified",
+  "snapshot_id": "deadlock-data-pre-rat-king-2026-10-01",
+  "current_as_of": "2026-10-01",
+  "evidence_status": "source_conflict",
   "sources": [
     "deadlock-api.npc-units.client-6684.source-10933105",
     "github.deadlock-data.npcs.311b2e8d895e",
-    "wiki.sinners-sacrifice.110087"
+    "wiki.sinners-sacrifice.110087",
+    "github.deadlock-data.gameplay.9830c72afd4e",
+    "github.deadlock-data.gameplay.0d46cdecfccf",
+    "wiki.update.2026-09-29.181123",
+    "wiki.sinners-sacrifice.177553",
+    "wiki.sinners-sacrifice.181842",
+    "wiki.souls-value-table.177401"
   ],
   "identity": {
     "name": "Sinner's Sacrifice",
@@ -31,7 +37,13 @@
   "field_sources": {
     "numeric_id": "deadlock-api.npc-units.client-6684.source-10933105:neutral_sinners_sacrifice.id",
     "gameplay_values": "github.deadlock-data.npcs.311b2e8d895e:neutral_sinners_sacrifice",
-    "behavior_context": "wiki.sinners-sacrifice.110087"
+    "post_update_config": "github.deadlock-data.gameplay.9830c72afd4e:neutral_sinners_sacrifice",
+    "patch_note_intent": "wiki.update.2026-09-29.181123",
+    "behavior_context": "wiki.sinners-sacrifice.110087",
+    "site_composition_and_clear_rule": "wiki.sinners-sacrifice.177553",
+    "reward_conversion": "wiki.sinners-sacrifice.177553",
+    "raw_minigame_configuration": "github.deadlock-data.gameplay.0d46cdecfccf",
+    "later_two_speed_interpretation": "wiki.sinners-sacrifice.181842"
   },
   "classification_detail": "breakable_object",
   "combat": {
@@ -51,13 +63,48 @@
     "respawn_after_clear": 300
   },
   "jackpot": {
-    "cycle_duration": 3.0,
-    "success_window": 1.3,
+    "timing_model": "variable (September 29 patch-note statement)",
+    "configured_minigame_fast_chance": 0.4,
+    "configured_minigame_fast_speed": 0.04191,
+    "exact_timing_distribution": "unknown",
+    "raw_client_6731_fields": {
+      "VaultMiniGameHitWindow": 0.5,
+      "VaultMiniGameTime": 3.0,
+      "VaultSuccessDestroyTime": 1.3,
+      "VaultSuccessLightsScroll": 3.0
+    },
+    "later_wiki_two_speed_description": {
+      "source": "wiki.sinners-sacrifice.181842",
+      "fast_probability": 0.4,
+      "slow_probability": 0.6,
+      "note": "October 6 interpretation; exact cycle durations and relation to raw timing fields remain unresolved"
+    },
+    "interaction_and_conflict_record": "data/map-interactions.yaml",
+    "legacy_reference": {
+      "cycle_duration_seconds": 3.0,
+      "success_window_seconds": 1.3,
+      "source": "wiki.sinners-sacrifice.110087",
+      "status": "pre-update interpretation; do not assume current after the variable-timing note"
+    },
     "light_melee_permanent_buffs": 1,
     "heavy_melee_permanent_buffs": 4
   },
+  "post_update_evidence_note": "Client configuration retains MaxHealth 500 and GoldReward 155. The October 1 wiki explicitly defines base reward as GoldReward times two, supporting 310 Souls. Exact per-hit rounding, final-destruction handling and jackpot timing remain qualified in data/map-interactions.yaml; VaultSuccessDestroyTime is not established as the success window.",
+  "placement_count_status": "15 machines at 11 sites per pinned October 1 wiki prose; client NPC records do not enumerate placements",
+  "site_composition": {
+    "source": "wiki.sinners-sacrifice.177553",
+    "machine_count": 15,
+    "site_count": 11,
+    "configurations_record": "data/haunt-camp-compositions.yaml",
+    "requires_all_machines_and_member_haunts_cleared": true,
+    "requires_nearby_breakables_cleared": false,
+    "evidence_status": "source_verified_wiki_not_independently_runtime_tested"
+  },
   "reward": {
     "internal_base_souls": 310,
+    "raw_client_gold_reward": 155,
+    "wiki_conversion_multiplier": 2,
+    "conversion_source": "wiki.sinners-sacrifice.177553",
     "growth_percent_of_base_per_minute": 1.08,
     "unsecured": true,
     "economy_ref": "data.general.economy:bounties[entity=sinners-sacrifice]"

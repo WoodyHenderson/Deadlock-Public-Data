@@ -24,6 +24,26 @@ The September 3 root baseline remains in place. The 38 hero and 173 item records
 plus selected economy and mechanics records, have a separately dated refresh from
 client 6694 (September 16, source revision 11005995). See the [client-6694 review](patches/2026-09-16-client-6694-review.md) for its scope and limits.
 
+A scoped **September 29–October 1 City Never Sleeps refresh** now covers map and
+breakable configuration, Sinner timing caveats, four-district prose, and a dated
+sidecar of 95 corrupted-item variants and 11 penalty definitions. It stops at
+**client 6731, before Rat King's October 2 release**. Later wiki geography is
+labeled interpretation, not a launch-day placement snapshot. Hero/item rosters,
+map coordinates, and the root baseline are unchanged by this refresh. See the
+[pre-Rat King review](patches/2026-09-29-city-never-sleeps-pre-rat-king-review.md)
+and [limitations](LIMITATIONS.md#city-never-sleeps-boundary).
+The [camp-composition guide](general/map/haunt-camps-and-sinner-sites.md) adds
+pinned pre-release wiki family tiers, camp patterns, and Sinner configurations
+(15 machines/11 sites), tied to the existing map-marker inventory. Later wiki
+differences are explicit; exact family/unit assignments at every named camp
+remain incomplete rather than being inferred.
+The [map-interaction pass](general/map/map-interactions-and-open-questions.md)
+adds source-dated family attacks, vent rules, snack healing, breakable rewards,
+buff selection and Sinner reward/jackpot interpretations. Three neutral tier
+baselines and Mid-Boss combat fields are cross-checked to client 6731 without
+advancing unrelated NPCs or the root baseline. Remaining conflicts and the
+uncompleted placement re-audit are listed in that guide.
+
 ## Contents
 
 | Path | Contents |
@@ -49,6 +69,9 @@ wiki-generated data provides the secondary representation. Hero descriptions and
 changelogs come from pinned wiki-data commits. Structured client snapshots can
 advance specific records without advancing the root baseline. Existing material
 source disagreements stay visible rather than being silently merged.
+The City Never Sleeps refresh additionally cites Valve's official announcement
+and its Steam news entry for dated feature intent, not runtime verification;
+the exact official URLs and source pins are recorded in the registry.
 
 Gameplay rules that relied on private confirmations or internal documents were excluded
 from the September 3 baseline. They have not been relabelled as wiki/API-verified. See
@@ -98,9 +121,39 @@ source references, allowed source origins, historical file hashes, and lifesteal
 rule consistency with canonical records (including upgrade gates and mode
 isolation), and baseline burst profiles against canonical weapon fields and
 API-derived averages. These checks validate local data consistency, not in-game
-behavior. Validation runs without network access and makes no changes. This export does not include an
-automated data updater. Future updates should pin sources, retain prior evidence,
-review changes, and regenerate the affected records and index together.
+behavior. Validation runs without network access and makes no changes.
+
+Additional offline regression checks:
+
+```sh
+python -m unittest discover -s scripts/knowledgebase/tests
+python -m unittest discover -s scripts/map -p 'test_*.py'
+```
+
+There is no general upstream auto-updater. The map importer normalizes authorized
+local inputs; the corrupted-item generator extracts only two hash-pinned
+client-6726 local files and does not fetch data:
+
+```sh
+python scripts/knowledgebase/sync_corrupted_items.py \
+  --item-data /path/to/client-6726/item-data.json \
+  --generic-data /path/to/client-6726/generic-data.json --check
+```
+
+Remove `--check` only to regenerate that sidecar from the same pinned inputs.
+To reproduce the read-only NPC, breakable, snack and ten-category buff cross-check,
+provide the three client-6731 files (hashes are verified against the registry):
+
+```sh
+python scripts/knowledgebase/check_map_client.py \
+  --npc-data /path/to/client-6731/npc-data.json \
+  --misc-data /path/to/client-6731/misc-data.json \
+  --generic-data /path/to/client-6731/generic-data.json
+```
+
+This checks configured values, not independent runtime behavior or wiki claims.
+Future updates should pin sources, retain prior evidence, review changes, and
+regenerate the affected records and index together.
 
 Again, this is just a sister project for something personal, it is not affiliated 
 with Valve and is not used for any form of commercial or monetary gain.

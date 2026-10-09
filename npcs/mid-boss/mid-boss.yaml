@@ -1,13 +1,14 @@
 {
   "schema_version": 1,
   "id": "npc.mid-boss",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-04",
+  "snapshot_id": "deadlock-data-mid-boss-client-6731",
+  "current_as_of": "2026-10-01",
   "evidence_status": "source_verified",
   "sources": [
     "deadlock-api.npc-units.client-6684.source-10933105",
     "github.deadlock-data.npcs.311b2e8d895e",
-    "wiki.mid-boss.107274"
+    "wiki.mid-boss.107274",
+    "github.deadlock-data.gameplay.0d46cdecfccf"
   ],
   "identity": {
     "name": "Mid-Boss",
@@ -31,8 +32,9 @@
   },
   "field_sources": {
     "numeric_id": "deadlock-api.npc-units.client-6684.source-10933105:npc_super_neutral.id",
-    "gameplay_values": "github.deadlock-data.npcs.311b2e8d895e:npc_super_neutral",
-    "behavior_context": "wiki.mid-boss.107274"
+    "gameplay_values": "github.deadlock-data.gameplay.0d46cdecfccf:npc_super_neutral",
+    "behavior_context": "wiki.mid-boss.107274",
+    "later_respawn_intervals_and_permanent_buffs": "wiki.mid-boss.107274"
   },
   "combat": {
     "base_max_health": 13000,
@@ -45,6 +47,14 @@
       "base": 35,
       "growth_per_minute": 5
     }
+  },
+  "review_scope": "Combat and weapon fields cross-checked to client 6731; first spawn/respawn remain 0/420 seconds. Later respawn intervals, permanent-buff reward and pit targeting retain their older wiki pin. Weapon range is configured falloff. This is not a complete import of the source's bound abilities.",
+  "shield_configuration": {
+    "source": "github.deadlock-data.gameplay.0d46cdecfccf",
+    "field": "npc_super_neutral.ShieldLogic",
+    "BaseAbsorptionPerSecond": 35,
+    "ScalingAbsorptionPerMinute": 5,
+    "status": "ShieldLogic present by client 6726 and retained through 6731. Client 6722 still contains 35/+5 in an intrinsic modifier despite lacking the named ShieldLogic block; not evidence of shield removal/restoration."
   },
   "ranged_attack": {
     "bullet_damage": 20.0,

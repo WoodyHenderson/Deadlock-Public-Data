@@ -6,7 +6,7 @@ topics: [routing, retrieval, navigation, entities]
 aliases: [entity index, keyword index]
 summary: Direct routes to the public snapshot's hero, ability, item, NPC, objective, and mechanics records.
 snapshot_id: deadlock-data-mixed-through-2026-10-06
-current_as_of: "2026-10-06"
+current_as_of: "2026-10-08"
 evidence_status: derived
 sources: []
 ---
@@ -15,7 +15,10 @@ sources: []
 
 This index routes to records with different dated scopes: all 38 hero and 173
 item records use client 6694 (September 16), while the separate map-coordinate
-layer is dated October 6. The September 3 root baseline is not advanced globally.
+layer is dated October 6. Scoped City Never Sleeps map/timing and corrupted-item
+records are reviewed through October 1/client 6731, before Rat King's release;
+later wiki geography is labeled separately. The September 3 root baseline is
+not advanced globally.
 This index is navigation derived from local records, not gameplay evidence.
 Follow the destination's citations and uncertainty flags. Match full names with
 context: “Pocket build” identifies a hero; “seven seconds” does not. Normalize
@@ -48,14 +51,18 @@ historical values as current facts.
 | Melee, heavy melee, parry | [Melee and parry](general/combat/weapons-melee-and-parry.md) |
 | Stamina, dash, slide, wall jump, move speed, sprint speed | [Movement](general/movement/universal-movement.md) |
 | Character buckets, stamina buckets, dash speed tiers, dash duration | [Hero stamina buckets](general/movement/hero-stamina-buckets.md) |
-| Zipline, lanes, traversal | [Map layout](general/map/map-layout-and-traversal.md); [separate map-coordinate guide](map/README.md) for positions only |
+| Zipline, lanes, traversal | [Map layout](general/map/map-layout-and-traversal.md); [district guide](general/map/districts-and-landmarks.md); [separate map-coordinate guide](map/README.md) for positions only |
+| Theater, Chinatown, Haunted Lot, Plaza, Bell Tower, Sunken Plaza, basketball court | [Off-lane districts and landmarks](general/map/districts-and-landmarks.md); later wiki geography is not verified patch-time placement |
 | Ordinary crates, Tough Crates, Buff Containers: where are potential locations concentrated? | [Map area counts](map/breakable-zones.yaml) via [map guide](map/README.md); coordinates by [point category](map/coordinates/README.md). October 6 private-source snapshot, not currently available loot or a September 3 gameplay update. |
 | Haunt camp, Sinner machine, snack, vent or shop locations | [Map point catalog](map/coordinates/README.md); use separately versioned gameplay records for mechanics. Sinner markers count individual machines, not sites. |
 | Minimap, detection, visibility, pings, text-chat cooldown | [Visibility](general/map/minimap-and-visibility.md); named ability |
 | Death, respawn, revive | [Death](general/rules/death-and-respawning.md); [Rejuvenator](objectives/rejuvenator/rejuvenator.md) |
 | Guardian, Walker, Shrine, Patron, Extra Slots, backdoor | [Structures](general/map/objectives-and-structures.md); specific NPC below |
 | Trooper waves, Super Troopers | [Troopers](general/map/troopers-and-lane-pressure.md); troop NPC below |
-| Spawn times, camps, Mid-Boss, Urn, powerups, Rift | [Timed events](general/map/timed-events-and-neutral-objectives.md); [timings](data/map-timings.yaml); entity below |
+| Spawn times, Haunts, camps, Mid-Boss, Urn, powerups, Rift, Tough Crates, Healing Snacks, Buff Containers, The Broker | [Timed events](general/map/timed-events-and-neutral-objectives.md); [timings](data/map-timings.yaml); entity below |
+| Camp composition, Haunt families, Barrel Mimic, Past Dues, Festival Spirit, Slum Shroom, Crabbage Pot, Stage Hand, Specimen, Gutter Ghoul, Underhand, Sinner sites, hybrid camps | [Camp compositions and Sinner sites](general/map/haunt-camps-and-sinner-sites.md); [structured patterns and marker groups](data/haunt-camp-compositions.yaml) |
+| Haunt attacks, parry, Steam Vent reveal, Healing Snack heal amount, Tough Crate reward, Buff Container drop selection, Sinner jackpot | [Map interactions and open questions](general/map/map-interactions-and-open-questions.md); [structured behavior](data/map-interactions.yaml) |
+| Corrupted item variant fields | [Dated variant data](data/corrupted-items.yaml); configured fields do not establish mode/date availability |
 | Sources, citations, versions | [Source registry](sources/source-registry.yaml); [attribution](ATTRIBUTION.md) |
 | Explicit request for patch notes or change history | [Archive policy](patches/README.md); [manifest](patches/manifest.yaml) |
 

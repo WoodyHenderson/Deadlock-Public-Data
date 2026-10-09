@@ -1,0 +1,246 @@
+schema_version: 1
+id: data.map-interactions
+snapshot_id: pre-rat-king-map-with-dated-wiki-interpretations
+current_as_of: "2026-10-08"
+evidence_status: source_verified_with_explicit_conflicts
+sources:
+  - github.deadlock-data.gameplay.0d46cdecfccf
+  - wiki.haunt.177431
+  - wiki.haunt.181836
+  - wiki.steam-vent.177398
+  - wiki.healing-snack.177162
+  - wiki.healing-snack.181344
+  - wiki.crate.177311
+  - wiki.buff-container.177257
+  - wiki.permanent-buff.161283
+  - wiki.permanent-buffs.161111
+  - wiki.souls-value-table.177401
+  - wiki.sinners-sacrifice.177553
+  - wiki.sinners-sacrifice.181842
+  - wiki.broker.177584
+scope: >-
+  Pre-release client configuration and separately attributed wiki interpretations.
+  Later wiki descriptions do not establish when a mechanic changed. No Rat King
+  launch, October 2 Broker disablement or later balance update is applied.
+
+haunts:
+  pre_release_source: wiki.haunt.177431
+  later_behavior_source: wiki.haunt.181836
+  general_wiki_rules:
+    eye_hits: critical_damage
+    soul_orbs: false
+    respawn_timer_starts: after_all_member_haunts_die
+    typical_basic_ranged_damage: weapon
+    typical_special_damage: spirit_with_exceptions
+    melee_parry: some_haunt_melee_attacks_not_all_attacks
+  later_activation_description:
+    source: wiki.haunt.181836
+    initial_state: dormant
+    activates: nearby_player_or_damage_from_within_activation_range
+    distant_damage: ineffective_while_dormant_outside_activation_range
+    nearby_player_alone: activates_but_does_not_provoke
+    configured_sight_range_m: 38.1
+    configuration_source: github.deadlock-data.gameplay.0d46cdecfccf
+    note: SightRangePlayers is a client field; treating it as the activation threshold follows wiki interpretation, not a measured runtime radius.
+  family_behaviors:
+    barrel-mimic:
+      pre_release: Medium and large variants use an explosion attack.
+      later_detail: Area explosion.
+    past-dues:
+      pre_release: Small variant has no melee; medium is melee-only according to the article.
+      later_detail: Book barrage with sleep on the final projectile.
+      conflict: The later special-attack description coexists with the melee-only label; do not interpret melee-only as proof that no special projectile exists.
+    festival-spirit:
+      pre_release: No melee; medium/large use a bomb attack.
+      later_detail: Barrage of homing fireworks.
+    slum-shroom:
+      pre_release: Medium/large spore attack slows and reduces healing by 50 percent.
+      later_detail: Spore mines deal damage over time.
+    crabbage-pot:
+      pre_release: Tier-two melee-area attack.
+      later_detail: Melee-area special is described as parryable.
+    stage-hand:
+      pre_release: Large variant uses a laser attack.
+      later_detail: Medium/large special described as a laser leaving fire on the ground.
+    specimen:
+      pre_release: Medium variant explodes on death.
+      later_detail: No separate special attack listed.
+    gutter-ghoul:
+      pre_release: No family-specific attack detail supplied in the October 1 table.
+      later_detail: Toxic-waste projectile leaves a damaging puddle.
+    underhand:
+      pre_release: No melee; medium/large laser leaves fire on the ground.
+      later_detail: Same general description.
+  exact_family_damage_cooldowns_and_per_camp_assignment: unresolved
+  large_melee_resistance:
+    older_wiki_percent: 20
+    client_6731_melee_resistance_field_present: false
+    runtime_percent: null
+    note: Missing field is not proof that runtime resistance is zero. Canonical large-neutral record retains the old value only as a legacy reference.
+
+steam_vents:
+  source: wiki.steam-vent.177398
+  evidence_status: wiki_stub_construction_not_runtime_tested
+  hides_from_enemy_heroes: true
+  allies_can_see_occupants: true
+  prevents_hero_targeted_abilities_and_items: true
+  targeted_item_example: Knockdown
+  reveal_triggers:
+    - take_damage_or_receive_an_effect
+    - damage_or_apply_effect_to_enemy_hero
+    - enemy_hero_enters_same_vent
+  regeneration_display:
+    base: 4.8
+    boon_coefficient: 0.083
+    interpretation: Wiki displays regeneration plus a boon-scaling annotation; exact engine scaling formula and rounding are not independently established.
+  note: This does not imply invulnerability, protection from untargeted area damage, or the same rules for tunnel entrances.
+
+healing_snacks:
+  source: wiki.healing-snack.177162
+  configuration_source: github.deadlock-data.gameplay.0d46cdecfccf
+  pickup: proximity
+  persists_until_picked_up: true
+  appears_on_minimap: false
+  initial_spawn_seconds: 180
+  respawn_after_pickup_seconds: 180
+  total_heal_max_health_percent: 10
+  duration_seconds: 4
+  evidence_status: pre_release_wiki_and_client_agree
+  later_description:
+    source: wiki.healing-snack.181344
+    initial_spawn_seconds: 150
+    street_brawl_total_heal_max_health_percent: 20
+    treatment: Later article claim only; effective gameplay-change date is unresolved and these values do not replace the pre-release record.
+
+breakables:
+  configuration_source: github.deadlock-data.gameplay.0d46cdecfccf
+  ordinary_crates:
+    source: wiki.crate.177311
+    configured_drop_chance_percent: 60
+    reward_base: 23
+    reward_growth_per_match_minute: 2
+    reward_source: wiki.souls-value-table.177401
+    break_methods: [melee, bullets, certain_abilities, sufficient_movement_momentum]
+  tough_crates:
+    source: wiki.crate.177311
+    configured_drop_chance_percent: 100
+    reward_base: 46
+    reward_growth_per_match_minute: 4
+    reward_source: wiki.souls-value-table.177401
+    heavy_melee_hits_to_break: 1
+    no_melee_cleave: true
+    damaged_by_bullets: false
+    damaged_by_abilities: false
+    damaged_by_slide: false
+    break_on_dodge_touch: false
+    wiki_exception: Upgraded Puddle Punch's heavy-melee damage does not break Tough Crates.
+  reward_model:
+    source: wiki.souls-value-table.177401
+    formula: base + growth_per_match_minute * elapsed_match_minutes
+    table_display_rounding: floor
+    engine_rounding_verified: false
+    scaling_origin: match_start_not_object_spawn
+  respawn_delay:
+    sources: [wiki.crate.177311, wiki.buff-container.177257]
+    wiki_rule: An uncollected dropped reward can delay respawn past the normal interval.
+  schedule_mapping:
+    source: wiki.crate.177311
+    configuration_source: github.deadlock-data.gameplay.0d46cdecfccf
+    index_convention: one_based_as_used_by_wiki_template
+    descriptors:
+      - {index: 1, initial_seconds: 180, respawn_seconds: 180, wiki_category: most_breakables}
+      - {index: 2, initial_seconds: 300, respawn_seconds: 300, wiki_category: tunnel_breakables}
+      - {index: 3, initial_seconds: 600, respawn_seconds: 180, wiki_category: room_above_midboss}
+      - {index: 4, initial_seconds: 300, respawn_seconds: 180, wiki_category: null}
+    note: Wiki template bindings support categories 1–3, not per-marker group numbering or the fourth descriptor. The client-6722 180/180 intermediate value remains recorded separately.
+  wiki_crate_count: 518
+  count_status: Category/date coverage is not reconciled to the map's separate ordinary/Tough/item-crate marker inventories; do not replace marker counts with 518.
+
+buff_containers:
+  source: wiki.buff-container.177257
+  permanence_source: wiki.permanent-buff.161283
+  selection_source: wiki.permanent-buffs.161111
+  configured_drop_chance_percent: 50
+  buffs_per_successful_drop: 1
+  persists_through_death: true
+  tier_thresholds_match_minutes: [0, 10, 30]
+  tier_basis_wiki: time_buff_received
+  wiki_selection_description:
+    type: pseudo_random_not_independent_draws
+    repeated_same_buff: reduces_reported_chance_next_time
+    history_scope: buffs_from_all_sources
+    containers_track: generated_buffs_even_if_not_collected
+    exact_algorithm_and_guarantees: unresolved
+  client_weight_ratios:
+    source: github.deadlock-data.gameplay.0d46cdecfccf
+    total_weight: 10
+    standard_category_weight: 1
+    health_weight: 2
+    move_speed_and_range_weight_each: 0.5
+    interpretation: Relative weights only; not independent per-break probabilities or guarantees of the next drop.
+  detailed_stacking_and_radius_rules: unresolved
+  values_record: data/map-timings.yaml
+
+sinners:
+  pre_release_source: wiki.sinners-sacrifice.177553
+  configuration_source: github.deadlock-data.gameplay.0d46cdecfccf
+  reward_model:
+    raw_gold_reward: 155
+    wiki_multiplier: 2
+    base_souls: 310
+    growth_percent_of_base_per_minute: 1.08
+    unrounded_growth_souls_per_minute: 3.348
+    scaling_origin: match_start
+    light_melee_fraction: 0.05
+    heavy_melee_fraction: 0.1
+    final_hit_fraction_plus_heavy_payout: 0.6
+    wiki_rounding: each_hit_rounded_may_change_total
+    exact_rounding_and_multi_player_split: unresolved
+    note: This is the pinned wiki's explicit GoldReward-times-two model, not a conversion inferred solely from field names; the final payout is not added to a full pre-awarded reward.
+  configured_minigame_fields:
+    MiniGameFastChance: 0.4
+    MiniGameFastSpeed: 0.04191
+    VaultMiniGameHitWindow: 0.5
+    VaultMiniGameTime: 3.0
+    VaultSuccessDestroyTime: 1.3
+    VaultSuccessLightsScroll: 3.0
+  pre_release_jackpot_description:
+    randomized_cycle_speed: true
+    jackpot_when_hit: all_bulbs_lit
+    retaliation_during_jackpot: false
+    heavy_melee_buffs: 4
+    light_melee_buffs: 1
+    miss: remaining_souls_without_jackpot_buffs
+  later_two_speed_description:
+    source: wiki.sinners-sacrifice.181842
+    fast_probability: 0.4
+    slow_probability: 0.6
+    speed_choice_at_damage_taken: 300
+    fast_indicator: orange_red_blinking
+    slow_indicator: static_white
+    jackpot_entry_at_damage_taken: 400
+    exact_fast_slow_cycle_durations: null
+    note: Wiki interpretation of the fast-chance field is supported numerically; the detailed indicators/thresholds are later prose, not asserted as verified October 1 runtime behavior.
+  hit_count_conflict:
+    configured_health: 500
+    wiki_light_damage: 50
+    wiki_heavy_damage: 100
+    wiki_light_hits_to_complete: 8
+    wiki_heavy_hits_to_complete: 4
+    status: The quoted hit totals reach 400 rather than 500. Special jackpot/final-destruction handling is not fully explained; do not derive a generic hits-to-kill simulator or assert a fixed success window from the 1.3 destroy-time field.
+
+broker:
+  source: wiki.broker.177584
+  pre_release_description: Temporary shop converting items into corrupted items, with random attribute variance and an additional downside.
+  wiki_location: Corner to the right of each team's Blue-lane Walker; source-relative direction, not a universal screen coordinate.
+  wiki_shop_count: 2
+  approximate_first_open_minute: 30
+  approximate_reopen_minutes_after_close: 15
+  prices: null
+  precise_mode_gating: unresolved
+  penalty_eligibility:
+    wiki_rule: An item cannot roll a debuff of a kind it already buffs; the article also lists item-specific exclusions.
+    exact_rule_and_exclusion_table_implementation: unresolved
+    note: Not used to build a corruption-roll simulator. Later wording qualifies non-conditional buffs; that later rule is not imported as pre-release fact.
+  fields_record: data/corrupted-items.yaml
+  note: The pre-release article's scheduled departure is not proof of actual October 2 disablement; that is a separate chronological step.

@@ -1,0 +1,184 @@
+schema_version: 1
+id: data.haunt-camp-compositions
+snapshot_id: wiki-camps-pre-rat-king-with-dated-later-comparison
+current_as_of: "2026-10-08"
+evidence_status: source_verified_wiki_with_per_location_gaps
+sources:
+  - wiki.haunt.177431
+  - wiki.haunt.181836
+  - wiki.sinners-sacrifice.177553
+  - wiki.sinners-sacrifice.181842
+  - private.map-coordinates.2026-10-06
+scope:
+  pre_release_cutoff: "2026-10-01"
+  pre_release_sources: [wiki.haunt.177431, wiki.sinners-sacrifice.177553]
+  later_comparison_date: "2026-10-06"
+  placement_snapshot: private-map-2026-10-06
+  note: >-
+    Article prose is pinned independently of transcluded NPC templates. No live
+    template values are imported here. October 6 article differences are not
+    backdated or interpreted as a gameplay patch. Applying the coordinate layer
+    to September 29 uses the documented unchanged-placement working assumption,
+    not independent patch-time verification. Null means not established.
+
+# These are family tier claims, NOT the family assigned to any named map camp.
+families:
+  - id: barrel-mimic
+    name: Barrel Mimic
+    reported_tiers: [medium, large]
+    source: wiki.haunt.177431
+  - id: past-dues
+    name: Past Dues
+    reported_tiers: [small, medium]
+    source: wiki.haunt.177431
+  - id: festival-spirit
+    name: Festival Spirit
+    reported_tiers: [medium, large]
+    source: wiki.haunt.177431
+  - id: slum-shroom
+    name: Slum Shroom
+    aliases: [Shrooms]
+    reported_tiers: [medium, large]
+    source: wiki.haunt.177431
+  - id: crabbage-pot
+    name: Crabbage Pot
+    reported_tiers: [small, medium]
+    source: wiki.haunt.177431
+    later_reported_tiers: [small, medium, large]
+    later_source: wiki.haunt.181836
+    evidence_status: differing_dated_wiki_descriptions_not_a_dated_balance_change
+  - id: stage-hand
+    name: Stage Hand
+    reported_tiers: [small, medium, large]
+    source: wiki.haunt.177431
+    later_reported_tiers: [medium, large]
+    later_source: wiki.haunt.181836
+    evidence_status: differing_dated_wiki_descriptions_not_a_dated_balance_change
+  - id: specimen
+    name: Specimen
+    reported_tiers: [small, medium]
+    source: wiki.haunt.177431
+  - id: gutter-ghoul
+    name: Gutter Ghoul
+    reported_tiers: [small, medium, large]
+    source: wiki.haunt.177431
+  - id: underhand
+    name: Underhand
+    reported_tiers: [small, medium, large]
+    source: wiki.haunt.177431
+
+ordinary_camp_patterns:
+  small:
+    source: wiki.haunt.177431
+    members: [{tier: small, count: 3}]
+    family: null
+  medium:
+    source: wiki.haunt.177431
+    reported_combination_count: 6
+    member_tiers: [small, medium]
+    exact_combinations: null
+    family: null
+    note: The article states six combinations but does not enumerate their unit counts or named locations.
+  large:
+    source: wiki.haunt.177431
+    minimum_large_haunts: 1
+    possible_companion_tiers: [small, medium, large]
+    reported_three_large_camp_count: 6
+    exact_per_location_compositions: null
+    family: null
+    later_description:
+      source: wiki.haunt.181836
+      alternatives:
+        - [{tier: large, count: 3}]
+        - [{tier: large, count: 1}, {tier: medium, count: 2}]
+      note: >-
+        The October 6 prose narrows the alternatives and omits the old six-camp
+        count. This is a later article description, not proof of an intervening
+        game change or the composition of each large marker.
+
+sinner_site_patterns:
+  source: wiki.sinners-sacrifice.177553
+  site_count: 11
+  machine_count: 15
+  configurations:
+    - id: single-machine
+      site_count: 6
+      machines_per_site: 1
+      medium_haunts_per_site: 0
+    - id: single-machine-hybrid
+      site_count: 2
+      machines_per_site: 1
+      medium_haunts_per_site: 2
+    - id: double-machine-hybrid
+      site_count: 2
+      machines_per_site: 2
+      medium_haunts_per_site: 1
+    - id: triple-machine
+      site_count: 1
+      machines_per_site: 3
+      medium_haunts_per_site: 0
+  derived_totals:
+    hybrid_sites: 4
+    companion_medium_haunts: 6
+    derivation: Sum site_count times medium_haunts_per_site; do not add this to the ordinary camp count.
+  clear_rule:
+    source: wiki.sinners-sacrifice.177553
+    requires_all_machines_destroyed: true
+    requires_all_member_haunts_killed: true
+    requires_nearby_crates_or_buff_containers_destroyed: false
+    evidence_status: source_verified_wiki_not_independently_runtime_tested
+  named_wiki_context:
+    source: wiki.sinners-sacrifice.181842
+    bell_tower: Three machines at the top of the Bell Tower in Chinatown.
+    sunken_plaza: Two Sinner sites alongside two Haunt camps; this wording alone does not assign unit counts or families to each marker.
+
+placement_inventory:
+  source: private.map-coordinates.2026-10-06
+  ordinary_camp_record: map/coordinates/camps.yaml
+  ordinary_camp_count: 40
+  camp_tiers: {small: 4, medium: 25, large: 11}
+  machine_record: map/coordinates/sinners_sacrifice.yaml
+  machine_marker_count: 15
+  grouping_rule: Equal source name and zone_id in the pinned machine-marker snapshot.
+  grouping_evidence: Derived source-label groups; not independently verified runtime camp membership.
+  sinner_marker_groups:
+    - name: Chinatown Bell 1
+      zone_id: bell-tower-20
+      marker_ids: [map.sinners_sacrifice.0001, map.sinners_sacrifice.0002, map.sinners_sacrifice.0003]
+    - name: Slums Garage Up
+      zone_id: haunted-lot-6
+      marker_ids: [map.sinners_sacrifice.0004, map.sinners_sacrifice.0005]
+    - name: Theater Balcony
+      zone_id: theater-9
+      marker_ids: [map.sinners_sacrifice.0006, map.sinners_sacrifice.0007]
+    - name: Drug Store
+      zone_id: times-square-4
+      marker_ids: [map.sinners_sacrifice.0008]
+    - name: Hotel 1
+      zone_id: times-square-4
+      marker_ids: [map.sinners_sacrifice.0009]
+    - name: Park Library
+      zone_id: central-park-5
+      marker_ids: [map.sinners_sacrifice.0010]
+    - name: York Radio
+      zone_id: stock-exchange-14
+      marker_ids: [map.sinners_sacrifice.0011]
+    - name: Dock Authority
+      zone_id: docks-3b
+      marker_ids: [map.sinners_sacrifice.0012]
+    - name: Park Club
+      zone_id: central-park-5
+      marker_ids: [map.sinners_sacrifice.0013]
+    - name: Plaza Pit 1
+      zone_id: sunken-plaza-19
+      marker_ids: [map.sinners_sacrifice.0014]
+    - name: Plaza Pit 2
+      zone_id: sunken-plaza-19
+      marker_ids: [map.sinners_sacrifice.0015]
+  per_marker_haunt_family: null
+  per_marker_haunt_unit_counts: null
+  note: >-
+    The 11 source-label groups reconcile with the wiki's 11 sites and 15 machines.
+    Neither equal labels nor nearby coordinates prove a particular hybrid
+    assignment. Do not infer families from district names, or assign the two
+    single-machine hybrid compositions to specific sites without further evidence.

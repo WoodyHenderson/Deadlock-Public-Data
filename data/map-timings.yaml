@@ -1,14 +1,23 @@
 schema_version: 1
 id: data.general.map-timings
-snapshot_id: deadlock-wiki-2026-09-16
-current_as_of: "2026-09-16"
-evidence_status: source_verified_with_one_mapped_breakable_group
+snapshot_id: deadlock-data-pre-rat-king-2026-10-01
+current_as_of: "2026-10-01"
+evidence_status: source_verified_with_unresolved_breakable_category_mapping
 sources:
   - wiki.the-cursed-apple.125757
   - wiki.neutral.125766
   - wiki.trooper.114174
+  - wiki.sinners-sacrifice.177553
+  - wiki.healing-snack.177162
+  - wiki.crate.177311
+  - wiki.souls-value-table.177401
   - github.deadlock-data.gameplay.fc4f540f12e0
   - github.deadlock-data.changelogs.raw.fc4f540f12e0
+  - valve.city-never-sleeps.2026-09-29
+  - github.deadlock-data.gameplay.9830c72afd4e
+  - github.deadlock-data.gameplay.527f1326b455
+  - github.deadlock-data.gameplay.3d26c988891f
+  - github.deadlock-data.gameplay.0d46cdecfccf
 
 units:
   time: seconds
@@ -38,15 +47,74 @@ events:
     respawn_after_destroyed: 180
     central_room_starts_at: 600
 
+  - id: breakables.tough-crate
+    starts_at: 180
+    respawn_after_destroyed: 180
+    interaction: heavy_melee_only
+    configured_powerup_drop_chance_percent: 100
+    configured_drop_class: big_gold_pickup
+    pickup_source_fields:
+      gold_amount_base: 46
+      gold_per_minute_amount: 4
+    evidence_status: source_verified_configuration_not_runtime_tested
+    source: github.deadlock-data.gameplay.9830c72afd4e
+    note: >-
+      Separate from ordinary crates and Buff Containers. The pinned October 1
+      Souls table explicitly supports a 46-base plus 4-per-match-minute reward
+      model; see data/map-interactions.yaml for provenance and table-vs-engine
+      rounding limits. Raw client fields remain preserved beside that model.
+
+  - id: breakables.healing-snack
+    spawn_delay: 180
+    respawn_interval: 180
+    linked_pickup: citadel_pickup_health_float_in_world
+    configured_regen_duration: 4
+    configured_regen_max_health_percent: 10
+    amount_formula: ten_percent_max_health_total_over_four_seconds
+    behavior_source: wiki.healing-snack.177162
+    evidence_status: pre_release_wiki_and_client_agree
+    source: github.deadlock-data.gameplay.9830c72afd4e
+    note: >-
+      The September 30 wiki explicitly reports 10 percent max health over 4
+      seconds and 180-second spawn/respawn, agreeing with the pre-release fields.
+      Later wiki 150-second initial spawn is a separately dated comparison in
+      data/map-interactions.yaml, not an October 1 replacement or a live-location claim.
+
   - id: breakables.underground-tunnels
     starts_at: 300
     respawn_after_destroyed: 300
-    evidence_status: source_verified_via_patch_note_category_mapping
+    evidence_status: source_verified_wiki_mapping_with_intermediate_value_discrepancy
+    mapping_source: wiki.crate.177311
     source_group_index: 2
+    observations:
+      - client: 6722
+        initial_spawn: 180
+        respawn_interval: 180
+        source: github.deadlock-data.gameplay.9830c72afd4e
+      - client: 6723
+        initial_spawn: 300
+        respawn_interval: 300
+        source: github.deadlock-data.gameplay.527f1326b455
+      - client: 6731
+        initial_spawn: 300
+        respawn_interval: 300
+        source: github.deadlock-data.gameplay.0d46cdecfccf
     note: >-
-      Client 6694 generic data exposes a 5m initial/5m respawn group; the
-      September 16 notes identify underground-tunnel breakables as the group
-      changed to those values. Do not apply this timing to all breakable types.
+      The September 16 notes and October 1 wiki template bindings map the second
+      descriptor to underground-tunnel breakables. Client 6722 changes that
+      descriptor to 180/180; client 6723 restores 300/300 through client 6731.
+      The wiki mapping supports the category, not the cause of the intermediate
+      discrepancy, every coordinate marker's group number, or other breakables.
+
+  - id: breakables.unmapped-group-4
+    starts_at: 300
+    respawn_after_destroyed: 180
+    source_group_index: 4
+    evidence_status: source_verified_value_category_unresolved
+    source: github.deadlock-data.gameplay.9830c72afd4e
+    note: >-
+      This additional descriptor is present from client 6722 through 6731. Its
+      breakable class/location mapping is not established by the client data.
 
   - id: breakables.mid-boxes
     starts_at: 600
@@ -79,8 +147,62 @@ events:
   - id: sinners-sacrifice
     starts_at: 480
     respawn_after_full_clear: 300
-    map_locations: 10
-    total_machines: 12
+    map_locations: 11
+    total_machines: 15
+    placement_count_source: wiki.sinners-sacrifice.177553
+    legacy_placement_counts:
+      map_locations: 10
+      total_machines: 12
+      source: wiki.the-cursed-apple.125757
+      status: older_map_summary_not_the_current_sinner_count
+    composition_record: data/haunt-camp-compositions.yaml
+    clear_rule_source: wiki.sinners-sacrifice.177553
+    clear_requires_all_machines_and_member_haunts: true
+    clear_requires_nearby_breakables: false
+    post-update_bonus_timing: variable
+    exact_timing_distribution: unresolved
+    configured_minigame_fast_chance: 0.4
+    configured_minigame_fast_speed: 0.04191
+    evidence_status: source_conflict
+    patch_intent_source: wiki.update.2026-09-29.181123
+    structured_source: github.deadlock-data.gameplay.9830c72afd4e
+    note: >-
+      The October 1 Sinner article reports 15 machines at 11 sites and the
+      all-machines/all-member-Haunts clear rule, excluding nearby breakables.
+      These are wiki-sourced rules, not independent runtime tests. Composition
+      patterns and separate map-marker groups are in the linked record; exact
+      per-location Haunt families, jackpot semantics and reward conversion
+      are not established by the client configuration.
+
+  - id: broker.corrupted-item-shop
+    configured_enabled: true
+    configuration_history:
+      - client: 6722
+        enabled: true
+        source: github.deadlock-data.gameplay.9830c72afd4e
+      - client: 6731
+        enabled: true
+        source: github.deadlock-data.gameplay.0d46cdecfccf
+    configured_items_per_stock: 1
+    configured_spawn_base: 1800
+    configured_spawn_variance_seconds: 120
+    configured_restock_interval: 900
+    configured_bonus_variance_better_percent: 15
+    configured_bonus_variance_worse_percent: 15
+    configured_penalty_variance_percent: 15
+    configured_force_variance: false
+    configured_purchasing_anywhere: false
+    mode_availability:
+      standard_ranked: unresolved
+      street_brawl: unresolved
+    source: github.deadlock-data.gameplay.9830c72afd4e
+    enabled_state_source: github.deadlock-data.gameplay.0d46cdecfccf
+    note: >-
+      The client shop-enabled convar is true through client 6731. Configuration
+      alone does not establish live availability by mode/date, prices, or exact
+      opening/exit conditions. Street Brawl's configured Round 5 item is a
+      separate mode rule. This is a dated shop configuration, not a permanent
+      Curiosity Shop; October 2 and later changes are outside this snapshot.
 
   - id: soul-urn
     starts_at: 600
@@ -157,6 +279,9 @@ neutral_scaling:
   releases_soul_orbs: false
   sharing: equal_among_allied_damagers
 
+# Legacy data key retained; the September 29 player-facing name is Buff Container.
+# starts_at is container availability, not the earliest buff level from all sources.
+golden_statue_buffs_source: github.deadlock-data.gameplay.0d46cdecfccf
 golden_statue_buffs:
   - tier: 1
     starts_at: 180
@@ -182,3 +307,74 @@ golden_statue_buffs:
     weapon_damage_percent: 6
     health: 30
     spirit_power: 4
+
+buff_container_additional_buffs:
+  source: github.deadlock-data.gameplay.9830c72afd4e
+  tier_thresholds_match_minutes: [0, 10, 30]
+  conversion_note: >-
+    Preserve raw movement-speed modifier values beside the display conversion
+    (source units multiplied by 0.0254 to obtain meters per second). The wiki
+    map's outdated timing subsection disagrees with the client value for Tier 1;
+    the client-pinned modifier is used here.
+  buffs:
+    bullet_resist:
+      modifier: MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST
+      source_values_by_tier: [0.5, 0.75, 1.0]
+      source_value_unit: Percent
+    spirit_resist:
+      modifier: MODIFIER_VALUE_TECH_RESIST
+      source_values_by_tier: [0.5, 0.75, 1.0]
+      source_value_unit: Percent
+    ability_range:
+      modifier: MODIFIER_VALUE_TECH_RANGE_PERCENT
+      source_values_by_tier: [0.25, 0.5, 0.75]
+      source_value_unit: Percent
+      tier_1_additional_radius_modifier:
+        modifier: MODIFIER_VALUE_TECH_RADIUS_PERCENT
+        source_value: 0.25
+        source_value_unit: Percent
+      note: >-
+        The radius modifier is present in Tier 1 source data and absent from the
+        Tier 2 and Tier 3 records; stacking and radius semantics are unresolved.
+    move_speed:
+      modifier: MODIFIER_VALUE_MOVEMENT_SPEED_MAX
+      raw_source_units_by_tier: [3.937, 7.874, 11.811]
+      display_meters_per_second_by_tier: [0.1, 0.2, 0.3]
+    loot_pool:
+      deck_size: 3
+      exact_selection_semantics: unresolved
+      wiki_selection_description_record: data/map-interactions.yaml
+      weights_by_match_minute:
+        0:
+          spirit_permanent_pickup: 1.0
+          firerate_permanent_pickup: 1.0
+          ammo_permanent_pickup: 1.0
+          hp_permanent_pickup: 2.0
+          cd_permanent_pickup: 1.0
+          wp_permanent_pickup: 1.0
+          bulletresist_permanent_pickup: 1.0
+          spiritresist_permanent_pickup: 1.0
+          range_permanent_pickup: 0.5
+          movespeed_permanent_pickup: 0.5
+        10:
+          spirit_permanent_pickup_lv2: 1.0
+          firerate_permanent_pickup_lv2: 1.0
+          ammo_permanent_pickup_lv2: 1.0
+          hp_permanent_pickup_lv2: 2.0
+          cd_permanent_pickup_lv2: 1.0
+          wp_permanent_pickup_lv2: 1.0
+          bulletresist_permanent_pickup_lv2: 1.0
+          spiritresist_permanent_pickup_lv2: 1.0
+          range_permanent_pickup_lv2: 0.5
+          movespeed_permanent_pickup_lv2: 0.5
+        30:
+          spirit_permanent_pickup_lv3: 1.0
+          firerate_permanent_pickup_lv3: 1.0
+          ammo_permanent_pickup_lv3: 1.0
+          hp_permanent_pickup_lv3: 2.0
+          cd_permanent_pickup_lv3: 1.0
+          wp_permanent_pickup_lv3: 1.0
+          bulletresist_permanent_pickup_lv3: 1.0
+          spiritresist_permanent_pickup_lv3: 1.0
+          range_permanent_pickup_lv3: 0.5
+          movespeed_permanent_pickup_lv3: 0.5

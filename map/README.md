@@ -16,6 +16,23 @@ sources:
 
 **This is a supplementary map snapshot, not a refresh of the September 3 hero/item/NPC baseline.** The project owner reports permission to use and publicly redistribute this derived coordinate layer **for non-commercial use only**, without identifying or attributing the private source. Identifying provenance and permission correspondence are kept privately by the project owner rather than in this repository. This permission does not establish a general license for the source's site code, imagery, raw exports or commercial uses. Coordinates reflect the extracted map as of **October 6, 2026**; there is no publicly pinned game client version for this layer. We follow the owner's explicit working assumption that map features not mentioned in the October 2 and 5 patches have remained in place since City Never Sleeps; this is not independent patch-time verification. Do not replace current combat/timing records with map data.
 
+## Camp compositions and Sinner sites
+
+The [composition guide](../general/map/haunt-camps-and-sinner-sites.md) and
+[structured patterns](../data/haunt-camp-compositions.yaml) supplement this
+coordinate inventory with pinned October 1 wiki evidence: three-small ordinary
+camps, Haunt family tiers, and four Sinner configurations totaling 15 machines at
+11 sites. The guide lists the 11 derived machine-name groups and explains the
+hybrid clear rule. Exact family/unit assignments for every named camp are still
+not supplied by the inspected sources; **the placements and difficulty tiers
+are available**, not broadly unresolved. October 6 wiki differences are dated
+separately, and the original coordinate snapshot is unchanged.
+
+See [map interactions and the remaining placement audit](../general/map/map-interactions-and-open-questions.md)
+for sourced object behavior and what evidence is still needed to update individual
+Theater/basketball-area markers. The coordinate payload was validated, not
+refreshed from a newer export in this pass.
+
 ## Find what you need
 
 - [Breakable counts by named area](breakable-zones.yaml): best first read for “where are the most Tough Crates?” Counts are **potential map markers**, not currently available loot. `crates` means ordinary wooden crates; `tough_crates` require heavy melee; `statues` means Buff Containers (old name Golden Statues).

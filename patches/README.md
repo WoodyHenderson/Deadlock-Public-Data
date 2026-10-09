@@ -21,6 +21,12 @@ See [`manifest.yaml`](manifest.yaml) for the per-file hashes and source paths.
 The separate [client-6694 review](2026-09-16-client-6694-review.md) documents
 which structured records were refreshed and keeps patch-note-only claims distinct.
 
+The [City Never Sleeps pre-Rat King review](2026-09-29-city-never-sleeps-pre-rat-king-review.md)
+covers September 29 through October 1/client 6731. It is curated evidence, not
+a raw changelog; no September 29/30 raw file was present in the pinned archive.
+The raw archive and its manifest are unchanged. October 2 and later releases
+remain separate imports.
+
 ## Retrieval policy
 
 The raw archive is historical evidence and does not by itself update current

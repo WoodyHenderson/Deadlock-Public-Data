@@ -1,19 +1,22 @@
 {
   "schema_version": 1,
   "id": "npc.large-neutral",
-  "snapshot_id": "deadlock-wiki-2026-09-03",
-  "current_as_of": "2026-09-04",
-  "evidence_status": "source_verified",
+  "snapshot_id": "deadlock-data-tier-base-client-6731",
+  "current_as_of": "2026-10-01",
+  "evidence_status": "source_conflict",
   "sources": [
     "deadlock-api.npc-units.client-6684.source-10933105",
     "github.deadlock-data.npcs.311b2e8d895e",
-    "wiki.neutral.125766"
+    "wiki.neutral.125766",
+    "github.deadlock-data.gameplay.0d46cdecfccf",
+    "wiki.haunt.177431"
   ],
   "identity": {
     "name": "Large Neutral",
     "aliases": [
       "large denizen",
-      "large jungle creep"
+      "large jungle creep",
+      "large Haunt tier base"
     ],
     "internal_class": "neutral_trooper_strong",
     "numeric_id": 3392417854
@@ -30,8 +33,10 @@
   },
   "field_sources": {
     "numeric_id": "deadlock-api.npc-units.client-6684.source-10933105:neutral_trooper_strong.id",
-    "gameplay_values": "github.deadlock-data.npcs.311b2e8d895e:neutral_trooper_strong",
-    "behavior_context": "wiki.neutral.125766"
+    "gameplay_values": "github.deadlock-data.gameplay.0d46cdecfccf:neutral_trooper_strong",
+    "behavior_context": "wiki.haunt.177431",
+    "health_growth_fraction_per_minute": "wiki.neutral.125766",
+    "legacy_weak_points": "github.deadlock-data.npcs.311b2e8d895e:neutral_trooper_strong"
   },
   "tier": "large",
   "camp": {
@@ -45,8 +50,9 @@
     "spirit_resistance_percent": 55.0,
     "health_growth_fraction_per_minute": 0.021,
     "damage_growth_percent_per_minute": 0.5,
-    "melee_resistance_percent": 20.0,
-    "melee_resistance_evidence_status": "needs_primary_verification"
+    "melee_resistance_percent": null,
+    "melee_resistance_evidence_status": "old modifier absent in client 6731; runtime value unresolved, not assumed zero",
+    "legacy_melee_resistance": {"percent": 20.0, "source": "wiki.neutral.125766"}
   },
   "ranged_attack": {
     "bullet_damage": 9.1,
@@ -55,10 +61,14 @@
     "range": 38.1,
     "damage_type": "weapon"
   },
-  "weak_points": {
+  "review_scope": "Shared tier baseline, not every family's stats. Health, bullet/spirit resistances, weapon and reward fields agree with client 6731; API ID and explicitly legacy fields retain older pins. Weapon range denotes configured falloff, not a tested activation radius.",
+  "targeting_configuration": {"SightRangePlayers": 38.1, "SightRangeNPCs": 38.1},
+  "weak_points": {"count": null, "respawn_time": null, "status": "old helper fields absent from client 6731; runtime removal not inferred"},
+  "legacy_weak_points": {
     "count": 3,
     "respawn_time": 3.0,
-    "type": "ENWP_Strong"
+    "type": "ENWP_Strong",
+    "source": "github.deadlock-data.npcs.311b2e8d895e"
   },
   "reward": {
     "base_unsecured_souls": 181,
