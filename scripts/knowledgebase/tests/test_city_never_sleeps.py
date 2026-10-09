@@ -61,7 +61,7 @@ class CityNeverSleepsTests(unittest.TestCase):
         self.assertIn("do not independently establish public match availability", review)
         self.assertIn("not** a verbatim changelog", review)
         self.assertIn("## Unresolved / excluded", review)
-        self.assertIn("runtime spawn/activation remain unverified", review)
+        self.assertIn("runtime spawn/activation remain unverified", " ".join(review.split()))
 
 
 if __name__ == "__main__":

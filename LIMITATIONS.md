@@ -54,9 +54,16 @@ October 2 Rat King release. It does not advance hero/item rosters or the root
 September 3 baseline. Client fields are configuration, official announcements
 are patch intent, and later wiki geography is labeled interpretation.
 
-Still unresolved: Haunt family-to-camp composition and placements; Sinner
-machine/site counts, reward conversion, hybrid-camp clear rules and variable
-jackpot timing distribution; anonymous breakable-group mapping; Healing Snack
+Available: 40 named camp markers with difficulty tiers and 15 Sinner machine
+markers in the existing coordinate layer. The [composition guide](general/map/haunt-camps-and-sinner-sites.md)
+adds pinned October 1 wiki family tiers, ordinary-camp patterns, 15 machines at
+11 sites, four Sinner configurations, and the hybrid clear rule. Machine-name
+groups are derived from the map, not independent runtime camp membership.
+
+Still unresolved: exact family/unit assignments at each named Haunt/hybrid
+camp and the wiki's six unenumerated medium-camp combinations; Sinner reward
+conversion and variable jackpot timing distribution; anonymous breakable-group
+mapping; Healing Snack
 heal amount; Buff Container selection/stacking semantics; exact Steam Vent
 interactions; and Broker availability, prices and eligibility by date/mode.
 The corrupted-item sidecar is not a list of currently purchasable variants.

@@ -37,6 +37,10 @@ player's team orientation; do not treat a fixed left/right view as universal.
 No routes, pathfinding edges, travel-time claims, or crate placements are
 recorded here.
 
+For existing camp locations, family-tier descriptions, Sinner site counts and
+composition patterns, use [Haunt Camp Compositions and Sinner Sites](haunt-camps-and-sinner-sites.md).
+It distinguishes known map markers from missing per-location family/unit assignments.
+
 ## Landmark behavior and evidence limits
 
 - Valve's update description says the Sunken Plaza fog blocks outside sound and
@@ -45,8 +49,9 @@ recorded here.
   are wiki interpretation and have not been independently runtime-tested.
 - The later map article says Souls collected in the Bell Tower ring its bell and
   alert players across the map, and reports three Sinner's Sacrifice machines
-  there. Preserve those as later wiki claims; they are not client placement
-  records and do not resolve the total machine/site count.
+  there. Preserve those as later wiki claims, not client placement records.
+  The separate October 1 Sinner article supplies 15 machines across 11 sites;
+  see the composition guide for the count and provenance.
 - Valve identifies the Theater and Haunted Lot basketball court as update
   features. Entrances, roof access, and exact court composition come from the
   later map article, not the announcement.

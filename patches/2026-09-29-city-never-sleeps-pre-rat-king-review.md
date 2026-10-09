@@ -13,6 +13,8 @@ sources:
   - steam.news.city-never-sleeps.1844751498235383
   - wiki.update.2026-09-29.181123
   - wiki.update.2026-09-30.177156
+  - wiki.haunt.177431
+  - wiki.sinners-sacrifice.177553
   - github.deadlock-data.gameplay.9b8021ef9af8
   - github.deadlock-data.gameplay.2c01011bbc88
   - github.deadlock-data.gameplay.9830c72afd4e
@@ -77,10 +79,18 @@ The launch review must compare the October 1 and October 2 client snapshots.
 
 ## Unresolved / excluded
 
-- Haunt family-to-camp composition, exact active camp counts, NPC eye-crit and
-  strong-tier melee behavior, and runtime spawn/activation remain unverified.
-- The October 6 coordinate layer is not a dated September 29 placement snapshot.
-  Sinner machine/site counts and hybrid camp-clear conditions remain unresolved.
+- Existing map data supplies 40 named camp markers with tiers and 15 Sinner
+  machine markers. The new [composition guide](../general/map/haunt-camps-and-sinner-sites.md)
+  adds October 1 wiki camp patterns, family tiers, four Sinner configurations
+  (15 machines/11 sites), and the all-machines/all-member-Haunts clear rule.
+  This is sourced information, not independent runtime validation.
+- Exact family/unit assignments at every named camp, the six unenumerated
+  medium combinations, NPC eye-crit/strong-tier melee behavior and runtime
+  spawn/activation remain unverified. October 6 wiki descriptions differing
+  from October 1 are recorded separately, not treated as a gameplay patch.
+- The October 6 coordinate layer is not an independently verified September 29
+  placement snapshot; using it for that date retains the documented continuity
+  assumption. Derived machine-name groups are not proof of hybrid membership.
 - Sinner's `MiniGameFastChance`/`MiniGameFastSpeed` fields do not define the
   variable timing distribution or replace the separate Souls reward model.
 - Broker standard/ranked availability, exact first opening/exit conditions,
@@ -99,6 +109,9 @@ The scoped imports are [map timings](../data/map-timings.yaml), the
 [district](../general/map/districts-and-landmarks.md),
 [timed-event](../general/map/timed-events-and-neutral-objectives.md), and
 [visibility](../general/map/minimap-and-visibility.md) guides.
+The [camp-composition sidecar](../data/haunt-camp-compositions.yaml) also records
+pinned wiki patterns and connects the existing map inventory without assigning
+unsupported families or unit counts to named markers.
 Source commits, revisions, and file hashes are registered in
 [the source registry](../sources/source-registry.yaml).
 

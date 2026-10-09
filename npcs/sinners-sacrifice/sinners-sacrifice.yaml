@@ -10,7 +10,8 @@
     "wiki.sinners-sacrifice.110087",
     "github.deadlock-data.gameplay.9830c72afd4e",
     "github.deadlock-data.gameplay.0d46cdecfccf",
-    "wiki.update.2026-09-29.181123"
+    "wiki.update.2026-09-29.181123",
+    "wiki.sinners-sacrifice.177553"
   ],
   "identity": {
     "name": "Sinner's Sacrifice",
@@ -36,7 +37,8 @@
     "gameplay_values": "github.deadlock-data.npcs.311b2e8d895e:neutral_sinners_sacrifice",
     "post_update_config": "github.deadlock-data.gameplay.9830c72afd4e:neutral_sinners_sacrifice",
     "patch_note_intent": "wiki.update.2026-09-29.181123",
-    "behavior_context": "wiki.sinners-sacrifice.110087"
+    "behavior_context": "wiki.sinners-sacrifice.110087",
+    "site_composition_and_clear_rule": "wiki.sinners-sacrifice.177553"
   },
   "classification_detail": "breakable_object",
   "combat": {
@@ -70,7 +72,16 @@
     "heavy_melee_permanent_buffs": 4
   },
   "post_update_evidence_note": "Client 6722 retains MaxHealth 500, GoldReward 155, and adds MiniGameFastChance 0.4 and MiniGameFastSpeed 0.04191. Do not equate the NPC GoldReward field with the existing 310-Soul internal base without a supported conversion.",
-  "placement_count_status": "source_conflict; client NPC records do not enumerate map sites or machines",
+  "placement_count_status": "15 machines at 11 sites per pinned October 1 wiki prose; client NPC records do not enumerate placements",
+  "site_composition": {
+    "source": "wiki.sinners-sacrifice.177553",
+    "machine_count": 15,
+    "site_count": 11,
+    "configurations_record": "data/haunt-camp-compositions.yaml",
+    "requires_all_machines_and_member_haunts_cleared": true,
+    "requires_nearby_breakables_cleared": false,
+    "evidence_status": "source_verified_wiki_not_independently_runtime_tested"
+  },
   "reward": {
     "internal_base_souls": 310,
     "growth_percent_of_base_per_minute": 1.08,

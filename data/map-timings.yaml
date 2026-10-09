@@ -7,6 +7,7 @@ sources:
   - wiki.the-cursed-apple.125757
   - wiki.neutral.125766
   - wiki.trooper.114174
+  - wiki.sinners-sacrifice.177553
   - github.deadlock-data.gameplay.fc4f540f12e0
   - github.deadlock-data.changelogs.raw.fc4f540f12e0
   - valve.city-never-sleeps.2026-09-29
@@ -138,8 +139,18 @@ events:
   - id: sinners-sacrifice
     starts_at: 480
     respawn_after_full_clear: 300
-    map_locations: 10
-    total_machines: 12
+    map_locations: 11
+    total_machines: 15
+    placement_count_source: wiki.sinners-sacrifice.177553
+    legacy_placement_counts:
+      map_locations: 10
+      total_machines: 12
+      source: wiki.the-cursed-apple.125757
+      status: older_map_summary_not_the_current_sinner_count
+    composition_record: data/haunt-camp-compositions.yaml
+    clear_rule_source: wiki.sinners-sacrifice.177553
+    clear_requires_all_machines_and_member_haunts: true
+    clear_requires_nearby_breakables: false
     post-update_bonus_timing: variable
     exact_timing_distribution: unresolved
     configured_minigame_fast_chance: 0.4
@@ -148,9 +159,12 @@ events:
     patch_intent_source: wiki.update.2026-09-29.181123
     structured_source: github.deadlock-data.gameplay.9830c72afd4e
     note: >-
-      Keep the pre-existing location/machine counts and reward formula separate
-      from the October 6 coordinate snapshot. The new fields and patch note do
-      not resolve jackpot semantics, machine-vs-site counts, or hybrid-camp clear.
+      The October 1 Sinner article reports 15 machines at 11 sites and the
+      all-machines/all-member-Haunts clear rule, excluding nearby breakables.
+      These are wiki-sourced rules, not independent runtime tests. Composition
+      patterns and separate map-marker groups are in the linked record; exact
+      per-location Haunt families, jackpot semantics and reward conversion
+      are not established by the client configuration.
 
   - id: broker.corrupted-item-shop
     configured_enabled: true

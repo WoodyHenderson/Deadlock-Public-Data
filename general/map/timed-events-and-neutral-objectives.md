@@ -27,6 +27,8 @@ sources:
   - wiki.mechanics.110139
   - wiki.neutral.125766
   - wiki.souls.157718
+  - wiki.haunt.177431
+  - wiki.sinners-sacrifice.177553
   - wiki.update.2026-09-29.181123
   - valve.city-never-sleeps.2026-09-29
   - github.deadlock-data.gameplay.fc4f540f12e0
@@ -65,8 +67,10 @@ The September 29 update uses **Haunts** as the player-facing name for neutral
 camps. Client datasets retain `neutral_*` internal keys; that naming does not
 prove every key is placed in a match. Valve's announcement names Specimen,
 Gutter Ghoul, Barrel Mimic, Past Dues, Stage Hands, Crabbage Pot, Festival
-Spirit, Shrooms, and Underhands. Exact family-to-camp composition and placement
-are not derived from the unit-key inventory.
+Spirit, Shrooms, and Underhands. The [camp-composition and Sinner-site guide](haunt-camps-and-sinner-sites.md)
+adds pinned wiki family tiers and composition patterns and links the existing
+40 named camp markers. Exact family/unit assignments to every named camp are
+not established by the unit-key inventory or the inspected wiki articles.
 
 Haunt units belong to neither team and attack when provoked. A unit's Soul
 bounty is shared equally among allied players who damaged it, and the reward is
@@ -131,8 +135,12 @@ bonus timing is now variable. Client 6722 adds `MiniGameFastChance: 0.4` and
 `MiniGameFastSpeed: 0.04191`, but those configuration fields do not specify the
 new timing distribution or a changed Souls reward. The older fixed timing
 interpretation is retained only as a pre-update reference in
-`npcs/sinners-sacrifice/sinners-sacrifice.yaml`. Machine/site counts and whether
-Haunts must also be cleared remain unresolved.
+`npcs/sinners-sacrifice/sinners-sacrifice.yaml`. The October 1 Sinner article
+reports **15 machines at 11 sites**, including four hybrid sites. Its clear
+rule requires all machines and member Haunts to be destroyed, but not nearby
+crates or Buff Containers. See the [composition guide](haunt-camps-and-sinner-sites.md)
+for the four patterns and named machine groups; exact per-site families remain
+unassigned, and the rule is wiki-sourced rather than independently runtime-tested.
 
 ## New Breakables and The Broker
 

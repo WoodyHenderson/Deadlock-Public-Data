@@ -32,6 +32,11 @@ labeled interpretation, not a launch-day placement snapshot. Hero/item rosters,
 map coordinates, and the root baseline are unchanged by this refresh. See the
 [pre-Rat King review](patches/2026-09-29-city-never-sleeps-pre-rat-king-review.md)
 and [limitations](LIMITATIONS.md#city-never-sleeps-boundary).
+The [camp-composition guide](general/map/haunt-camps-and-sinner-sites.md) adds
+pinned pre-release wiki family tiers, camp patterns, and Sinner configurations
+(15 machines/11 sites), tied to the existing map-marker inventory. Later wiki
+differences are explicit; exact family/unit assignments at every named camp
+remain incomplete rather than being inferred.
 
 ## Contents
 

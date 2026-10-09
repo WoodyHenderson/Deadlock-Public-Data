@@ -8,6 +8,36 @@ snapshot:
   excludes_media: true
 
 sources:
+  - id: wiki.haunt.177431
+    title: Haunt — pre-Rat King camp composition and family tiers
+    url: "https://deadlock.wiki/Haunt"
+    revision_url: "https://deadlock.wiki/Haunt?oldid=177431"
+    revision_id: 177431
+    last_modified: "2026-10-01T15:57:19Z"
+    accessed_at: "2026-10-08"
+    wikitext_sha256: bb56fb2b7f60d1d7f42b60e4db7df3c7fe29db750efca232f85f26058673d6b6
+    scope: Article prose gives family tiers, three-small composition, six unspecified medium combinations and a dated large-camp description. Does not identify family/unit counts at each named marker. Live-transcluded numeric templates are excluded.
+
+  - id: wiki.haunt.181836
+    title: Haunt — later camp composition and family-tier comparison
+    url: "https://deadlock.wiki/Haunt"
+    revision_url: "https://deadlock.wiki/Haunt?oldid=181836"
+    revision_id: 181836
+    last_modified: "2026-10-06T04:15:07Z"
+    accessed_at: "2026-10-08"
+    wikitext_sha256: e6c945c4eff134628342cfd19cfb3e05347ee8aa16896d838bb211d620b199a9
+    scope: Later prose differs on Crabbage Pot/Stage Hand tiers and large-camp alternatives; retained separately, not backdated or treated as evidence of a gameplay patch. No live-transcluded numeric values imported.
+
+  - id: wiki.sinners-sacrifice.177553
+    title: Sinner's Sacrifice — pre-Rat King site compositions
+    url: "https://deadlock.wiki/Sinner%27s_Sacrifice"
+    revision_url: "https://deadlock.wiki/Sinner%27s_Sacrifice?oldid=177553"
+    revision_id: 177553
+    last_modified: "2026-10-01T21:58:24Z"
+    accessed_at: "2026-10-08"
+    wikitext_sha256: 4cba6e5eb4fde866c4f5c3b6b28f9d77ba86d88be374b0255cd2833e71133b85
+    scope: Explicit 15 machines/11 sites, four composition patterns and the hybrid clear rule; does not supply a named-location family roster. Only composition/clear prose imported, not unrelated reward/jackpot claims or live template values.
+
   - id: valve.city-never-sleeps.2026-09-29
     title: Valve City Never Sleeps official announcement
     url: "https://www.playdeadlock.com/cityneversleeps"
@@ -53,8 +83,10 @@ sources:
     url: "https://deadlock.wiki/Sinner%27s_Sacrifice"
     revision_url: "https://deadlock.wiki/Sinner%27s_Sacrifice?oldid=181842"
     revision_id: 181842
-    accessed_at: "2026-10-06"
-    scope: Post-update Sinner locations, jackpot and camp-respawn descriptions; placement counts remain subject to source conflict
+    last_modified: "2026-10-06T05:46:50Z"
+    accessed_at: "2026-10-08"
+    wikitext_sha256: 935b3ad7eacccda444ad0b7d77556c8dc82de484d00189bcb077c771bbec3abd
+    scope: Later named-landmark context for Bell Tower and Sunken Plaza; agrees with the October 1 Sinner counts and configuration patterns. Does not give a complete per-location Haunt family/unit roster; unrelated jackpot/reward changes are not imported.
 
   - id: wiki.steam-vent.181310
     title: Steam Vent
