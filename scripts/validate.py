@@ -126,11 +126,12 @@ def validate_lifesteal(records, source_ids):
 
 
 def validate_client_6694_snapshot(records):
-    """Ensure the scoped September 16 refresh remains consistently pinned."""
+    """Retain the September 16 pins, with only Rat King at his launch snapshot."""
     hero_roster = records["heroes/roster.yaml"]
     item_roster = records["items/roster.yaml"]
-    check(hero_roster.get("snapshot_id") == "deadlock-wiki-2026-09-16",
-          "Hero roster snapshot must identify September 16")
+    check(hero_roster.get("snapshot_id") == "deadlock-data-mixed-2026-10-02",
+          "Hero roster must identify the mixed October 2 snapshot")
+    check(hero_roster.get("hero_count") == 39, "Expected 38 baseline heroes plus Rat King")
     check(hero_roster.get("source") == "github.deadlock-data.hero-data.fc4f540f12e0",
           "Hero roster source must identify client 6694")
     check(item_roster.get("snapshot_id") == "deadlock-wiki-2026-09-16",
@@ -140,15 +141,17 @@ def validate_client_6694_snapshot(records):
     for path, hero in records.items():
         if not path.startswith("heroes/") or not path.endswith(".yaml") or path == "heroes/roster.yaml":
             continue
-        check(hero.get("snapshot_id") == "deadlock-wiki-2026-09-16",
-              f"Hero snapshot date: {path}")
+        launch = path == "heroes/rat-king/rat-king.yaml"
+        pin = "dc1679b9606e" if launch else "fc4f540f12e0"
+        snapshot = "deadlock-data-client-6737" if launch else "deadlock-wiki-2026-09-16"
+        check(hero.get("snapshot_id") == snapshot, f"Hero snapshot date: {path}")
+        check((hero.get("client_version"), hero.get("source_revision")) ==
+              ((6737, 11076133) if launch else (6694, 11005995)), f"Hero client pin: {path}")
         sources = hero.get("sources", {})
-        check(sources.get("hero_data") == "github.deadlock-data.hero-data.fc4f540f12e0",
-              f"Hero data pin: {path}")
-        check(sources.get("ability_data") == "github.deadlock-data.ability-data.fc4f540f12e0",
-              f"Ability data pin: {path}")
-        check(sources.get("ability_cards") == "github.deadlock-data.ability-cards.fc4f540f12e0",
-              f"Ability-card pin: {path}")
+        for field, dataset in (("hero_data", "hero-data"), ("ability_data", "ability-data"),
+                               ("ability_cards", "ability-cards"), ("ability_localization", "english")):
+            check(sources.get(field) == f"github.deadlock-data.{dataset}.{pin}",
+                  f"Hero {field} pin: {path}")
         md_path = ROOT / path.replace(".yaml", ".md")
         md = md_path.read_text()
         if md.startswith("---\n"):
@@ -294,7 +297,7 @@ def main():
                 check(desc["source"] in ids, f"Description source: {ability['name']}")
                 check(all(line in md for line in desc["plain_text"].splitlines()), f"Unrendered description: {ability['name']}")
             check(ability["name"] in index, f"Unindexed ability: {ability['name']}")
-    check(dict(counts) == {"abilities": 152, "card_references": 631, "descriptions": 482}, "Description coverage totals")
+    check(dict(counts) == {"abilities": 156, "card_references": 650, "descriptions": 497}, "Description coverage totals")
     manifest = records["patches/manifest.yaml"]
     expected = set()
     for entry in manifest["files"]:
@@ -315,7 +318,7 @@ def main():
         check(result.returncode == 0, f"Map snapshot consistency: {result.stdout}{result.stderr}")
     if errors:
         raise SystemExit("Validation failed:\n" + "\n".join(errors))
-    print(f"PASS: {len(records)} YAML files; 38 heroes, 173 items, 14 NPCs, 2 objectives; "
+    print(f"PASS: {len(records)} YAML files; 39 heroes, 173 items, 14 NPCs, 2 objectives; "
           f"{counts['abilities']} abilities, {counts['descriptions']} descriptions; "
           f"{len(expected)} hash-verified changelogs; local links, source references, lifesteal consistency, and burst profiles valid.")
 

@@ -99,6 +99,7 @@ holds exact fields. Names reflect the pinned roster, not a live-game check.
 | [Paige](heroes/paige/paige.md) | Bookwyrm; Plot Armor; Captivating Read; Rallying Charge |
 | [Paradox](heroes/paradox/paradox.md) | Pulse Grenade; Time Wall; Kinetic Carbine; Paradoxical Swap |
 | [Pocket](heroes/pocket/pocket.md) | Barrage; Flying Cloak; Enchanter's Satchel; Affliction |
+| [Rat King](heroes/rat-king/rat-king.md) | Scrap Grenade; Rat Swarm; Royal Pestments; Rule, Ratannia! |
 | [Rem](heroes/rem/rem.md) | Pillow Toss; Tag Along; Lil Helpers; Naptime |
 | [Seven](heroes/seven/seven.md) | Lightning Ball; Static Charge; Power Surge; Storm Cloud |
 | [Shiv](heroes/shiv/shiv.md) | Serrated Knives; Slice and Dice; Bloodletting; Killing Blow |
