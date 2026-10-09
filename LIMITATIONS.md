@@ -76,12 +76,34 @@ mode gating and eligibility implementation. The later snack timing's effective
 date is not established. A fresh authorized marker export or verified before/after
 coordinates is still needed for the Theater/basketball-area placement re-audit.
 The corrupted-item sidecar is not a list of currently purchasable variants.
-No October 2 Broker disablement or later release/mode changes are included.
+That pre-release research does not incorporate the October 2 Broker disablement;
+the separate release import below updates its configured state and dated mode evidence.
 
 The separate October 6 coordinate snapshot is unchanged. It is not used to
 assert exact September 29 placements. No raw September 29/30 changelog was
 available in the pinned archive; the [pre-release review](patches/2026-09-29-city-never-sleeps-pre-rat-king-review.md)
 is a curated summary, not a fabricated raw patch file.
+
+## Rat King release boundary
+
+[Rat King](heroes/rat-king/rat-king.md) is pinned to October 2/client 6737.
+The official announcement establishes public release; the earlier selectable
+flag did not. His client-6731 comparison is incomplete pre-release data, never
+launch values. The other 38 heroes retain their previous records.
+
+The October 3 Construction-marked wiki article describes tunnel access via
+crouch, no entry during combat, and Spellbreaker not proccing on Royal Pestments
+barrier damage. These are separately dated wiki descriptions, not independent
+launch runtime tests. Tunnel vents are not equated with Steam Vents.
+
+The Broker enabled convar becomes false in client 6737. Standard/ranked access
+is reported unavailable by the later wiki update transcription, not established
+by the convar alone. Street Brawl eligibility remains unresolved at this cutoff;
+October 4 removal and October 5 balance changes are separate, unapplied updates.
+Healing-ping range remains a client-described prompt condition in source units.
+Supporting rat NPC fields establish neither neutral-camp placement nor runtime
+association with Rat King's summoned rats. No root-baseline or geometry advance
+and no fabricated raw October 2 changelog are included.
 
 ## Burst timing boundary
 

@@ -1,7 +1,7 @@
 schema_version: 1
 id: data.general.map-timings
-snapshot_id: deadlock-data-pre-rat-king-2026-10-01
-current_as_of: "2026-10-01"
+snapshot_id: deadlock-data-mixed-2026-10-02
+current_as_of: "2026-10-02"
 evidence_status: source_verified_with_unresolved_breakable_category_mapping
 sources:
   - wiki.the-cursed-apple.125757
@@ -18,6 +18,8 @@ sources:
   - github.deadlock-data.gameplay.527f1326b455
   - github.deadlock-data.gameplay.3d26c988891f
   - github.deadlock-data.gameplay.0d46cdecfccf
+  - github.deadlock-data.gameplay.dc1679b9606e
+  - wiki.update.2026-10-02.181191
 
 units:
   time: seconds
@@ -175,7 +177,7 @@ events:
       are not established by the client configuration.
 
   - id: broker.corrupted-item-shop
-    configured_enabled: true
+    configured_enabled: false
     configuration_history:
       - client: 6722
         enabled: true
@@ -183,6 +185,9 @@ events:
       - client: 6731
         enabled: true
         source: github.deadlock-data.gameplay.0d46cdecfccf
+      - client: 6737
+        enabled: false
+        source: github.deadlock-data.gameplay.dc1679b9606e
     configured_items_per_stock: 1
     configured_spawn_base: 1800
     configured_spawn_variance_seconds: 120
@@ -193,16 +198,18 @@ events:
     configured_force_variance: false
     configured_purchasing_anywhere: false
     mode_availability:
-      standard_ranked: unresolved
+      standard_ranked: unavailable_by_2026-10-02_release_checkpoint
       street_brawl: unresolved
+    mode_availability_source: wiki.update.2026-10-02.181191
     source: github.deadlock-data.gameplay.9830c72afd4e
-    enabled_state_source: github.deadlock-data.gameplay.0d46cdecfccf
+    enabled_state_source: github.deadlock-data.gameplay.dc1679b9606e
     note: >-
-      The client shop-enabled convar is true through client 6731. Configuration
-      alone does not establish live availability by mode/date, prices, or exact
-      opening/exit conditions. Street Brawl's configured Round 5 item is a
-      separate mode rule. This is a dated shop configuration, not a permanent
-      Curiosity Shop; October 2 and later changes are outside this snapshot.
+      The shop-enabled convar is true through client 6731 and false in 6737.
+      The later October 2 wiki transcription reports no access in standard/ranked;
+      mode scope is wiki interpretation, not established by the convar alone.
+      Street Brawl availability remains unresolved. Configured stock/cadence
+      fields above are historical, not evidence of an active shop at this cutoff.
+      October 4 mode changes are a separate import.
 
   - id: soul-urn
     starts_at: 600

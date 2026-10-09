@@ -28,6 +28,7 @@ sources:
   - wiki.update.2026-09-29.181123
   - wiki.steam-vent.181310
   - wiki.steam-vent.177398
+  - github.deadlock-data.gameplay.dc1679b9606e
 ---
 
 # Minimap and Visibility
@@ -87,6 +88,14 @@ in a row disables both text chat and pings for **10 seconds**. The note says thi
 was added after an exploit that could crash the game server. It does not specify
 the exact message-count/window threshold or other timer behavior. This is a dated
 update-note report, not an independently verified runtime test.
+
+### Healing-ping prompt configuration (October 2)
+
+Client 6737 adds `citadel_ping_can_heal_range: 2500`. Its convar description says
+a ping of a low teammate offers a heal only when the teammate is within this
+range and in line of sight. This is a client-described prompt condition, not a
+measured generic ping radius, minimap reveal radius, or runtime test; the value
+remains in source units.
 
 ## Steam Vents
 
