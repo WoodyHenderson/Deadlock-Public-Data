@@ -40,6 +40,13 @@ def allowed_source(url):
     parsed = urlsplit(url)
     if parsed.scheme != "https":
         return False
+    # Narrow official-announcement exception, not a blanket Valve/Steam host allowlist.
+    if url in {
+        "https://www.playdeadlock.com/cityneversleeps",
+        "https://www.playdeadlock.com/public/javascript/react/414.js?contenthash=272d1d6072d261c17d87",
+        "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1422450&count=100&maxlength=0",
+    }:
+        return True
     if parsed.netloc in {"deadlock.wiki", "deadlock-api.com", "api.deadlock-api.com"}:
         return True
     return (parsed.netloc in {"github.com", "raw.githubusercontent.com"}
@@ -246,7 +253,7 @@ def main():
                 check(dest.exists(), f"Broken link: {relative}: {target}")
         if record is not None and str(relative) != "sources/source-registry.yaml":
             for value in walk(record):
-                if re.fullmatch(r"(?:wiki\.|deadlock-api\.|github\.deadlock-data\.)[\w.-]+", value):
+                if re.fullmatch(r"(?:wiki\.|deadlock-api\.|github\.deadlock-data\.|valve\.|steam\.news\.)[\w.-]+", value):
                     check(value in ids, f"Missing source ID: {relative}: {value}")
     validate_client_6694_snapshot(records)
     validate_lifesteal(records, ids)

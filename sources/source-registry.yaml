@@ -8,6 +8,232 @@ snapshot:
   excludes_media: true
 
 sources:
+  - id: valve.city-never-sleeps.2026-09-29
+    title: Valve City Never Sleeps official announcement
+    url: "https://www.playdeadlock.com/cityneversleeps"
+    localization_chunk_url: "https://www.playdeadlock.com/public/javascript/react/414.js?contenthash=272d1d6072d261c17d87"
+    localization_chunk_sha256: 16f604667e0957e6904f683ada8669c56136df01b03c31f1bebc98bf9e554e99
+    accessed_at: "2026-10-06"
+    scope: Official description of the September 29 map/neutral update and future hero announcements; announcement intent only, not complete numeric or runtime mechanics
+
+  - id: steam.news.city-never-sleeps.1844751498235383
+    title: Steam City Never Sleeps announcement
+    url: "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1422450&count=100&maxlength=0"
+    news_gid: "1844751498235383"
+    published_at: "2026-09-29T20:25:11Z"
+    accessed_at: "2026-10-06"
+    scope: Dated confirmation of the September 29 announcement; not a source for exact runtime values
+
+  - id: wiki.update.2026-09-29.181123
+    title: September 29, 2026 update
+    url: "https://deadlock.wiki/Update:September_29,_2026"
+    revision_url: "https://deadlock.wiki/Update:September_29,_2026?oldid=181123"
+    revision_id: 181123
+    accessed_at: "2026-10-06"
+    scope: Wiki transcription of City Never Sleeps announcement; dated patch intent, not a substitute for client data or runtime tests
+
+  - id: wiki.update.2026-09-30.177156
+    title: September 30, 2026 update
+    url: "https://deadlock.wiki/Update:September_30,_2026"
+    revision_url: "https://deadlock.wiki/Update:September_30,_2026?oldid=177156"
+    revision_id: 177156
+    accessed_at: "2026-10-08"
+    scope: Wiki updates index classifies this update as UI/settings changes; it is not a complete changelog or evidence for attributing every same-day client-data difference
+
+  - id: wiki.map.181766
+    title: The Cursed Apple map article
+    url: "https://deadlock.wiki/The_Cursed_Apple"
+    revision_url: "https://deadlock.wiki/The_Cursed_Apple?oldid=181766"
+    revision_id: 181766
+    accessed_at: "2026-10-06"
+    scope: Post-update districts and landmarks; page marked Construction and its timing subsection Outdated, so it does not establish September 29 placement or runtime timing
+
+  - id: wiki.sinners-sacrifice.181842
+    title: Sinner's Sacrifice
+    url: "https://deadlock.wiki/Sinner%27s_Sacrifice"
+    revision_url: "https://deadlock.wiki/Sinner%27s_Sacrifice?oldid=181842"
+    revision_id: 181842
+    accessed_at: "2026-10-06"
+    scope: Post-update Sinner locations, jackpot and camp-respawn descriptions; placement counts remain subject to source conflict
+
+  - id: wiki.steam-vent.181310
+    title: Steam Vent
+    url: "https://deadlock.wiki/Steam_Vent"
+    revision_url: "https://deadlock.wiki/Steam_Vent?oldid=181310"
+    revision_id: 181310
+    accessed_at: "2026-10-06"
+    scope: Post-update steam vent behavior claims; article marked Stub/Construction, so numeric effects and edge cases need independent verification
+
+  - id: github.deadlock-data.gameplay.9b8021ef9af8
+    title: deadlock-wiki/deadlock-data gameplay datasets for client 6701
+    url: "https://github.com/deadlock-wiki/deadlock-data/tree/9b8021ef9af869047554013d586a241f8a4ea19e/data/json"
+    version_url: "https://github.com/deadlock-wiki/deadlock-data/blob/9b8021ef9af869047554013d586a241f8a4ea19e/data/version.txt"
+    commit: 9b8021ef9af869047554013d586a241f8a4ea19e
+    client_version: 6701
+    server_version: 6701
+    source_revision: 11038876
+    version_datetime: "2026-09-25T11:10:43"
+    accessed_at: "2026-10-08"
+    version_file_sha256: 5a441b4ff904308142eb17615584845c99eda20313e491ef76d755239816ba20
+    generic_data_sha256: 54b17cf93a12d31d65c87ac7e40ffc85c07bca1ab18380f5652b5098dccec6c4
+    misc_data_sha256: 2d86334788497c0cc7fb7f3a66e89cebc940b97a9620db8a10b37718ecb64de2
+    npc_data_sha256: 721c1efc599b0212fd89acfbda1f88ce3f60ab73c05e5853404e792a4f3d03e7
+    convars_sha256: 8aca09ac88960a88a154fd5e2e53a915ec81b5d82b0c096399ff72b33a9593b0
+    item_data_sha256: fee5c627a64b318cf1b75e4a271dbcc98d41055128bfdeb0e70e19e030970518
+    scope: Pre-City Never Sleeps comparison snapshot; generated fields establish data values, not placement or live-match behavior
+
+  - id: github.deadlock-data.gameplay.2c01011bbc88
+    title: deadlock-wiki/deadlock-data gameplay datasets for client 6712
+    url: "https://github.com/deadlock-wiki/deadlock-data/tree/2c01011bbc884060f846c1817978c1755c7fdc52/data/json"
+    version_url: "https://github.com/deadlock-wiki/deadlock-data/blob/2c01011bbc884060f846c1817978c1755c7fdc52/data/version.txt"
+    commit: 2c01011bbc884060f846c1817978c1755c7fdc52
+    client_version: 6712
+    server_version: 6712
+    source_revision: 11056283
+    version_datetime: "2026-09-29T13:26:28"
+    accessed_at: "2026-10-08"
+    version_file_sha256: 07348fc305961ed32f21c08766077442ed6a231911dbb4fb0d11eca55e930dbb
+    generic_data_sha256: 876afdcd777c98c31f2f342a22da0fef6448fb31d689cd6a561e658d408acac7
+    misc_data_sha256: c7c5692f6eb33de7a46c29489cf73d2cf567aafe2cf9251915c4a07390248d93
+    npc_data_sha256: f4eeeacfe757aae72b5a82cfc265e5b9c6b84b19d7e0e8c974cfc5f2bab98cb0
+    convars_sha256: d03506e34d7e9f4752bf05c02d95c88ae6bee4de52c11b6fdfc87867239575be
+    item_data_sha256: 9b4e500312e88f005a896422adf442e372e7402d8057f1240743f2d859c96ba5
+    ability_data_sha256: d65e639802effb868def0985abdbc3b2c0f9cd555897ba7f215f5ff0d85d21d3
+    hero_data_sha256: 8e1429594d90e4ba11987785071afc76fd7a2b7f101e5c51fbd65d3e560606d5
+    english_sha256: 21c3612b6bbee0f0fbb9c31ecb45a9c198e5ae208cd933cd388d8b5effd9962c
+    scope: Intermediate September 29 checkpoint; first post-update dataset inspected, not a live-match or availability test
+
+  - id: github.deadlock-data.gameplay.9830c72afd4e
+    title: deadlock-wiki/deadlock-data gameplay datasets for client 6722
+    url: "https://github.com/deadlock-wiki/deadlock-data/tree/9830c72afd4edb7f408f711cedb07f5f4703c141/data/json"
+    version_url: "https://github.com/deadlock-wiki/deadlock-data/blob/9830c72afd4edb7f408f711cedb07f5f4703c141/data/version.txt"
+    commit: 9830c72afd4edb7f408f711cedb07f5f4703c141
+    client_version: 6722
+    server_version: 6722
+    source_revision: 11057808
+    version_datetime: "2026-09-29T15:55:11"
+    accessed_at: "2026-10-08"
+    version_file_sha256: 99a89098a4439c93cdf5bc68829dad6a6478e53e9f790b0584cc0c8510cda753
+    generic_data_sha256: 9fcc7e47c9fc1b3ba82f930814efa75c5a1be889b97da69dcef3e28a52be1cf8
+    misc_data_sha256: c7c5692f6eb33de7a46c29489cf73d2cf567aafe2cf9251915c4a07390248d93
+    npc_data_sha256: f4eeeacfe757aae72b5a82cfc265e5b9c6b84b19d7e0e8c974cfc5f2bab98cb0
+    convars_sha256: d03506e34d7e9f4752bf05c02d95c88ae6bee4de52c11b6fdfc87867239575be
+    item_data_sha256: 9b4e500312e88f005a896422adf442e372e7402d8057f1240743f2d859c96ba5
+    ability_data_sha256: d65e639802effb868def0985abdbc3b2c0f9cd555897ba7f215f5ff0d85d21d3
+    hero_data_sha256: 8e1429594d90e4ba11987785071afc76fd7a2b7f101e5c51fbd65d3e560606d5
+    english_sha256: 0158f078d07bcba180b475ad2fa3ff4e6ec1092198dcb0d58d51eea21318aa60
+    scope: Post-City Never Sleeps comparison snapshot; version timestamp and commit do not prove every changed field was enabled in a live match
+
+  - id: github.deadlock-data.gameplay.527f1326b455
+    title: deadlock-wiki/deadlock-data gameplay datasets for client 6723
+    url: "https://github.com/deadlock-wiki/deadlock-data/tree/527f1326b455b13c43c01798573aa2b0b5ae5074/data/json"
+    version_url: "https://github.com/deadlock-wiki/deadlock-data/blob/527f1326b455b13c43c01798573aa2b0b5ae5074/data/version.txt"
+    commit: 527f1326b455b13c43c01798573aa2b0b5ae5074
+    client_version: 6723
+    server_version: 6723
+    source_revision: 11059930
+    version_datetime: "2026-09-30T05:26:22"
+    accessed_at: "2026-10-08"
+    version_file_sha256: b99c9a4753010125d2c04e6e3c3f53d58ad5da29d9b7677d466dab286712b6dd
+    generic_data_sha256: 912541a7e6e57b943531b9a90d7578977974eeee4a519a11d7132c1b4ab63f1b
+    npc_data_sha256: b88e78ba74af35e48e35717de0e324e20ef1d1d10bbc6faaaaedcf6a8394e5ab
+    ability_data_sha256: 6151d2c193a7d0e8768f212a1e6386a795c926cf3ea083f7ca8b5df7b3c41368
+    hero_data_sha256: 5bfc1e4fe3f35dfaefd49e814f8eb410bb3e42243a2e9233f0f7434d8a5cc2df
+    english_sha256: 0158f078d07bcba180b475ad2fa3ff4e6ec1092198dcb0d58d51eea21318aa60
+    scope: September 30 anonymous breakable schedule revision and exported ability/hero schema fields; no inferred runtime balance change
+
+  - id: github.deadlock-data.gameplay.3d26c988891f
+    title: deadlock-wiki/deadlock-data gameplay datasets for client 6726
+    url: "https://github.com/deadlock-wiki/deadlock-data/tree/3d26c988891fd7447360fe4a51ddbc1315ced3db/data/json"
+    version_url: "https://github.com/deadlock-wiki/deadlock-data/blob/3d26c988891fd7447360fe4a51ddbc1315ced3db/data/version.txt"
+    commit: 3d26c988891fd7447360fe4a51ddbc1315ced3db
+    client_version: 6726
+    server_version: 6726
+    source_revision: 11064056
+    version_datetime: "2026-09-30T15:24:48"
+    accessed_at: "2026-10-08"
+    version_file_sha256: 49c9cd48edad9bdb3190bd17b878c4f76df5560584ccaebc1e86e4af11f8ecf0
+    generic_data_sha256: f8c4601602ee89217ba45f7404230b2278abfa5b5f54ba30109a2cfa77805e29
+    npc_data_sha256: d0b53dd3c82acd989d8a93b1a3c59a928ae8d6173a7974298d1a86bef447e3ea
+    convars_sha256: 68d9236c78522713bd1c9894f0e5c5806a82ffb2372683abb44beb510d73a69c
+    item_data_sha256: 1aeec7caea984d22df2ae81737190008435ee9b68045fb8b14e1fdcc98d553bf
+    ability_data_sha256: f7fcc898a8745ff7e7db4c93221506f43684812444f6f69d3cf32caefb54793d
+    item_cards_sha256: e05ae7b965cfdcbf7dc0d1aca53585622955cc5362235dacae665ec438dc6834
+    ability_cards_sha256: ecd50fd79f6eb0a611adbc22a3a87bf3e232bfb36463e32ce0dab6785f54e3e1
+    scope: September 30 checkpoint with CorruptedUpgrades on 95 items and returned Mid-Boss shield configuration; configuration alone does not establish mode availability or observed behavior
+
+  - id: github.deadlock-data.gameplay.2553188680e4
+    title: deadlock-wiki/deadlock-data gameplay datasets for client 6728
+    url: "https://github.com/deadlock-wiki/deadlock-data/tree/2553188680e46114a7ae2bf604b4d22360d88071/data/json"
+    version_url: "https://github.com/deadlock-wiki/deadlock-data/blob/2553188680e46114a7ae2bf604b4d22360d88071/data/version.txt"
+    commit: 2553188680e46114a7ae2bf604b4d22360d88071
+    client_version: 6728
+    server_version: 6728
+    source_revision: 11067518
+    version_datetime: "2026-10-01T09:50:36"
+    accessed_at: "2026-10-08"
+    version_file_sha256: 2ab7309f4986ae6b767d818919b81b298fc63b3269da045f1bb19d34a6bc0eee
+    generic_data_sha256: f8c4601602ee89217ba45f7404230b2278abfa5b5f54ba30109a2cfa77805e29
+    npc_data_sha256: e794b4cbf66d094da16742ac24fa342a492d1878458e56e94498ffad9624f42f
+    convars_sha256: b0420fecce1075d3894c9d3fb2ee96c6c446ab70e82e74f20fa08d538a492272
+    item_data_sha256: 992743a93afb8a671d76b460da5ca65acd2c48e889598f0d37aa8012819b8bfc
+    ability_data_sha256: ee0d29838f0bedd81efdc3e841d4f8c30c60477e31e630dcfc107cece6f954e1
+    item_cards_sha256: 7ff34ae9364064d23ceff40ac646c3298cd381920964c59bae6cccbd15f9c2d2
+    ability_cards_sha256: 338e276508f011c7420c8b5b04c0d16384a278f287a421342b511afb88e3bc9d
+    attribute_data_sha256: 413abf9da66f9e63df0abdc5321e511f7f41beeb61e09c10c87428ca4a10e587
+    hero_data_sha256: 5bfc1e4fe3f35dfaefd49e814f8eb410bb3e42243a2e9233f0f7434d8a5cc2df
+    english_sha256: c11e39241a230ddaab12900f70df0fac018cd9c15f1953885350439f982aa133
+    scope: October 1 pre-release checkpoint; UI/status-display, copy and source metadata changes are classified in the pre-Rat King review
+
+  - id: github.deadlock-data.gameplay.4a3d36286650
+    title: deadlock-wiki/deadlock-data gameplay datasets for client 6730
+    url: "https://github.com/deadlock-wiki/deadlock-data/tree/4a3d3628665022c30c0150bacc01eeb6e06e86b8/data/json"
+    version_url: "https://github.com/deadlock-wiki/deadlock-data/blob/4a3d3628665022c30c0150bacc01eeb6e06e86b8/data/version.txt"
+    commit: 4a3d3628665022c30c0150bacc01eeb6e06e86b8
+    client_version: 6730
+    server_version: 6730
+    source_revision: 11068420
+    version_datetime: "2026-10-01T12:17:19"
+    accessed_at: "2026-10-08"
+    version_file_sha256: aec9efaa4aaa65372290ec0f1669accabb8104e712509664d82265ec770cf4f0
+    generic_data_sha256: f8c4601602ee89217ba45f7404230b2278abfa5b5f54ba30109a2cfa77805e29
+    misc_data_sha256: c7c5692f6eb33de7a46c29489cf73d2cf567aafe2cf9251915c4a07390248d93
+    npc_data_sha256: e794b4cbf66d094da16742ac24fa342a492d1878458e56e94498ffad9624f42f
+    convars_sha256: 636c63c1cf8e41f525c0e1ce5e8f9e7ad891dbb215f3209ec0dce495365de259
+    item_data_sha256: 992743a93afb8a671d76b460da5ca65acd2c48e889598f0d37aa8012819b8bfc
+    ability_data_sha256: ee0d29838f0bedd81efdc3e841d4f8c30c60477e31e630dcfc107cece6f954e1
+    item_cards_sha256: 7ff34ae9364064d23ceff40ac646c3298cd381920964c59bae6cccbd15f9c2d2
+    ability_cards_sha256: 338e276508f011c7420c8b5b04c0d16384a278f287a421342b511afb88e3bc9d
+    attribute_data_sha256: 413abf9da66f9e63df0abdc5321e511f7f41beeb61e09c10c87428ca4a10e587
+    hero_data_sha256: 5bfc1e4fe3f35dfaefd49e814f8eb410bb3e42243a2e9233f0f7434d8a5cc2df
+    english_sha256: c11e39241a230ddaab12900f70df0fac018cd9c15f1953885350439f982aa133
+    scope: Gameplay datasets match client 6728, with only the unit-status damage-delta display delay changed in convars
+
+  - id: github.deadlock-data.gameplay.0d46cdecfccf
+    title: deadlock-wiki/deadlock-data gameplay datasets for client 6731
+    url: "https://github.com/deadlock-wiki/deadlock-data/tree/0d46cdecfccf77adec16aac01af6d30173e0ebb8/data/json"
+    version_url: "https://github.com/deadlock-wiki/deadlock-data/blob/0d46cdecfccf77adec16aac01af6d30173e0ebb8/data/version.txt"
+    commit: 0d46cdecfccf77adec16aac01af6d30173e0ebb8
+    client_version: 6731
+    server_version: 6731
+    source_revision: 11070267
+    version_datetime: "2026-10-01T15:31:54"
+    accessed_at: "2026-10-08"
+    version_file_sha256: cacaf4c7b4def9dbde39533a2cf161c4379e6121368e4879f8c1ee0d6ea2be3d
+    generic_data_sha256: f8c4601602ee89217ba45f7404230b2278abfa5b5f54ba30109a2cfa77805e29
+    misc_data_sha256: c7c5692f6eb33de7a46c29489cf73d2cf567aafe2cf9251915c4a07390248d93
+    npc_data_sha256: e794b4cbf66d094da16742ac24fa342a492d1878458e56e94498ffad9624f42f
+    convars_sha256: 7d2b2807dd4a98ab632143467aa90da2a09af7fdda974ba4d49556cd2e0f3939
+    street_brawl_data_sha256: 2047f3c629d6759725ea5217d115e6a7378a8befc3aeb0d12abbddd4ddac36dd
+    item_data_sha256: 992743a93afb8a671d76b460da5ca65acd2c48e889598f0d37aa8012819b8bfc
+    ability_data_sha256: ee0d29838f0bedd81efdc3e841d4f8c30c60477e31e630dcfc107cece6f954e1
+    item_cards_sha256: 7ff34ae9364064d23ceff40ac646c3298cd381920964c59bae6cccbd15f9c2d2
+    ability_cards_sha256: 338e276508f011c7420c8b5b04c0d16384a278f287a421342b511afb88e3bc9d
+    attribute_data_sha256: 413abf9da66f9e63df0abdc5321e511f7f41beeb61e09c10c87428ca4a10e587
+    hero_data_sha256: 5bfc1e4fe3f35dfaefd49e814f8eb410bb3e42243a2e9233f0f7434d8a5cc2df
+    english_sha256: f9097ca418abdab2c5df24e4b44ab5f12361f83f986ae21744b041134b1d3808
+    scope: Final pre-Rat King checkpoint; changes versus client 6730 are limited to a telemetry polling convar, while relevant gameplay data remains unchanged
+
   - id: private.map-coordinates.2026-10-06
     title: Private owner-authorized map coordinate snapshot
     accessed_at: "2026-10-06"
