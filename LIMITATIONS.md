@@ -105,6 +105,15 @@ Supporting rat NPC fields establish neither neutral-camp placement nor runtime
 association with Rat King's summoned rats. No root-baseline or geometry advance
 and no fabricated raw October 2 changelog are included.
 
+## October 4/5 research boundary
+
+The [balance research](patches/2026-10-05-sinclair-rat-king-research.md) publishes
+historical findings only. The October 4 mode change and October 5 balance values
+have **not** been applied to canonical records. Spectral Assistant falloff,
+Scrap Grenade bounce targeting and faster falling retain patch-note-only
+qualifications where no specific numeric field delta was identified. Trooper
+acceleration changes do not establish the cause or runtime formula of the fix.
+
 ## Burst timing boundary
 
 [Baseline burst profiles](general/combat/burst-weapons.md) reproduce the versioned

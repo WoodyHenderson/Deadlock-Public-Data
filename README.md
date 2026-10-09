@@ -53,6 +53,11 @@ explicitly later evidence. See the [launch record](heroes/rat-king/rat-king.md),
 [release boundaries](LIMITATIONS.md#rat-king-release-boundary). October 4/5
 mode/balance changes are not applied.
 
+**Later research, not applied:** the [October 4/5 balance review](patches/2026-10-05-sinclair-rat-king-research.md)
+collects Sinclair/Rat King changes, the intervening Street Brawl checkpoint,
+input hashes and a reproducible field ledger. It does not advance canonical
+stats, mode rules, map geometry or the raw archive.
+
 ## Contents
 
 | Path | Contents |

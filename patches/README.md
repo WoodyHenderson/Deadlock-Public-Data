@@ -32,6 +32,15 @@ healing-ping configuration. No raw October 2 changelog is fabricated. Later
 wiki descriptions are dated; October 4 mode changes and October 5 balance
 changes remain excluded.
 
+## October 4/5 research (not applied)
+
+The [Sinclair/Rat King balance research](2026-10-05-sinclair-rat-king-research.md)
+compares clients 6737, 6746 and 6753 against pinned official/wiki notes, with
+40 input hashes and an 85-leaf delta ledger. It separates the intervening
+October 4 Street Brawl changes from October 5 balance and behavior claims.
+This is historical research only: canonical hero/mechanics records and the
+136-file raw archive remain unchanged.
+
 ## Retrieval policy
 
 The raw archive is historical evidence and does not by itself update current
