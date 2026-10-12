@@ -16,8 +16,8 @@ sources:
 
 Use [the map guide](../README.md) and [counts by named area](../breakable-zones.yaml)
 first. Each file contains normalized minimap coordinates and source-relative
-height; a marker is **not** a live-spawn claim. To filter one file by area
-without loading hundreds of points, use `scripts/map/query_map.py`.
+height; a marker is **not** a live-spawn claim. Use the named-area summary to
+choose a category, then match its `zone_id` rather than reading every category.
 
 | Category | File | Markers |
 | --- | --- | ---: |

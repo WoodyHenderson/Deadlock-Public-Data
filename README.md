@@ -97,29 +97,6 @@ you are implementing search I suggest you exclude `patches/` by default. Use it
 for more simple questions regarding older values such as "What was the highest 
 max weapon damage intensifying mag ever provided" or something along those lines.
 
-### Reproduce the Rat King launch import
-
-Provide the pinned client-6737 `version.txt`, `hero-data.json`, `ability-data.json`,
-`ability-cards.json`, `english.json` and `npc-data.json`, plus the client-6731
-hero file. The importer verifies hashes and only targets Rat King's two files:
-
-```sh
-python scripts/knowledgebase/sync_rat_king_from_launch.py \
-  --data-dir /path/to/client-6737 \
-  --pre-release-hero-data /path/to/client-6731/hero-data.json --check
-```
-
-The adjacent release checker takes the eleven JSON datasets named in its
-`EXPECTED_CHANGES` inventory from each client and checks all 22 hashes:
-
-```sh
-python scripts/knowledgebase/check_rat_king_release.py \
-  --pre-release-dir /path/to/client-6731 --launch-dir /path/to/client-6737
-```
-
-These are offline source/configuration checks, not runtime tests. Rendering
-helpers have no network access or corpus-wide write operation.
-
 ### Record format
 
 Most generated `.yaml` records use JSON syntax, which is valid YAML 1.2. General
@@ -139,55 +116,6 @@ Evidence labels describe source support, not independent in-game validation:
 - `needs_primary_verification`: incomplete or uncertain source evidence.
 - `derived`: calculated or organized from other records, including the index.
 
-## Validation
+Developer tooling is maintained separately from these public data records.
 
-Python 3.9+ is sufficient; validation requires PyYAML:
-
-```sh
-python3 -m venv .venv
-. .venv/bin/activate
-pip install -r requirements-dev.txt
-python scripts/validate.py
-```
-
-Validation checks local links, YAML parsing, roster counts, description coverage,
-source references, allowed source origins, historical file hashes, and lifesteal
-rule consistency with canonical records (including upgrade gates and mode
-isolation), and baseline burst profiles against canonical weapon fields and
-API-derived averages. These checks validate local data consistency, not in-game
-behavior. Validation runs without network access and makes no changes.
-
-Additional offline regression checks:
-
-```sh
-python -m unittest discover -s scripts/knowledgebase/tests
-python -m unittest discover -s scripts/map -p 'test_*.py'
-```
-
-There is no general upstream auto-updater. The map importer normalizes authorized
-local inputs; the corrupted-item generator extracts only two hash-pinned
-client-6726 local files and does not fetch data:
-
-```sh
-python scripts/knowledgebase/sync_corrupted_items.py \
-  --item-data /path/to/client-6726/item-data.json \
-  --generic-data /path/to/client-6726/generic-data.json --check
-```
-
-Remove `--check` only to regenerate that sidecar from the same pinned inputs.
-To reproduce the read-only NPC, breakable, snack and ten-category buff cross-check,
-provide the three client-6731 files (hashes are verified against the registry):
-
-```sh
-python scripts/knowledgebase/check_map_client.py \
-  --npc-data /path/to/client-6731/npc-data.json \
-  --misc-data /path/to/client-6731/misc-data.json \
-  --generic-data /path/to/client-6731/generic-data.json
-```
-
-This checks configured values, not independent runtime behavior or wiki claims.
-Future updates should pin sources, retain prior evidence, review changes, and
-regenerate the affected records and index together.
-
-Again, this is just a sister project for something personal, it is not affiliated 
-with Valve and is not used for any form of commercial or monetary gain.
+This independent project is not affiliated with Valve and is non-commercial.
