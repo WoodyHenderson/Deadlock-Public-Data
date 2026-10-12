@@ -42,7 +42,7 @@ not official patch-note wording.
 
 | Record | Client 6731 (Oct 1) | Client 6737 (Oct 2) | Treatment |
 | --- | --- | --- | --- |
-| `hero_ratking` release state | `IsSelectable: true`, but `BoundAbilities` is empty. | Still selectable; four numbered abilities are bound, with launch weapon, base stats, growth and card data. | The playable release is dated by Valve's announcement, not by the pre-release flag. `heroes/rat-king/rat-king.yaml` stores client-6737 launch data and a separate comparison of changed pre-release fields. |
+| `hero_ratking` release state | `IsSelectable: true`, but `BoundAbilities` is empty. | Still selectable; four numbered abilities are bound, with launch weapon, base stats, growth and card data. | The playable release is dated by Valve's announcement, not by the pre-release flag. The [historical launch snapshot](snapshots/rat-king-2026-10-02.yaml) stores client-6737 data and a separate comparison of changed pre-release fields. The current hero record now uses October 5 balance. |
 | Base/weapon fields | Partial pre-release values, including 780 health, 7.2 move speed, and a generic-looking weapon block. | 800 health, 6.8 move speed, 3 stamina, 6 bullet damage, 5 rounds/s, 24-round magazine, two bullets per shot, and weapon key `citadel_weapon_ratking_set`. | Do not treat client 6731's incomplete values as the launch build or reverse-engineer launch behavior from the pre-release block. The full source records and all ability/card fields are retained in the hero YAML. |
 | Rat King abilities | No bound abilities; no Rat King ability records in `ability-data.json`. | Four numbered ability/card records appear: Scrap Grenade, Rat Swarm, Royal Pestments, and Rule, Ratannia! Supporting ability records and `npc_ratking_rat` also appear. | Imported the four numbered launch abilities with pinned English descriptions. Supporting records are kept apart from the numbered card list; client field presence is not a runtime test. |
 | Broker shop | `citadel_corrupted_item_shop_enabled: true`. | The same convar is `false`. | Record the on/off sequence. The Oct 2 wiki transcription says no longer accessible in standard/ranked; Street Brawl availability is not resolved by this review. |
@@ -80,6 +80,6 @@ the unnumbered `ability_ratking_entertunnel` record. The Oct 7
 article's additional details and all October 5 balance notes are outside this
 launch review.
 
-See the [Rat King launch record](../heroes/rat-king/rat-king.md) for the scoped
-canonical import and [limitations](../LIMITATIONS.md#rat-king-release-boundary)
+See the [historical launch record](snapshots/rat-king-2026-10-02.yaml) and
+[current Rat King record](../heroes/rat-king/rat-king.md) for their separate scopes and [limitations](../LIMITATIONS.md#rat-king-release-boundary)
 for the remaining evidence and later-date boundaries.

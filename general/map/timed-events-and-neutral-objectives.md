@@ -179,7 +179,10 @@ see `data/corrupted-items.yaml`. Client 6726 also sets Street Brawl's buy-time
 vector to `[50, 50, 50, 50, 65]` seconds, with the configured corrupted-item
 round at Round 5. The Round 5 buy time was 50 seconds in client 6722. Item
 variant data, penalty rolls, shop availability, and mode eligibility remain
-separate questions.
+separate questions. **On October 4**, the wiki reports corrupted items removed
+from Street Brawl; client 6746 changes the configured award round from 5 to 0.
+The preceding Round 5 values are historical, not current reward availability.
+See the [dated changes](../../patches/2026-10-05-balance.md#october-4-street-brawl-corrupted-items).
 
 ## Powerups
 

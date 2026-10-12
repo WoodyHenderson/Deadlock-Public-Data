@@ -59,22 +59,12 @@ These are **counts, not area-normalized densities**. Other zones and counts, inc
 - Named-area membership is a **derived 2D polygon match**; the known nested landmarks Bell Tower and Sunken Plaza take precedence over parents. Other overlaps and points outside polygons are left unassigned rather than guessed. Vertical position is preserved on each marker. To find a floor-specific cluster, filter by `h_m` and verify the environment; do not assume every same-zone marker shares a floor.
 - No map artwork, complete veil meshes, zipline paths or route graph are imported. Individual markers provide locations, **not** live availability, guaranteed rewards, optimal paths, visibility or local accessibility. For Haunt identity/behavior and crate/neutral bounty mechanics, consult canonical `npcs/`, `general/map/` and `data/` records with their **own patch contexts**.
 
-## Reproduce/validate
+## Bounded lookup
 
-The importer consumes authorized local JSON exports of point and district data, **not** a live website/API scraper. Upstream identity, access details, exports and site code are not checked into the repository; keep the private provenance with the project owner. Public distribution of this derived coordinate layer is authorized as reported by the project owner **only while non-commercial**; do not infer broader rights over the raw exports or source materials. Example with authorized local exports:
+Start with [counts by named area](breakable-zones.yaml), then open the relevant
+[point category](coordinates/README.md). Use `zone_id` to select an area and
+`h_m` to distinguish elevations without treating height as a traversable route.
+Counts describe the pinned marker inventory, not currently spawned loot.
 
-```sh
-python3 scripts/map/sync_map_coordinates.py --map-input /path/to/map-points.json --zones-input /path/to/map-zones.json
-python3 scripts/map/sync_map_coordinates.py --check
-python3 -m unittest discover -s scripts/map -p 'test_*.py'
-```
-
-For a bounded lookup without loading hundreds of coordinates into an LLM context:
-
-```sh
-python3 scripts/map/query_map.py --summary --zone times-square-4
-python3 scripts/map/query_map.py --category tough_crates --zone times-square-4 --limit 20
-python3 scripts/map/query_map.py --category camps --zone theater-9
-```
-
-The query reports the full **matched count**, number **returned** and whether truncated; it does not report live availability or walking routes. Review changes to the source map, polygon labels and any future client patch *before* regenerating. The summary is calculated from pinned point arrays and the zone polygons; its deterministic counts are tested. Do not silently advance the global `README.md` baseline when refreshing this independent map layer.
+Redistribution of the derived coordinate layer remains non-commercial only.
+Permission does not extend to source-site code, imagery or original exports.
