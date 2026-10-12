@@ -1,7 +1,7 @@
 schema_version: 1
 id: data.general.map-timings
-snapshot_id: deadlock-data-mixed-2026-10-02
-current_as_of: "2026-10-02"
+snapshot_id: deadlock-data-mixed-2026-10-04
+current_as_of: "2026-10-04"
 evidence_status: source_verified_with_unresolved_breakable_category_mapping
 sources:
   - wiki.the-cursed-apple.125757
@@ -20,6 +20,8 @@ sources:
   - github.deadlock-data.gameplay.0d46cdecfccf
   - github.deadlock-data.gameplay.dc1679b9606e
   - wiki.update.2026-10-02.181191
+  - github.deadlock-data.gameplay.46c3fd0cfbf2
+  - wiki.update.2026-10-04.181723
 
 units:
   time: seconds
@@ -209,7 +211,22 @@ events:
       mode scope is wiki interpretation, not established by the convar alone.
       Street Brawl availability remains unresolved. Configured stock/cadence
       fields above are historical, not evidence of an active shop at this cutoff.
-      October 4 mode changes are a separate import.
+      Street Brawl's October 4 corrupted-item reward removal is recorded
+      separately below; it does not establish the vendor's mode implementation.
+
+  - id: street-brawl.corrupted-item-award
+    current_as_of: "2026-10-04"
+    configured_round: 0
+    previous_configured_round: 5
+    availability: removed_in_street_brawl
+    source: github.deadlock-data.gameplay.46c3fd0cfbf2
+    behavior_source: wiki.update.2026-10-04.181723
+    evidence_status: client_configuration_with_dated_wiki_interpretation
+    note: >-
+      Client 6746 changes the configured round from 5 to 0; the later wiki
+      reports corrupted items removed from Street Brawl on October 4. This
+      is separate from the October 2 Broker toggle and October 5 balance.
+      The client-6726 corrupted-item sidecar is historical configuration.
 
   - id: soul-urn
     starts_at: 600

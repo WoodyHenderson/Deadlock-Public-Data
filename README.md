@@ -1,121 +1,63 @@
 # Deadlock Data Reference
 
-A maybe-maintained Deadlock data snapshot used for training data as a fun side project. 
-It includes all the data I could get my hands on from a variety of sources including
-far too much manual interaction testing and information gathering.
-
-Start with the [keyword index](INDEX.md) to find a hero, ability, item, or mechanic.
-Use Markdown for readable explanations and adjacent YAML for structured fields.
-This is a standalone data repository: it contains no application, model, planning
-documents, evaluation answers, or private source notes.
+A manually maintained Deadlock knowledgebase. Start with the [keyword index](INDEX.md)
+to find a hero, ability, item, or mechanic. Markdown explains behavior; adjacent
+YAML preserves structured fields, source precision and dated evidence.
 
 ## Snapshot, not a live feed
 
-This does not update live, if it is staying updated it's me manually maintaining it,
-Deadlock patch notes are nowhere near all-encompassing, they leave significant amounts
-of information out of the patch notes intentional or not so I will try my best to
-use my own knowledge of the game, community available information and Valve published
-information to keep as accurate a snapshot as I can. 
+Records have different cutoff dates. The September 3 root baseline is not a
+claim that every record has been refreshed to the latest patch.
 
-Base snapshot was created from the Sep 3rd patch and then expanded upon from there
-(right before the first major patch in 9 months thanks Yoshi)
+- **Sinclair and Rat King:** October 5/client 6753, including the balance changes
+  and separately labeled patch-note-only behavior. Rat King's October 2 launch
+  is preserved as a [historical snapshot](patches/snapshots/rat-king-2026-10-02.yaml).
+- **Other 37 heroes and 173 items:** retain their client-6694 September 16 pins.
+- **City Never Sleeps map mechanics:** scoped pre-release research through
+  October 1, with separately dated wiki descriptions and explicit uncertainties.
+- **Corrupted items:** the Broker toggle is dated October 2; the October 4
+  Street Brawl removal is recorded separately. The client-6726 variant sidecar
+  describes historical configuration, not current mode eligibility.
+- **Map coordinates:** the separate October 6 snapshot is unchanged. Markers
+  represent potential locations, not live availability or walking routes.
 
-The September 3 root baseline remains in place. The original 38 hero and 173 item records,
-plus selected economy and mechanics records, have a separately dated refresh from
-client 6694 (September 16, source revision 11005995). See the [client-6694 review](patches/2026-09-16-client-6694-review.md) for its scope and limits.
+See the [October 4/5 changes](patches/2026-10-05-balance.md) and
+[limitations](LIMITATIONS.md) for exact scope and unresolved behavior.
 
-A scoped **September 29–October 1 City Never Sleeps refresh** now covers map and
-breakable configuration, Sinner timing caveats, four-district prose, and a dated
-sidecar of 95 corrupted-item variants and 11 penalty definitions. It stops at
-**client 6731, before Rat King's October 2 release**. Later wiki geography is
-labeled interpretation, not a launch-day placement snapshot. Hero/item rosters,
-map coordinates, and the root baseline are unchanged by this refresh. See the
-[pre-Rat King review](patches/2026-09-29-city-never-sleeps-pre-rat-king-review.md)
-and [limitations](LIMITATIONS.md#city-never-sleeps-boundary).
-The [camp-composition guide](general/map/haunt-camps-and-sinner-sites.md) adds
-pinned pre-release wiki family tiers, camp patterns, and Sinner configurations
-(15 machines/11 sites), tied to the existing map-marker inventory. Later wiki
-differences are explicit; exact family/unit assignments at every named camp
-remain incomplete rather than being inferred.
-The [map-interaction pass](general/map/map-interactions-and-open-questions.md)
-adds source-dated family attacks, vent rules, snack healing, breakable rewards,
-buff selection and Sinner reward/jackpot interpretations. Three neutral tier
-baselines and Mid-Boss combat fields are cross-checked to client 6731 without
-advancing unrelated NPCs or the root baseline. Remaining conflicts and the
-uncompleted placement re-audit are listed in that guide.
-
-A separate **October 2/client-6737 Rat King launch import** adds the 39th hero,
-including weapon/stats, four abilities, cards/upgrades and pinned English text.
-The other 38 heroes keep their previous pins. It also records the Broker toggle
-and healing-ping configuration; October 3 wiki tunnel/barrier behavior is
-explicitly later evidence. See the [launch record](heroes/rat-king/rat-king.md),
-[release review](patches/2026-10-02-rat-king-release-review.md) and
-[release boundaries](LIMITATIONS.md#rat-king-release-boundary). October 4/5
-mode/balance changes are not applied.
-
-## Contents
+## Find information
 
 | Path | Contents |
 | --- | --- |
-| [heroes/roster.yaml](heroes/roster.yaml) | Selectable heroes, stats, weapons, abilities, descriptions, and upgrades |
-| [items/roster.yaml](items/roster.yaml) | Purchasable items, descriptions, displayed effects, conditions, and components |
-| [npcs/roster.yaml](npcs/roster.yaml) | Troopers, neutrals, structures, Mid-Boss, and Sinner's Sacrifice |
-| [objectives/roster.yaml](objectives/roster.yaml) | Rejuvenator and Soul Urn |
-| [general/](general/) | Wiki-sourced gameplay and mechanics explanations |
-| [data/](data/) | Structured economy, progression, timing, and general rules |
-| [patches/](patches/) | Historical changelogs, isolated from the current snapshot |
-| [map/README.md](map/README.md) | Separately pinned map coordinates and breakable counts by named area; potential locations, not live availability |
-| [sources/source-registry.yaml](sources/source-registry.yaml) | Source attribution, revisions, and provenance |
-| [LIMITATIONS.md](LIMITATIONS.md) | Source conflicts and intentionally omitted unsupported rules |
-| [ATTRIBUTION.md](ATTRIBUTION.md) | Upstream credits and licensing boundaries |
+| [Hero roster](heroes/roster.yaml) | Hero stats, weapons, abilities, descriptions and upgrades |
+| [Item roster](items/roster.yaml) | Item effects, conditions, descriptions and components |
+| [NPC roster](npcs/roster.yaml) | Troopers, neutral enemies, structures and objectives |
+| [Objective roster](objectives/roster.yaml) | Rejuvenator and Soul Urn |
+| [General mechanics](general/) | Topic-specific gameplay explanations |
+| [Structured facts](data/) | Economy, progression, timing and general rules |
+| [Map guide](map/README.md) | Coordinates, named areas and breakable counts |
+| [Historical patches](patches/README.md) | Dated changes and original patch notes |
+| [Source registry](sources/source-registry.yaml) | Citations, source revisions and evidence scope |
+| [Attribution](ATTRIBUTION.md) | Credits and licensing boundaries |
 
-### Source policy
+## Interpretation and retrieval
 
-The September 3 gameplay baseline uses only **Deadlock Wiki**, **Deadlock API**,
-and the **Deadlock Wiki's `deadlock-wiki/deadlock-data` repository** as published
-data sources. The versioned API is the structured authority for item records; 
-wiki-generated data provides the secondary representation. Hero descriptions and
-changelogs come from pinned wiki-data commits. Structured client snapshots can
-advance specific records without advancing the root baseline. Existing material
-source disagreements stay visible rather than being silently merged.
-The City Never Sleeps refresh additionally cites Valve's official announcement
-and its Steam news entry for dated feature intent, not runtime verification;
-the exact official URLs and source pins are recorded in the registry.
-Rat King's availability is separately confirmed by the pinned October 2 Valve
-Steam announcement, not by the pre-release selectable flag alone.
+Prefer the dated canonical entity record for current-snapshot questions.
+Use historical patches and snapshots for explicit questions about old values
+or when something changed; do not mix different dates into one game state.
 
-Gameplay rules that relied on private confirmations or internal documents were excluded
-from the September 3 baseline. They have not been relabelled as wiki/API-verified. See
-[limitations](LIMITATIONS.md) for the resulting coverage boundary.
+Client data establishes configured fields, not independent runtime verification.
+Official notes establish announced changes; community descriptions and unresolved
+source conflicts remain labeled. Raw flags and coefficients are not a complete
+simulation. Bracketed controls such as `[Attack]` are bindable actions, not fixed
+keyboard defaults. Numeric upgrade bonuses are distinct from final totals.
 
-### Historical archive boundary
+Most generated `.yaml` records use JSON syntax, which is valid YAML 1.2; other
+records use native YAML. No application, developer tooling, research ledgers,
+private interaction tables, source-site code or media is included.
 
-The raw changelog archive is useful for explicit historical or patch-note
-questions. It does not by itself update or override current records; curated
-dated reviews keep patch-note intent separate from pinned structured data. If
-you are implementing search I suggest you exclude `patches/` by default. Use it
-for more simple questions regarding older values such as "What was the highest 
-max weapon damage intensifying mag ever provided" or something along those lines.
+Public source-backed knowledge uses pinned Wiki/API/client data and narrowly
+cited official announcements. Omitted private-only claims are not represented
+as publicly verified facts. See [attribution](ATTRIBUTION.md) and
+[limitations](LIMITATIONS.md) before redistributing or interpreting the records.
 
-### Record format
-
-Most generated `.yaml` records use JSON syntax, which is valid YAML 1.2. General
-rules and some objective records use native YAML; use a YAML parser for the full
-corpus. Preserve raw precision, scaling types, field provenance, and exceptions.
-Raw flags and numeric deltas are not automatically complete runtime formulas.
-
-`abilities[].descriptions` retains localization keys, card paths, original text,
-normalized plain text, and source IDs. Bracketed controls such as `[Attack]`
-represent bindable actions, not fixed keyboard defaults. Numeric-only upgrades
-remain in the numeric fields; tooltip text never silently replaces those fields.
-
-Evidence labels describe source support, not independent in-game validation:
-
-- `source_verified`: supported by the cited source artifact.
-- `source_conflict`: sources disagree; do not assume a disputed value is settled.
-- `needs_primary_verification`: incomplete or uncertain source evidence.
-- `derived`: calculated or organized from other records, including the index.
-
-Developer tooling is maintained separately from these public data records.
-
-This independent project is not affiliated with Valve and is non-commercial.
+This is an independent, non-commercial project and is not affiliated with Valve.

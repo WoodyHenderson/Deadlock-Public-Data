@@ -13,13 +13,15 @@ sources: []
 
 # Deadlock Data Keyword Index
 
-This index routes to records with different dated scopes: the original 38 hero
-and 173 item records use client 6694 (September 16); Rat King alone uses the
-October 2/client-6737 launch pin. The separate map-coordinate layer is dated
+This index routes to records with different dated scopes: Sinclair and Rat King
+use October 5/client 6753; the other 37 heroes and 173 item records retain
+client 6694 (September 16). The separate map-coordinate layer is dated
 October 6. City Never Sleeps map/corrupted-item research retains its pre-release
 cutoff, with the October 2 Broker toggle and healing-ping configuration added
 separately in the [release review](patches/2026-10-02-rat-king-release-review.md).
-Later wiki geography and hero behavior are labeled separately. The September 3 root baseline is
+The [October 4/5 changes](patches/2026-10-05-balance.md) record the subsequent
+Street Brawl removal and applied hero balance. Later wiki geography and hero
+behavior are labeled separately. The September 3 root baseline is
 not advanced globally.
 This index is navigation derived from local records, not gameplay evidence.
 Follow the destination's citations and uncertainty flags. Match full names with

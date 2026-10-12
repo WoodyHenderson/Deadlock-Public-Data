@@ -20,6 +20,7 @@ sources:
   - wiki.trooper.114174
   - wiki.souls.124122
   - wiki.the-cursed-apple.125757
+  - github.deadlock-data.changelog.2026-10-05.edb16660368e
 ---
 
 # Troopers and Lane Pressure
@@ -27,6 +28,13 @@ sources:
 Troopers are team-controlled lane units and the primary force that pushes lane
 territory. They arrive from each team's Ziplines, march toward the opposing
 base, and attack enemy Troopers, heroes, and structures along the route.
+
+## October 5 Walking Fix
+
+The [October 5 notes](../../patches/raw/2026-10-05.txt) report fixes for bugs
+that made Troopers walk too slowly in lane. This is **patch-note-only behavior**:
+no new measured walk speed or complete movement formula is established here.
+It does not change the separately sourced wave composition below.
 
 ## Wave Timing and Composition
 

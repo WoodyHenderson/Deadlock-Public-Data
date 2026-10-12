@@ -5,18 +5,20 @@ domain: patches
 topics: [patches, history, balance, changelogs]
 aliases: [patch notes, patch history, changelogs, balance history]
 summary: Historical Deadlock patch changelogs for explicitly requested historical or change-tracking questions.
-snapshot_id: deadlock-wiki-2026-09-17
-current_as_of: "2026-09-17"
+snapshot_id: deadlock-patches-through-2026-10-05
+current_as_of: "2026-10-05"
 evidence_status: source_verified
 sources:
   - github.deadlock-data.changelogs.raw.afc8e9c
   - github.deadlock-data.changelogs.raw.fc4f540f12e0
+  - github.deadlock-data.changelog.2026-10-05.edb16660368e
 ---
 
 # Historical Patch Changelogs
 
-This section contains **136 dated raw changelogs** from 2024-05-03 through
-2026-09-16, imported from the latest `deadlock-wiki/deadlock-data` commit.
+This section contains **137 dated raw changelogs** from 2024-05-03 through
+2026-10-05, using separately pinned upstream commits. This is not a complete
+archive of every intervening update.
 See [`manifest.yaml`](manifest.yaml) for the per-file hashes and source paths.
 The separate [client-6694 review](2026-09-16-client-6694-review.md) documents
 which structured records were refreshed and keeps patch-note-only claims distinct.
@@ -24,13 +26,17 @@ which structured records were refreshed and keeps patch-note-only claims distinc
 The [City Never Sleeps pre-Rat King review](2026-09-29-city-never-sleeps-pre-rat-king-review.md)
 covers September 29 through October 1/client 6731. It is curated evidence, not
 a raw changelog; no September 29/30 raw file was present in the pinned archive.
-The raw archive and its manifest are unchanged.
+Those reviews do not fabricate missing raw files.
 
 The [October 2 Rat King release review](2026-10-02-rat-king-release-review.md)
 separately covers Rat King's client-6737 launch, the Broker toggle, and
 healing-ping configuration. No raw October 2 changelog is fabricated. Later
-wiki descriptions are dated; October 4 mode changes and October 5 balance
-changes remain excluded.
+wiki descriptions are dated; that launch review excludes later balance.
+
+The [October 4/5 summary](2026-10-05-balance.md) covers the separate Street Brawl
+removal and applied Sinclair/Rat King balance changes. [October 5 raw notes](raw/2026-10-05.txt)
+preserve original wording; the [October 2 Rat King snapshot](snapshots/rat-king-2026-10-02.yaml)
+preserves historical launch values.
 
 ## Retrieval policy
 
@@ -51,15 +57,9 @@ A patch note may describe intended behavior without proving that the final game
 implementation matched it. Changelog text is preserved verbatim; it is not
 normalized into current entity facts.
 
-## Source and update policy
+## Sources
 
-The source is pinned to commit
-`fc4f540f12e019a6a2a422e0818917a4eedaf881`. Updates should import a new pinned
-commit, retain the old manifest/files for reproducibility, and never silently
-rewrite current records. New changelog files can be added without requiring a
-current knowledgebase refresh.
-
-Raw files are deliberately kept separate from curated Markdown and canonical
-entity YAML. Entity names in patch notes are prose and should be linked only
-when extraction is unambiguous; a future index may add searchable links without
-changing this policy.
+Each raw file has its own immutable source and hash in the manifest. The latest
+addition uses commit `edb16660368ef3b693a4ac6d525697f5570a4dce`; earlier files retain
+their original pins. Historical snapshots and raw notes are separate from
+current canonical entity YAML and must not silently override its dated values.

@@ -1479,3 +1479,66 @@ sources:
     accessed_at: '2026-10-08'
     scope: Comeback and catch-up mechanics including 70% redirection to the two lowest-net-worth teammates;
       incomplete patch-note formulas remain explicitly unresolved
+
+  - id: github.deadlock-data.gameplay.46c3fd0cfbf2
+    title: Deadlock client 6746 gameplay data
+    url: https://github.com/deadlock-wiki/deadlock-data/tree/46c3fd0cfbf2108f48123e1dddd59e416db1b7ee/data
+    commit: 46c3fd0cfbf2108f48123e1dddd59e416db1b7ee
+    client_version: 6746
+    source_revision: 11080740
+    scope: Dated gameplay configuration; numeric fields do not independently establish
+      runtime behavior.
+    version_sha256: 59906220588406bb6b4fc55b9988d3e3854cd67cf2ea848f7b78b7792b159e9f
+    hero_data_sha256: 791c09b89b66e7a2b7bc438f86c150b80ee921f75e86bef4c7a129910efcfcdc
+    ability_data_sha256: 04cca8015594f6227f875d6a33ce55794ab33ef040abd3c35615472877293a38
+    ability_cards_sha256: 24a6b1a72da896652e35aed3846357b281a4a22f6e74b96d7d53f99c6a449bb6
+    npc_data_sha256: 2483bcfbcee4e7cf7720c03f29946f24b9444de3cb51d116fda535044854f480
+    street_brawl_data_sha256: bafa0006897246b0f7a4d2f5c2850aeaa866fb966993689ac043433e026acc0d
+    convars_sha256: 9c9b3e93b59bbbc26bc48d538ad35d7e952fe32407c40eed68409effd0c2ed2a
+    item_data_sha256: 992743a93afb8a671d76b460da5ca65acd2c48e889598f0d37aa8012819b8bfc
+    generic_data_sha256: a4b1c765b300ae3009ce086193bbe3a557543a663f7253c50307e0c2d0ca974d
+    misc_data_sha256: 39c408611afad028564204b735d733883b5a88475b434bbee3c9d96001a511c1
+    english_sha256: 0b92317324ebea77c0b4770bc93c23e0da7489a8dff347582273e7041f5eb292
+    item_cards_sha256: 7ff34ae9364064d23ceff40ac646c3298cd381920964c59bae6cccbd15f9c2d2
+    hero_meaningful_stats_sha256: 75429c0ca0e9d00732496c0e25564d8ba61f571cb5ed3d44c4b3d11bb56f4e6f
+  - id: github.deadlock-data.gameplay.edb16660368e
+    title: Deadlock client 6753 gameplay data
+    url: https://github.com/deadlock-wiki/deadlock-data/tree/edb16660368ef3b693a4ac6d525697f5570a4dce/data
+    commit: edb16660368ef3b693a4ac6d525697f5570a4dce
+    client_version: 6753
+    source_revision: 11087340
+    scope: Dated gameplay configuration; numeric fields do not independently establish
+      runtime behavior.
+    version_sha256: 3d23c7905a7ef122100cf00b818aaedd2d0d54df85fae68241237745066a6496
+    hero_data_sha256: 72c7ea8cef4c1220454a3a67541e19d9b797c64f94bd6b13f04b6470e05eb042
+    ability_data_sha256: ef3873b5b4c1bf9caa0d7923cb4627d527e49fc13fb12c01f14c00675f2829b8
+    ability_cards_sha256: 8bec57093abeeb1607844f58addc5a7c96a393cd0a1007fec81d463dc565ab9a
+    npc_data_sha256: 94b6485b54a144794c5b3cdab718871f5af57a69f880308aee1d630f5a3b5949
+    street_brawl_data_sha256: bafa0006897246b0f7a4d2f5c2850aeaa866fb966993689ac043433e026acc0d
+    convars_sha256: 0a39594c67cc32746d2daa89fd1a10aa5cff95c5aa3b847b6861f4f52775b2fb
+    item_data_sha256: 992743a93afb8a671d76b460da5ca65acd2c48e889598f0d37aa8012819b8bfc
+    generic_data_sha256: 4ffdd3004363f670839217305c9b1e01e092ccdc6ea1d6e01c095e3b7dfbb1fc
+    misc_data_sha256: 72301530c76f0cfaaee7c001b5fb0521c334da3825887b742ccac6752320e817
+    english_sha256: e334efe2c46a048f1ef50056dbb78fc32ff11db22bfdb355c7474352831307be
+    item_cards_sha256: 7ff34ae9364064d23ceff40ac646c3298cd381920964c59bae6cccbd15f9c2d2
+    hero_meaningful_stats_sha256: 75429c0ca0e9d00732496c0e25564d8ba61f571cb5ed3d44c4b3d11bb56f4e6f
+  - id: github.deadlock-data.english.edb16660368e
+    title: Client 6753 English descriptions
+    url: https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/localizations/english.json
+    commit: edb16660368ef3b693a4ac6d525697f5570a4dce
+    sha256: e334efe2c46a048f1ef50056dbb78fc32ff11db22bfdb355c7474352831307be
+    scope: October 5 ability and upgrade text.
+  - id: github.deadlock-data.changelog.2026-10-05.edb16660368e
+    title: October 5 balance and bug-fix notes
+    url: https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/changelogs/raw/2026-10-05.txt
+    commit: edb16660368ef3b693a4ac6d525697f5570a4dce
+    sha256: 97f051205a4a48b58ace49ef0aa71dd84da047ccbcdd96fa32c964df44d3a304
+    scope: Historical patch intent, not independent runtime tests.
+  - id: wiki.update.2026-10-04.181723
+    title: October 4 undocumented update
+    url: https://deadlock.wiki/Update:October_4,_2026?oldid=181723
+    revision_id: 181723
+    last_modified: '2026-10-05T23:10:10Z'
+    wikitext_sha256: 9b2a54273fdc1e7302e180d9ca48c123d3e9d2929da5d36d11e5c5400fe2bcd1
+    scope: Later wiki report that corrupted items were removed from Street Brawl on
+      October 4.

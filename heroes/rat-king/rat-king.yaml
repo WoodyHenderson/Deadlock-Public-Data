@@ -1,22 +1,23 @@
 {
   "schema_version": 2,
   "id": "hero.rat-king",
-  "snapshot_id": "deadlock-data-client-6737",
-  "client_version": 6737,
-  "server_version": 6737,
-  "source_revision": 11076133,
-  "current_as_of": "2026-10-02",
-  "evidence_status": "source_verified_with_official_release_confirmation",
+  "snapshot_id": "deadlock-data-client-6753",
+  "client_version": 6753,
+  "server_version": 6753,
+  "source_revision": 11087340,
+  "current_as_of": "2026-10-05",
+  "evidence_status": "source_verified_with_patch_note_only_addenda",
   "sources": {
-    "hero_data": "github.deadlock-data.hero-data.dc1679b9606e",
-    "ability_data": "github.deadlock-data.ability-data.dc1679b9606e",
-    "ability_cards": "github.deadlock-data.ability-cards.dc1679b9606e",
-    "ability_localization": "github.deadlock-data.english.dc1679b9606e",
-    "support_npc_data": "github.deadlock-data.npcs.dc1679b9606e",
+    "hero_data": "github.deadlock-data.gameplay.edb16660368e",
+    "ability_data": "github.deadlock-data.gameplay.edb16660368e",
+    "ability_cards": "github.deadlock-data.gameplay.edb16660368e",
+    "ability_localization": "github.deadlock-data.english.edb16660368e",
+    "support_npc_data": "github.deadlock-data.gameplay.edb16660368e",
     "pre_release_comparison": "github.deadlock-data.gameplay.0d46cdecfccf",
     "release_announcement": "steam.news.rat-king-release.1845383656387709",
     "release_update_transcription": "wiki.update.2026-10-02.181191",
-    "later_wiki_context": "wiki.rat-king.180124"
+    "later_wiki_context": "wiki.rat-king.180124",
+    "balance_patch": "github.deadlock-data.changelog.2026-10-05.edb16660368e"
   },
   "name": "Rat King",
   "aliases": [],
@@ -116,9 +117,9 @@
     ]
   },
   "generated_source_snapshot": {
-    "client_version": 6737,
-    "source_revision": 11076133,
-    "source": "github.deadlock-data.hero-data.dc1679b9606e",
+    "client_version": 6753,
+    "source_revision": 11087340,
+    "source": "github.deadlock-data.gameplay.edb16660368e",
     "hero_data": {
       "AbilityResourceMax": 0,
       "AbilityResourceRegenPerSecond": 0,
@@ -273,7 +274,7 @@
         "BounceGrenadeSpeed": 1200,
         "ChannelMoveSpeed": -1,
         "DamagePerShrapnel": {
-          "Value": 65,
+          "Value": 70,
           "Scale": {
             "Value": 0.6,
             "Type": "weapon_damage_increase"
@@ -318,7 +319,7 @@
             "AbilityCooldown": -8
           },
           {
-            "DamagePerShrapnel": 65
+            "DamagePerShrapnel": 70
           },
           {
             "Detonations": 1,
@@ -356,7 +357,7 @@
               {
                 "Key": "DamagePerShrapnel",
                 "Name": "Detonation Damage",
-                "Value": 65,
+                "Value": 70,
                 "Scale": {
                   "Value": 0.6,
                   "Type": "weapon_damage_increase"
@@ -457,7 +458,7 @@
             "AbilityCooldown": -8
           },
           {
-            "DamagePerShrapnel": 65
+            "DamagePerShrapnel": 70
           },
           {
             "Detonations": 1,
@@ -550,7 +551,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.dc1679b9606e",
+          "source": "github.deadlock-data.english.edb16660368e",
           "raw_text": "Throw a grenade of scrap that detonates multiple times, dealing {g:citadel_inline_attribute:'BulletDamage'} and applying {g:citadel_inline_attribute:'Slow'}.<br><br><span class=\"diminish\">The grenade can be meleed to knock it away.</span>",
           "plain_text": "Throw a grenade of scrap that detonates multiple times, dealing bullet damage and applying slow.\nThe grenade can be meleed to knock it away."
         },
@@ -559,7 +560,7 @@
           "card_paths": [
             "card.Info2.DescKey"
           ],
-          "source": "github.deadlock-data.english.dc1679b9606e",
+          "source": "github.deadlock-data.english.edb16660368e",
           "raw_text": "The final detonation has a longer fuse but increased detonation radius, deals increased {g:citadel_inline_attribute:'BulletDamage'} and applies a stronger {g:citadel_inline_attribute:'Slow'}.",
           "plain_text": "The final detonation has a longer fuse but increased detonation radius, deals increased bullet damage and applies a stronger slow."
         },
@@ -568,7 +569,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.dc1679b9606e",
+          "source": "github.deadlock-data.english.edb16660368e",
           "raw_text": "Add an additional final Bigger Detonation",
           "plain_text": "Add an additional final Bigger Detonation"
         }
@@ -594,7 +595,7 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 28,
+          "Value": 24,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -814,7 +815,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 28,
+          "Value": 24,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -851,7 +852,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.dc1679b9606e",
+          "source": "github.deadlock-data.english.edb16660368e",
           "raw_text": "Call forth a swarm of <span class=\"highlight\">rats</span> that leap onto enemies, dealing {g:citadel_inline_attribute:'SpiritDPS'} and reducing their {g:citadel_inline_attribute:'BulletResist'} with every bite. The more rats are attached, the faster they will bite the target.<br><br>Enemies can have multiple rats attached, but can shake off a <span class=\"highlight\">rat</span> early by performing a <span class=\"highlight\">ground or air dash</span>.",
           "plain_text": "Call forth a swarm of rats that leap onto enemies, dealing spirit damage over time and reducing their bullet resist with every bite. The more rats are attached, the faster they will bite the target.\nEnemies can have multiple rats attached, but can shake off a rat early by performing a ground or air dash."
         },
@@ -860,7 +861,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.dc1679b9606e",
+          "source": "github.deadlock-data.english.edb16660368e",
           "raw_text": "<span class=\"highlight\">Increased Swarm Size</span><br><span class=\"highlight\">+4s</span> Debuff Duration",
           "plain_text": "Increased Swarm Size\n+4s Debuff Duration"
         },
@@ -869,7 +870,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.dc1679b9606e",
+          "source": "github.deadlock-data.english.edb16660368e",
           "raw_text": "<span class=\"highlight\">+8</span> Damage and <span class=\"highlight\">-1%</span> Bullet Resist per Bite",
           "plain_text": "+8 Damage and -1% Bullet Resist per Bite"
         }
@@ -1026,7 +1027,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.dc1679b9606e",
+          "source": "github.deadlock-data.english.edb16660368e",
           "raw_text": "Adorn scrappy armor, gaining {g:citadel_inline_attribute:'CombatBarrier'} based on your {g:citadel_inline_attribute:'MaxHealth'}. As long as the armor holds, bullets have a chance to be <span class=\"highlight\">deflected</span> back towards the attacker.<br><br><span class=\"diminish\">The barrier does not benefit from resists.</span>",
           "plain_text": "Adorn scrappy armor, gaining barrier based on your max health. As long as the armor holds, bullets have a chance to be deflected back towards the attacker.\nThe barrier does not benefit from resists."
         },
@@ -1035,7 +1036,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.dc1679b9606e",
+          "source": "github.deadlock-data.english.edb16660368e",
           "raw_text": "+7 Rat Count and +4s Duration",
           "plain_text": "+7 Rat Count and +4s Duration"
         },
@@ -1044,7 +1045,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.dc1679b9606e",
+          "source": "github.deadlock-data.english.edb16660368e",
           "raw_text": "<span class=\"highlight\">-8s</span> Cooldown<br><span class=\"highlight\">+15%</span> Bullet Return Chance",
           "plain_text": "-8s Cooldown\n+15% Bullet Return Chance"
         },
@@ -1053,7 +1054,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.dc1679b9606e",
+          "source": "github.deadlock-data.english.edb16660368e",
           "raw_text": "Reduce all damage to a max of <span class=\"highlight\">250</span><br><span class=\"highlight\">+10%</span> Max Health as Barrier",
           "plain_text": "Reduce all damage to a max of 250\n+10% Max Health as Barrier"
         }
@@ -1066,7 +1067,7 @@
       "data": {
         "AbilityCastDelay": 2.0,
         "AbilityCooldown": {
-          "Value": 130,
+          "Value": 160,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -1074,14 +1075,14 @@
         },
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
-          "Value": 12,
+          "Value": 10,
           "Scale": {
             "Value": 1,
             "Type": "duration"
           }
         },
         "AbilityUnitTargetLimit": 1,
-        "AllyDamageReduction": 20,
+        "AllyDamageReduction": 15,
         "AllyFlagAuraModifier": {
           "Class": "RatkingFlagAllyAura",
           "Subclass": "RatkingFlagAllyAura",
@@ -1100,13 +1101,7 @@
           "BehaviorAlwaysPreviewRadius",
           "BehaviorCanSetQuickCast"
         ],
-        "BonusMoveSpeed": {
-          "Value": 3,
-          "Scale": {
-            "Value": 0.05,
-            "Type": "spirit"
-          }
-        },
+        "BonusMoveSpeed": 3,
         "CasterModifier": {
           "Class": "BaseAura",
           "Subclass": "RatkingFlagAuraCarry",
@@ -1169,7 +1164,7 @@
           "TossSpeed": 500.0
         },
         "Radius": {
-          "Value": 24,
+          "Value": 20,
           "Scale": {
             "Value": 1,
             "Type": "range"
@@ -1179,17 +1174,15 @@
         "TossDuration": 1.2,
         "Upgrades": [
           {
-            "AbilityCooldown": -20,
-            "BonusMoveSpeed": 1
+            "BonusMoveSpeed": 2
           },
           {
-            "FlagDuration": 8,
-            "Radius": 8,
-            "AbilityDuration": 8
+            "FlagDuration": 5,
+            "Radius": 8
           },
           {
             "Damage": 150,
-            "AllyDamageReduction": 15
+            "AllyDamageReduction": 10
           }
         ]
       },
@@ -1205,17 +1198,13 @@
                 "Key": "BonusMoveSpeed",
                 "Name": "Move Speed",
                 "Value": 3,
-                "Scale": {
-                  "Value": 0.05,
-                  "Type": "spirit"
-                },
                 "Type": "move_speed"
               },
               {
                 "Title": "Banner Aura",
                 "Key": "AllyDamageReduction",
                 "Name": "Damage Reduction",
-                "Value": 20
+                "Value": 15
               }
             ]
           },
@@ -1223,7 +1212,7 @@
             {
               "Key": "Radius",
               "Name": "Radius",
-              "Value": 24,
+              "Value": 20,
               "Scale": {
                 "Value": 1,
                 "Type": "range"
@@ -1268,7 +1257,7 @@
             {
               "Key": "Radius",
               "Name": "Radius",
-              "Value": 24,
+              "Value": 20,
               "Scale": {
                 "Value": 1,
                 "Type": "range"
@@ -1279,19 +1268,17 @@
         },
         "Upgrades": [
           {
-            "AbilityCooldown": -20,
-            "BonusMoveSpeed": 1,
+            "BonusMoveSpeed": 2,
             "DescKey": "ability_ratking_standard_bearer_t1_desc"
           },
           {
-            "FlagDuration": 8,
+            "FlagDuration": 5,
             "Radius": 8,
-            "AbilityDuration": 8,
             "DescKey": "ability_ratking_standard_bearer_t2_desc"
           },
           {
             "Damage": 150,
-            "AllyDamageReduction": 15,
+            "AllyDamageReduction": 10,
             "DescKey": "ability_ratking_standard_bearer_t3_desc"
           }
         ],
@@ -1316,7 +1303,7 @@
         },
         "AbilityCooldown": {
           "Name": "Cooldown",
-          "Value": 130,
+          "Value": 160,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -1330,7 +1317,7 @@
         },
         "AbilityDuration": {
           "Name": "Duration",
-          "Value": 12,
+          "Value": 10,
           "Scale": {
             "Value": 1,
             "Type": "duration"
@@ -1339,7 +1326,7 @@
         },
         "Radius": {
           "Name": "Radius",
-          "Value": 24,
+          "Value": 20,
           "Scale": {
             "Value": 1,
             "Type": "range"
@@ -1353,7 +1340,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.dc1679b9606e",
+          "source": "github.deadlock-data.english.edb16660368e",
           "raw_text": "Charge up and summon the banner of Ratannia, granting all nearby allies increased {g:citadel_inline_attribute:'MoveSpeed'}, <span class=\"highlight\">immunity from slows</span>, and <span class=\"highlight\">reduced incoming damage</span> while near the banner.",
           "plain_text": "Charge up and summon the banner of Ratannia, granting all nearby allies increased move speed, immunity from slows, and reduced incoming damage while near the banner."
         },
@@ -1362,7 +1349,7 @@
           "card_paths": [
             "card.Info2.DescKey"
           ],
-          "source": "github.deadlock-data.english.dc1679b9606e",
+          "source": "github.deadlock-data.english.edb16660368e",
           "raw_text": "Slam the banner into the ground causing the sewers below to violently erupt, dealing {g:citadel_inline_attribute:'BulletDamage'} while applying {g:citadel_inline_attribute:'KnockUp'} and {g:citadel_inline_attribute:'Slow'} to all enemies in the area. Rats will swarm out of the sewers, applying <span class=\"highlight\">Rat Swarm</span> to enemies they hit.",
           "plain_text": "Slam the banner into the ground causing the sewers below to violently erupt, dealing bullet damage while applying knockup and slow to all enemies in the area. Rats will swarm out of the sewers, applying Rat Swarm to enemies they hit."
         },
@@ -1371,27 +1358,27 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.dc1679b9606e",
-          "raw_text": "-20s Cooldown and  +1m Move Speed",
-          "plain_text": "-20s Cooldown and +1m Move Speed"
+          "source": "github.deadlock-data.english.edb16660368e",
+          "raw_text": "+2m Move Speed",
+          "plain_text": "+2m Move Speed"
         },
         {
           "localization_key": "ability_ratking_standard_bearer_t2_desc",
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.dc1679b9606e",
-          "raw_text": "+8s Charge Duration<br>+8s Flag Duration<br>+8m Radius",
-          "plain_text": "+8s Charge Duration\n+8s Flag Duration\n+8m Radius"
+          "source": "github.deadlock-data.english.edb16660368e",
+          "raw_text": "+5s Flag Duration<br>+8m Radius",
+          "plain_text": "+5s Flag Duration\n+8m Radius"
         },
         {
           "localization_key": "ability_ratking_standard_bearer_t3_desc",
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.dc1679b9606e",
-          "raw_text": "+150 Damage and +15% Damage Reduction",
-          "plain_text": "+150 Damage and +15% Damage Reduction"
+          "source": "github.deadlock-data.english.edb16660368e",
+          "raw_text": "+150 Damage and +10% Damage Reduction",
+          "plain_text": "+150 Damage and +10% Damage Reduction"
         }
       ]
     }
@@ -1401,13 +1388,7 @@
     "note": "These records are present in client ability data but are not among the four numbered ability-card bindings; do not infer control or runtime semantics from their presence alone.",
     "records": {
       "ability_ratking_entertunnel": {
-        "AbilityChannelTime": {
-          "Value": 1.7,
-          "Scale": {
-            "Value": 1,
-            "Type": "duration"
-          }
-        },
+        "AbilityChannelTime": 1.7,
         "AbilityCooldown": {
           "Value": 1,
           "Scale": {
@@ -1572,8 +1553,22 @@
     "scope_note": "Article marked Construction; these statements are separately dated, not inferred from launch configuration. They do not establish that tunnel vents are Steam Vents."
   },
   "data_boundaries": [
-    "Hero stats, ability data, cards, and localized descriptions are pinned to client 6737; they are generated data, not an independent runtime test.",
-    "The October 2 official announcement establishes the release date. The pre-release IsSelectable flag does not establish release availability.",
-    "The October 5 Rat King balance update is later and is not applied to this launch snapshot."
+    "Structured fields and localized text are pinned to client 6753, not independent runtime tests.",
+    "The October 5 patch notes establish dated behavior intent; unsupported runtime details are not inferred.",
+    "This record includes the intervening source state; not every difference from an older repository pin is an October 5 balance change."
+  ],
+  "launch_reference": {
+    "client_version": 6737,
+    "source": "github.deadlock-data.gameplay.dc1679b9606e",
+    "released_date": "2026-10-02",
+    "status": "historical_launch_not_current_balance"
+  },
+  "patch_note_addenda": [
+    {
+      "date": "2026-10-05",
+      "source": "github.deadlock-data.changelog.2026-10-05.edb16660368e",
+      "evidence_status": "patch_note_only",
+      "text": "Scrap Grenade bounce-targeting bugs were fixed. Rule, Ratannia! now falls faster while charging; no numeric falling-speed delta is established."
+    }
   ]
 }

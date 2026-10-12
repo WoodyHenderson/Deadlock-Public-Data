@@ -86,10 +86,12 @@ is a curated summary, not a fabricated raw patch file.
 
 ## Rat King release boundary
 
-[Rat King](heroes/rat-king/rat-king.md) is pinned to October 2/client 6737.
-The official announcement establishes public release; the earlier selectable
-flag did not. His client-6731 comparison is incomplete pre-release data, never
-launch values. The other 38 heroes retain their previous records.
+Rat King's [October 2 launch snapshot](patches/snapshots/rat-king-2026-10-02.yaml)
+is historical. The official announcement establishes release; the earlier
+selectable flag did not. His client-6731 comparison is incomplete pre-release
+data, never launch values. [Rat King](heroes/rat-king/rat-king.md) and
+[Sinclair](heroes/sinclair/sinclair.md) now use client 6753 (October 5); the other
+37 heroes retain their earlier pins.
 
 The October 3 Construction-marked wiki article describes tunnel access via
 crouch, no entry during combat, and Spellbreaker not proccing on Royal Pestments
@@ -98,12 +100,21 @@ launch runtime tests. Tunnel vents are not equated with Steam Vents.
 
 The Broker enabled convar becomes false in client 6737. Standard/ranked access
 is reported unavailable by the later wiki update transcription, not established
-by the convar alone. Street Brawl eligibility remains unresolved at this cutoff;
-October 4 removal and October 5 balance changes are separate, unapplied updates.
+by the convar alone. The separately dated October 4 Street Brawl reward removal
+and October 5 hero balance changes are now recorded in the [patch summary](patches/2026-10-05-balance.md).
+The vendor's exact mode implementation remains unverified.
 Healing-ping range remains a client-described prompt condition in source units.
 Supporting rat NPC fields establish neither neutral-camp placement nor runtime
 association with Rat King's summoned rats. No root-baseline or geometry advance
 and no fabricated raw October 2 changelog are included.
+
+## October 5 behavior limits
+
+Scrap Grenade bounce-targeting fixes, faster falling during Rule, Ratannia!, and
+Spectral Assistant's changed gun falloff are patch-note-only where no separate
+numeric delta is exposed. Vexing Bolt's objective multiplier does not enumerate
+every valid target. The Trooper walking fix does not establish a measured new
+walk speed or prove a causal acceleration formula.
 
 ## Burst timing boundary
 

@@ -4,28 +4,24 @@ title: Rat King
 domain: heroes
 topics: [hero, abilities]
 aliases: []
-summary: Rat King's October 2 release snapshot, with source-shaped stats, abilities, and upgrade cards.
-snapshot_id: deadlock-data-client-6737
-current_as_of: "2026-10-02"
-evidence_status: source_verified_with_official_release_confirmation
+summary: Rat King stats and abilities through the October 5 balance patch.
+snapshot_id: deadlock-data-client-6753
+current_as_of: "2026-10-05"
+evidence_status: source_verified_with_patch_note_only_addenda
 sources:
-  - github.deadlock-data.hero-data.dc1679b9606e
-  - github.deadlock-data.ability-data.dc1679b9606e
-  - github.deadlock-data.ability-cards.dc1679b9606e
-  - github.deadlock-data.english.dc1679b9606e
-  - github.deadlock-data.npcs.dc1679b9606e
+  - github.deadlock-data.gameplay.edb16660368e
+  - github.deadlock-data.english.edb16660368e
   - github.deadlock-data.gameplay.0d46cdecfccf
   - steam.news.rat-king-release.1845383656387709
   - wiki.update.2026-10-02.181191
   - wiki.rat-king.180124
+  - github.deadlock-data.changelog.2026-10-05.edb16660368e
 ---
 
 # Rat King
 
-Valve announced Rat King as available to play on October 2, 2026. Client
-6737 also marks him selectable and binds four numbered abilities. The
-selectable flag was already true in pre-release client 6731, so the
-official release announcement—not that field alone—establishes the date.
+Stats, cards and English descriptions below use **October 5/client 6753**.
+Patch-note-only behavior is labeled separately; this is not an independent runtime test.
 
 ## Base Stats
 
@@ -81,14 +77,14 @@ Internal key: `ability_ratking_scrap_grenade`.
 
 - **Tier 3:** Add an additional final Bigger Detonation
 
-Description source: [`github.deadlock-data.english.dc1679b9606e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/dc1679b9606effdc9bec37842ed40d8ca927092e/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.edb16660368e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorProjectileFiredAsBullet`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
 
 | Card field | Base value |
 | --- | ---: |
-| Detonation Damage | 65 (+0.6 per weapon damage increase) |
+| Detonation Damage | 70 (+0.6 per weapon damage increase) |
 | Move Speed | 20 (+0.08 per spirit) |
 | Detonations | 3 |
 | Detonation Radius | 8 (+1 per range) |
@@ -97,7 +93,7 @@ Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorP
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-8}`
-- Tier 2: `{"DamagePerShrapnel":65}`
+- Tier 2: `{"DamagePerShrapnel":70}`
 - Tier 3: `{"Detonations":1,"BigExplosionDamage":{"Value":300,"Scale":{"Value":1.0,"Type":"weapon_damage_increase"}},"BigExplosionRadius":{"Value":14,"Scale":{"Value":0.0254,"Type":"range"}},"BigExplosionSlowPercent":{"Value":0,"Scale":{"Value":0.12,"Type":"spirit"}}}`
 
 Additional card fields (source `Info2`):
@@ -127,7 +123,7 @@ Internal key: `ability_ratking_ratnibble`.
 - **Tier 2:** Increased Swarm Size +4s Debuff Duration
 - **Tier 3:** +8 Damage and -1% Bullet Resist per Bite
 
-Description source: [`github.deadlock-data.english.dc1679b9606e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/dc1679b9606effdc9bec37842ed40d8ca927092e/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.edb16660368e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorAlwaysPreviewRadius`, `BehaviorDisplaysDamageImpact`, `BehaviorCanSetQuickCast`, `BehaviorDontInterruptSlideOnCast`.
@@ -141,7 +137,7 @@ Behavior flags: `BehaviorAlwaysPreviewRadius`, `BehaviorDisplaysDamageImpact`, `
 | MaxRats | 5 |
 | Cast Range | 50 (+1 per range) |
 | Charges | 1 (+1 per max charges) |
-| Cooldown | 28 (+1 per cooldown) |
+| Cooldown | 24 (+1 per cooldown) |
 | Charge Delay | 8 (+1 per charge cooldown) |
 | Duration | 6 (+1 per duration) |
 | Radius | 10 |
@@ -150,6 +146,7 @@ Upgrade deltas:
 - Tier 1: `{"AbilityCharges":1}`
 - Tier 2: `{"RatSwarmCols":2,"RatSwarmRows":1,"RatSwarmWidth":100,"DebuffDuration":4}`
 - Tier 3: `{"ArmorReductionPerBite":-1,"DamagePerBite":8}`
+
 
 ### 3. Royal Pestments
 
@@ -167,7 +164,7 @@ Internal key: `ability_ratking_ratarmor`.
 - **Tier 2:** -8s Cooldown +15% Bullet Return Chance
 - **Tier 3:** Reduce all damage to a max of 250 +10% Max Health as Barrier
 
-Description source: [`github.deadlock-data.english.dc1679b9606e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/dc1679b9606effdc9bec37842ed40d8ca927092e/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.edb16660368e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDontInterruptSlideOnCast`.
@@ -185,6 +182,7 @@ Upgrade deltas:
 - Tier 2: `{"ReturnFireChance":15,"AbilityCooldown":-8}`
 - Tier 3: `{"MaxHealthPct":10,"MaxDamagePerHit":250}`
 
+
 ### 4. Rule, Ratannia!
 
 Internal key: `ability_ratking_standard_bearer`.
@@ -200,28 +198,28 @@ Internal key: `ability_ratking_standard_bearer`.
 
 **Upgrade descriptions** (where supplied by the source):
 
-- **Tier 1:** -20s Cooldown and +1m Move Speed
-- **Tier 2:** +8s Charge Duration +8s Flag Duration +8m Radius
-- **Tier 3:** +150 Damage and +15% Damage Reduction
+- **Tier 1:** +2m Move Speed
+- **Tier 2:** +5s Flag Duration +8m Radius
+- **Tier 3:** +150 Damage and +10% Damage Reduction
 
-Description source: [`github.deadlock-data.english.dc1679b9606e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/dc1679b9606effdc9bec37842ed40d8ca927092e/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.edb16660368e`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/edb16660368ef3b693a4ac6d525697f5570a4dce/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorAlwaysPreviewRadius`, `BehaviorCanSetQuickCast`.
 
 | Card field | Base value |
 | --- | ---: |
-| Move Speed | 3 (+0.05 per spirit) |
-| Damage Reduction | 20 |
-| Radius | 24 (+1 per range) |
-| Cooldown | 130 (+1 per cooldown) |
+| Move Speed | 3 |
+| Damage Reduction | 15 |
+| Radius | 20 (+1 per range) |
+| Cooldown | 160 (+1 per cooldown) |
 | Charge Delay | -1 |
-| Duration | 12 (+1 per duration) |
+| Duration | 10 (+1 per duration) |
 
 Upgrade deltas:
-- Tier 1: `{"AbilityCooldown":-20,"BonusMoveSpeed":1}`
-- Tier 2: `{"FlagDuration":8,"Radius":8,"AbilityDuration":8}`
-- Tier 3: `{"Damage":150,"AllyDamageReduction":15}`
+- Tier 1: `{"BonusMoveSpeed":2}`
+- Tier 2: `{"FlagDuration":5,"Radius":8}`
+- Tier 3: `{"Damage":150,"AllyDamageReduction":10}`
 
 Additional card fields (source `Info2`):
 
@@ -230,31 +228,22 @@ Additional card fields (source `Info2`):
 | Damage | 200 (+1.2 per weapon damage increase) |
 | Move Speed | 40 |
 | Flag Duration | 12 (+1 per duration) |
-| Radius | 24 (+1 per range) |
+| Radius | 20 (+1 per range) |
 
 
-## Supporting Client Records
+## October 5 Behavior Notes
 
-The YAML preserves additional unnumbered ability records and the
-`npc_ratking_rat` NPC record from client 6737. They are not treated
-as extra numbered hero abilities or as neutral-camp placement data.
+- **Patch-note-only:** Scrap Grenade bounce-targeting bugs were fixed. Rule, Ratannia! now falls faster while charging; no numeric falling-speed delta is established.
 
-## Later Wiki Context (October 3)
+## Release and Innate Behavior
 
-The [early article revision](https://deadlock.wiki/Rat_King?oldid=180124),
-marked Construction, describes these separately dated behaviors:
+Rat King was released October 2. That launch snapshot is not his current October 5 balance state.
+The separately dated October 3 wiki describes crouching at a vent to enter/exit map tunnels, with no entry while in combat. It also says Spellbreaker does not proc on Royal Pestments barrier damage.
+These are wiki descriptions, not tested launch behavior; tunnel vents are not identified as Steam Vents.
+The YAML retains the incomplete client-6731 comparison as non-launch evidence and the distinct supporting ability/NPC records.
 
-- Can enter and exit map tunnels by crouching next to a vent; cannot enter while in combat.
-- Royal Pestments: Spellbreaker does not proc on damage dealt to the barrier.
+## Sources and Limits
 
-These are wiki descriptions, not independent launch-day runtime tests.
-Tunnel vents are not identified as Steam Vents by this evidence.
-
-## Data Boundaries
-
-- The launch fields and card/localization text are generated client data, not independent runtime tests.
-- The pre-release comparison is retained only to prevent incomplete client-6731 values from being mistaken for launch stats.
-- October 5 balance changes are outside this snapshot.
-
-Release evidence: [official Steam announcement](https://store.steampowered.com/news/app/1422450/view/703281025618281704?l=english).
-Client data: [pinned client 6737 commit](https://github.com/deadlock-wiki/deadlock-data/tree/dc1679b9606effdc9bec37842ed40d8ca927092e).
+- [October 5 patch changes](../../patches/2026-10-05-balance.md)
+- [Pinned client data](https://github.com/deadlock-wiki/deadlock-data/tree/edb16660368ef3b693a4ac6d525697f5570a4dce/data)
+- Raw source precision, flags and upgrade deltas are not a complete runtime simulation.
