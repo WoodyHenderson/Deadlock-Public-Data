@@ -90,8 +90,9 @@ Rat King's [October 2 launch snapshot](patches/snapshots/rat-king-2026-10-02.yam
 is historical. The official announcement establishes release; the earlier
 selectable flag did not. His client-6731 comparison is incomplete pre-release
 data, never launch values. [Rat King](heroes/rat-king/rat-king.md) and
-[Sinclair](heroes/sinclair/sinclair.md) now use client 6753 (October 5); the other
-37 heroes retain their earlier pins.
+[Sinclair](heroes/sinclair/sinclair.md) now use client 6753 (October 5).
+[Baba](heroes/baba/baba.md) uses client 6759 (October 6); the other 37 heroes
+retain their earlier pins.
 
 The October 3 Construction-marked wiki article describes tunnel access via
 crouch, no entry during combat, and Spellbreaker not proccing on Royal Pestments
@@ -107,6 +108,20 @@ Healing-ping range remains a client-described prompt condition in source units.
 Supporting rat NPC fields establish neither neutral-camp placement nor runtime
 association with Rat King's summoned rats. No root-baseline or geometry advance
 and no fabricated raw October 2 changelog are included.
+
+## Baba release limits
+
+[Baba's record](heroes/baba/baba.md) uses the later October 6 client 6759;
+initial client-6757 evidence remains distinct. Valve's release announcement
+confirms availability despite the retained `InDevelopment: true` flag.
+The three brew effects and upgrade multipliers are preserved without inventing
+complete runtime timing, damage-ramp or lifesteal formulas. Three projectiles
+with `HitOnceAcrossAllBullets: true` do not justify tripling source DPS.
+
+Detailed parry, movement, ultimate/item and mode descriptions from the October 8
+wiki article are labeled later context, not independently tested launch facts.
+Missing fields or improved tooltip labels do not establish gameplay changes.
+No October 7 or later balance data is imported by this release update.
 
 ## October 5 behavior limits
 

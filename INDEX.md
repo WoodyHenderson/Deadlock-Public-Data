@@ -6,15 +6,16 @@ topics: [routing, retrieval, navigation, entities]
 aliases: [entity index, keyword index]
 summary: Direct routes to the public snapshot's hero, ability, item, NPC, objective, and mechanics records.
 snapshot_id: deadlock-data-mixed-through-2026-10-06
-current_as_of: "2026-10-09"
+current_as_of: "2026-10-20"
 evidence_status: derived
 sources: []
 ---
 
 # Deadlock Data Keyword Index
 
-This index routes to records with different dated scopes: Sinclair and Rat King
-use October 5/client 6753; the other 37 heroes and 173 item records retain
+This index routes to records with different dated scopes: Baba uses October 6/client
+6759, with initial launch evidence and later wiki descriptions kept separate.
+Sinclair and Rat King use October 5/client 6753; the other 37 heroes and 173 item records retain
 client 6694 (September 16). The separate map-coordinate layer is dated
 October 6. City Never Sleeps map/corrupted-item research retains its pre-release
 cutoff, with the October 2 Broker toggle and healing-ping configuration added
@@ -68,6 +69,7 @@ historical values as current facts.
 | Haunt attacks, parry, Steam Vent reveal, Healing Snack heal amount, Tough Crate reward, Buff Container drop selection, Sinner jackpot | [Map interactions and open questions](general/map/map-interactions-and-open-questions.md); [structured behavior](data/map-interactions.yaml) |
 | Corrupted item variant fields | [Dated variant data](data/corrupted-items.yaml); configured fields do not establish mode/date availability |
 | Sources, citations, versions | [Source registry](sources/source-registry.yaml); [attribution](ATTRIBUTION.md) |
+| Baba, Threadsap, Granny Long Legs, Baba's Brew, Baba's Brews, Feed The Birds | [Baba](heroes/baba/baba.md); release history only: [October 6 summary](patches/2026-10-06-baba-release.md) |
 | Explicit request for patch notes or change history | [Archive policy](patches/README.md); [manifest](patches/manifest.yaml) |
 
 <!-- entity-routes:start -->
@@ -81,6 +83,7 @@ holds exact fields. Names reflect the pinned roster, not a live-game check.
 | --- | --- |
 | [Abrams](heroes/abrams/abrams.md) | Siphon Life; Shoulder Charge; Infernal Resilience; Seismic Impact |
 | [Apollo](heroes/apollo/apollo.md) | Disengaging Sigil; Riposte; Flawless Advance; Itani Lo Sahn |
+| [Baba](heroes/baba/baba.md) | Threadsap; Granny Long Legs; Baba's Brew; Feed The Birds |
 | [Bebop](heroes/bebop/bebop.md) | Exploding Uppercut; Sticky Bomb; Grapple Arm; Hyper Beam |
 | [Billy](heroes/billy/billy.md) | Bashdown; Rising Ram; Blasted; Chain Gang |
 | [Calico](heroes/calico/calico.md) | Gloom Bombs; Leaping Slash; Ava; Return to Shadows |
