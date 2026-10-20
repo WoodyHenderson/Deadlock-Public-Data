@@ -9,6 +9,8 @@ YAML preserves structured fields, source precision and dated evidence.
 Records have different cutoff dates. The September 3 root baseline is not a
 claim that every record has been refreshed to the latest patch.
 
+- **Baba:** October 6/client 6759, with the initial client-6757 launch comparison
+  preserved and October 8 wiki interactions explicitly labeled as later context.
 - **Sinclair and Rat King:** October 5/client 6753, including the balance changes
   and separately labeled patch-note-only behavior. Rat King's October 2 launch
   is preserved as a [historical snapshot](patches/snapshots/rat-king-2026-10-02.yaml).
@@ -21,7 +23,8 @@ claim that every record has been refreshed to the latest patch.
 - **Map coordinates:** the separate October 6 snapshot is unchanged. Markers
   represent potential locations, not live availability or walking routes.
 
-See the [October 4/5 changes](patches/2026-10-05-balance.md) and
+See the [Baba release](patches/2026-10-06-baba-release.md),
+[October 4/5 changes](patches/2026-10-05-balance.md) and
 [limitations](LIMITATIONS.md) for exact scope and unresolved behavior.
 
 ## Find information

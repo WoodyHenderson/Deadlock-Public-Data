@@ -19,6 +19,11 @@
   versioned announcement text hash and dated Steam news GID. These support
   September 29 feature intent, not independently verified gameplay behavior.
 
+- **Valve's official Baba release announcement, “Mind the Birds!”** —
+  <https://store.steampowered.com/news/app/1422450/view/703281025618282871>.
+  The dated announcement confirms release; Baba's wiki-derived interaction prose
+  cites the separate October 6 and October 8 article revisions in the registry.
+
 The separately dated [map-coordinate layer](map/README.md) has a private source
 whose owner requested no public attribution or identification. The project owner
 reports permission to publicly redistribute this derived layer for **non-commercial

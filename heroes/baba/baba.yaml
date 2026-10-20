@@ -1,0 +1,2595 @@
+{
+  "schema_version": 2,
+  "id": "hero.baba",
+  "name": "Baba",
+  "aliases": [],
+  "snapshot_id": "deadlock-data-client-6759",
+  "client_version": 6759,
+  "server_version": 6759,
+  "source_revision": 11094174,
+  "current_as_of": "2026-10-06",
+  "evidence_status": "source_verified_with_official_release_confirmation_and_dated_wiki_context",
+  "sources": {
+    "hero_data": "github.deadlock-data.gameplay.7fd1dfeb502a",
+    "ability_data": "github.deadlock-data.gameplay.7fd1dfeb502a",
+    "ability_cards": "github.deadlock-data.gameplay.7fd1dfeb502a",
+    "ability_localization": "github.deadlock-data.english.7fd1dfeb502a",
+    "initial_release_checkpoint": "github.deadlock-data.gameplay.69b3ca700c80",
+    "pre_release_comparison": "github.deadlock-data.gameplay.edb16660368e",
+    "release_announcement": "steam.news.baba-release.1845383656397580",
+    "early_wiki_behavior": "wiki.baba.184291",
+    "later_wiki_behavior": "wiki.baba.184568"
+  },
+  "internal_hero_key": "hero_baba",
+  "hero_type": "Mystic",
+  "role_localization_key": "hero_baba_role",
+  "playstyle_localization_key": "hero_baba_playstyle",
+  "availability": {
+    "selectable": true,
+    "disabled": false,
+    "in_development": true,
+    "in_hero_labs": false,
+    "recommended": false,
+    "released_date": "2026-10-06",
+    "release_confirmed_by_official_announcement": true,
+    "note": "The official release announcement establishes availability despite InDevelopment: true. IsSelectable was already true in incomplete pre-release data; neither flag alone determines release."
+  },
+  "base_stats": {
+    "maximum_health": 780.0,
+    "health_regeneration_per_second": 2.5,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.5,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": -20.0,
+    "critical_damage_received_percent": 0.0,
+    "ground_dash": {
+      "speed_meters_per_second": 14.7,
+      "distance_meters": 10.0,
+      "duration_seconds": 0.68
+    },
+    "air_dash": {
+      "speed_meters_per_second": 17.0,
+      "distance_meters": 8.0,
+      "duration_seconds": 0.47
+    },
+    "stamina": {
+      "charges": 2,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_resistance_percent": 8.0,
+    "bullet_lifesteal_effectiveness": 1.0,
+    "spirit_lifesteal_effectiveness": 1.0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.41,
+    "MaxHealth": 45.0,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 0.7,
+    "HeavyMeleeDamage": 1.624,
+    "DPS": 1.3226,
+    "SustainedDPS": 0.86014
+  },
+  "spirit_scaling": {
+    "TechResist": 0.12
+  },
+  "weapon": {
+    "BulletSpeed": 177.8,
+    "BulletDamage": 8.8,
+    "RoundsPerSecond": 3.2258,
+    "ClipSize": 15,
+    "ReloadTime": 2.5,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 15.0,
+    "FalloffEndRange": 42.0,
+    "FalloffStartScale": 1.0,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0,
+    "BulletRadius": 0.1778,
+    "BulletsPerShot": 3,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": true,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 28.387,
+    "SustainedDPS": 18.462,
+    "NameKey": "citadel_weapon_baba_set",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_RapidFire",
+      "Attribute_EWeaponAttribute_LongRange"
+    ]
+  },
+  "weapon_note": "BulletsPerShot is 3, AmmoConsumedPerShot is 1, and HitOnceAcrossAllBullets is true. Preserve the source DPS; do not multiply it by three or infer three hits/procs per target.",
+  "localized_fields": {
+    "lore": "There are a few things most denizens of The Cursed Apple hope to experience at some point in their lives.<br><br>See a Broadway show.<br>Ice Skate at Rockefeller Center during Christmas season.<br>Get yelled at by the Central Park Pigeon Lady.<br><br>Because Baba is more than just an old woman that feeds spirit pigeons in the park... she's an institution.  A force of nature woven into the very lore of New York City.  Is it true that she's sat at the same bench every day for the past 50 years, rain or shine?  Maybe.  Is she REALLY the leader of The Soho Coven?  Who's to say.  One thing's for sure though... she's a New Yorker.  And she's not going to sit back and watch a bunch of tourists tear apart Manhattan in pursuit of power.",
+    "weapon_name": "Bunko-Night Special"
+  },
+  "generated_source_snapshot": {
+    "client_version": 6759,
+    "source_revision": 11094174,
+    "source": "github.deadlock-data.gameplay.7fd1dfeb502a",
+    "hero_data": {
+      "AbilityResourceMax": 0,
+      "AbilityResourceRegenPerSecond": 0,
+      "AirDashDistanceInMeters": 8.0,
+      "AirDashDuration": 0.47,
+      "AirDashSpeed": 17.0,
+      "BaseHealthRegen": 2.5,
+      "BaseWeaponDamageIncrease": 0,
+      "BoundAbilities": {
+        "1": {
+          "Name": "Threadsap",
+          "Key": "ability_baba_bubbling_brew"
+        },
+        "2": {
+          "Name": "Granny Long Legs",
+          "Key": "ability_baba_bench_run"
+        },
+        "3": {
+          "Name": "Baba's Brew",
+          "Key": "ability_baba_hexing_brew"
+        },
+        "4": {
+          "Name": "Feed The Birds",
+          "Key": "ability_baba_ultimate_2"
+        }
+      },
+      "CritDamageBonusPercent": -20.0,
+      "CritDamageReceivedPercent": 0.0,
+      "CrouchSpeed": 4.75,
+      "GroundDashDistanceInMeters": 10.0,
+      "GroundDashDuration": 0.68,
+      "GroundDashSpeed": 14.7,
+      "HeavyMeleeDamage": 116,
+      "HeroBulletLifestealEffectiveness": 1.0,
+      "HeroSpiritLifestealEffectiveness": 1.0,
+      "InDevelopment": true,
+      "InHeroLabs": false,
+      "IsDisabled": false,
+      "IsRecommended": false,
+      "IsSelectable": true,
+      "LevelScaling": {
+        "BulletDamage": 0.41,
+        "MaxHealth": 45.0,
+        "PowerIncreases": 1,
+        "TechPower": 1.1,
+        "LightMeleeDamage": 0.7,
+        "HeavyMeleeDamage": 1.624,
+        "DPS": 1.3226,
+        "SustainedDPS": 0.86014
+      },
+      "LightMeleeDamage": 50,
+      "Lore": "hero_baba_lore",
+      "MaxHealth": 780.0,
+      "MaxMoveSpeed": 6.5,
+      "MoveAcceleration": 4,
+      "Name": "Baba",
+      "OOCHealthRegen": 0,
+      "Playstyle": "hero_baba_playstyle",
+      "ProcBuildUpRateScale": 1,
+      "ReloadSpeed": 0,
+      "Role": "hero_baba_role",
+      "SpiritScaling": {
+        "TechResist": 0.12
+      },
+      "SprintSpeed": 1.6,
+      "Stamina": 2,
+      "StaminaCooldown": 4.5000045000045,
+      "StaminaRegenPerSecond": 0.222222,
+      "TechDuration": 0,
+      "TechRange": 0,
+      "TechResist": 8.0,
+      "Type": "Mystic",
+      "Weapon": {
+        "BulletSpeed": 177.8,
+        "BulletDamage": 8.8,
+        "RoundsPerSecond": 3.2258,
+        "ClipSize": 15,
+        "ReloadTime": 2.5,
+        "ReloadMovespeed": 1.0,
+        "ReloadDelay": 0.0,
+        "ReloadSingle": false,
+        "FalloffStartRange": 15.0,
+        "FalloffEndRange": 42.0,
+        "FalloffStartScale": 1.0,
+        "FalloffEndScale": 0.1,
+        "FalloffBias": 0.5,
+        "BulletGravityScale": 0,
+        "BulletRadius": 0.1778,
+        "BulletsPerShot": 3,
+        "BulletsPerBurst": 1,
+        "BurstInterShotInterval": 0,
+        "ShootMoveSpeed": 0.75,
+        "HitOnceAcrossAllBullets": true,
+        "CanCrit": true,
+        "AmmoConsumedPerShot": 1,
+        "DPS": 28.387,
+        "SustainedDPS": 18.462,
+        "NameKey": "citadel_weapon_baba_set",
+        "WeaponTypes": [
+          "Attribute_EWeaponAttribute_RapidFire",
+          "Attribute_EWeaponAttribute_LongRange"
+        ]
+      },
+      "WeaponPowerScale": 1
+    }
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Threadsap",
+      "internal_key": "ability_baba_bubbling_brew",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 35,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCharges": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 26.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AutoIntrinsicModifiers": [
+          {
+            "Class": "BabaBubblingBrewGunDamage",
+            "Subclass": "BabaBubblingBrewGunDamage"
+          }
+        ],
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BuffModifier": {
+          "Class": "BabaBubblingBrewBuff",
+          "Subclass": "BabaBubblingBrewBuff"
+        },
+        "ChannelMoveSpeed": -1,
+        "Damage": 50,
+        "DebuffDuration": {
+          "Value": 22,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "BabaBubblingBrewDebuff",
+          "Subclass": "BabaBubblingBrewDebuff"
+        },
+        "ExplodeRadius": {
+          "Value": 3.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "ExplodeTime": 0.9,
+        "ExplodeTimeInterval": 0.05,
+        "IsDisabled": false,
+        "Key": "ability_baba_bubbling_brew",
+        "MagicDamagePerBullet": {
+          "Value": 8,
+          "Scale": {
+            "Value": 0.26,
+            "Type": "spirit"
+          }
+        },
+        "MaxStacks": {
+          "Value": 45,
+          "Scale": {
+            "Value": 2.0,
+            "Type": "power_increase"
+          }
+        },
+        "Name": "Threadsap",
+        "ProjectileSpacingThinkInterval": 0.05,
+        "ProjectileSpeed": 2600,
+        "ProjectileTurnMaxDegrees": 270,
+        "ProjectileTurnRate": 220,
+        "PullDuration": 0.6,
+        "PullModifier": {
+          "Class": "BabaThreadPull",
+          "Subclass": "BabaThreadPull",
+          "ExitVelocityScale": 0.2
+        },
+        "StolenSpiritEffectiveness": 175,
+        "TechPowerGain": {
+          "Value": 10,
+          "Scale": {
+            "Value": 0.9,
+            "Type": "power_increase"
+          }
+        },
+        "Upgrades": [
+          {
+            "MagicDamagePerBullet": 8
+          },
+          {
+            "AbilityCooldown": -12,
+            "DebuffDuration": 8
+          },
+          {
+            "AbilityCharges": 1,
+            "PullDistance": 7
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_baba_bubbling_brew",
+        "Name": "Threadsap",
+        "DescKey": "ability_baba_bubbling_brew_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "TechPowerGain",
+                "NameKey": "BubblingBrew_TechPowerSteal",
+                "Name": "Spirit Stolen per Hit",
+                "Value": 10,
+                "Scale": {
+                  "Value": 0.9,
+                  "Type": "power_increase"
+                },
+                "Type": "spirit"
+              },
+              {
+                "Key": "StolenSpiritEffectiveness",
+                "Name": "Stolen Spirit Effectiveness",
+                "Value": 175
+              },
+              {
+                "Key": "MagicDamagePerBullet",
+                "Name": "Spirit Damage Per Bullet",
+                "Value": 8,
+                "Scale": {
+                  "Value": 0.26,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "DebuffDuration",
+              "Name": "Debuff Duration",
+              "Value": 22,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "MaxStacks",
+              "NameKey": "MaxStacks_BabaBubblingBrew",
+              "Name": "Max Spirit Stolen",
+              "Value": 45,
+              "Scale": {
+                "Value": 2.0,
+                "Type": "power_increase"
+              }
+            },
+            {
+              "Key": "Damage",
+              "Name": "Damage",
+              "Value": 50,
+              "Type": "tech_damage"
+            }
+          ],
+          "DescKey": "ability_baba_bubbling_brew_desc"
+        },
+        "Upgrades": [
+          {
+            "MagicDamagePerBullet": 8
+          },
+          {
+            "AbilityCooldown": -12,
+            "DebuffDuration": 8,
+            "DescKey": "ability_baba_bubbling_brew_t2_desc"
+          },
+          {
+            "AbilityCharges": 1,
+            "PullDistance": 7,
+            "DescKey": "ability_baba_bubbling_brew_t3_desc"
+          }
+        ],
+        "Range": {
+          "ExplodeRadius": {
+            "Name": "Explosion Radius",
+            "Value": 3.5,
+            "Scale": {
+              "Value": 1,
+              "Type": "radius"
+            },
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "ExplodeTime": {
+            "Name": "Burst Delay",
+            "Value": 0.9
+          },
+          "ExplodeTimeInterval": {
+            "Name": "Burst Interval",
+            "Value": 0.05
+          },
+          "ProjectileSpacingThinkInterval": {
+            "Name": null,
+            "Value": 0.05
+          },
+          "ProjectileSpeed": {
+            "Name": null,
+            "Value": 2600
+          },
+          "ProjectileTurnMaxDegrees": {
+            "Name": null,
+            "Value": 270
+          },
+          "ProjectileTurnRate": {
+            "Name": null,
+            "Value": 220
+          },
+          "PullDuration": {
+            "Name": null,
+            "Value": 0.6
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 35,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 26.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_baba_bubbling_brew_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "raw_text": "Weave a scraggly thread that follows your crosshair before bursting along its path, dealing {g:citadel_inline_attribute:'SpiritDamage'} and stealing enemy {g:citadel_inline_attribute:'Spirit'}, increased in effectiveness for Baba.<br><br>While holding stolen {g:citadel_inline_attribute:'Spirit'}, Baba deals {g:citadel_inline_attribute:'BonusSpiritDamage'} with every bullet.",
+          "plain_text": "Weave a scraggly thread that follows your crosshair before bursting along its path, dealing spirit damage and stealing enemy Spirit, increased in effectiveness for Baba.\nWhile holding stolen Spirit, Baba deals bonus spirit damage with every bullet."
+        },
+        {
+          "localization_key": "ability_baba_bubbling_brew_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "raw_text": "-12s Cooldown<br>+8s Debuff Duration",
+          "plain_text": "-12s Cooldown\n+8s Debuff Duration"
+        },
+        {
+          "localization_key": "ability_baba_bubbling_brew_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "raw_text": "+1 Charge<br>On Hit: Pull enemies 7m",
+          "plain_text": "+1 Charge\nOn Hit: Pull enemies 7m"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Granny Long Legs",
+      "internal_key": "ability_baba_bench_run",
+      "data": {
+        "AbilityCooldown": {
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityDuration": {
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AirDashDistancePercent": 20,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorNonCombat",
+          "BehaviorCastableWhileBusy"
+        ],
+        "BenchRunModifier": {
+          "Class": "BabaBenchRun",
+          "Subclass": "BabaBenchRun",
+          "HeavyKickSlowModifier": {
+            "Class": "SlowBase",
+            "Subclass": "BabaBenchHeavyKickSlow"
+          },
+          "GroundPoundFallModifier": {
+            "Class": "BabaGroundPoundFall",
+            "Subclass": "BabaGroundPoundFall"
+          },
+          "LightKickShoveModifier": {
+            "Class": "BabaThreadPull",
+            "Subclass": "BabaBenchLightKickShove"
+          },
+          "UpwardsForceOnHeavyMeleeStart": 600.0
+        },
+        "BonusMeleeRange": 2,
+        "BonusMoveSpeed": 5,
+        "ChannelMoveSpeed": 1,
+        "ChargedJumpForwardForce": 300,
+        "CrouchMoveSpeedBonus": 3.5,
+        "DashDistancePercent": 20,
+        "EndLaunchMaxLingerTime": 3,
+        "GravityScalePercent": 80,
+        "GroundPoundFallTimeReductionPercent": 30,
+        "GroundPoundKnockUpDuration": 0.3,
+        "GroundPoundKnockUpHeight": 2.54,
+        "HeavyMeleeDashSlowPercent": -25,
+        "HeavyMeleeSlowDuration": {
+          "Value": 4,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "HeavyMeleeSlowPercent": 50,
+        "HeavyMeleeSpiritDamage": {
+          "Value": 75,
+          "Scale": {
+            "Value": 0.6,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": "false",
+        "JumpSoundLayerVolumeMax": -4.0,
+        "JumpSoundLayerVolumeMin": -60.0,
+        "Key": "ability_baba_bench_run",
+        "KickKnockbackDuration": 0.45,
+        "LightKickKnockbackDistance": {
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "LightKickKnockbackHeight": 0.75,
+        "MaxJumpHeight": 250,
+        "MeleeLifestealNonHeroPct": 60,
+        "MeleeResist": 30,
+        "MeleeSpiritDamage": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0.0,
+            "Type": "spirit"
+          }
+        },
+        "MinJumpHeight": 75,
+        "MoveWhileShootingSpeedPenaltyReductionPercent": 100,
+        "Name": "Granny Long Legs",
+        "Radius": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "RisingGravityScalePercent": 50,
+        "StatusResistancePercent": 30,
+        "Upgrades": [
+          {
+            "BonusMoveSpeed": 2.5
+          },
+          {
+            "AbilityCooldown": -7
+          },
+          {
+            "StatusResistancePercent": 15,
+            "MeleeResist": 15,
+            "MeleeLifesteal": 50
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_baba_bench_run",
+        "Name": "Granny Long Legs",
+        "DescKey": "ability_baba_bench_run_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "BonusMoveSpeed",
+                "Name": "Move Speed",
+                "Value": 5,
+                "Type": "move_speed"
+              },
+              {
+                "Key": "StatusResistancePercent",
+                "Name": "Debuff Resist",
+                "Value": 30,
+                "Type": "duration"
+              },
+              {
+                "Key": "MeleeResist",
+                "Name": "Melee Resist",
+                "Value": 30,
+                "Type": "melee_resist"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "MeleeSpiritDamage",
+              "Name": "Light Melee Spirit Damage",
+              "Value": 0,
+              "Scale": {
+                "Value": 0.0,
+                "Type": "spirit"
+              },
+              "Type": "tech_damage"
+            },
+            {
+              "Key": "LightKickKnockbackDistance",
+              "Name": "Light Melee Knockback",
+              "Value": 10,
+              "Scale": {
+                "Value": 1,
+                "Type": "range"
+              },
+              "Type": "distance"
+            },
+            {
+              "Key": "HeavyMeleeSpiritDamage",
+              "Name": "Heavy Melee Damage",
+              "Value": 75,
+              "Scale": {
+                "Value": 0.6,
+                "Type": "spirit"
+              },
+              "Type": "tech_damage"
+            },
+            {
+              "Key": "HeavyMeleeSlowPercent",
+              "Name": "Heavy Melee Movement Slow",
+              "Value": 50,
+              "Type": "slow"
+            },
+            {
+              "Key": "HeavyMeleeSlowDuration",
+              "Name": "Heavy Melee Slow Duration",
+              "Value": 4,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_baba_bench_run_desc"
+        },
+        "Upgrades": [
+          {
+            "BonusMoveSpeed": 2.5,
+            "DescKey": "ability_baba_bench_run_t1_desc"
+          },
+          {
+            "AbilityCooldown": -7,
+            "DescKey": "ability_baba_bench_run_t2_desc"
+          },
+          {
+            "StatusResistancePercent": 15,
+            "MeleeResist": 15,
+            "MeleeLifesteal": 50,
+            "DescKey": "ability_baba_bench_run_t3_desc"
+          }
+        ],
+        "Duration": {
+          "GroundPoundKnockUpDuration": {
+            "Name": "Ground Pound Knock Up",
+            "Value": 0.3,
+            "Type": "duration"
+          },
+          "KickKnockbackDuration": {
+            "Name": null,
+            "Value": 0.45,
+            "Type": "duration"
+          }
+        },
+        "Range": {
+          "BonusMeleeRange": {
+            "Name": "Melee Range",
+            "Value": 2,
+            "Type": "distance"
+          },
+          "GroundPoundKnockUpHeight": {
+            "Name": null,
+            "Value": 2.54,
+            "Type": "distance"
+          },
+          "LightKickKnockbackHeight": {
+            "Name": null,
+            "Value": 0.75,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "AirDashDistancePercent": {
+            "Name": null,
+            "Value": 20,
+            "Type": "move_speed"
+          },
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 1,
+            "Type": "move_speed"
+          },
+          "ChargedJumpForwardForce": {
+            "Name": null,
+            "Value": 300,
+            "Type": "move_speed"
+          },
+          "CrouchMoveSpeedBonus": {
+            "Name": null,
+            "Value": 3.5,
+            "Type": "move_speed"
+          },
+          "DashDistancePercent": {
+            "Name": null,
+            "Value": 20,
+            "Type": "move_speed"
+          },
+          "MaxJumpHeight": {
+            "Name": "Fully Charged Jump Height",
+            "Value": 250,
+            "Type": "move_speed"
+          },
+          "MinJumpHeight": {
+            "Name": "Jump Height",
+            "Value": 75,
+            "Type": "move_speed"
+          },
+          "MoveWhileShootingSpeedPenaltyReductionPercent": {
+            "Name": "move speed penalty while shooting reduction",
+            "Value": 100,
+            "Type": "move_speed"
+          }
+        },
+        "Debuff": {
+          "HeavyMeleeDashSlowPercent": {
+            "Name": null,
+            "Value": -25,
+            "Type": "slow"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "EndLaunchMaxLingerTime": {
+            "Name": null,
+            "Value": 3
+          },
+          "GravityScalePercent": {
+            "Name": null,
+            "Value": 80
+          },
+          "GroundPoundFallTimeReductionPercent": {
+            "Name": null,
+            "Value": 30
+          },
+          "JumpSoundLayerVolumeMax": {
+            "Name": null,
+            "Value": -4.0
+          },
+          "JumpSoundLayerVolumeMin": {
+            "Name": null,
+            "Value": -60.0
+          },
+          "MeleeLifestealNonHeroPct": {
+            "Name": null,
+            "Value": 60
+          },
+          "RisingGravityScalePercent": {
+            "Name": null,
+            "Value": 50
+          }
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1.0,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_baba_bench_run_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "raw_text": "Your bench's legs extend, granting {g:citadel_inline_attribute:'BonusMoveSpeed'}, higher jumps, <span class=\"highlight\">Debuff Resistance</span> and <span class=\"highlight\">Melee Resistance</span>.<br><br><span class=\"diminish\">Light Melee:</span> Perform a <span class=\"highlight\">kick</span> that knocks enemies back.<br><span class=\"diminish\">Heavy Melee:</span> Perform a <span class=\"highlight\">ground pound</span> that applies {g:citadel_inline_attribute:'KnockUp'}, {g:citadel_inline_attribute:'Slow'}, and deals {g:citadel_inline_attribute:'SpiritDamage'}.<br><br><span class=\"diminish\">Hold {g:citadel_binding:'Crouch'} to charge a high jump, release to jump.</span>",
+          "plain_text": "Your bench's legs extend, granting bonus move speed, higher jumps, Debuff Resistance and Melee Resistance.\nLight Melee: Perform a kick that knocks enemies back.\nHeavy Melee: Perform a ground pound that applies knockup, slow, and deals spirit damage.\nHold [Crouch] to charge a high jump, release to jump."
+        },
+        {
+          "localization_key": "ability_baba_bench_run_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "raw_text": "+2.5m Move Speed",
+          "plain_text": "+2.5m Move Speed"
+        },
+        {
+          "localization_key": "ability_baba_bench_run_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "raw_text": "-7s Cooldown",
+          "plain_text": "-7s Cooldown"
+        },
+        {
+          "localization_key": "ability_baba_bench_run_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "raw_text": "+15% Resists<br>+50% Melee Lifesteal",
+          "plain_text": "+15% Resists\n+50% Melee Lifesteal"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Baba's Brew",
+      "internal_key": "ability_baba_hexing_brew",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityChannelTime": {
+          "Value": 1.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 25.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BarrierDuration": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "BarrierLockTime": 2.5,
+        "BarrierModifier": {
+          "Class": "CombatBarrier",
+          "Subclass": "BabaBrewBarrier"
+        },
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCannotCancelDuringChannel",
+          "BehaviorProjectileFiredAsBullet",
+          "BehaviorCooldownOnChannelEnd",
+          "BehaviorDontInterruptSlideOnCast",
+          "BehaviorHoldsAtMaxChannel"
+        ],
+        "BrewTime": 1.5,
+        "BurnDuration": {
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "ChannelMoveSpeed": -1,
+        "CombatBarrier": {
+          "Value": 100,
+          "Scale": {
+            "Value": 1.2,
+            "Type": "spirit"
+          }
+        },
+        "DamagePerSecond": {
+          "Value": 12,
+          "Scale": {
+            "Value": 0.152,
+            "Type": "spirit"
+          }
+        },
+        "FireLockTime": 4.5,
+        "FireModifier": {
+          "Class": "BabaBrewBurn",
+          "Subclass": "BabaBrewFire",
+          "TickInterval": 0.5
+        },
+        "HoldingModifier": {
+          "Class": "BabaBrewHolding",
+          "Subclass": "BabaBrewHolding"
+        },
+        "IsDisabled": "false",
+        "Key": "ability_baba_hexing_brew",
+        "Name": "Baba's Brew",
+        "Radius": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "SelfCastForwardOffset": 1,
+        "SilenceDuration": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "SilenceLockTime": 3.5,
+        "SilenceModifier": {
+          "Class": "CitadelSilenced",
+          "Subclass": "BabaBrewSilence",
+          "EnabledStateMask": [
+            "Silenced"
+          ]
+        },
+        "SpiritResistReduction": -15,
+        "Upgrades": [
+          {
+            "Radius": 3
+          },
+          {
+            "AbilityCooldown": -12
+          },
+          {
+            "BrewEffectiveness": 33.33,
+            "DamagePerSecond": {
+              "Value": 1.3333,
+              "Scale": {
+                "Value": 1.3333,
+                "Type": "spirit",
+                "Multiply": true
+              },
+              "Multiply": true
+            },
+            "CombatBarrier": {
+              "Value": 1.3333,
+              "Scale": {
+                "Value": 1.3333,
+                "Type": "spirit",
+                "Multiply": true
+              },
+              "Multiply": true
+            },
+            "SilenceDuration": 33.33,
+            "SpiritResistReduction": 33.33
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_baba_hexing_brew",
+        "Name": "Baba's Brew",
+        "DescKey": "ability_baba_hexing_brew_desc",
+        "Info1": {
+          "Main": {
+            "Props": []
+          },
+          "Alt": [],
+          "DescKey": "ability_baba_hexing_brew_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "Soothing Brew:",
+                "Key": "CombatBarrier",
+                "Name": "Barrier",
+                "Value": 100,
+                "Scale": {
+                  "Value": 1.2,
+                  "Type": "spirit"
+                },
+                "Type": "combat_barrier"
+              },
+              {
+                "Title": "Soothing Brew:",
+                "Key": "BarrierDuration",
+                "Name": "Barrier Duration",
+                "Value": 8,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Info3": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "Silencing Brew:",
+                "Key": "SilenceDuration",
+                "Name": "Silence Duration",
+                "StatusEffect": "Silence",
+                "Value": 3,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Info4": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "Scalding Brew:",
+                "Key": "DamagePerSecond",
+                "NameKey": "BabaBrewBurnDPS",
+                "Name": "Burn DPS",
+                "Value": 12,
+                "Scale": {
+                  "Value": 0.152,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "Scalding Brew:",
+                "Key": "SpiritResistReduction",
+                "NameKey": "BabaBrewBurnSpiritResist",
+                "Name": "Burn Spirit Resist",
+                "Value": -15,
+                "Type": "tech_armor_down"
+              },
+              {
+                "Title": "Scalding Brew:",
+                "Key": "BurnDuration",
+                "Name": "Burn Duration",
+                "Value": 8,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Upgrades": [
+          {
+            "Radius": 3
+          },
+          {
+            "AbilityCooldown": -12
+          },
+          {
+            "BrewEffectiveness": 33.33,
+            "DamagePerSecond": {
+              "Value": 1.3333,
+              "Scale": {
+                "Value": 1.3333,
+                "Type": "spirit",
+                "Multiply": true
+              },
+              "Multiply": true
+            },
+            "CombatBarrier": {
+              "Value": 1.3333,
+              "Scale": {
+                "Value": 1.3333,
+                "Type": "spirit",
+                "Multiply": true
+              },
+              "Multiply": true
+            },
+            "SilenceDuration": 33.33,
+            "SpiritResistReduction": 33.33,
+            "DescKey": "ability_baba_hexing_brew_t3_desc"
+          }
+        ],
+        "Duration": {
+          "BarrierLockTime": {
+            "Name": null,
+            "Value": 2.5,
+            "Type": "duration"
+          },
+          "BrewTime": {
+            "Name": "Initial Brew Time",
+            "Value": 1.5,
+            "Type": "duration"
+          },
+          "FireLockTime": {
+            "Name": null,
+            "Value": 4.5,
+            "Type": "duration"
+          },
+          "SilenceLockTime": {
+            "Name": null,
+            "Value": 3.5,
+            "Type": "duration"
+          }
+        },
+        "Range": {
+          "SelfCastForwardOffset": {
+            "Name": null,
+            "Value": 1,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 1.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 25.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1.0,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_baba_hexing_brew_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "raw_text": "Brew a pot of tea that applies a magical effect in an area when thrown, cycling over time between a soothing {g:citadel_inline_attribute:'CombatBarrier'}, {g:citadel_inline_attribute:'Silence'}, or scalding burn that deals {g:citadel_inline_attribute:'SpiritDPS'} and reduces {g:citadel_inline_attribute:'SpiritResist'}. <br><br>Press {g:citadel_binding:'ADS'} to pause or resume brewing.",
+          "plain_text": "Brew a pot of tea that applies a magical effect in an area when thrown, cycling over time between a soothing barrier, Silence, or scalding burn that deals spirit damage over time and reduces spirit resist.\nPress [ADS] to pause or resume brewing."
+        },
+        {
+          "localization_key": "ability_baba_hexing_brew_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "raw_text": "+33.33% Brew Effectiveness",
+          "plain_text": "+33.33% Brew Effectiveness"
+        }
+      ],
+      "aliases": [
+        "Baba's Brews"
+      ],
+      "interpretation_note": "Tier 3 is +33.33% Brew Effectiveness according to the tooltip. Preserve Multiply flags and 1.3333 multipliers; do not read SilenceDuration: 33.33 as +33.33 seconds or SpiritResistReduction: 33.33 as a positive resist buff."
+    },
+    {
+      "slot": 4,
+      "name": "Feed The Birds",
+      "internal_key": "ability_baba_ultimate_2",
+      "data": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCastRange": {
+          "Value": 18,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityChannelTime": {
+          "Value": 6.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 150.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityPostCastDuration": 0.6,
+        "AbilityUnitTargetLimit": 9999,
+        "BarrageMaxDamage": {
+          "Value": 450,
+          "Scale": {
+            "Value": 1.6,
+            "Type": "spirit"
+          }
+        },
+        "BarrageStartDelayMax": 1.8,
+        "BarrageStartDelayMin": 1.2,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCooldownOnChannelEnd",
+          "BehaviorTriggerCancelMashProtectionOnCast",
+          "BehaviorRequireAbilityButtonToCancel",
+          "BehaviorShowCastRangeAsSatSphereWhileCasting"
+        ],
+        "ChannelMoveSpeed": 99,
+        "FinalTickDelay": 1.2,
+        "HexDuration": {
+          "Value": 2.75,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_baba_ultimate_2",
+        "LockonConeAngle": 40,
+        "LosingLockGraceTime": 1.0,
+        "MaxLockonStacks": 1,
+        "MaxSlow": 32,
+        "Name": "Feed The Birds",
+        "TargetModifier": {
+          "Class": "BabaUlt2Mark",
+          "Subclass": "BabaUlt2Mark",
+          "ImpactDelay": 0.5,
+          "ImpactModifier": {
+            "Class": "BabaUlt2Impact",
+            "Subclass": "BabaUlt2Impact",
+            "HexModifier": {
+              "Class": "BabaHex",
+              "Subclass": "BabaUlt2Pigeon",
+              "ModelScale": 2.2,
+              "FlyAcceleration": 0.8,
+              "FlyDeceleration": 1.5,
+              "FlySpeedScale": 1.0,
+              "FlyIdleSinkSpeed": 40.0,
+              "LaunchUpSpeed": 0.0,
+              "FlyLaunchTime": 0.2,
+              "FlyHoverMinHeight": 50.0,
+              "FlyHoverMaxHeight": 300.0,
+              "FlyJumpImpulseUp": 0.0,
+              "FlyJumpImpulseHoriz": 0.0
+            }
+          }
+        },
+        "TickDamageIncreasePerHit": 30,
+        "TickInterval": 0.15,
+        "TimeToGainLockonStack": 0.7,
+        "TimeToLoseLockonStack": 2,
+        "TimeToMaxStacks": 3.5,
+        "Upgrades": [
+          {
+            "MaxSlow": 32,
+            "AbilityCastRange": 4
+          },
+          {
+            "AbilityCooldown": -55
+          },
+          {
+            "BarrageMaxDamage": {
+              "Value": 125,
+              "Scale": {
+                "Value": 1.5,
+                "Type": "spirit"
+              }
+            },
+            "HexDuration": 0.5
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_baba_ultimate_2",
+        "Name": "Feed The Birds",
+        "DescKey": "ability_baba_ultimate_2_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "BarrageMaxDamage",
+                "NameKey": "MaxDamage",
+                "Name": "Max Damage",
+                "Value": 450,
+                "Scale": {
+                  "Value": 1.6,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "HexDuration",
+                "NameKey": "MaxPigeonDuration",
+                "Name": "Max Pigeon Duration",
+                "Value": 2.75,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "TimeToMaxStacks",
+              "NameKey": "BabaUlt2TimeToMaxStacks",
+              "Name": "Time To Max Stacks",
+              "Value": 3.5,
+              "Type": "duration"
+            },
+            {
+              "Key": "MaxSlow",
+              "NameKey": "BabaUlt2MaxSlow",
+              "Name": "Max Slow",
+              "Value": 32,
+              "Type": "slow"
+            }
+          ],
+          "DescKey": "ability_baba_ultimate_2_desc"
+        },
+        "Upgrades": [
+          {
+            "MaxSlow": 32,
+            "AbilityCastRange": 4,
+            "DescKey": "ability_baba_ultimate_2_t1_desc"
+          },
+          {
+            "AbilityCooldown": -55
+          },
+          {
+            "BarrageMaxDamage": {
+              "Value": 125,
+              "Scale": {
+                "Value": 1.5,
+                "Type": "spirit"
+              }
+            },
+            "HexDuration": 0.5,
+            "DescKey": "ability_baba_ultimate_2_t3_desc"
+          }
+        ],
+        "Cooldown": {
+          "TimeToGainLockonStack": {
+            "Name": "Lock-on Time Per Pigeon",
+            "Value": 0.7,
+            "Type": "cooldown"
+          }
+        },
+        "Duration": {
+          "FinalTickDelay": {
+            "Name": null,
+            "Value": 1.2,
+            "Type": "duration"
+          },
+          "TickInterval": {
+            "Name": "Time Between Hits",
+            "Value": 0.15,
+            "Type": "duration"
+          }
+        },
+        "Range": {
+          "LockonConeAngle": {
+            "Name": null,
+            "Value": 40,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 99,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.6
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 9999
+          },
+          "BarrageStartDelayMax": {
+            "Name": null,
+            "Value": 1.8
+          },
+          "BarrageStartDelayMin": {
+            "Name": null,
+            "Value": 1.2
+          },
+          "LosingLockGraceTime": {
+            "Name": null,
+            "Value": 1.0
+          },
+          "MaxLockonStacks": {
+            "Name": "Max Pigeons Per Target",
+            "Value": 1
+          },
+          "TickDamageIncreasePerHit": {
+            "Name": "Damage Escalation",
+            "Value": 30
+          },
+          "TimeToLoseLockonStack": {
+            "Name": null,
+            "Value": 2
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.15,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 18,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 6.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 150.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1.0,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_baba_ultimate_2_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "raw_text": "Cover targets in front of you with <span class=\"highlight\">bread</span>, adding a stacking {g:citadel_inline_attribute:'Slow'} .<br><br>When the channel ends a flock of pigeons bombard the target, dealing {g:citadel_inline_attribute:'SpiritDamage'} and hexing the target into a <span class=\"highlight\">pigeon</span>, increasing in both damage and duration based on bread count.",
+          "plain_text": "Cover targets in front of you with bread, adding a stacking slow .\nWhen the channel ends a flock of pigeons bombard the target, dealing spirit damage and hexing the target into a pigeon, increasing in both damage and duration based on bread count."
+        },
+        {
+          "localization_key": "ability_baba_ultimate_2_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "raw_text": "+4m Cast Range<br>+32% Max Slow",
+          "plain_text": "+4m Cast Range\n+32% Max Slow"
+        },
+        {
+          "localization_key": "ability_baba_ultimate_2_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "raw_text": "+125 Max Damage <br>+1.5 Spirit Scaling<br>+0.5s Max Duration",
+          "plain_text": "+125 Max Damage\n+1.5 Spirit Scaling\n+0.5s Max Duration"
+        }
+      ]
+    }
+  ],
+  "forms": [
+    {
+      "id": "granny-long-legs",
+      "name": "Granny Long Legs",
+      "source": "github.deadlock-data.gameplay.7fd1dfeb502a",
+      "source_ability_key": "ability_baba_bench_run",
+      "note": "Ability-driven bench form, not a separately selectable hero or an additional numbered ability. Configuration is in ability slot 2; do not invent another hero-stat block or convert raw jump-force/height fields to metres."
+    }
+  ],
+  "supporting_ability_data": {
+    "not_numbered_in_hero_bound_abilities": true,
+    "records": {
+      "ability_baba_bench_melee": {
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorHidden",
+          "BehaviorSilentCastFailureFeedback",
+          "BehaviorNotSilencable",
+          "BehaviorNoTarget",
+          "BehaviorCastableWhileHidden"
+        ],
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_baba_bench_melee",
+        "MeleeAttackLength": 5,
+        "MeleeHalfAngle": 30,
+        "Name": "Melee",
+        "Upgrades": []
+      },
+      "ability_baba_hexing_brew_throw": {
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorTrigger",
+          "BehaviorProjectile",
+          "BehaviorProjectileFiredAsBullet",
+          "BehaviorNonCombat",
+          "BehaviorCastableWhileBusy",
+          "BehaviorCastableWhileHidden",
+          "BehaviorCastableWhileDodging",
+          "BehaviorDontInterruptSprint",
+          "BehaviorIgnoreSelectionMashProtection",
+          "BehaviorAllowAltCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_baba_hexing_brew_throw",
+        "Name": null,
+        "Upgrades": []
+      }
+    },
+    "note": "Supporting melee and throw records; not extra numbered abilities."
+  },
+  "pre_release_comparison": {
+    "client_version": 6753,
+    "source": "github.deadlock-data.gameplay.edb16660368e",
+    "status": "incomplete pre-release configuration, not launch values",
+    "changed_hero_data_fields_before_release": {
+      "BaseHealthRegen": 2.0,
+      "BoundAbilities": {},
+      "CritDamageBonusPercent": 0.0,
+      "InDevelopment": false,
+      "LevelScaling": {
+        "BulletDamage": 0.41,
+        "MaxHealth": 45.0,
+        "PowerIncreases": 1,
+        "TechPower": 1.1,
+        "LightMeleeDamage": 0.7,
+        "HeavyMeleeDamage": 1.624,
+        "DPS": 3.9048,
+        "SustainedDPS": 2.177
+      },
+      "MaxMoveSpeed": 7.2,
+      "SpiritScaling": {},
+      "Stamina": 3,
+      "TechResist": null,
+      "Type": null,
+      "Weapon": {
+        "BulletSpeed": 660.4,
+        "BulletDamage": 5.5,
+        "RoundsPerSecond": 9.5238,
+        "ClipSize": 27,
+        "ReloadTime": 2.25,
+        "ReloadMovespeed": 1.0,
+        "ReloadDelay": 0.0,
+        "ReloadSingle": false,
+        "FalloffStartRange": 18.0,
+        "FalloffEndRange": 55.0,
+        "FalloffStartScale": 1.0,
+        "FalloffEndScale": 0.1,
+        "FalloffBias": 0.5,
+        "BulletGravityScale": 0.8,
+        "BulletRadius": 0.1016,
+        "BulletsPerShot": 1,
+        "BulletsPerBurst": 1,
+        "BurstInterShotInterval": 0,
+        "ShootMoveSpeed": 0.75,
+        "HitOnceAcrossAllBullets": false,
+        "CanCrit": true,
+        "AmmoConsumedPerShot": 1,
+        "DPS": 52.381,
+        "SustainedDPS": 29.204
+      }
+    }
+  },
+  "initial_release_comparison": {
+    "client_version": 6757,
+    "source": "github.deadlock-data.gameplay.69b3ca700c80",
+    "hero_data_unchanged": true,
+    "earlier_bench_fields": {
+      "HeavyMeleeEndGraceTime": 0.6
+    },
+    "earlier_cards": {
+      "1": {
+        "Key": "ability_baba_bubbling_brew",
+        "Name": "Threadsap",
+        "DescKey": "ability_baba_bubbling_brew_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "TechPowerGain",
+                "Name": "Unknown(TechPowerGain)",
+                "Value": 10,
+                "Scale": {
+                  "Value": 0.9,
+                  "Type": "power_increase"
+                },
+                "Type": "spirit"
+              },
+              {
+                "Key": "StolenSpiritEffectiveness",
+                "Name": "Stolen Spirit Effectiveness",
+                "Value": 175
+              },
+              {
+                "Key": "MagicDamagePerBullet",
+                "Name": "Spirit Damage Per Bullet",
+                "Value": 8,
+                "Scale": {
+                  "Value": 0.26,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "DebuffDuration",
+              "Name": "Debuff Duration",
+              "Value": 22,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "MaxStacks",
+              "Name": "Max Stacks",
+              "Value": 45,
+              "Scale": {
+                "Value": 2.0,
+                "Type": "power_increase"
+              }
+            },
+            {
+              "Key": "Damage",
+              "Name": "Damage",
+              "Value": 50,
+              "Type": "tech_damage"
+            }
+          ],
+          "DescKey": "ability_baba_bubbling_brew_desc"
+        },
+        "Upgrades": [
+          {
+            "MagicDamagePerBullet": 8
+          },
+          {
+            "AbilityCooldown": -12,
+            "DebuffDuration": 8,
+            "DescKey": "ability_baba_bubbling_brew_t2_desc"
+          },
+          {
+            "AbilityCharges": 1,
+            "PullDistance": 7,
+            "DescKey": "ability_baba_bubbling_brew_t3_desc"
+          }
+        ],
+        "Range": {
+          "ExplodeRadius": {
+            "Name": "Explosion Radius",
+            "Value": 3.5,
+            "Scale": {
+              "Value": 1,
+              "Type": "radius"
+            },
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "ExplodeTime": {
+            "Name": "Burst Delay",
+            "Value": 0.9
+          },
+          "ExplodeTimeInterval": {
+            "Name": "Burst Interval",
+            "Value": 0.05
+          },
+          "ProjectileSpacingThinkInterval": {
+            "Name": null,
+            "Value": 0.05
+          },
+          "ProjectileSpeed": {
+            "Name": null,
+            "Value": 2600
+          },
+          "ProjectileTurnMaxDegrees": {
+            "Name": null,
+            "Value": 270
+          },
+          "ProjectileTurnRate": {
+            "Name": null,
+            "Value": 220
+          },
+          "PullDuration": {
+            "Name": null,
+            "Value": 0.6
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 35,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCharges": {
+          "Name": "Charges",
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 26.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          },
+          "Type": "charge_cooldown"
+        }
+      },
+      "2": {
+        "Key": "ability_baba_bench_run",
+        "Name": "Granny Long Legs",
+        "DescKey": "ability_baba_bench_run_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "BonusMoveSpeed",
+                "Name": "Move Speed",
+                "Value": 5,
+                "Type": "move_speed"
+              },
+              {
+                "Key": "StatusResistancePercent",
+                "Name": "Debuff Resist",
+                "Value": 30,
+                "Type": "duration"
+              },
+              {
+                "Key": "MeleeResist",
+                "Name": "Melee Resist",
+                "Value": 30,
+                "Type": "melee_resist"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "MeleeSpiritDamage",
+              "Name": "Light Melee Spirit Damage",
+              "Value": 0,
+              "Scale": {
+                "Value": 0.0,
+                "Type": "spirit"
+              },
+              "Type": "tech_damage"
+            },
+            {
+              "Key": "LightKickKnockbackDistance",
+              "Name": "Light Melee Knockback",
+              "Value": 10,
+              "Scale": {
+                "Value": 1,
+                "Type": "range"
+              },
+              "Type": "distance"
+            },
+            {
+              "Key": "HeavyMeleeSpiritDamage",
+              "Name": "Heavy Melee Damage",
+              "Value": 75,
+              "Scale": {
+                "Value": 0.6,
+                "Type": "spirit"
+              },
+              "Type": "tech_damage"
+            },
+            {
+              "Key": "HeavyMeleeSlowPercent",
+              "Name": "Heavy Melee Movement Slow",
+              "Value": 50,
+              "Type": "slow"
+            },
+            {
+              "Key": "HeavyMeleeSlowDuration",
+              "Name": "Heavy Melee Slow Duration",
+              "Value": 4,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_baba_bench_run_desc"
+        },
+        "Upgrades": [
+          {
+            "BonusMoveSpeed": 2.5,
+            "DescKey": "ability_baba_bench_run_t1_desc"
+          },
+          {
+            "AbilityCooldown": -7,
+            "DescKey": "ability_baba_bench_run_t2_desc"
+          },
+          {
+            "StatusResistancePercent": 15,
+            "MeleeResist": 15,
+            "MeleeLifesteal": 50,
+            "DescKey": "ability_baba_bench_run_t3_desc"
+          }
+        ],
+        "Duration": {
+          "GroundPoundKnockUpDuration": {
+            "Name": "Ground Pound Knock Up",
+            "Value": 0.3,
+            "Type": "duration"
+          },
+          "KickKnockbackDuration": {
+            "Name": null,
+            "Value": 0.45,
+            "Type": "duration"
+          }
+        },
+        "Range": {
+          "BonusMeleeRange": {
+            "Name": "Melee Range",
+            "Value": 2,
+            "Type": "distance"
+          },
+          "GroundPoundKnockUpHeight": {
+            "Name": null,
+            "Value": 2.54,
+            "Type": "distance"
+          },
+          "LightKickKnockbackHeight": {
+            "Name": null,
+            "Value": 0.75,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "AirDashDistancePercent": {
+            "Name": null,
+            "Value": 20,
+            "Type": "move_speed"
+          },
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 1,
+            "Type": "move_speed"
+          },
+          "ChargedJumpForwardForce": {
+            "Name": null,
+            "Value": 300,
+            "Type": "move_speed"
+          },
+          "CrouchMoveSpeedBonus": {
+            "Name": null,
+            "Value": 3.5,
+            "Type": "move_speed"
+          },
+          "DashDistancePercent": {
+            "Name": null,
+            "Value": 20,
+            "Type": "move_speed"
+          },
+          "MaxJumpHeight": {
+            "Name": "Fully Charged Jump Height",
+            "Value": 250,
+            "Type": "move_speed"
+          },
+          "MinJumpHeight": {
+            "Name": "Jump Height",
+            "Value": 75,
+            "Type": "move_speed"
+          },
+          "MoveWhileShootingSpeedPenaltyReductionPercent": {
+            "Name": "move speed penalty while shooting reduction",
+            "Value": 100,
+            "Type": "move_speed"
+          }
+        },
+        "Debuff": {
+          "HeavyMeleeDashSlowPercent": {
+            "Name": null,
+            "Value": -25,
+            "Type": "slow"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "EndLaunchMaxLingerTime": {
+            "Name": null,
+            "Value": 3
+          },
+          "GravityScalePercent": {
+            "Name": null,
+            "Value": 80
+          },
+          "GroundPoundFallTimeReductionPercent": {
+            "Name": null,
+            "Value": 30
+          },
+          "HeavyMeleeEndGraceTime": {
+            "Name": null,
+            "Value": 0.6
+          },
+          "JumpSoundLayerVolumeMax": {
+            "Name": null,
+            "Value": -4.0
+          },
+          "JumpSoundLayerVolumeMin": {
+            "Name": null,
+            "Value": -60.0
+          },
+          "MeleeLifestealNonHeroPct": {
+            "Name": null,
+            "Value": 60
+          },
+          "RisingGravityScalePercent": {
+            "Name": null,
+            "Value": 50
+          }
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1.0,
+          "Type": "charge_cooldown"
+        },
+        "AbilityDuration": {
+          "Name": "Duration",
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "duration"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 8,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "distance"
+        }
+      },
+      "3": {
+        "Key": "ability_baba_hexing_brew",
+        "Name": "Baba's Brew",
+        "DescKey": "ability_baba_hexing_brew_desc",
+        "Info1": {
+          "Main": {
+            "Props": []
+          },
+          "Alt": [],
+          "DescKey": "ability_baba_hexing_brew_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "Soothing Brew:",
+                "Key": "CombatBarrier",
+                "Name": "Barrier",
+                "Value": 100,
+                "Scale": {
+                  "Value": 1.2,
+                  "Type": "spirit"
+                },
+                "Type": "combat_barrier"
+              },
+              {
+                "Title": "Soothing Brew:",
+                "Key": "BarrierDuration",
+                "Name": "Barrier Duration",
+                "Value": 8,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Info3": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "Silencing Brew:",
+                "Key": "SilenceDuration",
+                "Name": "Silence Duration",
+                "StatusEffect": "Silence",
+                "Value": 3,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Info4": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "Scalding Brew:",
+                "Key": "DamagePerSecond",
+                "Name": "Damage Per Second",
+                "Value": 12,
+                "Scale": {
+                  "Value": 0.152,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "Scalding Brew:",
+                "Key": "SpiritResistReduction",
+                "Name": "Unknown(SpiritResistReduction)",
+                "Value": -15,
+                "Type": "tech_armor_down"
+              },
+              {
+                "Title": "Scalding Brew:",
+                "Key": "BurnDuration",
+                "Name": "Burn Duration",
+                "Value": 8,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Upgrades": [
+          {
+            "Radius": 3
+          },
+          {
+            "AbilityCooldown": -12
+          },
+          {
+            "BrewEffectiveness": 33.33,
+            "DamagePerSecond": {
+              "Value": 1.3333,
+              "Scale": {
+                "Value": 1.3333,
+                "Type": "spirit",
+                "Multiply": true
+              },
+              "Multiply": true
+            },
+            "CombatBarrier": {
+              "Value": 1.3333,
+              "Scale": {
+                "Value": 1.3333,
+                "Type": "spirit",
+                "Multiply": true
+              },
+              "Multiply": true
+            },
+            "SilenceDuration": 33.33,
+            "SpiritResistReduction": 33.33,
+            "DescKey": "ability_baba_hexing_brew_t3_desc"
+          }
+        ],
+        "Duration": {
+          "BarrierLockTime": {
+            "Name": null,
+            "Value": 2.5,
+            "Type": "duration"
+          },
+          "BrewTime": {
+            "Name": "Initial Brew Time",
+            "Value": 1.5,
+            "Type": "duration"
+          },
+          "FireLockTime": {
+            "Name": null,
+            "Value": 4.5,
+            "Type": "duration"
+          },
+          "SilenceLockTime": {
+            "Name": null,
+            "Value": 3.5,
+            "Type": "duration"
+          }
+        },
+        "Range": {
+          "SelfCastForwardOffset": {
+            "Name": null,
+            "Value": 1,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 1.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 25.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1.0,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          },
+          "Type": "distance"
+        }
+      },
+      "4": {
+        "Key": "ability_baba_ultimate_2",
+        "Name": "Feed The Birds",
+        "DescKey": "ability_baba_ultimate_2_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "BarrageMaxDamage",
+                "Name": "Unknown(BarrageMaxDamage)",
+                "Value": 450,
+                "Scale": {
+                  "Value": 1.6,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "HexDuration",
+                "Name": "Hex Duration",
+                "Value": 2.75,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "TimeToMaxStacks",
+              "Name": "Time To Max Stacks",
+              "Value": 3.5,
+              "Type": "duration"
+            },
+            {
+              "Key": "MaxSlow",
+              "Value": 32,
+              "Type": "slow"
+            }
+          ],
+          "DescKey": "ability_baba_ultimate_2_desc"
+        },
+        "Upgrades": [
+          {
+            "MaxSlow": 32,
+            "AbilityCastRange": 4,
+            "DescKey": "ability_baba_ultimate_2_t1_desc"
+          },
+          {
+            "AbilityCooldown": -55
+          },
+          {
+            "BarrageMaxDamage": {
+              "Value": 125,
+              "Scale": {
+                "Value": 1.5,
+                "Type": "spirit"
+              }
+            },
+            "HexDuration": 0.5,
+            "DescKey": "ability_baba_ultimate_2_t3_desc"
+          }
+        ],
+        "Cooldown": {
+          "TimeToGainLockonStack": {
+            "Name": "Lock-on Time Per Pigeon",
+            "Value": 0.7,
+            "Type": "cooldown"
+          }
+        },
+        "Duration": {
+          "FinalTickDelay": {
+            "Name": null,
+            "Value": 1.2,
+            "Type": "duration"
+          },
+          "TickInterval": {
+            "Name": "Time Between Hits",
+            "Value": 0.15,
+            "Type": "duration"
+          }
+        },
+        "Range": {
+          "LockonConeAngle": {
+            "Name": null,
+            "Value": 40,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": 99,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.6
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 9999
+          },
+          "BarrageStartDelayMax": {
+            "Name": null,
+            "Value": 1.8
+          },
+          "BarrageStartDelayMin": {
+            "Name": null,
+            "Value": 1.2
+          },
+          "LosingLockGraceTime": {
+            "Name": null,
+            "Value": 1.0
+          },
+          "MaxLockonStacks": {
+            "Name": "Max Pigeons Per Target",
+            "Value": 1
+          },
+          "TickDamageIncreasePerHit": {
+            "Name": "Damage Escalation",
+            "Value": 30
+          },
+          "TimeToLoseLockonStack": {
+            "Name": null,
+            "Value": 2
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.15,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 18,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityChannelTime": {
+          "Name": "Channel Duration",
+          "Value": 6.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          },
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 150.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1.0,
+          "Type": "charge_cooldown"
+        }
+      }
+    },
+    "note": "Client 6759 removes this bench field and updates card labels. The missing field does not prove removal of a runtime grace period; card label edits do not prove numeric balance changes."
+  },
+  "wiki_behavior": {
+    "early": {
+      "source": "wiki.baba.184291",
+      "as_of": "2026-10-06",
+      "notes": [
+        "Granny Long Legs' heavy ground pound can hit Sinner's Sacrifice."
+      ]
+    },
+    "later": {
+      "source": "wiki.baba.184568",
+      "as_of": "2026-10-08",
+      "status": "later_wiki_description_not_launch_runtime_test",
+      "granny_long_legs": [
+        "The ground pound has normal heavy-melee interactions, including Sinner's Sacrifice, Powerups, the Rejuvenator and Graves' Borrowed Decree.",
+        "The light kick can be parried and stuns Baba; the ground pound can be parried without stunning her.",
+        "The heavy-melee cooldown is described as about three times as long while active; no exact cooldown is established by that approximation.",
+        "Crouch charges the high jump instead of sliding or mantle gliding. Baba must be grounded to begin charging and activate the high jump.",
+        "Walking off a ledge and attempting the high jump midair instead performs a normal jump and clears the high-jump charge.",
+        "If the ability expires while charging a high jump, the jump executes even midair and the ability extends until landing or three seconds pass; light and heavy melee are unavailable during that extension.",
+        "Melee charge-up/animation interrupts shooting, but the high jump does not. Melee interrupts reload; heavy melee does so at the end of the ground-pound animation."
+      ],
+      "feed_the_birds": [
+        "The article says stun and silence do not stop activation; death interrupts charge-up, but effects already activated before death still trigger.",
+        "Targets with bread charges remain affected even if they leave the area before activation.",
+        "The article says Divine Barrier prevents all effects when activated during or after channeling; this is an item-interaction claim, not an independent runtime test."
+      ],
+      "street_brawl": [
+        "The article reports no Baba-specific ability modifications beyond global Street Brawl changes. This is separately dated wiki context, not a launch-day mode test."
+      ]
+    }
+  },
+  "data_boundaries": [
+    "Configured fields/cards/text use the later October 6 client 6759; client 6757 is preserved as the initial release comparison.",
+    "Later wiki interaction descriptions are dated October 8 and are not backdated to release or independently runtime-tested.",
+    "No October 7 or later balance data is imported. Other heroes and global mechanics retain their own pins.",
+    "Brew timing, raw control fields, damage ramps and lifesteal interactions are not fully derived runtime formulas."
+  ]
+}
