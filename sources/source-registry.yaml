@@ -1542,3 +1542,94 @@ sources:
     wikitext_sha256: 9b2a54273fdc1e7302e180d9ca48c123d3e9d2929da5d36d11e5c5400fe2bcd1
     scope: Later wiki report that corrupted items were removed from Street Brawl on
       October 4.
+
+  - id: github.deadlock-data.gameplay.69b3ca700c80
+    title: October 6 client 6757 gameplay data
+    url: https://github.com/deadlock-wiki/deadlock-data/tree/69b3ca700c8000f47f1b070bfbc5cbae6f8111ba/data
+    commit: 69b3ca700c8000f47f1b070bfbc5cbae6f8111ba
+    client_version: 6757
+    source_revision: 11092955
+    accessed_at: '2026-10-20'
+    scope: Baba release checkpoint and adjacent dataset comparison; configuration is
+      not independent runtime evidence.
+    version_file_sha256: e5197646c1dc6bfa91efa6f841c8d989eae6ce3d0f76b4bd65910e3629fa4157
+    english_sha256: 246dc91fdc021c35bbf8ce93f3c5e682015580fcb386aa9032bd055bde7d539a
+    hero_data_sha256: 947c26790e067109f6cca4085649ed56e446bc5f4c9c571cd396290f802a3456
+    ability_data_sha256: fe8778993bd703273735424d9fb369f359570a9db4f067d479ae8baa1fb20ae1
+    ability_cards_sha256: 0beedb06bced5e2b55fada4f42f6e57d7f53f90d939629d9136bf16d4385405e
+    hero_meaningful_stats_sha256: 75429c0ca0e9d00732496c0e25564d8ba61f571cb5ed3d44c4b3d11bb56f4e6f
+    npc_data_sha256: 94b6485b54a144794c5b3cdab718871f5af57a69f880308aee1d630f5a3b5949
+    street_brawl_data_sha256: ab1a9bfa568d1ff7ff9a889e8275233386fd0549cba5cb4882b0a8bf8b63285f
+    convars_sha256: 9830bc74c21ea78b4e84f2566f2aac02639fb88b7f8c9f1c75f6f64aaff89671
+    item_data_sha256: 992743a93afb8a671d76b460da5ca65acd2c48e889598f0d37aa8012819b8bfc
+    item_cards_sha256: 7ff34ae9364064d23ceff40ac646c3298cd381920964c59bae6cccbd15f9c2d2
+    generic_data_sha256: 4ffdd3004363f670839217305c9b1e01e092ccdc6ea1d6e01c095e3b7dfbb1fc
+    misc_data_sha256: 72301530c76f0cfaaee7c001b5fb0521c334da3825887b742ccac6752320e817
+  - id: github.deadlock-data.gameplay.7fd1dfeb502a
+    title: October 6 client 6759 gameplay data
+    url: https://github.com/deadlock-wiki/deadlock-data/tree/7fd1dfeb502adf48d2d7da3e2f6959a2e3385a4d/data
+    commit: 7fd1dfeb502adf48d2d7da3e2f6959a2e3385a4d
+    client_version: 6759
+    source_revision: 11094174
+    accessed_at: '2026-10-20'
+    scope: Baba release checkpoint and adjacent dataset comparison; configuration is
+      not independent runtime evidence.
+    version_file_sha256: a62f8374d712b2623ae22d1f0b1167676a44c87670c09df65b607d709587223f
+    english_sha256: b604b52d1c2adbd5e6a265f6d2df2bbb2770a1fca4250d18289c1f4f07e2e9c2
+    hero_data_sha256: 947c26790e067109f6cca4085649ed56e446bc5f4c9c571cd396290f802a3456
+    ability_data_sha256: 8dede4e95e0d7cdb8edb70a91b88f1ec833d1103fc9b70dd4406050566fd38ee
+    ability_cards_sha256: 56f518ac28636cdf5e94d0532ab7b638028dc7c4429542df7c02cd2aeef93e4a
+    hero_meaningful_stats_sha256: 75429c0ca0e9d00732496c0e25564d8ba61f571cb5ed3d44c4b3d11bb56f4e6f
+    npc_data_sha256: 94b6485b54a144794c5b3cdab718871f5af57a69f880308aee1d630f5a3b5949
+    street_brawl_data_sha256: ab1a9bfa568d1ff7ff9a889e8275233386fd0549cba5cb4882b0a8bf8b63285f
+    convars_sha256: 9830bc74c21ea78b4e84f2566f2aac02639fb88b7f8c9f1c75f6f64aaff89671
+    item_data_sha256: 992743a93afb8a671d76b460da5ca65acd2c48e889598f0d37aa8012819b8bfc
+    item_cards_sha256: 7ff34ae9364064d23ceff40ac646c3298cd381920964c59bae6cccbd15f9c2d2
+    generic_data_sha256: 4ffdd3004363f670839217305c9b1e01e092ccdc6ea1d6e01c095e3b7dfbb1fc
+    misc_data_sha256: 72301530c76f0cfaaee7c001b5fb0521c334da3825887b742ccac6752320e817
+  - id: github.deadlock-data.english.7fd1dfeb502a
+    title: Client 6759 English localization
+    url: https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/7fd1dfeb502adf48d2d7da3e2f6959a2e3385a4d/data/localizations/english.json
+    commit: 7fd1dfeb502adf48d2d7da3e2f6959a2e3385a4d
+    sha256: b604b52d1c2adbd5e6a265f6d2df2bbb2770a1fca4250d18289c1f4f07e2e9c2
+    scope: Pinned Baba descriptions and upgrade text.
+  - id: steam.news.baba-release.1845383656397580
+    title: "Mind the Birds! \u2014 official Baba release"
+    url: https://store.steampowered.com/news/app/1422450/view/703281025618282871
+    news_gid: '1845383656397580'
+    published_at: '2026-10-06T20:59:54Z'
+    accessed_at: '2026-10-20'
+    contents_sha256: 14ec19b8bd9f6ff69c3bdcaa4f685c8b75a15d1614d16fef033bc8a3bd788ded
+    hash_scope: UTF-8 Steam news API contents field, not rendered page HTML.
+    scope: Official public release confirmation despite conflicting development flags;
+      also states a historical Ranked season date extension.
+  - id: wiki.baba.184291
+    title: Baba
+    url: https://deadlock.wiki/Baba
+    revision_url: https://deadlock.wiki/Baba?oldid=184291
+    revision_id: 184291
+    last_modified: '2026-10-06T23:11:46Z'
+    accessed_at: '2026-10-20'
+    wikitext_sha256: f35651abc09e53f96d4ae86143e566b90b3077595621714373637ac102e51d26
+    scope: Same-day article supports ground-pound interaction with Sinner machines;
+      no live-transcluded numeric data imported.
+  - id: wiki.baba.184568
+    title: Baba
+    url: https://deadlock.wiki/Baba
+    revision_url: https://deadlock.wiki/Baba?oldid=184568
+    revision_id: 184568
+    last_modified: '2026-10-08T01:49:46Z'
+    accessed_at: '2026-10-20'
+    wikitext_sha256: 5af38aaca8757f519e56b47ea6508e7f448df93f2b8404d209d76811e901eaea
+    scope: Later descriptions of bench movement/melee/parry, ultimate/item interactions
+      and mode context; not backdated or runtime-tested.
+  - id: wiki.update.2026-10-06.184307
+    title: Update:October 6, 2026
+    url: https://deadlock.wiki/Update:October_6,_2026
+    revision_url: https://deadlock.wiki/Update:October_6,_2026?oldid=184307
+    revision_id: 184307
+    last_modified: '2026-10-07T00:23:19Z'
+    accessed_at: '2026-10-20'
+    wikitext_sha256: ce9b2f00389fcb0b82501533dc9413d7cb59534682f27f24541440f9eba6bff4
+    scope: Later transcription of the October 6 release announcement, not a separate
+      balance source.
