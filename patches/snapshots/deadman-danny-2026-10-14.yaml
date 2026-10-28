@@ -1,0 +1,1731 @@
+{
+  "schema_version": 2,
+  "id": "hero.deadman-danny",
+  "snapshot_id": "deadlock-data-client-6782",
+  "client_version": 6782,
+  "server_version": 6782,
+  "source_revision": 11127865,
+  "current_as_of": "2026-10-14",
+  "evidence_status": "source_verified_with_official_release_confirmation",
+  "sources": {
+    "hero_data": "github.deadlock-data.gameplay.bd95f245ccb1",
+    "ability_data": "github.deadlock-data.gameplay.bd95f245ccb1",
+    "ability_cards": "github.deadlock-data.gameplay.bd95f245ccb1",
+    "ability_localization": "github.deadlock-data.english.bd95f245ccb1",
+    "pre_release_comparison": "github.deadlock-data.gameplay.330a775230e8",
+    "same_client_export_review": "github.deadlock-data.gameplay.51636a2c4136",
+    "post_update_client_comparison": "github.deadlock-data.gameplay.3aab395a1392",
+    "post_update_official_note": "steam.news.deadman-danny-oct14-update.1846651706676198",
+    "release_announcement": "steam.news.deadman-danny-release.1846018067945303"
+  },
+  "name": "Deadman Danny",
+  "aliases": [],
+  "internal_hero_key": "hero_deadpack",
+  "hero_type": "Marksman",
+  "role_localization_key": "hero_deadpack_role",
+  "playstyle_localization_key": "hero_deadpack_playstyle",
+  "localized_fields": {
+    "lore": "\"Ladies and Gentlemen, I'm going to tell you a shocking secret: at Fairfax Industries we know nothing about safety. Now let me tell you something even MORE shocking... that's a good thing! Now in my tenure here I have been shot, stabbed, impaled, defenestrated, blown up, atomized, and decapitated-not once. not twice. not thrice. but quice. That's right, my head has been cut off enough times that I had to use a made up word to quantify it.<br><br>But I put myself through figurative and sometimes literal hell because it's not enough to THINK about how things go wrong, we need to KNOW how things go wrong.<br><br>Now the demonstration you are about to witness is extremely dangerous. So sit back. Put on your safety googles. And bear witness to the miracle of flight courtesy of Fairfax Industries, and the Chimera Mark 1.\"<br><br><span class=\"italics\">- This transcription of Danny's opening remarks at The Military Technology Expo has been provided by Fairfax Industries</span>",
+    "weapon_name": "Chimera Peace Bringer"
+  },
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false,
+    "released_date": "2026-10-13",
+    "release_confirmed_by_official_announcement": true,
+    "note": "Valve's October 13 announcement establishes public availability. Client 6774 already had a selectable but incomplete placeholder; the first complete configuration in the reviewed source history is client 6782 dated October 14, so this record does not assert exact launch-day stats."
+  },
+  "base_stats": {
+    "maximum_health": 680.0,
+    "health_regeneration_per_second": 2.5,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.4,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 1.6,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 16.1,
+      "distance_meters": 10.0,
+      "duration_seconds": 0.62
+    },
+    "air_dash": {
+      "speed_meters_per_second": 18.6,
+      "distance_meters": 8.0,
+      "duration_seconds": 0.43
+    },
+    "stamina": {
+      "charges": 3.0,
+      "cooldown_seconds": 5.0,
+      "regeneration_per_second": 0.2
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0,
+    "bullet_lifesteal_effectiveness": 1.0,
+    "spirit_lifesteal_effectiveness": 1.0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.42,
+    "BulletDamageAltFire": 1.6,
+    "MaxHealth": 39.0,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 1.68,
+    "SustainedDPS": 0.87761
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 177.8,
+    "BulletDamage": 12,
+    "RoundsPerSecond": 4.0,
+    "ClipSize": 14,
+    "ReloadTime": 3.2,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 18.0,
+    "FalloffEndRange": 47.0,
+    "FalloffStartScale": 1.0,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.05,
+    "BulletRadius": 0.3048,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": false,
+    "CanCrit": false,
+    "AmmoConsumedPerShot": 1,
+    "ExplosionRadius": 0.0,
+    "ExplosionDamageScaleAtMaxRadius": 0.7,
+    "DPS": 48.0,
+    "SustainedDPS": 25.075,
+    "NameKey": "citadel_weapon_deadpack_set",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_BurstFire",
+      "Attribute_EWeaponAttribute_MediumRange"
+    ]
+  },
+  "generated_source_snapshot": {
+    "client_version": 6782,
+    "source_revision": 11127865,
+    "source": "github.deadlock-data.gameplay.bd95f245ccb1",
+    "hero_data": {
+      "AbilityResourceMax": 0,
+      "AbilityResourceRegenPerSecond": 0,
+      "AirControlAccelPercent": 0,
+      "AirControlPercent": 0,
+      "AirDashDistanceInMeters": 8.0,
+      "AirDashDuration": 0.43,
+      "AirDashSpeed": 18.6,
+      "BaseHealthRegen": 2.5,
+      "BaseWeaponDamageIncrease": 0,
+      "BoundAbilities": {
+        "1": {
+          "Name": "Strix Salvo",
+          "Key": "ability_deadpack_chargeblast"
+        },
+        "2": {
+          "Name": "Chimera Mk1",
+          "Key": "ability_deadpack_rocketeer"
+        },
+        "3": {
+          "Name": "Jettison Fuel",
+          "Key": "ability_deadpack_flamethrower"
+        },
+        "4": {
+          "Name": "Close The Deal",
+          "Key": "ability_deadpack_ultimate"
+        }
+      },
+      "CritDamageBonusPercent": 0.0,
+      "CritDamageReceivedPercent": 0.0,
+      "CrouchSpeed": 4.75,
+      "GravityChange": 0,
+      "GroundDashDistanceInMeters": 10.0,
+      "GroundDashDuration": 0.62,
+      "GroundDashSpeed": 16.1,
+      "HeavyMeleeDamage": 116,
+      "HeroBulletLifestealEffectiveness": 1.0,
+      "HeroSpiritLifestealEffectiveness": 1.0,
+      "InDevelopment": false,
+      "InHeroLabs": false,
+      "IsDisabled": false,
+      "IsRecommended": false,
+      "IsSelectable": true,
+      "LevelScaling": {
+        "BulletDamage": 0.42,
+        "BulletDamageAltFire": 1.6,
+        "MaxHealth": 39.0,
+        "PowerIncreases": 1,
+        "TechPower": 1.1,
+        "LightMeleeDamage": 1.58,
+        "HeavyMeleeDamage": 3.6656,
+        "DPS": 1.68,
+        "SustainedDPS": 0.87761
+      },
+      "LightMeleeDamage": 50,
+      "Lore": "hero_deadpack_lore",
+      "MaxHealth": 680.0,
+      "MaxMoveSpeed": 6.4,
+      "MoveAcceleration": 4,
+      "Name": "Deadman Danny",
+      "OOCHealthRegen": 0,
+      "Playstyle": "hero_deadpack_playstyle",
+      "ProcBuildUpRateScale": 1,
+      "ReloadSpeed": 0,
+      "Role": "hero_deadpack_role",
+      "SpiritScaling": {},
+      "SprintSpeed": 1.6,
+      "Stamina": 3.0,
+      "StaminaCooldown": 5.0,
+      "StaminaRegenPerSecond": 0.2,
+      "TechDuration": 0,
+      "TechRange": 0,
+      "Type": "Marksman",
+      "Weapon": {
+        "BulletSpeed": 177.8,
+        "BulletDamage": 12,
+        "RoundsPerSecond": 4.0,
+        "ClipSize": 14,
+        "ReloadTime": 3.2,
+        "ReloadMovespeed": 1.0,
+        "ReloadDelay": 0.0,
+        "ReloadSingle": false,
+        "FalloffStartRange": 18.0,
+        "FalloffEndRange": 47.0,
+        "FalloffStartScale": 1.0,
+        "FalloffEndScale": 0.1,
+        "FalloffBias": 0.5,
+        "BulletGravityScale": 0.05,
+        "BulletRadius": 0.3048,
+        "BulletsPerShot": 1,
+        "BulletsPerBurst": 1,
+        "BurstInterShotInterval": 0,
+        "ShootMoveSpeed": 0.75,
+        "HitOnceAcrossAllBullets": false,
+        "CanCrit": false,
+        "AmmoConsumedPerShot": 1,
+        "ExplosionRadius": 0.0,
+        "ExplosionDamageScaleAtMaxRadius": 0.7,
+        "DPS": 48.0,
+        "SustainedDPS": 25.075,
+        "NameKey": "citadel_weapon_deadpack_set",
+        "WeaponTypes": [
+          "Attribute_EWeaponAttribute_BurstFire",
+          "Attribute_EWeaponAttribute_MediumRange"
+        ]
+      },
+      "WeaponPowerScale": 1
+    }
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Strix Salvo",
+      "internal_key": "ability_deadpack_chargeblast",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 35,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 30.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorProjectilePassThroughWorld",
+          "BehaviorShowCastRangeAsSatSphereWhileCasting",
+          "BehaviorDontInterruptSlideOnCast",
+          "BehaviorRefundHalfCooldownOnChannelInterrupt"
+        ],
+        "BuffModifier": {
+          "Class": "Base",
+          "Subclass": "CoatedBuff"
+        },
+        "ChannelMoveSpeed": -1,
+        "CoatedDamage": {
+          "Value": 45,
+          "Scale": {
+            "Value": 0.9,
+            "Type": "spirit"
+          }
+        },
+        "CoatedDuration": {
+          "Value": 10.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "CoatedModifier": {
+          "Class": "DeadpackCoated",
+          "Subclass": "Coated"
+        },
+        "CoatedSlowDuration": {
+          "Value": 1.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "CoatedSlowModifier": {
+          "Class": "DiminishingSlow",
+          "Subclass": "CoatedSlow"
+        },
+        "CoatedSlowPercent": 40,
+        "Damage": {
+          "Value": 27,
+          "Scale": {
+            "Value": 0.74,
+            "Type": "spirit"
+          }
+        },
+        "ExplosionRadius": {
+          "Value": 3.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_deadpack_chargeblast",
+        "MarksTotal": 3,
+        "MineArmTime": 0.3,
+        "MissileGroundDuration": {
+          "Value": 6.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "Name": "Strix Salvo",
+        "Range": {
+          "Value": 21,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "StuckMineAuraModifier": {
+          "Class": "DeadpackChargeblastMineAura",
+          "Subclass": "MineAura",
+          "ProvidedByAura": {
+            "Class": "Base",
+            "Subclass": "MineTriggerMarker"
+          }
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -12
+          },
+          {
+            "Damage": 20,
+            "CoatedDamage": 35
+          },
+          {
+            "MarksTotal": 2,
+            "Range": 14,
+            "CoatedDamage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.2,
+                "Type": "spirit"
+              }
+            },
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.225,
+                "Type": "spirit"
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_deadpack_chargeblast",
+        "Name": "Strix Salvo",
+        "DescKey": "ability_deadpack_chargeblast_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 27,
+                "Scale": {
+                  "Value": 0.74,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "CoatedDamage",
+                "Name": "Marked Damage",
+                "Value": 45,
+                "Scale": {
+                  "Value": 0.9,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "CoatedSlowPercent",
+                "Name": "Fading Slow",
+                "Value": 40,
+                "Type": "slow"
+              },
+              {
+                "Key": "BonusFireRate",
+                "Name": "Fire Rate",
+                "Value": 0,
+                "Type": "fire_rate"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "CoatedDuration",
+              "Name": "Mark Duration",
+              "Value": 10.0,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "CoatedSlowDuration",
+              "Name": "Slow Duration",
+              "Value": 1.5,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "MissileGroundDuration",
+              "Name": "Explode Delay",
+              "Value": 6.0,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_deadpack_chargeblast_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -12,
+            "DescKey": "ability_deadpack_chargeblast_t1_desc"
+          },
+          {
+            "Damage": 20,
+            "CoatedDamage": 35,
+            "DescKey": "ability_deadpack_chargeblast_t2_desc"
+          },
+          {
+            "MarksTotal": 2,
+            "Range": 14,
+            "CoatedDamage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.2,
+                "Type": "spirit"
+              }
+            },
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.225,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "ability_deadpack_chargeblast_t3_desc"
+          }
+        ],
+        "Headers": {
+          "AbilityCastRange": {
+            "Name": "Cast Range",
+            "Value": 35,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            },
+            "Type": "range"
+          },
+          "AbilityCooldown": {
+            "Name": "Cooldown",
+            "Value": 30.0,
+            "Scale": {
+              "Value": 1,
+              "Type": "cooldown"
+            },
+            "Type": "cooldown"
+          },
+          "AbilityCooldownBetweenCharge": {
+            "Name": "Charge Delay",
+            "Value": -1.0,
+            "Type": "charge_cooldown"
+          }
+        },
+        "Duration": {
+          "MineArmTime": {
+            "Name": null,
+            "Value": 0.3,
+            "Type": "duration"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "ExplosionRadius": {
+            "Name": "Explosion Radius",
+            "Value": 3.5,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            }
+          },
+          "MarksTotal": {
+            "Name": "Missiles Launched",
+            "Value": 3
+          },
+          "Range": {
+            "Name": "Range",
+            "Value": 21,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            }
+          }
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_deadpack_chargeblast_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "raw_text": "Launch a <span class=\"highlight\">salvo of spirit missiles that lodge into the ground along a line.</span> The missiles explode after a delay or upon detecting an enemy, dealing {g:citadel_inline_attribute:'SpiritDamage'} and <span class=\"highlight\">marking</span> the target.<br><br>Shooting a marked enemy with a charged shot consumes a mark to deal {g:citadel_inline_attribute:'BonusSpiritDamage'} and apply a fading {g:citadel_inline_attribute:'Slow'}.<br><br><span class=\"diminish\">Hold and drag to select the angle.</span>",
+          "plain_text": "Launch a salvo of spirit missiles that lodge into the ground along a line. The missiles explode after a delay or upon detecting an enemy, dealing spirit damage and marking the target.\nShooting a marked enemy with a charged shot consumes a mark to deal bonus spirit damage and apply a fading slow.\nHold and drag to select the angle."
+        },
+        {
+          "localization_key": "ability_deadpack_chargeblast_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "raw_text": "-12s Cooldown",
+          "plain_text": "-12s Cooldown"
+        },
+        {
+          "localization_key": "ability_deadpack_chargeblast_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "raw_text": "+20 Damage<br>+35 Marked Damage",
+          "plain_text": "+20 Damage\n+35 Marked Damage"
+        },
+        {
+          "localization_key": "ability_deadpack_chargeblast_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "raw_text": "+2 Missiles, Longer Range, and Improved Spirit Scaling",
+          "plain_text": "+2 Missiles, Longer Range, and Improved Spirit Scaling"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Chimera Mk1",
+      "internal_key": "ability_deadpack_rocketeer",
+      "data": {
+        "AbilityCastDelay": 0.7,
+        "AbilityChannelTime": 5.0,
+        "AbilityCooldown": {
+          "Value": 21.0,
+          "Scale": [
+            {
+              "Value": -0.25,
+              "Type": "power_increase"
+            },
+            {
+              "Value": 1,
+              "Type": "cooldown"
+            }
+          ]
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "AutoIntrinsicModifiers": [
+          {
+            "Class": "DeadpackHeatPool",
+            "Subclass": "DeadpackHeatPool"
+          }
+        ],
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorCannotCancelDuringChannel",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorMovement",
+          "BehaviorCanSetQuickCast"
+        ],
+        "BounceBackModifier": {
+          "Class": "DeadpackOverloadedlaunch",
+          "Subclass": "Bounceback"
+        },
+        "ChannelMoveSpeed": -1,
+        "ExplosionBulletDamage": {
+          "Value": 70,
+          "Scale": {
+            "Value": 1.15,
+            "Type": "weapon_damage_increase"
+          }
+        },
+        "ExplosionDamage": {
+          "Value": 70,
+          "Scale": {
+            "Value": 1.5,
+            "Type": "spirit"
+          }
+        },
+        "HealOnHit": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0.0,
+            "Type": "spirit"
+          }
+        },
+        "Heat": 40,
+        "HeatDrainRate": -3.0,
+        "HeatGainAirDash": 4.0,
+        "HeatGainLaunch": 18.0,
+        "HeatGainRate": 33.0,
+        "HeatGainRateSlowPercentEffectiveness": 75.0,
+        "HeatGainRateVTOL": 60.0,
+        "HeatPct": 100,
+        "IsDisabled": false,
+        "JetpackingModifier": {
+          "Class": "Base",
+          "Subclass": "Jetpacking"
+        },
+        "JetpackingVTOLModifier": {
+          "Class": "Base",
+          "Subclass": "Jetpackingvtol"
+        },
+        "Key": "ability_deadpack_rocketeer",
+        "MaxHealthSelfDamagePercent": 12,
+        "MaxHeatModifier": {
+          "Class": "CitadelModifierDeadpackMaxheat",
+          "Subclass": "Maxheat",
+          "LaunchAngleRandom": 40.0,
+          "JetpackLockoutModifier": {
+            "Class": "CitadelModifierDeadpackJetpacklockout",
+            "Subclass": "Lockout"
+          },
+          "OverheatAirToBackflipModifier": {
+            "Class": "DeadpackForcedtoairmovement",
+            "Subclass": "Backflip"
+          },
+          "OverheatLaunchModifier": {
+            "Class": "DeadpackOverloadedlaunch",
+            "Subclass": "Overloaded"
+          }
+        },
+        "Name": "Chimera Mk1",
+        "OverheatStunDelayDuration": 2.5,
+        "OverheatStunDurationSelf": 1.3,
+        "Radius": {
+          "Value": 8.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "radius"
+          }
+        },
+        "TossDuration": 0.9,
+        "Upgrades": [
+          {
+            "HeatDrainRate": -4
+          },
+          {
+            "HealOnHit": {
+              "Value": 150,
+              "Scale": {
+                "Value": 1.0,
+                "Type": "spirit"
+              }
+            },
+            "SelfDamageReductionOnPlayerHitPercent": 100
+          },
+          {
+            "ExplosionDamage": 120,
+            "OverheatLockoutDurationReductionOnPlayerHitPercent": 40
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_deadpack_rocketeer",
+        "Name": "Chimera Mk1",
+        "DescKey": "ability_deadpack_rocketeer_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "AbilityCooldown",
+                "Name": "Cooldown",
+                "Value": 21.0,
+                "Scale": [
+                  {
+                    "Value": -0.25,
+                    "Type": "power_increase"
+                  },
+                  {
+                    "Value": 1,
+                    "Type": "cooldown"
+                  }
+                ],
+                "Type": "cooldown"
+              },
+              {
+                "Key": "ExplosionDamage",
+                "Name": "Explosion Damage",
+                "Value": 70,
+                "Scale": {
+                  "Value": 1.5,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "ExplosionBulletDamage",
+                "Name": "Explosion Damage",
+                "Value": 70,
+                "Scale": {
+                  "Value": 1.15,
+                  "Type": "weapon_damage_increase"
+                },
+                "Type": "bullet_damage"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "OverheatStunDurationSelf",
+              "Name": "Self Stun",
+              "Value": 1.3
+            },
+            {
+              "Key": "MaxHealthSelfDamagePercent",
+              "Name": "Self Damage",
+              "Value": 12
+            },
+            {
+              "Key": "HealOnHit",
+              "Name": "Heal On Hit",
+              "Value": 0,
+              "Scale": {
+                "Value": 0.0,
+                "Type": "spirit"
+              },
+              "Type": "healing"
+            }
+          ],
+          "DescKey": "ability_deadpack_rocketeer_desc"
+        },
+        "Upgrades": [
+          {
+            "HeatDrainRate": -4,
+            "DescKey": "ability_deadpack_rocketeer_t1_desc"
+          },
+          {
+            "HealOnHit": {
+              "Value": 150,
+              "Scale": {
+                "Value": 1.0,
+                "Type": "spirit"
+              }
+            },
+            "SelfDamageReductionOnPlayerHitPercent": 100,
+            "DescKey": "ability_deadpack_rocketeer_t2_desc"
+          },
+          {
+            "ExplosionDamage": 120,
+            "OverheatLockoutDurationReductionOnPlayerHitPercent": 40,
+            "DescKey": "ability_deadpack_rocketeer_t3_desc"
+          }
+        ],
+        "Headers": {
+          "AbilityCastDelay": {
+            "Name": "Cast Delay",
+            "Value": 0.7,
+            "Type": "cast"
+          },
+          "AbilityChannelTime": {
+            "Name": "Channel Duration",
+            "Value": 5.0,
+            "Type": "cast"
+          },
+          "AbilityCooldown": {
+            "Name": "Cooldown",
+            "Value": 21.0,
+            "Scale": [
+              {
+                "Value": -0.25,
+                "Type": "power_increase"
+              },
+              {
+                "Value": 1,
+                "Type": "cooldown"
+              }
+            ],
+            "Type": "cooldown"
+          },
+          "AbilityCooldownBetweenCharge": {
+            "Name": "Charge Delay",
+            "Value": -1.0,
+            "Type": "charge_cooldown"
+          },
+          "Radius": {
+            "Name": "Radius",
+            "Value": 8.0,
+            "Scale": {
+              "Value": 1,
+              "Type": "radius"
+            },
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "Heat": {
+            "Name": null,
+            "Value": 40
+          },
+          "HeatDrainRate": {
+            "Name": null,
+            "Value": -3.0
+          },
+          "HeatGainAirDash": {
+            "Name": "Air Dash Heat",
+            "Value": 4.0
+          },
+          "HeatGainLaunch": {
+            "Name": null,
+            "Value": 18.0
+          },
+          "HeatGainRate": {
+            "Name": "Heat Gain",
+            "Value": 33.0
+          },
+          "HeatGainRateSlowPercentEffectiveness": {
+            "Name": null,
+            "Value": 75.0
+          },
+          "HeatGainRateVTOL": {
+            "Name": null,
+            "Value": 60.0
+          },
+          "HeatPct": {
+            "Name": null,
+            "Value": 100
+          },
+          "OverheatStunDelayDuration": {
+            "Name": null,
+            "Value": 2.5
+          },
+          "TossDuration": {
+            "Name": null,
+            "Value": 0.9
+          }
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_deadpack_rocketeer_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "raw_text": "Hold {g:citadel_binding:'Mantle'} to fly, building up heat. When max heat is reached, your jetpack will begin to overheat.<br><br><span class=\"diminish\">Overheating:</span> After a short delay, <span class=\"highlight\">dive to the ground.</span> Upon impact, create an explosion that <span class=\"highlight\">deals damage</span> and launches you and nearby enemies. If no hero is hit, you stun yourself. Press {g:citadel_binding:'Ability2'} to dive early.<br><br><span class=\"diminish\">Cooling Down:</span> After overheating, the jetpack cannot be used until it fully cools down.<br><br><span class=\"small_diminish\">Slows affect you while airborne. You always explode on death.</span>",
+          "plain_text": "Hold [Mantle] to fly, building up heat. When max heat is reached, your jetpack will begin to overheat.\nOverheating: After a short delay, dive to the ground. Upon impact, create an explosion that deals damage and launches you and nearby enemies. If no hero is hit, you stun yourself. Press [Ability 2] to dive early.\nCooling Down: After overheating, the jetpack cannot be used until it fully cools down.\nSlows affect you while airborne. You always explode on death."
+        },
+        {
+          "localization_key": "ability_deadpack_rocketeer_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "raw_text": "Heat vents faster while grounded",
+          "plain_text": "Heat vents faster while grounded"
+        },
+        {
+          "localization_key": "ability_deadpack_rocketeer_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "raw_text": "On Hero Hit: Heal and take no self damage",
+          "plain_text": "On Hero Hit: Heal and take no self damage"
+        },
+        {
+          "localization_key": "ability_deadpack_rocketeer_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "raw_text": "On Hero Hit: -40% Cooldown and +120 Spirit Damage",
+          "plain_text": "On Hero Hit: -40% Cooldown and +120 Spirit Damage"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Jettison Fuel",
+      "internal_key": "ability_deadpack_flamethrower",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 22.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 22.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityDuration": {
+          "Value": 2.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BackblastConeAngle": 40,
+        "BackblastModifier": {
+          "Class": "DeadpackForcedtoairmovement",
+          "Subclass": "BackblastBackflip",
+          "HeroStateDuration": 0.25,
+          "DashRemovalDelay": 0.18
+        },
+        "BeamWidth": 2.75,
+        "BehaviourBits": [
+          "BehaviorSilentCastFailureFeedback",
+          "BehaviorStartCooldownOnToggleOff",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontAimFacingEnemy",
+          "BehaviorRequireAbilityButtonToCancel",
+          "BehaviorDoNotAllowSpamProc",
+          "BehaviorDoNotCancelOnParry"
+        ],
+        "BuffModifier": {
+          "Class": "DeadpackFlamethrowerFireRate",
+          "Subclass": "FirerateBuff"
+        },
+        "BulletResistReduction": -15,
+        "ChannelMoveSpeed": -1,
+        "DPS": {
+          "Value": 30.0,
+          "Scale": {
+            "Value": 0.8,
+            "Type": "weapon_damage_increase"
+          }
+        },
+        "DebuffDuration": {
+          "Value": 7.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "SlowBase",
+          "Subclass": "Debuff"
+        },
+        "HeatGainRate": -1.0,
+        "HeatGainRateHittingEnemy": -20.0,
+        "IsDisabled": false,
+        "Key": "ability_deadpack_flamethrower",
+        "Name": "Jettison Fuel",
+        "ResistModifier": {
+          "Class": "DeadpackFlamethrowerResistReduction",
+          "Subclass": "ResistReduction"
+        },
+        "ScorchDamage": {
+          "Value": 35,
+          "Scale": {
+            "Value": 0.95,
+            "Type": "spirit"
+          }
+        },
+        "TickRate": 0.1,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -8
+          },
+          {
+            "ScorchDamage": 60,
+            "BonusFireRate": 18,
+            "BuffDuration": 7
+          },
+          {
+            "BulletResistReduction": -10,
+            "BurstMarkStacks": 1
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_deadpack_flamethrower",
+        "Name": "Jettison Fuel",
+        "DescKey": "ability_deadpack_flamethrower_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "DPS",
+                "Name": "Damage Per Second",
+                "Value": 30.0,
+                "Scale": {
+                  "Value": 0.8,
+                  "Type": "weapon_damage_increase"
+                },
+                "Type": "bullet_damage"
+              },
+              {
+                "Key": "ScorchDamage",
+                "Name": "Burst Damage",
+                "Value": 35,
+                "Scale": {
+                  "Value": 0.95,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "BulletResistReduction",
+                "Name": "Bullet Resist",
+                "Value": -15,
+                "Type": "bullet_armor_down"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "DebuffDuration",
+              "Name": "Debuff Duration",
+              "Value": 7.0,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              },
+              "Type": "duration"
+            },
+            {
+              "Key": "BuffDuration",
+              "Name": "Buff Duration",
+              "Value": 0.0,
+              "Type": "duration"
+            }
+          ],
+          "DescKey": "ability_deadpack_flamethrower_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -8
+          },
+          {
+            "ScorchDamage": 60,
+            "BonusFireRate": 18,
+            "BuffDuration": 7,
+            "DescKey": "ability_deadpack_flamethrower_t2_desc"
+          },
+          {
+            "BulletResistReduction": -10,
+            "BurstMarkStacks": 1,
+            "DescKey": "ability_deadpack_flamethrower_t3_desc"
+          }
+        ],
+        "Headers": {
+          "AbilityCastRange": {
+            "Name": "Cast Range",
+            "Value": 22.0,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            },
+            "Type": "radius"
+          },
+          "AbilityCooldown": {
+            "Name": "Cooldown",
+            "Value": 22.0,
+            "Scale": {
+              "Value": 1,
+              "Type": "cooldown"
+            },
+            "Type": "cooldown"
+          },
+          "AbilityCooldownBetweenCharge": {
+            "Name": "Charge Delay",
+            "Value": -1.0,
+            "Type": "charge_cooldown"
+          },
+          "AbilityDuration": {
+            "Name": "Duration",
+            "Value": 2.0,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "duration"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "BackblastConeAngle": {
+            "Name": null,
+            "Value": 40
+          },
+          "BeamWidth": {
+            "Name": "Beam Width",
+            "Value": 2.75
+          },
+          "HeatGainRate": {
+            "Name": "Heat Gain",
+            "Value": -1.0
+          },
+          "HeatGainRateHittingEnemy": {
+            "Name": null,
+            "Value": -20.0
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.1
+          }
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_deadpack_flamethrower_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "raw_text": "Spray fuel dealing {g:citadel_inline_attribute:'WeaponDPS'} and shredding {g:citadel_inline_attribute:'BulletResist'}, building up to a <span class=\"highlight\">huge backblast</span> that deals {g:citadel_inline_attribute:'SpiritDamage'} and knocks you backwards.<br><br>Vents the jetpack when dealing damage.</span>",
+          "plain_text": "Spray fuel dealing weapon damage over time and shredding bullet resist, building up to a huge backblast that deals spirit damage and knocks you backwards.\nVents the jetpack when dealing damage."
+        },
+        {
+          "localization_key": "ability_deadpack_flamethrower_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "raw_text": "+60 Burst Damage<br>On Backblast Hit: +18% Fire Rate for 7s",
+          "plain_text": "+60 Burst Damage\nOn Backblast Hit: +18% Fire Rate for 7s"
+        },
+        {
+          "localization_key": "ability_deadpack_flamethrower_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "raw_text": "-10% Bullet Resist Shred<br>On Backblast Hit: Apply a Mark",
+          "plain_text": "-10% Bullet Resist Shred\nOn Backblast Hit: Apply a Mark"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Close The Deal",
+      "internal_key": "ability_deadpack_ultimate",
+      "data": {
+        "AbilityCastDelay": 0.5,
+        "AbilityCastRange": {
+          "Value": 10.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 135.0,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityPostCastDuration": 0.1,
+        "AbilityUnitTargetLimit": 1,
+        "AutoCastDelayModifier": {
+          "Class": "Base",
+          "Subclass": "Castdelay"
+        },
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDeactivateCrouchToggleOnCast",
+          "BehaviorUseInstantCastUnitTargetUi",
+          "BehaviorCanSetQuickCast"
+        ],
+        "BonusDamagePercent": 50,
+        "ChannelMoveSpeed": -1,
+        "ChargingModifier": {
+          "Class": "Base",
+          "Subclass": "Charging"
+        },
+        "Damage": {
+          "Value": 70.0,
+          "Scale": {
+            "Value": 1.0,
+            "Type": "spirit"
+          }
+        },
+        "DamagePerMeter": {
+          "Value": 3.0,
+          "Scale": {
+            "Value": 0.09,
+            "Type": "spirit"
+          }
+        },
+        "GoingDownModifier": {
+          "Class": "DeadpackUltimateGoingdown",
+          "Subclass": "Goingdown"
+        },
+        "GoingUpModifier": {
+          "Class": "Base",
+          "Subclass": "Goingup"
+        },
+        "IsDisabled": false,
+        "Key": "ability_deadpack_ultimate",
+        "LowHealthEnemyThresholdPct": 50,
+        "MaxHeight": 1700,
+        "Name": "Close The Deal",
+        "SelfDamagePercent": 25,
+        "StunDuration": {
+          "Value": 0.5,
+          "Scale": {
+            "Value": 1.0,
+            "Type": "duration"
+          }
+        },
+        "StunDurationSelf": 0.4,
+        "TargetModifier": {
+          "Class": "DeadpackUltimateTarget",
+          "Subclass": "DeadpackUltGrabbed",
+          "ForwardOffset": 50,
+          "VerticalOffset": 0,
+          "ForceDistScale": 20,
+          "SelfViewOpacity": 0.7
+        },
+        "Upgrades": [
+          {
+            "Damage": 50.0
+          },
+          {
+            "AbilityCooldown": -35.0
+          },
+          {
+            "DamagePerMeter": 8.0,
+            "StunDuration": 0.5
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_deadpack_ultimate",
+        "Name": "Close The Deal",
+        "DescKey": "ability_deadpack_ultimate_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 70.0,
+                "Scale": {
+                  "Value": 1.0,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "DamagePerMeter",
+                "Name": "Falling Damage",
+                "Value": 3.0,
+                "Scale": {
+                  "Value": 0.09,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "StunDuration",
+                "Name": "Stun Duration",
+                "StatusEffect": "Stun",
+                "Value": 0.5,
+                "Scale": {
+                  "Value": 1.0,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "SelfDamagePercent",
+              "Name": "Self Damage",
+              "Value": 25
+            },
+            {
+              "Key": "BonusDamagePercent",
+              "NameKey": "DeadpackUltBonusTotalDamage",
+              "Name": "Bonus Damage",
+              "Value": 50
+            }
+          ],
+          "DescKey": "ability_deadpack_ultimate_desc"
+        },
+        "Upgrades": [
+          {
+            "Damage": 50.0
+          },
+          {
+            "AbilityCooldown": -35.0
+          },
+          {
+            "DamagePerMeter": 8.0,
+            "StunDuration": 0.5,
+            "DescKey": "ability_deadpack_ultimate_t3_desc"
+          }
+        ],
+        "Headers": {
+          "AbilityCastDelay": {
+            "Name": "Cast Delay",
+            "Value": 0.5,
+            "Type": "cast"
+          },
+          "AbilityCastRange": {
+            "Name": "Cast Range",
+            "Value": 10.0,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            },
+            "Type": "range"
+          },
+          "AbilityCooldown": {
+            "Name": "Cooldown",
+            "Value": 135.0,
+            "Scale": {
+              "Value": 1,
+              "Type": "cooldown"
+            },
+            "Type": "cooldown"
+          },
+          "AbilityCooldownBetweenCharge": {
+            "Name": "Charge Delay",
+            "Value": -1.0,
+            "Type": "charge_cooldown"
+          }
+        },
+        "Duration": {
+          "StunDurationSelf": {
+            "Name": null,
+            "Value": 0.4,
+            "Type": "duration"
+          }
+        },
+        "Range": {
+          "MaxHeight": {
+            "Name": null,
+            "Value": 1700,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.1
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "LowHealthEnemyThresholdPct": {
+            "Name": "Low Health Threshold",
+            "Value": 50
+          }
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_deadpack_ultimate_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "raw_text": "<span class=\"highlight\">Grab an enemy</span> and give them a hands-on demonstration, flying high into the air before crashing back to the ground.<br><br>You and the participant take {g:citadel_inline_attribute:'SpiritDPS'} while falling and {g:citadel_inline_attribute:'SpiritDamage'} upon impact. Damage is increased to enemies <span class=\"highlight\">under 50% health.</span>",
+          "plain_text": "Grab an enemy and give them a hands-on demonstration, flying high into the air before crashing back to the ground.\nYou and the participant take spirit damage over time while falling and spirit damage upon impact. Damage is increased to enemies under 50% health."
+        },
+        {
+          "localization_key": "ability_deadpack_ultimate_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "raw_text": "+0.5s Stun<br>+8 Damage / Meter",
+          "plain_text": "+0.5s Stun\n+8 Damage / Meter"
+        }
+      ]
+    }
+  ],
+  "supporting_ability_data": {
+    "not_numbered_in_hero_bound_abilities": true,
+    "note": "The unbound ability_deadpack_zip_line record is preserved as generated source data because it has no numbered binding/card. Its inclusion does not claim it is a fifth hero ability or establish its runtime association.",
+    "records": {
+      "ability_deadpack_zip_line": {
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorDontBreakInvisibility",
+          "BehaviorDontInterruptSprint",
+          "BehaviorNotSilencable",
+          "BehaviorNoTarget",
+          "BehaviorNonCombat",
+          "BehaviorCastableWhileHidden"
+        ],
+        "ChannelMoveSpeed": -1,
+        "DamageCooldown": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "DismountHorizontalMaxSpeedPercent": 85,
+        "DismountHorizontalMinSpeedPercent": 40,
+        "DismountVerticalSpeed": 300,
+        "IsDisabled": false,
+        "Key": "ability_deadpack_zip_line",
+        "KnockedOffDamagePct": 15,
+        "KnockedOffSlowModifier": {
+          "Class": "DiminishingSlow",
+          "Subclass": "KnockedOffZiplineSlow"
+        },
+        "LatchEndSpeed": 750,
+        "LatchInitialSpeed": 600,
+        "LatchMaxTime": 0.5,
+        "LatchSpeed": 1500,
+        "LatchVisualSnapProgress": 0.85,
+        "MaxMountDistance2D": 15,
+        "Name": null,
+        "PlayerSpeedCheckScale": 0.55,
+        "RegenZoneDismountHorizontalMaxSpeed": 300,
+        "RidingZipLineModifier": {
+          "Class": "Base",
+          "Subclass": "RidingZipline"
+        },
+        "SlowDuration": 8,
+        "StunDuration": 2.5,
+        "Upgrades": [],
+        "ZipAcc": 1000,
+        "ZipLineIntroModifier": {
+          "Class": "Base",
+          "Subclass": "ZiplineIntro",
+          "EnabledStateMask": [
+            "ZiplineIntro",
+            "ZiplineLocked"
+          ]
+        },
+        "ZipLineKnockdownImmuneModifier": {
+          "Class": "ZiplineKnockdownImmune",
+          "Subclass": "ZiplineKnockdownImmune"
+        },
+        "ZipLineSlowModifier": {
+          "Class": "ZiplineSpeed",
+          "Subclass": "ZiplineProtectionSlow",
+          "RampUpTime": 2.0,
+          "PercentageMultiplierStart": -70,
+          "PercentageMultiplierEnd": 0
+        },
+        "ZipSpeedInner": 693,
+        "ZipSpeedOuter": 810,
+        "ZiplineProtectionDamageAmp": 35,
+        "ZiplineProtectionSlowDurationOnHit": 2.0
+      }
+    }
+  },
+  "pre_release_comparison": {
+    "client_version": 6774,
+    "source_revision": 11112755,
+    "source": "github.deadlock-data.gameplay.330a775230e8",
+    "status": "incomplete pre-release placeholder; do not use these values as release or launch stats",
+    "comparison_scope": "All changed top-level hero-data fields between the pinned client 6774 and the first complete client 6782 entry.",
+    "changed_hero_data_fields": {
+      "AirControlAccelPercent": {
+        "client_6774": null,
+        "client_6782": 0
+      },
+      "AirControlPercent": {
+        "client_6774": null,
+        "client_6782": 0
+      },
+      "AirDashDuration": {
+        "client_6774": 0.47,
+        "client_6782": 0.43
+      },
+      "AirDashSpeed": {
+        "client_6774": 17.0,
+        "client_6782": 18.6
+      },
+      "BaseHealthRegen": {
+        "client_6774": 2.0,
+        "client_6782": 2.5
+      },
+      "BoundAbilities": {
+        "client_6774": {},
+        "client_6782": {
+          "1": {
+            "Name": "Strix Salvo",
+            "Key": "ability_deadpack_chargeblast"
+          },
+          "2": {
+            "Name": "Chimera Mk1",
+            "Key": "ability_deadpack_rocketeer"
+          },
+          "3": {
+            "Name": "Jettison Fuel",
+            "Key": "ability_deadpack_flamethrower"
+          },
+          "4": {
+            "Name": "Close The Deal",
+            "Key": "ability_deadpack_ultimate"
+          }
+        }
+      },
+      "GravityChange": {
+        "client_6774": null,
+        "client_6782": 0
+      },
+      "GroundDashDuration": {
+        "client_6774": 0.68,
+        "client_6782": 0.62
+      },
+      "GroundDashSpeed": {
+        "client_6774": 14.7,
+        "client_6782": 16.1
+      },
+      "LevelScaling": {
+        "client_6774": {
+          "BulletDamage": 0.42,
+          "BulletDamageAltFire": 1.6,
+          "MaxHealth": 39.0,
+          "PowerIncreases": 1,
+          "TechPower": 1.1,
+          "LightMeleeDamage": 1.58,
+          "HeavyMeleeDamage": 3.6656,
+          "DPS": 4.0,
+          "SustainedDPS": 2.2301
+        },
+        "client_6782": {
+          "BulletDamage": 0.42,
+          "BulletDamageAltFire": 1.6,
+          "MaxHealth": 39.0,
+          "PowerIncreases": 1,
+          "TechPower": 1.1,
+          "LightMeleeDamage": 1.58,
+          "HeavyMeleeDamage": 3.6656,
+          "DPS": 1.68,
+          "SustainedDPS": 0.87761
+        }
+      },
+      "MaxHealth": {
+        "client_6774": 780.0,
+        "client_6782": 680.0
+      },
+      "MaxMoveSpeed": {
+        "client_6774": 7.2,
+        "client_6782": 6.4
+      },
+      "StaminaCooldown": {
+        "client_6774": 4.5000045000045,
+        "client_6782": 5.0
+      },
+      "StaminaRegenPerSecond": {
+        "client_6774": 0.222222,
+        "client_6782": 0.2
+      },
+      "Type": {
+        "client_6774": null,
+        "client_6782": "Marksman"
+      },
+      "Weapon": {
+        "client_6774": {
+          "BulletSpeed": 660.4,
+          "BulletDamage": 5.5,
+          "RoundsPerSecond": 9.5238,
+          "ClipSize": 27,
+          "ReloadTime": 2.25,
+          "ReloadMovespeed": 1.0,
+          "ReloadDelay": 0.0,
+          "ReloadSingle": false,
+          "FalloffStartRange": 18.0,
+          "FalloffEndRange": 55.0,
+          "FalloffStartScale": 1.0,
+          "FalloffEndScale": 0.1,
+          "FalloffBias": 0.5,
+          "BulletGravityScale": 0.8,
+          "BulletRadius": 0.1016,
+          "BulletsPerShot": 1,
+          "BulletsPerBurst": 1,
+          "BurstInterShotInterval": 0,
+          "ShootMoveSpeed": 0.75,
+          "HitOnceAcrossAllBullets": false,
+          "CanCrit": true,
+          "AmmoConsumedPerShot": 1,
+          "DPS": 52.381,
+          "SustainedDPS": 29.204
+        },
+        "client_6782": {
+          "BulletSpeed": 177.8,
+          "BulletDamage": 12,
+          "RoundsPerSecond": 4.0,
+          "ClipSize": 14,
+          "ReloadTime": 3.2,
+          "ReloadMovespeed": 1.0,
+          "ReloadDelay": 0.0,
+          "ReloadSingle": false,
+          "FalloffStartRange": 18.0,
+          "FalloffEndRange": 47.0,
+          "FalloffStartScale": 1.0,
+          "FalloffEndScale": 0.1,
+          "FalloffBias": 0.5,
+          "BulletGravityScale": 0.05,
+          "BulletRadius": 0.3048,
+          "BulletsPerShot": 1,
+          "BulletsPerBurst": 1,
+          "BurstInterShotInterval": 0,
+          "ShootMoveSpeed": 0.75,
+          "HitOnceAcrossAllBullets": false,
+          "CanCrit": false,
+          "AmmoConsumedPerShot": 1,
+          "ExplosionRadius": 0.0,
+          "ExplosionDamageScaleAtMaxRadius": 0.7,
+          "DPS": 48.0,
+          "SustainedDPS": 25.075,
+          "NameKey": "citadel_weapon_deadpack_set",
+          "WeaponTypes": [
+            "Attribute_EWeaponAttribute_BurstFire",
+            "Attribute_EWeaponAttribute_MediumRange"
+          ]
+        }
+      }
+    }
+  },
+  "release_boundaries": {
+    "official_release_at": "2026-10-13T20:59:55Z",
+    "release_source": "steam.news.deadman-danny-release.1846018067945303",
+    "pre_release_candidate_client": 6774,
+    "first_complete_candidate_client": 6782,
+    "first_complete_candidate_source_commit": "bd95f245ccb152cd4beb359ad0a89e3a86391221",
+    "first_complete_candidate_export_commit_at": "2026-10-14T18:22:52Z",
+    "first_complete_candidate_version_date": "2026-10-14",
+    "first_complete_candidate_version_time": "10:09:01",
+    "version_time_timezone": "not declared; do not compare the embedded time directly with UTC announcements",
+    "release_day_configuration_pin": null,
+    "first_complete_candidate_note": "Client 6782 is the earliest complete Danny configuration in the reviewed source history, but is dated October 14 after the October 13 announcement. It is a post-release configuration snapshot, not an exact launch-day data pin.",
+    "same_client_reexport_source": "github.deadlock-data.gameplay.51636a2c4136",
+    "same_client_reexport_note": "The 14 selected client 6782 datasets are byte-identical across the first and later 6782 exporter commits.",
+    "post_release_update_at": "2026-10-15T03:11:58Z",
+    "post_release_update_source": "steam.news.deadman-danny-oct14-update.1846651706676198",
+    "post_release_update_client": 6785,
+    "post_release_update_comparison_source": "github.deadlock-data.gameplay.3aab395a1392",
+    "post_release_update_note": "Client 6785 contains later October 14 update data; none of its Danny values are imported into this October 14 client-6782 snapshot."
+  },
+  "data_boundaries": [
+    "Valve's October 13 announcement establishes availability; the client-6782 generated data supplies the first complete reviewed configuration, dated October 14, not an exact launch-day state.",
+    "Client 6774's selectable flag, null type, empty ability bindings, and provisional weapon are retained only as a pre-release comparison.",
+    "Client 6782 preserves four numbered ability cards and an unbound zipline configuration record; the latter is not presented as a fifth hero ability.",
+    "Client 6785 and the separate October 14 minor-update post are later evidence. Their health, weapon, Strix Salvo, Chimera Mk1, and Close The Deal changes are not backdated into this record.",
+    "The October 14 note includes charged-shot, airborne-slow, and Rocket Jumping statements without directly matching fields in the reviewed hero/card export. These remain outside this record and are not asserted as independently verified runtime behavior.",
+    "Street Brawl item-bucket changes, convars, resource lookups, unrelated hero fields, localization edits, and exporter representation changes are outside this standard hero record and are not attributed to Danny's release.",
+    "No October 13 raw changelog was found in the reviewed pinned source archive; no raw note or undocumented runtime change is asserted.",
+    "Generated client data and localized descriptions are source evidence, not an independent runtime test; this record is not a claim of October 28 current state."
+  ]
+}

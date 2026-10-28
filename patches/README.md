@@ -5,8 +5,8 @@ domain: patches
 topics: [patches, history, balance, changelogs]
 aliases: [patch notes, patch history, changelogs, balance history]
 summary: Historical Deadlock patch changelogs for explicitly requested historical or change-tracking questions.
-snapshot_id: deadlock-patches-through-2026-10-09
-current_as_of: "2026-10-09"
+snapshot_id: deadlock-patches-through-2026-10-13
+current_as_of: "2026-10-14"
 evidence_status: source_verified
 sources:
   - github.deadlock-data.changelogs.raw.afc8e9c
@@ -15,6 +15,12 @@ sources:
   - github.deadlock-data.gameplay.330a775230e8
   - github.deadlock-data.english.330a775230e8
   - steam.news.solomon-release.1846018067934643
+  - github.deadlock-data.gameplay.bd95f245ccb1
+  - github.deadlock-data.english.bd95f245ccb1
+  - github.deadlock-data.gameplay.51636a2c4136
+  - github.deadlock-data.gameplay.3aab395a1392
+  - steam.news.deadman-danny-release.1846018067945303
+  - steam.news.deadman-danny-oct14-update.1846651706676198
 ---
 
 # Historical Patch Changelogs
@@ -45,7 +51,12 @@ it does not claim a confirmed hotfix or runtime change. No October 6 or October 
 raw changelog is fabricated; the raw archive still contains 137 files. The
 [October 9 Solomon release](2026-10-09-solomon-release.md) uses the selected
 client-6774 configuration snapshot and preserves incomplete client-6763 data
-only as a pre-release comparison; no October 9 raw changelog is fabricated.
+only as a pre-release comparison; no October 9 raw changelog is fabricated. The
+[October 13 Deadman Danny release](2026-10-13-deadman-danny-release.md) uses
+client 6782 as the first complete reviewed configuration dated October 14, not an
+exact launch-day snapshot. Valve's announcement establishes October 13 availability;
+no October 13 raw changelog is fabricated, and the separate October 14 balance
+update is not folded into the release record.
 
 The [October 4/5 summary](2026-10-05-balance.md) covers the separate Street Brawl
 removal and applied Sinclair/Rat King balance changes. [October 5 raw notes](raw/2026-10-05.txt)

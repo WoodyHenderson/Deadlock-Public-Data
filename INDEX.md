@@ -5,19 +5,21 @@ domain: meta
 topics: [routing, retrieval, navigation, entities]
 aliases: [entity index, keyword index]
 summary: Direct routes to the public snapshot's hero, ability, item, NPC, objective, and mechanics records.
-snapshot_id: deadlock-data-mixed-through-2026-10-09
-current_as_of: "2026-10-20"
+snapshot_id: deadlock-data-mixed-through-2026-10-14
+current_as_of: "2026-10-28"
 evidence_status: derived
 sources: []
 ---
 
 # Deadlock Data Keyword Index
 
-This index routes to records with different dated scopes: Baba's canonical record
-is checked through October 7/client 6763; the October 6/client-6759 launch snapshot
+This index routes to records with different dated scopes. Baba's canonical record
+is checked through October 7/client 6763; her October 6/client-6759 launch snapshot
 and later wiki descriptions remain separate. Solomon's release availability is
 confirmed by Valve's October 9 announcement; his selected client-6774 configuration
-snapshot is dated separately from the release evidence.
+snapshot is dated separately from the release evidence. Danny's October 13 release
+availability is confirmed by Valve, while his first complete reviewed configuration
+is client 6782, dated October 14—not an exact launch-day data pin.
 Sinclair and Rat King use October 5/client 6753; the other 37 baseline heroes and
 173 item records retain client 6694 (September 16). The separate map-coordinate layer is dated
 October 6. City Never Sleeps map/corrupted-item research retains its pre-release
@@ -74,6 +76,7 @@ historical values as current facts.
 | Sources, citations, versions | [Source registry](sources/source-registry.yaml); [attribution](ATTRIBUTION.md) |
 | Baba, Threadsap, Granny Long Legs, Baba's Brew, Baba's Brews, Feed The Birds | [Baba](heroes/baba/baba.md); [October 6 release](patches/2026-10-06-baba-release.md); [October 7 source review](patches/2026-10-07-review.md), not official patch notes |
 | Solomon, Setup Bishop, Kingside Knight, Rook Battery, Develop Queen | [Solomon](heroes/solomon/solomon.md); [October 9 release](patches/2026-10-09-solomon-release.md); [release snapshot](patches/snapshots/solomon-2026-10-09.md) |
+| Deadman Danny, Strix Salvo, Chimera Mk1, Jettison Fuel, Close The Deal | [Deadman Danny](heroes/deadman-danny/deadman-danny.md); [October 13 release](patches/2026-10-13-deadman-danny-release.md); [October 14 client-6782 snapshot](patches/snapshots/deadman-danny-2026-10-14.md) |
 | Explicit request for patch notes or change history | [Archive policy](patches/README.md); [manifest](patches/manifest.yaml) |
 
 <!-- entity-routes:start -->
@@ -92,6 +95,7 @@ holds exact fields. Names reflect the pinned roster, not a live-game check.
 | [Billy](heroes/billy/billy.md) | Bashdown; Rising Ram; Blasted; Chain Gang |
 | [Calico](heroes/calico/calico.md) | Gloom Bombs; Leaping Slash; Ava; Return to Shadows |
 | [Celeste](heroes/celeste/celeste.md) | Light Eater; Dazzling Trick; Radiant Daggers; Shining Wonder |
+| [Deadman Danny](heroes/deadman-danny/deadman-danny.md) | Strix Salvo; Chimera Mk1; Jettison Fuel; Close The Deal |
 | [Drifter](heroes/drifter/drifter.md) | Rend; Stalker's Mark; Bloodscent; Eternal Night |
 | [Dynamo](heroes/dynamo/dynamo.md) | Kinetic Pulse; Quantum Entanglement; Rejuvenating Aurora; Singularity |
 | [Graves](heroes/graves/graves.md) | Jar of Dead; Grasping Hands; Essence Theft; Borrowed Decree |

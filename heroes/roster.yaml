@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "snapshot_id": "deadlock-data-mixed-2026-10-09",
-  "current_as_of": "2026-10-09",
+  "snapshot_id": "deadlock-data-mixed-2026-10-14",
+  "current_as_of": "2026-10-14",
   "source": "github.deadlock-data.hero-data.fc4f540f12e0",
-  "source_scope_note": "Solomon uses client 6774 (October 9) as a dated configuration snapshot; Valve's announcement establishes availability. Baba uses client 6763 (October 7), with her client-6759 October 6 release snapshot historical. Sinclair and Rat King use client 6753; the other 37 heroes retain client 6694. The top-level client/source fields describe that older baseline, not every entry. Release dates are separate from configuration dates.",
+  "source_scope_note": "Deadman Danny uses the first complete client-6782 configuration dated October 14, after the October 13 release announcement; it is not an exact launch-day pin. Solomon uses client 6774 (October 9) as a dated configuration snapshot. Baba uses client 6763 (October 7), with her client-6759 October 6 release snapshot historical. Sinclair and Rat King use client 6753; the other 37 heroes retain client 6694. The top-level client/source fields describe that older baseline, not every entry. Release dates are separate from configuration dates.",
   "selection_rule": "Dated public release evidence plus selectable, non-disabled configuration. Development flags are retained, but an explicit official release can override a conflicting InDevelopment flag. IsSelectable alone does not establish release; transformed states are not separate roster heroes.",
-  "hero_count": 41,
+  "hero_count": 42,
   "heroes": [
     {
       "id": "hero.abrams",
@@ -46,6 +46,15 @@
       "id": "hero.celeste",
       "name": "Celeste",
       "internal_hero_key": "hero_unicorn"
+    },
+    {
+      "id": "hero.deadman-danny",
+      "name": "Deadman Danny",
+      "internal_hero_key": "hero_deadpack",
+      "availability_as_of": "2026-10-13",
+      "hero_data_source": "github.deadlock-data.gameplay.bd95f245ccb1",
+      "configuration_as_of": "2026-10-14",
+      "release_source": "steam.news.deadman-danny-release.1846018067945303"
     },
     {
       "id": "hero.drifter",
