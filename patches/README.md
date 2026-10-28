@@ -5,8 +5,8 @@ domain: patches
 topics: [patches, history, balance, changelogs]
 aliases: [patch notes, patch history, changelogs, balance history]
 summary: Historical Deadlock patch changelogs for explicitly requested historical or change-tracking questions.
-snapshot_id: deadlock-patches-through-2026-10-06
-current_as_of: "2026-10-05"
+snapshot_id: deadlock-patches-through-2026-10-07
+current_as_of: "2026-10-07"
 evidence_status: source_verified
 sources:
   - github.deadlock-data.changelogs.raw.afc8e9c
@@ -33,10 +33,13 @@ separately covers Rat King's client-6737 launch, the Broker toggle, and
 healing-ping configuration. No raw October 2 changelog is fabricated. Later
 wiki descriptions are dated; that launch review excludes later balance.
 
-The [October 6 Baba release](2026-10-06-baba-release.md) covers her client-6759
-record, preserves the initial client-6757 comparison, and explicitly dates later
-wiki interactions. No October 6 raw changelog is fabricated; October 7 hotfixes
-remain separate. The raw archive still contains 137 files.
+The [October 6 Baba release](2026-10-06-baba-release.md) covers her release and
+preserves the client-6759 launch state in a separate
+[historical snapshot](snapshots/baba-2026-10-06.md). Her canonical record is checked
+through client 6763. The [October 7 source review](2026-10-07-review.md) records a
+same-client export representation correction and English wording clarification;
+it does not claim a confirmed hotfix or runtime change. No October 6 or October 7
+raw changelog is fabricated; the raw archive still contains 137 files.
 
 The [October 4/5 summary](2026-10-05-balance.md) covers the separate Street Brawl
 removal and applied Sinclair/Rat King balance changes. [October 5 raw notes](raw/2026-10-05.txt)

@@ -5,7 +5,7 @@ domain: meta
 topics: [routing, retrieval, navigation, entities]
 aliases: [entity index, keyword index]
 summary: Direct routes to the public snapshot's hero, ability, item, NPC, objective, and mechanics records.
-snapshot_id: deadlock-data-mixed-through-2026-10-06
+snapshot_id: deadlock-data-mixed-through-2026-10-07
 current_as_of: "2026-10-20"
 evidence_status: derived
 sources: []
@@ -13,8 +13,9 @@ sources: []
 
 # Deadlock Data Keyword Index
 
-This index routes to records with different dated scopes: Baba uses October 6/client
-6759, with initial launch evidence and later wiki descriptions kept separate.
+This index routes to records with different dated scopes: Baba's canonical record
+is checked through October 7/client 6763; the October 6/client-6759 launch snapshot
+and later wiki descriptions remain separate.
 Sinclair and Rat King use October 5/client 6753; the other 37 heroes and 173 item records retain
 client 6694 (September 16). The separate map-coordinate layer is dated
 October 6. City Never Sleeps map/corrupted-item research retains its pre-release
@@ -69,7 +70,7 @@ historical values as current facts.
 | Haunt attacks, parry, Steam Vent reveal, Healing Snack heal amount, Tough Crate reward, Buff Container drop selection, Sinner jackpot | [Map interactions and open questions](general/map/map-interactions-and-open-questions.md); [structured behavior](data/map-interactions.yaml) |
 | Corrupted item variant fields | [Dated variant data](data/corrupted-items.yaml); configured fields do not establish mode/date availability |
 | Sources, citations, versions | [Source registry](sources/source-registry.yaml); [attribution](ATTRIBUTION.md) |
-| Baba, Threadsap, Granny Long Legs, Baba's Brew, Baba's Brews, Feed The Birds | [Baba](heroes/baba/baba.md); release history only: [October 6 summary](patches/2026-10-06-baba-release.md) |
+| Baba, Threadsap, Granny Long Legs, Baba's Brew, Baba's Brews, Feed The Birds | [Baba](heroes/baba/baba.md); [October 6 release](patches/2026-10-06-baba-release.md); [October 7 source review](patches/2026-10-07-review.md), not official patch notes |
 | Explicit request for patch notes or change history | [Archive policy](patches/README.md); [manifest](patches/manifest.yaml) |
 
 <!-- entity-routes:start -->

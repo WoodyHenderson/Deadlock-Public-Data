@@ -3,22 +3,25 @@
   "id": "hero.baba",
   "name": "Baba",
   "aliases": [],
-  "snapshot_id": "deadlock-data-client-6759",
-  "client_version": 6759,
-  "server_version": 6759,
-  "source_revision": 11094174,
-  "current_as_of": "2026-10-06",
+  "snapshot_id": "deadlock-data-client-6763",
+  "client_version": 6763,
+  "server_version": 6763,
+  "source_revision": 11102088,
+  "current_as_of": "2026-10-07",
   "evidence_status": "source_verified_with_official_release_confirmation_and_dated_wiki_context",
   "sources": {
-    "hero_data": "github.deadlock-data.gameplay.7fd1dfeb502a",
-    "ability_data": "github.deadlock-data.gameplay.7fd1dfeb502a",
-    "ability_cards": "github.deadlock-data.gameplay.7fd1dfeb502a",
-    "ability_localization": "github.deadlock-data.english.7fd1dfeb502a",
+    "hero_data": "github.deadlock-data.gameplay.8f2589cb4e64",
+    "ability_data": "github.deadlock-data.gameplay.8f2589cb4e64",
+    "ability_cards": "github.deadlock-data.gameplay.8f2589cb4e64",
+    "ability_localization": "github.deadlock-data.english.8f2589cb4e64",
     "initial_release_checkpoint": "github.deadlock-data.gameplay.69b3ca700c80",
     "pre_release_comparison": "github.deadlock-data.gameplay.edb16660368e",
     "release_announcement": "steam.news.baba-release.1845383656397580",
     "early_wiki_behavior": "wiki.baba.184291",
-    "later_wiki_behavior": "wiki.baba.184568"
+    "later_wiki_behavior": "wiki.baba.184568",
+    "regenerated_october6_export": "github.deadlock-data.gameplay.5799055efcc7",
+    "october7_intermediate": "github.deadlock-data.gameplay.be5fb3ee934a",
+    "october6_checkpoint": "github.deadlock-data.gameplay.7fd1dfeb502a"
   },
   "internal_hero_key": "hero_baba",
   "hero_type": "Mystic",
@@ -120,9 +123,9 @@
     "weapon_name": "Bunko-Night Special"
   },
   "generated_source_snapshot": {
-    "client_version": 6759,
-    "source_revision": 11094174,
-    "source": "github.deadlock-data.gameplay.7fd1dfeb502a",
+    "client_version": 6763,
+    "source_revision": 11102088,
+    "source": "github.deadlock-data.gameplay.8f2589cb4e64",
     "hero_data": {
       "AbilityResourceMax": 0,
       "AbilityResourceRegenPerSecond": 0,
@@ -525,7 +528,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "source": "github.deadlock-data.english.8f2589cb4e64",
           "raw_text": "Weave a scraggly thread that follows your crosshair before bursting along its path, dealing {g:citadel_inline_attribute:'SpiritDamage'} and stealing enemy {g:citadel_inline_attribute:'Spirit'}, increased in effectiveness for Baba.<br><br>While holding stolen {g:citadel_inline_attribute:'Spirit'}, Baba deals {g:citadel_inline_attribute:'BonusSpiritDamage'} with every bullet.",
           "plain_text": "Weave a scraggly thread that follows your crosshair before bursting along its path, dealing spirit damage and stealing enemy Spirit, increased in effectiveness for Baba.\nWhile holding stolen Spirit, Baba deals bonus spirit damage with every bullet."
         },
@@ -534,7 +537,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "source": "github.deadlock-data.english.8f2589cb4e64",
           "raw_text": "-12s Cooldown<br>+8s Debuff Duration",
           "plain_text": "-12s Cooldown\n+8s Debuff Duration"
         },
@@ -543,7 +546,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "source": "github.deadlock-data.english.8f2589cb4e64",
           "raw_text": "+1 Charge<br>On Hit: Pull enemies 7m",
           "plain_text": "+1 Charge\nOn Hit: Pull enemies 7m"
         }
@@ -914,7 +917,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "source": "github.deadlock-data.english.8f2589cb4e64",
           "raw_text": "Your bench's legs extend, granting {g:citadel_inline_attribute:'BonusMoveSpeed'}, higher jumps, <span class=\"highlight\">Debuff Resistance</span> and <span class=\"highlight\">Melee Resistance</span>.<br><br><span class=\"diminish\">Light Melee:</span> Perform a <span class=\"highlight\">kick</span> that knocks enemies back.<br><span class=\"diminish\">Heavy Melee:</span> Perform a <span class=\"highlight\">ground pound</span> that applies {g:citadel_inline_attribute:'KnockUp'}, {g:citadel_inline_attribute:'Slow'}, and deals {g:citadel_inline_attribute:'SpiritDamage'}.<br><br><span class=\"diminish\">Hold {g:citadel_binding:'Crouch'} to charge a high jump, release to jump.</span>",
           "plain_text": "Your bench's legs extend, granting bonus move speed, higher jumps, Debuff Resistance and Melee Resistance.\nLight Melee: Perform a kick that knocks enemies back.\nHeavy Melee: Perform a ground pound that applies knockup, slow, and deals spirit damage.\nHold [Crouch] to charge a high jump, release to jump."
         },
@@ -923,7 +926,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "source": "github.deadlock-data.english.8f2589cb4e64",
           "raw_text": "+2.5m Move Speed",
           "plain_text": "+2.5m Move Speed"
         },
@@ -932,7 +935,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "source": "github.deadlock-data.english.8f2589cb4e64",
           "raw_text": "-7s Cooldown",
           "plain_text": "-7s Cooldown"
         },
@@ -941,7 +944,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "source": "github.deadlock-data.english.8f2589cb4e64",
           "raw_text": "+15% Resists<br>+50% Melee Lifesteal",
           "plain_text": "+15% Resists\n+50% Melee Lifesteal"
         }
@@ -1084,8 +1087,14 @@
               },
               "Multiply": true
             },
-            "SilenceDuration": 33.33,
-            "SpiritResistReduction": 33.33
+            "SilenceDuration": {
+              "Value": 1.3333,
+              "Multiply": true
+            },
+            "SpiritResistReduction": {
+              "Value": 1.3333,
+              "Multiply": true
+            }
           }
         ]
       },
@@ -1213,8 +1222,14 @@
               },
               "Multiply": true
             },
-            "SilenceDuration": 33.33,
-            "SpiritResistReduction": 33.33,
+            "SilenceDuration": {
+              "Value": 1.3333,
+              "Multiply": true
+            },
+            "SpiritResistReduction": {
+              "Value": 1.3333,
+              "Multiply": true
+            },
             "DescKey": "ability_baba_hexing_brew_t3_desc"
           }
         ],
@@ -1309,7 +1324,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "source": "github.deadlock-data.english.8f2589cb4e64",
           "raw_text": "Brew a pot of tea that applies a magical effect in an area when thrown, cycling over time between a soothing {g:citadel_inline_attribute:'CombatBarrier'}, {g:citadel_inline_attribute:'Silence'}, or scalding burn that deals {g:citadel_inline_attribute:'SpiritDPS'} and reduces {g:citadel_inline_attribute:'SpiritResist'}. <br><br>Press {g:citadel_binding:'ADS'} to pause or resume brewing.",
           "plain_text": "Brew a pot of tea that applies a magical effect in an area when thrown, cycling over time between a soothing barrier, Silence, or scalding burn that deals spirit damage over time and reduces spirit resist.\nPress [ADS] to pause or resume brewing."
         },
@@ -1318,7 +1333,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "source": "github.deadlock-data.english.8f2589cb4e64",
           "raw_text": "+33.33% Brew Effectiveness",
           "plain_text": "+33.33% Brew Effectiveness"
         }
@@ -1326,7 +1341,7 @@
       "aliases": [
         "Baba's Brews"
       ],
-      "interpretation_note": "Tier 3 is +33.33% Brew Effectiveness according to the tooltip. Preserve Multiply flags and 1.3333 multipliers; do not read SilenceDuration: 33.33 as +33.33 seconds or SpiritResistReduction: 33.33 as a positive resist buff."
+      "interpretation_note": "Tier 3 remains +33.33% Brew Effectiveness. SilenceDuration and SpiritResistReduction are encoded as Value: 1.3333 with Multiply: true in the regenerated client-6759 export and retained through 6763. This corrects the exported representation; it does not establish an October 7 runtime buff or +33.33 seconds of silence."
     },
     {
       "slot": 4,
@@ -1623,16 +1638,16 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.7fd1dfeb502a",
-          "raw_text": "Cover targets in front of you with <span class=\"highlight\">bread</span>, adding a stacking {g:citadel_inline_attribute:'Slow'} .<br><br>When the channel ends a flock of pigeons bombard the target, dealing {g:citadel_inline_attribute:'SpiritDamage'} and hexing the target into a <span class=\"highlight\">pigeon</span>, increasing in both damage and duration based on bread count.",
-          "plain_text": "Cover targets in front of you with bread, adding a stacking slow .\nWhen the channel ends a flock of pigeons bombard the target, dealing spirit damage and hexing the target into a pigeon, increasing in both damage and duration based on bread count."
+          "source": "github.deadlock-data.english.8f2589cb4e64",
+          "raw_text": "Cover targets in front of you with <span class=\"highlight\">bread</span>, adding a stacking {g:citadel_inline_attribute:'Slow'} .<br><br>When the channel ends a flock of pigeons bombard the targets, dealing {g:citadel_inline_attribute:'SpiritDamage'} and hexing each target into a <span class=\"highlight\">pigeon</span>, increasing in both damage and duration based on bread count.",
+          "plain_text": "Cover targets in front of you with bread, adding a stacking slow .\nWhen the channel ends a flock of pigeons bombard the targets, dealing spirit damage and hexing each target into a pigeon, increasing in both damage and duration based on bread count."
         },
         {
           "localization_key": "ability_baba_ultimate_2_t1_desc",
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "source": "github.deadlock-data.english.8f2589cb4e64",
           "raw_text": "+4m Cast Range<br>+32% Max Slow",
           "plain_text": "+4m Cast Range\n+32% Max Slow"
         },
@@ -1641,7 +1656,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.7fd1dfeb502a",
+          "source": "github.deadlock-data.english.8f2589cb4e64",
           "raw_text": "+125 Max Damage <br>+1.5 Spirit Scaling<br>+0.5s Max Duration",
           "plain_text": "+125 Max Damage\n+1.5 Spirit Scaling\n+0.5s Max Duration"
         }
@@ -1652,7 +1667,7 @@
     {
       "id": "granny-long-legs",
       "name": "Granny Long Legs",
-      "source": "github.deadlock-data.gameplay.7fd1dfeb502a",
+      "source": "github.deadlock-data.gameplay.8f2589cb4e64",
       "source_ability_key": "ability_baba_bench_run",
       "note": "Ability-driven bench form, not a separately selectable hero or an additional numbered ability. Configuration is in ability slot 2; do not invent another hero-stat block or convert raw jump-force/height fields to metres."
     }
@@ -2587,9 +2602,43 @@
     }
   },
   "data_boundaries": [
-    "Configured fields/cards/text use the later October 6 client 6759; client 6757 is preserved as the initial release comparison.",
-    "Later wiki interaction descriptions are dated October 8 and are not backdated to release or independently runtime-tested.",
-    "No October 7 or later balance data is imported. Other heroes and global mechanics retain their own pins.",
-    "Brew timing, raw control fields, damage ramps and lifesteal interactions are not fully derived runtime formulas."
-  ]
+    "Baba configuration and English text are checked through October 7 client 6763; the October 6 record remains a historical snapshot.",
+    "Brew multiplier encoding was corrected in a regenerated client-6759 export, not demonstrated as an October 7 balance change.",
+    "Later wiki interaction descriptions remain dated October 8 and are not independently runtime-tested.",
+    "Other heroes, items and global mechanics retain their earlier pins. Later releases exist but are outside this chronological update.",
+    "The reviewed exported datasets are not the entire game client and do not prove the absence of unexported runtime fixes."
+  ],
+  "october7_review": {
+    "previous_client_version": 6759,
+    "previous_source": "github.deadlock-data.gameplay.7fd1dfeb502a",
+    "historical_record": "patches/snapshots/baba-2026-10-06.yaml",
+    "export_representation": {
+      "source": "github.deadlock-data.gameplay.5799055efcc7",
+      "client_version": 6759,
+      "exporter_version": "1.18.3",
+      "published_at": "2026-10-07T10:37:33Z",
+      "fields": [
+        "Upgrades[2].SilenceDuration",
+        "Upgrades[2].SpiritResistReduction"
+      ],
+      "before": 33.33,
+      "after": {
+        "Value": 1.3333,
+        "Multiply": true
+      },
+      "scope": "Both ability-data and ability-cards; same client version, not demonstrated gameplay balance."
+    },
+    "english_wording": {
+      "first_client_version": 6762,
+      "source": "github.deadlock-data.gameplay.be5fb3ee934a",
+      "key": "ability_baba_ultimate_2_desc",
+      "note": "Changes \"the target\" to \"the targets\" / \"each target\". Clarifies plural targeting; does not establish newly added multi-target functionality."
+    },
+    "final_checkpoint": {
+      "client_version": 6763,
+      "source": "github.deadlock-data.gameplay.8f2589cb4e64",
+      "note": "No changes from 6762 in the 12 reviewed JSON datasets, including English. Other-language localization and version-file changes are outside the English record."
+    },
+    "official_notes": "No October 7 Steam announcement, wiki update page or original raw changelog was found in the reviewed sources. Official forum access returned a verification challenge, not readable changelog evidence."
+  }
 }
