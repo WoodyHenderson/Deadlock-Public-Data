@@ -4,23 +4,26 @@ title: Baba
 domain: heroes
 topics: [hero, abilities, forms]
 aliases: []
-summary: Baba stats, four abilities and brew variants through October 6, with later wiki interactions explicitly dated.
-snapshot_id: deadlock-data-client-6759
-current_as_of: "2026-10-06"
+summary: Baba stats, four abilities and brew variants checked through October 7, with later wiki interactions explicitly dated.
+snapshot_id: deadlock-data-client-6763
+current_as_of: "2026-10-07"
 evidence_status: source_verified_with_official_release_confirmation_and_dated_wiki_context
 sources:
-  - github.deadlock-data.gameplay.7fd1dfeb502a
-  - github.deadlock-data.english.7fd1dfeb502a
+  - github.deadlock-data.gameplay.8f2589cb4e64
+  - github.deadlock-data.english.8f2589cb4e64
   - github.deadlock-data.gameplay.69b3ca700c80
   - github.deadlock-data.gameplay.edb16660368e
   - steam.news.baba-release.1845383656397580
   - wiki.baba.184291
   - wiki.baba.184568
+  - github.deadlock-data.gameplay.5799055efcc7
+  - github.deadlock-data.gameplay.be5fb3ee934a
+  - github.deadlock-data.gameplay.7fd1dfeb502a
 ---
 
 # Baba
 
-Valve announced Baba as available on **October 6, 2026**. This record uses the later same-day **client 6759**; initial client 6757 evidence stays separate.
+Valve announced Baba as available on **October 6, 2026**. This record is checked through **October 7 / client 6763**. Initial client 6757 and October 6 evidence stay separate.
 The client still says `InDevelopment: true`. That conflicting flag is preserved, not treated as proof that the officially released hero is unavailable.
 
 ## Base Stats
@@ -79,7 +82,7 @@ Internal key: `ability_baba_bubbling_brew`.
 - **Tier 2:** -12s Cooldown +8s Debuff Duration
 - **Tier 3:** +1 Charge On Hit: Pull enemies 7m
 
-Description source: [`github.deadlock-data.english.7fd1dfeb502a`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/7fd1dfeb502adf48d2d7da3e2f6959a2e3385a4d/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.8f2589cb4e64`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/8f2589cb4e645a2e9b3ba5363e51b830cd7bbacd/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorDontInterruptSlideOnCast`.
@@ -120,7 +123,7 @@ Internal key: `ability_baba_bench_run`.
 - **Tier 2:** -7s Cooldown
 - **Tier 3:** +15% Resists +50% Melee Lifesteal
 
-Description source: [`github.deadlock-data.english.7fd1dfeb502a`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/7fd1dfeb502adf48d2d7da3e2f6959a2e3385a4d/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.8f2589cb4e64`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/8f2589cb4e645a2e9b3ba5363e51b830cd7bbacd/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorNonCombat`, `BehaviorCastableWhileBusy`.
@@ -161,7 +164,7 @@ Internal key: `ability_baba_hexing_brew`.
 
 - **Tier 3:** +33.33% Brew Effectiveness
 
-Description source: [`github.deadlock-data.english.7fd1dfeb502a`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/7fd1dfeb502adf48d2d7da3e2f6959a2e3385a4d/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.8f2589cb4e64`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/8f2589cb4e645a2e9b3ba5363e51b830cd7bbacd/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorCannotCancelDuringChannel`, `BehaviorProjectileFiredAsBullet`, `BehaviorCooldownOnChannelEnd`, `BehaviorDontInterruptSlideOnCast`, `BehaviorHoldsAtMaxChannel`.
@@ -176,7 +179,7 @@ Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorDisplaysDamag
 Upgrade deltas:
 - Tier 1: `{"Radius":3}`
 - Tier 2: `{"AbilityCooldown":-12}`
-- Tier 3: `{"BrewEffectiveness":33.33,"DamagePerSecond":{"Value":1.3333,"Scale":{"Value":1.3333,"Type":"spirit","Multiply":true},"Multiply":true},"CombatBarrier":{"Value":1.3333,"Scale":{"Value":1.3333,"Type":"spirit","Multiply":true},"Multiply":true},"SilenceDuration":33.33,"SpiritResistReduction":33.33}`
+- Tier 3: `{"BrewEffectiveness":33.33,"DamagePerSecond":{"Value":1.3333,"Scale":{"Value":1.3333,"Type":"spirit","Multiply":true},"Multiply":true},"CombatBarrier":{"Value":1.3333,"Scale":{"Value":1.3333,"Type":"spirit","Multiply":true},"Multiply":true},"SilenceDuration":{"Value":1.3333,"Multiply":true},"SpiritResistReduction":{"Value":1.3333,"Multiply":true}}`
 
 #### Soothing Brew
 
@@ -201,7 +204,7 @@ Upgrade deltas:
 
 Also called **Baba's Brews** in official/wiki prose.
 
-Tier 3 is +33.33% Brew Effectiveness according to the tooltip. Preserve Multiply flags and 1.3333 multipliers; do not read SilenceDuration: 33.33 as +33.33 seconds or SpiritResistReduction: 33.33 as a positive resist buff.
+Tier 3 remains +33.33% Brew Effectiveness. SilenceDuration and SpiritResistReduction are encoded as Value: 1.3333 with Multiply: true in the regenerated client-6759 export and retained through 6763. This corrects the exported representation; it does not establish an October 7 runtime buff or +33.33 seconds of silence.
 
 ### 4. Feed The Birds
 
@@ -211,14 +214,14 @@ Internal key: `ability_baba_ultimate_2`.
 **Description** (pinned English game text):
 
 > Cover targets in front of you with bread, adding a stacking slow .
-> When the channel ends a flock of pigeons bombard the target, dealing spirit damage and hexing the target into a pigeon, increasing in both damage and duration based on bread count.
+> When the channel ends a flock of pigeons bombard the targets, dealing spirit damage and hexing each target into a pigeon, increasing in both damage and duration based on bread count.
 
 **Upgrade descriptions** (where supplied by the source):
 
 - **Tier 1:** +4m Cast Range +32% Max Slow
 - **Tier 3:** +125 Max Damage +1.5 Spirit Scaling +0.5s Max Duration
 
-Description source: [`github.deadlock-data.english.7fd1dfeb502a`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/7fd1dfeb502adf48d2d7da3e2f6959a2e3385a4d/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.8f2589cb4e64`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/8f2589cb4e645a2e9b3ba5363e51b830cd7bbacd/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorCooldownOnChannelEnd`, `BehaviorTriggerCancelMashProtectionOnCast`, `BehaviorRequireAbilityButtonToCancel`, `BehaviorShowCastRangeAsSatSphereWhileCasting`.
@@ -266,12 +269,19 @@ These descriptions supplement the client record; they are not independent runtim
 
 - The article reports no Baba-specific ability modifications beyond global Street Brawl changes. This is separately dated wiki context, not a launch-day mode test.
 
+## October 7 Review
+
+Brew Tier 3 multiplier fields were re-encoded in a regenerated **client 6759** export before client 6762. This is not evidence of a new balance buff. Feed The Birds' English text changes “the target” to “the targets” / “each target”; that wording does not prove newly added multi-target behavior. The reviewed gameplay/English datasets are unchanged from 6762 to 6763.
+
+See the [October 7 review](../../patches/2026-10-07-review.md) and [historical October 6 record](../../patches/snapshots/baba-2026-10-06.md). No official October 7 hotfix text was verified; these are source-export findings, not reconstructed patch notes.
+
 ## Evidence Boundaries
 
-- Configured fields/cards/text use the later October 6 client 6759; client 6757 is preserved as the initial release comparison.
-- Later wiki interaction descriptions are dated October 8 and are not backdated to release or independently runtime-tested.
-- No October 7 or later balance data is imported. Other heroes and global mechanics retain their own pins.
-- Brew timing, raw control fields, damage ramps and lifesteal interactions are not fully derived runtime formulas.
+- Baba configuration and English text are checked through October 7 client 6763; the October 6 record remains a historical snapshot.
+- Brew multiplier encoding was corrected in a regenerated client-6759 export, not demonstrated as an October 7 balance change.
+- Later wiki interaction descriptions remain dated October 8 and are not independently runtime-tested.
+- Other heroes, items and global mechanics retain their earlier pins. Later releases exist but are outside this chronological update.
+- The reviewed exported datasets are not the entire game client and do not prove the absence of unexported runtime fixes.
 - The ultimate retains source lock-on/ramp fields without inferring an exact hit-count or damage formula from their names.
 - The two supporting melee/throw records in YAML are not extra numbered abilities.
 

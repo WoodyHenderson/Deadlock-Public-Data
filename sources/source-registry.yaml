@@ -1633,3 +1633,77 @@ sources:
     wikitext_sha256: ce9b2f00389fcb0b82501533dc9413d7cb59534682f27f24541440f9eba6bff4
     scope: Later transcription of the October 6 release announcement, not a separate
       balance source.
+
+  - id: github.deadlock-data.gameplay.5799055efcc7
+    title: October 7 review — 6759-regenerated export
+    url: https://github.com/deadlock-wiki/deadlock-data/tree/5799055efcc7a66e45e77da283983da11e00d256/data
+    commit: 5799055efcc7a66e45e77da283983da11e00d256
+    client_version: 6759
+    source_revision: 11094174
+    accessed_at: '2026-10-20'
+    scope: Baba export representation and wording review; no independent runtime or
+      official hotfix verification.
+    ability_cards_sha256: 3dcc17efcd60f7243a1ae536a2befa34eca8f377766af8c90d9b0b703c738d4f
+    ability_data_sha256: a2389048ef0e686cad50960bbcd35d526aaba5f8df70691ab9cefa8f55fb4989
+    convars_sha256: 9830bc74c21ea78b4e84f2566f2aac02639fb88b7f8c9f1c75f6f64aaff89671
+    generic_data_sha256: 4ffdd3004363f670839217305c9b1e01e092ccdc6ea1d6e01c095e3b7dfbb1fc
+    hero_data_sha256: 947c26790e067109f6cca4085649ed56e446bc5f4c9c571cd396290f802a3456
+    hero_meaningful_stats_sha256: 75429c0ca0e9d00732496c0e25564d8ba61f571cb5ed3d44c4b3d11bb56f4e6f
+    item_cards_sha256: 7ff34ae9364064d23ceff40ac646c3298cd381920964c59bae6cccbd15f9c2d2
+    item_data_sha256: 992743a93afb8a671d76b460da5ca65acd2c48e889598f0d37aa8012819b8bfc
+    misc_data_sha256: 72301530c76f0cfaaee7c001b5fb0521c334da3825887b742ccac6752320e817
+    npc_data_sha256: 94b6485b54a144794c5b3cdab718871f5af57a69f880308aee1d630f5a3b5949
+    street_brawl_data_sha256: ab1a9bfa568d1ff7ff9a889e8275233386fd0549cba5cb4882b0a8bf8b63285f
+    english_sha256: b604b52d1c2adbd5e6a265f6d2df2bbb2770a1fca4250d18289c1f4f07e2e9c2
+    version_file_sha256: a62f8374d712b2623ae22d1f0b1167676a44c87670c09df65b607d709587223f
+  - id: github.deadlock-data.gameplay.be5fb3ee934a
+    title: October 7 review — 6762 export
+    url: https://github.com/deadlock-wiki/deadlock-data/tree/be5fb3ee934afb86e6310c2ecc63572938005d56/data
+    commit: be5fb3ee934afb86e6310c2ecc63572938005d56
+    client_version: 6762
+    source_revision: 11100849
+    accessed_at: '2026-10-20'
+    scope: Baba export representation and wording review; no independent runtime or
+      official hotfix verification.
+    ability_cards_sha256: 3dcc17efcd60f7243a1ae536a2befa34eca8f377766af8c90d9b0b703c738d4f
+    ability_data_sha256: a2389048ef0e686cad50960bbcd35d526aaba5f8df70691ab9cefa8f55fb4989
+    convars_sha256: 9830bc74c21ea78b4e84f2566f2aac02639fb88b7f8c9f1c75f6f64aaff89671
+    generic_data_sha256: 4ffdd3004363f670839217305c9b1e01e092ccdc6ea1d6e01c095e3b7dfbb1fc
+    hero_data_sha256: 947c26790e067109f6cca4085649ed56e446bc5f4c9c571cd396290f802a3456
+    hero_meaningful_stats_sha256: 75429c0ca0e9d00732496c0e25564d8ba61f571cb5ed3d44c4b3d11bb56f4e6f
+    item_cards_sha256: 7ff34ae9364064d23ceff40ac646c3298cd381920964c59bae6cccbd15f9c2d2
+    item_data_sha256: 992743a93afb8a671d76b460da5ca65acd2c48e889598f0d37aa8012819b8bfc
+    misc_data_sha256: 72301530c76f0cfaaee7c001b5fb0521c334da3825887b742ccac6752320e817
+    npc_data_sha256: 94b6485b54a144794c5b3cdab718871f5af57a69f880308aee1d630f5a3b5949
+    street_brawl_data_sha256: ab1a9bfa568d1ff7ff9a889e8275233386fd0549cba5cb4882b0a8bf8b63285f
+    english_sha256: 1d780f358a59a4fc60b238fc35f408b8226d06903e4132317fcd5c2651186734
+    version_file_sha256: b7b82293ca7fef97ebbd8d1286570ac4b5acca3d4d05dff684f92d58c6678b2b
+  - id: github.deadlock-data.gameplay.8f2589cb4e64
+    title: October 7 review — 6763 export
+    url: https://github.com/deadlock-wiki/deadlock-data/tree/8f2589cb4e645a2e9b3ba5363e51b830cd7bbacd/data
+    commit: 8f2589cb4e645a2e9b3ba5363e51b830cd7bbacd
+    client_version: 6763
+    source_revision: 11102088
+    accessed_at: '2026-10-20'
+    scope: Baba export representation and wording review; no independent runtime or
+      official hotfix verification.
+    ability_cards_sha256: 3dcc17efcd60f7243a1ae536a2befa34eca8f377766af8c90d9b0b703c738d4f
+    ability_data_sha256: a2389048ef0e686cad50960bbcd35d526aaba5f8df70691ab9cefa8f55fb4989
+    convars_sha256: 9830bc74c21ea78b4e84f2566f2aac02639fb88b7f8c9f1c75f6f64aaff89671
+    generic_data_sha256: 4ffdd3004363f670839217305c9b1e01e092ccdc6ea1d6e01c095e3b7dfbb1fc
+    hero_data_sha256: 947c26790e067109f6cca4085649ed56e446bc5f4c9c571cd396290f802a3456
+    hero_meaningful_stats_sha256: 75429c0ca0e9d00732496c0e25564d8ba61f571cb5ed3d44c4b3d11bb56f4e6f
+    item_cards_sha256: 7ff34ae9364064d23ceff40ac646c3298cd381920964c59bae6cccbd15f9c2d2
+    item_data_sha256: 992743a93afb8a671d76b460da5ca65acd2c48e889598f0d37aa8012819b8bfc
+    misc_data_sha256: 72301530c76f0cfaaee7c001b5fb0521c334da3825887b742ccac6752320e817
+    npc_data_sha256: 94b6485b54a144794c5b3cdab718871f5af57a69f880308aee1d630f5a3b5949
+    street_brawl_data_sha256: ab1a9bfa568d1ff7ff9a889e8275233386fd0549cba5cb4882b0a8bf8b63285f
+    english_sha256: 1d780f358a59a4fc60b238fc35f408b8226d06903e4132317fcd5c2651186734
+    version_file_sha256: bb26c5f1c1ca9dd5e057624f2ba660464f2f89310dec7c33b1fe1f758eeeb8d1
+  - id: github.deadlock-data.english.8f2589cb4e64
+    title: Client 6763 English localization
+    url: https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/8f2589cb4e645a2e9b3ba5363e51b830cd7bbacd/data/localizations/english.json
+    commit: 8f2589cb4e645a2e9b3ba5363e51b830cd7bbacd
+    sha256: 1d780f358a59a4fc60b238fc35f408b8226d06903e4132317fcd5c2651186734
+    scope: Baba descriptions; plural-target wording first present in client 6762 and
+      unchanged in 6763.
