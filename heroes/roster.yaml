@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "snapshot_id": "deadlock-data-mixed-2026-10-07",
-  "current_as_of": "2026-10-07",
+  "snapshot_id": "deadlock-data-mixed-2026-10-09",
+  "current_as_of": "2026-10-09",
   "source": "github.deadlock-data.hero-data.fc4f540f12e0",
-  "source_scope_note": "Baba uses client 6763 (October 7); her client-6759 October 6 release snapshot remains historical. Sinclair and Rat King use client 6753; the other 37 heroes retain client 6694. The top-level client/source fields describe that older baseline, not every entry. Release dates are separate from configuration dates.",
+  "source_scope_note": "Solomon uses client 6774 (October 9) as a dated configuration snapshot; Valve's announcement establishes availability. Baba uses client 6763 (October 7), with her client-6759 October 6 release snapshot historical. Sinclair and Rat King use client 6753; the other 37 heroes retain client 6694. The top-level client/source fields describe that older baseline, not every entry. Release dates are separate from configuration dates.",
   "selection_rule": "Dated public release evidence plus selectable, non-disabled configuration. Development flags are retained, but an explicit official release can override a conflicting InDevelopment flag. IsSelectable alone does not establish release; transformed states are not separate roster heroes.",
-  "hero_count": 40,
+  "hero_count": 41,
   "heroes": [
     {
       "id": "hero.abrams",
@@ -172,6 +172,15 @@
       "internal_hero_key": "hero_magician",
       "hero_data_source": "github.deadlock-data.gameplay.edb16660368e",
       "balance_as_of": "2026-10-05"
+    },
+    {
+      "id": "hero.solomon",
+      "name": "Solomon",
+      "internal_hero_key": "hero_chessmaster",
+      "availability_as_of": "2026-10-09",
+      "hero_data_source": "github.deadlock-data.gameplay.330a775230e8",
+      "configuration_as_of": "2026-10-09",
+      "release_source": "steam.news.solomon-release.1846018067934643"
     },
     {
       "id": "hero.the-doorman",

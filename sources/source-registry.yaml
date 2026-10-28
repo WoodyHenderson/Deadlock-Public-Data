@@ -1707,3 +1707,63 @@ sources:
     sha256: 1d780f358a59a4fc60b238fc35f408b8226d06903e4132317fcd5c2651186734
     scope: Baba descriptions; plural-target wording first present in client 6762 and
       unchanged in 6763.
+  - id: github.deadlock-data.gameplay.18998ba13ff3
+    title: October 9 review — client 6769 first complete Solomon data
+    url: https://github.com/deadlock-wiki/deadlock-data/tree/18998ba13ff3e972e8ffdf4fffb8f3b41fb2c7b6/data/json
+    version_url: https://github.com/deadlock-wiki/deadlock-data/blob/18998ba13ff3e972e8ffdf4fffb8f3b41fb2c7b6/data/version.txt
+    commit: 18998ba13ff3e972e8ffdf4fffb8f3b41fb2c7b6
+    client_version: 6769
+    source_revision: 11111459
+    accessed_at: '2026-10-28'
+    scope: First complete Solomon candidate data. Its version-file time has no declared timezone and is not compared directly with the official UTC announcement or used as release-date evidence.
+    ability_cards_sha256: e7f12cc2b7ffabe7ae8dc6b159b846e3b970b84582203b235ca8b2283011046c
+    ability_data_sha256: a7067bd36f3d9ead5853c22bc9f56112300800348189c7c2c20c6f4dc9b04153
+    hero_data_sha256: f748cce08b62bc73e0a46a6ae7ddc0c2728aadd130781dcd50a4e38128d13c65
+    npc_data_sha256: 9980cd39ad92a2dcdae4bfe633bf9fcd0bd8afca8fd1a92ab38e1c3fd8f2f61a
+    english_sha256: 11d6ee86f47f5fb39654c2937e05419910a1c17e0c630b76b1c60f28de72ca17
+    version_file_sha256: 2055bc9c38bc0b575716c923e0b20f1581aeb63767b81b11cac9c47534fe0254
+  - id: github.deadlock-data.gameplay.3b96422dbf31
+    title: October 9 review — client 6773 intermediate Solomon data
+    url: https://github.com/deadlock-wiki/deadlock-data/tree/3b96422dbf316f41fef1f6a3f4c697289650f9cd/data/json
+    version_url: https://github.com/deadlock-wiki/deadlock-data/blob/3b96422dbf316f41fef1f6a3f4c697289650f9cd/data/version.txt
+    commit: 3b96422dbf316f41fef1f6a3f4c697289650f9cd
+    client_version: 6773
+    source_revision: 11112477
+    accessed_at: '2026-10-28'
+    scope: Reviewed Solomon hero, ability, card, NPC and English-description fields match the first complete client 6769 candidate and selected client 6774 configuration; generated data is not a runtime test.
+    ability_cards_sha256: e7f12cc2b7ffabe7ae8dc6b159b846e3b970b84582203b235ca8b2283011046c
+    ability_data_sha256: a7067bd36f3d9ead5853c22bc9f56112300800348189c7c2c20c6f4dc9b04153
+    hero_data_sha256: f748cce08b62bc73e0a46a6ae7ddc0c2728aadd130781dcd50a4e38128d13c65
+    npc_data_sha256: 9980cd39ad92a2dcdae4bfe633bf9fcd0bd8afca8fd1a92ab38e1c3fd8f2f61a
+    english_sha256: 6fb91f7e1ccce4b8cf130109e767eccef54e79e6516dde6e780ccd27618418b8
+    version_file_sha256: e891fb204b629d09775ce6f457bf96b3b36b8e56a02026a4d848670b12f3437e
+  - id: github.deadlock-data.gameplay.330a775230e8
+    title: October 9 Solomon release — client 6774 gameplay data
+    url: https://github.com/deadlock-wiki/deadlock-data/tree/330a775230e8f6b9dcea9e58260cabb433bd68b7/data/json
+    version_url: https://github.com/deadlock-wiki/deadlock-data/blob/330a775230e8f6b9dcea9e58260cabb433bd68b7/data/version.txt
+    commit: 330a775230e8f6b9dcea9e58260cabb433bd68b7
+    client_version: 6774
+    source_revision: 11112755
+    accessed_at: '2026-10-28'
+    scope: Selected client-6774 Solomon configuration snapshot for October 9. Its version-file time has no declared timezone; the official announcement establishes availability. Data matches the first complete candidate; configuration is not an independent runtime test.
+    ability_cards_sha256: e7f12cc2b7ffabe7ae8dc6b159b846e3b970b84582203b235ca8b2283011046c
+    ability_data_sha256: a7067bd36f3d9ead5853c22bc9f56112300800348189c7c2c20c6f4dc9b04153
+    hero_data_sha256: f748cce08b62bc73e0a46a6ae7ddc0c2728aadd130781dcd50a4e38128d13c65
+    npc_data_sha256: 9980cd39ad92a2dcdae4bfe633bf9fcd0bd8afca8fd1a92ab38e1c3fd8f2f61a
+    english_sha256: 6fb91f7e1ccce4b8cf130109e767eccef54e79e6516dde6e780ccd27618418b8
+    version_file_sha256: 074a6a44788be6a26dda393dbe1ea0dae1e12f905c8d9ea7452c2dfab74ddffb
+  - id: github.deadlock-data.english.330a775230e8
+    title: Client 6774 English localization
+    url: https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/330a775230e8f6b9dcea9e58260cabb433bd68b7/data/localizations/english.json
+    commit: 330a775230e8f6b9dcea9e58260cabb433bd68b7
+    sha256: 6fb91f7e1ccce4b8cf130109e767eccef54e79e6516dde6e780ccd27618418b8
+    scope: Solomon lore, weapon name, four ability descriptions/upgrades, and related English UI labels at client 6774.
+  - id: steam.news.solomon-release.1846018067934643
+    title: "Make Your Move. — official Solomon release"
+    url: https://store.steampowered.com/news/app/1422450/view/1846018067934643?l=english
+    news_gid: '1846018067934643'
+    published_at: '2026-10-09T21:00:04Z'
+    accessed_at: '2026-10-28'
+    contents_sha256: 8e4d7e43b815058173e7b619e72b5792de6a19dc7620730771e9ca4bbc6ae735
+    hash_scope: UTF-8 Steam news API contents field, not rendered page HTML.
+    scope: Official availability confirmation and four named abilities; not a complete mechanical specification.

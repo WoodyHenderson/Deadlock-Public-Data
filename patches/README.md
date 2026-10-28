@@ -5,13 +5,16 @@ domain: patches
 topics: [patches, history, balance, changelogs]
 aliases: [patch notes, patch history, changelogs, balance history]
 summary: Historical Deadlock patch changelogs for explicitly requested historical or change-tracking questions.
-snapshot_id: deadlock-patches-through-2026-10-07
-current_as_of: "2026-10-07"
+snapshot_id: deadlock-patches-through-2026-10-09
+current_as_of: "2026-10-09"
 evidence_status: source_verified
 sources:
   - github.deadlock-data.changelogs.raw.afc8e9c
   - github.deadlock-data.changelogs.raw.fc4f540f12e0
   - github.deadlock-data.changelog.2026-10-05.edb16660368e
+  - github.deadlock-data.gameplay.330a775230e8
+  - github.deadlock-data.english.330a775230e8
+  - steam.news.solomon-release.1846018067934643
 ---
 
 # Historical Patch Changelogs
@@ -39,7 +42,10 @@ preserves the client-6759 launch state in a separate
 through client 6763. The [October 7 source review](2026-10-07-review.md) records a
 same-client export representation correction and English wording clarification;
 it does not claim a confirmed hotfix or runtime change. No October 6 or October 7
-raw changelog is fabricated; the raw archive still contains 137 files.
+raw changelog is fabricated; the raw archive still contains 137 files. The
+[October 9 Solomon release](2026-10-09-solomon-release.md) uses the selected
+client-6774 configuration snapshot and preserves incomplete client-6763 data
+only as a pre-release comparison; no October 9 raw changelog is fabricated.
 
 The [October 4/5 summary](2026-10-05-balance.md) covers the separate Street Brawl
 removal and applied Sinclair/Rat King balance changes. [October 5 raw notes](raw/2026-10-05.txt)
