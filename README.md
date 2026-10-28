@@ -4,30 +4,11 @@ A manually maintained Deadlock knowledgebase. Start with the [keyword index](IND
 to find a hero, ability, item, or mechanic. Markdown explains behavior; adjacent
 YAML preserves structured fields, source precision and dated evidence.
 
-## Snapshot, not a live feed
+## Snapshots
 
-Records have different cutoff dates. The September 3 root baseline is not a
-claim that every record has been refreshed to the latest patch.
+Records will frequently have different dates, I may do sweeping updates where each record is updated to the most recent client version, however, in most instances the only time something will have its client version updated is when that specific record itself NEEDS updated, meaning if Apollo last received changes on September 10th his record will probably say that its from the September 10th snapshot. Doing this any other way would just take way too much time.
 
-- **Baba:** canonical data checked through October 7/client 6763; the October 6/client-6759 launch snapshot is preserved separately. The October 7 export/wording review is not a claim of a gameplay hotfix. October 8 wiki interactions remain labeled as later context.
-- **Solomon:** Valve confirms availability on October 9. The canonical record and release snapshot use client 6774 as the selected same-date configuration; no October 9 raw changelog is asserted.
-- **Sinclair and Rat King:** October 5/client 6753, including the balance changes
-  and separately labeled patch-note-only behavior. Rat King's October 2 launch
-  is preserved as a [historical snapshot](patches/snapshots/rat-king-2026-10-02.yaml).
-- **Other 37 baseline heroes and 173 items:** retain their client-6694 September 16 pins.
-- **City Never Sleeps map mechanics:** scoped pre-release research through
-  October 1, with separately dated wiki descriptions and explicit uncertainties.
-- **Corrupted items:** the Broker toggle is dated October 2; the October 4
-  Street Brawl removal is recorded separately. The client-6726 variant sidecar
-  describes historical configuration, not current mode eligibility.
-- **Map coordinates:** the separate October 6 snapshot is unchanged. Markers
-  represent potential locations, not live availability or walking routes.
-
-See the [Baba release](patches/2026-10-06-baba-release.md),
-[October 7 source review](patches/2026-10-07-review.md),
-[Solomon release](patches/2026-10-09-solomon-release.md),
-[October 4/5 changes](patches/2026-10-05-balance.md), and
-[limitations](LIMITATIONS.md) for exact scope and unresolved behavior.
+TLDR: If the most recent patches have been included in the repo, even if most records say they're from previous patches it probably just means they don't need changes.
 
 ## Find information
 
