@@ -1,0 +1,2116 @@
+{
+  "schema_version": 2,
+  "id": "hero.solomon",
+  "snapshot_id": "deadlock-data-client-6774",
+  "client_version": 6774,
+  "server_version": 6774,
+  "source_revision": 11112755,
+  "current_as_of": "2026-10-09",
+  "evidence_status": "source_verified_with_official_release_confirmation",
+  "sources": {
+    "hero_data": "github.deadlock-data.gameplay.330a775230e8",
+    "ability_data": "github.deadlock-data.gameplay.330a775230e8",
+    "ability_cards": "github.deadlock-data.gameplay.330a775230e8",
+    "ability_localization": "github.deadlock-data.english.330a775230e8",
+    "support_npc_data": "github.deadlock-data.gameplay.330a775230e8",
+    "pre_release_comparison": "github.deadlock-data.gameplay.8f2589cb4e64",
+    "first_complete_candidate": "github.deadlock-data.gameplay.18998ba13ff3",
+    "intermediate_client_review": "github.deadlock-data.gameplay.3b96422dbf31",
+    "release_announcement": "steam.news.solomon-release.1846018067934643"
+  },
+  "name": "Solomon",
+  "aliases": [],
+  "internal_hero_key": "hero_chessmaster",
+  "hero_type": "Mystic",
+  "role_localization_key": "hero_chessmaster_role",
+  "playstyle_localization_key": "hero_chessmaster_playstyle",
+  "localized_fields": {
+    "lore": "In a world that moves too fast, Solomon is content to stop and listen. Offering a friendly ear and good counsel, Solomon has found himself sitting across the chess table from tourists, criminals, and titans of industry.  But no matter his opponent, Solomon remains un-phased… because to him, chess is so much more than a game.  It's an equalizer.  A way for him to connect to people from all walks of life on an even playing field.",
+    "weapon_name": "Alekhine's Gun"
+  },
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": false,
+    "in_hero_labs": false,
+    "released_date": "2026-10-09",
+    "release_confirmed_by_official_announcement": true,
+    "note": "Client 6763 marked Solomon selectable but had no bound abilities and a provisional weapon/configuration. Valve's October 9 announcement establishes public availability; the earlier selectable flag alone does not."
+  },
+  "base_stats": {
+    "maximum_health": 780.0,
+    "health_regeneration_per_second": 2.0,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.7,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 3.25,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 13.9,
+      "distance_meters": 10.0,
+      "duration_seconds": 0.72
+    },
+    "air_dash": {
+      "speed_meters_per_second": 15.7,
+      "distance_meters": 8.0,
+      "duration_seconds": 0.51
+    },
+    "stamina": {
+      "charges": 2,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": 0.0,
+    "critical_damage_received_percent": 0.0,
+    "bullet_lifesteal_effectiveness": 1.0,
+    "spirit_lifesteal_effectiveness": 1.0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.4,
+    "MaxHealth": 40.0,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.58,
+    "HeavyMeleeDamage": 3.6656,
+    "DPS": 0.8,
+    "SustainedDPS": 0.45714
+  },
+  "spirit_scaling": {
+    "BulletDamage": 0.14,
+    "DPS": 0.28,
+    "SustainedDPS": 0.16
+  },
+  "weapon": {
+    "BulletSpeed": 355.6,
+    "BulletDamage": 30.0,
+    "RoundsPerSecond": 2.0,
+    "ClipSize": 8,
+    "ReloadTime": 3.0,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 45.72,
+    "FalloffStartScale": 1.0,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.0,
+    "BulletRadius": 0.2032,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0.075,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": true,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "ExplosionRadius": 1.016,
+    "ExplosionDamageScaleAtMaxRadius": 1.0,
+    "DPS": 60.0,
+    "SustainedDPS": 34.286,
+    "NameKey": "citadel_weapon_chessmaster_set",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_RapidFire",
+      "Attribute_EWeaponAttribute_LongRange"
+    ]
+  },
+  "generated_source_snapshot": {
+    "client_version": 6774,
+    "source_revision": 11112755,
+    "source": "github.deadlock-data.gameplay.330a775230e8",
+    "hero_data": {
+      "AbilityResourceMax": 0,
+      "AbilityResourceRegenPerSecond": 0,
+      "AirDashDistanceInMeters": 8.0,
+      "AirDashDuration": 0.51,
+      "AirDashSpeed": 15.7,
+      "BaseHealthRegen": 2.0,
+      "BaseWeaponDamageIncrease": 0,
+      "BoundAbilities": {
+        "1": {
+          "Name": "Setup Bishop",
+          "Key": "ability_chessmaster_throwbishop"
+        },
+        "2": {
+          "Name": "Kingside Knight",
+          "Key": "ability_chessmaster_knightbuff"
+        },
+        "3": {
+          "Name": "Rook Battery",
+          "Key": "ability_chessmaster_forkpiece"
+        },
+        "4": {
+          "Name": "Develop Queen",
+          "Key": "ability_chessmaster_queen"
+        }
+      },
+      "CritDamageBonusPercent": 0.0,
+      "CritDamageReceivedPercent": 0.0,
+      "CrouchSpeed": 4.75,
+      "GravityChange": -25.0,
+      "GroundDashDistanceInMeters": 10.0,
+      "GroundDashDuration": 0.72,
+      "GroundDashSpeed": 13.9,
+      "HeavyMeleeDamage": 116,
+      "HeroBulletLifestealEffectiveness": 1.0,
+      "HeroSpiritLifestealEffectiveness": 1.0,
+      "InDevelopment": false,
+      "InHeroLabs": false,
+      "IsDisabled": false,
+      "IsRecommended": false,
+      "IsSelectable": true,
+      "LevelScaling": {
+        "BulletDamage": 0.4,
+        "MaxHealth": 40.0,
+        "PowerIncreases": 1,
+        "TechPower": 1.1,
+        "LightMeleeDamage": 1.58,
+        "HeavyMeleeDamage": 3.6656,
+        "DPS": 0.8,
+        "SustainedDPS": 0.45714
+      },
+      "LightMeleeDamage": 50,
+      "Lore": "hero_chessmaster_lore",
+      "MaxHealth": 780.0,
+      "MaxMoveSpeed": 6.7,
+      "MoveAcceleration": 4,
+      "Name": "Solomon",
+      "OOCHealthRegen": 0,
+      "Playstyle": "hero_chessmaster_playstyle",
+      "ProcBuildUpRateScale": 1,
+      "ReloadSpeed": 0,
+      "Role": "hero_chessmaster_role",
+      "SpiritScaling": {
+        "BulletDamage": 0.14,
+        "DPS": 0.28,
+        "SustainedDPS": 0.16
+      },
+      "SprintSpeed": 3.25,
+      "Stamina": 2,
+      "StaminaCooldown": 4.5000045000045,
+      "StaminaRegenPerSecond": 0.222222,
+      "TechDuration": 0,
+      "TechRange": 0,
+      "Type": "Mystic",
+      "Weapon": {
+        "BulletSpeed": 355.6,
+        "BulletDamage": 30.0,
+        "RoundsPerSecond": 2.0,
+        "ClipSize": 8,
+        "ReloadTime": 3.0,
+        "ReloadMovespeed": 1.0,
+        "ReloadDelay": 0.0,
+        "ReloadSingle": false,
+        "FalloffStartRange": 19.99,
+        "FalloffEndRange": 45.72,
+        "FalloffStartScale": 1.0,
+        "FalloffEndScale": 0.1,
+        "FalloffBias": 0.5,
+        "BulletGravityScale": 0.0,
+        "BulletRadius": 0.2032,
+        "BulletsPerShot": 1,
+        "BulletsPerBurst": 1,
+        "BurstInterShotInterval": 0.075,
+        "ShootMoveSpeed": 0.75,
+        "HitOnceAcrossAllBullets": true,
+        "CanCrit": true,
+        "AmmoConsumedPerShot": 1,
+        "ExplosionRadius": 1.016,
+        "ExplosionDamageScaleAtMaxRadius": 1.0,
+        "DPS": 60.0,
+        "SustainedDPS": 34.286,
+        "NameKey": "citadel_weapon_chessmaster_set",
+        "WeaponTypes": [
+          "Attribute_EWeaponAttribute_RapidFire",
+          "Attribute_EWeaponAttribute_LongRange"
+        ]
+      },
+      "WeaponPowerScale": 1
+    }
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Setup Bishop",
+      "internal_key": "ability_chessmaster_throwbishop",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCastRange": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "AuraHeight": 50,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BishopTimemBetweenShots": 0.05,
+        "BlackPieceModifier": {
+          "Class": "Base",
+          "Subclass": "Black",
+          "EnabledStateMask": [
+            "ChessmasterBlackpiece"
+          ]
+        },
+        "BossDamageScale": 0.5,
+        "BulletResist": 25,
+        "ChannelMoveSpeed": -1,
+        "CurrentCooldownRefundPercent": 50,
+        "DPS": {
+          "Value": 30,
+          "Scale": {
+            "Value": 0.7,
+            "Type": "spirit"
+          }
+        },
+        "DPSTickInterval": 0.25,
+        "Damage": {
+          "Value": 25,
+          "Scale": {
+            "Value": 0.64,
+            "Type": "spirit"
+          }
+        },
+        "DashSlowPercent": -25,
+        "EnemyAuraModifier": {
+          "Class": "ChessmasterDamageaura",
+          "Subclass": "Aura",
+          "ProvidedByAura": {
+            "Class": "Base",
+            "Subclass": "Slow"
+          },
+          "PulseDelay": 0.5,
+          "TargetModifier": {
+            "Class": "Base",
+            "Subclass": "Target",
+            "EnabledStateMask": [
+              "ChessmasterBishopTarget"
+            ]
+          }
+        },
+        "ExpireDistance": 80,
+        "FadingSlowPercent": 30,
+        "GroundAuraHeight": 4,
+        "ImpactDamage": {
+          "Value": 70,
+          "Scale": {
+            "Value": 2.0,
+            "Type": "spirit"
+          }
+        },
+        "ImpactRadius": 2.5,
+        "IsDisabled": false,
+        "Key": "ability_chessmaster_throwbishop",
+        "MaxPieces": 1,
+        "MoveBuffModifier": {
+          "Class": "ChessmasterMovingpiecedamage",
+          "Subclass": "Movingpiecedamage",
+          "GroundAuraModifier": {
+            "Class": "ChessmasterGroundtile",
+            "Subclass": "Groundaura",
+            "ProvidedByAura": {
+              "Class": "Base",
+              "Subclass": "Target",
+              "EnabledStateMask": [
+                "ChessmasterBishopTarget"
+              ]
+            },
+            "SlowModifier": {
+              "Class": "DiminishingSlow",
+              "Subclass": "Dimslow",
+              "EnabledStateMask": [
+                "Slowed",
+                "ChessmasterBishopTarget"
+              ]
+            },
+            "ActivationDelay": -1.0
+          }
+        },
+        "MoveCooldown": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "MoveDistance": {
+          "Value": 12,
+          "Scale": [
+            {
+              "Value": 0.23,
+              "Type": "power_increase"
+            },
+            {
+              "Value": 1,
+              "Type": "range"
+            }
+          ]
+        },
+        "MultiHitPenaltyPercentage": 25,
+        "Name": "Setup Bishop",
+        "PulseDamage": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0.8,
+            "Type": "spirit"
+          }
+        },
+        "Radius": 3.5,
+        "SlowDuration": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1.0,
+            "Type": "duration"
+          }
+        },
+        "SlowModifier": {
+          "Class": "DiminishingSlow",
+          "Subclass": "Slow"
+        },
+        "StackDuration": {
+          "Value": 0,
+          "Scale": {
+            "Value": 1.0,
+            "Type": "duration"
+          }
+        },
+        "StackingModifier": {
+          "Class": "ChessmasterStackingspiritresistreduction",
+          "Subclass": "Stack"
+        },
+        "SummonModifier": {
+          "Class": "Base",
+          "Subclass": "Base",
+          "EnabledStateMask": [
+            "GlowThroughWallsToProvider"
+          ]
+        },
+        "TechResist": 50,
+        "TickInterval": 0.15,
+        "TileSteps": 2,
+        "Upgrades": [
+          {
+            "MoveDistance": 5,
+            "FadingSlowPercent": 15
+          },
+          {
+            "MaxPieces": 1,
+            "RecastWindow": 8
+          },
+          {
+            "TechArmorDamageReductionPerStack": -2.5,
+            "MaxStacks": 10,
+            "StackDuration": 10,
+            "TileSteps": 1
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_chessmaster_throwbishop",
+        "Name": "Setup Bishop",
+        "DescKey": "ability_chessmaster_throwbishop_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "FadingSlowPercent",
+                "Name": "Fading Move Speed",
+                "Value": 30,
+                "Type": "slow"
+              },
+              {
+                "Key": "ImpactDamage",
+                "Name": "Impact Damage",
+                "Value": 70,
+                "Scale": {
+                  "Value": 2.0,
+                  "Type": "spirit"
+                }
+              },
+              {
+                "Title": "On Square:",
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 25,
+                "Scale": {
+                  "Value": 0.64,
+                  "Type": "spirit"
+                }
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "TileSteps",
+              "Name": "Square Range",
+              "Value": 2
+            },
+            {
+              "Key": "MoveDistance",
+              "Name": "Move Distance",
+              "Value": 12,
+              "Scale": [
+                {
+                  "Value": 0.23,
+                  "Type": "power_increase"
+                },
+                {
+                  "Value": 1,
+                  "Type": "range"
+                }
+              ]
+            },
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 3,
+              "Scale": {
+                "Value": 1.0,
+                "Type": "duration"
+              },
+              "Type": "slow"
+            },
+            {
+              "Key": "MoveCooldown",
+              "Name": "Move Cooldown",
+              "Value": 3,
+              "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+              }
+            },
+            {
+              "Key": "TechArmorDamageReductionPerStack",
+              "Name": "Spirit Resistance per Stack",
+              "Value": 0
+            },
+            {
+              "Key": "StackDuration",
+              "Name": "Stack Duration",
+              "Value": 0,
+              "Scale": {
+                "Value": 1.0,
+                "Type": "duration"
+              }
+            },
+            {
+              "Key": "MaxStacks",
+              "Name": "Max Stacks",
+              "Value": 0
+            }
+          ],
+          "DescKey": "ability_chessmaster_throwbishop_desc"
+        },
+        "Upgrades": [
+          {
+            "MoveDistance": 5,
+            "FadingSlowPercent": 15,
+            "DescKey": "ability_chessmaster_throwbishop_t1_desc"
+          },
+          {
+            "MaxPieces": 1,
+            "RecastWindow": 8,
+            "DescKey": "ability_chessmaster_throwbishop_t2_desc"
+          },
+          {
+            "TechArmorDamageReductionPerStack": -2.5,
+            "MaxStacks": 10,
+            "StackDuration": 10,
+            "TileSteps": 1,
+            "DescKey": "ability_chessmaster_throwbishop_t3_desc"
+          }
+        ],
+        "Range": {
+          "ExpireDistance": {
+            "Name": "Recall Distance",
+            "Value": 80,
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AuraHeight": {
+            "Name": null,
+            "Value": 50
+          },
+          "BishopTimemBetweenShots": {
+            "Name": null,
+            "Value": 0.05
+          },
+          "BulletResist": {
+            "Name": "Bullet Resist",
+            "Value": 25
+          },
+          "CurrentCooldownRefundPercent": {
+            "Name": null,
+            "Value": 50
+          },
+          "DPS": {
+            "Name": "Damage Per Second",
+            "Value": 30,
+            "Scale": {
+              "Value": 0.7,
+              "Type": "spirit"
+            }
+          },
+          "DPSTickInterval": {
+            "Name": null,
+            "Value": 0.25
+          },
+          "DashSlowPercent": {
+            "Name": null,
+            "Value": -25
+          },
+          "GroundAuraHeight": {
+            "Name": null,
+            "Value": 4
+          },
+          "ImpactRadius": {
+            "Name": "Impact Radius",
+            "Value": 2.5
+          },
+          "MaxPieces": {
+            "Name": "Max Deployed Pieces",
+            "Value": 1
+          },
+          "MultiHitPenaltyPercentage": {
+            "Name": null,
+            "Value": 25
+          },
+          "PulseDamage": {
+            "Name": "Pulse Damage",
+            "Value": 0,
+            "Scale": {
+              "Value": 0.8,
+              "Type": "spirit"
+            }
+          },
+          "TechResist": {
+            "Name": "Spirit Resist",
+            "Value": 50
+          },
+          "TickInterval": {
+            "Name": "Time Between Hits",
+            "Value": 0.15
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.2,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 12,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1.0,
+          "Type": "charge_cooldown"
+        },
+        "Radius": {
+          "Name": "Radius",
+          "Value": 3.5
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_chessmaster_throwbishop_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.330a775230e8",
+          "raw_text": "Create a <span class=\"highlight\">bishop</span> that remains in place indefinitely. <br><br><span class=\"diminish\">Move ({g:citadel_binding:'ADS'}):</span> Moves the bishop, applying a fading {g:citadel_inline_attribute:'Slow'} and dealing {g:citadel_inline_attribute:'SpiritDamage'} to enemies it passes through. After a delay, activates diagonal squares that deal additional {g:citadel_inline_attribute:'SpiritDamage'} when stepped on.<br><br><span class=\"diminish\">Re-activate to recall all bishops, ending the ability.</span>",
+          "plain_text": "Create a bishop that remains in place indefinitely.\nMove ( [ADS] ): Moves the bishop, applying a fading slow and dealing spirit damage to enemies it passes through. After a delay, activates diagonal squares that deal additional spirit damage when stepped on.\nRe-activate to recall all bishops, ending the ability."
+        },
+        {
+          "localization_key": "ability_chessmaster_throwbishop_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.330a775230e8",
+          "raw_text": "+5m Move Distance<br>+15% Fading Slow",
+          "plain_text": "+5m Move Distance\n+15% Fading Slow"
+        },
+        {
+          "localization_key": "ability_chessmaster_throwbishop_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.330a775230e8",
+          "raw_text": "<span class=\"highlight\">+1</span> Max Pieces<br>Can Recast within 8s",
+          "plain_text": "+1 Max Pieces\nCan Recast within 8s"
+        },
+        {
+          "localization_key": "ability_chessmaster_throwbishop_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.330a775230e8",
+          "raw_text": "+1 Square Range<br>Squares reduce Spirit Resist by -2.5%, stacking 10 times",
+          "plain_text": "+1 Square Range\nSquares reduce Spirit Resist by -2.5%, stacking 10 times"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Kingside Knight",
+      "internal_key": "ability_chessmaster_knightbuff",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 28,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityPostCastDuration": 0.15,
+        "AbilityUnitTargetLimit": 1,
+        "AuraModifier": {
+          "Subclass": "Aura"
+        },
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorProjectilePassThroughWorld",
+          "BehaviorAllowSelfCast",
+          "BehaviorUseInstantCastUnitTargetUi",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BonusMoveSpeed": null,
+        "BuffDuration": {
+          "Value": 7,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "BuffModifier": {
+          "Class": "ChessmasterBuffallyBuff",
+          "Subclass": "Rookbuff",
+          "EnabledStateMask": [
+            "ChessmasterBuffally",
+            "ChessmasterPiece"
+          ]
+        },
+        "ChannelMoveSpeed": -1,
+        "CombatBarrier": {
+          "Value": 80,
+          "Scale": {
+            "Value": 0.8,
+            "Type": "spirit"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_chessmaster_knightbuff",
+        "MaxPieces": 1,
+        "MoveBuffModifier": {
+          "Class": "Base",
+          "Subclass": "Buff"
+        },
+        "MoveCooldown": 10,
+        "MoveDistance": {
+          "Value": 13,
+          "Scale": [
+            {
+              "Value": 0.23,
+              "Type": "power_increase"
+            },
+            {
+              "Value": 1,
+              "Type": "range"
+            }
+          ]
+        },
+        "Name": "Kingside Knight",
+        "SelfMoveDistance": {
+          "Value": 7,
+          "Scale": [
+            {
+              "Value": 0.14,
+              "Type": "power_increase"
+            },
+            {
+              "Value": 1,
+              "Type": "range"
+            }
+          ]
+        },
+        "SlowModifier": {
+          "Class": "DiminishingSlow",
+          "Subclass": "Dimslow"
+        },
+        "Stamina": 1,
+        "TargetingConeAngle": 30,
+        "TechResist": {
+          "Value": null,
+          "Scale": {
+            "Value": 0.5,
+            "Type": "power_increase"
+          }
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -8
+          },
+          {
+            "Stamina": 1,
+            "CombatBarrier": 80
+          },
+          {
+            "MaxPieces": 1,
+            "BonusTargetRadius": 20,
+            "RemoveDebuffs": 1
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_chessmaster_knightbuff",
+        "Name": "Kingside Knight",
+        "DescKey": "ability_chessmaster_knightbuff_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "CombatBarrier",
+                "Name": "Barrier",
+                "Value": 80,
+                "Scale": {
+                  "Value": 0.8,
+                  "Type": "spirit"
+                }
+              },
+              {
+                "Key": "SlowResistancePercent",
+                "Name": "Slow Resist",
+                "Value": 0,
+                "Type": "move_speed"
+              },
+              {
+                "Key": "Stamina",
+                "Name": "Stamina",
+                "Value": 1
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "SelfMoveDistance",
+              "Name": "King Move Distance",
+              "Value": 7,
+              "Scale": [
+                {
+                  "Value": 0.14,
+                  "Type": "power_increase"
+                },
+                {
+                  "Value": 1,
+                  "Type": "range"
+                }
+              ]
+            },
+            {
+              "Key": "MoveDistance",
+              "Name": "Move Distance",
+              "Value": 13,
+              "Scale": [
+                {
+                  "Value": 0.23,
+                  "Type": "power_increase"
+                },
+                {
+                  "Value": 1,
+                  "Type": "range"
+                }
+              ]
+            },
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 0
+            },
+            {
+              "Key": "SlowPercent",
+              "Name": "Move Speed",
+              "Value": 0
+            },
+            {
+              "Key": "BuffDuration",
+              "Name": "Buff Duration",
+              "Value": 7,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              }
+            }
+          ],
+          "DescKey": "ability_chessmaster_knightbuff_desc"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -8
+          },
+          {
+            "Stamina": 1,
+            "CombatBarrier": 80,
+            "DescKey": "ability_chessmaster_knightbuff_t2_desc"
+          },
+          {
+            "MaxPieces": 1,
+            "BonusTargetRadius": 20,
+            "RemoveDebuffs": 1,
+            "DescKey": "ability_chessmaster_knightbuff_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Buff": {
+          "TechResist": {
+            "Name": "Spirit Resist",
+            "Value": null,
+            "Scale": {
+              "Value": 0.5,
+              "Type": "power_increase"
+            },
+            "Type": "tech_armor_up"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.15
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "BonusMoveSpeed": {
+            "Name": "Move Speed",
+            "Value": null
+          },
+          "MaxPieces": {
+            "Name": "Max Deployed Pieces",
+            "Value": 1
+          },
+          "MoveCooldown": {
+            "Name": "Move Cooldown",
+            "Value": 10
+          },
+          "TargetingConeAngle": {
+            "Name": "Attack Angle",
+            "Value": 30
+          }
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 28,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1.0,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_chessmaster_knightbuff_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.330a775230e8",
+          "raw_text": "Promote an ally to be a <span class=\"highlight\">knight</span>, granting <span class=\"highlight\">bonus stamina</span> and {g:citadel_inline_attribute:'CombatBarrier'} for a duration.<br><br>If self-cast you develop yourself as <span class=\"highlight\">king</span> instead, granting double the {g:citadel_inline_attribute:'CombatBarrier'} but no stamina. <br><br><span class=\"diminish\">Move ({g:citadel_binding:'ADS'}):</span> Moves the piece, making it <span class=\"highlight\">invulnerable</span> during the duration before landing.",
+          "plain_text": "Promote an ally to be a knight, granting bonus stamina and barrier for a duration.\nIf self-cast you develop yourself as king instead, granting double the barrier but no stamina.\nMove ( [ADS] ): Moves the piece, making it invulnerable during the duration before landing."
+        },
+        {
+          "localization_key": "ability_chessmaster_knightbuff_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.330a775230e8",
+          "raw_text": "+80 Barrier<br>+1 Stamina",
+          "plain_text": "+80 Barrier\n+1 Stamina"
+        },
+        {
+          "localization_key": "ability_chessmaster_knightbuff_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.330a775230e8",
+          "raw_text": "Can target two allies within radius.<br>On Self: <span class=\"highlight\">Remove all debuffs</span> after a move",
+          "plain_text": "Can target two allies within radius.\nOn Self: Remove all debuffs after a move"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Rook Battery",
+      "internal_key": "ability_chessmaster_forkpiece",
+      "data": {
+        "AbilityCastDelay": 0.25,
+        "AbilityCooldown": {
+          "Value": 33,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "AirDrag": 0.3,
+        "AirSpeedMax": 100,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BonusMoveSpeedPercent": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0.1,
+            "Type": "spirit"
+          }
+        },
+        "BuffModifier": {
+          "Class": "Base",
+          "Subclass": "Buff"
+        },
+        "ChannelMoveSpeed": -1,
+        "CombatBarrier": 100,
+        "Damage": {
+          "Value": 50,
+          "Scale": {
+            "Value": 1.3,
+            "Type": "spirit"
+          }
+        },
+        "DebuffModifier": {
+          "Class": "Base",
+          "Subclass": "Debuff"
+        },
+        "DetonationDelay": 0.25,
+        "FallSpeedMax": 10,
+        "GroundAuraHeight": 2,
+        "GroundAuraLingerDuration": 0.5,
+        "GroundAuraRadius": {
+          "Value": 0,
+          "Scale": {
+            "Value": 1.0,
+            "Type": "range"
+          }
+        },
+        "GroundAuraSpacing": {
+          "Value": 3,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "HexModifier": {
+          "Class": "CitadelRoot",
+          "Subclass": "Hex",
+          "ModelScale": 0.9,
+          "EnabledStateMask": [
+            "ChessmasterBishopTarget"
+          ]
+        },
+        "ImmobilizeDuration": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "ImmunityModifier": {
+          "Class": "Base",
+          "Subclass": "Immune",
+          "EnabledStateMask": [
+            "ChessmasterRookImmune"
+          ]
+        },
+        "IsDisabled": false,
+        "Key": "ability_chessmaster_forkpiece",
+        "MaxReflectCount": 1,
+        "MaxTriggers": 1,
+        "MoveDistance": {
+          "Value": 12,
+          "Scale": [
+            {
+              "Value": 0.23,
+              "Type": "power_increase"
+            },
+            {
+              "Value": 1,
+              "Type": "range"
+            }
+          ]
+        },
+        "Name": "Rook Battery",
+        "SlideScale": 100,
+        "SlowModifier": {
+          "Class": "SlowBase",
+          "Subclass": "Slow"
+        },
+        "SummonHealth": 100,
+        "TossBackSpeed": 300,
+        "TossDuration": 1,
+        "TossUpSpeed": 220,
+        "Upgrades": [
+          {
+            "FireRateSlow": 25,
+            "DebuffDuration": 5
+          },
+          {
+            "CurrentHealthPercent": 5
+          },
+          {
+            "AbilityCooldown": -12,
+            "ImmobilizeDuration": 0.5,
+            "MaxReflectCount": 1
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_chessmaster_forkpiece",
+        "Name": "Rook Battery",
+        "DescKey": "ability_chessmaster_forkpiece_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 50,
+                "Scale": {
+                  "Value": 1.3,
+                  "Type": "spirit"
+                }
+              },
+              {
+                "Key": "CurrentHealthPercent",
+                "Name": "Current Health",
+                "Value": 0
+              },
+              {
+                "Title": "On Enemy Hit:",
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 0,
+                "Type": "slow"
+              },
+              {
+                "Title": "On Enemy Hit:",
+                "Key": "ImmobilizeDuration",
+                "Name": "Immobilize Duration",
+                "StatusEffect": "Immobilize",
+                "Value": 1,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "DebuffDuration",
+              "Name": "Debuff Duration",
+              "Value": 0
+            },
+            {
+              "Key": "BonusFireRate",
+              "Name": "Fire Rate",
+              "Value": 0
+            },
+            {
+              "Key": "FireRateSlow",
+              "Name": "Fire Rate",
+              "Value": 0
+            },
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 0
+            },
+            {
+              "Key": "MaxReflectCount",
+              "Name": "Wall Reflects",
+              "Value": 1
+            }
+          ],
+          "DescKey": "ability_chessmaster_forkpiece_desc"
+        },
+        "Upgrades": [
+          {
+            "FireRateSlow": 25,
+            "DebuffDuration": 5,
+            "DescKey": "ability_chessmaster_forkpiece_t1_desc"
+          },
+          {
+            "CurrentHealthPercent": 5,
+            "DescKey": "ability_chessmaster_forkpiece_t2_desc"
+          },
+          {
+            "AbilityCooldown": -12,
+            "ImmobilizeDuration": 0.5,
+            "MaxReflectCount": 1,
+            "DescKey": "ability_chessmaster_forkpiece_t3_desc"
+          }
+        ],
+        "Move": {
+          "BonusMoveSpeedPercent": {
+            "Name": "Move Speed",
+            "Value": 0,
+            "Scale": {
+              "Value": 0.1,
+              "Type": "spirit"
+            },
+            "Type": "move_speed"
+          },
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AirDrag": {
+            "Name": null,
+            "Value": 0.3
+          },
+          "AirSpeedMax": {
+            "Name": null,
+            "Value": 100
+          },
+          "CombatBarrier": {
+            "Name": "Barrier",
+            "Value": 100
+          },
+          "DetonationDelay": {
+            "Name": null,
+            "Value": 0.25
+          },
+          "FallSpeedMax": {
+            "Name": null,
+            "Value": 10
+          },
+          "GroundAuraHeight": {
+            "Name": null,
+            "Value": 2
+          },
+          "GroundAuraLingerDuration": {
+            "Name": "Aura Linger Duration",
+            "Value": 0.5
+          },
+          "GroundAuraRadius": {
+            "Name": null,
+            "Value": 0,
+            "Scale": {
+              "Value": 1.0,
+              "Type": "range"
+            }
+          },
+          "GroundAuraSpacing": {
+            "Name": null,
+            "Value": 3,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            }
+          },
+          "MaxTriggers": {
+            "Name": null,
+            "Value": 1
+          },
+          "MoveDistance": {
+            "Name": "Move Distance",
+            "Value": 12,
+            "Scale": [
+              {
+                "Value": 0.23,
+                "Type": "power_increase"
+              },
+              {
+                "Value": 1,
+                "Type": "range"
+              }
+            ]
+          },
+          "SlideScale": {
+            "Name": "Slide Distance",
+            "Value": 100
+          },
+          "SummonHealth": {
+            "Name": "Summon Health",
+            "Value": 100
+          },
+          "TossBackSpeed": {
+            "Name": null,
+            "Value": 300
+          },
+          "TossDuration": {
+            "Name": null,
+            "Value": 1
+          },
+          "TossUpSpeed": {
+            "Name": null,
+            "Value": 220
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.25,
+          "Type": "cast"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 33,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1.0,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_chessmaster_forkpiece_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.330a775230e8",
+          "raw_text": "Release a pair of <span class=\"highlight\">rooks</span> that travel forward, dealing {g:citadel_inline_attribute:'SpiritDamage'} and applying {g:citadel_inline_attribute:'Immobilize'}. If the rooks hit a wall, they reflect back in the opposite direction. <br><br><span class=\"diminish\">Re-Activate</span>: Split the rooks perpendicularly.</span>",
+          "plain_text": "Release a pair of rooks that travel forward, dealing spirit damage and applying immobilize. If the rooks hit a wall, they reflect back in the opposite direction.\nRe-Activate: Split the rooks perpendicularly."
+        },
+        {
+          "localization_key": "ability_chessmaster_forkpiece_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.330a775230e8",
+          "raw_text": "On Hit: Reduce 25% Fire Rate for 5s",
+          "plain_text": "On Hit: Reduce 25% Fire Rate for 5s"
+        },
+        {
+          "localization_key": "ability_chessmaster_forkpiece_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.330a775230e8",
+          "raw_text": "On Hit: 5% Current Health as Damage",
+          "plain_text": "On Hit: 5% Current Health as Damage"
+        },
+        {
+          "localization_key": "ability_chessmaster_forkpiece_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.330a775230e8",
+          "raw_text": "+1 Wall Reflects<br>-12s Cooldown<br>+0.5s Immobilize Duration",
+          "plain_text": "+1 Wall Reflects\n-12s Cooldown\n+0.5s Immobilize Duration"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Develop Queen",
+      "internal_key": "ability_chessmaster_queen",
+      "data": {
+        "AbilityCastDelay": 0.75,
+        "AbilityCastRange": {
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 210,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "AuraHeight": 8,
+        "AuraLingerDuration": 0.15,
+        "BehaviourBits": [
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorTargetThroughWalls",
+          "BehaviorCanSetQuickCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "CheckmateThreshold": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0.0,
+            "Type": "power_increase"
+          }
+        },
+        "DPS": {
+          "Value": 50,
+          "Scale": {
+            "Value": 0.7,
+            "Type": "spirit"
+          }
+        },
+        "DPSTickInterval": 0.5,
+        "Damage": {
+          "Value": 120,
+          "Scale": {
+            "Value": 1.4,
+            "Type": "spirit"
+          }
+        },
+        "ExpireDistance": 80,
+        "GroundAuraHeight": 1,
+        "Height": 10,
+        "IsDisabled": false,
+        "Key": "ability_chessmaster_queen",
+        "LiftHeight": 4,
+        "LiftModifier": {
+          "Class": "ChessmasterQueenHoldinplace",
+          "Subclass": "Lift",
+          "DampingFactor": 0.25,
+          "ParallelTossSpeed": 0.0,
+          "UpTossSpeed": 0.0,
+          "SlamAcc": 5000.0,
+          "SlamMaxSpeed": 20000.0,
+          "RiseHeight": 180.0
+        },
+        "MaxPieces": 1,
+        "MaxStacks": 3,
+        "MoveCooldown": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "MoveDistance": {
+          "Value": 16,
+          "Scale": [
+            {
+              "Value": 0.23,
+              "Type": "power_increase"
+            },
+            {
+              "Value": 1,
+              "Type": "range"
+            }
+          ]
+        },
+        "Name": "Develop Queen",
+        "QueenBonusMoves": 2,
+        "SlowDuration": {
+          "Value": 1.5,
+          "Scale": {
+            "Value": 1.0,
+            "Type": "duration"
+          }
+        },
+        "SlowModifier": {
+          "Class": "SlowBase",
+          "Subclass": "Slow"
+        },
+        "SlowPercent": 15,
+        "StunDuration": {
+          "Value": 1.25,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "TileModifier": {
+          "Class": "ChessmasterGroundtile",
+          "Subclass": "Tile",
+          "ActivationDelay": 0.0
+        },
+        "TileSteps": 3,
+        "TossUpSpeed": 600,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -40
+          },
+          {
+            "CheckmateThreshold": {
+              "Value": 200,
+              "Scale": {
+                "Value": 5,
+                "Type": "power_increase"
+              }
+            },
+            "SlowPercent": 15
+          },
+          {
+            "TileSteps": 1,
+            "QueenBonusMoves": 2
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_chessmaster_queen",
+        "Name": "Develop Queen",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 120,
+                "Scale": {
+                  "Value": 1.4,
+                  "Type": "spirit"
+                }
+              },
+              {
+                "Key": "CheckmateThreshold",
+                "Name": "Checkmate Threshold",
+                "Value": 0,
+                "Scale": {
+                  "Value": 0.0,
+                  "Type": "power_increase"
+                },
+                "Type": "health"
+              },
+              {
+                "Key": "StunDuration",
+                "Name": "Stun Duration",
+                "StatusEffect": "Stun",
+                "Value": 1.25,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                }
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "TileSteps",
+              "Name": "Square Range",
+              "Value": 3
+            },
+            {
+              "Key": "MoveDistance",
+              "Name": "Move Distance",
+              "Value": 16,
+              "Scale": [
+                {
+                  "Value": 0.23,
+                  "Type": "power_increase"
+                },
+                {
+                  "Value": 1,
+                  "Type": "range"
+                }
+              ]
+            },
+            {
+              "Key": "MoveCooldown",
+              "Name": "Move Cooldown",
+              "Value": 5,
+              "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+              }
+            },
+            {
+              "Key": "QueenBonusMoves",
+              "Name": "Additional Moves",
+              "Value": 2
+            },
+            {
+              "Key": "SlowPercent",
+              "Name": "Move Speed",
+              "Value": 15,
+              "Type": "slow"
+            },
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 1.5,
+              "Scale": {
+                "Value": 1.0,
+                "Type": "duration"
+              }
+            }
+          ],
+          "DescKey": "ability_chessmaster_queen_desc_active"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -40
+          },
+          {
+            "CheckmateThreshold": {
+              "Value": 200,
+              "Scale": {
+                "Value": 5,
+                "Type": "power_increase"
+              }
+            },
+            "SlowPercent": 15,
+            "DescKey": "ability_chessmaster_queen_t2_desc"
+          },
+          {
+            "TileSteps": 1,
+            "QueenBonusMoves": 2,
+            "DescKey": "ability_chessmaster_queen_t3_desc"
+          }
+        ],
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AuraHeight": {
+            "Name": null,
+            "Value": 8
+          },
+          "AuraLingerDuration": {
+            "Name": null,
+            "Value": 0.15
+          },
+          "DPS": {
+            "Name": "Damage Per Second",
+            "Value": 50,
+            "Scale": {
+              "Value": 0.7,
+              "Type": "spirit"
+            }
+          },
+          "DPSTickInterval": {
+            "Name": null,
+            "Value": 0.5
+          },
+          "ExpireDistance": {
+            "Name": "Recall Distance",
+            "Value": 80
+          },
+          "GroundAuraHeight": {
+            "Name": null,
+            "Value": 1
+          },
+          "Height": {
+            "Name": null,
+            "Value": 10
+          },
+          "LiftHeight": {
+            "Name": null,
+            "Value": 4
+          },
+          "MaxPieces": {
+            "Name": "Max Deployed Pieces",
+            "Value": 1
+          },
+          "MaxStacks": {
+            "Name": "Max Stacks",
+            "Value": 3
+          },
+          "TossUpSpeed": {
+            "Name": null,
+            "Value": 600
+          }
+        },
+        "AbilityCastDelay": {
+          "Name": "Cast Delay",
+          "Value": 0.75,
+          "Type": "cast"
+        },
+        "AbilityCastRange": {
+          "Name": "Cast Range",
+          "Value": 30,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          },
+          "Type": "range"
+        },
+        "AbilityCooldown": {
+          "Name": "Cooldown",
+          "Value": 210,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          },
+          "Type": "cooldown"
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Name": "Charge Delay",
+          "Value": -1.0,
+          "Type": "charge_cooldown"
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_chessmaster_queen_desc_active",
+          "card_paths": [
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.330a775230e8",
+          "raw_text": "Summon a <span class=\"highlight\">queen</span> that crashes down, dealing {g:citadel_inline_attribute:'SpiritDamage'} in an area. After a delay, the queen releases squares in straight lines that deal {g:citadel_inline_attribute:'SpiritDamage'} again and apply {g:citadel_inline_attribute:'Stun'}.  <br><br><span class=\"diminish\">Move ({g:citadel_binding:'ADS'}):</span> The queen leaps to the target location, dealing the same effects again. <span class=\"diminish\"><br><br>Re-activate to recall the queen early, ending the ability.</span>",
+          "plain_text": "Summon a queen that crashes down, dealing spirit damage in an area. After a delay, the queen releases squares in straight lines that deal spirit damage again and apply stun.\nMove ( [ADS] ): The queen leaps to the target location, dealing the same effects again.\nRe-activate to recall the queen early, ending the ability."
+        },
+        {
+          "localization_key": "ability_chessmaster_queen_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.330a775230e8",
+          "raw_text": "+15% Slow. Checkmates heroes below 200 health, executing them.",
+          "plain_text": "+15% Slow. Checkmates heroes below 200 health, executing them."
+        },
+        {
+          "localization_key": "ability_chessmaster_queen_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.330a775230e8",
+          "raw_text": "+2 Moves<br>+1 Square Range",
+          "plain_text": "+2 Moves\n+1 Square Range"
+        }
+      ]
+    }
+  ],
+  "supporting_ability_data": {
+    "not_numbered_in_hero_bound_abilities": true,
+    "note": "Three trigger records are preserved as source data, not treated as additional numbered hero abilities or independently verified control behavior.",
+    "records": {
+      "ability_chessmaster_forkpiece_trigger": {
+        "AbilityCastRange": {
+          "Value": 35,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityChannelTime": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 0.35,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityPostCastDuration": 0.5,
+        "AbilityUnitTargetLimit": 1,
+        "AltCastRange": 20,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorNonCombat",
+          "BehaviorTrigger",
+          "BehaviorAllowAltCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "Damage": 60,
+        "HitboxActiveDuration": 1,
+        "IsDisabled": false,
+        "Key": "ability_chessmaster_forkpiece_trigger",
+        "MaxMoveDuration": 1,
+        "MinMoveDuration": 0.2,
+        "MoveDistance": 20,
+        "Name": "Rook Battery",
+        "Radius": 1,
+        "TossBackSpeed": 300,
+        "TossUpSpeed": 300,
+        "Upgrades": [
+          {
+            "AbilityCooldown": 0
+          },
+          {
+            "AbilityCooldown": 0
+          },
+          {
+            "AbilityCooldown": 0
+          }
+        ]
+      },
+      "ability_chessmaster_queen_trigger": {
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorNonCombat",
+          "BehaviorCanCastOnZipline",
+          "BehaviorTrigger",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_chessmaster_queen_trigger",
+        "Name": "Develop Queen",
+        "Upgrades": []
+      },
+      "ability_chessmaster_throwbishop_trigger": {
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorNonCombat",
+          "BehaviorCanCastOnZipline",
+          "BehaviorTrigger",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_chessmaster_throwbishop_trigger",
+        "Name": "Setup Bishop",
+        "Upgrades": []
+      }
+    }
+  },
+  "supporting_npc_data": {
+    "note": "Chess-piece helper NPC configuration referenced by Solomon's ability set; not standard roster NPC records or placement/availability evidence.",
+    "records": {
+      "citadel_chesspiece_bishop": {
+        "Acceleration": 0.0,
+        "CooldownOutlineWidth": 0.0,
+        "DefaultMovementSettings": "",
+        "ExpireModifier": {
+          "ExpireOverTime": false,
+          "ExpireFromDistanceToCaster": false,
+          "ExpireWhenCasterDies": true
+        },
+        "HopSpeed": 5.08,
+        "KnockbackStrength": 300.0,
+        "KnockupStrength": 300.0,
+        "MaxHealth": 0,
+        "MeleeKnockbackStrength": 300.0,
+        "MeleeKnockupStrength": 300.0,
+        "Name": "citadel_chesspiece_bishop",
+        "NpcInCombatModifier": {
+          "TimeToOOC": 5.0
+        },
+        "NpcOutOfCombatModifier": {
+          "OOCRegen": 20.0
+        },
+        "OutlineThroughWalls": true,
+        "PhysicsImpulseMultiplier": 1.0,
+        "RunSpeed": 0.0,
+        "ShouldKnockupAndHealOnDeath": false,
+        "ShouldTakeDamage": false,
+        "ShouldUseCooldownOutline": false,
+        "SightRangeNPCs": 0.0,
+        "SightRangePlayers": 0.0,
+        "SpawnBreakablesOnDeath": true,
+        "SpawnOnGround": false,
+        "StepHeight": 0.0,
+        "StrafeSpeed": 0.0,
+        "TrackOutOfCombatStatus": true,
+        "TurnRate": 0.0,
+        "WalkSpeed": 0.0,
+        "cCooldownOutlineColor": [
+          154,
+          80,
+          80
+        ]
+      },
+      "citadel_chesspiece_queen": {
+        "Acceleration": 5.0,
+        "CooldownOutlineWidth": 0.0,
+        "DefaultMovementSettings": "default",
+        "ExpireModifier": {
+          "ExpireOverTime": false,
+          "ExpireFromDistanceToCaster": false,
+          "ExpireWhenCasterDies": true,
+          "EnabledStateMask": "MODIFIER_STATE_IGNORED_BY_NPC_TARGETING"
+        },
+        "HopSpeed": 5.08,
+        "KnockbackStrength": 200.0,
+        "KnockupStrength": 200.0,
+        "MaxHealth": 0,
+        "Name": "citadel_chesspiece_queen",
+        "OutlineThroughWalls": true,
+        "PhysicsImpulseMultiplier": 1.0,
+        "ShouldTakeDamage": false,
+        "ShouldUseCooldownOutline": false,
+        "SightRangeNPCs": 0.0,
+        "SightRangePlayers": 0.0,
+        "SpawnBreakablesOnDeath": true,
+        "SpawnOnGround": true,
+        "StepHeight": 0.9144,
+        "cCooldownOutlineColor": [
+          154,
+          80,
+          80
+        ]
+      }
+    }
+  },
+  "pre_release_comparison": {
+    "client_version": 6763,
+    "source_revision": 11102088,
+    "source": "github.deadlock-data.gameplay.8f2589cb4e64",
+    "status": "incomplete pre-release configuration; never use these values as the released record",
+    "comparison_scope": "All changed top-level hero-data fields between the pinned client 6763 and released client 6774 entries.",
+    "changed_hero_data_fields": {
+      "AirDashDuration": {
+        "client_6763": 0.47,
+        "client_6774": 0.51
+      },
+      "AirDashSpeed": {
+        "client_6763": 17.0,
+        "client_6774": 15.7
+      },
+      "BoundAbilities": {
+        "client_6763": {},
+        "client_6774": {
+          "1": {
+            "Name": "Setup Bishop",
+            "Key": "ability_chessmaster_throwbishop"
+          },
+          "2": {
+            "Name": "Kingside Knight",
+            "Key": "ability_chessmaster_knightbuff"
+          },
+          "3": {
+            "Name": "Rook Battery",
+            "Key": "ability_chessmaster_forkpiece"
+          },
+          "4": {
+            "Name": "Develop Queen",
+            "Key": "ability_chessmaster_queen"
+          }
+        }
+      },
+      "GravityChange": {
+        "client_6763": null,
+        "client_6774": -25.0
+      },
+      "GroundDashDuration": {
+        "client_6763": 0.68,
+        "client_6774": 0.72
+      },
+      "GroundDashSpeed": {
+        "client_6763": 14.7,
+        "client_6774": 13.9
+      },
+      "LevelScaling": {
+        "client_6763": {
+          "BulletDamage": 0.4,
+          "MaxHealth": 38.0,
+          "PowerIncreases": 1,
+          "TechPower": 1.1,
+          "LightMeleeDamage": 1.58,
+          "HeavyMeleeDamage": 3.6656,
+          "DPS": 3.8095,
+          "SustainedDPS": 2.1239
+        },
+        "client_6774": {
+          "BulletDamage": 0.4,
+          "MaxHealth": 40.0,
+          "PowerIncreases": 1,
+          "TechPower": 1.1,
+          "LightMeleeDamage": 1.58,
+          "HeavyMeleeDamage": 3.6656,
+          "DPS": 0.8,
+          "SustainedDPS": 0.45714
+        }
+      },
+      "MaxMoveSpeed": {
+        "client_6763": 7.2,
+        "client_6774": 6.7
+      },
+      "SpiritScaling": {
+        "client_6763": {},
+        "client_6774": {
+          "BulletDamage": 0.14,
+          "DPS": 0.28,
+          "SustainedDPS": 0.16
+        }
+      },
+      "SprintSpeed": {
+        "client_6763": 1.6,
+        "client_6774": 3.25
+      },
+      "Stamina": {
+        "client_6763": 3,
+        "client_6774": 2
+      },
+      "Type": {
+        "client_6763": null,
+        "client_6774": "Mystic"
+      },
+      "Weapon": {
+        "client_6763": {
+          "BulletSpeed": 660.4,
+          "BulletDamage": 5.5,
+          "RoundsPerSecond": 9.5238,
+          "ClipSize": 27,
+          "ReloadTime": 2.25,
+          "ReloadMovespeed": 1.0,
+          "ReloadDelay": 0.0,
+          "ReloadSingle": false,
+          "FalloffStartRange": 18.0,
+          "FalloffEndRange": 55.0,
+          "FalloffStartScale": 1.0,
+          "FalloffEndScale": 0.1,
+          "FalloffBias": 0.5,
+          "BulletGravityScale": 0.8,
+          "BulletRadius": 0.1016,
+          "BulletsPerShot": 1,
+          "BulletsPerBurst": 1,
+          "BurstInterShotInterval": 0,
+          "ShootMoveSpeed": 0.75,
+          "HitOnceAcrossAllBullets": false,
+          "CanCrit": true,
+          "AmmoConsumedPerShot": 1,
+          "DPS": 52.381,
+          "SustainedDPS": 29.204
+        },
+        "client_6774": {
+          "BulletSpeed": 355.6,
+          "BulletDamage": 30.0,
+          "RoundsPerSecond": 2.0,
+          "ClipSize": 8,
+          "ReloadTime": 3.0,
+          "ReloadMovespeed": 1.0,
+          "ReloadDelay": 0.0,
+          "ReloadSingle": false,
+          "FalloffStartRange": 19.99,
+          "FalloffEndRange": 45.72,
+          "FalloffStartScale": 1.0,
+          "FalloffEndScale": 0.1,
+          "FalloffBias": 0.5,
+          "BulletGravityScale": 0.0,
+          "BulletRadius": 0.2032,
+          "BulletsPerShot": 1,
+          "BulletsPerBurst": 1,
+          "BurstInterShotInterval": 0.075,
+          "ShootMoveSpeed": 0.75,
+          "HitOnceAcrossAllBullets": true,
+          "CanCrit": true,
+          "AmmoConsumedPerShot": 1,
+          "ExplosionRadius": 1.016,
+          "ExplosionDamageScaleAtMaxRadius": 1.0,
+          "DPS": 60.0,
+          "SustainedDPS": 34.286,
+          "NameKey": "citadel_weapon_chessmaster_set",
+          "WeaponTypes": [
+            "Attribute_EWeaponAttribute_RapidFire",
+            "Attribute_EWeaponAttribute_LongRange"
+          ]
+        }
+      }
+    }
+  },
+  "release_boundaries": {
+    "official_release_at": "2026-10-09T21:00:04Z",
+    "release_source": "steam.news.solomon-release.1846018067934643",
+    "first_complete_candidate_client": 6769,
+    "first_complete_candidate_source": "github.deadlock-data.gameplay.18998ba13ff3",
+    "first_complete_candidate_version_time": "2026-10-09 13:38:46",
+    "first_complete_candidate_note": "Client 6769's version-file time has no declared timezone and is not compared directly with the UTC announcement; Valve's announcement establishes public availability.",
+    "release_configuration_client": 6774,
+    "intermediate_client_comparison_source": "github.deadlock-data.gameplay.3b96422dbf31",
+    "intermediate_client_comparison_note": "The reviewed Solomon hero, ability, card, Chess-piece NPC, and English description fields match across clients 6769, 6773 and 6774."
+  },
+  "data_boundaries": [
+    "The October 9 announcement establishes release availability; client 6774 supplies the dated structured configuration, not an independent runtime test.",
+    "Client 6763's selectable flag and provisional hero fields are pre-release only and are retained separately from the release values.",
+    "Street Brawl item-bucket additions and unrelated convar changes are outside the scope of this standard hero release record and are not presented as Solomon balance changes.",
+    "No October 9 raw changelog was found in the reviewed upstream archive; no raw note or undocumented runtime change is asserted.",
+    "Later client data and October 14+ updates are outside this release snapshot; this record is not a claim of October 28 current state."
+  ]
+}
