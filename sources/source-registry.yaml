@@ -1745,7 +1745,7 @@ sources:
     client_version: 6774
     source_revision: 11112755
     accessed_at: '2026-10-28'
-    scope: Selected client-6774 Solomon configuration snapshot for October 9. Its version-file time has no declared timezone; the official announcement establishes availability. Data matches the first complete candidate; configuration is not an independent runtime test.
+    scope: Selected client-6774 Solomon configuration snapshot for October 9; this same client also contains Deadman Danny's incomplete selectable placeholder, retained only as a pre-release comparison. Its version-file time has no declared timezone; the official announcement establishes Solomon's availability. Configuration is not an independent runtime test.
     ability_cards_sha256: e7f12cc2b7ffabe7ae8dc6b159b846e3b970b84582203b235ca8b2283011046c
     ability_data_sha256: a7067bd36f3d9ead5853c22bc9f56112300800348189c7c2c20c6f4dc9b04153
     hero_data_sha256: f748cce08b62bc73e0a46a6ae7ddc0c2728aadd130781dcd50a4e38128d13c65
@@ -1767,3 +1767,82 @@ sources:
     contents_sha256: 8e4d7e43b815058173e7b619e72b5792de6a19dc7620730771e9ca4bbc6ae735
     hash_scope: UTF-8 Steam news API contents field, not rendered page HTML.
     scope: Official availability confirmation and four named abilities; not a complete mechanical specification.
+  - id: github.deadlock-data.gameplay.bd95f245ccb1
+    title: Deadman Danny first complete configuration — client 6782
+    url: https://github.com/deadlock-wiki/deadlock-data/tree/bd95f245ccb152cd4beb359ad0a89e3a86391221/data/json
+    version_url: https://github.com/deadlock-wiki/deadlock-data/blob/bd95f245ccb152cd4beb359ad0a89e3a86391221/data/version.txt
+    commit: bd95f245ccb152cd4beb359ad0a89e3a86391221
+    client_version: 6782
+    server_version: 6782
+    source_revision: 11127865
+    version_datetime: "2026-10-14T10:09:01"
+    accessed_at: '2026-10-28'
+    scope: Earliest complete Deadman Danny configuration found; selected as the first complete October 14 post-release checkpoint, not an exact October 13 launch pin.
+    ability_cards_sha256: 672893e036c31cbed4ddee626c6f9a84e2cec04ffac0c920ad10330693a903bc
+    ability_data_sha256: e6e86948f643b843ed45f823ee71517fc68f03423ce96090568b610d539f0261
+    hero_data_sha256: c03fdee8085a3d3f3c7fda40700108670479f1960a454989061f878b1dbd66f1
+    npc_data_sha256: 9980cd39ad92a2dcdae4bfe633bf9fcd0bd8afca8fd1a92ab38e1c3fd8f2f61a
+    english_sha256: c03a572bc60467024cb6a95401d88d3ff9fd966bc5eafb24d72c5bccfbdb9ddc
+    version_file_sha256: 9f4ee31476492a5e87624357c456e2c3326ca4af808eae4847040af30ad53836
+  - id: github.deadlock-data.english.bd95f245ccb1
+    title: Client 6782 English localization for Deadman Danny
+    url: https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/bd95f245ccb152cd4beb359ad0a89e3a86391221/data/localizations/english.json
+    commit: bd95f245ccb152cd4beb359ad0a89e3a86391221
+    sha256: c03a572bc60467024cb6a95401d88d3ff9fd966bc5eafb24d72c5bccfbdb9ddc
+    scope: Danny lore, weapon name, four bound ability descriptions and upgrades, plus their English labels at the client-6782 pin.
+  - id: github.deadlock-data.gameplay.51636a2c4136
+    title: Client 6782 same-client exporter recheck
+    url: https://github.com/deadlock-wiki/deadlock-data/tree/51636a2c41362c9ed8cf487b259086538fdd6be1/data/json
+    version_url: https://github.com/deadlock-wiki/deadlock-data/blob/51636a2c41362c9ed8cf487b259086538fdd6be1/data/version.txt
+    commit: 51636a2c41362c9ed8cf487b259086538fdd6be1
+    client_version: 6782
+    server_version: 6782
+    source_revision: 11127865
+    version_datetime: "2026-10-14T10:09:01"
+    accessed_at: '2026-10-28'
+    scope: Later client-6782 exporter commit; all selected hero, ability, card, NPC and English datasets are byte-identical to the first client-6782 export. Exporter churn is not treated as a game update.
+    ability_cards_sha256: 672893e036c31cbed4ddee626c6f9a84e2cec04ffac0c920ad10330693a903bc
+    ability_data_sha256: e6e86948f643b843ed45f823ee71517fc68f03423ce96090568b610d539f0261
+    hero_data_sha256: c03fdee8085a3d3f3c7fda40700108670479f1960a454989061f878b1dbd66f1
+    npc_data_sha256: 9980cd39ad92a2dcdae4bfe633bf9fcd0bd8afca8fd1a92ab38e1c3fd8f2f61a
+    english_sha256: c03a572bc60467024cb6a95401d88d3ff9fd966bc5eafb24d72c5bccfbdb9ddc
+    version_file_sha256: 9f4ee31476492a5e87624357c456e2c3326ca4af808eae4847040af30ad53836
+  - id: github.deadlock-data.gameplay.3aab395a1392
+    title: Client 6785 post-update comparison for Deadman Danny
+    url: https://github.com/deadlock-wiki/deadlock-data/tree/3aab395a139254c12179f0f829f7488c55da2022/data/json
+    version_url: https://github.com/deadlock-wiki/deadlock-data/blob/3aab395a139254c12179f0f829f7488c55da2022/data/version.txt
+    commit: 3aab395a139254c12179f0f829f7488c55da2022
+    client_version: 6785
+    server_version: 6785
+    source_revision: 11132425
+    version_datetime: "2026-10-14T20:01:37"
+    accessed_at: '2026-10-28'
+    scope: Post-update Danny values are comparison evidence only; none are imported into the client-6782 October 14 snapshot or backdated to the October 13 release.
+    ability_cards_sha256: 85a72f50c6983a3d706ee518bafedb69a353b0b675ad6d0b38cb307c6d0a05f3
+    ability_data_sha256: 0c2e12c03e6ac7e8cf717976a06bd7a3d809d085d2f6f2e2adb300b95233ec32
+    hero_data_sha256: 67b90bfc3fdc1eb0b4cfe89ca224d072443c2e2643d331921a5e62db6ae21687
+    npc_data_sha256: 9980cd39ad92a2dcdae4bfe633bf9fcd0bd8afca8fd1a92ab38e1c3fd8f2f61a
+    english_sha256: aca40d2658ac80e4bdf522bf40a0c31417828eda2fe8f3034d5ac8b8a2ab0f6b
+    version_file_sha256: a66525143304ff3d8d35199b9a6725fb6ce7713be84ba2328e5e0dd836423e1a
+  - id: steam.news.deadman-danny-release.1846018067945303
+    title: Fairfax Industries Employee Spotlight — official Deadman Danny release
+    url: https://store.steampowered.com/news/app/1422450/view/1846018067945303?l=english
+    news_gid: '1846018067945303'
+    published_at: '2026-10-13T20:59:55Z'
+    accessed_at: '2026-10-28'
+    contents_sha256: 8838f293fee2a816e040df14ba0151a31a03189a750e6673ae2a6ebdb5c3508f
+    hash_scope: UTF-8 Steam news API contents field, not rendered page HTML.
+    api_url: https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1422450&count=100&maxlength=0
+    api_response_sha256: 4d77e49f4f36991becbb7299528748cbe4413dc9c4aa80cfa178a595818ccd40
+    scope: Official availability confirmation and release-announcement ability names; no complete mechanical specification or launch-day client pin.
+  - id: steam.news.deadman-danny-oct14-update.1846651706676198
+    title: Minor Update - 10-14-2026 — official later update note
+    url: https://store.steampowered.com/news/app/1422450/view/1846651706676198?l=english
+    news_gid: '1846651706676198'
+    published_at: '2026-10-15T03:11:58Z'
+    accessed_at: '2026-10-28'
+    contents_sha256: 39fc23a1b5d6840bcc72ee1dcee098944c0eb7e8f1bc6aff3497195078039f2a
+    hash_scope: UTF-8 Steam news API contents field, not rendered page HTML.
+    api_url: https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1422450&count=100&maxlength=0
+    api_response_sha256: 4d77e49f4f36991becbb7299528748cbe4413dc9c4aa80cfa178a595818ccd40
+    scope: Official October 14 update intent, published October 15; cited only to separate the later balance update from Danny's October 13 release record, not as runtime verification or launch-day data.
