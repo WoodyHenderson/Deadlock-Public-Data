@@ -111,17 +111,35 @@ and no fabricated raw October 2 changelog are included.
 
 ## Baba release limits
 
-[Baba's record](heroes/baba/baba.md) uses the later October 6 client 6759;
-initial client-6757 evidence remains distinct. Valve's release announcement
-confirms availability despite the retained `InDevelopment: true` flag.
-The three brew effects and upgrade multipliers are preserved without inventing
-complete runtime timing, damage-ramp or lifesteal formulas. Three projectiles
-with `HitOnceAcrossAllBullets: true` do not justify tripling source DPS.
+[Baba's record](heroes/baba/baba.md) uses current client 6785 after the October 14
+update; initial client-6757 evidence and her client-6759 October 6 release snapshot
+remain distinct. Valve's release announcement confirms availability despite the
+retained `InDevelopment: true` flag. The three brew effects and upgrade multipliers
+are preserved without inventing complete runtime timing, damage-ramp or lifesteal
+formulas. Three projectiles with `HitOnceAcrossAllBullets: true` do not justify
+tripling source DPS.
 
 Detailed parry, movement, ultimate/item and mode descriptions from the October 8
-wiki article are labeled later context, not independently tested launch facts.
-Missing fields or improved tooltip labels do not establish gameplay changes.
-No October 7 or later balance data is imported by this release update.
+wiki article are labeled dated context, not independently tested launch facts.
+Missing fields or improved tooltip labels do not establish gameplay changes. The
+October 7 review remains an export/wording comparison, not a confirmed hotfix.
+
+## October 14 balance update limits
+
+The [October 14 update](patches/2026-10-14-balance.md) refreshes Baba and Danny to
+client 6785 and separately records a client-6785 Radiant Regeneration item record.
+Danny's first complete client-6782 post-release snapshot and Baba's client-6759
+release snapshot remain historical; neither is treated as an exact launch-day
+stat sheet. The 173-item roster remains pinned to client 6694, and the September 3
+root baseline is not advanced.
+
+Structured source fields document configuration, not complete runtime formulas.
+The Street Brawl Threadsap override is separate from standard ability data; no
+previous mode value or upgrade tier is inferred from absent data or a raw index.
+The update's descriptions of Danny charged-shot damage, aerial slow, Rocket
+Jumping self-damage type, Baba death/melee behavior, and other note-only changes
+are patch-note intent rather than independent runtime tests. Do not derive these
+claims from unrelated base-weapon, health-self-damage, or removed-field values.
 
 ## October 5 behavior limits
 

@@ -2,36 +2,35 @@
 id: hero.deadman-danny
 title: Deadman Danny
 domain: heroes
-topics: [hero, abilities, release]
+topics: [hero, abilities, release, balance]
 aliases: []
-summary: First complete Deadman Danny configuration from client 6782 (October 14); Valve confirms the October 13 release, but no exact launch-day data pin is asserted.
-snapshot_id: deadlock-data-client-6782
+summary: Current client-6785 Deadman Danny configuration after the separate October 14 balance update; the first complete client-6782 post-release snapshot remains historical.
+snapshot_id: deadlock-data-client-6785
 current_as_of: "2026-10-14"
-evidence_status: source_verified_with_official_release_confirmation
+evidence_status: source_verified_with_official_release_confirmation_and_patch_note_only_behavior
 sources:
-  - github.deadlock-data.gameplay.bd95f245ccb1
-  - github.deadlock-data.english.bd95f245ccb1
+  - github.deadlock-data.gameplay.3aab395a1392
+  - github.deadlock-data.english.3aab395a1392
   - github.deadlock-data.gameplay.330a775230e8
   - github.deadlock-data.gameplay.51636a2c4136
-  - github.deadlock-data.gameplay.3aab395a1392
+  - github.deadlock-data.gameplay.346dd6686b38
   - steam.news.deadman-danny-oct14-update.1846651706676198
+  - github.deadlock-data.raw-changelog.2026-10-14.3aab395a1392
   - steam.news.deadman-danny-release.1846018067945303
 ---
 
 # Deadman Danny
 
-Valve's [October 13 announcement](https://store.steampowered.com/news/app/1422450/view/1846018067945303?l=english) was published at **20:59:55 UTC** and says Danny is available in-game now. The announcement supplies the release date and names, but not the full numerical configuration.
+Valve's [October 13 announcement](https://store.steampowered.com/news/app/1422450/view/1846018067945303?l=english) establishes Danny's release date. This current configuration uses **client 6785 / source revision 11132425**, exported after the separately dated October 14 balance update. The first complete post-release configuration, client 6782, remains preserved in the [October 13 release snapshot](../../patches/snapshots/deadman-danny-2026-10-14.md); neither client pin is asserted to be an exact launch-day stat sheet.
 
-This record uses the first complete Danny configuration found in the reviewed source history: **client 6782 / source revision 11127865, dated October 14**. Client 6774 contained only an incomplete selectable placeholder. No exact October 13 launch-client snapshot is asserted; this is a dated post-release configuration, not a verified launch-day stat sheet.
-
-Generated client fields and localized descriptions are source data, not independent runtime tests. Client 6785 includes the separate October 14 update and is intentionally excluded from these values.
+Generated client fields and localized descriptions are source data, not independent runtime tests. Patch-note claims without directly matching fields remain explicitly separated below and in YAML.
 
 ## Base Stats
 
 | Stat | Value |
 | --- | ---: |
-| Maximum health | 680 |
-| Health regeneration | 2.5/s |
+| Maximum health | 730 |
+| Health regeneration | 3.25/s |
 | Move speed | 6.4m/s |
 | Sprint bonus | 1.6m/s |
 | Stamina | 3 |
@@ -39,7 +38,7 @@ Generated client fields and localized descriptions are source data, not independ
 
 ## Per-Boon Growth
 
-Configured `LevelScaling` fields from client 6782; source keys and values are preserved without deriving a live-match growth formula.
+Configured `LevelScaling` fields from client 6785; source keys and values are preserved without deriving a live-match growth formula.
 
 | Source field | Value per boon |
 | --- | ---: |
@@ -56,10 +55,10 @@ Configured `LevelScaling` fields from client 6782; source keys and values are pr
 
 ## Weapon
 
-- Bullet damage: **12**
+- Bullet damage: **15**
 - Rounds/s: **4**; magazine: **14**; reload: **3.2s**
 - Projectile speed: **177.8m/s**; falloff: **18–47m**
-- Source DPS: **48**; sustained: **25.075**
+- Source DPS: **60**; sustained: **31.343**
 
 ## Abilities
 
@@ -77,9 +76,9 @@ Internal key: `ability_deadpack_chargeblast`.
 **Upgrade descriptions** (where supplied by the source):
 
 - **Tier 1:** -12s Cooldown
-- **Tier 2:** +20 Damage +35 Marked Damage
+- **Tier 2:** +30 Damage +45 Marked Damage
 - **Tier 3:** +2 Missiles, Longer Range, and Improved Spirit Scaling
-Description source: [`github.deadlock-data.english.bd95f245ccb1`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/bd95f245ccb152cd4beb359ad0a89e3a86391221/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.3aab395a1392`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/3aab395a139254c12179f0f829f7488c55da2022/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorProjectilePassThroughWorld`, `BehaviorShowCastRangeAsSatSphereWhileCasting`, `BehaviorDontInterruptSlideOnCast`, `BehaviorRefundHalfCooldownOnChannelInterrupt`.
@@ -87,7 +86,7 @@ Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorP
 | Card field | Base value |
 | --- | ---: |
 | Damage | 27 (+0.74 per spirit) |
-| Marked Damage | 45 (+0.9 per spirit) |
+| Marked Damage | 45 (+1.1 per spirit) |
 | Fading Slow | 40 |
 | Fire Rate | 0 |
 | Mark Duration | 10 (+1 per duration) |
@@ -96,8 +95,8 @@ Behavior flags: `BehaviorProjectile`, `BehaviorDisplaysDamageImpact`, `BehaviorP
 
 Upgrade deltas:
 - Tier 1: `{"AbilityCooldown":-12}`
-- Tier 2: `{"Damage":20,"CoatedDamage":35}`
-- Tier 3: `{"MarksTotal":2,"Range":14,"CoatedDamage":{"Value":0,"Scale":{"Value":0.2,"Type":"spirit"}},"Damage":{"Value":0,"Scale":{"Value":0.225,"Type":"spirit"}}}`
+- Tier 2: `{"Damage":30,"CoatedDamage":45}`
+- Tier 3: `{"MarksTotal":2,"Range":14,"CoatedDamage":{"Value":0,"Scale":{"Value":0.35,"Type":"spirit"}},"Damage":{"Value":0,"Scale":{"Value":0.35,"Type":"spirit"}}}`
 
 ### 2. Chimera Mk1
 
@@ -115,25 +114,25 @@ Internal key: `ability_deadpack_rocketeer`.
 
 - **Tier 1:** Heat vents faster while grounded
 - **Tier 2:** On Hero Hit: Heal and take no self damage
-- **Tier 3:** On Hero Hit: -40% Cooldown and +120 Spirit Damage
-Description source: [`github.deadlock-data.english.bd95f245ccb1`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/bd95f245ccb152cd4beb359ad0a89e3a86391221/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+- **Tier 3:** On Hero Hit: -50% Cooldown and +120 Spirit Damage
+Description source: [`github.deadlock-data.english.3aab395a1392`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/3aab395a139254c12179f0f829f7488c55da2022/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorCannotCancelDuringChannel`, `BehaviorDisplaysDamageImpact`, `BehaviorMovement`, `BehaviorCanSetQuickCast`.
 
 | Card field | Base value |
 | --- | ---: |
-| Cooldown | 21 (-0.25 per power increase, +1 per cooldown) |
+| Cooldown | 21 (-0.45 per power increase, +1 per cooldown) |
 | Explosion Damage | 70 (+1.5 per spirit) |
-| Explosion Damage | 70 (+1.15 per weapon damage increase) |
+| Explosion Damage | 70 (+1.4 per weapon damage increase) |
 | Self Stun | 1.3 |
-| Self Damage | 12 |
+| Self Damage | 10 |
 | Heal On Hit | 0 (+0 per spirit) |
 
 Upgrade deltas:
 - Tier 1: `{"HeatDrainRate":-4}`
-- Tier 2: `{"HealOnHit":{"Value":150,"Scale":{"Value":1.0,"Type":"spirit"}},"SelfDamageReductionOnPlayerHitPercent":100}`
-- Tier 3: `{"ExplosionDamage":120,"OverheatLockoutDurationReductionOnPlayerHitPercent":40}`
+- Tier 2: `{"HealOnHit":{"Value":150,"Scale":{"Value":2.0,"Type":"spirit"}},"SelfDamageReductionOnPlayerHitPercent":100}`
+- Tier 3: `{"ExplosionDamage":120,"OverheatLockoutDurationReductionOnPlayerHitPercent":50}`
 
 ### 3. Jettison Fuel
 
@@ -149,7 +148,7 @@ Internal key: `ability_deadpack_flamethrower`.
 
 - **Tier 2:** +60 Burst Damage On Backblast Hit: +18% Fire Rate for 7s
 - **Tier 3:** -10% Bullet Resist Shred On Backblast Hit: Apply a Mark
-Description source: [`github.deadlock-data.english.bd95f245ccb1`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/bd95f245ccb152cd4beb359ad0a89e3a86391221/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.3aab395a1392`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/3aab395a139254c12179f0f829f7488c55da2022/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorSilentCastFailureFeedback`, `BehaviorStartCooldownOnToggleOff`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorDontAimFacingEnemy`, `BehaviorRequireAbilityButtonToCancel`, `BehaviorDoNotAllowSpamProc`, `BehaviorDoNotCancelOnParry`.
@@ -180,7 +179,7 @@ Internal key: `ability_deadpack_ultimate`.
 **Upgrade descriptions** (where supplied by the source):
 
 - **Tier 3:** +0.5s Stun +8 Damage / Meter
-Description source: [`github.deadlock-data.english.bd95f245ccb1`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/bd95f245ccb152cd4beb359ad0a89e3a86391221/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.3aab395a1392`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/3aab395a139254c12179f0f829f7488c55da2022/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorDeactivateCrouchToggleOnCast`, `BehaviorUseInstantCastUnitTargetUi`, `BehaviorCanSetQuickCast`.
@@ -191,24 +190,36 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorDeactivateCrouchToggleO
 | Falling Damage | 3 (+0.09 per spirit) |
 | Stun Duration | 0.5 (+1 per duration) |
 | Self Damage | 25 |
-| Bonus Damage | 50 |
+| Bonus Damage | 75 |
 
 Upgrade deltas:
-- Tier 1: `{"Damage":50.0}`
+- Tier 1: `{"Damage":90.0}`
 - Tier 2: `{"AbilityCooldown":-35.0}`
 - Tier 3: `{"DamagePerMeter":8.0,"StunDuration":0.5}`
+
+## October 14 Balance Update
+
+- Health regeneration: 2.5 → 3.25; maximum health: 680 → 730.
+- Strix Salvo, Chimera Mk1, and Close The Deal source fields and client-6785 English upgrade descriptions are recorded in the canonical YAML.
+- Client `MaxHealthSelfDamagePercent` changes 12 → 10; this field is not treated as the separate Rocket Jumping note below.
+
+## Patch-Note-Only Behavior
+
+- Charged-shot damage: 44 → 48 (the structured weapon record does not expose a directly matching charged-shot value).
+- Chimera Mk1 airborne slow effectiveness is reduced by 15% (no directly matching field was found).
+- Rocket Jumping self-damage changes from 6.5% to 5% max health and becomes Spirit damage (no directly matching field was found).
+
+These are official note statements, not independently verified runtime behavior. They are not inferred from base `BulletDamage`, `MaxHealthSelfDamagePercent`, or the removed `HeatGainRateSlowPercentEffectiveness` field.
 
 ## Supporting Client Record
 
 The YAML preserves the unbound `ability_deadpack_zip_line` record. It has no numbered hero binding or card, so it is not counted as a fifth ability and its runtime association is not inferred.
 
-## Data Boundaries
+## Date and Data Boundaries
 
-- Valve's October 13 post establishes availability; client 6782 is the first complete reviewed configuration and is dated October 14, not October 13.
-- Client 6774's selectable Danny entry had a null type, no bound abilities, and a provisional weapon. Those values are not used as release stats.
-- The separate October 14 official update and the later client-6785 configuration are cited only as a boundary. Their later values are not applied to the client-6782 record.
-- Some later note statements (charged-shot damage, airborne slow, and Rocket Jumping self-damage/type) do not have directly matching fields in the reviewed hero/card export; no independent runtime behavior is claimed.
-- No October 13 raw changelog was found in the pinned archive. Later client changes, Street Brawl configuration, unrelated exports, and current-balance work remain separate.
+- Valve's October 13 post establishes availability; client 6782 remains the first complete reviewed configuration and is dated October 14, not October 13.
+- Client 6785 is a separate post-update state. The exact version-file time has no declared timezone.
+- Street Brawl mode-specific configuration is separately scoped; unrelated exports are not folded into the standard hero record.
 
-Release evidence: [steam.news.deadman-danny-release.1846018067945303](https://store.steampowered.com/news/app/1422450/view/1846018067945303?l=english).
-Client data: [github.deadlock-data.gameplay.bd95f245ccb1](https://github.com/deadlock-wiki/deadlock-data/tree/bd95f245ccb152cd4beb359ad0a89e3a86391221/data/json).
+October 14 update note: [steam.news.deadman-danny-oct14-update.1846651706676198](https://store.steampowered.com/news/app/1422450/view/1846651706676198?l=english).
+Client-6785 configuration: [github.deadlock-data.gameplay.3aab395a1392](https://github.com/deadlock-wiki/deadlock-data/tree/3aab395a139254c12179f0f829f7488c55da2022/data/json).
