@@ -4,13 +4,13 @@ title: Baba
 domain: heroes
 topics: [hero, abilities, forms]
 aliases: []
-summary: Baba stats, four abilities and brew variants checked through October 7, with later wiki interactions explicitly dated.
-snapshot_id: deadlock-data-client-6763
-current_as_of: "2026-10-07"
-evidence_status: source_verified_with_official_release_confirmation_and_dated_wiki_context
+summary: Current client-6785 Baba configuration with the separate October 14 update and dated patch-note-only behavior.
+snapshot_id: deadlock-data-client-6785
+current_as_of: "2026-10-14"
+evidence_status: source_verified_with_official_release_confirmation_and_patch_note_only_behavior
 sources:
-  - github.deadlock-data.gameplay.8f2589cb4e64
-  - github.deadlock-data.english.8f2589cb4e64
+  - github.deadlock-data.gameplay.3aab395a1392
+  - github.deadlock-data.english.3aab395a1392
   - github.deadlock-data.gameplay.69b3ca700c80
   - github.deadlock-data.gameplay.edb16660368e
   - steam.news.baba-release.1845383656397580
@@ -19,11 +19,14 @@ sources:
   - github.deadlock-data.gameplay.5799055efcc7
   - github.deadlock-data.gameplay.be5fb3ee934a
   - github.deadlock-data.gameplay.7fd1dfeb502a
+  - github.deadlock-data.gameplay.bd95f245ccb1
+  - steam.news.deadman-danny-oct14-update.1846651706676198
+  - github.deadlock-data.raw-changelog.2026-10-14.3aab395a1392
 ---
 
 # Baba
 
-Valve announced Baba as available on **October 6, 2026**. This record is checked through **October 7 / client 6763**. Initial client 6757 and October 6 evidence stay separate.
+Valve announced Baba as available on **October 6, 2026**. This current balance record uses **client 6785** after the separate October 14 update; the client-6759 release snapshot remains historical.
 The client still says `InDevelopment: true`. That conflicting flag is preserved, not treated as proof that the officially released hero is unavailable.
 
 ## Base Stats
@@ -37,12 +40,13 @@ The client still says `InDevelopment: true`. That conflicting flag is preserved,
 | Stamina | 2 |
 | Light / heavy melee | 50 / 116 |
 
-- Configured base Spirit Resist: **8%**; source `SpiritScaling.TechResist`: **0.12**. No complete stacking formula is inferred.
+- Configured base Spirit Resist: **8%**; source `SpiritScaling.TechResist`: **0.1**. No complete stacking formula is inferred.
+- Configured base Bullet Resist: **-7%** (client `BulletResist`).
 - Source critical-damage bonus: **-20%**, not the full resulting critical-hit multiplier.
 
 ## Per-Boon Growth
 
-Configured `LevelScaling` fields from the launch client; keys and values are preserved without deriving a live-match growth formula.
+Configured `LevelScaling` fields from client 6785; keys and values are preserved without deriving a live-match growth formula.
 
 | Source field | Value per boon |
 | --- | ---: |
@@ -82,7 +86,7 @@ Internal key: `ability_baba_bubbling_brew`.
 - **Tier 2:** -12s Cooldown +8s Debuff Duration
 - **Tier 3:** +1 Charge On Hit: Pull enemies 7m
 
-Description source: [`github.deadlock-data.english.8f2589cb4e64`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/8f2589cb4e645a2e9b3ba5363e51b830cd7bbacd/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.3aab395a1392`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/3aab395a139254c12179f0f829f7488c55da2022/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorDontInterruptSlideOnCast`.
@@ -95,10 +99,6 @@ Behavior flags: `BehaviorDisplaysDamageImpact`, `BehaviorDontInterruptSlideOnCas
 | Debuff Duration | 22 (duration coefficient 1) |
 | Max Spirit Stolen | 45 (power increase coefficient 2) |
 | Damage | 50 |
-| Cast Range | 35 (range coefficient 1) |
-| Charges | 1 (max charges coefficient 1) |
-| Cooldown | 26 (cooldown coefficient 1) |
-| Charge Delay | 6 (charge cooldown coefficient 1) |
 
 Upgrade deltas:
 - Tier 1: `{"MagicDamagePerBullet":8}`
@@ -123,7 +123,7 @@ Internal key: `ability_baba_bench_run`.
 - **Tier 2:** -7s Cooldown
 - **Tier 3:** +15% Resists +50% Melee Lifesteal
 
-Description source: [`github.deadlock-data.english.8f2589cb4e64`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/8f2589cb4e645a2e9b3ba5363e51b830cd7bbacd/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.3aab395a1392`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/3aab395a139254c12179f0f829f7488c55da2022/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorNoTarget`, `BehaviorNonCombat`, `BehaviorCastableWhileBusy`.
@@ -138,10 +138,6 @@ Behavior flags: `BehaviorNoTarget`, `BehaviorNonCombat`, `BehaviorCastableWhileB
 | Heavy Melee Damage | 75 (+0.6 per spirit) |
 | Heavy Melee Movement Slow | 50 |
 | Heavy Melee Slow Duration | 4 (duration coefficient 1) |
-| Cooldown | 30 (cooldown coefficient 1) |
-| Charge Delay | source sentinel -1; not a negative cooldown |
-| Duration | 10 (duration coefficient 1) |
-| Radius | 8 (range coefficient 1) |
 
 Upgrade deltas:
 - Tier 1: `{"BonusMoveSpeed":2.5}`
@@ -164,28 +160,25 @@ Internal key: `ability_baba_hexing_brew`.
 
 - **Tier 3:** +33.33% Brew Effectiveness
 
-Description source: [`github.deadlock-data.english.8f2589cb4e64`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/8f2589cb4e645a2e9b3ba5363e51b830cd7bbacd/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.3aab395a1392`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/3aab395a139254c12179f0f829f7488c55da2022/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorCannotCancelDuringChannel`, `BehaviorProjectileFiredAsBullet`, `BehaviorCooldownOnChannelEnd`, `BehaviorDontInterruptSlideOnCast`, `BehaviorHoldsAtMaxChannel`.
 
 | Card field | Base value |
 | --- | ---: |
-| Cast Range | 12 (range coefficient 1) |
-| Cooldown | 25 (cooldown coefficient 1) |
-| Charge Delay | source sentinel -1; not a negative cooldown |
-| Radius | 6 (radius coefficient 1) |
+| No card-visible fields | not supplied |
 
 Upgrade deltas:
 - Tier 1: `{"Radius":3}`
-- Tier 2: `{"AbilityCooldown":-12}`
+- Tier 2: `{"AbilityCooldown":-14}`
 - Tier 3: `{"BrewEffectiveness":33.33,"DamagePerSecond":{"Value":1.3333,"Scale":{"Value":1.3333,"Type":"spirit","Multiply":true},"Multiply":true},"CombatBarrier":{"Value":1.3333,"Scale":{"Value":1.3333,"Type":"spirit","Multiply":true},"Multiply":true},"SilenceDuration":{"Value":1.3333,"Multiply":true},"SpiritResistReduction":{"Value":1.3333,"Multiply":true}}`
 
 #### Soothing Brew
 
 | Card field | Base value |
 | --- | ---: |
-| Barrier | 100 (+1.2 per spirit) |
+| Barrier | 90 (+0.7 per spirit) |
 | Barrier Duration | 8 (duration coefficient 1) |
 
 #### Silencing Brew
@@ -221,7 +214,7 @@ Internal key: `ability_baba_ultimate_2`.
 - **Tier 1:** +4m Cast Range +32% Max Slow
 - **Tier 3:** +125 Max Damage +1.5 Spirit Scaling +0.5s Max Duration
 
-Description source: [`github.deadlock-data.english.8f2589cb4e64`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/8f2589cb4e645a2e9b3ba5363e51b830cd7bbacd/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
+Description source: [`github.deadlock-data.english.3aab395a1392`](https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/3aab395a139254c12179f0f829f7488c55da2022/data/localizations/english.json). Bracketed controls denote bindable actions, not default keys. Canonical YAML retains original text and localization keys.
 <!-- ability-descriptions:end -->
 
 Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorDisplaysDamageImpact`, `BehaviorCooldownOnChannelEnd`, `BehaviorTriggerCancelMashProtectionOnCast`, `BehaviorRequireAbilityButtonToCancel`, `BehaviorShowCastRangeAsSatSphereWhileCasting`.
@@ -232,15 +225,24 @@ Behavior flags: `BehaviorChannelled`, `BehaviorNoTarget`, `BehaviorDisplaysDamag
 | Max Pigeon Duration | 2.75 (duration coefficient 1) |
 | Time To Max Stacks | 3.5 |
 | Max Slow | 32 |
-| Cast Range | 18 (range coefficient 1) |
-| Cooldown | 150 (cooldown coefficient 1) |
-| Charge Delay | source sentinel -1; not a negative cooldown |
 
 Upgrade deltas:
 - Tier 1: `{"MaxSlow":32,"AbilityCastRange":4}`
 - Tier 2: `{"AbilityCooldown":-55}`
 - Tier 3: `{"BarrageMaxDamage":{"Value":125,"Scale":{"Value":1.5,"Type":"spirit"}},"HexDuration":0.5}`
 
+## October 14 Balance Update
+
+The post-update client-6785 record changes `SpiritScaling.TechResist` from 0.12 to 0.1 and adds `BulletResist: -7`. Threadsap and Granny Long Legs cooldowns, plus Baba's Brew cooldown/barrier fields, are listed in the canonical YAML. These are configured source values; the separate patch-note behavior below is not a runtime test.
+
+[Official October 14 update note](https://store.steampowered.com/news/app/1422450/view/1846651706676198?l=english).
+
+## October 14 Patch-Note-Only Behavior
+
+- Threadsap's enemy Spirit reduction ends when Baba dies.
+- Repeated airborne Granny Long Legs light melees have diminishing forward momentum; its light-melee upward launch is reduced; heavy-melee ground pound no longer gains horizontal speed when landing on slopes.
+
+These are note statements without directly matching fields in the reviewed standard configuration, not independent runtime observations.
 ## Dated Wiki Behavior
 
 These descriptions supplement the client record; they are not independent runtime tests.
@@ -269,19 +271,12 @@ These descriptions supplement the client record; they are not independent runtim
 
 - The article reports no Baba-specific ability modifications beyond global Street Brawl changes. This is separately dated wiki context, not a launch-day mode test.
 
-## October 7 Review
-
-Brew Tier 3 multiplier fields were re-encoded in a regenerated **client 6759** export before client 6762. This is not evidence of a new balance buff. Feed The Birds' English text changes “the target” to “the targets” / “each target”; that wording does not prove newly added multi-target behavior. The reviewed gameplay/English datasets are unchanged from 6762 to 6763.
-
-See the [October 7 review](../../patches/2026-10-07-review.md) and [historical October 6 record](../../patches/snapshots/baba-2026-10-06.md). No official October 7 hotfix text was verified; these are source-export findings, not reconstructed patch notes.
-
 ## Evidence Boundaries
 
-- Baba configuration and English text are checked through October 7 client 6763; the October 6 record remains a historical snapshot.
-- Brew multiplier encoding was corrected in a regenerated client-6759 export, not demonstrated as an October 7 balance change.
-- Later wiki interaction descriptions remain dated October 8 and are not independently runtime-tested.
-- Other heroes, items and global mechanics retain their earlier pins. Later releases exist but are outside this chronological update.
-- The reviewed exported datasets are not the entire game client and do not prove the absence of unexported runtime fixes.
+- This current configuration uses post-update client 6785 / source revision 11132425. The October 6 release snapshot and client-6763/6759 history remain separate; client 6782 is the immediate pre-update comparison.
+- The official October 14 note was published October 15 UTC. Its stated behavior is patch-note intent, not independent runtime evidence.
+- The client-6785 Street Brawl override is stored separately from standard Baba ability data; the earlier export's missing mode record does not establish an earlier runtime value.
+- The source TechResist value and SpiritScaling.TechResist coefficient are distinct fields; no full in-match resistance calculation is inferred.
 - The ultimate retains source lock-on/ramp fields without inferring an exact hit-count or damage formula from their names.
 - The two supporting melee/throw records in YAML are not extra numbered abilities.
 

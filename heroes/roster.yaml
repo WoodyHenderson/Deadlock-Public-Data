@@ -3,7 +3,7 @@
   "snapshot_id": "deadlock-data-mixed-2026-10-14",
   "current_as_of": "2026-10-14",
   "source": "github.deadlock-data.hero-data.fc4f540f12e0",
-  "source_scope_note": "Deadman Danny uses the first complete client-6782 configuration dated October 14, after the October 13 release announcement; it is not an exact launch-day pin. Solomon uses client 6774 (October 9) as a dated configuration snapshot. Baba uses client 6763 (October 7), with her client-6759 October 6 release snapshot historical. Sinclair and Rat King use client 6753; the other 37 heroes retain client 6694. The top-level client/source fields describe that older baseline, not every entry. Release dates are separate from configuration dates.",
+  "source_scope_note": "Solomon uses client 6774 (October 9) as a dated configuration snapshot. Deadman Danny uses current post-update client 6785, while his first complete client-6782 post-release configuration remains a historical snapshot and is not an exact launch-day pin. Baba uses current client 6785 after the October 14 update, with her client-6759 October 6 release snapshot retained historically. Sinclair and Rat King use client 6753; the other 37 heroes retain client 6694. The top-level client/source fields describe that older baseline, not every entry. Release dates are separate from configuration dates.",
   "selection_rule": "Dated public release evidence plus selectable, non-disabled configuration. Development flags are retained, but an explicit official release can override a conflicting InDevelopment flag. IsSelectable alone does not establish release; transformed states are not separate roster heroes.",
   "hero_count": 42,
   "heroes": [
@@ -22,10 +22,12 @@
       "name": "Baba",
       "internal_hero_key": "hero_baba",
       "availability_as_of": "2026-10-06",
-      "hero_data_source": "github.deadlock-data.gameplay.8f2589cb4e64",
-      "configuration_as_of": "2026-10-07",
+      "hero_data_source": "github.deadlock-data.gameplay.3aab395a1392",
+      "configuration_as_of": "2026-10-14",
       "release_source": "steam.news.baba-release.1845383656397580",
-      "development_flag_conflict": "InDevelopment remains true; official announcement confirms release."
+      "development_flag_conflict": "InDevelopment remains true; official announcement confirms release.",
+      "configuration_client_version": 6785,
+      "balance_update_source": "steam.news.deadman-danny-oct14-update.1846651706676198"
     },
     {
       "id": "hero.bebop",
@@ -52,9 +54,11 @@
       "name": "Deadman Danny",
       "internal_hero_key": "hero_deadpack",
       "availability_as_of": "2026-10-13",
-      "hero_data_source": "github.deadlock-data.gameplay.bd95f245ccb1",
+      "hero_data_source": "github.deadlock-data.gameplay.3aab395a1392",
       "configuration_as_of": "2026-10-14",
-      "release_source": "steam.news.deadman-danny-release.1846018067945303"
+      "release_source": "steam.news.deadman-danny-release.1846018067945303",
+      "configuration_client_version": 6785,
+      "balance_update_source": "steam.news.deadman-danny-oct14-update.1846651706676198"
     },
     {
       "id": "hero.drifter",

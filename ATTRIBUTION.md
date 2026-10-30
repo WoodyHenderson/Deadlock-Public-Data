@@ -23,6 +23,11 @@
   <https://store.steampowered.com/news/app/1422450/view/703281025618282871>.
   The dated announcement confirms release; Baba's wiki-derived interaction prose
   cites the separate October 6 and October 8 article revisions in the registry.
+- **Valve's official “Minor Update - 10-14-2026” Steam news item** —
+  <https://store.steampowered.com/news/app/1422450/view/1846651706676198>.
+  The post was published October 15 UTC and is cited as patch-note intent; the
+  separate client-6785 records and dated update review distinguish configured
+  values from behavior not independently verified at runtime.
 
 The separately dated [map-coordinate layer](map/README.md) has a private source
 whose owner requested no public attribution or identification. The project owner

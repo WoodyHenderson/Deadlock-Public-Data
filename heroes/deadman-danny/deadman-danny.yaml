@@ -1,21 +1,23 @@
 {
   "schema_version": 2,
   "id": "hero.deadman-danny",
-  "snapshot_id": "deadlock-data-client-6782",
-  "client_version": 6782,
-  "server_version": 6782,
-  "source_revision": 11127865,
+  "snapshot_id": "deadlock-data-client-6785",
+  "client_version": 6785,
+  "server_version": 6785,
+  "source_revision": 11132425,
   "current_as_of": "2026-10-14",
-  "evidence_status": "source_verified_with_official_release_confirmation",
+  "evidence_status": "source_verified_with_official_release_confirmation_and_patch_note_only_behavior",
   "sources": {
-    "hero_data": "github.deadlock-data.gameplay.bd95f245ccb1",
-    "ability_data": "github.deadlock-data.gameplay.bd95f245ccb1",
-    "ability_cards": "github.deadlock-data.gameplay.bd95f245ccb1",
-    "ability_localization": "github.deadlock-data.english.bd95f245ccb1",
+    "hero_data": "github.deadlock-data.gameplay.3aab395a1392",
+    "ability_data": "github.deadlock-data.gameplay.3aab395a1392",
+    "ability_cards": "github.deadlock-data.gameplay.3aab395a1392",
+    "ability_localization": "github.deadlock-data.english.3aab395a1392",
     "pre_release_comparison": "github.deadlock-data.gameplay.330a775230e8",
     "same_client_export_review": "github.deadlock-data.gameplay.51636a2c4136",
+    "post_update_first_export": "github.deadlock-data.gameplay.346dd6686b38",
     "post_update_client_comparison": "github.deadlock-data.gameplay.3aab395a1392",
     "post_update_official_note": "steam.news.deadman-danny-oct14-update.1846651706676198",
+    "post_update_raw_note": "github.deadlock-data.raw-changelog.2026-10-14.3aab395a1392",
     "release_announcement": "steam.news.deadman-danny-release.1846018067945303"
   },
   "name": "Deadman Danny",
@@ -36,11 +38,11 @@
     "in_hero_labs": false,
     "released_date": "2026-10-13",
     "release_confirmed_by_official_announcement": true,
-    "note": "Valve's October 13 announcement establishes public availability. Client 6774 already had a selectable but incomplete placeholder; the first complete configuration in the reviewed source history is client 6782 dated October 14, so this record does not assert exact launch-day stats."
+    "note": "Valve's October 13 announcement establishes availability. This current record uses the later client-6785 configuration after the separate October 14 update; the first complete client-6782 post-release configuration remains preserved as a historical snapshot, not an exact launch-day stat sheet."
   },
   "base_stats": {
-    "maximum_health": 680.0,
-    "health_regeneration_per_second": 2.5,
+    "maximum_health": 730.0,
+    "health_regeneration_per_second": 3.25,
     "light_melee_damage": 50,
     "heavy_melee_damage": 116,
     "move_speed_meters_per_second": 6.4,
@@ -87,7 +89,7 @@
   "spirit_scaling": {},
   "weapon": {
     "BulletSpeed": 177.8,
-    "BulletDamage": 12,
+    "BulletDamage": 15,
     "RoundsPerSecond": 4.0,
     "ClipSize": 14,
     "ReloadTime": 3.2,
@@ -110,8 +112,8 @@
     "AmmoConsumedPerShot": 1,
     "ExplosionRadius": 0.0,
     "ExplosionDamageScaleAtMaxRadius": 0.7,
-    "DPS": 48.0,
-    "SustainedDPS": 25.075,
+    "DPS": 60.0,
+    "SustainedDPS": 31.343,
     "NameKey": "citadel_weapon_deadpack_set",
     "WeaponTypes": [
       "Attribute_EWeaponAttribute_BurstFire",
@@ -119,9 +121,9 @@
     ]
   },
   "generated_source_snapshot": {
-    "client_version": 6782,
-    "source_revision": 11127865,
-    "source": "github.deadlock-data.gameplay.bd95f245ccb1",
+    "client_version": 6785,
+    "source_revision": 11132425,
+    "source": "github.deadlock-data.gameplay.3aab395a1392",
     "hero_data": {
       "AbilityResourceMax": 0,
       "AbilityResourceRegenPerSecond": 0,
@@ -130,7 +132,7 @@
       "AirDashDistanceInMeters": 8.0,
       "AirDashDuration": 0.43,
       "AirDashSpeed": 18.6,
-      "BaseHealthRegen": 2.5,
+      "BaseHealthRegen": 3.25,
       "BaseWeaponDamageIncrease": 0,
       "BoundAbilities": {
         "1": {
@@ -178,7 +180,7 @@
       },
       "LightMeleeDamage": 50,
       "Lore": "hero_deadpack_lore",
-      "MaxHealth": 680.0,
+      "MaxHealth": 730.0,
       "MaxMoveSpeed": 6.4,
       "MoveAcceleration": 4,
       "Name": "Deadman Danny",
@@ -197,7 +199,7 @@
       "Type": "Marksman",
       "Weapon": {
         "BulletSpeed": 177.8,
-        "BulletDamage": 12,
+        "BulletDamage": 15,
         "RoundsPerSecond": 4.0,
         "ClipSize": 14,
         "ReloadTime": 3.2,
@@ -220,8 +222,8 @@
         "AmmoConsumedPerShot": 1,
         "ExplosionRadius": 0.0,
         "ExplosionDamageScaleAtMaxRadius": 0.7,
-        "DPS": 48.0,
-        "SustainedDPS": 25.075,
+        "DPS": 60.0,
+        "SustainedDPS": 31.343,
         "NameKey": "citadel_weapon_deadpack_set",
         "WeaponTypes": [
           "Attribute_EWeaponAttribute_BurstFire",
@@ -245,7 +247,7 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 30.0,
+          "Value": 25.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -269,7 +271,7 @@
         "CoatedDamage": {
           "Value": 45,
           "Scale": {
-            "Value": 0.9,
+            "Value": 1.1,
             "Type": "spirit"
           }
         },
@@ -342,8 +344,8 @@
             "AbilityCooldown": -12
           },
           {
-            "Damage": 20,
-            "CoatedDamage": 35
+            "Damage": 30,
+            "CoatedDamage": 45
           },
           {
             "MarksTotal": 2,
@@ -351,14 +353,14 @@
             "CoatedDamage": {
               "Value": 0,
               "Scale": {
-                "Value": 0.2,
+                "Value": 0.35,
                 "Type": "spirit"
               }
             },
             "Damage": {
               "Value": 0,
               "Scale": {
-                "Value": 0.225,
+                "Value": 0.35,
                 "Type": "spirit"
               }
             }
@@ -387,7 +389,7 @@
                 "Name": "Marked Damage",
                 "Value": 45,
                 "Scale": {
-                  "Value": 0.9,
+                  "Value": 1.1,
                   "Type": "spirit"
                 },
                 "Type": "tech_damage"
@@ -446,8 +448,8 @@
             "DescKey": "ability_deadpack_chargeblast_t1_desc"
           },
           {
-            "Damage": 20,
-            "CoatedDamage": 35,
+            "Damage": 30,
+            "CoatedDamage": 45,
             "DescKey": "ability_deadpack_chargeblast_t2_desc"
           },
           {
@@ -456,14 +458,14 @@
             "CoatedDamage": {
               "Value": 0,
               "Scale": {
-                "Value": 0.2,
+                "Value": 0.35,
                 "Type": "spirit"
               }
             },
             "Damage": {
               "Value": 0,
               "Scale": {
-                "Value": 0.225,
+                "Value": 0.35,
                 "Type": "spirit"
               }
             },
@@ -482,7 +484,7 @@
           },
           "AbilityCooldown": {
             "Name": "Cooldown",
-            "Value": 30.0,
+            "Value": 25.0,
             "Scale": {
               "Value": 1,
               "Type": "cooldown"
@@ -543,7 +545,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "Launch a <span class=\"highlight\">salvo of spirit missiles that lodge into the ground along a line.</span> The missiles explode after a delay or upon detecting an enemy, dealing {g:citadel_inline_attribute:'SpiritDamage'} and <span class=\"highlight\">marking</span> the target.<br><br>Shooting a marked enemy with a charged shot consumes a mark to deal {g:citadel_inline_attribute:'BonusSpiritDamage'} and apply a fading {g:citadel_inline_attribute:'Slow'}.<br><br><span class=\"diminish\">Hold and drag to select the angle.</span>",
           "plain_text": "Launch a salvo of spirit missiles that lodge into the ground along a line. The missiles explode after a delay or upon detecting an enemy, dealing spirit damage and marking the target.\nShooting a marked enemy with a charged shot consumes a mark to deal bonus spirit damage and apply a fading slow.\nHold and drag to select the angle."
         },
@@ -552,7 +554,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "-12s Cooldown",
           "plain_text": "-12s Cooldown"
         },
@@ -561,16 +563,16 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.bd95f245ccb1",
-          "raw_text": "+20 Damage<br>+35 Marked Damage",
-          "plain_text": "+20 Damage\n+35 Marked Damage"
+          "source": "github.deadlock-data.english.3aab395a1392",
+          "raw_text": "+30 Damage<br>+45 Marked Damage",
+          "plain_text": "+30 Damage\n+45 Marked Damage"
         },
         {
           "localization_key": "ability_deadpack_chargeblast_t3_desc",
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "+2 Missiles, Longer Range, and Improved Spirit Scaling",
           "plain_text": "+2 Missiles, Longer Range, and Improved Spirit Scaling"
         }
@@ -587,7 +589,7 @@
           "Value": 21.0,
           "Scale": [
             {
-              "Value": -0.25,
+              "Value": -0.45,
               "Type": "power_increase"
             },
             {
@@ -619,7 +621,7 @@
         "ExplosionBulletDamage": {
           "Value": 70,
           "Scale": {
-            "Value": 1.15,
+            "Value": 1.4,
             "Type": "weapon_damage_increase"
           }
         },
@@ -642,7 +644,6 @@
         "HeatGainAirDash": 4.0,
         "HeatGainLaunch": 18.0,
         "HeatGainRate": 33.0,
-        "HeatGainRateSlowPercentEffectiveness": 75.0,
         "HeatGainRateVTOL": 60.0,
         "HeatPct": 100,
         "IsDisabled": false,
@@ -655,7 +656,7 @@
           "Subclass": "Jetpackingvtol"
         },
         "Key": "ability_deadpack_rocketeer",
-        "MaxHealthSelfDamagePercent": 12,
+        "MaxHealthSelfDamagePercent": 10,
         "MaxHeatModifier": {
           "Class": "CitadelModifierDeadpackMaxheat",
           "Subclass": "Maxheat",
@@ -692,7 +693,7 @@
             "HealOnHit": {
               "Value": 150,
               "Scale": {
-                "Value": 1.0,
+                "Value": 2.0,
                 "Type": "spirit"
               }
             },
@@ -700,7 +701,7 @@
           },
           {
             "ExplosionDamage": 120,
-            "OverheatLockoutDurationReductionOnPlayerHitPercent": 40
+            "OverheatLockoutDurationReductionOnPlayerHitPercent": 50
           }
         ]
       },
@@ -717,7 +718,7 @@
                 "Value": 21.0,
                 "Scale": [
                   {
-                    "Value": -0.25,
+                    "Value": -0.45,
                     "Type": "power_increase"
                   },
                   {
@@ -742,7 +743,7 @@
                 "Name": "Explosion Damage",
                 "Value": 70,
                 "Scale": {
-                  "Value": 1.15,
+                  "Value": 1.4,
                   "Type": "weapon_damage_increase"
                 },
                 "Type": "bullet_damage"
@@ -758,7 +759,7 @@
             {
               "Key": "MaxHealthSelfDamagePercent",
               "Name": "Self Damage",
-              "Value": 12
+              "Value": 10
             },
             {
               "Key": "HealOnHit",
@@ -782,7 +783,7 @@
             "HealOnHit": {
               "Value": 150,
               "Scale": {
-                "Value": 1.0,
+                "Value": 2.0,
                 "Type": "spirit"
               }
             },
@@ -791,7 +792,7 @@
           },
           {
             "ExplosionDamage": 120,
-            "OverheatLockoutDurationReductionOnPlayerHitPercent": 40,
+            "OverheatLockoutDurationReductionOnPlayerHitPercent": 50,
             "DescKey": "ability_deadpack_rocketeer_t3_desc"
           }
         ],
@@ -811,7 +812,7 @@
             "Value": 21.0,
             "Scale": [
               {
-                "Value": -0.25,
+                "Value": -0.45,
                 "Type": "power_increase"
               },
               {
@@ -868,10 +869,6 @@
             "Name": "Heat Gain",
             "Value": 33.0
           },
-          "HeatGainRateSlowPercentEffectiveness": {
-            "Name": null,
-            "Value": 75.0
-          },
           "HeatGainRateVTOL": {
             "Name": null,
             "Value": 60.0
@@ -897,7 +894,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "Hold {g:citadel_binding:'Mantle'} to fly, building up heat. When max heat is reached, your jetpack will begin to overheat.<br><br><span class=\"diminish\">Overheating:</span> After a short delay, <span class=\"highlight\">dive to the ground.</span> Upon impact, create an explosion that <span class=\"highlight\">deals damage</span> and launches you and nearby enemies. If no hero is hit, you stun yourself. Press {g:citadel_binding:'Ability2'} to dive early.<br><br><span class=\"diminish\">Cooling Down:</span> After overheating, the jetpack cannot be used until it fully cools down.<br><br><span class=\"small_diminish\">Slows affect you while airborne. You always explode on death.</span>",
           "plain_text": "Hold [Mantle] to fly, building up heat. When max heat is reached, your jetpack will begin to overheat.\nOverheating: After a short delay, dive to the ground. Upon impact, create an explosion that deals damage and launches you and nearby enemies. If no hero is hit, you stun yourself. Press [Ability 2] to dive early.\nCooling Down: After overheating, the jetpack cannot be used until it fully cools down.\nSlows affect you while airborne. You always explode on death."
         },
@@ -906,7 +903,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "Heat vents faster while grounded",
           "plain_text": "Heat vents faster while grounded"
         },
@@ -915,7 +912,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "On Hero Hit: Heal and take no self damage",
           "plain_text": "On Hero Hit: Heal and take no self damage"
         },
@@ -924,9 +921,9 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.bd95f245ccb1",
-          "raw_text": "On Hero Hit: -40% Cooldown and +120 Spirit Damage",
-          "plain_text": "On Hero Hit: -40% Cooldown and +120 Spirit Damage"
+          "source": "github.deadlock-data.english.3aab395a1392",
+          "raw_text": "On Hero Hit: -50% Cooldown and +120 Spirit Damage",
+          "plain_text": "On Hero Hit: -50% Cooldown and +120 Spirit Damage"
         }
       ]
     },
@@ -1178,7 +1175,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "Spray fuel dealing {g:citadel_inline_attribute:'WeaponDPS'} and shredding {g:citadel_inline_attribute:'BulletResist'}, building up to a <span class=\"highlight\">huge backblast</span> that deals {g:citadel_inline_attribute:'SpiritDamage'} and knocks you backwards.<br><br>Vents the jetpack when dealing damage.</span>",
           "plain_text": "Spray fuel dealing weapon damage over time and shredding bullet resist, building up to a huge backblast that deals spirit damage and knocks you backwards.\nVents the jetpack when dealing damage."
         },
@@ -1187,7 +1184,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "+60 Burst Damage<br>On Backblast Hit: +18% Fire Rate for 7s",
           "plain_text": "+60 Burst Damage\nOn Backblast Hit: +18% Fire Rate for 7s"
         },
@@ -1196,7 +1193,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "-10% Bullet Resist Shred<br>On Backblast Hit: Apply a Mark",
           "plain_text": "-10% Bullet Resist Shred\nOn Backblast Hit: Apply a Mark"
         }
@@ -1235,7 +1232,7 @@
           "BehaviorUseInstantCastUnitTargetUi",
           "BehaviorCanSetQuickCast"
         ],
-        "BonusDamagePercent": 50,
+        "BonusDamagePercent": 75,
         "ChannelMoveSpeed": -1,
         "ChargingModifier": {
           "Class": "Base",
@@ -1287,7 +1284,7 @@
         },
         "Upgrades": [
           {
-            "Damage": 50.0
+            "Damage": 90.0
           },
           {
             "AbilityCooldown": -35.0
@@ -1348,14 +1345,14 @@
               "Key": "BonusDamagePercent",
               "NameKey": "DeadpackUltBonusTotalDamage",
               "Name": "Bonus Damage",
-              "Value": 50
+              "Value": 75
             }
           ],
           "DescKey": "ability_deadpack_ultimate_desc"
         },
         "Upgrades": [
           {
-            "Damage": 50.0
+            "Damage": 90.0
           },
           {
             "AbilityCooldown": -35.0
@@ -1439,7 +1436,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "<span class=\"highlight\">Grab an enemy</span> and give them a hands-on demonstration, flying high into the air before crashing back to the ground.<br><br>You and the participant take {g:citadel_inline_attribute:'SpiritDPS'} while falling and {g:citadel_inline_attribute:'SpiritDamage'} upon impact. Damage is increased to enemies <span class=\"highlight\">under 50% health.</span>",
           "plain_text": "Grab an enemy and give them a hands-on demonstration, flying high into the air before crashing back to the ground.\nYou and the participant take spirit damage over time while falling and spirit damage upon impact. Damage is increased to enemies under 50% health."
         },
@@ -1448,7 +1445,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.bd95f245ccb1",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "+0.5s Stun<br>+8 Damage / Meter",
           "plain_text": "+0.5s Stun\n+8 Damage / Meter"
         }
@@ -1529,7 +1526,8 @@
         "ZiplineProtectionDamageAmp": 35,
         "ZiplineProtectionSlowDurationOnHit": 2.0
       }
-    }
+    },
+    "source": "github.deadlock-data.gameplay.3aab395a1392"
   },
   "pre_release_comparison": {
     "client_version": 6774,
@@ -1715,17 +1713,51 @@
     "post_release_update_at": "2026-10-15T03:11:58Z",
     "post_release_update_source": "steam.news.deadman-danny-oct14-update.1846651706676198",
     "post_release_update_client": 6785,
+    "post_release_update_first_export_source": "github.deadlock-data.gameplay.346dd6686b38",
     "post_release_update_comparison_source": "github.deadlock-data.gameplay.3aab395a1392",
-    "post_release_update_note": "Client 6785 contains later October 14 update data; none of its Danny values are imported into this October 14 client-6782 snapshot."
+    "post_release_raw_note_source": "github.deadlock-data.raw-changelog.2026-10-14.3aab395a1392",
+    "post_release_update_note": "The canonical current record uses client 6785 after the separate October 14 update. Client 6782 remains preserved as the first complete post-release configuration in patches/snapshots/deadman-danny-2026-10-14.yaml; neither snapshot is asserted to be an exact October 13 launch state."
   },
   "data_boundaries": [
-    "Valve's October 13 announcement establishes availability; the client-6782 generated data supplies the first complete reviewed configuration, dated October 14, not an exact launch-day state.",
-    "Client 6774's selectable flag, null type, empty ability bindings, and provisional weapon are retained only as a pre-release comparison.",
-    "Client 6782 preserves four numbered ability cards and an unbound zipline configuration record; the latter is not presented as a fifth hero ability.",
-    "Client 6785 and the separate October 14 minor-update post are later evidence. Their health, weapon, Strix Salvo, Chimera Mk1, and Close The Deal changes are not backdated into this record.",
-    "The October 14 note includes charged-shot, airborne-slow, and Rocket Jumping statements without directly matching fields in the reviewed hero/card export. These remain outside this record and are not asserted as independently verified runtime behavior.",
-    "Street Brawl item-bucket changes, convars, resource lookups, unrelated hero fields, localization edits, and exporter representation changes are outside this standard hero record and are not attributed to Danny's release.",
-    "No October 13 raw changelog was found in the reviewed pinned source archive; no raw note or undocumented runtime change is asserted.",
-    "Generated client data and localized descriptions are source evidence, not an independent runtime test; this record is not a claim of October 28 current state."
+    "Valve confirmed Danny's October 13 availability. Client 6782 remains the first complete reviewed post-release configuration, dated October 14; client 6785 is a separate post-update current configuration, not a launch-day snapshot.",
+    "Client 6785 / source revision 11132425 follows the official October 14 update post. Its generated fields and localized descriptions are source data, not independent runtime testing.",
+    "The charged-shot, airborne-slow, and Rocket Jumping statements remain patch-note-only because no direct matching field was found in the reviewed hero/weapon/card records.",
+    "MaxHealthSelfDamagePercent 12 to 10 and removal of HeatGainRateSlowPercentEffectiveness are recorded as source-field changes; they are not used to infer the separate Rocket Jumping or airborne-slow statements.",
+    "The October 13 release snapshot remains at client 6782. Street Brawl data and unrelated exports are separately scoped; no exact launch-day numerical configuration is asserted."
+  ],
+  "balance_update": {
+    "date": "2026-10-14",
+    "official_note_published_at": "2026-10-15T03:11:58Z",
+    "previous_client_version": 6782,
+    "previous_source": "github.deadlock-data.gameplay.bd95f245ccb1",
+    "current_client_version": 6785,
+    "current_source": "github.deadlock-data.gameplay.3aab395a1392",
+    "first_post_update_export_source": "github.deadlock-data.gameplay.346dd6686b38",
+    "official_note_source": "steam.news.deadman-danny-oct14-update.1846651706676198",
+    "raw_note_source": "github.deadlock-data.raw-changelog.2026-10-14.3aab395a1392",
+    "configuration_timezone": "not declared in version.txt",
+    "release_snapshot": "patches/snapshots/deadman-danny-2026-10-14.yaml",
+    "summary": [
+      "Health regeneration 2.5 to 3.25 and maximum health 680 to 730.",
+      "Strix Salvo, Chimera Mk1, and Close The Deal source fields and descriptions are refreshed from client 6785.",
+      "Charged-shot, airborne-slow, and Rocket Jumping details remain patch-note-only where no direct matching field was found."
+    ]
+  },
+  "patch_note_addenda": [
+    {
+      "evidence_status": "patch_note_only",
+      "source": "steam.news.deadman-danny-oct14-update.1846651706676198",
+      "note": "The note reports charged-shot damage changing from 44 to 48. The reviewed hero/weapon/card records do not expose a directly matching charged-shot field; do not infer it from base BulletDamage."
+    },
+    {
+      "evidence_status": "patch_note_only",
+      "source": "steam.news.deadman-danny-oct14-update.1846651706676198",
+      "note": "The note reports Chimera Mk1 airborne slow effectiveness reduced by 15%. No directly matching airborne-slow field was found; the removed HeatGainRateSlowPercentEffectiveness field is not treated as proof."
+    },
+    {
+      "evidence_status": "patch_note_only",
+      "source": "steam.news.deadman-danny-oct14-update.1846651706676198",
+      "note": "The note reports Rocket Jumping self-damage changing from 6.5% to 5% max health and becoming Spirit damage. No directly matching field was found; MaxHealthSelfDamagePercent is not conflated with this statement."
+    }
   ]
 }
