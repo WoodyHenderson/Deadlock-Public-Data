@@ -1,6 +1,6 @@
 # Item Knowledgebase
 
-This directory covers all **173 items currently purchasable** in Deadlock client 6694, source revision 11005995.
+The 173-item purchasable roster remains pinned to Deadlock client 6694, source revision 11005995. Radiant Regeneration has a separate client-6785 per-item balance record; this is not a roster-wide refresh.
 
 ## Source policy
 

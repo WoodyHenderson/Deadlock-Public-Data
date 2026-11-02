@@ -6,29 +6,30 @@ topics: [routing, retrieval, navigation, entities]
 aliases: [entity index, keyword index]
 summary: Direct routes to the public snapshot's hero, ability, item, NPC, objective, and mechanics records.
 snapshot_id: deadlock-data-mixed-through-2026-10-14
-current_as_of: "2026-10-28"
+current_as_of: "2026-10-29"
 evidence_status: derived
 sources: []
 ---
 
 # Deadlock Data Keyword Index
 
-This index routes to records with different dated scopes. Baba's canonical record
-is checked through October 7/client 6763; her October 6/client-6759 launch snapshot
-and later wiki descriptions remain separate. Solomon's release availability is
-confirmed by Valve's October 9 announcement; his selected client-6774 configuration
-snapshot is dated separately from the release evidence. Danny's October 13 release
-availability is confirmed by Valve, while his first complete reviewed configuration
-is client 6782, dated October 14—not an exact launch-day data pin.
-Sinclair and Rat King use October 5/client 6753; the other 37 baseline heroes and
-173 item records retain client 6694 (September 16). The separate map-coordinate layer is dated
-October 6. City Never Sleeps map/corrupted-item research retains its pre-release
-cutoff, with the October 2 Broker toggle and healing-ping configuration added
-separately in the [release review](patches/2026-10-02-rat-king-release-review.md).
-The [October 4/5 changes](patches/2026-10-05-balance.md) record the subsequent
-Street Brawl removal and applied hero balance. Later wiki geography and hero
-behavior are labeled separately. The September 3 root baseline is
-not advanced globally.
+This index routes to records with different dated scopes. Baba and Deadman Danny
+use current client-6785 configuration after the separate October 14 balance update;
+Baba's client-6759 release snapshot and Danny's first complete client-6782 post-release
+snapshot remain historical, and neither is represented as a launch-day numerical
+configuration. Solomon's release availability is confirmed by Valve's October 9
+announcement; his selected client-6774 configuration snapshot is dated separately
+from release evidence. Sinclair and Rat King use October 5/client 6753; the other 37
+baseline heroes and 173 item records retain client 6694 (September 16), except for
+Radiant Regeneration's separately dated client-6785 item record. The separate
+map-coordinate layer is dated October 6. City Never Sleeps map/corrupted-item
+research retains its pre-release cutoff, with the October 2 Broker toggle and
+healing-ping configuration added separately in the
+[release review](patches/2026-10-02-rat-king-release-review.md). The
+[October 4/5 changes](patches/2026-10-05-balance.md) record the subsequent Street
+Brawl removal and applied hero balance. Later wiki geography and hero behavior are
+labeled separately. The September 3 root baseline and global item roster are not
+advanced by the October 14 item-specific update.
 This index is navigation derived from local records, not gameplay evidence.
 Follow the destination's citations and uncertainty flags. Match full names with
 context: “Pocket build” identifies a hero; “seven seconds” does not. Normalize
@@ -74,10 +75,12 @@ historical values as current facts.
 | Haunt attacks, parry, Steam Vent reveal, Healing Snack heal amount, Tough Crate reward, Buff Container drop selection, Sinner jackpot | [Map interactions and open questions](general/map/map-interactions-and-open-questions.md); [structured behavior](data/map-interactions.yaml) |
 | Corrupted item variant fields | [Dated variant data](data/corrupted-items.yaml); configured fields do not establish mode/date availability |
 | Sources, citations, versions | [Source registry](sources/source-registry.yaml); [attribution](ATTRIBUTION.md) |
-| Baba, Threadsap, Granny Long Legs, Baba's Brew, Baba's Brews, Feed The Birds | [Baba](heroes/baba/baba.md); [October 6 release](patches/2026-10-06-baba-release.md); [October 7 source review](patches/2026-10-07-review.md), not official patch notes |
+| Baba, Threadsap, Granny Long Legs, Baba's Brew, Baba's Brews, Feed The Birds | [Baba](heroes/baba/baba.md); [October 6 release](patches/2026-10-06-baba-release.md); [October 7 source review](patches/2026-10-07-review.md); [October 14 balance update](patches/2026-10-14-balance.md) |
 | Solomon, Setup Bishop, Kingside Knight, Rook Battery, Develop Queen | [Solomon](heroes/solomon/solomon.md); [October 9 release](patches/2026-10-09-solomon-release.md); [release snapshot](patches/snapshots/solomon-2026-10-09.md) |
-| Deadman Danny, Strix Salvo, Chimera Mk1, Jettison Fuel, Close The Deal | [Deadman Danny](heroes/deadman-danny/deadman-danny.md); [October 13 release](patches/2026-10-13-deadman-danny-release.md); [October 14 client-6782 snapshot](patches/snapshots/deadman-danny-2026-10-14.md) |
-| Explicit request for patch notes or change history | [Archive policy](patches/README.md); [manifest](patches/manifest.yaml) |
+| Deadman Danny, Strix Salvo, Chimera Mk1, Jettison Fuel, Close The Deal | [Deadman Danny](heroes/deadman-danny/deadman-danny.md); [October 13 release](patches/2026-10-13-deadman-danny-release.md); [October 14 balance update](patches/2026-10-14-balance.md); [first-complete client-6782 snapshot](patches/snapshots/deadman-danny-2026-10-14.md) |
+| Radiant Regeneration balance | [Per-item client-6785 record](items/radiant-regeneration/radiant-regeneration.md); [October 14 update](patches/2026-10-14-balance.md) |
+| Baba's Street Brawl Threadsap override | [Mode-specific configuration](data/street-brawl-ability-changes.yaml); [October 14 update](patches/2026-10-14-balance.md) |
+| October 14 patch note and history | [Applied changes and evidence boundaries](patches/2026-10-14-balance.md); [raw note](patches/raw/2026-10-14.txt); [archive policy](patches/README.md); [manifest](patches/manifest.yaml) |
 
 <!-- entity-routes:start -->
 ## Heroes and abilities

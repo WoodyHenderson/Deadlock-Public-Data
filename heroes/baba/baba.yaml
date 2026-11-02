@@ -3,17 +3,17 @@
   "id": "hero.baba",
   "name": "Baba",
   "aliases": [],
-  "snapshot_id": "deadlock-data-client-6763",
-  "client_version": 6763,
-  "server_version": 6763,
-  "source_revision": 11102088,
-  "current_as_of": "2026-10-07",
-  "evidence_status": "source_verified_with_official_release_confirmation_and_dated_wiki_context",
+  "snapshot_id": "deadlock-data-client-6785",
+  "client_version": 6785,
+  "server_version": 6785,
+  "source_revision": 11132425,
+  "current_as_of": "2026-10-14",
+  "evidence_status": "source_verified_with_official_release_confirmation_and_patch_note_only_behavior",
   "sources": {
-    "hero_data": "github.deadlock-data.gameplay.8f2589cb4e64",
-    "ability_data": "github.deadlock-data.gameplay.8f2589cb4e64",
-    "ability_cards": "github.deadlock-data.gameplay.8f2589cb4e64",
-    "ability_localization": "github.deadlock-data.english.8f2589cb4e64",
+    "hero_data": "github.deadlock-data.gameplay.3aab395a1392",
+    "ability_data": "github.deadlock-data.gameplay.3aab395a1392",
+    "ability_cards": "github.deadlock-data.gameplay.3aab395a1392",
+    "ability_localization": "github.deadlock-data.english.3aab395a1392",
     "initial_release_checkpoint": "github.deadlock-data.gameplay.69b3ca700c80",
     "pre_release_comparison": "github.deadlock-data.gameplay.edb16660368e",
     "release_announcement": "steam.news.baba-release.1845383656397580",
@@ -21,7 +21,10 @@
     "later_wiki_behavior": "wiki.baba.184568",
     "regenerated_october6_export": "github.deadlock-data.gameplay.5799055efcc7",
     "october7_intermediate": "github.deadlock-data.gameplay.be5fb3ee934a",
-    "october6_checkpoint": "github.deadlock-data.gameplay.7fd1dfeb502a"
+    "october6_checkpoint": "github.deadlock-data.gameplay.7fd1dfeb502a",
+    "balance_update_previous_client": "github.deadlock-data.gameplay.bd95f245ccb1",
+    "balance_update_official_note": "steam.news.deadman-danny-oct14-update.1846651706676198",
+    "balance_update_raw_note": "github.deadlock-data.raw-changelog.2026-10-14.3aab395a1392"
   },
   "internal_hero_key": "hero_baba",
   "hero_type": "Mystic",
@@ -71,7 +74,8 @@
     },
     "spirit_resistance_percent": 8.0,
     "bullet_lifesteal_effectiveness": 1.0,
-    "spirit_lifesteal_effectiveness": 1.0
+    "spirit_lifesteal_effectiveness": 1.0,
+    "bullet_resistance_percent": -7.0
   },
   "per_boon_growth": {
     "BulletDamage": 0.41,
@@ -84,7 +88,7 @@
     "SustainedDPS": 0.86014
   },
   "spirit_scaling": {
-    "TechResist": 0.12
+    "TechResist": 0.1
   },
   "weapon": {
     "BulletSpeed": 177.8,
@@ -119,13 +123,13 @@
   },
   "weapon_note": "BulletsPerShot is 3, AmmoConsumedPerShot is 1, and HitOnceAcrossAllBullets is true. Preserve the source DPS; do not multiply it by three or infer three hits/procs per target.",
   "localized_fields": {
-    "lore": "There are a few things most denizens of The Cursed Apple hope to experience at some point in their lives.<br><br>See a Broadway show.<br>Ice Skate at Rockefeller Center during Christmas season.<br>Get yelled at by the Central Park Pigeon Lady.<br><br>Because Baba is more than just an old woman that feeds spirit pigeons in the park... she's an institution.  A force of nature woven into the very lore of New York City.  Is it true that she's sat at the same bench every day for the past 50 years, rain or shine?  Maybe.  Is she REALLY the leader of The Soho Coven?  Who's to say.  One thing's for sure though... she's a New Yorker.  And she's not going to sit back and watch a bunch of tourists tear apart Manhattan in pursuit of power.",
+    "lore": "There are a few things most denizens of The Cursed Apple hope to experience at some point in their lives.<br><br>See a Broadway show.<br>Ice Skate at Rockefeller Center during Christmas season.<br>Get yelled at by the Central Park Pigeon Lady.<br><br>Because Baba is more than just an old woman that feeds spirit pigeons in the park... she's an institution. A force of nature woven into the very lore of New York City. Is it true that she's sat at the same bench every day for the past 50 years, rain or shine? Maybe. Is she REALLY the leader of The Soho Coven? Who's to say. One thing's for sure though... she's a New Yorker.  And she's not going to sit back and watch a bunch of tourists tear apart Manhattan in pursuit of power.",
     "weapon_name": "Bunko-Night Special"
   },
   "generated_source_snapshot": {
-    "client_version": 6763,
-    "source_revision": 11102088,
-    "source": "github.deadlock-data.gameplay.8f2589cb4e64",
+    "client_version": 6785,
+    "source_revision": 11132425,
+    "source": "github.deadlock-data.gameplay.3aab395a1392",
     "hero_data": {
       "AbilityResourceMax": 0,
       "AbilityResourceRegenPerSecond": 0,
@@ -152,6 +156,7 @@
           "Key": "ability_baba_ultimate_2"
         }
       },
+      "BulletResist": -7.0,
       "CritDamageBonusPercent": -20.0,
       "CritDamageReceivedPercent": 0.0,
       "CrouchSpeed": 4.75,
@@ -188,7 +193,7 @@
       "ReloadSpeed": 0,
       "Role": "hero_baba_role",
       "SpiritScaling": {
-        "TechResist": 0.12
+        "TechResist": 0.1
       },
       "SprintSpeed": 1.6,
       "Stamina": 2,
@@ -253,7 +258,7 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 26.0,
+          "Value": 28.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -432,7 +437,43 @@
             "DescKey": "ability_baba_bubbling_brew_t3_desc"
           }
         ],
-        "Range": {
+        "Headers": {
+          "AbilityCastRange": {
+            "Name": "Cast Range",
+            "Value": 35,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            },
+            "Type": "range"
+          },
+          "AbilityCharges": {
+            "Name": "Charges",
+            "Value": 1,
+            "Scale": {
+              "Value": 1,
+              "Type": "max_charges"
+            },
+            "Type": "cast"
+          },
+          "AbilityCooldown": {
+            "Name": "Cooldown",
+            "Value": 28.0,
+            "Scale": {
+              "Value": 1,
+              "Type": "cooldown"
+            },
+            "Type": "cooldown"
+          },
+          "AbilityCooldownBetweenCharge": {
+            "Name": "Charge Delay",
+            "Value": 6,
+            "Scale": {
+              "Value": 1,
+              "Type": "charge_cooldown"
+            },
+            "Type": "charge_cooldown"
+          },
           "ExplodeRadius": {
             "Name": "Explosion Radius",
             "Value": 3.5,
@@ -483,42 +524,6 @@
             "Name": null,
             "Value": 0.6
           }
-        },
-        "AbilityCastRange": {
-          "Name": "Cast Range",
-          "Value": 35,
-          "Scale": {
-            "Value": 1,
-            "Type": "range"
-          },
-          "Type": "range"
-        },
-        "AbilityCharges": {
-          "Name": "Charges",
-          "Value": 1,
-          "Scale": {
-            "Value": 1,
-            "Type": "max_charges"
-          },
-          "Type": "cast"
-        },
-        "AbilityCooldown": {
-          "Name": "Cooldown",
-          "Value": 26.0,
-          "Scale": {
-            "Value": 1,
-            "Type": "cooldown"
-          },
-          "Type": "cooldown"
-        },
-        "AbilityCooldownBetweenCharge": {
-          "Name": "Charge Delay",
-          "Value": 6,
-          "Scale": {
-            "Value": 1,
-            "Type": "charge_cooldown"
-          },
-          "Type": "charge_cooldown"
         }
       },
       "descriptions": [
@@ -528,7 +533,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.8f2589cb4e64",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "Weave a scraggly thread that follows your crosshair before bursting along its path, dealing {g:citadel_inline_attribute:'SpiritDamage'} and stealing enemy {g:citadel_inline_attribute:'Spirit'}, increased in effectiveness for Baba.<br><br>While holding stolen {g:citadel_inline_attribute:'Spirit'}, Baba deals {g:citadel_inline_attribute:'BonusSpiritDamage'} with every bullet.",
           "plain_text": "Weave a scraggly thread that follows your crosshair before bursting along its path, dealing spirit damage and stealing enemy Spirit, increased in effectiveness for Baba.\nWhile holding stolen Spirit, Baba deals bonus spirit damage with every bullet."
         },
@@ -537,7 +542,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.8f2589cb4e64",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "-12s Cooldown<br>+8s Debuff Duration",
           "plain_text": "-12s Cooldown\n+8s Debuff Duration"
         },
@@ -546,7 +551,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.8f2589cb4e64",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "+1 Charge<br>On Hit: Pull enemies 7m",
           "plain_text": "+1 Charge\nOn Hit: Pull enemies 7m"
         }
@@ -558,7 +563,7 @@
       "internal_key": "ability_baba_bench_run",
       "data": {
         "AbilityCooldown": {
-          "Value": 30,
+          "Value": 32,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -623,7 +628,7 @@
             "Type": "spirit"
           }
         },
-        "IsDisabled": "false",
+        "IsDisabled": false,
         "JumpSoundLayerVolumeMax": -4.0,
         "JumpSoundLayerVolumeMin": -60.0,
         "Key": "ability_baba_bench_run",
@@ -765,6 +770,40 @@
             "DescKey": "ability_baba_bench_run_t3_desc"
           }
         ],
+        "Headers": {
+          "AbilityCooldown": {
+            "Name": "Cooldown",
+            "Value": 32,
+            "Scale": {
+              "Value": 1,
+              "Type": "cooldown"
+            },
+            "Type": "cooldown"
+          },
+          "AbilityCooldownBetweenCharge": {
+            "Name": "Charge Delay",
+            "Value": -1.0,
+            "Type": "charge_cooldown"
+          },
+          "AbilityDuration": {
+            "Name": "Duration",
+            "Value": 10,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "duration"
+          },
+          "Radius": {
+            "Name": "Radius",
+            "Value": 8,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            },
+            "Type": "distance"
+          }
+        },
         "Duration": {
           "GroundPoundKnockUpDuration": {
             "Name": "Ground Pound Knock Up",
@@ -876,38 +915,6 @@
             "Name": null,
             "Value": 50
           }
-        },
-        "AbilityCooldown": {
-          "Name": "Cooldown",
-          "Value": 30,
-          "Scale": {
-            "Value": 1,
-            "Type": "cooldown"
-          },
-          "Type": "cooldown"
-        },
-        "AbilityCooldownBetweenCharge": {
-          "Name": "Charge Delay",
-          "Value": -1.0,
-          "Type": "charge_cooldown"
-        },
-        "AbilityDuration": {
-          "Name": "Duration",
-          "Value": 10,
-          "Scale": {
-            "Value": 1,
-            "Type": "duration"
-          },
-          "Type": "duration"
-        },
-        "Radius": {
-          "Name": "Radius",
-          "Value": 8,
-          "Scale": {
-            "Value": 1,
-            "Type": "range"
-          },
-          "Type": "distance"
         }
       },
       "descriptions": [
@@ -917,7 +924,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.8f2589cb4e64",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "Your bench's legs extend, granting {g:citadel_inline_attribute:'BonusMoveSpeed'}, higher jumps, <span class=\"highlight\">Debuff Resistance</span> and <span class=\"highlight\">Melee Resistance</span>.<br><br><span class=\"diminish\">Light Melee:</span> Perform a <span class=\"highlight\">kick</span> that knocks enemies back.<br><span class=\"diminish\">Heavy Melee:</span> Perform a <span class=\"highlight\">ground pound</span> that applies {g:citadel_inline_attribute:'KnockUp'}, {g:citadel_inline_attribute:'Slow'}, and deals {g:citadel_inline_attribute:'SpiritDamage'}.<br><br><span class=\"diminish\">Hold {g:citadel_binding:'Crouch'} to charge a high jump, release to jump.</span>",
           "plain_text": "Your bench's legs extend, granting bonus move speed, higher jumps, Debuff Resistance and Melee Resistance.\nLight Melee: Perform a kick that knocks enemies back.\nHeavy Melee: Perform a ground pound that applies knockup, slow, and deals spirit damage.\nHold [Crouch] to charge a high jump, release to jump."
         },
@@ -926,7 +933,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.8f2589cb4e64",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "+2.5m Move Speed",
           "plain_text": "+2.5m Move Speed"
         },
@@ -935,7 +942,7 @@
           "card_paths": [
             "card.Upgrades[1].DescKey"
           ],
-          "source": "github.deadlock-data.english.8f2589cb4e64",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "-7s Cooldown",
           "plain_text": "-7s Cooldown"
         },
@@ -944,7 +951,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.8f2589cb4e64",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "+15% Resists<br>+50% Melee Lifesteal",
           "plain_text": "+15% Resists\n+50% Melee Lifesteal"
         }
@@ -970,7 +977,7 @@
           }
         },
         "AbilityCooldown": {
-          "Value": 25.0,
+          "Value": 27.0,
           "Scale": {
             "Value": 1,
             "Type": "cooldown"
@@ -1010,9 +1017,9 @@
         },
         "ChannelMoveSpeed": -1,
         "CombatBarrier": {
-          "Value": 100,
+          "Value": 90,
           "Scale": {
-            "Value": 1.2,
+            "Value": 0.7,
             "Type": "spirit"
           }
         },
@@ -1033,7 +1040,7 @@
           "Class": "BabaBrewHolding",
           "Subclass": "BabaBrewHolding"
         },
-        "IsDisabled": "false",
+        "IsDisabled": false,
         "Key": "ability_baba_hexing_brew",
         "Name": "Baba's Brew",
         "Radius": {
@@ -1065,7 +1072,7 @@
             "Radius": 3
           },
           {
-            "AbilityCooldown": -12
+            "AbilityCooldown": -14
           },
           {
             "BrewEffectiveness": 33.33,
@@ -1116,9 +1123,9 @@
                 "Title": "Soothing Brew:",
                 "Key": "CombatBarrier",
                 "Name": "Barrier",
-                "Value": 100,
+                "Value": 90,
                 "Scale": {
-                  "Value": 1.2,
+                  "Value": 0.7,
                   "Type": "spirit"
                 },
                 "Type": "combat_barrier"
@@ -1200,7 +1207,7 @@
             "Radius": 3
           },
           {
-            "AbilityCooldown": -12
+            "AbilityCooldown": -14
           },
           {
             "BrewEffectiveness": 33.33,
@@ -1233,6 +1240,49 @@
             "DescKey": "ability_baba_hexing_brew_t3_desc"
           }
         ],
+        "Headers": {
+          "AbilityCastRange": {
+            "Name": "Cast Range",
+            "Value": 12,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            },
+            "Type": "range"
+          },
+          "AbilityChannelTime": {
+            "Name": "Channel Duration",
+            "Value": 1.0,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "cast"
+          },
+          "AbilityCooldown": {
+            "Name": "Cooldown",
+            "Value": 27.0,
+            "Scale": {
+              "Value": 1,
+              "Type": "cooldown"
+            },
+            "Type": "cooldown"
+          },
+          "AbilityCooldownBetweenCharge": {
+            "Name": "Charge Delay",
+            "Value": -1.0,
+            "Type": "charge_cooldown"
+          },
+          "Radius": {
+            "Name": "Radius",
+            "Value": 6,
+            "Scale": {
+              "Value": 1,
+              "Type": "radius"
+            },
+            "Type": "distance"
+          }
+        },
         "Duration": {
           "BarrierLockTime": {
             "Name": null,
@@ -1274,47 +1324,6 @@
             "Name": null,
             "Value": 1
           }
-        },
-        "AbilityCastRange": {
-          "Name": "Cast Range",
-          "Value": 12,
-          "Scale": {
-            "Value": 1,
-            "Type": "range"
-          },
-          "Type": "range"
-        },
-        "AbilityChannelTime": {
-          "Name": "Channel Duration",
-          "Value": 1.0,
-          "Scale": {
-            "Value": 1,
-            "Type": "duration"
-          },
-          "Type": "cast"
-        },
-        "AbilityCooldown": {
-          "Name": "Cooldown",
-          "Value": 25.0,
-          "Scale": {
-            "Value": 1,
-            "Type": "cooldown"
-          },
-          "Type": "cooldown"
-        },
-        "AbilityCooldownBetweenCharge": {
-          "Name": "Charge Delay",
-          "Value": -1.0,
-          "Type": "charge_cooldown"
-        },
-        "Radius": {
-          "Name": "Radius",
-          "Value": 6,
-          "Scale": {
-            "Value": 1,
-            "Type": "radius"
-          },
-          "Type": "distance"
         }
       },
       "descriptions": [
@@ -1324,7 +1333,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.8f2589cb4e64",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "Brew a pot of tea that applies a magical effect in an area when thrown, cycling over time between a soothing {g:citadel_inline_attribute:'CombatBarrier'}, {g:citadel_inline_attribute:'Silence'}, or scalding burn that deals {g:citadel_inline_attribute:'SpiritDPS'} and reduces {g:citadel_inline_attribute:'SpiritResist'}. <br><br>Press {g:citadel_binding:'ADS'} to pause or resume brewing.",
           "plain_text": "Brew a pot of tea that applies a magical effect in an area when thrown, cycling over time between a soothing barrier, Silence, or scalding burn that deals spirit damage over time and reduces spirit resist.\nPress [ADS] to pause or resume brewing."
         },
@@ -1333,7 +1342,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.8f2589cb4e64",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "+33.33% Brew Effectiveness",
           "plain_text": "+33.33% Brew Effectiveness"
         }
@@ -1526,6 +1535,45 @@
             "DescKey": "ability_baba_ultimate_2_t3_desc"
           }
         ],
+        "Headers": {
+          "AbilityCastDelay": {
+            "Name": "Cast Delay",
+            "Value": 0.15,
+            "Type": "cast"
+          },
+          "AbilityCastRange": {
+            "Name": "Cast Range",
+            "Value": 18,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            },
+            "Type": "range"
+          },
+          "AbilityChannelTime": {
+            "Name": "Channel Duration",
+            "Value": 6.5,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "cast"
+          },
+          "AbilityCooldown": {
+            "Name": "Cooldown",
+            "Value": 150.0,
+            "Scale": {
+              "Value": 1,
+              "Type": "cooldown"
+            },
+            "Type": "cooldown"
+          },
+          "AbilityCooldownBetweenCharge": {
+            "Name": "Charge Delay",
+            "Value": -1.0,
+            "Type": "charge_cooldown"
+          }
+        },
         "Cooldown": {
           "TimeToGainLockonStack": {
             "Name": "Lock-on Time Per Pigeon",
@@ -1592,43 +1640,6 @@
             "Name": null,
             "Value": 2
           }
-        },
-        "AbilityCastDelay": {
-          "Name": "Cast Delay",
-          "Value": 0.15,
-          "Type": "cast"
-        },
-        "AbilityCastRange": {
-          "Name": "Cast Range",
-          "Value": 18,
-          "Scale": {
-            "Value": 1,
-            "Type": "range"
-          },
-          "Type": "range"
-        },
-        "AbilityChannelTime": {
-          "Name": "Channel Duration",
-          "Value": 6.5,
-          "Scale": {
-            "Value": 1,
-            "Type": "duration"
-          },
-          "Type": "cast"
-        },
-        "AbilityCooldown": {
-          "Name": "Cooldown",
-          "Value": 150.0,
-          "Scale": {
-            "Value": 1,
-            "Type": "cooldown"
-          },
-          "Type": "cooldown"
-        },
-        "AbilityCooldownBetweenCharge": {
-          "Name": "Charge Delay",
-          "Value": -1.0,
-          "Type": "charge_cooldown"
         }
       },
       "descriptions": [
@@ -1638,7 +1649,7 @@
             "card.DescKey",
             "card.Info1.DescKey"
           ],
-          "source": "github.deadlock-data.english.8f2589cb4e64",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "Cover targets in front of you with <span class=\"highlight\">bread</span>, adding a stacking {g:citadel_inline_attribute:'Slow'} .<br><br>When the channel ends a flock of pigeons bombard the targets, dealing {g:citadel_inline_attribute:'SpiritDamage'} and hexing each target into a <span class=\"highlight\">pigeon</span>, increasing in both damage and duration based on bread count.",
           "plain_text": "Cover targets in front of you with bread, adding a stacking slow .\nWhen the channel ends a flock of pigeons bombard the targets, dealing spirit damage and hexing each target into a pigeon, increasing in both damage and duration based on bread count."
         },
@@ -1647,7 +1658,7 @@
           "card_paths": [
             "card.Upgrades[0].DescKey"
           ],
-          "source": "github.deadlock-data.english.8f2589cb4e64",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "+4m Cast Range<br>+32% Max Slow",
           "plain_text": "+4m Cast Range\n+32% Max Slow"
         },
@@ -1656,7 +1667,7 @@
           "card_paths": [
             "card.Upgrades[2].DescKey"
           ],
-          "source": "github.deadlock-data.english.8f2589cb4e64",
+          "source": "github.deadlock-data.english.3aab395a1392",
           "raw_text": "+125 Max Damage <br>+1.5 Spirit Scaling<br>+0.5s Max Duration",
           "plain_text": "+125 Max Damage\n+1.5 Spirit Scaling\n+0.5s Max Duration"
         }
@@ -1667,7 +1678,7 @@
     {
       "id": "granny-long-legs",
       "name": "Granny Long Legs",
-      "source": "github.deadlock-data.gameplay.8f2589cb4e64",
+      "source": "github.deadlock-data.gameplay.3aab395a1392",
       "source_ability_key": "ability_baba_bench_run",
       "note": "Ability-driven bench form, not a separately selectable hero or an additional numbered ability. Configuration is in ability slot 2; do not invent another hero-stat block or convert raw jump-force/height fields to metres."
     }
@@ -1715,7 +1726,8 @@
         "Upgrades": []
       }
     },
-    "note": "Supporting melee and throw records; not extra numbered abilities."
+    "note": "Supporting melee and throw records; not extra numbered abilities.",
+    "source": "github.deadlock-data.gameplay.3aab395a1392"
   },
   "pre_release_comparison": {
     "client_version": 6753,
@@ -2602,11 +2614,10 @@
     }
   },
   "data_boundaries": [
-    "Baba configuration and English text are checked through October 7 client 6763; the October 6 record remains a historical snapshot.",
-    "Brew multiplier encoding was corrected in a regenerated client-6759 export, not demonstrated as an October 7 balance change.",
-    "Later wiki interaction descriptions remain dated October 8 and are not independently runtime-tested.",
-    "Other heroes, items and global mechanics retain their earlier pins. Later releases exist but are outside this chronological update.",
-    "The reviewed exported datasets are not the entire game client and do not prove the absence of unexported runtime fixes."
+    "This current configuration uses post-update client 6785 / source revision 11132425. The October 6 release snapshot and client-6763/6759 history remain separate; client 6782 is the immediate pre-update comparison.",
+    "The official October 14 note was published October 15 UTC. Its stated behavior is patch-note intent, not independent runtime evidence.",
+    "The client-6785 Street Brawl override is stored separately from standard Baba ability data; the earlier export's missing mode record does not establish an earlier runtime value.",
+    "The source TechResist value and SpiritScaling.TechResist coefficient are distinct fields; no full in-match resistance calculation is inferred."
   ],
   "october7_review": {
     "previous_client_version": 6759,
@@ -2640,5 +2651,32 @@
       "note": "No changes from 6762 in the 12 reviewed JSON datasets, including English. Other-language localization and version-file changes are outside the English record."
     },
     "official_notes": "No October 7 Steam announcement, wiki update page or original raw changelog was found in the reviewed sources. Official forum access returned a verification challenge, not readable changelog evidence."
-  }
+  },
+  "balance_update": {
+    "date": "2026-10-14",
+    "previous_client_version": 6782,
+    "previous_source": "github.deadlock-data.gameplay.bd95f245ccb1",
+    "current_client_version": 6785,
+    "current_source": "github.deadlock-data.gameplay.3aab395a1392",
+    "official_note_source": "steam.news.deadman-danny-oct14-update.1846651706676198",
+    "raw_note_source": "github.deadlock-data.raw-changelog.2026-10-14.3aab395a1392",
+    "configuration_timezone": "not declared in version.txt",
+    "summary": [
+      "Base bullet resistance is -7%; SpiritScaling.TechResist changes from 0.12 to 0.1.",
+      "Threadsap and Granny Long Legs cooldowns increase; Baba's Brew cooldown and barrier values change.",
+      "Street Brawl Threadsap's distinct mode override is recorded separately in data/street-brawl-ability-changes.yaml."
+    ]
+  },
+  "patch_note_addenda": [
+    {
+      "evidence_status": "patch_note_only",
+      "source": "steam.news.deadman-danny-oct14-update.1846651706676198",
+      "note": "Threadsap's enemy Spirit reduction ends when Baba dies; no matching field in the reviewed standard ability configuration establishes this behavior."
+    },
+    {
+      "evidence_status": "patch_note_only",
+      "source": "steam.news.deadman-danny-oct14-update.1846651706676198",
+      "note": "Repeated airborne Granny Long Legs light melees have diminishing forward momentum; the light-melee upward launch is reduced; heavy-melee ground pound no longer gains horizontal speed when landing on slopes. These statements are not independently runtime-tested."
+    }
+  ]
 }

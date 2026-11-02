@@ -20,14 +20,14 @@ Valve's [“Mind the Birds!” announcement](https://store.steampowered.com/news
 
 ## Baba
 
-The [historical October 6 Baba record](snapshots/baba-2026-10-06.md) preserves her initial launch-day state (client 6759), including weapon, stats, four abilities, upgrades and three brew effects. The [canonical Baba record](../heroes/baba/baba.md) is checked through client 6763 after the separate October 7 source review.
+The [historical October 6 Baba record](snapshots/baba-2026-10-06.md) preserves her initial launch-day state (client 6759), including weapon, stats, four abilities, upgrades and three brew effects. The current [canonical Baba record](../heroes/baba/baba.md) uses client 6785 after the separately dated October 14 balance update; her client-6763 October 7 state remains historical comparison evidence.
 
 1. **Threadsap:** crosshair-guided thread bursts, steals Spirit and grants Spirit damage on bullets while holding stolen Spirit.
 2. **Granny Long Legs:** bench form grants movement, jumping and resistances; light melee kicks and heavy melee ground-pounds. It is not another roster hero.
 3. **Baba's Brew** (also called **Baba's Brews**): cycles between a barrier, silence, and a damaging burn that reduces Spirit Resist. Aim-down-sights pauses/resumes brewing.
 4. **Feed The Birds:** applies bread and stacking slow; pigeons subsequently damage and hex targets, with effects depending on bread count.
 
-The roster contains **40 heroes**. This dated release snapshot uses October 6 **client 6759**; Baba's current canonical record is separately checked through October 7/client 6763. Sinclair and Rat King remain on client 6753; the other 37 heroes retain their earlier pins. No global baseline or item roster is advanced.
+At this release checkpoint, the roster contained **40 heroes**. The current roster contains 42; its baseline remains mixed and dated. Baba's current record uses client 6785, while Sinclair and Rat King use client 6753 and the other unrevised heroes retain their earlier pins. No global baseline or item roster is advanced by this historical release record.
 
 ## Evidence and Limits
 

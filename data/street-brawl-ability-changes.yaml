@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "data.street-brawl-ability-changes",
+  "snapshot_id": "deadlock-data-client-6785",
+  "client_version": 6785,
+  "server_version": 6785,
+  "source_revision": 11132425,
+  "current_as_of": "2026-10-14",
+  "evidence_status": "source_verified_mode_configuration_with_patch_note_intent",
+  "sources": {
+    "current_mode_configuration": "github.deadlock-data.gameplay.3aab395a1392",
+    "standard_ability_reference": "github.deadlock-data.gameplay.3aab395a1392",
+    "previous_checkpoint": "github.deadlock-data.gameplay.bd95f245ccb1",
+    "official_update_note": "steam.news.deadman-danny-oct14-update.1846651706676198",
+    "raw_update_note": "github.deadlock-data.raw-changelog.2026-10-14.3aab395a1392"
+  },
+  "scope": "One client-6785 Street Brawl override for Baba's Threadsap; not a general mode availability or runtime-behavior record.",
+  "ability_key": "ability_baba_bubbling_brew",
+  "ability_name": "Threadsap",
+  "standard_mode_reference": {
+    "client_version": 6785,
+    "source": "github.deadlock-data.gameplay.3aab395a1392",
+    "DebuffDuration": {
+      "Value": 22,
+      "Scale": {
+        "Value": 1,
+        "Type": "duration"
+      }
+    },
+    "Upgrades": [
+      {
+        "MagicDamagePerBullet": 8
+      },
+      {
+        "AbilityCooldown": -12,
+        "DebuffDuration": 8
+      },
+      {
+        "AbilityCharges": 1,
+        "PullDistance": 7
+      }
+    ]
+  },
+  "street_brawl_override": {
+    "Name": "Threadsap",
+    "DebuffDuration": {
+      "Value": 14
+    },
+    "Upgrades": {
+      "2": {
+        "DebuffDuration": 5
+      }
+    }
+  },
+  "patch_note_intent": {
+    "text": "Street Brawl: Baba Threadsap duration lasts 35% less.",
+    "source": "steam.news.deadman-danny-oct14-update.1846651706676198",
+    "evidence_status": "official_patch_note_intent_not_runtime_test"
+  },
+  "interpretation_boundaries": [
+    "The mode-specific override is source configuration. The absence of an override in the earlier client-6782 export does not establish the earlier runtime value.",
+    "The raw override key `Upgrades.2` is preserved; no tier name is inferred from that index.",
+    "The configured 14-second value and the note's rounded 35% reduction are retained separately; 22 × 0.65 is 14.3, so no exact percentage is derived from the rounded value.",
+    "No Street Brawl availability or observed live-match behavior is inferred from the data record."
+  ]
+}

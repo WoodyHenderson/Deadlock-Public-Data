@@ -1,19 +1,22 @@
 {
   "schema_version": 1,
   "id": "item.radiant-regeneration",
-  "snapshot_id": "deadlock-wiki-2026-09-16",
-  "client_version": 6694,
-  "server_version": 6694,
-  "source_revision": 11005995,
-  "current_as_of": "2026-09-16",
-  "evidence_status": "source_verified",
+  "snapshot_id": "deadlock-data-client-6785",
+  "client_version": 6785,
+  "server_version": 6785,
+  "source_revision": 11132425,
+  "current_as_of": "2026-10-14",
+  "evidence_status": "source_verified_with_official_balance_note",
   "source_priority": [
-    "deadlock-api.items.client-6694.source-11005995",
-    "github.deadlock-data.items.fc4f540f12e0"
+    "deadlock-api.items.client-6785.source-11132425",
+    "github.deadlock-data.gameplay.3aab395a1392"
   ],
   "sources": {
-    "primary": "deadlock-api.items.client-6694.source-11005995",
-    "secondary": "github.deadlock-data.items.fc4f540f12e0"
+    "primary": "deadlock-api.items.client-6785.source-11132425",
+    "secondary": "github.deadlock-data.gameplay.3aab395a1392",
+    "official_balance_note": "steam.news.deadman-danny-oct14-update.1846651706676198",
+    "raw_balance_note": "github.deadlock-data.raw-changelog.2026-10-14.3aab395a1392",
+    "previous_configuration": "github.deadlock-data.gameplay.bd95f245ccb1"
   },
   "identity": {
     "name": "Radiant Regeneration",
@@ -36,9 +39,7 @@
     "is_active_item": false,
     "is_imbue": false,
     "shop_filters": [
-      "MagicDamage",
-      "Movement",
-      "Healing"
+      "regen"
     ],
     "target_types": null
   },
@@ -101,7 +102,7 @@
         "scale_function": {
           "class_name": "scale_function_healing_spirit_scale",
           "subclass_name": "TotalHealthRegen_scale_function",
-          "stat_scale": 0.04
+          "stat_scale": 0.035
         },
         "label": "Regeneration",
         "postfix": " HP/s",
@@ -404,7 +405,7 @@
         "scale_function": {
           "class_name": "scale_function_healing_spirit_scale",
           "subclass_name": "TotalHealthRegen_scale_function",
-          "stat_scale": 0.04
+          "stat_scale": 0.035
         },
         "label": "Regeneration",
         "postfix": " HP/s",
@@ -453,7 +454,8 @@
           {
             "properties": [
               "BonusHealth"
-            ]
+            ],
+            "elevated_properties": []
           }
         ]
       },
@@ -511,7 +513,36 @@
     ],
     "is_active_item": false,
     "shopable": true,
-    "cost": 3200
+    "cost": 3200,
+    "corrupted_info": {
+      "property_upgrades": [
+        {
+          "name": "HealingPerCast",
+          "bonus": "65"
+        },
+        {
+          "name": "Regeneration",
+          "bonus": "5"
+        },
+        {
+          "name": "BonusMoveSpeed",
+          "bonus": "2.25m"
+        },
+        {
+          "name": "BonusHealth",
+          "bonus": "230"
+        },
+        {
+          "name": "AbilityCooldown",
+          "bonus": "-2"
+        }
+      ],
+      "excluded_penalties": []
+    },
+    "shop_filters": [
+      "regen"
+    ],
+    "shop_version": 0
   },
   "secondary_deadlock_data_record": {
     "Name": "Radiant Regeneration",
@@ -524,11 +555,7 @@
       "upgrade_mystic_regeneration"
     ],
     "TargetTypes": null,
-    "ShopFilters": [
-      "MagicDamage",
-      "Movement",
-      "Healing"
-    ],
+    "ShopFilters": null,
     "IsDisabled": false,
     "StreetBrawl": false,
     "IsImbue": false,
@@ -548,7 +575,7 @@
     "Regeneration": {
       "Value": 4,
       "Scale": {
-        "Value": 0.04,
+        "Value": 0.035,
         "Type": "spirit"
       }
     },
@@ -559,6 +586,13 @@
       "HealingPerCast": 60,
       "BonusHealth": 110,
       "BonusMoveSpeed": "1m"
+    },
+    "CorruptedUpgrades": {
+      "HealingPerCast": 65,
+      "Regeneration": 5,
+      "BonusMoveSpeed": "2.25m",
+      "BonusHealth": 230,
+      "AbilityCooldown": -2
     }
   },
   "secondary_deadlock_card_record": {
@@ -573,11 +607,7 @@
       "upgrade_mystic_regeneration"
     ],
     "TargetTypes": null,
-    "ShopFilters": [
-      "MagicDamage",
-      "Movement",
-      "Healing"
-    ],
+    "ShopFilters": null,
     "IsDisabled": false,
     "StreetBrawl": false,
     "IsImbue": false,
@@ -605,7 +635,7 @@
           "Key": "Regeneration",
           "Value": 4,
           "Scale": {
-            "Value": 0.04,
+            "Value": 0.035,
             "Type": "spirit"
           },
           "Type": "healing"
@@ -655,6 +685,13 @@
       "BonusHealth": 110,
       "BonusMoveSpeed": "1m"
     },
+    "CorruptedUpgrades": {
+      "HealingPerCast": 65,
+      "Regeneration": 5,
+      "BonusMoveSpeed": "2.25m",
+      "BonusHealth": 230,
+      "AbilityCooldown": -2
+    },
     "Other": {
       "AbilityUnitTargetLimit": {
         "Key": "AbilityUnitTargetLimit",
@@ -679,10 +716,26 @@
     "slot": true,
     "enabled": true
   },
+  "balance_update": {
+    "date": "2026-10-14",
+    "previous_client_version": 6782,
+    "previous_source": "github.deadlock-data.gameplay.bd95f245ccb1",
+    "previous_regeneration_scale": 0.04,
+    "current_client_version": 6785,
+    "current_regeneration_scale": 0.035,
+    "evidence": [
+      "deadlock-api.items.client-6785.source-11132425",
+      "github.deadlock-data.gameplay.3aab395a1392",
+      "steam.news.deadman-danny-oct14-update.1846651706676198"
+    ],
+    "note": "The scale coefficient is pinned by both current structured sources and the official note; no complete in-match healing formula or runtime result is inferred."
+  },
   "data_boundaries": [
-    "The Deadlock API is authoritative; deadlock-data is a secondary source and is not silently merged over primary values.",
+    "The Deadlock API is authoritative for this client-6785 item record; deadlock-data is the secondary source and the selected core fields agree.",
     "Media URLs and embedded SVG artwork are omitted because they are not mechanics evidence.",
     "Primary description markup is normalized separately as description_plain; the sanitized source record retains non-media markup.",
-    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction."
+    "Raw property presence does not establish an executable calculation rule or undocumented runtime interaction.",
+    "This single item record is refreshed to client 6785; the 173-item roster and unrelated item records retain their client-6694 baseline.",
+    "Source payload metadata such as corrupted-item fields and shop filters is not attributed to the October 14 balance note or treated as new availability evidence."
   ]
 }

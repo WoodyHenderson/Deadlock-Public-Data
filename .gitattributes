@@ -1,0 +1,2 @@
+# Preserve upstream bytes for hash-pinned raw changelog artifacts.
+Knowledgebase/patches/raw/*.txt -text
