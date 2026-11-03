@@ -5,8 +5,8 @@ domain: patches
 topics: [patches, history, balance, changelogs]
 aliases: [patch notes, patch history, changelogs, balance history]
 summary: Historical Deadlock patch changelogs for explicitly requested historical or change-tracking questions.
-snapshot_id: deadlock-patches-through-2026-10-14
-current_as_of: "2026-10-14"
+snapshot_id: deadlock-patches-through-2026-10-16
+current_as_of: "2026-10-16"
 evidence_status: source_verified
 sources:
   - github.deadlock-data.changelogs.raw.afc8e9c
@@ -22,6 +22,10 @@ sources:
   - steam.news.deadman-danny-release.1846018067945303
   - steam.news.deadman-danny-oct14-update.1846651706676198
   - github.deadlock-data.raw-changelog.2026-10-14.3aab395a1392
+  - github.deadlock-data.gameplay.596ad0c74b26
+  - github.deadlock-data.english.596ad0c74b26
+  - github.deadlock-data.gameplay.5b2911aa55e6
+  - steam.news.violet-release.1846651706683085
 ---
 
 # Historical Patch Changelogs
@@ -64,6 +68,11 @@ preserve original wording; the [October 2 Rat King snapshot](snapshots/rat-king-
 preserves historical launch values. The October 14 summary, raw note, and current
 client-6785 records are cited independently; they do not advance the corpus-wide
 September 3 baseline or the 173-item roster.
+
+The [October 16 Violet release](2026-10-16-violet-release.md) records Valve's
+availability confirmation and the first reviewed complete post-release candidate
+at client 6790. Client 6793's selected JSON datasets are identical; neither is an
+exact launch-day configuration. No October 16 raw changelog is fabricated.
 
 ## Retrieval policy
 
