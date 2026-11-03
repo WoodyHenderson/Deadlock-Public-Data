@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "snapshot_id": "deadlock-data-mixed-2026-10-14",
-  "current_as_of": "2026-10-14",
+  "snapshot_id": "deadlock-data-mixed-2026-10-16",
+  "current_as_of": "2026-10-16",
   "source": "github.deadlock-data.hero-data.fc4f540f12e0",
-  "source_scope_note": "Solomon uses client 6774 (October 9) as a dated configuration snapshot. Deadman Danny uses current post-update client 6785, while his first complete client-6782 post-release configuration remains a historical snapshot and is not an exact launch-day pin. Baba uses current client 6785 after the October 14 update, with her client-6759 October 6 release snapshot retained historically. Sinclair and Rat King use client 6753; the other 37 heroes retain client 6694. The top-level client/source fields describe that older baseline, not every entry. Release dates are separate from configuration dates.",
+  "source_scope_note": "Solomon uses client 6774 (October 9) as a dated configuration snapshot. Deadman Danny uses current post-update client 6785, while his first complete client-6782 post-release configuration remains a historical snapshot and is not an exact launch-day pin. Baba uses current client 6785 after the October 14 update, with her client-6759 October 6 release snapshot retained historically. Violet uses client 6790 as the first reviewed complete post-release candidate; client 6793 is a same-date identical JSON recheck, not an exact launch-day pin. Sinclair and Rat King use client 6753; the other 37 heroes retain client 6694. The top-level client/source fields describe that older baseline, not every entry. Release dates are separate from configuration dates.",
   "selection_rule": "Dated public release evidence plus selectable, non-disabled configuration. Development flags are retained, but an explicit official release can override a conflicting InDevelopment flag. IsSelectable alone does not establish release; transformed states are not separate roster heroes.",
-  "hero_count": 42,
+  "hero_count": 43,
   "heroes": [
     {
       "id": "hero.abrams",
@@ -214,6 +214,19 @@
       "id": "hero.vindicta",
       "name": "Vindicta",
       "internal_hero_key": "hero_hornet"
+    },
+    {
+      "id": "hero.violet",
+      "name": "Violet",
+      "internal_hero_key": "hero_artist",
+      "availability_as_of": "2026-10-16",
+      "hero_data_source": "github.deadlock-data.gameplay.596ad0c74b26",
+      "configuration_as_of": "2026-10-16",
+      "release_source": "steam.news.violet-release.1846651706683085",
+      "configuration_client_version": 6790,
+      "same_date_followup_source": "github.deadlock-data.gameplay.5b2911aa55e6",
+      "development_flag_conflict": "InDevelopment remains true; official announcement confirms release.",
+      "configuration_note": "First reviewed complete post-release candidate, not an exact launch-day pin; selected JSON is identical at client 6793."
     },
     {
       "id": "hero.viscous",

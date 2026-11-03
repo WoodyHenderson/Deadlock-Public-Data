@@ -5,7 +5,7 @@ domain: meta
 topics: [routing, retrieval, navigation, entities]
 aliases: [entity index, keyword index]
 summary: Direct routes to the public snapshot's hero, ability, item, NPC, objective, and mechanics records.
-snapshot_id: deadlock-data-mixed-through-2026-10-14
+snapshot_id: deadlock-data-mixed-through-2026-10-16
 current_as_of: "2026-10-29"
 evidence_status: derived
 sources: []
@@ -19,7 +19,9 @@ Baba's client-6759 release snapshot and Danny's first complete client-6782 post-
 snapshot remain historical, and neither is represented as a launch-day numerical
 configuration. Solomon's release availability is confirmed by Valve's October 9
 announcement; his selected client-6774 configuration snapshot is dated separately
-from release evidence. Sinclair and Rat King use October 5/client 6753; the other 37
+from release evidence. Violet's October 16 release availability is confirmed by Valve;
+her first reviewed complete configuration is client 6790, a post-release candidate
+and not an exact launch-day pin. Sinclair and Rat King use October 5/client 6753; the other 37
 baseline heroes and 173 item records retain client 6694 (September 16), except for
 Radiant Regeneration's separately dated client-6785 item record. The separate
 map-coordinate layer is dated October 6. City Never Sleeps map/corrupted-item
@@ -78,6 +80,7 @@ historical values as current facts.
 | Baba, Threadsap, Granny Long Legs, Baba's Brew, Baba's Brews, Feed The Birds | [Baba](heroes/baba/baba.md); [October 6 release](patches/2026-10-06-baba-release.md); [October 7 source review](patches/2026-10-07-review.md); [October 14 balance update](patches/2026-10-14-balance.md) |
 | Solomon, Setup Bishop, Kingside Knight, Rook Battery, Develop Queen | [Solomon](heroes/solomon/solomon.md); [October 9 release](patches/2026-10-09-solomon-release.md); [release snapshot](patches/snapshots/solomon-2026-10-09.md) |
 | Deadman Danny, Strix Salvo, Chimera Mk1, Jettison Fuel, Close The Deal | [Deadman Danny](heroes/deadman-danny/deadman-danny.md); [October 13 release](patches/2026-10-13-deadman-danny-release.md); [October 14 balance update](patches/2026-10-14-balance.md); [first-complete client-6782 snapshot](patches/snapshots/deadman-danny-2026-10-14.md) |
+| Violet release, Living Ink, Flow State, Still Life, Abstract Landscape | [Violet](heroes/violet/violet.md); [October 16 release](patches/2026-10-16-violet-release.md) |
 | Radiant Regeneration balance | [Per-item client-6785 record](items/radiant-regeneration/radiant-regeneration.md); [October 14 update](patches/2026-10-14-balance.md) |
 | Baba's Street Brawl Threadsap override | [Mode-specific configuration](data/street-brawl-ability-changes.yaml); [October 14 update](patches/2026-10-14-balance.md) |
 | October 14 patch note and history | [Applied changes and evidence boundaries](patches/2026-10-14-balance.md); [raw note](patches/raw/2026-10-14.txt); [archive policy](patches/README.md); [manifest](patches/manifest.yaml) |
@@ -128,6 +131,7 @@ holds exact fields. Names reflect the pinned roster, not a live-game check.
 | [Venator](heroes/venator/venator.md) | Consecrating Grenade; Gutshot; Hex-Lined Snap Trap; Ira Domini |
 | [Victor](heroes/victor/victor.md) | Pain Battery; Jumpstart; Aura of Suffering; Shocking Reanimation |
 | [Vindicta](heroes/vindicta/vindicta.md) | Stake; Flight; Crow Familiar; Assassinate |
+| [Violet](heroes/violet/violet.md) | Living Ink; Flow State; Still Life; Abstract Landscape |
 | [Viscous](heroes/viscous/viscous.md) | Splatter; The Cube; Puddle Punch; Goo Ball |
 | [Vyper](heroes/vyper/vyper.md) | Screwjab Dagger; Lethal Venom; Slither; Petrifying Bola |
 | [Warden](heroes/warden/warden.md) | Alchemical Flask; Willpower; Binding Word; Last Stand |
