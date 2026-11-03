@@ -1808,7 +1808,7 @@ sources:
     english_sha256: c03a572bc60467024cb6a95401d88d3ff9fd966bc5eafb24d72c5bccfbdb9ddc
     version_file_sha256: 9f4ee31476492a5e87624357c456e2c3326ca4af808eae4847040af30ad53836
   - id: github.deadlock-data.gameplay.3aab395a1392
-    title: Client 6785 post-update gameplay data
+    title: Client 6785 post-update data and Violet pre-release comparison
     url: https://github.com/deadlock-wiki/deadlock-data/tree/3aab395a139254c12179f0f829f7488c55da2022/data/json
     version_url: https://github.com/deadlock-wiki/deadlock-data/blob/3aab395a139254c12179f0f829f7488c55da2022/data/version.txt
     commit: 3aab395a139254c12179f0f829f7488c55da2022
@@ -1817,7 +1817,7 @@ sources:
     source_revision: 11132425
     version_datetime: "2026-10-14T20:01:37"
     accessed_at: '2026-10-28'
-    scope: Client-6785 configuration used for the separately dated October 14 balance records; not an exact launch-day configuration. Exported fields are configuration evidence, not independent runtime verification.
+    scope: Client-6785 configuration used for the separately dated October 14 balance records and the pinned pre-release checkpoint for Violet's selectable but incomplete placeholder. It does not establish either hero's release status or an exact launch-day configuration; exported fields are configuration evidence, not independent runtime verification.
     ability_cards_sha256: 85a72f50c6983a3d706ee518bafedb69a353b0b675ad6d0b38cb307c6d0a05f3
     ability_data_sha256: 0c2e12c03e6ac7e8cf717976a06bd7a3d809d085d2f6f2e2adb300b95233ec32
     hero_data_sha256: 67b90bfc3fdc1eb0b4cfe89ca224d072443c2e2643d331921a5e62db6ae21687
@@ -1896,3 +1896,71 @@ sources:
     bytes: 2014
     accessed_at: '2026-10-28'
     scope: Pinned October 14 raw balance note, imported as a separate historical patch record and not folded into Danny's October 13 release snapshot.
+  - id: github.deadlock-data.gameplay.596ad0c74b26
+    title: Violet release configuration - client 6790
+    url: https://github.com/deadlock-wiki/deadlock-data/tree/596ad0c74b26dd7b11ef5c62b24a11a34c7813d8/data/json
+    version_url: https://github.com/deadlock-wiki/deadlock-data/blob/596ad0c74b26dd7b11ef5c62b24a11a34c7813d8/data/version.txt
+    commit: 596ad0c74b26dd7b11ef5c62b24a11a34c7813d8
+    client_version: 6790
+    server_version: 6790
+    source_revision: 11139717
+    version_datetime: "2026-10-16T13:44:07"
+    accessed_at: '2026-10-29'
+    scope: "First reviewed complete Violet configuration after Valve's availability announcement; source commit follows the Steam post by 10 minutes. VersionTime has no declared timezone. Not an exact launch-day or runtime test."
+    ability_cards_sha256: f10a61098b97acaa5d1bde45bf49fbcc0dc69dca275c8551d6935fdf39e52ae2
+    ability_data_sha256: 3cef3a1ff0b38266b73f704351fb8ac759c04d14cfcef0db5af846323cdc5d16
+    convars_sha256: 7128b85eba4864cb74e5c834f041df86f243ad5c0703bba306e85cbb199052f1
+    generic_data_sha256: 4ffdd3004363f670839217305c9b1e01e092ccdc6ea1d6e01c095e3b7dfbb1fc
+    hero_data_sha256: a7ad7c36939746db262e0c01b110f9c1b8f548969a57d54e5740fe279dc52801
+    hero_meaningful_stats_sha256: a5d1d1a7b464a1357f3af4f56acd857638c304de878ea0fe887f09abb717fe34
+    item_cards_sha256: 8f6fea1def39c3f7321f61c89b4fecf2aa7c7886f45cebf43a1edfe9de89b920
+    item_data_sha256: 82b69796ba6188ba3980681fd91d36f3f2d73867f4c26cb0e31f8b3beac68aad
+    misc_data_sha256: 6c03711939e4ff43feed34cd2b243f9d1b2b25b63597170e8dda6e64f0e50f48
+    npc_data_sha256: 6b503cd37758691a8cc13ce97031752d3ea8f3692cae39b999f45f60539be380
+    resource_lookup_sha256: 1a510bdc004b2ed5b3a17e9c74e8808b711b74a2031f7624d399d8771dbdda93
+    street_brawl_data_sha256: 00501440d23c5deb860c2a0eb79e1f6e1608ac260aec1913f93c86c7da0dc798
+    english_sha256: 56438c8c2a2894d7a3106cae8dbc2a2a36d284502511f84b5b62cfa40d45abf2
+    version_file_sha256: fd504b0801cbd3a63ea2511ce2b6070951b7fc6ab2f6a9e8165f2015f28e3ff3
+  - id: github.deadlock-data.english.596ad0c74b26
+    title: Client 6790 English localization for Violet
+    url: https://raw.githubusercontent.com/deadlock-wiki/deadlock-data/596ad0c74b26dd7b11ef5c62b24a11a34c7813d8/data/localizations/english.json
+    commit: 596ad0c74b26dd7b11ef5c62b24a11a34c7813d8
+    sha256: 56438c8c2a2894d7a3106cae8dbc2a2a36d284502511f84b5b62cfa40d45abf2
+    accessed_at: '2026-10-29'
+    scope: Violet lore, weapon name, four bound ability descriptions/upgrades, and related English labels; localized text is not independent runtime verification.
+  - id: github.deadlock-data.gameplay.5b2911aa55e6
+    title: Violet same-date configuration recheck - client 6793
+    url: https://github.com/deadlock-wiki/deadlock-data/tree/5b2911aa55e686d63be8e5d000a0c35a567d0369/data/json
+    version_url: https://github.com/deadlock-wiki/deadlock-data/blob/5b2911aa55e686d63be8e5d000a0c35a567d0369/data/version.txt
+    commit: 5b2911aa55e686d63be8e5d000a0c35a567d0369
+    client_version: 6793
+    server_version: 6793
+    source_revision: 11140748
+    version_datetime: "2026-10-16T16:05:45"
+    accessed_at: '2026-10-29'
+    scope: "Same-date client-6793 recheck; all 13 selected JSON datasets are byte-identical to client 6790, and only version.txt differs. No later Violet value is inferred."
+    ability_cards_sha256: f10a61098b97acaa5d1bde45bf49fbcc0dc69dca275c8551d6935fdf39e52ae2
+    ability_data_sha256: 3cef3a1ff0b38266b73f704351fb8ac759c04d14cfcef0db5af846323cdc5d16
+    convars_sha256: 7128b85eba4864cb74e5c834f041df86f243ad5c0703bba306e85cbb199052f1
+    generic_data_sha256: 4ffdd3004363f670839217305c9b1e01e092ccdc6ea1d6e01c095e3b7dfbb1fc
+    hero_data_sha256: a7ad7c36939746db262e0c01b110f9c1b8f548969a57d54e5740fe279dc52801
+    hero_meaningful_stats_sha256: a5d1d1a7b464a1357f3af4f56acd857638c304de878ea0fe887f09abb717fe34
+    item_cards_sha256: 8f6fea1def39c3f7321f61c89b4fecf2aa7c7886f45cebf43a1edfe9de89b920
+    item_data_sha256: 82b69796ba6188ba3980681fd91d36f3f2d73867f4c26cb0e31f8b3beac68aad
+    misc_data_sha256: 6c03711939e4ff43feed34cd2b243f9d1b2b25b63597170e8dda6e64f0e50f48
+    npc_data_sha256: 6b503cd37758691a8cc13ce97031752d3ea8f3692cae39b999f45f60539be380
+    resource_lookup_sha256: 1a510bdc004b2ed5b3a17e9c74e8808b711b74a2031f7624d399d8771dbdda93
+    street_brawl_data_sha256: 00501440d23c5deb860c2a0eb79e1f6e1608ac260aec1913f93c86c7da0dc798
+    english_sha256: 56438c8c2a2894d7a3106cae8dbc2a2a36d284502511f84b5b62cfa40d45abf2
+    version_file_sha256: 86225dc166d69a9f530b6ff7166654ee38deb86fe4604a6f4ae5a861fcc5bc9b
+  - id: steam.news.violet-release.1846651706683085
+    title: "Paint the Town - official Violet release"
+    url: https://store.steampowered.com/news/app/1422450/view/1846651706683085?l=english
+    news_gid: '1846651706683085'
+    published_at: '2026-10-16T21:00:07Z'
+    accessed_at: '2026-10-29'
+    contents_sha256: 189026419257d570e42b30397d821a1a0e8a0d226cd4a81c8e3c16b955c8cea7
+    hash_scope: UTF-8 Steam news API contents field, not rendered page HTML.
+    api_url: https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1422450&count=100&maxlength=0
+    api_response_sha256: 8f0954866c0d5e1e655894cb6a182f4381e2281b7c278c750d573f454f647734
+    scope: Official announcement confirming Violet is available in-game, naming her four abilities, and scheduling Nurse Harrow for October 20; not a complete mechanical specification.

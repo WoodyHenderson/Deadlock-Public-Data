@@ -1,0 +1,2634 @@
+{
+  "schema_version": 2,
+  "id": "hero.violet",
+  "snapshot_id": "deadlock-data-client-6790",
+  "client_version": 6790,
+  "server_version": 6790,
+  "source_revision": 11139717,
+  "current_as_of": "2026-10-16",
+  "evidence_status": "source_verified_with_official_release_confirmation",
+  "sources": {
+    "hero_data": "github.deadlock-data.gameplay.596ad0c74b26",
+    "ability_data": "github.deadlock-data.gameplay.596ad0c74b26",
+    "ability_cards": "github.deadlock-data.gameplay.596ad0c74b26",
+    "ability_localization": "github.deadlock-data.english.596ad0c74b26",
+    "pre_release_comparison": "github.deadlock-data.gameplay.3aab395a1392",
+    "same_date_followup": "github.deadlock-data.gameplay.5b2911aa55e6",
+    "release_announcement": "steam.news.violet-release.1846651706683085"
+  },
+  "name": "Violet",
+  "aliases": [],
+  "internal_hero_key": "hero_artist",
+  "hero_type": "Mystic",
+  "role_localization_key": "hero_artist_role",
+  "playstyle_localization_key": "hero_artist_playstyle",
+  "localized_fields": {
+    "lore": "Violet immigrated to The Cursed Apple when she was 12, and while there was a certain amount of culture shock to adapting to New York, she quickly fell in love with the vibrance of the city.   Dedicating herself to the pursuit of the arts, Violet's passion lead her to successes far beyond most of her peers.<br><br>First, a full ride to art school.<br><br>Then in her junior year, inclusion in MOMA'S prestigious celebration of student artists: \"The Upstart Gallery\".<br><br>By any measure she's doing phenomenal for her age, however Violet has not been able shake her existential dread of dying a failure. She knows that commercial success as a fine artist isn't about being good enough. It's not even about being great. It's about being seen by the right person at the right time.  And so she has set her sights on The Ritual... not to embellish on her own talent, but just to have a chance to show the world what she can do.",
+    "weapon_name": "Creative Solutions"
+  },
+  "availability": {
+    "selectable": true,
+    "recommended": false,
+    "disabled": false,
+    "in_development": true,
+    "in_hero_labs": false,
+    "released_date": "2026-10-16",
+    "release_confirmed_by_official_announcement": true,
+    "note": "Valve's October 16 announcement explicitly says Violet is available in-game. The client-6790 record still has InDevelopment=true; that generated flag is preserved but does not override the official availability statement."
+  },
+  "base_stats": {
+    "maximum_health": 710.0,
+    "health_regeneration_per_second": 2.0,
+    "light_melee_damage": 50,
+    "heavy_melee_damage": 116,
+    "move_speed_meters_per_second": 6.9,
+    "crouch_speed_meters_per_second": 4.75,
+    "sprint_speed_bonus_meters_per_second": 2.5,
+    "move_acceleration_source_units": 4,
+    "ground_dash": {
+      "speed_meters_per_second": 16.1,
+      "distance_meters": 10.0,
+      "duration_seconds": 0.62
+    },
+    "air_dash": {
+      "speed_meters_per_second": 18.6,
+      "distance_meters": 8.0,
+      "duration_seconds": 0.43
+    },
+    "stamina": {
+      "charges": 3.0,
+      "cooldown_seconds": 4.5000045000045,
+      "regeneration_per_second": 0.222222
+    },
+    "ability_resource": {
+      "maximum": 0,
+      "regeneration_per_second": 0
+    },
+    "spirit_duration_bonus_percent": 0,
+    "spirit_range_bonus_percent": 0,
+    "critical_damage_bonus_percent": -20.0,
+    "critical_damage_received_percent": 0.0,
+    "bullet_lifesteal_effectiveness": 1.0,
+    "spirit_lifesteal_effectiveness": 1.0
+  },
+  "per_boon_growth": {
+    "BulletDamage": 0.55,
+    "MaxHealth": 34.0,
+    "PowerIncreases": 1,
+    "TechPower": 1.1,
+    "LightMeleeDamage": 1.2,
+    "HeavyMeleeDamage": 2.784,
+    "DPS": 0.84618,
+    "SustainedDPS": 0.66266
+  },
+  "spirit_scaling": {},
+  "weapon": {
+    "BulletSpeed": 495.3,
+    "BulletDamage": 30.0,
+    "RoundsPerSecond": 1.5385,
+    "ClipSize": 15,
+    "ReloadTime": 2.7,
+    "ReloadMovespeed": 1.0,
+    "ReloadDelay": 0.0,
+    "ReloadSingle": false,
+    "FalloffStartRange": 19.99,
+    "FalloffEndRange": 64.01,
+    "FalloffStartScale": 1.0,
+    "FalloffEndScale": 0.1,
+    "FalloffBias": 0.5,
+    "BulletGravityScale": 0.0,
+    "BulletRadius": 0.254,
+    "BulletsPerShot": 1,
+    "BulletsPerBurst": 1,
+    "BurstInterShotInterval": 0,
+    "ShootMoveSpeed": 0.75,
+    "HitOnceAcrossAllBullets": true,
+    "CanCrit": true,
+    "AmmoConsumedPerShot": 1,
+    "DPS": 46.155,
+    "SustainedDPS": 36.145,
+    "NameKey": "citadel_weapon_artist_set",
+    "WeaponTypes": [
+      "Attribute_EWeaponAttribute_RapidFire",
+      "Attribute_EWeaponAttribute_LongRange"
+    ]
+  },
+  "generated_source_snapshot": {
+    "client_version": 6790,
+    "source_revision": 11139717,
+    "source": "github.deadlock-data.gameplay.596ad0c74b26",
+    "hero_data": {
+      "AbilityResourceMax": 0,
+      "AbilityResourceRegenPerSecond": 0,
+      "AirDashDistanceInMeters": 8.0,
+      "AirDashDuration": 0.43,
+      "AirDashSpeed": 18.6,
+      "BaseHealthRegen": 2.0,
+      "BaseWeaponDamageIncrease": 0,
+      "BoundAbilities": {
+        "1": {
+          "Name": "Living Ink",
+          "Key": "ability_artist_homingbrush"
+        },
+        "2": {
+          "Name": "Flow State",
+          "Key": "ability_artist_rollingprojectile"
+        },
+        "3": {
+          "Name": "Still Life",
+          "Key": "ability_artist_tether"
+        },
+        "4": {
+          "Name": "Abstract Landscape",
+          "Key": "ability_artist_bamboogrove"
+        }
+      },
+      "CritDamageBonusPercent": -20.0,
+      "CritDamageReceivedPercent": 0.0,
+      "CrouchSpeed": 4.75,
+      "GroundDashDistanceInMeters": 10.0,
+      "GroundDashDuration": 0.62,
+      "GroundDashSpeed": 16.1,
+      "HeavyMeleeDamage": 116,
+      "HeroBulletLifestealEffectiveness": 1.0,
+      "HeroSpiritLifestealEffectiveness": 1.0,
+      "InDevelopment": true,
+      "InHeroLabs": false,
+      "IsDisabled": false,
+      "IsRecommended": false,
+      "IsSelectable": true,
+      "LevelScaling": {
+        "BulletDamage": 0.55,
+        "MaxHealth": 34.0,
+        "PowerIncreases": 1,
+        "TechPower": 1.1,
+        "LightMeleeDamage": 1.2,
+        "HeavyMeleeDamage": 2.784,
+        "DPS": 0.84618,
+        "SustainedDPS": 0.66266
+      },
+      "LightMeleeDamage": 50,
+      "Lore": "hero_artist_lore",
+      "MaxHealth": 710.0,
+      "MaxMoveSpeed": 6.9,
+      "MoveAcceleration": 4,
+      "Name": "Violet",
+      "OOCHealthRegen": 0,
+      "Playstyle": "hero_artist_playstyle",
+      "ProcBuildUpRateScale": 1,
+      "ReloadSpeed": 0,
+      "Role": "hero_artist_role",
+      "SpiritScaling": {},
+      "SprintSpeed": 2.5,
+      "Stamina": 3.0,
+      "StaminaCooldown": 4.5000045000045,
+      "StaminaRegenPerSecond": 0.222222,
+      "TechDuration": 0,
+      "TechRange": 0,
+      "Type": "Mystic",
+      "Weapon": {
+        "BulletSpeed": 495.3,
+        "BulletDamage": 30.0,
+        "RoundsPerSecond": 1.5385,
+        "ClipSize": 15,
+        "ReloadTime": 2.7,
+        "ReloadMovespeed": 1.0,
+        "ReloadDelay": 0.0,
+        "ReloadSingle": false,
+        "FalloffStartRange": 19.99,
+        "FalloffEndRange": 64.01,
+        "FalloffStartScale": 1.0,
+        "FalloffEndScale": 0.1,
+        "FalloffBias": 0.5,
+        "BulletGravityScale": 0.0,
+        "BulletRadius": 0.254,
+        "BulletsPerShot": 1,
+        "BulletsPerBurst": 1,
+        "BurstInterShotInterval": 0,
+        "ShootMoveSpeed": 0.75,
+        "HitOnceAcrossAllBullets": true,
+        "CanCrit": true,
+        "AmmoConsumedPerShot": 1,
+        "DPS": 46.155,
+        "SustainedDPS": 36.145,
+        "NameKey": "citadel_weapon_artist_set",
+        "WeaponTypes": [
+          "Attribute_EWeaponAttribute_RapidFire",
+          "Attribute_EWeaponAttribute_LongRange"
+        ]
+      },
+      "WeaponPowerScale": 1
+    },
+    "ability_data_source": "github.deadlock-data.gameplay.596ad0c74b26",
+    "ability_cards_source": "github.deadlock-data.gameplay.596ad0c74b26"
+  },
+  "abilities": [
+    {
+      "slot": 1,
+      "name": "Living Ink",
+      "internal_key": "ability_artist_homingbrush",
+      "data": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCharges": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "max_charges"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 22,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": {
+          "Value": 7,
+          "Scale": {
+            "Value": 1,
+            "Type": "charge_cooldown"
+          }
+        },
+        "AbilityDuration": {
+          "Value": 10,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityPostCastDuration": 0.1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BuffModifier": {
+          "Class": "Base",
+          "Subclass": "Buff"
+        },
+        "BulletDamageMultiplier": 120,
+        "ChannelMoveSpeed": -1,
+        "CooldownReductionPerHit": 1.5,
+        "Damage": {
+          "Value": 35,
+          "Scale": {
+            "Value": 0.7,
+            "Type": "spirit"
+          }
+        },
+        "DrawDuration": {
+          "Value": 20,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "FireRateSlow": 20,
+        "IsDisabled": false,
+        "Key": "ability_artist_homingbrush",
+        "MaxDrawDistance": {
+          "Value": 25,
+          "Scale": [
+            {
+              "Value": 0.12,
+              "Type": "spirit"
+            },
+            {
+              "Value": 1,
+              "Type": "range"
+            }
+          ]
+        },
+        "MaxShots": 3,
+        "Name": "Living Ink",
+        "Radius": {
+          "Value": 2.5,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "SlowModifier": {
+          "Class": "DiminishingSlow",
+          "Subclass": "Slow"
+        },
+        "StackModifier": {
+          "Class": "Base",
+          "Subclass": "Stack",
+          "EnabledStateMask": [
+            "ArtistFlowstate",
+            "ArtistPreventBulletCreation"
+          ]
+        },
+        "StackingBuffModifier": {
+          "Class": "ArtistStackingbuff",
+          "Subclass": "Stackingbuff"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -4,
+            "MaxDrawDistance": 15
+          },
+          {
+            "MaxStacks": 5,
+            "StackDuration": 10,
+            "BonusFireRatePerStack": 10
+          },
+          {
+            "BulletDamageMultiplier": 30,
+            "CooldownReductionPerHit": 1,
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.4,
+                "Type": "spirit"
+              }
+            }
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_artist_homingbrush",
+        "Name": "Living Ink",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 35,
+                "Scale": {
+                  "Value": 0.7,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "CooldownReductionPerHit",
+                "Name": "Cooldown Reduction per Hit",
+                "Value": 1.5,
+                "Type": "cooldown"
+              },
+              {
+                "Key": "BulletDamageMultiplier",
+                "Name": "Bullet Damage",
+                "Value": 120,
+                "Type": "bullet_damage"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_artist_homingbrush_desc_active"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "MaxDrawDistance",
+                "Name": "Max Drawing Size",
+                "Value": 25,
+                "Scale": [
+                  {
+                    "Value": 0.12,
+                    "Type": "spirit"
+                  },
+                  {
+                    "Value": 1,
+                    "Type": "range"
+                  }
+                ],
+                "Type": "distance"
+              },
+              {
+                "Key": "DrawDuration",
+                "Name": "Drawing Duration",
+                "Value": 20,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_artist_homingbrush_desc_active_alt"
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -4,
+            "MaxDrawDistance": 15,
+            "DescKey": "ability_artist_homingbrush_t1_desc"
+          },
+          {
+            "MaxStacks": 5,
+            "StackDuration": 10,
+            "BonusFireRatePerStack": 10,
+            "DescKey": "ability_artist_homingbrush_t2_desc"
+          },
+          {
+            "BulletDamageMultiplier": 30,
+            "CooldownReductionPerHit": 1,
+            "Damage": {
+              "Value": 0,
+              "Scale": {
+                "Value": 0.4,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "ability_artist_homingbrush_t3_desc"
+          }
+        ],
+        "Headers": {
+          "AbilityCastDelay": {
+            "Name": "Cast Delay",
+            "Value": 0.1,
+            "Type": "cast"
+          },
+          "AbilityCharges": {
+            "Name": "Charges",
+            "Value": 2,
+            "Scale": {
+              "Value": 1,
+              "Type": "max_charges"
+            },
+            "Type": "cast"
+          },
+          "AbilityCooldown": {
+            "Name": "Cooldown",
+            "Value": 22,
+            "Scale": {
+              "Value": 1,
+              "Type": "cooldown"
+            },
+            "Type": "cooldown"
+          },
+          "AbilityCooldownBetweenCharge": {
+            "Name": "Charge Delay",
+            "Value": 7,
+            "Scale": {
+              "Value": 1,
+              "Type": "charge_cooldown"
+            },
+            "Type": "charge_cooldown"
+          },
+          "AbilityDuration": {
+            "Name": "Duration",
+            "Value": 10,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "duration"
+          },
+          "Radius": {
+            "Name": "Radius",
+            "Value": 2.5,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            },
+            "Type": "distance"
+          }
+        },
+        "Cast": {
+          "MaxShots": {
+            "Name": "Max Shots",
+            "Value": 3,
+            "Type": "cast"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.1
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "FireRateSlow": {
+            "Name": "Fire Rate",
+            "Value": 20
+          }
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_artist_homingbrush_desc_active",
+          "card_paths": [
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.596ad0c74b26",
+          "raw_text": "<span class=\"diminish\">Empower ({g:citadel_binding:'ABILITY1'}):</span> Your next <span class=\"highlight\">3</span> bullets come to life, allowing you to steer them as they travel. The bullets deal increased {g:citadel_inline_attribute:'BulletDamage'} and splash {g:citadel_inline_attribute:'SpiritDamage'} in a small area.<br><br>Each successful hit against a hero reduces <span class=\"highlight\">all ability cooldowns</span>, and half for <span class=\"highlight\">all item cooldowns</span>.",
+          "plain_text": "Empower ( [ABILITY1] ): Your next 3 bullets come to life, allowing you to steer them as they travel. The bullets deal increased bullet damage and splash spirit damage in a small area.\nEach successful hit against a hero reduces all ability cooldowns, and half for all item cooldowns."
+        },
+        {
+          "localization_key": "ability_artist_homingbrush_desc_active_alt",
+          "card_paths": [
+            "card.Info2.DescKey"
+          ],
+          "source": "github.deadlock-data.english.596ad0c74b26",
+          "raw_text": "<span class=\"diminish\">Draw ({g:citadel_binding:'ADS'}):</span> Paint a solid stroke of ink instead that blocks projectiles and characters from passing through.<br><br>The stroke can be destroyed with a heavy melee, but deals {g:citadel_inline_attribute:'SpiritDamage'} to the attacker.</span>",
+          "plain_text": "Draw ( [ADS] ): Paint a solid stroke of ink instead that blocks projectiles and characters from passing through.\nThe stroke can be destroyed with a heavy melee, but deals spirit damage to the attacker."
+        },
+        {
+          "localization_key": "ability_artist_homingbrush_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.596ad0c74b26",
+          "raw_text": "-4s Cooldown<br>15m Max Draw Distance",
+          "plain_text": "-4s Cooldown\n15m Max Draw Distance"
+        },
+        {
+          "localization_key": "ability_artist_homingbrush_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.596ad0c74b26",
+          "raw_text": "On Empower: Gain +10% Fire Rate for 10s, stacking 5 times",
+          "plain_text": "On Empower: Gain +10% Fire Rate for 10s, stacking 5 times"
+        },
+        {
+          "localization_key": "ability_artist_homingbrush_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.596ad0c74b26",
+          "raw_text": "+1s Cooldown Reduction Per Hit<br>Improve scaling",
+          "plain_text": "+1s Cooldown Reduction Per Hit\nImprove scaling"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "name": "Flow State",
+      "internal_key": "ability_artist_rollingprojectile",
+      "data": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCooldown": {
+          "Value": 23,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "AuraLingerDuration": 1,
+        "BarrierModifier": {
+          "Class": "Base",
+          "Subclass": "Barrier"
+        },
+        "BehaviourBits": [
+          "BehaviorProjectile",
+          "BehaviorNoTarget",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorCanSetQuickCast",
+          "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "DashAirSpeed": 15,
+        "DashModifier": {
+          "Class": "Base",
+          "Subclass": "Dash"
+        },
+        "DashSpeed": 20,
+        "DebuffModifier": {
+          "Class": "ArtistRollingprojectileDebuff",
+          "Subclass": "Debuff"
+        },
+        "ExplosionCone": 90,
+        "ExplosionRadius": {
+          "Value": 15,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "FadingSlowPercent": 60,
+        "GroundAuraDuration": {
+          "Value": 6,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "GroundAuraHeight": 2,
+        "GroundAuraModifier": {
+          "Class": "BaseAura",
+          "Subclass": "Aura",
+          "ProvidedByAura": {
+            "Class": "ArtistEnhancedslide",
+            "Subclass": "Buff",
+            "Acceleration": 600.0,
+            "ForwardThrust": 0.0,
+            "DamageAmpModifier": {
+              "Class": "ArtistStackingdamageamp",
+              "Subclass": "Stackingdamageamp"
+            }
+          }
+        },
+        "GroundAuraRadius": 2,
+        "GroundAuraSpacing": 2,
+        "IsDisabled": false,
+        "Key": "ability_artist_rollingprojectile",
+        "MaxDamage": {
+          "Value": 100,
+          "Scale": {
+            "Value": 1.8,
+            "Type": "spirit"
+          }
+        },
+        "MaxDamageTime": 2,
+        "MinDamage": {
+          "Value": 50,
+          "Scale": {
+            "Value": 0.9,
+            "Type": "spirit"
+          }
+        },
+        "Name": "Flow State",
+        "SideMoveSpeedReduction": -65,
+        "SlideScale": 100,
+        "SlideTurnScale": 25,
+        "SlowDuration": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "SlowModifier": {
+          "Class": "DiminishingSlow",
+          "Subclass": "Slow"
+        },
+        "TickRate": 0.1,
+        "Upgrades": [
+          {
+            "StaminaCooldownReduction": 150
+          },
+          {
+            "AbilityCooldown": -6,
+            "ExplosionRadius": 8,
+            "GroundAuraDuration": 4
+          },
+          {
+            "OutgoingDamagePercent": 20,
+            "DamageAmpBuildDuration": 4,
+            "DamageAmpDuration": 6
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_artist_rollingprojectile",
+        "Name": "Flow State",
+        "DescKey": "ability_artist_rollingprojectile_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "MinDamage",
+                "Name": "Minimum Damage",
+                "Value": 50,
+                "Scale": {
+                  "Value": 0.9,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "MaxDamage",
+                "Name": "Max Damage",
+                "Value": 100,
+                "Scale": {
+                  "Value": 1.8,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Key": "SlideScale",
+                "Name": "Slide Distance",
+                "Value": 100,
+                "Type": "move_speed"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "MaxDamageTime",
+              "Name": "Time for Max Damage",
+              "Value": 2
+            },
+            {
+              "Key": "BonusMoveSpeed",
+              "Name": "Move Speed",
+              "Value": 0,
+              "Type": "move_speed"
+            },
+            {
+              "Key": "BarrierDuration",
+              "Name": "Barrier Duration",
+              "Value": 0
+            },
+            {
+              "Key": "FadingSlowPercent",
+              "Name": "Fading Move Speed",
+              "Value": 60
+            },
+            {
+              "Key": "SlowDuration",
+              "Name": "Slow Duration",
+              "Value": 2,
+              "Scale": {
+                "Value": 1,
+                "Type": "duration"
+              }
+            },
+            {
+              "Key": "DebuffDuration",
+              "Name": "Debuff Duration",
+              "Value": 0
+            }
+          ],
+          "DescKey": "ability_artist_rollingprojectile_desc"
+        },
+        "Upgrades": [
+          {
+            "StaminaCooldownReduction": 150,
+            "DescKey": "ability_artist_rollingprojectile_t1_desc"
+          },
+          {
+            "AbilityCooldown": -6,
+            "ExplosionRadius": 8,
+            "GroundAuraDuration": 4,
+            "DescKey": "ability_artist_rollingprojectile_t2_desc"
+          },
+          {
+            "OutgoingDamagePercent": 20,
+            "DamageAmpBuildDuration": 4,
+            "DamageAmpDuration": 6,
+            "DescKey": "ability_artist_rollingprojectile_t3_desc"
+          }
+        ],
+        "Headers": {
+          "AbilityCastDelay": {
+            "Name": "Cast Delay",
+            "Value": 0.2,
+            "Type": "cast"
+          },
+          "AbilityCooldown": {
+            "Name": "Cooldown",
+            "Value": 23,
+            "Scale": {
+              "Value": 1,
+              "Type": "cooldown"
+            },
+            "Type": "cooldown"
+          },
+          "AbilityCooldownBetweenCharge": {
+            "Name": "Charge Delay",
+            "Value": -1.0,
+            "Type": "charge_cooldown"
+          },
+          "ExplosionRadius": {
+            "Name": "Explosion Radius",
+            "Value": 15,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            },
+            "Type": "distance"
+          },
+          "GroundAuraDuration": {
+            "Name": "Ground Aura Duration",
+            "Value": 6,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "duration"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AuraLingerDuration": {
+            "Name": null,
+            "Value": 1
+          },
+          "DashAirSpeed": {
+            "Name": null,
+            "Value": 15
+          },
+          "DashSpeed": {
+            "Name": "Dash Speed",
+            "Value": 20
+          },
+          "ExplosionCone": {
+            "Name": null,
+            "Value": 90
+          },
+          "GroundAuraHeight": {
+            "Name": null,
+            "Value": 2
+          },
+          "GroundAuraRadius": {
+            "Name": null,
+            "Value": 2
+          },
+          "GroundAuraSpacing": {
+            "Name": null,
+            "Value": 2
+          },
+          "SideMoveSpeedReduction": {
+            "Name": null,
+            "Value": -65
+          },
+          "SlideTurnScale": {
+            "Name": null,
+            "Value": 25
+          },
+          "TickRate": {
+            "Name": null,
+            "Value": 0.1
+          }
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_artist_rollingprojectile_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.596ad0c74b26",
+          "raw_text": "Drag a brush that continues to travel forward, leaving a trail that grants <span class=\"highlight\">bonus slide distance</span> for allies and a fading {g:citadel_inline_attribute:'Slow'} and {g:citadel_inline_attribute:'SpiritDamage'} to enemies it passes through, increased the further it travels. <br><br>Re-activate the ability to flick the brush forward, ending the ability early but dealing {g:citadel_inline_attribute:'SpiritDamage'} in a larger area.",
+          "plain_text": "Drag a brush that continues to travel forward, leaving a trail that grants bonus slide distance for allies and a fading slow and spirit damage to enemies it passes through, increased the further it travels.\nRe-activate the ability to flick the brush forward, ending the ability early but dealing spirit damage in a larger area."
+        },
+        {
+          "localization_key": "ability_artist_rollingprojectile_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.596ad0c74b26",
+          "raw_text": "On Slide: +150% Stamina Regeneration",
+          "plain_text": "On Slide: +150% Stamina Regeneration"
+        },
+        {
+          "localization_key": "ability_artist_rollingprojectile_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.596ad0c74b26",
+          "raw_text": "-6s Cooldown<br>+8m Flick Range<br>+4s Trail Duration",
+          "plain_text": "-6s Cooldown\n+8m Flick Range\n+4s Trail Duration"
+        },
+        {
+          "localization_key": "ability_artist_rollingprojectile_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.596ad0c74b26",
+          "raw_text": "On Slide: Gain Damage Amp over time, up to 20% for 6s",
+          "plain_text": "On Slide: Gain Damage Amp over time, up to 20% for 6s"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "name": "Still Life",
+      "internal_key": "ability_artist_tether",
+      "data": {
+        "AbilityCastRange": {
+          "Value": 25,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "AbilityChannelTime": {
+          "Value": 2.6,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "AbilityCooldown": {
+          "Value": 35,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityPostCastDuration": 0.35,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorProjectilePassThroughWorld",
+          "BehaviorUseInstantCastUnitTargetUi",
+          "BehaviorDontInterruptSlideOnCast",
+          "BehaviorRequireAbilityButtonToCancel",
+          "BehaviorTriggerCancelMashProtectionOnCast"
+        ],
+        "BuffModifier": {
+          "Class": "Base",
+          "Subclass": "Buff"
+        },
+        "BuildUpPerAbility": 15,
+        "BuildUpPerSecond": 33,
+        "BuildUpPerShot": 15,
+        "BuildupModifier": {
+          "Class": "CitadelArtistBuildup",
+          "Subclass": "Buildup",
+          "BuffModifier": {
+            "Class": "Base",
+            "Subclass": "Buff"
+          },
+          "SlowModifier": {
+            "Class": "SlowBase",
+            "Subclass": "Slow"
+          }
+        },
+        "ChannelMoveSpeed": -1,
+        "CombatBarrier": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0.0,
+            "Type": "spirit"
+          }
+        },
+        "DPS": {
+          "Value": 30,
+          "Scale": {
+            "Value": 0.7,
+            "Type": "spirit"
+          }
+        },
+        "Damage": {
+          "Value": 60,
+          "Scale": {
+            "Value": 1.4,
+            "Type": "spirit"
+          }
+        },
+        "EffectivenessPerHit": 0.35,
+        "HealthRegen": {
+          "Value": 0,
+          "Scale": {
+            "Value": 0.0,
+            "Type": "spirit"
+          }
+        },
+        "IncomingDamagePercentReductionPerPickup": 2.5,
+        "IsDisabled": false,
+        "Key": "ability_artist_tether",
+        "Name": "Still Life",
+        "OutgoingDamagePercentPerPickup": 2.5,
+        "PullDistance": 800,
+        "SelfModifier": {
+          "Class": "Base",
+          "Subclass": "Self"
+        },
+        "SpiritPerPickup": 1,
+        "StunDuration": {
+          "Value": 1,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "StunModifier": {
+          "Class": "ArtistStun",
+          "Subclass": "Stunned"
+        },
+        "TargetingConeAngle": 40,
+        "TetherBreakRange": {
+          "Value": 35,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "TickInterval": 0.15,
+        "Upgrades": [
+          {
+            "BuffDuration": 4,
+            "HealthRegen": {
+              "Value": 15,
+              "Scale": {
+                "Value": 0.25,
+                "Type": "spirit"
+              }
+            }
+          },
+          {
+            "OutgoingDamagePercent": -35
+          },
+          {
+            "AbilityCooldown": -11,
+            "StunDuration": 0.35,
+            "BonusMoveSpeedPercent": 20
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_artist_tether",
+        "Name": "Still Life",
+        "DescKey": "ability_artist_tether_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Key": "DPS",
+                "Name": "Damage Per Second",
+                "Value": 30,
+                "Scale": {
+                  "Value": 0.7,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Proc:",
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 60,
+                "Scale": {
+                  "Value": 1.4,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Proc:",
+                "Key": "MaxSlowPercent",
+                "Name": "Max Move Speed",
+                "Value": 0
+              },
+              {
+                "Title": "On Proc:",
+                "Key": "StunDuration",
+                "Name": "Stun Duration",
+                "StatusEffect": "Stun",
+                "Value": 1,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": [
+            {
+              "Key": "BonusMoveSpeedPercent",
+              "Name": "Move Speed",
+              "Value": 0
+            },
+            {
+              "Key": "CombatBarrier",
+              "Name": "Barrier",
+              "Value": 0,
+              "Scale": {
+                "Value": 0.0,
+                "Type": "spirit"
+              }
+            },
+            {
+              "Key": "HealthRegen",
+              "Name": "Health Regen",
+              "Value": 0,
+              "Scale": {
+                "Value": 0.0,
+                "Type": "spirit"
+              }
+            },
+            {
+              "Key": "BuffDuration",
+              "Name": "Buff Duration",
+              "Value": 0
+            }
+          ],
+          "DescKey": "ability_artist_tether_desc"
+        },
+        "Upgrades": [
+          {
+            "BuffDuration": 4,
+            "HealthRegen": {
+              "Value": 15,
+              "Scale": {
+                "Value": 0.25,
+                "Type": "spirit"
+              }
+            },
+            "DescKey": "ability_artist_tether_t1_desc"
+          },
+          {
+            "OutgoingDamagePercent": -35,
+            "DescKey": "ability_artist_tether_t2_desc"
+          },
+          {
+            "AbilityCooldown": -11,
+            "StunDuration": 0.35,
+            "BonusMoveSpeedPercent": 20,
+            "DescKey": "ability_artist_tether_t3_desc"
+          }
+        ],
+        "Headers": {
+          "AbilityCastRange": {
+            "Name": "Cast Range",
+            "Value": 25,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            },
+            "Type": "range"
+          },
+          "AbilityChannelTime": {
+            "Name": "Channel Duration",
+            "Value": 2.6,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            },
+            "Type": "cast"
+          },
+          "AbilityCooldown": {
+            "Name": "Cooldown",
+            "Value": 35,
+            "Scale": {
+              "Value": 1,
+              "Type": "cooldown"
+            },
+            "Type": "cooldown"
+          },
+          "AbilityCooldownBetweenCharge": {
+            "Name": "Charge Delay",
+            "Value": -1.0,
+            "Type": "charge_cooldown"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityPostCastDuration": {
+            "Name": null,
+            "Value": 0.35
+          },
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "BuildUpPerAbility": {
+            "Name": "Buildup Per Ability",
+            "Value": 15
+          },
+          "BuildUpPerSecond": {
+            "Name": "Buildup per Second",
+            "Value": 33
+          },
+          "BuildUpPerShot": {
+            "Name": null,
+            "Value": 15
+          },
+          "EffectivenessPerHit": {
+            "Name": null,
+            "Value": 0.35
+          },
+          "IncomingDamagePercentReductionPerPickup": {
+            "Name": null,
+            "Value": 2.5
+          },
+          "OutgoingDamagePercentPerPickup": {
+            "Name": null,
+            "Value": 2.5
+          },
+          "PullDistance": {
+            "Name": null,
+            "Value": 800
+          },
+          "SpiritPerPickup": {
+            "Name": "Spirit per Sketch",
+            "Value": 1
+          },
+          "TargetingConeAngle": {
+            "Name": "Attack Angle",
+            "Value": 40
+          },
+          "TetherBreakRange": {
+            "Name": null,
+            "Value": 35,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            }
+          },
+          "TickInterval": {
+            "Name": "Time Between Hits",
+            "Value": 0.15
+          }
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_artist_tether_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.596ad0c74b26",
+          "raw_text": "Choose a hero to be your <span class=\"highlight\">subject</span>, dealing {g:citadel_inline_attribute:'SpiritDPS'} as long as you are looking at them. <br><br>If the sketch is completed they take additional {g:citadel_inline_attribute:'SpiritDamage'}, suffer from {g:citadel_inline_attribute:'Stun'}, and drop a <span class=\"highlight\">sketch</span> that can be picked up.<br><br> For each collected <span class=\"highlight\">sketch</span>, you permanently gain stats based on the hero.",
+          "plain_text": "Choose a hero to be your subject, dealing spirit damage over time as long as you are looking at them.\nIf the sketch is completed they take additional spirit damage, suffer from stun, and drop a sketch that can be picked up.\nFor each collected sketch, you permanently gain stats based on the hero."
+        },
+        {
+          "localization_key": "ability_artist_tether_t1_desc",
+          "card_paths": [
+            "card.Upgrades[0].DescKey"
+          ],
+          "source": "github.deadlock-data.english.596ad0c74b26",
+          "raw_text": "On Cast: Gain 15 Health Regen for 4s, refreshed on pickup",
+          "plain_text": "On Cast: Gain 15 Health Regen for 4s, refreshed on pickup"
+        },
+        {
+          "localization_key": "ability_artist_tether_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.596ad0c74b26",
+          "raw_text": "While Drawing: Subjects deal -35% Damage",
+          "plain_text": "While Drawing: Subjects deal -35% Damage"
+        },
+        {
+          "localization_key": "ability_artist_tether_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.596ad0c74b26",
+          "raw_text": "+20% Move Speed<br>-11s Cooldown<br>+0.35s Stun Duration",
+          "plain_text": "+20% Move Speed\n-11s Cooldown\n+0.35s Stun Duration"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "name": "Abstract Landscape",
+      "internal_key": "ability_artist_bamboogrove",
+      "data": {
+        "AbilityChannelTime": 0.6,
+        "AbilityCooldown": {
+          "Value": 165,
+          "Scale": {
+            "Value": 1,
+            "Type": "cooldown"
+          }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityDuration": {
+          "Value": 6,
+          "Scale": [
+            {
+              "Value": 0.04,
+              "Type": "spirit"
+            },
+            {
+              "Value": 1,
+              "Type": "duration"
+            }
+          ]
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AttackFrequency": -1,
+        "AuraLingerDuration": {
+          "Value": 5,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "BambooModifier": {
+          "Class": "ArtistSilenceAura",
+          "Subclass": "Groundaura",
+          "ProvidedByAura": {
+            "Class": "CitadelSilenced",
+            "Subclass": "Silence"
+          },
+          "ImmuneModifier": {
+            "Class": "Base",
+            "Subclass": "Immune",
+            "EnabledStateMask": [
+              "ArtistBambooImmune"
+            ]
+          },
+          "ImmuneDuration": 0.5
+        },
+        "BehaviourBits": [
+          "BehaviorChannelled",
+          "BehaviorAlwaysPreviewRadius",
+          "BehaviorDisplaysDamageImpact",
+          "BehaviorProjectilePassThroughWorld",
+          "BehaviorCannotCancelDuringChannel",
+          "BehaviorDontInterruptSlideOnCast",
+          "BehaviorRefundFullCooldownOnChannelInterrupt"
+        ],
+        "CenterAllyModifier": {
+          "Class": "ArtistGroveAura",
+          "Subclass": "Groveally",
+          "ProvidedByAura": {
+            "Class": "Base",
+            "Subclass": "Buff"
+          }
+        },
+        "CenterEnemyModifier": {
+          "Class": "ArtistGroveAura",
+          "Subclass": "Center",
+          "ProvidedByAura": {
+            "Class": "Base",
+            "Subclass": "Buff",
+            "EnabledStateMask": [
+              "GlowThroughWallsToEnemy"
+            ]
+          }
+        },
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+          "Value": 100,
+          "Scale": {
+            "Value": 1.4,
+            "Type": "spirit"
+          }
+        },
+        "DestroyOnDamage": 1,
+        "GroundAuraHeight": 20,
+        "GroundAuraRadius": 1.9,
+        "GroundAuraSpacing": 3.8,
+        "GroveRadius": {
+          "Value": 18,
+          "Scale": {
+            "Value": 1,
+            "Type": "range"
+          }
+        },
+        "IsDisabled": false,
+        "Key": "ability_artist_bamboogrove",
+        "Name": "Abstract Landscape",
+        "SilenceDuration": {
+          "Value": 2,
+          "Scale": {
+            "Value": 1,
+            "Type": "duration"
+          }
+        },
+        "SlowPercent": 30,
+        "TechPower": 25,
+        "Upgrades": [
+          {
+            "AbilityCooldown": -20
+          },
+          {
+            "AbilityLifestealPercentHero": 25,
+            "TechPower": 15
+          },
+          {
+            "SilenceDuration": 1.25,
+            "AbilityDuration": 4,
+            "DestroyOnDamage": -1
+          }
+        ]
+      },
+      "card": {
+        "Key": "ability_artist_bamboogrove",
+        "Name": "Abstract Landscape",
+        "DescKey": "ability_artist_bamboogrove_desc",
+        "Info1": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Buff:",
+                "Key": "TechPower",
+                "Name": "Spirit Power",
+                "Value": 25,
+                "Type": "spirit"
+              },
+              {
+                "Title": "On Buff:",
+                "Key": "AbilityLifestealPercentHero",
+                "Name": "Spirit Lifesteal",
+                "Value": 0,
+                "Type": "healing"
+              }
+            ]
+          },
+          "Alt": [],
+          "DescKey": "ability_artist_bamboogrove_desc"
+        },
+        "Info2": {
+          "Main": {
+            "Props": [
+              {
+                "Title": "On Enemy Hit:",
+                "Key": "Damage",
+                "Name": "Damage",
+                "Value": 100,
+                "Scale": {
+                  "Value": 1.4,
+                  "Type": "spirit"
+                },
+                "Type": "tech_damage"
+              },
+              {
+                "Title": "On Enemy Hit:",
+                "Key": "SlowPercent",
+                "Name": "Move Speed",
+                "Value": 30,
+                "Type": "slow"
+              },
+              {
+                "Title": "On Enemy Hit:",
+                "Key": "SilenceDuration",
+                "Name": "Silence Duration",
+                "StatusEffect": "Silence",
+                "Value": 2,
+                "Scale": {
+                  "Value": 1,
+                  "Type": "duration"
+                },
+                "Type": "duration"
+              }
+            ]
+          },
+          "Alt": []
+        },
+        "Upgrades": [
+          {
+            "AbilityCooldown": -20
+          },
+          {
+            "AbilityLifestealPercentHero": 25,
+            "TechPower": 15,
+            "DescKey": "ability_artist_bamboogrove_t2_desc"
+          },
+          {
+            "SilenceDuration": 1.25,
+            "AbilityDuration": 4,
+            "DestroyOnDamage": -1,
+            "DescKey": "ability_artist_bamboogrove_t3_desc"
+          }
+        ],
+        "Headers": {
+          "AbilityChannelTime": {
+            "Name": "Channel Duration",
+            "Value": 0.6,
+            "Type": "cast"
+          },
+          "AbilityCooldown": {
+            "Name": "Cooldown",
+            "Value": 165,
+            "Scale": {
+              "Value": 1,
+              "Type": "cooldown"
+            },
+            "Type": "cooldown"
+          },
+          "AbilityCooldownBetweenCharge": {
+            "Name": "Charge Delay",
+            "Value": -1.0,
+            "Type": "charge_cooldown"
+          },
+          "AbilityDuration": {
+            "Name": "Duration",
+            "Value": 6,
+            "Scale": [
+              {
+                "Value": 0.04,
+                "Type": "spirit"
+              },
+              {
+                "Value": 1,
+                "Type": "duration"
+              }
+            ],
+            "Type": "duration"
+          },
+          "GroveRadius": {
+            "Name": "Display Radius",
+            "Value": 18,
+            "Scale": {
+              "Value": 1,
+              "Type": "range"
+            },
+            "Type": "distance"
+          }
+        },
+        "Move": {
+          "ChannelMoveSpeed": {
+            "Name": "Channel Move Speed",
+            "Value": -1,
+            "Type": "move_speed"
+          }
+        },
+        "Other": {
+          "AbilityUnitTargetLimit": {
+            "Name": null,
+            "Value": 1
+          },
+          "AttackFrequency": {
+            "Name": null,
+            "Value": -1
+          },
+          "AuraLingerDuration": {
+            "Name": null,
+            "Value": 5,
+            "Scale": {
+              "Value": 1,
+              "Type": "duration"
+            }
+          },
+          "DestroyOnDamage": {
+            "Name": null,
+            "Value": 1
+          },
+          "GroundAuraHeight": {
+            "Name": null,
+            "Value": 20
+          },
+          "GroundAuraRadius": {
+            "Name": null,
+            "Value": 1.9
+          },
+          "GroundAuraSpacing": {
+            "Name": null,
+            "Value": 3.8
+          }
+        }
+      },
+      "descriptions": [
+        {
+          "localization_key": "ability_artist_bamboogrove_desc",
+          "card_paths": [
+            "card.DescKey",
+            "card.Info1.DescKey"
+          ],
+          "source": "github.deadlock-data.english.596ad0c74b26",
+          "raw_text": "Create a circular display of ink that blocks vision and grants allies {g:citadel_inline_attribute:'Spirit'}.<br><br>Enemies inside are revealed, and leaving causes them to take {g:citadel_inline_attribute:'SpiritDamage'} and suffer from {g:citadel_inline_attribute:'Silence'} and {g:citadel_inline_attribute:'Slow'}, destroying the ink in the process.",
+          "plain_text": "Create a circular display of ink that blocks vision and grants allies Spirit.\nEnemies inside are revealed, and leaving causes them to take spirit damage and suffer from Silence and slow, destroying the ink in the process."
+        },
+        {
+          "localization_key": "ability_artist_bamboogrove_t2_desc",
+          "card_paths": [
+            "card.Upgrades[1].DescKey"
+          ],
+          "source": "github.deadlock-data.english.596ad0c74b26",
+          "raw_text": "On Buff: +25% Spirit Lifesteal<br>+15 Spirit Power",
+          "plain_text": "On Buff: +25% Spirit Lifesteal\n+15 Spirit Power"
+        },
+        {
+          "localization_key": "ability_artist_bamboogrove_t3_desc",
+          "card_paths": [
+            "card.Upgrades[2].DescKey"
+          ],
+          "source": "github.deadlock-data.english.596ad0c74b26",
+          "raw_text": "+1.25s Silence Duration<br>+4s Ability Duration<br>Ink is no longer destroyed",
+          "plain_text": "+1.25s Silence Duration\n+4s Ability Duration\nInk is no longer destroyed"
+        }
+      ]
+    }
+  ],
+  "supporting_ability_data": {
+    "not_numbered_in_hero_bound_abilities": true,
+    "note": "The two trigger records are preserved as supporting generated data, not as additional numbered Violet abilities.",
+    "records": {
+      "ability_artist_rollingprojectile_trigger": {
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorNonCombat",
+          "BehaviorTrigger"
+        ],
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_artist_rollingprojectile_trigger",
+        "Name": null,
+        "Upgrades": []
+      },
+      "ability_artist_bamboogrove_trigger": {
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+          "BehaviorNoTarget",
+          "BehaviorNonCombat",
+          "BehaviorTrigger"
+        ],
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_artist_bamboogrove_trigger",
+        "Name": null,
+        "Upgrades": []
+      }
+    }
+  },
+  "supporting_npc_data": {
+    "note": "Generated client support record; not a map-placement or runtime-availability assertion.",
+    "records": {
+      "citadel_artist_strokeblocker": {
+        "BlockerIsVisible": false,
+        "MeleeHits": 1,
+        "Name": "citadel_artist_strokeblocker"
+      }
+    }
+  },
+  "supporting_misc_data": {
+    "note": "Violet drawing-pickup records from client 6790; configured values are source data, not runtime-tested effects.",
+    "records": {
+      "pickup_artist_drawing_assassin": {
+        "PickupRadius": {
+          "Base": 200.0,
+          "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/abilities/artist/artist_item_drop.vpcf",
+        "enemyParticle": "particles/abilities/artist/artist_item_drop.vpcf",
+        "gainedParticle": "particles/abilities/artist/artist_pickup_gained.vpcf",
+        "hModel": "",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+          "Base": 20.0,
+          "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "",
+        "PickupSound": "Artist.Drawing.Pickup",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Color": [
+          0,
+          180,
+          200
+        ],
+        "bPhysicallyDropToTheGroundOnSpawn": true,
+        "fInitialSpawnXYSpeed": [
+          85.0,
+          125.0
+        ],
+        "fInitialSpawnZSpeed": [
+          30.0,
+          110.0
+        ],
+        "FallGravity": 1.0,
+        "HoverOffset": 65.0,
+        "PicupIsVacuum": true,
+        "CollectionMethod": "VacuumTrigger",
+        "SameTeamOnly": true,
+        "OutlineRange": 2000.0,
+        "OutlineColor": [
+          197,
+          105,
+          240,
+          255
+        ],
+        "VacuumToPlayerSpeedCurve": {
+          "spline": [
+            {
+              "x": 0.0,
+              "y": -16.041637,
+              "SlopeIncoming": 0.0,
+              "SlopeOutgoing": -4004.629639
+            },
+            {
+              "x": 0.105087,
+              "y": -436.874969,
+              "SlopeIncoming": -4004.629639,
+              "SlopeOutgoing": 4603.734863
+            },
+            {
+              "x": 0.634412,
+              "y": 2000.0,
+              "SlopeIncoming": 4603.734863,
+              "SlopeOutgoing": 0.0
+            }
+          ],
+          "tangents": [
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+            }
+          ],
+          "vDomainMins": [
+            0.0,
+            -500.0
+          ],
+          "vDomainMaxs": [
+            1.0,
+            2000.0
+          ]
+        },
+        "InitialVacuumUpSpeed": [
+          100.0,
+          100.0
+        ],
+        "VacuumInitialVelSpeedCurve": {
+          "spline": [
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "SlopeIncoming": 0.0,
+              "SlopeOutgoing": 3.105128
+            },
+            {
+              "x": 0.037948,
+              "y": 0.117833,
+              "SlopeIncoming": 7.669573,
+              "SlopeOutgoing": 7.669573
+            },
+            {
+              "x": 0.130385,
+              "y": 1.0,
+              "SlopeIncoming": 0.423242,
+              "SlopeOutgoing": 0.423242
+            },
+            {
+              "x": 0.356127,
+              "y": 0.2525,
+              "SlopeIncoming": -2.70552,
+              "SlopeOutgoing": -2.70552
+            },
+            {
+              "x": 0.5,
+              "y": 0.0,
+              "SlopeIncoming": -1.755022,
+              "SlopeOutgoing": 0.0
+            }
+          ],
+          "tangents": [
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_SPLINE",
+              "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_SPLINE",
+              "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_SPLINE",
+              "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+            }
+          ],
+          "vDomainMins": [
+            0.0,
+            0.0
+          ],
+          "vDomainMaxs": [
+            0.5,
+            1.0
+          ]
+        },
+        "InitialVacuumSideSpeed": [
+          200.0,
+          200.0
+        ],
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_ArtistAssassin",
+        "ArtistModifer": {
+          "ScriptValues": [
+            {
+              "ModifierValue": "MODIFIER_VALUE_MOVEMENT_SPEED_MAX",
+              "value": 7.874
+            }
+          ],
+          "BonusIconCSSClass": "MoveSpeed",
+          "EnabledStateMask": "MODIFIER_STATE_ARTIST_PERMANENT_BUFF"
+        }
+      },
+      "pickup_artist_drawing_brawler": {
+        "PickupRadius": {
+          "Base": 200.0,
+          "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/abilities/artist/artist_item_drop.vpcf",
+        "enemyParticle": "particles/abilities/artist/artist_item_drop.vpcf",
+        "gainedParticle": "particles/abilities/artist/artist_pickup_gained.vpcf",
+        "hModel": "",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+          "Base": 20.0,
+          "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "",
+        "PickupSound": "Artist.Drawing.Pickup",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Color": [
+          104,
+          239,
+          59
+        ],
+        "bPhysicallyDropToTheGroundOnSpawn": true,
+        "fInitialSpawnXYSpeed": [
+          85.0,
+          125.0
+        ],
+        "fInitialSpawnZSpeed": [
+          30.0,
+          110.0
+        ],
+        "FallGravity": 1.0,
+        "HoverOffset": 65.0,
+        "PicupIsVacuum": true,
+        "CollectionMethod": "VacuumTrigger",
+        "SameTeamOnly": true,
+        "OutlineRange": 2000.0,
+        "OutlineColor": [
+          197,
+          105,
+          240,
+          255
+        ],
+        "VacuumToPlayerSpeedCurve": {
+          "spline": [
+            {
+              "x": 0.0,
+              "y": -16.041637,
+              "SlopeIncoming": 0.0,
+              "SlopeOutgoing": -4004.629639
+            },
+            {
+              "x": 0.105087,
+              "y": -436.874969,
+              "SlopeIncoming": -4004.629639,
+              "SlopeOutgoing": 4603.734863
+            },
+            {
+              "x": 0.634412,
+              "y": 2000.0,
+              "SlopeIncoming": 4603.734863,
+              "SlopeOutgoing": 0.0
+            }
+          ],
+          "tangents": [
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+            }
+          ],
+          "vDomainMins": [
+            0.0,
+            -500.0
+          ],
+          "vDomainMaxs": [
+            1.0,
+            2000.0
+          ]
+        },
+        "InitialVacuumUpSpeed": [
+          100.0,
+          100.0
+        ],
+        "VacuumInitialVelSpeedCurve": {
+          "spline": [
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "SlopeIncoming": 0.0,
+              "SlopeOutgoing": 3.105128
+            },
+            {
+              "x": 0.037948,
+              "y": 0.117833,
+              "SlopeIncoming": 7.669573,
+              "SlopeOutgoing": 7.669573
+            },
+            {
+              "x": 0.130385,
+              "y": 1.0,
+              "SlopeIncoming": 0.423242,
+              "SlopeOutgoing": 0.423242
+            },
+            {
+              "x": 0.356127,
+              "y": 0.2525,
+              "SlopeIncoming": -2.70552,
+              "SlopeOutgoing": -2.70552
+            },
+            {
+              "x": 0.5,
+              "y": 0.0,
+              "SlopeIncoming": -1.755022,
+              "SlopeOutgoing": 0.0
+            }
+          ],
+          "tangents": [
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_SPLINE",
+              "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_SPLINE",
+              "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_SPLINE",
+              "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+            }
+          ],
+          "vDomainMins": [
+            0.0,
+            0.0
+          ],
+          "vDomainMaxs": [
+            0.5,
+            1.0
+          ]
+        },
+        "InitialVacuumSideSpeed": [
+          200.0,
+          200.0
+        ],
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_ArtistBrawler",
+        "ArtistModifer": {
+          "ScriptValues": [
+            {
+              "ModifierValue": "MODIFIER_VALUE_HEALTH_MAX",
+              "value": 20.0
+            }
+          ],
+          "BonusIconCSSClass": "Health",
+          "EnabledStateMask": "MODIFIER_STATE_ARTIST_PERMANENT_BUFF"
+        }
+      },
+      "pickup_artist_drawing_marksman": {
+        "PickupRadius": {
+          "Base": 200.0,
+          "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/abilities/artist/artist_item_drop.vpcf",
+        "enemyParticle": "particles/abilities/artist/artist_item_drop.vpcf",
+        "gainedParticle": "particles/abilities/artist/artist_pickup_gained.vpcf",
+        "hModel": "",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+          "Base": 20.0,
+          "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "",
+        "PickupSound": "Artist.Drawing.Pickup",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Color": [
+          238,
+          129,
+          45
+        ],
+        "bPhysicallyDropToTheGroundOnSpawn": true,
+        "fInitialSpawnXYSpeed": [
+          85.0,
+          125.0
+        ],
+        "fInitialSpawnZSpeed": [
+          30.0,
+          110.0
+        ],
+        "FallGravity": 1.0,
+        "HoverOffset": 65.0,
+        "PicupIsVacuum": true,
+        "CollectionMethod": "VacuumTrigger",
+        "SameTeamOnly": true,
+        "OutlineRange": 2000.0,
+        "OutlineColor": [
+          197,
+          105,
+          240,
+          255
+        ],
+        "VacuumToPlayerSpeedCurve": {
+          "spline": [
+            {
+              "x": 0.0,
+              "y": -16.041637,
+              "SlopeIncoming": 0.0,
+              "SlopeOutgoing": -4004.629639
+            },
+            {
+              "x": 0.105087,
+              "y": -436.874969,
+              "SlopeIncoming": -4004.629639,
+              "SlopeOutgoing": 4603.734863
+            },
+            {
+              "x": 0.634412,
+              "y": 2000.0,
+              "SlopeIncoming": 4603.734863,
+              "SlopeOutgoing": 0.0
+            }
+          ],
+          "tangents": [
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+            }
+          ],
+          "vDomainMins": [
+            0.0,
+            -500.0
+          ],
+          "vDomainMaxs": [
+            1.0,
+            2000.0
+          ]
+        },
+        "InitialVacuumUpSpeed": [
+          100.0,
+          100.0
+        ],
+        "VacuumInitialVelSpeedCurve": {
+          "spline": [
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "SlopeIncoming": 0.0,
+              "SlopeOutgoing": 3.105128
+            },
+            {
+              "x": 0.037948,
+              "y": 0.117833,
+              "SlopeIncoming": 7.669573,
+              "SlopeOutgoing": 7.669573
+            },
+            {
+              "x": 0.130385,
+              "y": 1.0,
+              "SlopeIncoming": 0.423242,
+              "SlopeOutgoing": 0.423242
+            },
+            {
+              "x": 0.356127,
+              "y": 0.2525,
+              "SlopeIncoming": -2.70552,
+              "SlopeOutgoing": -2.70552
+            },
+            {
+              "x": 0.5,
+              "y": 0.0,
+              "SlopeIncoming": -1.755022,
+              "SlopeOutgoing": 0.0
+            }
+          ],
+          "tangents": [
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_SPLINE",
+              "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_SPLINE",
+              "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_SPLINE",
+              "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+            }
+          ],
+          "vDomainMins": [
+            0.0,
+            0.0
+          ],
+          "vDomainMaxs": [
+            0.5,
+            1.0
+          ]
+        },
+        "InitialVacuumSideSpeed": [
+          200.0,
+          200.0
+        ],
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_ArtistMarksman",
+        "ArtistModifer": {
+          "ScriptValues": [
+            {
+              "ModifierValue": "MODIFIER_VALUE_WEAPON_DAMAGE_INCREASE",
+              "value": 4.0
+            }
+          ],
+          "BonusIconCSSClass": "WeaponDamage",
+          "EnabledStateMask": "MODIFIER_STATE_ARTIST_PERMANENT_BUFF"
+        }
+      },
+      "pickup_artist_drawing_mystic": {
+        "PickupRadius": {
+          "Base": 200.0,
+          "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/abilities/artist/artist_item_drop.vpcf",
+        "enemyParticle": "particles/abilities/artist/artist_item_drop.vpcf",
+        "gainedParticle": "particles/abilities/artist/artist_pickup_gained.vpcf",
+        "hModel": "",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+          "Base": 20.0,
+          "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "",
+        "PickupSound": "Artist.Drawing.Pickup",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Color": [
+          126,
+          46,
+          238
+        ],
+        "bPhysicallyDropToTheGroundOnSpawn": true,
+        "fInitialSpawnXYSpeed": [
+          85.0,
+          125.0
+        ],
+        "fInitialSpawnZSpeed": [
+          30.0,
+          110.0
+        ],
+        "FallGravity": 1.0,
+        "HoverOffset": 65.0,
+        "PicupIsVacuum": true,
+        "CollectionMethod": "VacuumTrigger",
+        "SameTeamOnly": true,
+        "OutlineRange": 2000.0,
+        "OutlineColor": [
+          197,
+          105,
+          240,
+          255
+        ],
+        "VacuumToPlayerSpeedCurve": {
+          "spline": [
+            {
+              "x": 0.0,
+              "y": -16.041637,
+              "SlopeIncoming": 0.0,
+              "SlopeOutgoing": -4004.629639
+            },
+            {
+              "x": 0.105087,
+              "y": -436.874969,
+              "SlopeIncoming": -4004.629639,
+              "SlopeOutgoing": 4603.734863
+            },
+            {
+              "x": 0.634412,
+              "y": 2000.0,
+              "SlopeIncoming": 4603.734863,
+              "SlopeOutgoing": 0.0
+            }
+          ],
+          "tangents": [
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+            }
+          ],
+          "vDomainMins": [
+            0.0,
+            -500.0
+          ],
+          "vDomainMaxs": [
+            1.0,
+            2000.0
+          ]
+        },
+        "InitialVacuumUpSpeed": [
+          100.0,
+          100.0
+        ],
+        "VacuumInitialVelSpeedCurve": {
+          "spline": [
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "SlopeIncoming": 0.0,
+              "SlopeOutgoing": 3.105128
+            },
+            {
+              "x": 0.037948,
+              "y": 0.117833,
+              "SlopeIncoming": 7.669573,
+              "SlopeOutgoing": 7.669573
+            },
+            {
+              "x": 0.130385,
+              "y": 1.0,
+              "SlopeIncoming": 0.423242,
+              "SlopeOutgoing": 0.423242
+            },
+            {
+              "x": 0.356127,
+              "y": 0.2525,
+              "SlopeIncoming": -2.70552,
+              "SlopeOutgoing": -2.70552
+            },
+            {
+              "x": 0.5,
+              "y": 0.0,
+              "SlopeIncoming": -1.755022,
+              "SlopeOutgoing": 0.0
+            }
+          ],
+          "tangents": [
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_SPLINE",
+              "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_SPLINE",
+              "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_SPLINE",
+              "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+            },
+            {
+              "IncomingTangent": "CURVE_TANGENT_LINEAR",
+              "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+            }
+          ],
+          "vDomainMins": [
+            0.0,
+            0.0
+          ],
+          "vDomainMaxs": [
+            0.5,
+            1.0
+          ]
+        },
+        "InitialVacuumSideSpeed": [
+          200.0,
+          200.0
+        ],
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_ArtistMystic",
+        "ArtistModifer": {
+          "ScriptValues": [
+            {
+              "ModifierValue": "MODIFIER_VALUE_TECH_POWER",
+              "value": 3.0
+            }
+          ],
+          "BonusIconCSSClass": "Spirit",
+          "EnabledStateMask": "MODIFIER_STATE_ARTIST_PERMANENT_BUFF"
+        }
+      }
+    }
+  },
+  "pre_release_comparison": {
+    "client_version": 6785,
+    "source_revision": 11132425,
+    "source": "github.deadlock-data.gameplay.3aab395a1392",
+    "status": "incomplete pre-release Violet placeholder; do not use these values as released or launch stats",
+    "comparison_scope": "All changed top-level hero-data fields between the pinned client 6785 placeholder and the first reviewed complete client-6790 configuration.",
+    "changed_hero_data_fields": {
+      "AirDashDuration": {
+        "client_6785": 0.47,
+        "client_6790": 0.43
+      },
+      "AirDashSpeed": {
+        "client_6785": 17.0,
+        "client_6790": 18.6
+      },
+      "BoundAbilities": {
+        "client_6785": {},
+        "client_6790": {
+          "1": {
+            "Name": "Living Ink",
+            "Key": "ability_artist_homingbrush"
+          },
+          "2": {
+            "Name": "Flow State",
+            "Key": "ability_artist_rollingprojectile"
+          },
+          "3": {
+            "Name": "Still Life",
+            "Key": "ability_artist_tether"
+          },
+          "4": {
+            "Name": "Abstract Landscape",
+            "Key": "ability_artist_bamboogrove"
+          }
+        }
+      },
+      "CritDamageBonusPercent": {
+        "client_6785": 0.0,
+        "client_6790": -20.0
+      },
+      "GroundDashDuration": {
+        "client_6785": 0.68,
+        "client_6790": 0.62
+      },
+      "GroundDashSpeed": {
+        "client_6785": 14.7,
+        "client_6790": 16.1
+      },
+      "InDevelopment": {
+        "client_6785": false,
+        "client_6790": true
+      },
+      "LevelScaling": {
+        "client_6785": {
+          "BulletDamage": 0.55,
+          "MaxHealth": 34.0,
+          "PowerIncreases": 1,
+          "TechPower": 1.1,
+          "LightMeleeDamage": 1.2,
+          "HeavyMeleeDamage": 2.784,
+          "DPS": 5.2381,
+          "SustainedDPS": 2.9204
+        },
+        "client_6790": {
+          "BulletDamage": 0.55,
+          "MaxHealth": 34.0,
+          "PowerIncreases": 1,
+          "TechPower": 1.1,
+          "LightMeleeDamage": 1.2,
+          "HeavyMeleeDamage": 2.784,
+          "DPS": 0.84618,
+          "SustainedDPS": 0.66266
+        }
+      },
+      "MaxHealth": {
+        "client_6785": 780.0,
+        "client_6790": 710.0
+      },
+      "MaxMoveSpeed": {
+        "client_6785": 7.2,
+        "client_6790": 6.9
+      },
+      "SprintSpeed": {
+        "client_6785": 1.6,
+        "client_6790": 2.5
+      },
+      "Type": {
+        "client_6785": null,
+        "client_6790": "Mystic"
+      },
+      "Weapon": {
+        "client_6785": {
+          "BulletSpeed": 660.4,
+          "BulletDamage": 5.5,
+          "RoundsPerSecond": 9.5238,
+          "ClipSize": 27,
+          "ReloadTime": 2.25,
+          "ReloadMovespeed": 1.0,
+          "ReloadDelay": 0.0,
+          "ReloadSingle": false,
+          "FalloffStartRange": 18.0,
+          "FalloffEndRange": 55.0,
+          "FalloffStartScale": 1.0,
+          "FalloffEndScale": 0.1,
+          "FalloffBias": 0.5,
+          "BulletGravityScale": 0.8,
+          "BulletRadius": 0.1016,
+          "BulletsPerShot": 1,
+          "BulletsPerBurst": 1,
+          "BurstInterShotInterval": 0,
+          "ShootMoveSpeed": 0.75,
+          "HitOnceAcrossAllBullets": false,
+          "CanCrit": true,
+          "AmmoConsumedPerShot": 1,
+          "DPS": 52.381,
+          "SustainedDPS": 29.204
+        },
+        "client_6790": {
+          "BulletSpeed": 495.3,
+          "BulletDamage": 30.0,
+          "RoundsPerSecond": 1.5385,
+          "ClipSize": 15,
+          "ReloadTime": 2.7,
+          "ReloadMovespeed": 1.0,
+          "ReloadDelay": 0.0,
+          "ReloadSingle": false,
+          "FalloffStartRange": 19.99,
+          "FalloffEndRange": 64.01,
+          "FalloffStartScale": 1.0,
+          "FalloffEndScale": 0.1,
+          "FalloffBias": 0.5,
+          "BulletGravityScale": 0.0,
+          "BulletRadius": 0.254,
+          "BulletsPerShot": 1,
+          "BulletsPerBurst": 1,
+          "BurstInterShotInterval": 0,
+          "ShootMoveSpeed": 0.75,
+          "HitOnceAcrossAllBullets": true,
+          "CanCrit": true,
+          "AmmoConsumedPerShot": 1,
+          "DPS": 46.155,
+          "SustainedDPS": 36.145,
+          "NameKey": "citadel_weapon_artist_set",
+          "WeaponTypes": [
+            "Attribute_EWeaponAttribute_RapidFire",
+            "Attribute_EWeaponAttribute_LongRange"
+          ]
+        }
+      }
+    },
+    "placeholder_hero_data": {
+      "AbilityResourceMax": 0,
+      "AbilityResourceRegenPerSecond": 0,
+      "AirDashDistanceInMeters": 8.0,
+      "AirDashDuration": 0.47,
+      "AirDashSpeed": 17.0,
+      "BaseHealthRegen": 2.0,
+      "BaseWeaponDamageIncrease": 0,
+      "BoundAbilities": {},
+      "CritDamageBonusPercent": 0.0,
+      "CritDamageReceivedPercent": 0.0,
+      "CrouchSpeed": 4.75,
+      "GroundDashDistanceInMeters": 10.0,
+      "GroundDashDuration": 0.68,
+      "GroundDashSpeed": 14.7,
+      "HeavyMeleeDamage": 116,
+      "HeroBulletLifestealEffectiveness": 1.0,
+      "HeroSpiritLifestealEffectiveness": 1.0,
+      "InDevelopment": false,
+      "InHeroLabs": false,
+      "IsDisabled": false,
+      "IsRecommended": false,
+      "IsSelectable": true,
+      "LevelScaling": {
+        "BulletDamage": 0.55,
+        "MaxHealth": 34.0,
+        "PowerIncreases": 1,
+        "TechPower": 1.1,
+        "LightMeleeDamage": 1.2,
+        "HeavyMeleeDamage": 2.784,
+        "DPS": 5.2381,
+        "SustainedDPS": 2.9204
+      },
+      "LightMeleeDamage": 50,
+      "Lore": "hero_artist_lore",
+      "MaxHealth": 780.0,
+      "MaxMoveSpeed": 7.2,
+      "MoveAcceleration": 4,
+      "Name": "Violet",
+      "OOCHealthRegen": 0,
+      "Playstyle": "hero_artist_playstyle",
+      "ProcBuildUpRateScale": 1,
+      "ReloadSpeed": 0,
+      "Role": "hero_artist_role",
+      "SpiritScaling": {},
+      "SprintSpeed": 1.6,
+      "Stamina": 3,
+      "StaminaCooldown": 4.5000045000045,
+      "StaminaRegenPerSecond": 0.222222,
+      "TechDuration": 0,
+      "TechRange": 0,
+      "Type": null,
+      "Weapon": {
+        "BulletSpeed": 660.4,
+        "BulletDamage": 5.5,
+        "RoundsPerSecond": 9.5238,
+        "ClipSize": 27,
+        "ReloadTime": 2.25,
+        "ReloadMovespeed": 1.0,
+        "ReloadDelay": 0.0,
+        "ReloadSingle": false,
+        "FalloffStartRange": 18.0,
+        "FalloffEndRange": 55.0,
+        "FalloffStartScale": 1.0,
+        "FalloffEndScale": 0.1,
+        "FalloffBias": 0.5,
+        "BulletGravityScale": 0.8,
+        "BulletRadius": 0.1016,
+        "BulletsPerShot": 1,
+        "BulletsPerBurst": 1,
+        "BurstInterShotInterval": 0,
+        "ShootMoveSpeed": 0.75,
+        "HitOnceAcrossAllBullets": false,
+        "CanCrit": true,
+        "AmmoConsumedPerShot": 1,
+        "DPS": 52.381,
+        "SustainedDPS": 29.204
+      },
+      "WeaponPowerScale": 1
+    }
+  },
+  "release_boundaries": {
+    "official_release_at": "2026-10-16T21:00:07Z",
+    "release_source": "steam.news.violet-release.1846651706683085",
+    "pre_release_candidate_client": 6785,
+    "first_complete_candidate_client": 6790,
+    "first_complete_candidate_source_commit": "596ad0c74b26dd7b11ef5c62b24a11a34c7813d8",
+    "first_complete_candidate_export_commit_at": "2026-10-16T21:10:10Z",
+    "first_complete_candidate_version_date": "Oct 16 2026",
+    "first_complete_candidate_version_time": "13:44:07",
+    "version_time_timezone": "not declared; do not compare the embedded time directly with UTC announcements",
+    "release_day_configuration_pin": null,
+    "first_complete_candidate_note": "Client 6790 is the first reviewed complete Violet configuration after Valve's October 16 availability announcement. Its source commit is ten minutes after the post; it is a dated post-release candidate, not an exact launch-day configuration.",
+    "same_date_followup_client": 6793,
+    "same_date_followup_source": "github.deadlock-data.gameplay.5b2911aa55e6",
+    "same_date_followup_commit": "5b2911aa55e686d63be8e5d000a0c35a567d0369",
+    "same_date_followup_commit_at": "2026-10-16T23:23:32Z",
+    "same_date_followup_version_date": "Oct 16 2026",
+    "same_date_followup_version_time": "16:05:45",
+    "same_date_followup_note": "All 13 selected JSON datasets are byte-identical between clients 6790 and 6793; only version.txt differs. The follow-up adds no later Violet configuration value.",
+    "nurse_harrow_scheduled_release": "2026-10-20T14:00:00-07:00",
+    "steam_announcement_title": "Paint the Town"
+  },
+  "data_boundaries": [
+    "Valve's October 16 post establishes Violet's availability; client 6790 supplies the first reviewed complete configuration after the post, not a verified exact launch-day state.",
+    "Client 6785's selectable but incomplete Violet placeholder is retained only as a pre-release comparison; its Type, empty ability bindings, weapon and other fields are not used as release values.",
+    "Client 6790 retains InDevelopment=true despite Valve's explicit availability statement. The flag is preserved as source data and does not negate official release status.",
+    "Client 6793's 13 selected JSON datasets are byte-identical to client 6790; this same-date recheck does not establish a second or later Violet state.",
+    "The English descriptions and structured fields are generated client data, not independent runtime tests; the announcement's descriptive text does not prove every implemented interaction.",
+    "Nurse Harrow LevelScaling changes between 6785 and 6790 are pre-release Nurse evidence and are not attributed to Violet. Unrelated item, HUD, Familiar, Solomon, hideout and general localization changes are not attributed to Violet.",
+    "Street Brawl item-bucket entries are mode-specific recommendation/classification data and are not merged into Violet's standard ability or item balance record.",
+    "No October 16 raw changelog was found in either reviewed client tree; no raw file or undocumented balance-change claim is created.",
+    "This is an October 16 dated hero configuration record, not a corpus-wide current snapshot or runtime verification."
+  ]
+}
